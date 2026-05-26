@@ -67,7 +67,7 @@ $\lim_{n\rightarrow\infty}\frac1{1+nx^2}=\left\{\begin{array}{l}\frac1{1+\infty\
 
 Gráficamente, representamos los términos 1, 2, 3, 50 y 1000 de la sucesión :
 
-[caption id="attachment_118" align="alignnone" width="616"][![fn(x) = 1/(1+nx²)](/taller-matematicas/assets/images/sucesion-funcional1.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional1.jpg) fn(x) = 1/(1+nx²)[/caption]
+$caption id="attachment_118" align="alignnone" width="616"$[![fn(x) = 1/(1+nx²)](/taller-matematicas/assets/images/sucesion-funcional1.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional1.jpg) fn(x) = 1/(1+nx²)[/caption]
 
 Vemos que,  a medida que avanzamos en la sucesión, la gráfica de $f_n(x)$ se va estrechando; en el límite vale cero en todo punto excepto en $x=0$, donde vale 1.
 
@@ -80,7 +80,7 @@ En este ejemplo vemos que, aun siendo todas las funciones de la sucesión $f_n(x
 
 Para ver el motivo de por qué la convergencia puntual no conserva la continuidad, y como puede solucionarse, veamos un ejemplo. Sea la sucesión funcional definida por $f_n(x)=\frac{\left|x\right|}{1+nx^2}$. En la imagen hemos representado los términos $n=1, 2, 3, 100$, así como las rectas $y=0.3$, e $y=-0.3$.
 
-[caption id="attachment_120" align="alignnone" width="580"][![fn(x) = |x| / (1 + nx²)](/taller-matematicas/assets/images/sucesion-funcional2.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional2.jpg) fn(x) = |x| / (1 + nx²). Los términos a partir del tercero  estan dentro de la franja -0,3 < y < 0,3.[/caption]
+$caption id="attachment_120" align="alignnone" width="580"$[![fn(x) = |x| / (1 + nx²)](/taller-matematicas/assets/images/sucesion-funcional2.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional2.jpg) fn(x) = |x| / (1 + nx²). Los términos a partir del tercero  estan dentro de la franja -0,3 < y < 0,3.[/caption]
 
 La función límite es:
 
@@ -147,14 +147,14 @@ $\lim_{n\rightarrow\infty}f_n\left(x\right)=\lim_{n\rightarrow\infty}\frac{\sin\
 
 ${\text{Sup}}_x\left|f_n\left(x\right)-f\left(x\right)\right|={\text{Sup}}_x\left|\frac{\sin\left(nx\right)}{\sqrt n}\right|=\frac1{\sqrt n}$, por la misma razón:  el valor del numerador oscila entre -1 y 1. Pasamos al límite: $\lim_{n\rightarrow\infty}\frac1{\sqrt n}=0$, luego la sucesión converge uniformemente. En la imagen siguiente vemos los términos 1, 5 y 100 de la serie (éste último en rojo). La amplitud de las oscilaciones tiende a $0$.
 
-[caption id="attachment_134" align="alignnone" width="529"][![sin(nx) / n^(1/2)](/taller-matematicas/assets/images/sucesion-funcional4.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional4.jpg) sin(nx) / n^(1/2)[/caption]
+$caption id="attachment_134" align="alignnone" width="529"$[![sin(nx) / n^(1/2)](/taller-matematicas/assets/images/sucesion-funcional4.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional4.jpg) sin(nx) / n^(1/2)[/caption]
 **Ejemplo 7**: Estudiar la convergencia de la sucesión $f_n\left(x\right)=\frac{x^{2n}}{1+x^{2n}}$.
 
 $\begin{array}{l}\lim_{n\rightarrow\infty}\frac{x^{2n}}{1+x^{2n}}=\left\{\begin{array}{c}0\;\text{si }x=0\\\frac12\;\text{si }x=1\\1\;\text{si }\left|x\right|&gt;1\end{array}\right.\\\end{array}$
 
 La función límite es discontinua, pero las funciones de la sucesión son todas continuas, por tanto no puede ser uniformemente convergente. En la figura siguiente vemos los términos 1, 2, 3 y 10, éste último en rojo. Todas las funciones de la sucesión pasan por el punto $(x,y)=(1, 0.5)$. En el límite, este punto pasa a ser un punto aislado de la gráfica, resultando una función límite discontínua.
 
-[caption id="attachment_135" align="alignnone" width="623"][![(x^2n)/(1+x^2n)](/taller-matematicas/assets/images/sucesion-funcional5.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional5.jpg) (x^2n)/(1+x^2n)[/caption]
+$caption id="attachment_135" align="alignnone" width="623"$[![(x^2n)/(1+x^2n)](/taller-matematicas/assets/images/sucesion-funcional5.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional5.jpg) (x^2n)/(1+x^2n)[/caption]
 **Ejemplo 8**: Estudiar la convergencia de la sucesión $\begin{array}{l}f_n\left(x\right)=x\left(1+\frac1n\right)\\\end{array}$.
 
 $\begin{array}{l}\lim_{n\rightarrow\infty}x\left(1+\frac1n\right)=x\\\end{array}$, luego la función límite es $f(x)=x$. Todas las funciones de la sucesión, y también la función límite, son continuas, por lo que no podemos decir nada de la convergencia uniforme, debemos comprobarla.

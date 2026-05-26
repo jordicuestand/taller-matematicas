@@ -45,13 +45,13 @@ Vemos que un punto fijo de esta función está cerca de  x=0.5692 pues para est
 
 **3.** Calcular $\int_0^1\frac{3x}{\left(3x^2+1\right)^2}\operatorname dx$
 
-Solución: Primero calculamos la integral indefinida; es del tipo inmediato $\int\frac{f'\left(x\right)}{\left[f\left(x\right)\right]^n}=\frac{\left[f\left(x\right)\right]^{n+1}}{n+1},\;n&gt;1$, pues la derivada del denominador, sin tener en cuenta la potencia, es casi igual al numerador, excepto por un factor constante que podemos añadir:
+Solución: Primero calculamos la integral indefinida; es del tipo inmediato $\int\frac{f'\left(x\right)}{\left$f\left(x\right)\right$^n}=\frac{\left$f\left(x\right)\right$^{n+1}}{n+1},\;n&gt;1$, pues la derivada del denominador, sin tener en cuenta la potencia, es casi igual al numerador, excepto por un factor constante que podemos añadir:
 
 $\int\frac{3x}{\left(3x^2+1\right)^2}\operatorname dx=\frac12\int\frac{6x}{\left(3x^2+1\right)^2}\operatorname dx=\frac12\frac{\left(3x^2+1\right)^3}3$
 
 Ahora aplicamos la regla de Barrow para calcular la integral definida:
 
-$\frac16\left[\left(3x^2+1\right)^3\right]_0^1=\frac16\left[4^3-1^3\right]=\frac{21}2.$
+$\frac16\left$\left(3x^2+1\right)^3\right$_0^1=\frac16\left$4^3-1^3\right$=\frac{21}2.$
 
 **4.** Calcular los puntos extremos de la función $f\left(x\right)=\frac{1-x^2}{x-3}$ en el intervalo [-1, 1].
 

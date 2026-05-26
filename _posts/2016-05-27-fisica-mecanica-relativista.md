@@ -24,7 +24,7 @@ Entonces un haz de luz conteniendo un número muy elevado de fotones transportar
 
 **Ejemplo 1**: Emisión de radiación dentro de una caja aislada.
 
-[caption id="attachment_1688" align="aligncenter" width="363"]![relativitat1](/taller-matematicas/assets/images/relativitat1.png) Fig. 1: caja ideal dentro de la cual hay una emisión y absorción de radiación[/caption]
+$caption id="attachment_1688" align="aligncenter" width="363"$![relativitat1](/taller-matematicas/assets/images/relativitat1.png) Fig. 1: caja ideal dentro de la cual hay una emisión y absorción de radiación[/caption]
 Imaginemos una caja aislada, en reposo, de masa M, dentro de la cual hemos hecho el vacío, que contiene un material radiactivo (fig.1, parte superior); en un momento dado (t = 0) el material emite una haz de radiación de energía E, el cual viaja por el interior de la caja hasta llegar al otro extremo donde es reabsorbida por la pared de la caja. Al emitirse la radiación, se genera una cantidad de movimiento $p=E/c$; siendo el sistema aislado, la cantidad de movimiento total se conserva, así que la caja deberá adquirir una cantidad de movimiento igual e opuesta $-p=-E/c$, pero para la caja $p=Mv$ luego $-E/c=mv\Rightarrow v=-\fracE{mc}$, la caja retrocede con esta velocidad. Despues de un tiempo *t*, se habrá desplazado una distancia $x=vt=\frac E{mc}t$.
 
 Cuando la radiación alcance el otro extremo, habrá transcurrido un tiempo que será, aproximadamente, $t=L/c$; estamos suponiendo que $x&lt;&lt;L$ pues de hecho la radiación ha de recorrer la distancia $L-x$. Entonces tenemos que el desplazamiento *x* es igual a $x=\frac E{mc}t\approx\frac E{mc}\frac Lc=\frac{EL}{mc^2}$ [1], que efectivamente ha de ser despreciable respecto a L pues tenemos el valor *c*² en el denominador, siendo *c* = 3·10⁹ m/s.
@@ -71,7 +71,7 @@ Con una masa inercial tendiendo a infinita, la fuerza necesaria para acelerarla 
 
 ### Transformación de velocidades entre sistemas de referencia
 
-[caption id="attachment_1694" align="alignnone" width="310"]![Fig. : dos sistemas de referencia inerciales](/taller-matematicas/assets/images/Sistemes_ref_iner-1.png) Fig. : dos sistemas de referencia inerciales[/caption]
+$caption id="attachment_1694" align="alignnone" width="310"$![Fig. : dos sistemas de referencia inerciales](/taller-matematicas/assets/images/Sistemes_ref_iner-1.png) Fig. : dos sistemas de referencia inerciales[/caption]
 En la figura tenemos el conocido esquema que muestra dos sistemas de referencia inerciales: el *LAB* que representa el del laboratorio, que suponemos estático, y el *Ref*, con una velocidad u relativa al laboratorio. Hay un móvil en la posición *x'* que se mueve con una velocidad *v'* respecto a *Ref*. En la referencia *LAB* la posición es *x* y la velocidad *v*. En estas condiciones se cumple:
 
 $v=\frac{v'+u}{1+v'u/c^2}; v'=\frac{v-u}{1-vu/c^2}$
@@ -80,7 +80,7 @@ Al usar estas fórmulas han de tenerse en cuenta los signos de *v, v', u* a part
 
 **Ejemplo: **dos cuerpos se acercan el uno al otro con una velocidad relativa entre ellos de 0.89c. Un observador exterior los ve moverse uno hacia el otro a la misma velocidad; hallar esta velocidad.
 
-[caption id="attachment_1695" align="alignnone" width="327"]![Fig. : dos móviles acercándose uno al otro](/taller-matematicas/assets/images/Sistemes_ref_iner2.png) Fig. : dos móviles acercándose uno al otro[/caption]
+$caption id="attachment_1695" align="alignnone" width="327"$![Fig. : dos móviles acercándose uno al otro](/taller-matematicas/assets/images/Sistemes_ref_iner2.png) Fig. : dos móviles acercándose uno al otro[/caption]
 En la figura representamos la situación: desde el punto de vista del laboratorio estático los dos móviles se mueven a la misma velocidad u, desde el punto de vista de uno de los móviles (referencia *Ref*) el otro móvil se acerca a una velocidad 0.89c.  Comparando este esquema con el de transformación de velocidades, identificamos variables: *u*: velocidad en la ref. *LAB* de la referencia Ref (el móvil de la izquierda), *v*: velocidad del móvil de la derecha respecto a *LAB*, que cumple v = -u, *v'*: velocidad del móvil de la derecha respecto a *Ref* (móvil de la izquierda) que cumple $v'=-0.89c$. Aplicamos la ley de transformación de velocidades para obtener *u, *y operamos:
 
 $-0.89c=\frac{-u-u}{1-{\displaystyle\frac{-u-u}{c^2}}}=\frac{-2u}{c^2+u^2}c^2\Rightarrow-0.89u^2+2cu-0.89c^2=0\Rightarrow\\u=\frac{-1\pm\sqrt{1-0.89^2}}{-0.89}c=\left\{\begin{array}{l}\boxed{0.61c}\\12.88c\end{array}\right.$

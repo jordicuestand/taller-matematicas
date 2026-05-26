@@ -123,11 +123,11 @@ $D_xf\left(x,y\right)=x^2\frac{3\cdot\cos\left(x+y\right)\cdot\left(x^2+y^2\righ
 
 pasamos a coordenadas polares:
 
-$\begin{array}{l}D_xf\left(r,\theta\right)=r^2\cos^2\left(\theta\right)\frac{3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\cdot r^2-2r^2\cos^2\left(\theta\right)}{r^4}\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\\=\cos^2\left(\theta\right)\cdot\left[3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)-2\cos^2\left(\theta\right)\right]\cdot\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\end{array}$
+$\begin{array}{l}D_xf\left(r,\theta\right)=r^2\cos^2\left(\theta\right)\frac{3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\cdot r^2-2r^2\cos^2\left(\theta\right)}{r^4}\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\\=\cos^2\left(\theta\right)\cdot\left$3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)-2\cos^2\left(\theta\right)\right$\cdot\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\end{array}$
 
 Pasamos al límite $\lim_{r\rightarrow0}$ para obtener:
 
-$\begin{array}{l}\lim_{r\rightarrow0}\cos^2\left(\theta\right)\cdot\left[3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)-2\cos^2\left(\theta\right)\right]\cdot\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\\=\cos^2\left(\theta\right)\left[3\cos\left(0\right)-2\cos^2\left(\theta\right)\right]\cdot\sin\left(0\right)\\=\cos^2\left(\theta\right)\left[3-2\cos^2\left(\theta\right)\right]\cdot0=0\end{array}$
+$\begin{array}{l}\lim_{r\rightarrow0}\cos^2\left(\theta\right)\cdot\left$3\cos\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)-2\cos^2\left(\theta\right)\right$\cdot\sin\left(r\left(\cos\left(\theta\right)+\sin\left(\theta\right)\right)\right)\\=\cos^2\left(\theta\right)\left$3\cos\left(0\right)-2\cos^2\left(\theta\right)\right$\cdot\sin\left(0\right)\\=\cos^2\left(\theta\right)\left$3-2\cos^2\left(\theta\right)\right$\cdot0=0\end{array}$
 
 que no depende del ángulo $\theta$, luego el límite existe y vale cero, y la función derivada parcial respecto a x es continua. Por el criterio de diferenciabilidad, la función es diferenciable.
 

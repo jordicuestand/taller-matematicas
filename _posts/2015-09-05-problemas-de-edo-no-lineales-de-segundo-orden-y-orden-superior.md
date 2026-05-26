@@ -70,11 +70,11 @@ $\begin{array}{l}\cancel{\frac{-1}{x^2}}+\frac{-1}{u^2}u'=\cancel{\frac1{x^2}}+\
 
 Efectivamente obtenemos una ecuación lineal que resolvemos usando la fórmula general (ver [EDOs lineales de primer orden](http://tallermatematic.eu/wp/?p=897)):
 
-$\begin{array}{l}U=exp\int\frac1x=x;\\V=\int\left(-1\cdot exp\int-\frac1x\right)=-\int exp(-\ln\left(x\right))=-\int\frac1x=-\ln\left(x\right);\\u\left(x\right)=U\left[C+V\right]=x\left[C-\ln\left(x\right)\right]\\\end{array}$
+$\begin{array}{l}U=exp\int\frac1x=x;\\V=\int\left(-1\cdot exp\int-\frac1x\right)=-\int exp(-\ln\left(x\right))=-\int\frac1x=-\ln\left(x\right);\\u\left(x\right)=U\left$C+V\right$=x\left$C-\ln\left(x\right)\right$\\\end{array}$
 
 Deshacemos el cambio de variable:
 
-$\begin{array}{l}y=y_p+\frac1{u(x)}\Leftrightarrow u(x)=\frac1{y-y_p}=\frac1{y-1/x}\Rightarrow\\\\\frac1{y-1/x}=x\left[C-\ln\left(x\right)\right]\Rightarrow\frac1{x\left(C-\ln\left(x\right)\right)}=y-\frac1x\Rightarrow\boxed{y=\frac1x\left(1+\frac1{C-\ln\left(x\right)}\right)}\end{array}$
+$\begin{array}{l}y=y_p+\frac1{u(x)}\Leftrightarrow u(x)=\frac1{y-y_p}=\frac1{y-1/x}\Rightarrow\\\\\frac1{y-1/x}=x\left$C-\ln\left(x\right)\right$\Rightarrow\frac1{x\left(C-\ln\left(x\right)\right)}=y-\frac1x\Rightarrow\boxed{y=\frac1x\left(1+\frac1{C-\ln\left(x\right)}\right)}\end{array}$
 
 [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**5. **Resolver la ecuación lineal de segundo orden con coeficientes variables siguiente: $\left(x+2\right)^2y''+4\left(x+2\right)y'+2y=-3\ln\left(x+2\right)$
 
@@ -86,7 +86,7 @@ $y=t^r;\;y'=rt^{r-1};\;y''=r\left(r-1\right)t^{r-2};$
 
 $t^2y''+4ty'+2y=0\Leftrightarrow t^2r\left(r-1\right)t^{r-2}+4trt^{r-1}+2t^r=0\Leftrightarrow$
 
-$\begin{array}{l}t^2y''+4ty'+2y=0\Leftrightarrow t^2r\left(r-1\right)t^{r-2}+4trt^{r-1}+2t^r=0\Leftrightarrow\\t^r\left[r\left(r-1\right)+4r+2\right]=0\Leftrightarrow r^2+3r+2\Leftrightarrow r=-2,\;-1\end{array}$
+$\begin{array}{l}t^2y''+4ty'+2y=0\Leftrightarrow t^2r\left(r-1\right)t^{r-2}+4trt^{r-1}+2t^r=0\Leftrightarrow\\t^r\left$r\left(r-1\right)+4r+2\right$=0\Leftrightarrow r^2+3r+2\Leftrightarrow r=-2,\;-1\end{array}$
 
 La solución general de la homogénea es: $y=C_1t^{-2}+C_2t^{-1}=\frac{C_1}{\left(x+2\right)^2}+\frac{C_2}{\left(x+2\right)}$
 
@@ -124,5 +124,5 @@ $\begin{array}{l}u\left(x\right)=\frac{\begin{vmatrix}\sin\left(x\right)&amp;\si
 
 La solución particular es:
 
-$\begin{array}{l}y=u\left(x\right)\cdot\sin\left(2x\right)+v\left(x\right)\cdot\cos\left(2x\right)=\\-\sin\left(x\right)\cos\left(x\right)\cdot\sin\left(2x\right)-\sin^2\left(x\right)\left[2\cos^2\left(x\right)+\cos\left(2x\right)\right]\cdot\cos\left(2x\right)\end{array}$
+$\begin{array}{l}y=u\left(x\right)\cdot\sin\left(2x\right)+v\left(x\right)\cdot\cos\left(2x\right)=\\-\sin\left(x\right)\cos\left(x\right)\cdot\sin\left(2x\right)-\sin^2\left(x\right)\left$2\cos^2\left(x\right)+\cos\left(2x\right)\right$\cdot\cos\left(2x\right)\end{array}$
 {% endraw %}

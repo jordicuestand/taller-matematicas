@@ -33,7 +33,7 @@ en esta producto todos los términos iniciales son mayores o iguales a 1, y los
 
 También aquí tenemos exponentes que pueden simplificarse usando el criterio del cociente, probemos:
 
-$\begin{array}{l}\lim_{n\rightarrow\infty}\frac{\sin^{n+1}\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)}{\sin^n\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)}=\lim_{n\rightarrow\infty}\left[\frac{\sin\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)}{\sin\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)}\right]^n\sin\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)=\\\left[\frac{\sin\left(1\right)}{\sin\left(1\right)}\right]^n\sin\left(1\right)=1^\infty\cdot\sin\left(1\right)=?\end{array}$
+$\begin{array}{l}\lim_{n\rightarrow\infty}\frac{\sin^{n+1}\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)}{\sin^n\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)}=\lim_{n\rightarrow\infty}\left$\frac{\sin\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)}{\sin\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)}\right$^n\sin\left(\frac{\left(n+1\right)\mathrm\pi}{\left(n+1\right)\pi+2}\right)=\\\left$\frac{\sin\left(1\right)}{\sin\left(1\right)}\right$^n\sin\left(1\right)=1^\infty\cdot\sin\left(1\right)=?\end{array}$
 
 Obtenemos una indeterminación del tipo $e$, que en este caso no es inmediato por la presencia de la función seno. Probemos con el criterio de la raíz:
 $\lim_{n\rightarrow\infty}\sqrt[n]{\left|\sin^n\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)\right|}=\lim_{n\rightarrow\infty}\left|\sin\left(\frac{n\mathrm\pi}{\mathrm{nπ}+2}\right)\right|=\left|\sin\left(1\right)\right|&lt;1$
@@ -114,7 +114,7 @@ $\begin{array}{l}S_n=\sum_{k=0}^n\frac{2k+1}{2^k}=1+\frac32+\frac5{2^2}+\frac7{2
 
 Restando término a término:
 
-$\begin{array}{l}S_n-\frac12S_n=\\\left[1+\frac32+\frac5{2^2}+\frac7{2^3}+\dots+\frac{2n+1}{2^n}\right]-\left[\frac12+\frac3{2^2}+\frac5{2^3}+\frac7{2^4}+\dots+\frac{2n+1}{2^{n+1}}\right]=\\\\1+\left(\frac32-\frac12\right)+\left(\frac5{2^2}-\frac3{2^2}\right)+\left(\frac7{2^3}-\frac5{2^3}\right)\dots+\left(\frac{2n+1}{2^n}-\frac{2\left(n-1\right)+1}{2^n}\right)-\frac{2n+1}{2^{n+1}}=\\1+\left[1+\frac12+\frac1{2^2}+\dots+\frac1{2^{n-1}}\right]-\frac{2n+1}{2^{n+1}}=\\1+\sum_{k=0}^{n-1}\frac1{2^k}-\frac{2n+1}{2^{n+1}}.\end{array}.$
+$\begin{array}{l}S_n-\frac12S_n=\\\left$1+\frac32+\frac5{2^2}+\frac7{2^3}+\dots+\frac{2n+1}{2^n}\right$-\left$\frac12+\frac3{2^2}+\frac5{2^3}+\frac7{2^4}+\dots+\frac{2n+1}{2^{n+1}}\right$=\\\\1+\left(\frac32-\frac12\right)+\left(\frac5{2^2}-\frac3{2^2}\right)+\left(\frac7{2^3}-\frac5{2^3}\right)\dots+\left(\frac{2n+1}{2^n}-\frac{2\left(n-1\right)+1}{2^n}\right)-\frac{2n+1}{2^{n+1}}=\\1+\left$1+\frac12+\frac1{2^2}+\dots+\frac1{2^{n-1}}\right$-\frac{2n+1}{2^{n+1}}=\\1+\sum_{k=0}^{n-1}\frac1{2^k}-\frac{2n+1}{2^{n+1}}.\end{array}.$
 
 La suma $\sum_{k=0}^{n-1}\frac1{2^k}$ viene dada por la fórmula de suma parcial de una serie geométrica de razón r:
 

@@ -28,7 +28,7 @@ Imaginem un cos rígid (no elàstic, de dimensions i forma estàtiques) en l'esp
 
 **Propietat** (no la demostrem): si independentment de la orientació del interval la seva longitud és sempre la mateixa, llavors la *referència és euclidiana* i les *coordenades són cartesianes*. En aquest cas la suma de diferencies de coordenades entre els dos punts P, Q del interval, que serà igual a la longitud al quadrat del interval, és independent de la referència.
 
-\[s^2=\left(x_{1P}-x_{1Q}\right)^2+\left(x_{2P}-x_{2Q}\right)^2+\left(x_{3P}-x_{3Q}\right)^2=\triangle{x^2}_1+\triangle{x^2}_2+\triangle{x^2}_3\]
+\$s^2=\left(x_{1P}-x_{1Q}\right)^2+\left(x_{2P}-x_{2Q}\right)^2+\left(x_{3P}-x_{3Q}\right)^2=(\Delta x_1)^2+(\Delta x_2)^2+(\Delta x_3)^2\$
 
 Els canvis de coordenades poden ser del tipus translació dels eixos, rotació dels eixos, o canvi d'escala; en el que segueix suposem que definim un segment unitari per tots els sistemes, així que tot canvi serà de translació i/o de rotació. Considerem ara quisns canvis de coordenades cartesianes produexen altres coordenades cartetesianes, i ho fem usant el fet de que els intervals han de tenir la mateixa longitud en qualsevol sistema, sent aquesta suma de diferències al quadrat: $\sum_\nu\triangle x_\nu^2=r^2$; en una altre referència R' la expressió és la mateixa, $\sum_\nu\triangle{x'_\nu}^2=r^2$.
 
@@ -42,7 +42,7 @@ $f\left(x_2\right)={\textstyle\sum_\alpha}\frac{\partial f\left(a\right)}{\parti
 
 Si substituïm aquesta expressió dels intervals en la expressió del interval x' i la igualem a la del interval  amb x, doncs totes dues són iguals a la longitud del segment, obtenim una equació que s'hauria de complir sempre, per tota funció x'(x) que relacioni les x' amb les x:
 
-${\textstyle\sum_\nu}\left(\triangle x'_\nu\right)^2={\textstyle\sum_\nu}\left[{\textstyle\sum_\alpha}\frac{\partial x_\nu'}{\partial x_\alpha}\triangle x_\alpha+\frac12{\textstyle\sum_{\alpha\beta}}\frac{\partial^2x_\nu'}{\partial x_\alpha\partial x_\beta}\triangle x_\alpha\triangle x_\beta+\dots\right]^2$
+${\textstyle\sum_\nu}\left(\triangle x'_\nu\right)^2={\textstyle\sum_\nu}\left${\textstyle\sum_\alpha}\frac{\partial x_\nu'}{\partial x_\alpha}\triangle x_\alpha+\frac12{\textstyle\sum_{\alpha\beta}}\frac{\partial^2x_\nu'}{\partial x_\alpha\partial x_\beta}\triangle x_\alpha\triangle x_\beta+\dots\right$^2$
 
 La condició de que aquesta equació es compleixi  sempre, per tota funció x'(x) que relacioni les x' amb les x, és molt forta, tant, que de seguida veiem que només passarà si la funció x'(x) és ben simple: una relació lineal 
 
@@ -236,9 +236,9 @@ L'article original d'Einstein que va publicar per primer cop les idees de la Rel
 
 La equació de continuïtat elèctrica es relaciona el canvi temporal de densitat de càrrega en cada punt de l'espai amb la variació de la intensitat de corrent elèctrica, i formalment és $\frac{\partial\rho}{\partial t}=-\overrightarrow\nabla\cdot\overrightarrow J$ on $\rho$ és la densitat de càrrega i J la intensitat de corrent (un vector); el producte escalar de l'operador vectorial nabla i del vector J és un escalar (un camp escalar per ser exactes). 
 
-Definim el **quadrivector corrent-càrrega **com $J_\mu=\left[\overrightarrow J;ic\rho\right]$ on usem la notació tensorial (tensor d'ordre 1), recordant que els quadrivectors relativistes tenen tres components de tipus espai i el quart component de tipus temps, veiem que el vector intensitat de corrent correspon a les components de tipus espai i la densitat de corrent a la de tipus temps (amb la convenció de Minkowski de multiplicar per el nombre imaginar i). Usant aquest quadrivector veiem que:
+Definim el **quadrivector corrent-càrrega **com $J_\mu=\left$\overrightarrow J;ic\rho\right$$ on usem la notació tensorial (tensor d'ordre 1), recordant que els quadrivectors relativistes tenen tres components de tipus espai i el quart component de tipus temps, veiem que el vector intensitat de corrent correspon a les components de tipus espai i la densitat de corrent a la de tipus temps (amb la convenció de Minkowski de multiplicar per el nombre imaginar i). Usant aquest quadrivector veiem que:
 
-[math]\frac{\partial J_\mu}{\partial x_\mu}=\left(\frac{\partial J_1}{\partial x_1}+\frac{\partial J_2}{\partial x_2}+\frac{\partial J_3}{\partial x_3}\right)+\frac{\partial\left(ic\rho\right)}{\partial\left(ict\right)}=\boxed{\overrightarrow\nabla\cdot\overrightarrow J+\frac{\partial\rho}{\partial t}=0}[/math]
+$\frac{\partial J_\mu}{\partial x_\mu}=\left(\frac{\partial J_1}{\partial x_1}+\frac{\partial J_2}{\partial x_2}+\frac{\partial J_3}{\partial x_3}\right)+\frac{\partial\left(ic\rho\right)}{\partial\left(ict\right)}=\boxed{\nabla\cdot\overrightarrow J+\frac{\partial\rho}{\partial t}=0}$
 
 que és la *equació de continuïtat elèctrica en forma tensorial*. 
 
@@ -246,45 +246,45 @@ que és la *equació de continuïtat elèctrica en forma tensorial*.
 
 El potencial escalar, el potencial vectorial, i les densitats de càrrega i de corrent estan relacionades clàssicament per dues equacions, una vectorial i l'altre escalar:
 
-[math]\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}=-\frac{4\mathrm\pi}c\overrightarrow J;\;\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}=-4\pi\rho[/math].
+$\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}=-\frac{4\mathrm\pi}c\overrightarrow J;\;\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}=-4\pi\rho$.
 
-Definim el **quadrivector potencial elèctric** $A_\mu=\left[\overrightarrow A;i\phi\right]$; veiem com es transformen les dues equacions clàssiques dels potencials escalar i vectorial: per fer-ho definim *l'operador diferencial tensorial* $\square^2=\Delta^2+\frac{\partial^2}{\partial\left(ict\right)^2}=\Delta^2-\frac1{c^2}\frac{\partial^2}{\partial t^2}$. Apliquem aquest operador al quadrivector potencial:
+Definim el **quadrivector potencial elèctric** $A_\mu=\left$\overrightarrow A;i\phi\right$$; veiem com es transformen les dues equacions clàssiques dels potencials escalar i vectorial: per fer-ho definim *l'operador diferencial tensorial* $\square^2=\Delta^2+\frac{\partial^2}{\partial\left(ict\right)^2}=\Delta^2-\frac1{c^2}\frac{\partial^2}{\partial t^2}$. Apliquem aquest operador al quadrivector potencial:
 
-[math]\square^2A_\mu=\left(\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}\right)+\left(\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}\right)[/math]
+$\square^2A_\mu=\left(\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}\right)+\left(\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}\right)$
 
 Usem ara les igualtats dels potencials en la darrera expressió:
 
-[math]\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}=-\frac{4\mathrm\pi}c\overrightarrow J;i\left(\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}\right)=-4\mathrm{πρi}\Rightarrow[/math]
+$\Delta^2\overrightarrow A-\frac1{c^2}\frac{\partial^2\overrightarrow A}{\partial t^2}=-\frac{4\mathrm\pi}c\overrightarrow J;i\left(\Delta^2\phi-\frac1{c^2}\frac{\partial^2\phi}{\partial t^2}\right)=-4\mathrm{πρi}\Rightarrow$
 
 i ens queda una expressió molt compacte *equivalent a les dues igualtats clàssiques dels potencials*:
 
-[math]\square^2{\mathrm A}_{\mathrm\mu}=-4\mathrm\pi\left(\frac1{\mathrm c}\overrightarrow{\mathrm J}+\mathrm{iρ}\right)\Rightarrow\square^2{\mathrm A}_{\mathrm\mu}=-\frac{4\mathrm\pi}{\mathrm c}\left(\overrightarrow{\mathrm J}+\mathrm{icρ}\right)\Rightarrow\boxed{\square^2{\mathrm A}_{\mathrm\mu}=-\frac{4\mathrm\pi}{\mathrm c}{\mathrm J}_{\mathrm\mu}}[/math].
+$\square^2{\mathrm A}_{\mathrm\mu}=-4\mathrm\pi\left(\frac1{\mathrm c}\overrightarrow{\mathrm J}+\mathrm{iρ}\right)\Rightarrow\square^2{\mathrm A}_{\mathrm\mu}=-\frac{4\mathrm\pi}{\mathrm c}\left(\overrightarrow{\mathrm J}+\mathrm{icρ}\right)\Rightarrow\boxed{\square^2{\mathrm A}_{\mathrm\mu}=-\frac{4\mathrm\pi}{\mathrm c}{\mathrm J}_{\mathrm\mu}}$.
 
 ## Camps elèctric i magnètic com a quadrivectors
 
 Expressem ara els camps vectorials elèctric i magnètic en funció dels potencials vector i escalar:
 
-[math]\overrightarrow E=-\nabla\phi-\frac1c\frac{\partial\overrightarrow A}{\partial t};\;\overrightarrow B=\overrightarrow\nabla\times\overrightarrow A[/math].
+$\overrightarrow E=-\nabla\phi-\frac1c\frac{\partial\overrightarrow A}{\partial t};\;\overrightarrow B=\nabla\times\overrightarrow A$.
 
-Utilitzem el quadrivector potencial $A_\mu=\left[\overrightarrow A;i\phi\right]$ per convertir les expressions vectorials en quadrivectorials; comencem per el camp E, per simplificar ens limitem a considerar només la primera component:
+Utilitzem el quadrivector potencial $A_\mu=\left$\overrightarrow A;i\phi\right$$ per convertir les expressions vectorials en quadrivectorials; comencem per el camp E, per simplificar ens limitem a considerar només la primera component:
 
-[math]\frac{\partial A_1}{\partial t}=\frac{\partial A_1}{\partial\left({\displaystyle\frac{x_4}i}\right)}=i\frac{\partial A_1}{\partial x_4};\;\frac{\partial\phi}{\partial x_1}=\frac{\partial\left({\displaystyle\frac{A_4}i}\right)}{\partial x_1}=-i\frac{\partial A_4}{\partial x_1}[/math],
+$\frac{\partial A_1}{\partial t}=\frac{\partial A_1}{\partial\left({\displaystyle\frac{x_4}i}\right)}=i\frac{\partial A_1}{\partial x_4};\;\frac{\partial\phi}{\partial x_1}=\frac{\partial\left({\displaystyle\frac{A_4}i}\right)}{\partial x_1}=-i\frac{\partial A_4}{\partial x_1}$,
 
 per tant,
 
-[math]E_1=i\frac{\partial A_4}{\partial x_1}-\frac1c\frac{\partial A_1}{\partial x_4}\Rightarrow i\cdot E_1=-\frac{\partial A_4}{\partial x_1}+\frac1c\frac{\partial A_1}{\partial x_4}[/math]
+$E_1=i\frac{\partial A_4}{\partial x_1}-\frac1c\frac{\partial A_1}{\partial x_4}\Rightarrow i\cdot E_1=-\frac{\partial A_4}{\partial x_1}+\frac1c\frac{\partial A_1}{\partial x_4}$
 
 Passem al vector B, només la 1a component, que traiem directament del producte vectorial:
 
-[math]B_1=\frac{\partial A_3}{\partial x_2}-\frac{\partial A_2}{\partial x_2}[/math]
+$B_1=\frac{\partial A_3}{\partial x_2}-\frac{\partial A_2}{\partial x_2}$
 
 Veiem que les components dels camps E i B en notació quadridimensional tenen una estructura molt semblant mentre que la vectorial en canvi eren ben diferents; és un dels avantatges de "relativitzar" les equacions de l'electromagnetisme, que permeten presentar formalment els camps E i B com part d'un mateix fenomen. Si fem el desenvolupament amb la resta de components dels camps veurem  que també segueixen la mateixa estructura $\frac{\partial A_\nu}{\partial x_\mu}-\frac{\partial A_\mu}{\partial x_\nu}$, que ens permet definir el **tensor del camp electromagnètic**:
 
-[math]F_{\mu\nu}=\frac{\partial A_\nu}{\partial x_\mu}-\frac{\partial A_\mu}{\partial x_\nu}[/math]
+$F_{\mu\nu}=\frac{\partial A_\nu}{\partial x_\mu}-\frac{\partial A_\mu}{\partial x_\nu}$
 
 que és un tensor antisimétric ($F_{\mu\nu}=F_{\nu\mu}=$) amb zeros a la diagonal ($F_{\mu\mu}=0$). Exemples: 
 
-[math]F_{23}=\frac{\partial A_3}{\partial x_2}-\frac{\partial A_2}{\partial x_3}=B_1;\;F_{11}=\frac{\partial A_1}{\partial x_1}-\frac{\partial A_1}{\partial x_1}=0;\;F_{32}=\frac{\partial A_2}{\partial x_3}-\frac{\partial A_3}{\partial x_2}=-B_1[/math]
+$F_{23}=\frac{\partial A_3}{\partial x_2}-\frac{\partial A_2}{\partial x_3}=B_1;\;F_{11}=\frac{\partial A_1}{\partial x_1}-\frac{\partial A_1}{\partial x_1}=0;\;F_{32}=\frac{\partial A_2}{\partial x_3}-\frac{\partial A_3}{\partial x_2}=-B_1$
 
  Les components del tensor són (veure per exemple *Electrodinàmica Clàssica - Jackson*): 
 
@@ -294,5 +294,5 @@ que és un tensor antisimétric ($F_{\mu\nu}=F_{\nu\mu}=$) amb zeros a la diagon
 
 Usant tot el vist en els apartats anteriors pot demostrar-se ( veure per exemple *Electrodinàmica Clàssica - Jackson*) que les quatre equacions vectorials de Maxwell es redueixen a dues tensorials:
 
-[math]\frac{\partial F_{\mu\nu}}{\partial x_\nu}=\frac{4\pi}cJ_\mu;\;\frac{\partial F_{\mu\nu}}{\partial x_\lambda}+\frac{\partial F_{\lambda\mu}}{\partial x_\nu}+\frac{\partial F_{\nu\lambda}}{\partial x_\mu}=0[/math]
+$\frac{\partial F_{\mu\nu}}{\partial x_\nu}=\frac{4\pi}cJ_\mu;\;\frac{\partial F_{\mu\nu}}{\partial x_\lambda}+\frac{\partial F_{\lambda\mu}}{\partial x_\nu}+\frac{\partial F_{\nu\lambda}}{\partial x_\mu}=0$
 {% endraw %}

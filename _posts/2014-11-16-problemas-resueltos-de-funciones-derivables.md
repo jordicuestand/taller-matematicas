@@ -191,17 +191,17 @@ $Ln\left(y\right)=Ln\left(x^{x^x}\right)=Ln\left(x^{\left(x^x\right)}\right)=x^x
 Observar que seria incorrecto
 $Ln\left(x^{x^x}\right)=Ln\left(x^x\right)^x=xLn\left(x^x\right)$ pues $x^{x^x}\neq\left(x^x\right)^x$ sino que es $x^{x^x}=x^{\left(x^x\right)}.$ Ahora aplicamos la regla de la derivada del producto:
 
-$D\left[Ln\left(y\right)\right]=D\left[x^xLn\left(x\right)\right]=D\left[x^x\right]\cdot Ln\left(x\right)+x^x\cdot D\left[Ln\left(x\right)\right]$
+$D\left$Ln\left(y\right)\right$=D\left$x^xLn\left(x\right)\right$=D\left$x^x\right$\cdot Ln\left(x\right)+x^x\cdot D\left$Ln\left(x\right)\right$$
 
 La derivada de $x^x$ la hacemos aparte, aplicando de nuevo logaritmos:
 
-$\begin{array}{l}y=x^x\Leftrightarrow\ln\left(y\right)=\ln\left(x^x\right)=x\cdot\ln\left(x\right);\\D\left[\ln\left(y\right)\right]=D\left[x\cdot\ln\left(x\right)\right]=Dx\cdot\ln\left(x\right)+x\cdot D\left[\ln\left(x\right)\right]=1\cdot\ln\left(x\right)+x\cdot\frac1x=\ln\left(x\right)+1.\end{array}$
+$\begin{array}{l}y=x^x\Leftrightarrow\ln\left(y\right)=\ln\left(x^x\right)=x\cdot\ln\left(x\right);\\D\left$\ln\left(y\right)\right$=D\left$x\cdot\ln\left(x\right)\right$=Dx\cdot\ln\left(x\right)+x\cdot D\left$\ln\left(x\right)\right$=1\cdot\ln\left(x\right)+x\cdot\frac1x=\ln\left(x\right)+1.\end{array}$
 
-Como $D\left[Ln\left(y\right)\right]=\frac1yDy$ (por la regla de la cadena), tenemos que: $\frac{Dy}y=\ln\left(x\right)+1\Leftrightarrow Dy=y\left[\ln\left(x\right)+1\right]=x^x\left[\ln\left(x\right)+1\right].$
+Como $D\left$Ln\left(y\right)\right$=\frac1yDy$ (por la regla de la cadena), tenemos que: $\frac{Dy}y=\ln\left(x\right)+1\Leftrightarrow Dy=y\left$\ln\left(x\right)+1\right$=x^x\left$\ln\left(x\right)+1\right$.$
 
  Ahora sustituimos en la derivada original:
 
-$\begin{array}{l}\frac1yDy=x^x\left[\ln\left(x\right)+1\right]\cdot Ln\left(x\right)+x^x\cdot\frac1x\Leftrightarrow\\Dy=y\cdot x^x\left[Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right]=x^{x^x}\cdot x^x\left[Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right].\end{array}$
+$\begin{array}{l}\frac1yDy=x^x\left$\ln\left(x\right)+1\right$\cdot Ln\left(x\right)+x^x\cdot\frac1x\Leftrightarrow\\Dy=y\cdot x^x\left$Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right$=x^{x^x}\cdot x^x\left$Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right$.\end{array}$
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
@@ -216,7 +216,7 @@ $y'(x)=\frac{\operatorname{d}y}{\operatorname{d}x}=\frac{\operatorname{d}y}{\ope
 
 Observar cómo hemos utilizado las diferenciales para expresar la derivada con respecto a x en función de las derivadas respecto  a t.
 
-$\begin{array}{l}\frac{\operatorname{d}y}{\operatorname{d}t}=D\sin\left(t\right)\circ2t=\cos\left(t\right)\circ2t\cdot D\left(2t\right)=2\cos\left(2t\right).\\\frac{\operatorname{d}t}{\operatorname{d}x}=\left(\frac{\operatorname{d}x}{\operatorname{d}t}\right)^{-1}=\left[D\sin\left(t\right)\right]^{-1}=\frac1{\cos\left(t\right)}.\end{array}$
+$\begin{array}{l}\frac{\operatorname{d}y}{\operatorname{d}t}=D\sin\left(t\right)\circ2t=\cos\left(t\right)\circ2t\cdot D\left(2t\right)=2\cos\left(2t\right).\\\frac{\operatorname{d}t}{\operatorname{d}x}=\left(\frac{\operatorname{d}x}{\operatorname{d}t}\right)^{-1}=\left$D\sin\left(t\right)\right$^{-1}=\frac1{\cos\left(t\right)}.\end{array}$
 
 Nos queda que $\begin{array}{l}\frac{\operatorname{d}y}{\operatorname{d}x}=2\cos\left(2t\right)\cdot\frac1{\cos\left(t\right)}=2\frac{\cos\left(2t\right)}{\cos\left(t\right)}.\\\end{array}$ La gráfica de la derivada presenta asíntotas verticales, correspondientes a los puntos del eje x donde el lazo tiene tangente vertical:
 
@@ -237,7 +237,7 @@ Como el límite en $x=0$ coincide con $f(0)$ la función es contínua.
 
 Para obtener la derivada, si $x\neq0$ derivamos su expresión:
 
-$\begin{array}{l}D\left[e^{-\frac1{x^2}}\right]=D\left[e^x\circ\frac{-1}{x^2}\right]=D\left[e^x\right]\circ\frac{-1}{x^2}\cdot D\left[\frac{-1}{x^2}\right]=\\e^x\circ\frac{-1}{x^2}\cdot D\left[-x^{-2}\right]=e^{-\frac1{x^2}}\cdot\frac2{x^3}\end{array}$
+$\begin{array}{l}D\left$e^{-\frac1{x^2}}\right$=D\left$e^x\circ\frac{-1}{x^2}\right$=D\left$e^x\right$\circ\frac{-1}{x^2}\cdot D\left$\frac{-1}{x^2}\right$=\\e^x\circ\frac{-1}{x^2}\cdot D\left$-x^{-2}\right$=e^{-\frac1{x^2}}\cdot\frac2{x^3}\end{array}$
 
 Esta expresión es válida para $x\neq0$. Para $x=0$ usamos la definición de derivada:
 

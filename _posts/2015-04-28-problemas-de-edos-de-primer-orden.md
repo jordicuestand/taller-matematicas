@@ -27,9 +27,9 @@ math: true
 
 **1.** Resolver la ecuación lineal de primer orden $y'x+y=x\sin(x)$.
 
-**Solución**: Ponemos la ecuación en la forma estándard $y'+P(x)y=Q(x)$, dividiendo todo por x: $y'+(1/x)y=\sin(x)$, identificamos $P(x)=1/x, Q(x)=\sin(x)$. Calculamos $u=exp(-\int e^{P(x)}\operatorname dx), \;v=\int Q(x)\cdot\left[\int e^{P(x)}\operatorname dx\right]\operatorname dx$ y la solución será $y=u(C+v)$:
+**Solución**: Ponemos la ecuación en la forma estándard $y'+P(x)y=Q(x)$, dividiendo todo por x: $y'+(1/x)y=\sin(x)$, identificamos $P(x)=1/x, Q(x)=\sin(x)$. Calculamos $u=exp(-\int e^{P(x)}\operatorname dx), \;v=\int Q(x)\cdot\left$\int e^{P(x)}\operatorname dx\right$\operatorname dx$ y la solución será $y=u(C+v)$:
 
-$\begin{array}{l}u=e^{\int-\frac1x\operatorname dx}=e^{-\ln\left(x\right)}=\frac1x;\;\\v=\int\sin\left(x\right)\left[e^{\int\frac1x\operatorname dx}\right]\operatorname dx=\int\sin\left(x\right)\cdot x\operatorname dx=\sin\left(x\right)-x\cos\left(x\right)\end{array}$
+$\begin{array}{l}u=e^{\int-\frac1x\operatorname dx}=e^{-\ln\left(x\right)}=\frac1x;\;\\v=\int\sin\left(x\right)\left$e^{\int\frac1x\operatorname dx}\right$\operatorname dx=\int\sin\left(x\right)\cdot x\operatorname dx=\sin\left(x\right)-x\cos\left(x\right)\end{array}$
 
 la última integral se puede hacer por partes. La integral general queda:
 
@@ -47,7 +47,7 @@ $y=u\left(C+v\right)=\frac1x\left(C+\sin\left(x\right)-x\cos\left(x\right)\right
 
 $v'-\frac1xv=-\frac{x\cos\left(x\right)-\sin\left(x\right)}x$
 
-Para resolver la ecuación lineal, que es del tipo $y'+P(x)y=Q(x)$, hallamos $v=-\int e^{P(x)}\operatorname dx,\;w=\int Q(x)\cdot\left[\int e^{P(x)}\operatorname dx\right]\operatorname dx$ y la solución será $y=v(C+w)$; obtendremos: $u=Cx-\sin(x)$, deshaciendo el cambio, $y=(Cx-\sin(x))^{-1}$.
+Para resolver la ecuación lineal, que es del tipo $y'+P(x)y=Q(x)$, hallamos $v=-\int e^{P(x)}\operatorname dx,\;w=\int Q(x)\cdot\left$\int e^{P(x)}\operatorname dx\right$\operatorname dx$ y la solución será $y=v(C+w)$; obtendremos: $u=Cx-\sin(x)$, deshaciendo el cambio, $y=(Cx-\sin(x))^{-1}$.
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 

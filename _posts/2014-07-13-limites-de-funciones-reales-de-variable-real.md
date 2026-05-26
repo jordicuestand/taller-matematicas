@@ -17,7 +17,7 @@ math: true
 
 # Introducción
 
-[caption id="attachment_48" align="alignleft" width="523"][![limit_funció_1](/taller-matematicas/assets/images/limit_funció_1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_1.png) El límite de f(x) en x=a es L si y=f(x) se acerca al valor L a medida que x se acerca al valor a[/caption]
+$caption id="attachment_48" align="alignleft" width="523"$[![limit_funció_1](/taller-matematicas/assets/images/limit_funció_1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_1.png) El límite de f(x) en x=a es L si y=f(x) se acerca al valor L a medida que x se acerca al valor a[/caption]
 
 Intuitivamente, decimos que el límite de la función $f(x)$ en el punto $x=a$ es $L$, y escribimos $\lim_{x\rightarrow a}f(x)=L$, si se cumple que, cuanto más nos acercamos al punto $x=a$, más se acerca el valor correspondiente de la función a $L$.
 
@@ -148,10 +148,10 @@ Una función racional $f(x)$ es la que tiene como expresión un cociente de poli
 
 Comencemos por la función racional $f(x)=\frac1{\left(x-a\right)^n}$ estudiando el límite $\lim_{x\rightarrow a}f(x)$. Supongamos que $n$ es un entero par. En este caso, el denominador $\left(x-a\right)^n$ será mayor que cero para todo $x$. En la siguiente figura vemos representada la función para $n=2$ y $a=1$.
 
-[caption id="attachment_71" align="aligncenter" width="393"][![racional1](/taller-matematicas/assets/images/racional1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional1.png) f(x) = 1/(x-1)²[/caption]
+$caption id="attachment_71" align="aligncenter" width="393"$[![racional1](/taller-matematicas/assets/images/racional1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional1.png) f(x) = 1/(x-1)²[/caption]
 Vemos que los límites laterales en $x=a$ son ambos coincidentes y valen $+\infty$.  En el caso de que $n$ sea impar, el signo de $\left(x-a\right)^n$  será positivo para $x&gt;a$ y negativo para  $x&lt;a$. En la siguiente figura vemos el caso $f(x)=\frac1{x-1}$.
 
-[caption id="attachment_73" align="aligncenter" width="504"][![racional3](/taller-matematicas/assets/images/racional3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional3.png) f(x) = 1/(x-1)[/caption]
+$caption id="attachment_73" align="aligncenter" width="504"$[![racional3](/taller-matematicas/assets/images/racional3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional3.png) f(x) = 1/(x-1)[/caption]
 Ahora los límites laterales en $x=1$ no coinciden, así que no tenemos ĺimite en ese punto.
 
 Concluimos pues:

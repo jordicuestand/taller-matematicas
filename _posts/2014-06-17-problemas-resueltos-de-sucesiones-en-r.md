@@ -82,7 +82,7 @@ El teŕmino general es del tipo fracción racional polinómica, aplicando el cri
 
 Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\{-1,\frac-14,0,\frac18,\dots\right\}$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
 
-[caption id="attachment_26" align="aligncenter" width="290"][![recta](/taller-matematicas/assets/images/recta.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2[/caption]
+$caption id="attachment_26" align="aligncenter" width="290"$[![recta](/taller-matematicas/assets/images/recta.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2[/caption]
 
  
 

@@ -30,7 +30,7 @@ $theta=tan^{-1}left(frac c{c/2}right)=tan^{-1}left(2right)=63.4^text o$
 
 Aunque para dibujar los ejes es más sencillo simplemente dibujar primero ct' usando la ratio "una unidad según el eje de abscisas corresponde a 1/2 del eje de ordenadas".
 
-[caption id="attachment_1716" align="aligncenter" width="405"]![Minkowski1c](/taller-matematicas/assets/images/Minkowski1c.png) Fig. 2: tres sistemas de referencia, el S' con v = c/2, el S'' con v = c/3[/caption]
+$caption id="attachment_1716" align="aligncenter" width="405"$![Minkowski1c](/taller-matematicas/assets/images/Minkowski1c.png) Fig. 2: tres sistemas de referencia, el S' con v = c/2, el S'' con v = c/3[/caption]
 En general, si S' se mueve a velocidad v, entonces su recta ct' pasará por los puntos (0, 0) y (v/c, 1). En cuanto a la recta x', pasará por los puntos (0, 0 ) y (1, v/c). No es necesario calcular el ángulo $theta$ para dibujarlos. En la figura 3 vemos un S' con v=c/2 y otro S'' con v=c/3.
 
 ### Unidad de medida en las referencias móviles
@@ -65,24 +65,24 @@ Haciendo una tabla de valores (x, ct) para esta ecuación, encontramos los punto
 | 3,1622776602 
 | 3 
 
-[caption id="attachment_1718" align="alignnone" width="432"]![Fig. 3: hipérbola de calibración x² - (ct)² = 1](/taller-matematicas/assets/images/Minkowski2.png) Fig. 3: hipérbola de calibración x² - (ct)² = 1[/caption]
+$caption id="attachment_1718" align="alignnone" width="432"$![Fig. 3: hipérbola de calibración x² - (ct)² = 1](/taller-matematicas/assets/images/Minkowski2.png) Fig. 3: hipérbola de calibración x² - (ct)² = 1[/caption]
 Vemos que la hipérbola corta al eje x en el punto 1, use acerca asintóticamente a la línea espacio-tiempo de la luz; *los puntos de corte con los ejes x', x'', etc, de las otras referencias determinan la unidad de longitud en esas referencias vistas desde la referencia x en reposo*. Claramente se ve que la longitud unidad, en cualquier sistema en movimiento, vista desde el reposo, es mayor que la unidad del sistema en reposo, tendiendo a infinito para referencias que se muevan a velocidades cercanas a la de la luz, esto es una consecuencia de la fórmula de la contracción de longitudes de Lorentz:
 
 $triangle x=gammatriangle x'=gammacdot1xrightarrow{vrightarrow c}infty$
 
 **Ejemplo 2**: Si el sistema de referencia S' se mueve a v = c/2 con respecto a S', dibujar la hipérbola de calibración para obtener la distancia equivalente a x = 2 en el sistema S' en el instante t = 0.
 
-[caption id="attachment_1719" align="aligncenter" width="431"]![Fig. 4: determinar una longitud x](/taller-matematicas/assets/images/Minkowski3.png) Fig. 4: determinar una longitud x'=2 vista desde el sistema S en reposo[/caption]
+$caption id="attachment_1719" align="aligncenter" width="431"$![Fig. 4: determinar una longitud x](/taller-matematicas/assets/images/Minkowski3.png) Fig. 4: determinar una longitud x'=2 vista desde el sistema S en reposo[/caption]
 Con la hipérbola obtenemos su punto de corte del eje x', la distancia entre el origen y ese punto será la distancia unidad, la duplicamos sobre el eje x' para llegar al punto A' de coordenadas en el sistema S' (x'=2, t' = 0).
 
 **Ejemplo 3**: con los mismos sistemas S, S' del ejemplo anterior, situar en el diagrama los sucesos A: x = 1, ct = 1 y B: x' = 1, ct' = 1.
 
-[caption id="attachment_1721" align="aligncenter" width="406"]![Fig. 4: diagrama de Minkowski para situar los sucesos B, C](/taller-matematicas/assets/images/Minkowski4.png) Fig. 5: diagrama de Minkowski para situar los sucesos A, B[/caption]
+$caption id="attachment_1721" align="aligncenter" width="406"$![Fig. 4: diagrama de Minkowski para situar los sucesos B, C](/taller-matematicas/assets/images/Minkowski4.png) Fig. 5: diagrama de Minkowski para situar los sucesos A, B[/caption]
  El punto A es inmediato: estará sobre la línea espacio-tiempo de la luz. Para el punto B usamos la hipérbola de calibración que nos da la coordenada (x'=1, ct'=0) sobre el eje x'. Esta misma distancia la medimos sobre el eje ct' (con una regla o la trasladamos con un compás) para obtener el punto (x'=0, ct'=1); entonces trazamos por estos puntos paralelas a los ejes (líneas punteadas en rojo en la figura), la intersección de estas líneas nos da el punto B(x'=1, ct'=1).
 
 **Ejemplo 4**: Mediante el diagrama obtener las coordenadas en S' del punto A, y las coordenadas en S del punto B del ejemplo anterior.
 
-[caption id="attachment_1722" align="aligncenter" width="498"]![Fig. 6: Diagrama para obtener las coordenada de los puntos del ejemplo anterior en otro sistema](/taller-matematicas/assets/images/Minkowski5.png) Fig. 6: Diagrama para obtener las coordenada de los puntos del ejemplo anterior en otro sistema[/caption]
+$caption id="attachment_1722" align="aligncenter" width="498"$![Fig. 6: Diagrama para obtener las coordenada de los puntos del ejemplo anterior en otro sistema](/taller-matematicas/assets/images/Minkowski5.png) Fig. 6: Diagrama para obtener las coordenada de los puntos del ejemplo anterior en otro sistema[/caption]
 Para el punto A trazamos paralelas a los ejes x', ct', los puntos de corte con esos ejes (rombos azules en la figura) nos dan las coordenadas, vemos que son, aproximadamente, x' = 0.6 (recordar que hay que comparar con la unidad de longitud en el sistema S', dada por la hipérbola de calibración) y ct' = 0.5. Si trazamos el gráfico en papel milimetrado y usamos herramientas de dibujo lineal la precisión mejorará bastante.
 
 Para el punto B trazamos paralelas a los ejes x,  ct, obtenemos aproximadamente x = 1.6, ct = 1.6.
@@ -95,9 +95,9 @@ Recordemos que en el diagrama de Minkowski el tiempo viene multiplicado por c; a
 
 **Ejemplo 5**: El siguiente diagrama representa una nave espacial moviéndose a velocidad v = 0.5c, en el punto-suceso A se produce una explosión, propagándose la radiación en todas direcciones a velocidad c. La nave despliega un escudo anti-radiación en el punto-suceso B. La pregunta que nos hacemos es, ¿cuando la radiación alcance la nave, estará protegida por el escudo, o por el contrario lo habrá desplegado demasiado tarde?
 
-[caption id="attachment_1730" align="aligncenter" width="381"]![Fig. 6: dos sucesos A, B, el primero representa una explosión, el segundo el despliegue de un escudo](/taller-matematicas/assets/images/Minkowski6.png) Fig. 7: dos sucesos A, B, el primero representa una explosión, el segundo el despliegue de un escudo[/caption]
+$caption id="attachment_1730" align="aligncenter" width="381"$![Fig. 6: dos sucesos A, B, el primero representa una explosión, el segundo el despliegue de un escudo](/taller-matematicas/assets/images/Minkowski6.png) Fig. 7: dos sucesos A, B, el primero representa una explosión, el segundo el despliegue de un escudo[/caption]
 La radiación viajará a velocidad c tanto en el sentido positivo como en el negativo; las dos trayectorias opuestas estarán a 90⁰ entre sí, y a 45⁰ con los ejes x, ct
 
-[caption id="attachment_1731" align="aligncenter" width="383"]![Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles](/taller-matematicas/assets/images/Minkowski7.png) Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles[/caption]
+$caption id="attachment_1731" align="aligncenter" width="383"$![Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles](/taller-matematicas/assets/images/Minkowski7.png) Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles[/caption]
 La radiación que viaja en el sentido negativo de x alcanza al eje ct' en el punto marcado en rojo, ese punto tiene coordenada x'=0, lo que significa que la radiación ha alcanzado a la nave, pero además lo ha hecho un poco antes de que se despliegue el escudo (suceso B), por tanto la nave ha tenido mala suerte con este diagrama. Ejercicio para el lector: ¿cómo se resolvería este problema usando transformaciones de Lorentz?
 {% endraw %}

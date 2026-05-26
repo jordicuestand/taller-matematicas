@@ -46,11 +46,11 @@ $y'=\frac{1\pm\left(1-8x\right)^{1/2}}4$
 
 tenemos dos ecuaciones separables:
 
-$\begin{array}{l}\frac{\operatorname dy}{\operatorname dx}=\frac{1+\left(1-8x\right)^{1/2}}4\Rightarrow\int\operatorname dy=\int\frac{1+\left(1-8x\right)^{1/2}}4\operatorname dx\Rightarrow\\y=\int\frac14\operatorname dx+\frac14\frac1{-8}\int-8\left(1-8x\right)^{1/2}\operatorname dx=\frac14\left[x-\frac1{12}\left(1-8x\right)^{3/2}\right]+C\end{array}$
+$\begin{array}{l}\frac{\operatorname dy}{\operatorname dx}=\frac{1+\left(1-8x\right)^{1/2}}4\Rightarrow\int\operatorname dy=\int\frac{1+\left(1-8x\right)^{1/2}}4\operatorname dx\Rightarrow\\y=\int\frac14\operatorname dx+\frac14\frac1{-8}\int-8\left(1-8x\right)^{1/2}\operatorname dx=\frac14\left$x-\frac1{12}\left(1-8x\right)^{3/2}\right$+C\end{array}$
 
-la otra ecuación es idéntica salvo en un signo, y resulta $y=\frac14\left[x+\frac1{12}\left(1-8x\right)^{3/2}\right]+C.$ Cada solución tiene su propio haz de curvas; en la figura se representa una curva de cada solución, para $C=0$.
+la otra ecuación es idéntica salvo en un signo, y resulta $y=\frac14\left$x+\frac1{12}\left(1-8x\right)^{3/2}\right$+C.$ Cada solución tiene su propio haz de curvas; en la figura se representa una curva de cada solución, para $C=0$.
 
-[caption id="attachment_914" align="alignnone" width="465"][![Dos soluciones de 2y](/taller-matematicas/assets/images/no_lineal_ordinaria.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/no_lineal_ordinaria.png) Dos soluciones de 2y'² - y' + x = 0[/caption]
+$caption id="attachment_914" align="alignnone" width="465"$[![Dos soluciones de 2y](/taller-matematicas/assets/images/no_lineal_ordinaria.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/no_lineal_ordinaria.png) Dos soluciones de 2y'² - y' + x = 0[/caption]
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Ecuaciones en la que se puede despejar *y*
@@ -67,7 +67,7 @@ $\begin{array}{l}p'+\frac1xp=0\Rightarrow\frac{\operatorname dp}{\operatorname d
 
 La notación $p_h$ significa "solución de la ecuación homogénea" Para encontrar una solución particular de la ecuación completa, utilizamos el método de variación de constantes: $p=\frac{C\left(x\right)}x$; derivamos y sustituimos en la ecuación lineal:
 
-$\begin{array}{l}\begin{array}{l}p'=\frac{C'\left(x\right)\cdot x-C\left(x\right)\cdot1}{x^2}=C'\left(x\right)\frac1x-C\left(x\right)\frac1{x^2};\\p'+\frac1xp=\frac1{2x^2}\Rightarrow\left[C'\left(x\right)\frac1x-C\left(x\right)\frac1{x^2}\right]+\frac1xC\left(x\right)\cdot\frac1x=\frac1{2x^2}\Rightarrow\end{array}\\C'\left(x\right)\frac1x=\frac1{2x^2}\Rightarrow\frac{\operatorname dC}{\operatorname dx}=\frac1{2x}\Rightarrow\int\operatorname dC=\int\frac1{2x}\operatorname dx=\frac12\int\frac1x\operatorname dx\Rightarrow\\C\left(x\right)=\frac12\ln\left(x\right).\end{array}$
+$\begin{array}{l}\begin{array}{l}p'=\frac{C'\left(x\right)\cdot x-C\left(x\right)\cdot1}{x^2}=C'\left(x\right)\frac1x-C\left(x\right)\frac1{x^2};\\p'+\frac1xp=\frac1{2x^2}\Rightarrow\left$C'\left(x\right)\frac1x-C\left(x\right)\frac1{x^2}\right$+\frac1xC\left(x\right)\cdot\frac1x=\frac1{2x^2}\Rightarrow\end{array}\\C'\left(x\right)\frac1x=\frac1{2x^2}\Rightarrow\frac{\operatorname dC}{\operatorname dx}=\frac1{2x}\Rightarrow\int\operatorname dC=\int\frac1{2x}\operatorname dx=\frac12\int\frac1x\operatorname dx\Rightarrow\\C\left(x\right)=\frac12\ln\left(x\right).\end{array}$
 
 La solución particular es pues $p=\frac{C\left(x\right)}x,\;C\left(x\right)=\frac12\ln\left(x\right)\;\Rightarrow p=\frac{\ln\left(x\right)}{2x}$ y la solución general se obtiene combinando la solución de la homogénea y la solución particular:
 
@@ -79,7 +79,7 @@ $\left\{\begin{array}{l}p=C\frac1x+\frac{\ln\left(x\right)}{2x}\\x^2p^2=y\end{ar
 
 Tal como vienen dadas estas ecuaciones, para determinar los puntos $(x,y)$ de las curvas solución, damos valores a la variable independiente x, a continuación hallamos $p(x)$ con la primera ecuación, y por último hallamos $y(x,p)$ con la segunda ecuación:
 
-[caption id="attachment_940" align="alignnone" width="739"][*](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/parametricas.png) Algunos puntos (x,y) obtenidos de las ecuaciones paramétricas[/caption]
+$caption id="attachment_940" align="alignnone" width="739"$[*](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/parametricas.png) Algunos puntos (x,y) obtenidos de las ecuaciones paramétricas[/caption]
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Ecuaciones en la que se puede despejar x*
@@ -161,11 +161,11 @@ $y=v^{1/2}\Rightarrow y'=\frac1{2v^{1/2}}\frac{\operatorname dv}{\operatorname d
 
 Multipliquemos todo por $2v^{1/2}$ para obtener $v'-\frac3xv=4x$ que és lineal. Resolvemos esta ecuación usando la fórmula general (ver el post [Ecuaciones diferenciales lineales de 1r orden](http://tallermatematic.eu/wp/?p=897)):
 
-$y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left[C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right]$
+$y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left$C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right$$
 
 en nuestro caso es:
 
-$\begin{array}{l}\begin{array}{l}X(x)=-\frac3x,\;F(x)=4x\;\Rightarrow\int X\left(x\right)\operatorname dx=\int-\frac3x\operatorname dx=-3\ln\left(x\right),\\\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}=\int4x\cdot e^{-3\ln\left(x\right)}=\int4x\cdot x^{-3}=-4x^{-1},\\v(x)=e^{-\int X\left(x\right)\operatorname dx}\cdot\left[C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right]=\end{array}\\e^{3\ln\left(x\right)}\cdot\left[C-4x^{-1}\right]=Cx^3-4x^2\end{array}$
+$\begin{array}{l}\begin{array}{l}X(x)=-\frac3x,\;F(x)=4x\;\Rightarrow\int X\left(x\right)\operatorname dx=\int-\frac3x\operatorname dx=-3\ln\left(x\right),\\\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}=\int4x\cdot e^{-3\ln\left(x\right)}=\int4x\cdot x^{-3}=-4x^{-1},\\v(x)=e^{-\int X\left(x\right)\operatorname dx}\cdot\left$C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right$=\end{array}\\e^{3\ln\left(x\right)}\cdot\left$C-4x^{-1}\right$=Cx^3-4x^2\end{array}$
 
 deshacemos el cambio $v=y^{2}$ para obtener $y(x)=\pm\sqrt{Cx^3-4x^2}=\boxed{\pm x\sqrt{Cx-4}}.$
 **Ejemplo 6**:  La ecuación $x\left(dy/dx\right)+6y=3xy^{4/3}$ no és separable, ni lineal, ni homogénea ni exacta, pero dividiéndola por x resulta $dy/dx+6y/x=3y^{4/3}$, que es una ecuación de Bernoulli con $n=4/3, P(x)=1/x,\: Q(x)=3$, aplicando el cambio  $v=y^{1-4/3}=y^{-1/3}$ se transformarà en lineal.
