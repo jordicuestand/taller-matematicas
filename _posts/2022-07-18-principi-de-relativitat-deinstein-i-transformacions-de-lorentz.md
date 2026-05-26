@@ -28,13 +28,16 @@ Imaginem un cos rígid (no elàstic, de dimensions i forma estàtiques) en l'esp
 
 **Propietat** (no la demostrem): si independentment de la orientació del interval la seva longitud és sempre la mateixa, llavors la *referència és euclidiana* i les *coordenades són cartesianes*. En aquest cas la suma de diferencies de coordenades entre els dos punts P, Q del interval, que serà igual a la longitud al quadrat del interval, és independent de la referència.
 
-\$s^2=\left(x_{1P}-x_{1Q}\right)^2+\left(x_{2P}-x_{2Q}\right)^2+\left(x_{3P}-x_{3Q}\right)^2=(\Delta x_1)^2+(\Delta x_2)^2+(\Delta x_3)^2\$
+<<<<<<< HEAD
+=======
+$s^2=\left(x_{1P}-x_{1Q}\right)^2+\left(x_{2P}-x_{2Q}\right)^2+\left(x_{3P}-x_{3Q}\right)^2=\triangle{x^2}_1+\triangle{x^2}_2+\triangle{x^2}_3$
+>>>>>>> origin/main
 
 Els canvis de coordenades poden ser del tipus translació dels eixos, rotació dels eixos, o canvi d'escala; en el que segueix suposem que definim un segment unitari per tots els sistemes, així que tot canvi serà de translació i/o de rotació. Considerem ara quisns canvis de coordenades cartesianes produexen altres coordenades cartetesianes, i ho fem usant el fet de que els intervals han de tenir la mateixa longitud en qualsevol sistema, sent aquesta suma de diferències al quadrat: $\sum_\nu\triangle x_\nu^2=r^2$; en una altre referència R' la expressió és la mateixa, $\sum_\nu\triangle{x'_\nu}^2=r^2$.
 
 Expressem ara les x' com funcions derivables de les x, x'(x), i les desenvolupem en sèrie de Taylor: 
 
-\begin{equation} \label{eq:poly}\triangle x'_\nu={\textstyle\sum_\alpha}\frac{\partial x_\nu'}{\partial x_\alpha}\triangle x_\alpha+\frac12{\textstyle\sum_{\alpha\beta}}\frac{\partial^2x_\nu'}{\partial x_\alpha\partial x_\beta}\triangle x_\alpha\triangle x_\beta+\dots\end{equation}
+$$\begin{equation} \label{eq:poly}\triangle x'_\nu={\textstyle\sum_\alpha}\frac{\partial x_\nu'}{\partial x_\alpha}\triangle x_\alpha+\frac12{\textstyle\sum_{\alpha\beta}}\frac{\partial^2x_\nu'}{\partial x_\alpha\partial x_\beta}\triangle x_\alpha\triangle x_\beta+\dots\end{equation}$$
 
 Per veure que això és així considerem una funció f tal que x'=f(x), i un punt intermedi a dins l'interval $(x_2. x_1)$; desenvolupant f(x) al voltant del punt a (i suposant que el interval és petit):
 
@@ -46,11 +49,11 @@ ${\textstyle\sum_\nu}\left(\triangle x'_\nu\right)^2={\textstyle\sum_\nu}\left${
 
 La condició de que aquesta equació es compleixi  sempre, per tota funció x'(x) que relacioni les x' amb les x, és molt forta, tant, que de seguida veiem que només passarà si la funció x'(x) és ben simple: una relació lineal 
 
-\begin{equation}\label{eq:canvi}x'_\nu=x_\nu+{\textstyle\sum_\alpha}b_{\nu\alpha}x_\alpha\end{equation}
+$$\begin{equation}\label{eq:canvi}x'_\nu=x_\nu+{\textstyle\sum_\alpha}b_{\nu\alpha}x_\alpha\end{equation}$$
 
 que en termes de intervals equival a 
 
-\begin{equation}\label{eq:canvi2}\triangle x'_\nu={\textstyle\sum_\alpha}b_{\nu\alpha}\triangle x_\alpha\end{equation}
+$$\begin{equation}\label{eq:canvi2}\triangle x'_\nu={\textstyle\sum_\alpha}b_{\nu\alpha}\triangle x_\alpha\end{equation}$$
 
 Aquestes transformacions lineals de coordenades cartesianes són les úniques que preserven la longitud dels segments. Igualant el quadrat del interval en dos sistemes de coordenades i usant   [1] trobem una relació important:
 
@@ -294,5 +297,10 @@ $F_{23}=\frac{\partial A_3}{\partial x_2}-\frac{\partial A_2}{\partial x_3}=B_1;
 
 Usant tot el vist en els apartats anteriors pot demostrar-se ( veure per exemple *Electrodinàmica Clàssica - Jackson*) que les quatre equacions vectorials de Maxwell es redueixen a dues tensorials:
 
+<<<<<<< HEAD
 $\frac{\partial F_{\mu\nu}}{\partial x_\nu}=\frac{4\pi}cJ_\mu;\;\frac{\partial F_{\mu\nu}}{\partial x_\lambda}+\frac{\partial F_{\lambda\mu}}{\partial x_\nu}+\frac{\partial F_{\nu\lambda}}{\partial x_\mu}=0$
 {% endraw %}
+=======
+[math]\frac{\partial F_{\mu\nu}}{\partial x_\nu}=\frac{4\pi}cJ_\mu;\;\frac{\partial F_{\mu\nu}}{\partial x_\lambda}+\frac{\partial F_{\lambda\mu}}{\partial x_\nu}+\frac{\partial F_{\nu\lambda}}{\partial x_\mu}=0[/math]
+{% endraw %}
+>>>>>>> origin/main
