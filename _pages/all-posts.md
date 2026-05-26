@@ -1,10 +1,10 @@
 ---
-title: Totes les entrades
+title: Todas las entradas
 layout: default
-permalink: /totes-les-entrades/
+permalink: /all_posts/
 ---
 
-## Llista completa d'entrades
+## Lista completa de entrades
 
 <ul>
   {% for post in site.posts %}
