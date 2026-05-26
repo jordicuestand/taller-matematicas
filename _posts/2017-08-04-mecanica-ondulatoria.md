@@ -94,7 +94,7 @@ $\frac{i\hslash}v\frac{\operatorname dv}{\operatorname dt}=E\Rightarrow\int\frac
 
 donde C es una constante de integración; la función de onda toma la forma $\psi\left(r,t\right)=C\cdot u\left(r\right)\cdot exp\left(\frac{Et}{i\hslash}\right)=C\cdot u\left(r\right)\cdot exp\left(\frac{-iEt}{\hslash}\right)$.  La exponencial compleja $exp\left(\frac{-iEt}ℏ\right)$ tiene módulo 1, así que el módulo de la función de onda viene determinado por la función u(r), en efecto:
 
-$\begin{array}{l}\left|\psi\left(r,t\right)\right|^2=\psi^\ast\left(r,t\right)\cdot\psi\left(r,t\right)=\left[u\left(r\right)\cdot exp\left(\frac{-iEt}ℏ\right)\right]^\ast\cdot\left[u\left(r\right)\cdot exp\left(\frac{-iEt}ℏ\right)\right]=\\u^2\left(r\right)\left[\left(\cos\left(z\right)+i\sin\left(z\right)\right)\right]\cdot\left[\left(\cos\left(z\right)-i\sin\left(z\right)\right)\right]=u^2\left(r\right)\end{array}$
+$\begin{array}{l}\left|\psi\left(r,t\right)\right|^2=\psi^\ast\left(r,t\right)\cdot\psi\left(r,t\right)=\left$u\left(r\right)\cdot exp\left(\frac{-iEt}ℏ\right)\right$^\ast\cdot\left$u\left(r\right)\cdot exp\left(\frac{-iEt}ℏ\right)\right$=\\u^2\left(r\right)\left$\left(\cos\left(z\right)+i\sin\left(z\right)\right)\right$\cdot\left$\left(\cos\left(z\right)-i\sin\left(z\right)\right)\right$=u^2\left(r\right)\end{array}$
 
 donde hemos aplicado la [fórmula de Euler](https://es.wikipedia.org/wiki/F%C3%B3rmula_de_Euler) para la exponencial compleja. Vemos que aunque la función de onda depende del tiempo, la densidad de probabilidad de encontrar la partícula en algun sitio es constante en el tiempo: los estados cuánticos en los que se cumple esto se llaman **estados estacionarios**.
 ## Partícula libre, energía cinética cuántica
@@ -120,7 +120,7 @@ $-\frac{\hslash^2}{2m}\frac{\operatorname d^2u\left(x\right)}{\operatorname dx^2
 
 El confinamiento en una región puede modelarse mediante un potencial V(x) tal que sea cero dentro de la región y sea infinito fuera de la región, ya que la energía total es la suma del potencial más la energía cinética, $E = V + E_c$, cuando V = 0 sólo hay energía cinética, y fuera de la región permitida se violaría la conservación de la energía total.
 
-[caption id="attachment_150523" align="alignnone" width="519"]![](/taller-matematicas/assets/images/barrera_potencial.png) Barrera de potencial unidimensional: la partícula sólo puede moverse dentro de la región (-a, +a)[/caption]
+$caption id="attachment_150523" align="alignnone" width="519"$![](/taller-matematicas/assets/images/barrera_potencial.png) Barrera de potencial unidimensional: la partícula sólo puede moverse dentro de la región (-a, +a)[/caption]
 
 Siendo V = 0 dentro del recinto, podemos aplicar la ecuación [8], que es una ecuación diferencial lineal de segundo orden, con solución general (real):
 
@@ -151,7 +151,7 @@ $\psi\left(x\right)=\left\{\begin{array}{l}A\sin\left(\frac{n\mathrm\pi}{2a}\rig
 
 En la gráfica siguiente se representa la densidad de probabilidad u(x)² para los niveles n = 1, n = 2; en este segundo nivel la partícula nunca se encuentra en el centro de la región x = 0.
 
-[caption id="attachment_150524" align="alignnone" width="647"]![](/taller-matematicas/assets/images/nivells-energia-basics.png) Densidad de probabilidad para los primeros niveles energéticos permitidos, caso de partícula confinada en una región (-a, a). La escala de la abcisa viene dada en fraciones de a.[/caption]
+$caption id="attachment_150524" align="alignnone" width="647"$![](/taller-matematicas/assets/images/nivells-energia-basics.png) Densidad de probabilidad para los primeros niveles energéticos permitidos, caso de partícula confinada en una región (-a, a). La escala de la abcisa viene dada en fraciones de a.[/caption]
 
 Estas formas de la función de densidad de probabilidad recuerdan a las de las [ondas estacionarias de la cuerda vibrante](https://es.wikipedia.org/wiki/Cuerda_vibrante), que también presentant modos de vibración parecidos a los niveles energéticos cuánticos.
 {% endraw %}

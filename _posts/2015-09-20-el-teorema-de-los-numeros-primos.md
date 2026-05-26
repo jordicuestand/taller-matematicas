@@ -135,7 +135,7 @@ La suma de los recíprocos de todos los primos hasta el primo *p* es del orden d
 
 Ya hemos visto que $\log\left(\sum\nolimits_{n=1}^\infty\frac1n\right)\approx\sum_p\frac1p$; por otro lado el mismo Euler provó que:
 
-$\underset{n\rightarrow\infty}{lim}\left[\left(\sum\nolimits_{n=1}^\infty\frac1n\right)-\ln\left(n\right)\right]=\gamma=0.5772156649\dots$
+$\underset{n\rightarrow\infty}{lim}\left$\left(\sum\nolimits_{n=1}^\infty\frac1n\right)-\ln\left(n\right)\right$=\gamma=0.5772156649\dots$
 
 donde la constante $\gamma$ se conoce por la [constante de Euler-Mascheroni](https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant); usando esta igualdad llegamos a:
 

@@ -40,7 +40,7 @@ Tomando $r=\frac R{\left|C\right|}$ se cumple la condición de continuidad unifo
 ---
 
 **2.** Estudiar la continuidad de la función dada por:
-$\left\{\begin{array}{l}\sqrt{x^2-1}\;\text{si }x\in\left(-\infty,-1\right),\\x^2+2x+1\;\text{si }x\in\left[-1,10\right],\\\frac{121}{10}x\;\text{si }x\in\left(10,+\infty\right).\end{array}\right.$
+$\left\{\begin{array}{l}\sqrt{x^2-1}\;\text{si }x\in\left(-\infty,-1\right),\\x^2+2x+1\;\text{si }x\in\left$-1,10\right$,\\\frac{121}{10}x\;\text{si }x\in\left(10,+\infty\right).\end{array}\right.$
 
 La primera expresión de la función, $\sqrt{x^2-1}\;\text{si }x\in\left(-\infty,-1\right),$ es la composición de dos funciones:
 
@@ -108,7 +108,7 @@ Vemos que hay un cambio de signo entre $x=-1$ y $x=0$, por el Teorema de Bolzano
 
 Hay infinitas funciones como las que nos piden: las funciones con asíntotas horizontales no alcanzan nunca ciertos valores. Por ejemplo, la función:
 
-[caption id="attachment_442" align="alignnone" width="507"][![f(x)= 1+exp(x) si x=0](/taller-matematicas/assets/images/ni_suprem_ni_infim.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim.png) f(x)= 1+exp(x) si x<0, 1èxp(-x) si x>=0[/caption]
+$caption id="attachment_442" align="alignnone" width="507"$[![f(x)= 1+exp(x) si x=0](/taller-matematicas/assets/images/ni_suprem_ni_infim.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim.png) f(x)= 1+exp(x) si x<0, 1èxp(-x) si x>=0[/caption]
 
 $f\left(x\right)=\left\{\begin{array}{l}1+e^x\;\text{si }x&lt;0\\1+e^{-x}\;\text{si }x\geq0\end{array}\right.$
 
@@ -126,7 +126,7 @@ luego
 $y=1$ es una asíntota horizontal.
 Observemos que $1&lt;f\left(x\right)\leq2$ así que la función no alcanza nunca su valor ínfimo (la mayor de las cotas inferiores). En cambio si que alcanza su valor supremo $y=2$ en $x=0$. Necesitamos una función con dos asíntotas horizontales distintas, por ejemplo:
 
-[caption id="attachment_443" align="alignnone" width="500"][![Función con dos asíntotas horizontales](/taller-matematicas/assets/images/ni_suprem_ni_infim2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim2.png) Función con dos asíntotas horizontales[/caption]
+$caption id="attachment_443" align="alignnone" width="500"$[![Función con dos asíntotas horizontales](/taller-matematicas/assets/images/ni_suprem_ni_infim2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim2.png) Función con dos asíntotas horizontales[/caption]
 
 $\left\{\begin{array}{l}\frac{5x^2-1}{x^2}\;\text{si }x&lt;-1\\\frac{7-x}2\;\text{si }-1\leq x\leq1\\\frac{2x^2+1}{x^2}\;\text{si }x&gt;1\end{array}\right.$
 El lector puede comprobar, por el mismo método del ejemplo anterior, que esta función tiene una asíntota a la derecha  $y=2$, otra asíntota a la izquierda $y=5$ y que es continua en todos los puntos. En este caso la función no alcanza ni su supremo $y=5$ ni su ínfimo $y=2$. Esto no contradice el teorema de Weierstrass (recordemos que nos dice que toda función continua en un compacto alcanza su valor máximo y su mínimo) puesto que el dominio de definición debería ser un compacto (un conjunto cerrado y acotado), mientras que para esta función el dominio es todo $\mathbb{R}$, que no es cerrado ni acotado.
@@ -167,7 +167,7 @@ Necesitamos recordar la siguiente propiedad de los números reales y racionales
 Entre dos números reales cualesquiera, existen infinitos números reales (racionales e irracionales). En particular, entre dos números racionales cualesquiera, existen infinitos números reales (racionales e irracionales). 
 Entonces, dado un racional cualquiera $a\in\mathbb{Q}$, si intentamos calcular el límite $\lim_{x\rightarrow a\in\mathbb{Q}}f\left(x\right)$, nos encontramos con problemas, pues tenemos que aplicar las dos definiciones de la función, no importa lo cerca que nos aproximemos al punto $a$. Más precisamente, si aplicamos la definición de límite, dado un $\delta&gt;0$, no existe un $\varepsilon&gt;0$ tal que, si $\left|x-a\right|&lt;\varepsilon$ entonces $\left|f\left(x\right)-f\left(a\right)\right|&lt;\delta$, pues en el intervalo centrado en *a* $\left(a-x,\;a+x\right)$ con $\left|a-x\right|&lt;\varepsilon$ existen infinitos racionales e infinitos irracionales, y no todos ellos estarán dentro del intervalo $\left(f\left(a\right)-\delta,\;f\left(a\right)+\delta\right).$ Hay una excepción: si vemos la gráfica de la función nos daremos cuenta.
 
-[caption id="attachment_445" align="alignnone" width="407"][![Función discontinua en todos los puntos, excepto en x=1/2](/taller-matematicas/assets/images/discontinua_tot_punt.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/discontinua_tot_punt.png) Función discontinua en todos los puntos, excepto en x=1/2[/caption]
+$caption id="attachment_445" align="alignnone" width="407"$[![Función discontinua en todos los puntos, excepto en x=1/2](/taller-matematicas/assets/images/discontinua_tot_punt.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/discontinua_tot_punt.png) Función discontinua en todos los puntos, excepto en x=1/2[/caption]
 Las dos rectas contienen infinitos puntos, pero no todos: la de pendiente positiva contiene los racionales, la otra los irracionales.  Vemos pues que dado cualquier $x=a$, por ejemplo, $a=1$, en cualquier entorno de ese punto hay infinitas imágenes en las dos rectas, cuando nos acercamos al punto $a$ la función va oscilando entre las dos rectas. Pero en el punto $x=1/2$ se cruzan ambas . En ese punto:
 
 $\lim_{x\rightarrow1/2}f\left(x\right)=\left\{\begin{array}{l}\frac12\;\text{si }x\;\text{es racional}\\1-\frac12\;=\frac12\;\text{si }x\;\text{es irracional}\end{array}\right.$
@@ -185,18 +185,18 @@ donde $g(x)$ es desconocida. Nos piden que demostremos que $g(x)=0$. Siguiendo e
 
 ---
 
-**9.** Sea la función continua $f(x)$ definida en el intervalo cerrado $[a,b]$. Definimos la función $g(x)$ de la siguiente forma: $g(a)=f(a)$, y para valores distintos de $a$, definimos $g\left(x_0\right)=\text{Max }\left\{f\left(x\right)\left|x\in\left[a,x_0\right]\right.\right\}$. Estudiar la continuidad de $g(x)$.
+**9.** Sea la función continua $f(x)$ definida en el intervalo cerrado $[a,b]$. Definimos la función $g(x)$ de la siguiente forma: $g(a)=f(a)$, y para valores distintos de $a$, definimos $g\left(x_0\right)=\text{Max }\left\{f\left(x\right)\left|x\in\left$a,x_0\right$\right.\right\}$. Estudiar la continuidad de $g(x)$.
 En primer lugar nos damos cuenta de que la función $g(x)$ tiene sentido, está bien definida, esto es, para cada valor $x$ existe la imagen $g(x)$; en efecto, como $f(x)$ es continua, alcanzará su valor máximo en todo intervalo cerrado (Teorema de Weierstrass). Al definir $g(y)$ com el valor máximo de $f(x)$ en el intervalo cerrado $[a,x]$, aseguramos que ese máximo existe.
 
 En segundo lugar, es fácil ver que $g(x)$ es una función creciente: a medida que aumentamos los valores de $x$, el máximo de $f(x)$ en el intervalo  $[a,x]$ no puede disminuir por definición: o bien no aumenta, o bien encontramos un nuevo máximo mayor que el anterior.
 
-Además, siendo $f$ continua, al movernos de un valor $x$ a otro próximo $x+\varepsilon$ las imágenes no pueden variar "demasiado", esto es, la variación estará acotada, y también los valores máximos de $f$  han de estarlo; por ello, dado un $\delta&gt;0$, siempre podremos encontrar un $\varepsilon&gt;0$ tal que si $\left|x_1-x_2\right|&lt;\varepsilon$ entonces la variación en los máximos en los intervalos $[a,x_1]$ y $[a,x_2]$ no será mayor que $\varepsilon$: la función $g$ es continua.
+Además, siendo $f$ continua, al movernos de un valor $x$ a otro próximo $x+\varepsilon$ las imágenes no pueden variar "demasiado", esto es, la variación estará acotada, y también los valores máximos de $f$  han de estarlo; por ello, dado un $\delta&gt;0$, siempre podremos encontrar un $\varepsilon&gt;0$ tal que si $\left|x_1-x_2\right|&lt;\varepsilon$ entonces la variación en los máximos en los intervalos $$a,x_1$$ y $$a,x_2$$ no será mayor que $\varepsilon$: la función $g$ es continua.
 
-Como ejemplo concreto, consideremos $f(x)=\sin\left(x\right)$ en $\left[0,2\pi\right]$, y representemos $f,g$:
+Como ejemplo concreto, consideremos $f(x)=\sin\left(x\right)$ en $\left$0,2\pi\right$$, y representemos $f,g$:
 
-[caption id="attachment_446" align="alignnone" width="496"][![Función f(x)=Sin(x) (azul), y función g(x) (verde)](/taller-matematicas/assets/images/Apostol_4_19.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/Apostol_4_19.png) Función f(x)=Sin(x) (azul), y función g(x) (verde)[/caption]
+$caption id="attachment_446" align="alignnone" width="496"$[![Función f(x)=Sin(x) (azul), y función g(x) (verde)](/taller-matematicas/assets/images/Apostol_4_19.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/Apostol_4_19.png) Función f(x)=Sin(x) (azul), y función g(x) (verde)[/caption]
 
-Vemos que $g(x)$ coincide con $f(x)$ en $\left[0,\pi/2\right]$ hasta que $f(x)$ alcanza su valor máximo absoluto en $x=\pi/2$, a partir de ahí $g(x)$ queda constante.
+Vemos que $g(x)$ coincide con $f(x)$ en $\left$0,\pi/2\right$$ hasta que $f(x)$ alcanza su valor máximo absoluto en $x=\pi/2$, a partir de ahí $g(x)$ queda constante.
 
 ---
 

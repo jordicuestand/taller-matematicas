@@ -51,7 +51,7 @@ En el ejemplo 2 hemos visto que podemos tener soluciones que no están incluidas
 
 ### Curva envolvente de un haz de curvas y solución singular
 
-[caption id="attachment_868" align="alignnone" width="436"][![Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)](/taller-matematicas/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)[/caption]
+$caption id="attachment_868" align="alignnone" width="436"$[![Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)](/taller-matematicas/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)[/caption]
 Dado un haz de curvas $F(x,y,C)=0$ se denomina curva envolvente del haz a la curva $f(x,y)$ tal que es tangente a todas las curvas del haz.
 
 **Ejemplo 3**: en la imagen se muestran dos rectas del haz de rectas $y=(1-10/C)*x+(10-C)$, concretamente las dos rectas correspondientes a los valores $C=3$ en rojo y $C=6$ en azul, y la curva envolvente del haz, que es tangente a la primera recta en un punto cercano a $x=1, y=5$ y a la segunda recta cerca de $x=3.5, y=1.5$.
@@ -60,7 +60,7 @@ Recordemos que podemos asociar a cualquier haz de curvas $F(x,y,C)=0$ una ecuac
 
 **Ejemplo 4**. Consideremos el haz de parábolas $4y=(x + C)^2$, todas las curvas son tangentes al eje X en algún punto; en la imagen se representan tres de las curvas del haz, tangentes a $y=0$ en los puntos $x=-3, -2, -1$.
 
-[caption id="attachment_866" align="alignnone" width="502"][![Haz de parábolas 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Haz de parábolas 4y=(x + C)²[/caption]
+$caption id="attachment_866" align="alignnone" width="502"$[![Haz de parábolas 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Haz de parábolas 4y=(x + C)²[/caption]
 ¿Cuál es la ecuación diferencial del haz de curvas? Derivamos respecto a *x *la ecuación del haz: $4y'=2(x + C)$, y eliminamos la constante *C* usando esta igualdad y la ecuación del haz:
 
 $\left.\begin{array}{r}4y'=2(x+C)\Rightarrow C=2y'-x\\4y=(x\;+\;C)^2\end{array}\right\}\Rightarrow4y=(2y'{)^2=4y'^2}\Rightarrow y=y'^2.$
@@ -82,11 +82,11 @@ $\begin{array}{l}F(x,y,C\left(x\right))=0\Rightarrow\\\frac{\operatorname d{F(x,
 
 Despejamos y':
 
-$y'=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left[\frac{\partial F(x,y,C)}{\partial x}+\frac{\partial F(x,y,C)}{\partial C}C'\right].$
+$y'=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left$\frac{\partial F(x,y,C)}{\partial x}+\frac{\partial F(x,y,C)}{\partial C}C'\right$.$
 
 Las dos expresiones para la derivada y' han de ser iguales:
 
-$y'=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left[\frac{\partial F(x,y,C)}{\partial x}+\frac{\partial F(x,y,C)}{\partial C}C'\right]=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left[\frac{\partial F(x,y,C)}{\partial x}\right].$
+$y'=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left$\frac{\partial F(x,y,C)}{\partial x}+\frac{\partial F(x,y,C)}{\partial C}C'\right$=\left(\frac{\partial F(x,y,C)}{\partial y}\right)^{-1}\left$\frac{\partial F(x,y,C)}{\partial x}\right$.$
 
 Vemos que ha de ser: $\frac{\partial F(x,y,C)}{\partial C}C'=0,$ que tiene dos soluciones posibles, la trivial $C'=0\Rightarrow C=cte$ y la condición $\frac{\partial F(x,y,C)}{\partial C}=0.$ La primera es una solución sin importancia pues nos dice que la constante C no dependerá
 de x (haz de curvas degenerado: todas la curvas son iguales), mientras que la segunda es la condición general que ha de cumplir la envolvente.
@@ -136,7 +136,7 @@ $\begin{array}{l}\int\frac{t\operatorname dt}{-t^2+t+2}=\int\frac{-1/3}{t+1}+\in
 
 Igualamos las dos integrales, y deshacemos los cambios para obtener la solución general en forma implícita:
 
-$\begin{array}{l}\ln\left(\left(t+1\right)\left(t-2\right)^2\right)^{-1/3}=\ln\left(x\right)+C\Leftrightarrow\\Cx=\left(\left(t+1\right)\left(t-2\right)^2\right)^{-1/3}=\left(t^3-3t^2+4\right)^{-1/3}\Leftrightarrow\\\frac C{x^3}=\left(u^2+1\right)^{3/2}-3u^2+1\Leftrightarrow\\C=x^3\left[\left(\left(\frac yx\right)^2+1\right)^\frac32-3\left(\frac yx\right)^2+1\right].\end{array}.$
+$\begin{array}{l}\ln\left(\left(t+1\right)\left(t-2\right)^2\right)^{-1/3}=\ln\left(x\right)+C\Leftrightarrow\\Cx=\left(\left(t+1\right)\left(t-2\right)^2\right)^{-1/3}=\left(t^3-3t^2+4\right)^{-1/3}\Leftrightarrow\\\frac C{x^3}=\left(u^2+1\right)^{3/2}-3u^2+1\Leftrightarrow\\C=x^3\left$\left(\left(\frac yx\right)^2+1\right)^\frac32-3\left(\frac yx\right)^2+1\right$.\end{array}.$
 
 #### Reducción a homogénea
 

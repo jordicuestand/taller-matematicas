@@ -183,7 +183,7 @@ Sustituimos las expresiones de $y_1'', y_2''$ en la expresión de y'':
 
 $\begin{array}{l}y''=\left(u_1'y_1'+u_2'y_2'\right)+\left(u_1y_1''+u_2y_2''\right)=\\\left(u_1'y_1'+u_2'y_2'\right)+u_1\left(-P(x)y_1'-Q(x)y_1\right)+u_2\left(-P(x)y_2'-Q(x)y_2\right)=\\\left(u_1'y_1'+u_2'y_2'\right)-\left(u_1y_1'+u_2y_2'\right)P(x)-\left(u_1y_1+u_2y_2\right)Q(x)=\\\left(u_1'y_1'+u_2'y_2'\right)-y'P(x)-yQ(x)\\\end{array}$
 
-Substituyendo en la ecuación completa queda reducida a $\begin{array}{l}\left[\left(u_1'y_1'+u_2'y_2'\right)-y'P(x)-yQ(x)\right]+P(x)y'+Q(x)y=F(x)\Leftrightarrow\\u_1'y_1'+u_2'y_2'=F(x)\\\\\end{array}$.
+Substituyendo en la ecuación completa queda reducida a $\begin{array}{l}\left$\left(u_1'y_1'+u_2'y_2'\right)-y'P(x)-yQ(x)\right$+P(x)y'+Q(x)y=F(x)\Leftrightarrow\\u_1'y_1'+u_2'y_2'=F(x)\\\\\end{array}$.
 
 En definitiva, el método reduce la ecuación de segundo orden lineal  completa a un sistema de dos ecuaciones lineales de orden 1:
 
@@ -209,11 +209,11 @@ $u_1'\sin\left(x\right)+u_2'\cos\left(x\right)=0\Leftrightarrow u_2'=-u_1'\tan\l
 
 Ahora que ya tenemos $u_1, u_2$ podemos escribir la solución particular:
 
-$\begin{array}{l}y_p=u_1y_1+u_2y_2=-\ln\left(\cos\left(x\right)\right)\cdot\sin\left(x\right)-\tan^2\left(x\right)\cdot\cos\left(x\right)=\\-\sin\left(x\right)\left[\ln\left(\cos\left(x\right)\right)+\tan\left(x\right)\right]\end{array}$
+$\begin{array}{l}y_p=u_1y_1+u_2y_2=-\ln\left(\cos\left(x\right)\right)\cdot\sin\left(x\right)-\tan^2\left(x\right)\cdot\cos\left(x\right)=\\-\sin\left(x\right)\left$\ln\left(\cos\left(x\right)\right)+\tan\left(x\right)\right$\end{array}$
 
 y la solución general la obtenemos sumando la de la homogénea y la particular:
 
-$y=y_h+y_p=C_1\cos\left(x\right)+C_2\sin\left(x\right)-\sin\left(x\right)\left[\ln\left(\cos\left(x\right)\right)+\tan\left(x\right)\right].$
+$y=y_h+y_p=C_1\cos\left(x\right)+C_2\sin\left(x\right)-\sin\left(x\right)\left$\ln\left(\cos\left(x\right)\right)+\tan\left(x\right)\right$.$
 
 **NOTA**: De hecho el sistema de dos ecuaciones se puede resolver de forma general, por ejemplo aplicando la regla de Cramer:
 
@@ -285,11 +285,11 @@ $y'=\frac{\operatorname dy}{\operatorname dx}=\frac{\operatorname dy}{\operatorn
 y aplicando la misma técnica reiteradamente:
 
 $\begin{array}{l}y''=\frac{\operatorname dy'}{\operatorname dx}=\frac d{dx}\left(\frac{\operatorname dy}{\operatorname dt}e^{-t}\right)=\frac d{dt}\left(\frac{\operatorname dy}{\operatorname dt}e^{-t}\right)\frac{\operatorname dt}{\operatorname dx}=\left(\frac{\operatorname d^2y}{\operatorname dt^2}e^{-t}-\frac{\operatorname dy}{\operatorname
-dt}e^{-t}\right)e^{-t}=e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right);\\y'''=\frac{\operatorname dy''}{\operatorname dx}=\frac d{dx}\left[e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)\right]=\frac d{dt}\left[e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)\right]\frac{\operatorname dt}{\operatorname dx}=\\\left[-2e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)+e^{-2t}\left(\frac{\operatorname d^3y}{\operatorname dt^3}-\frac{\operatorname d^2y}{\operatorname dt^2}\right)\right]e^{-t}=\\e^{-3t}\left[\frac{\operatorname d^3y}{\operatorname dt^3}-3\frac{\operatorname d^2y}{\operatorname dt^2}+2\frac{\operatorname dy}{\operatorname dt}\right]\\\end{array}$
+dt}e^{-t}\right)e^{-t}=e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right);\\y'''=\frac{\operatorname dy''}{\operatorname dx}=\frac d{dx}\left$e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)\right$=\frac d{dt}\left$e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)\right$\frac{\operatorname dt}{\operatorname dx}=\\\left$-2e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)+e^{-2t}\left(\frac{\operatorname d^3y}{\operatorname dt^3}-\frac{\operatorname d^2y}{\operatorname dt^2}\right)\right$e^{-t}=\\e^{-3t}\left$\frac{\operatorname d^3y}{\operatorname dt^3}-3\frac{\operatorname d^2y}{\operatorname dt^2}+2\frac{\operatorname dy}{\operatorname dt}\right$\\\end{array}$
 
 Sustituimos en la ecuación original:
 
-$\begin{array}{l}3x^3y^{'''}+5x^2y''-xy'\;+y=x\Leftrightarrow\\3e^{3t}e^{-3t}\left[\frac{\operatorname d^3y}{\operatorname dt^3}-3\frac{\operatorname d^2y}{\operatorname dt^2}+2\frac{\operatorname dy}{\operatorname dt}\right]+5e^{2t}e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)-e^t\frac{\operatorname dy}{\operatorname dt}e^{-t}+y=e^t\end{array}$,
+$\begin{array}{l}3x^3y^{'''}+5x^2y''-xy'\;+y=x\Leftrightarrow\\3e^{3t}e^{-3t}\left$\frac{\operatorname d^3y}{\operatorname dt^3}-3\frac{\operatorname d^2y}{\operatorname dt^2}+2\frac{\operatorname dy}{\operatorname dt}\right$+5e^{2t}e^{-2t}\left(\frac{\operatorname d^2y}{\operatorname dt^2}-\frac{\operatorname dy}{\operatorname dt}\right)-e^t\frac{\operatorname dy}{\operatorname dt}e^{-t}+y=e^t\end{array}$,
 
 operando, nos queda una ecuación lineal con coeficientes constantes:
 
@@ -297,7 +297,7 @@ $3\frac{\operatorname d^3y}{\operatorname dt^3}-4\frac{\operatorname d^2y}{\oper
 
 ensayamos una solución del tipo $Ate^t$, ya que $Ae^t$ es una solución de la homogénea:
 
-$\begin{array}{l}y=Ate^t;\;\frac{\operatorname dy}{\operatorname dt}=\left(1+t\right)Ae^t;\frac{\operatorname d^2y}{\operatorname dt^2}=\left(2+t\right)Ae^t;\frac{\operatorname d^3y}{\operatorname dt^3}=\left(3+t\right)Ae^t;\\3\frac{\operatorname d^3y}{\operatorname dt^3}-4\frac{\operatorname d^2y}{\operatorname dt^2}+y=e^t\Leftrightarrow\left[3\left(3+t\right)-4\left(2+t\right)+t\right]Ae^t=e^t\Leftrightarrow A=1\end{array}$
+$\begin{array}{l}y=Ate^t;\;\frac{\operatorname dy}{\operatorname dt}=\left(1+t\right)Ae^t;\frac{\operatorname d^2y}{\operatorname dt^2}=\left(2+t\right)Ae^t;\frac{\operatorname d^3y}{\operatorname dt^3}=\left(3+t\right)Ae^t;\\3\frac{\operatorname d^3y}{\operatorname dt^3}-4\frac{\operatorname d^2y}{\operatorname dt^2}+y=e^t\Leftrightarrow\left$3\left(3+t\right)-4\left(2+t\right)+t\right$Ae^t=e^t\Leftrightarrow A=1\end{array}$
 
 La solución particular la obtenemos deshaciendo el cambio de variable: $y_p=te^t=\ln\left(x\right)\cdot x;\;$ y la solución general será:
 

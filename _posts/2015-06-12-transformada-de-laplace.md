@@ -35,22 +35,22 @@ La idea detrás de las transformadas integrales es, en un problema dado converti
 
 $L\left(f\left(x\right)\right)=\int_De^{-zt}\cdot f\left(t\right)\operatorname dt=F\left(z\right)$
 
-El dominio de integración es $\left[0,\infty\right],$ tenemos pues una integral impropia.
+El dominio de integración es $\left$0,\infty\right$,$ tenemos pues una integral impropia.
 **Ejemplo 2**: La transformada de Laplace de la función $f(x)=e^x$ es:
 
-$L\left(e^x\right)=\int_De^{-zt}\cdot e^t\operatorname dt=\int_0^\infty e^{\left(1-z\right)t}\operatorname dt=\left[\frac{e^{\left(1-z\right)t}}{1-z}\right]_0^\infty$
+$L\left(e^x\right)=\int_De^{-zt}\cdot e^t\operatorname dt=\int_0^\infty e^{\left(1-z\right)t}\operatorname dt=\left$\frac{e^{\left(1-z\right)t}}{1-z}\right$_0^\infty$
 
 esta integral impropia se resulve por paso al límite:
 
-$\lim_{b\rightarrow\infty}\left[\frac{e^{\left(1-z\right)t}}{1-z}\right]_0^b=\frac1{1-z}\left[\lim_{b\rightarrow\infty}e^{\left(1-z\right)b}-1\right]=-\frac1{1-z}\text{si }z&gt;1$
+$\lim_{b\rightarrow\infty}\left$\frac{e^{\left(1-z\right)t}}{1-z}\right$_0^b=\frac1{1-z}\left$\lim_{b\rightarrow\infty}e^{\left(1-z\right)b}-1\right$=-\frac1{1-z}\text{si }z&gt;1$
 
 Así pues $L\left(e^x\right)=\frac1{z-1}$ siempre que $z&gt;1$. Esto es la regla común: al calcular la transformada habitualmente tendremos que restringir los valores de la variable independiente z para que la integral exista.
 
 **Ejemplo 3**: La transformada de la función $y=Cx^n$ nos lleva a la integral $L(Cx^n)=\int_0^\infty e^{-zt}Ct^n\operatorname dt$ que podemos hacer por partes:
 
-$\begin{array}{l}L(Cx^n)=\int_0^\infty e^{-zt}Ct^n\operatorname dt=C\left[-t^n\frac1ze^{-zt}\right]_0^\infty+C\int_0^\infty\frac1ze^{-zt}nt^{n-1}\operatorname dt\\u=t^n,\;\operatorname du=nt^{n-1},\operatorname dv=e^{-zt},v=-\frac1ze^{-zt}\end{array}$
+$\begin{array}{l}L(Cx^n)=\int_0^\infty e^{-zt}Ct^n\operatorname dt=C\left$-t^n\frac1ze^{-zt}\right$_0^\infty+C\int_0^\infty\frac1ze^{-zt}nt^{n-1}\operatorname dt\\u=t^n,\;\operatorname du=nt^{n-1},\operatorname dv=e^{-zt},v=-\frac1ze^{-zt}\end{array}$
 
-El primer miembro es cero, y para el segundo miembro volviendo a hacer por partes la integral $\frac nz\int_0^\infty e^{-zt}t^{n-1}\operatorname dt$ reducimos el orden del exponente de t; reiterando el procedimiento llegamos a la integral $\frac{n!}{z^n}\int_0^\infty e^{-zt}\operatorname dt=\frac{n!}{z^n}\left[-\frac1ze^{-zt}\right]_0^\infty=\frac{n!}{z^{n+1}}$. Por tanto nos queda $L(Cx^n)=C\frac{n!}{z^{n+1}}.$
+El primer miembro es cero, y para el segundo miembro volviendo a hacer por partes la integral $\frac nz\int_0^\infty e^{-zt}t^{n-1}\operatorname dt$ reducimos el orden del exponente de t; reiterando el procedimiento llegamos a la integral $\frac{n!}{z^n}\int_0^\infty e^{-zt}\operatorname dt=\frac{n!}{z^n}\left$-\frac1ze^{-zt}\right$_0^\infty=\frac{n!}{z^{n+1}}$. Por tanto nos queda $L(Cx^n)=C\frac{n!}{z^{n+1}}.$
 
 # Tablas de transformadas
 
@@ -119,7 +119,7 @@ ght)\Leftrightarrow R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\mathc
 
 Hemos indicado la transformación de Laplace por el símbolo $\mathcal{L}$ para no confundirlo con la letra L de la inductancia. Ahora aplicamos la propiedad de la transformada de la derivada y reordenamos:
 
-$\begin{array}{l}R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\mathcal{L}\left(I'\right)\Leftrightarrow R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\left[z\mathcal{L}\left(I\right)-I\left(0\right)\right];\\\mathcal{L}\left(I\right)\left[R+Lz\right]=LI\left(0\right)+\mathcal{L}\left(V\right);\\\mathcal{L}\left(I\right)=\frac{LI\left(0\right)+\mathcal{L}\left(V\right)}{R+Lz}\end{array}$
+$\begin{array}{l}R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\mathcal{L}\left(I'\right)\Leftrightarrow R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\left$z\mathcal{L}\left(I\right)-I\left(0\right)\right$;\\\mathcal{L}\left(I\right)\left$R+Lz\right$=LI\left(0\right)+\mathcal{L}\left(V\right);\\\mathcal{L}\left(I\right)=\frac{LI\left(0\right)+\mathcal{L}\left(V\right)}{R+Lz}\end{array}$
 
 Consideremos ahora el segundo miembro como una fracción racional en la variable z, y tengamos en cuenta que como V es constante será $\mathcal{L}\left(V\right)=\frac Vz$  (tabla de transformadas, línea 1). Descomponemos en suma de fracciones simples:
 
@@ -140,7 +140,7 @@ Para derivadas de orden superior el procedimiento es el mismo, aplicando la sigu
 
 Transformamos la ecuación usando la transformada de la función seno y de la derivada segunda:
 
-$\begin{array}{l}\mathcal{L}\left(x''+\omega_0^2x\right)=\mathcal{L}\left(F\sin\left(\omega t\right)\right)\Leftrightarrow\\z^2\mathcal{L}\left(x\right)+z\cancel{x'(0)}+\cancel{x(0)}+\omega_0^2\mathcal{L}\left(x\right)=F\mathcal{L}\left(\sin\left(\omega t\right)\right)\Leftrightarrow\\\mathcal{L}\left(x\right)\left[z^2+\omega_0^2\right]=F\mathcal{L}\left(\sin\left(\omega t\right)\right)\Leftrightarrow\\\mathcal{L}\left(x\right)=\frac{F\mathcal{L}\left(\sin\left(\omega t\right)\right)}{z^2+\omega_0^2}=\frac{F{\displaystyle\frac\omega{z^2+\omega^2}}}{z^2+\omega_0^2}\Leftrightarrow\\x\left(t\right)=\mathcal{L}^{-1}\left[\frac{F\omega}{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}\right]\end{array}$
+$\begin{array}{l}\mathcal{L}\left(x''+\omega_0^2x\right)=\mathcal{L}\left(F\sin\left(\omega t\right)\right)\Leftrightarrow\\z^2\mathcal{L}\left(x\right)+z\cancel{x'(0)}+\cancel{x(0)}+\omega_0^2\mathcal{L}\left(x\right)=F\mathcal{L}\left(\sin\left(\omega t\right)\right)\Leftrightarrow\\\mathcal{L}\left(x\right)\left$z^2+\omega_0^2\right$=F\mathcal{L}\left(\sin\left(\omega t\right)\right)\Leftrightarrow\\\mathcal{L}\left(x\right)=\frac{F\mathcal{L}\left(\sin\left(\omega t\right)\right)}{z^2+\omega_0^2}=\frac{F{\displaystyle\frac\omega{z^2+\omega^2}}}{z^2+\omega_0^2}\Leftrightarrow\\x\left(t\right)=\mathcal{L}^{-1}\left$\frac{F\omega}{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}\right$\end{array}$
 
 Para encontrar la transformada inversa descomponemos la fracción en suma de fracciones simples:
 
@@ -148,5 +148,5 @@ $\begin{array}{l}\frac1{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}=\f
 
 entonces, usando la tabla de transformadas, tenemos que el desplazamiento x(t) es:
 
-$\begin{array}{l}x\left(t\right)=\mathcal{L}^{-1}\left[\frac{F\omega}{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}\right]=\mathcal{L}^{-1}\left[\frac{F\omega}{\omega^2-\omega_0^2}\left(\frac1{z^2+\omega_0^2}-\frac1{z^2+\omega^2}\right)\right]=\\\frac{F\omega}{\omega^2-\omega_0^2}\left[\mathcal{L}^{-1}\left(\frac1{z^2+\omega_0^2}\right)-\mathcal{L}^{-1}\left(\frac1{z^2+\omega^2}\right)\right]=\\\frac{F\omega}{\omega^2-\omega_0^2}\left[\frac1{\omega_0}\sin\left(\omega_0t\right)-\frac1\omega\sin\left(\omega t\right)\right]\end{array}$
+$\begin{array}{l}x\left(t\right)=\mathcal{L}^{-1}\left$\frac{F\omega}{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}\right$=\mathcal{L}^{-1}\left$\frac{F\omega}{\omega^2-\omega_0^2}\left(\frac1{z^2+\omega_0^2}-\frac1{z^2+\omega^2}\right)\right$=\\\frac{F\omega}{\omega^2-\omega_0^2}\left$\mathcal{L}^{-1}\left(\frac1{z^2+\omega_0^2}\right)-\mathcal{L}^{-1}\left(\frac1{z^2+\omega^2}\right)\right$=\\\frac{F\omega}{\omega^2-\omega_0^2}\left$\frac1{\omega_0}\sin\left(\omega_0t\right)-\frac1\omega\sin\left(\omega t\right)\right$\end{array}$
 {% endraw %}

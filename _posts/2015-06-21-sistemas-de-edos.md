@@ -316,7 +316,7 @@ $\begin{array}{l}y\left(x\right)=2C_1e^x+4C_2e^{-x}+5C_3e^{2x}\\z\left(x\right)=
 
 La matriz del sistema, y el determinante que proporciona los valores propios, son:
 
-$\begin{array}{l}A=\begin{pmatrix}3&amp;1&amp;0\\-1&amp;1&amp;0\\1&amp;1&amp;2\end{pmatrix};\;\text{det}\;\left(A-rI\right)=\begin{vmatrix}3-r&amp;1&amp;0\\-1&amp;1-r&amp;0\\1&amp;1&amp;2-r\end{vmatrix}=\left(2-r\right)\begin{vmatrix}3-r&amp;1\\-1&amp;1-r\end{vmatrix}=\\\left(2-r\right)\left[\left(3-r\right)\left(1-r\right)+1\right]=-\left(r-2\right)^3=0\Rightarrow r=2\end{array}$
+$\begin{array}{l}A=\begin{pmatrix}3&amp;1&amp;0\\-1&amp;1&amp;0\\1&amp;1&amp;2\end{pmatrix};\;\text{det}\;\left(A-rI\right)=\begin{vmatrix}3-r&amp;1&amp;0\\-1&amp;1-r&amp;0\\1&amp;1&amp;2-r\end{vmatrix}=\left(2-r\right)\begin{vmatrix}3-r&amp;1\\-1&amp;1-r\end{vmatrix}=\\\left(2-r\right)\left$\left(3-r\right)\left(1-r\right)+1\right$=-\left(r-2\right)^3=0\Rightarrow r=2\end{array}$
 
 Hay un único valor propio, r=2, con multiplicidad triple; esto significa que el método del ejemplo anterior no proporcionará todas las tres soluciones. Restando este valor a la diagonal de la matriz A y planteando el sistema (A-2I)V=0 obtenemos:
 
@@ -339,7 +339,7 @@ $\begin{pmatrix}1&amp;1&amp;0\\-1&amp;-1&amp;0\\1&amp;1&amp;0\end{pmatrix}\cdot\
 
 se deduce que debe de ser $c_1=0$ y por tanto $V=c_2V_2$; cogemos por ejemplo $c_2=1$, y $V=V_2$, cogemos además $W=(1,0,0)$ (comprobad que este vector satisface las condiciones) Entonces la tercera solución linealmente independiente del sistema es:
 
-$Y_3=Vxe^{2x}+We^{2x}=\left(V_2x+W\right)e^{2x}=\left[\begin{pmatrix}1\\-1\\1\end{pmatrix}x+\begin{pmatrix}1\\0\\0\end{pmatrix}\right]e^{2x}=\begin{pmatrix}x+1\\-x\\1\end{pmatrix}e^{2x}$
+$Y_3=Vxe^{2x}+We^{2x}=\left(V_2x+W\right)e^{2x}=\left$\begin{pmatrix}1\\-1\\1\end{pmatrix}x+\begin{pmatrix}1\\0\\0\end{pmatrix}\right$e^{2x}=\begin{pmatrix}x+1\\-x\\1\end{pmatrix}e^{2x}$
 
 y la solución general del sistema es:
 
@@ -415,23 +415,23 @@ $\left.\begin{array}{r}2s^2Y=-6Y+2Z\\s^2Z=2Y-2Z+40\frac3{s^2+9}\end{array}\right
 
 Lo resolvemos por reducción:
 
-$\left.\begin{array}{r}-2\left(s^2+3\right)Y+2Z=0\\-2\left(s^2+3\right)Y+\left(s^2+3\right)\left(s^2+2\right)Z=\left(s^2+3\right)\frac{120}{s^2+9}\end{array}\right\}\Leftrightarrow\left[\left(s^2+3\right)\left(s^2+2\right)-2\right]Z=\left(s^2+3\right)\frac{120}{s^2+9}$
+$\left.\begin{array}{r}-2\left(s^2+3\right)Y+2Z=0\\-2\left(s^2+3\right)Y+\left(s^2+3\right)\left(s^2+2\right)Z=\left(s^2+3\right)\frac{120}{s^2+9}\end{array}\right\}\Leftrightarrow\left$\left(s^2+3\right)\left(s^2+2\right)-2\right$Z=\left(s^2+3\right)\frac{120}{s^2+9}$
 
 y para la otra variable:
 
-$\left.\begin{array}{r}\left(s^2+2\right)\left(s^2+3\right)Y-\left(s^2+2\right)Z=0\\-2Y+\left(s^2+2\right)Z=\frac{120}{s^2+9}\end{array}\right\}\Leftrightarrow\left[\left(s^2+2\right)\left(s^2+3\right)-2\right]Y=\frac{120}{s^2+9}$
+$\left.\begin{array}{r}\left(s^2+2\right)\left(s^2+3\right)Y-\left(s^2+2\right)Z=0\\-2Y+\left(s^2+2\right)Z=\frac{120}{s^2+9}\end{array}\right\}\Leftrightarrow\left$\left(s^2+2\right)\left(s^2+3\right)-2\right$Y=\frac{120}{s^2+9}$
 
 despejamos las incógnitas Y, Z:
 
-$Z=\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left[\left(s^2+3\right)\left(s^2+2\right)-2\right]},\;Y=\frac{120}{\left(s^2+9\right)\left[\left(s^2+2\right)\left(s^2+3\right)-2\right]}$
+$Z=\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left$\left(s^2+3\right)\left(s^2+2\right)-2\right$},\;Y=\frac{120}{\left(s^2+9\right)\left$\left(s^2+2\right)\left(s^2+3\right)-2\right$}$
 
 Ahora aplicamos la transformada inversa para obtener $y=\mathcal{L}^{-1}(Y),\;z=\mathcal{L}^{-1}(Z)$, primero arreglamos un poco las ecuaciones completando los cuadrados: planteamos $\left(s^2+2\right)\left(s^2+3\right)-2=\left(s^2+A\right)\left(s^2+B\right)\Leftrightarrow A=1,B=4$,  entonces queda:
 
-$z=\mathcal{L}^{-1}\left\{\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left[\left(s^2+1\right)\left(s^2+4\right)\right]}\right\},\;y=\mathcal{L}^{-1}\left\{\frac{120}{\left(s^2+9\right)\left[\left(s^2+1\right)\left(s^2+4\right)\right]}\right\}$
+$z=\mathcal{L}^{-1}\left\{\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left$\left(s^2+1\right)\left(s^2+4\right)\right$}\right\},\;y=\mathcal{L}^{-1}\left\{\frac{120}{\left(s^2+9\right)\left$\left(s^2+1\right)\left(s^2+4\right)\right$}\right\}$
 
 El siguiente paso es  descomponer las fracciones en suma de fracciones simples; para la fracción asociada a la función y(x) planteamos:
 
-$\frac{120}{\left(s^2+9\right)\left[\left(s^2+1\right)\left(s^2+4\right)\right]}=120\left[\frac{As+\widetilde A}{s^2+9}+\frac{Bs+\widetilde B}{s^2+1}+\frac{Cs+\widetilde C}{s^2+4}\right]$,
+$\frac{120}{\left(s^2+9\right)\left$\left(s^2+1\right)\left(s^2+4\right)\right$}=120\left$\frac{As+\widetilde A}{s^2+9}+\frac{Bs+\widetilde B}{s^2+1}+\frac{Cs+\widetilde C}{s^2+4}\right$$,
 
 donde $A,\widetilde A,B,\widetilde B, C,\widetilde C$ son contantes a determinar; operando obtenemos:
 
@@ -443,7 +443,7 @@ $s=i\Rightarrow\left(Ai+\widetilde A\right)\cancel{\left(-1+1\right)}\left(-1+4\
 
 etc. De esta forma procederemos con los otros coeficientes. Dejando los detalles, obtenemos:
 
-$\begin{array}{l}z=\mathcal{L}^{-1}\left\{\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left[\left(s^2+1\right)\left(s^2+4\right)\right]}\right\}=\;\mathcal{L}^{-1}\left\{\frac{10}{s^2+9}+\frac8{s^2+1}+\frac{18}{s^2+4}\right\}\\y=\mathcal{L}^{-1}\left\{\frac{120}{\left(s^2+9\right)\left[\left(s^2+1\right)\left(s^2+4\right)\right]}\right\}=\mathcal{L}^{-1}\left\{\frac5{s^2+9}-\frac8{s^2+1}+\frac3{s^2+4}\right\}\end{array}$.
+$\begin{array}{l}z=\mathcal{L}^{-1}\left\{\frac{120\left(s^2+3\right)}{\left(s^2+9\right)\left$\left(s^2+1\right)\left(s^2+4\right)\right$}\right\}=\;\mathcal{L}^{-1}\left\{\frac{10}{s^2+9}+\frac8{s^2+1}+\frac{18}{s^2+4}\right\}\\y=\mathcal{L}^{-1}\left\{\frac{120}{\left(s^2+9\right)\left$\left(s^2+1\right)\left(s^2+4\right)\right$}\right\}=\mathcal{L}^{-1}\left\{\frac5{s^2+9}-\frac8{s^2+1}+\frac3{s^2+4}\right\}\end{array}$.
 
 Para calcular las transformadas inversas usamos una tabla de transformadas, o bien recordando que la transformada de Laplace es lineal y usando la propiedad
 

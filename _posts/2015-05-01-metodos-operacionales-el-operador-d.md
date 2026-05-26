@@ -63,11 +63,11 @@ Vemos que los operadores (D+a) y (D-a) aplicaos al factor $e^{rx}$ causan que e
 **Ejemplo 2**: El operador $P(D)=D^2-1$ se descompone como $P(D)=(D-1)(D+1)$, luego para calcular $P(D)e^{5x}\cos(x)$ hacemos:
 
 $\begin{array}{l}\left(D+1\right)e^{5x}\cdot\cos\left(x\right)=e^{5x}\left(D+6\right)\cos\left(x\right);\\P(D)e^{5x}\cdot\cos\left(x\right)=\left(D-1\right)e^{5x}\left(D+6\right)\cos\left(x\right)=e^{5x}\left(D+4\right)\left(D+6\right)\cos\left(x\right)\end{array}$
-**Propiedad 4**: $P(D)\left[e^{at}\cdot f\left(t\right)\right]=e^{at}P\left(D+a\right)f\left(t\right)$. Es una consecuencia de la propiedad 3. Además, tomando $f(t)=1$ obtenemos la propiedad 1, por tanto esta propiedad incluye a la primera como caso especial.
+**Propiedad 4**: $P(D)\left$e^{at}\cdot f\left(t\right)\right$=e^{at}P\left(D+a\right)f\left(t\right)$. Es una consecuencia de la propiedad 3. Además, tomando $f(t)=1$ obtenemos la propiedad 1, por tanto esta propiedad incluye a la primera como caso especial.
 
-**Propiedad 5**: Inversa de un operador P(D); se cumple que $\frac1{P\left(D\right)}\left[e^{at}f\left(t\right)\right]=e^{at}\frac1{P\left(D+a\right)}f\left(t\right)$. Es una consecuencia de la propiedad 4: definimos $g(t)=\frac1{P\left(D+a\right)}f\left(t\right)$ y le aplicamos la propiedad 4:
+**Propiedad 5**: Inversa de un operador P(D); se cumple que $\frac1{P\left(D\right)}\left$e^{at}f\left(t\right)\right$=e^{at}\frac1{P\left(D+a\right)}f\left(t\right)$. Es una consecuencia de la propiedad 4: definimos $g(t)=\frac1{P\left(D+a\right)}f\left(t\right)$ y le aplicamos la propiedad 4:
 
-$\begin{array}{l}P\left(D\right)e^{at}g(t)=e^{at}P\left(D+a\right)g(t)=e^{at}P\left(D+a\right)\frac1{P\left(D+a\right)}f\left(t\right)=e^{at}f\left(t\right)\Rightarrow\\\frac1{P\left(D\right)}P\left(D\right)e^{at}g(t)=\boxed{e^{at}\frac1{P\left(D+a\right)}f\left(t\right)=\frac1{P\left(D\right)}\left[e^{at}f\left(t\right)\right]}.\end{array}$
+$\begin{array}{l}P\left(D\right)e^{at}g(t)=e^{at}P\left(D+a\right)g(t)=e^{at}P\left(D+a\right)\frac1{P\left(D+a\right)}f\left(t\right)=e^{at}f\left(t\right)\Rightarrow\\\frac1{P\left(D\right)}P\left(D\right)e^{at}g(t)=\boxed{e^{at}\frac1{P\left(D+a\right)}f\left(t\right)=\frac1{P\left(D\right)}\left$e^{at}f\left(t\right)\right$}.\end{array}$
 
 **Ejemplo 3**: Aplicando la propiedad 5:
 

@@ -144,7 +144,7 @@ $\begin{array}{l}u=\cos\left(\frac x2\right),\;\operatorname{d}u=\frac{-1}2\sin\
 
 Resumiendo todo:
 
-$\begin{array}{l}I=e^x\sin\left(\frac x2\right)-\frac12\left[e^x\cos\left(\frac x2\right)+\frac12I\right]\Leftrightarrow\\I\left(1+\frac14\right)=e^x\left(\sin\left(\frac x2\right)-\frac12\cos\left(\frac x2\right)\right)\Leftrightarrow\\I=\frac54e^x\left(\sin\left(\frac x2\right)-\frac12\cos\left(\frac x2\right)\right)+C.\\\end{array}$
+$\begin{array}{l}I=e^x\sin\left(\frac x2\right)-\frac12\left$e^x\cos\left(\frac x2\right)+\frac12I\right$\Leftrightarrow\\I\left(1+\frac14\right)=e^x\left(\sin\left(\frac x2\right)-\frac12\cos\left(\frac x2\right)\right)\Leftrightarrow\\I=\frac54e^x\left(\sin\left(\frac x2\right)-\frac12\cos\left(\frac x2\right)\right)+C.\\\end{array}$
 
 ---
 
@@ -236,9 +236,9 @@ y juntando todos los resultados, concluimos que:
 
 $\int\frac{2x^6+4x^4+3x^2+2x-1}{x^6+2x^4+x^2}=2x+2\ln\left(x\right)+\frac1x-\ln\left(x^2+1\right)+\frac{1-2x}{x^2+1}+3\tan^{-1}\left(x\right)+2\tan^{-1}\left(x^2+1\right)+C.$
 
-NOTA: El procedimiento para calcular las integrales del tipo general $\int\frac{Mx+N}{\left[\left(x-r\right)^2+s^2\right]^p}\operatorname{d}x$ que aparecen cuando tenemos raíces complejas múltiples, es siempre el que se ha visto: separar en dos integrales, una inmediata, la otra del tipo $\int\frac1{\left[\left(x-r\right)^2+s^2\right]^p}\operatorname{d}x$, que también se separa en dos, sumando y restando al numerador el valor $x^2$, resultando una inmediata y otra por partes. si el exponente $p$ es mayor que 2, habrá que repetir la integración por partes para ir bajando el exponente en cada paso.
+NOTA: El procedimiento para calcular las integrales del tipo general $\int\frac{Mx+N}{\left$\left(x-r\right)^2+s^2\right$^p}\operatorname{d}x$ que aparecen cuando tenemos raíces complejas múltiples, es siempre el que se ha visto: separar en dos integrales, una inmediata, la otra del tipo $\int\frac1{\left$\left(x-r\right)^2+s^2\right$^p}\operatorname{d}x$, que también se separa en dos, sumando y restando al numerador el valor $x^2$, resultando una inmediata y otra por partes. si el exponente $p$ es mayor que 2, habrá que repetir la integración por partes para ir bajando el exponente en cada paso.
 
-Si en vez de $\int\frac{Mx+N}{\left[\left(x-r\right)^2+s^2\right]^p}\operatorname{d}x$  tenemos $\int\frac1{\left[x^2+bx+c\right]^p}\operatorname{d}x$, podemos convertir esta forma en la primera con el procedimiento de completar cuadrados:
+Si en vez de $\int\frac{Mx+N}{\left$\left(x-r\right)^2+s^2\right$^p}\operatorname{d}x$  tenemos $\int\frac1{\left$x^2+bx+c\right$^p}\operatorname{d}x$, podemos convertir esta forma en la primera con el procedimiento de completar cuadrados:
 
 $x^2+bx+c=\left(x+M\right)^2+N\Rightarrow M=\frac b2,\;N=c-\frac{b^2}4.$
 
@@ -252,7 +252,7 @@ $\begin{array}{l}\int\frac1{2x^2+3x+4}=\frac12\int\frac1{x^2+{\displaystyle\frac
 
 Estas integrales son siempre del tipo $\int\frac1{1+x^2}dx=\tan^{-1}\left(x\right)$, aunque hay que hacer algunos arreglos para verlo:
 
-$\begin{array}{l}\int\frac{dx}{\displaystyle\left(x+\frac34\right)^2+\frac{23}{16}}=\int\frac{dx}{\displaystyle\frac{23}{16}\left[\frac{16}{23}\left(x+\frac34\right)^2+1\right]}=\\\frac{16}{23}\int\frac{dx}{\left({\displaystyle\frac4{\sqrt{23}}}x+\displaystyle\frac3{\sqrt{23}}\right)^2+1}=\frac{16}{23}\int\frac{dt}{{\displaystyle t}^2+1}\frac{\sqrt{23}}4=\\\frac4{\sqrt{23}}\tan^{-1}\left(t\right)=\frac4{\sqrt{23}}\tan^{-1}\left(\frac4{\sqrt{23}}x+\frac3{\sqrt{23}}\right).\end{array}$
+$\begin{array}{l}\int\frac{dx}{\displaystyle\left(x+\frac34\right)^2+\frac{23}{16}}=\int\frac{dx}{\displaystyle\frac{23}{16}\left$\frac{16}{23}\left(x+\frac34\right)^2+1\right$}=\\\frac{16}{23}\int\frac{dx}{\left({\displaystyle\frac4{\sqrt{23}}}x+\displaystyle\frac3{\sqrt{23}}\right)^2+1}=\frac{16}{23}\int\frac{dt}{{\displaystyle t}^2+1}\frac{\sqrt{23}}4=\\\frac4{\sqrt{23}}\tan^{-1}\left(t\right)=\frac4{\sqrt{23}}\tan^{-1}\left(\frac4{\sqrt{23}}x+\frac3{\sqrt{23}}\right).\end{array}$
 
 donde hemos hecho el cambio de variable: $t=\left(\frac4{\sqrt{23}}x+\frac3{\sqrt{23}}\right)\Rightarrow dt=\frac4{\sqrt{23}}dx.$
 
@@ -292,7 +292,7 @@ $\begin{array}{l}t=\sqrt2\Rightarrow\left(1+\sqrt2\right)+\left(1-\sqrt2\right)-
 
 Integramos y deshacemos el cambio $t=cos(x)$:
 
-$\begin{array}{l}\frac{-1}4\int\frac1{\left(1-t^2\right)t^2}\operatorname{d}t=\frac{-1}4\left[\int\frac1{t^2}+\frac12\int\frac1{1+t}+\frac12\int\frac1{1-t}\right]=\\\frac{-1}4\left[\frac{-1}t+\frac12\left(-\ln\left(1-t\right)+\ln\left(1+t\right)\right)\right]=\\\frac{-1}4\left[\frac{-1}t+\frac12\ln\left(\frac{1+t}{1-t}\right)\right]=\\\frac14\left[\frac1{\cos\left(x\right)}+\frac12\ln\left(\frac{1-\cos\left(x\right)}{1+\cos\left(x\right)}\right)\right]+C.\end{array}$
+$\begin{array}{l}\frac{-1}4\int\frac1{\left(1-t^2\right)t^2}\operatorname{d}t=\frac{-1}4\left$\int\frac1{t^2}+\frac12\int\frac1{1+t}+\frac12\int\frac1{1-t}\right$=\\\frac{-1}4\left$\frac{-1}t+\frac12\left(-\ln\left(1-t\right)+\ln\left(1+t\right)\right)\right$=\\\frac{-1}4\left$\frac{-1}t+\frac12\ln\left(\frac{1+t}{1-t}\right)\right$=\\\frac14\left$\frac1{\cos\left(x\right)}+\frac12\ln\left(\frac{1-\cos\left(x\right)}{1+\cos\left(x\right)}\right)\right$+C.\end{array}$
 
 ---
 
@@ -330,7 +330,7 @@ $\begin{array}{l}x^2+x+1=\left(x+M\right)^2+N=x^2+M^2+2Mx+N\Leftrightarrow\\M=1/
 
 Ahora sustituimos en $I_4$ y hacemos un cambio de variable:
 
-$\begin{array}{l}I_4=\frac32\int\frac{dx}{\left(x+\displaystyle\frac12\right)^2+\displaystyle\frac34}=\frac32\int\frac{dx}{{\displaystyle\frac34}\left[{\displaystyle\frac43}\left(x+\displaystyle\frac12\right)^2+\displaystyle1\right]}=\\\frac32\frac43\int\frac{dx}{\displaystyle\left(\frac2{\sqrt3}x+\frac1{\sqrt3}\right)^2+1}=2\int\frac{dt}{t^2+1}\frac{\sqrt3}2=\\\sqrt3\tan^{-1}\left(t\right)=\sqrt3\tan^{-1}\left(\frac2{\sqrt3}x+\frac1{\sqrt3}\right).\end{array}$
+$\begin{array}{l}I_4=\frac32\int\frac{dx}{\left(x+\displaystyle\frac12\right)^2+\displaystyle\frac34}=\frac32\int\frac{dx}{{\displaystyle\frac34}\left${\displaystyle\frac43}\left(x+\displaystyle\frac12\right)^2+\displaystyle1\right$}=\\\frac32\frac43\int\frac{dx}{\displaystyle\left(\frac2{\sqrt3}x+\frac1{\sqrt3}\right)^2+1}=2\int\frac{dt}{t^2+1}\frac{\sqrt3}2=\\\sqrt3\tan^{-1}\left(t\right)=\sqrt3\tan^{-1}\left(\frac2{\sqrt3}x+\frac1{\sqrt3}\right).\end{array}$
 
 Lo ponemos todo junto:
 

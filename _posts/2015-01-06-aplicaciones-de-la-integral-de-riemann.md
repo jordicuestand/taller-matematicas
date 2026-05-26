@@ -43,16 +43,16 @@ $\int_a^b\left|\left(f-g\right)\right|\operatorname{d}x=\left\{\begin{array}{l}\
 En ocasiones, el valor absoluto en el intervalo de integración $(a,b)$ habrá de calcularse por subintervalos, como en el siguiente ejemplo.
 **Ejemplo 1**: calcular el área $A$ de la región comprendida entre las gráficas de las funciones $y=\sin(x), y=\cos(x+1)$ y el intervalo $x\in\left(1,4\right).$
 
-[caption id="attachment_707" align="aligncenter" width="350"][![Cálculo del área comprendida entre las gráficas de dos funciones](/taller-matematicas/assets/images/area5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area5.png) Cálculo del área comprendida entre las gráficas de dos funciones[/caption]
+$caption id="attachment_707" align="aligncenter" width="350"$[![Cálculo del área comprendida entre las gráficas de dos funciones](/taller-matematicas/assets/images/area5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area5.png) Cálculo del área comprendida entre las gráficas de dos funciones[/caption]
 $\begin{array}{l}A=\int_1^4\left|\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\right|\operatorname{d}x=\begin{array}{l}\int_1^{x_0}\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\operatorname{d}x+\end{array}\int_{x_0}^4\left(\cos\left(x+1\right)-\sin\left(x\right)\right)\end{array},$
 
 donde $x_0$ es el punto de intersección de las dos gráficas, situado dentro del intervalo de integración $(1,4)$; en ese punto, se invierte la diferencia de funciones. Integrando: $\int\left(\sin\left(x\right)-\cos\left(x+1\right)\right)=-\cos\left(x\right)-\sin\left(x+1\right). $ Entonces:
 
-$\begin{array}{l}A=\left[-\cos\left(x\right)-\sin\left(x+1\right)\right]_1^{x_0}+\left[\cos\left(x\right)+\sin\left(x+1\right)\right]_{x_0}^4\\=\left[-\cos\left(x_0\right)-\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)\right]+\left[\cos\left(4\right)+\sin\left(5\right)-\cos\left(x_0\right)-\sin\left(x_0+1\right)\right]\\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)+\cos\left(4\right)+\sin\left(5\right)\\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)-0.1630.\end{array}$
+$\begin{array}{l}A=\left$-\cos\left(x\right)-\sin\left(x+1\right)\right$_1^{x_0}+\left$\cos\left(x\right)+\sin\left(x+1\right)\right$_{x_0}^4\\=\left$-\cos\left(x_0\right)-\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)\right$+\left$\cos\left(4\right)+\sin\left(5\right)-\cos\left(x_0\right)-\sin\left(x_0+1\right)\right$\\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)+\cos\left(4\right)+\sin\left(5\right)\\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)-0.1630.\end{array}$
 
 Para hallar el punto $x_0$ planteamos la ecuación $\sin\left(x\right)=\cos\left(x+1\right); $ usando la fórmula de la suma de ángulos: $\cos\left(x+1\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)\sin\left(1\right)$, obtenemos:
 
-$\begin{array}{l}\sin\left(x\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)\sin\left(1\right)\Leftrightarrow\\\sin\left(x\right)\left[1+\sin\left(1\right)\right]=\cos\left(x\right)\cos(1)\Leftrightarrow\\\tan\left(x\right)=\frac{\cos(1)}{1+\sin\left(1\right)}\Leftrightarrow x=\tan^{-1}\left(\frac{\cos(1)}{1+\sin\left(1\right)}\right)\approx0.285\end{array}.$
+$\begin{array}{l}\sin\left(x\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)\sin\left(1\right)\Leftrightarrow\\\sin\left(x\right)\left$1+\sin\left(1\right)\right$=\cos\left(x\right)\cos(1)\Leftrightarrow\\\tan\left(x\right)=\frac{\cos(1)}{1+\sin\left(1\right)}\Leftrightarrow x=\tan^{-1}\left(\frac{\cos(1)}{1+\sin\left(1\right)}\right)\approx0.285\end{array}.$
 
 El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, o sea: $x=0.285+k\mathrm\pi,\;\mathrm k=0,1,2,\dots.$ De todas estas soluciones, la única que cae dentro del intervalo de integración $(1,4)$ es $x=0.285+\mathrm\pi\approx3.427$, este es el valor $x_0$ buscado. Sustituimos: $A=-2\cos\left(3.427\right)-2\sin\left(4.427\right)-0.1630=\boxed{3.675}.$
 
@@ -62,7 +62,7 @@ El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, 
 
 Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la [integral de Riemann](http://tallermatematic.eu/wp/?p=674), dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$
 
-[caption id="attachment_717" align="alignnone" width="427"][![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/longitud_arc.png) Aproximación a la longitud de un arco de curva[/caption]
+$caption id="attachment_717" align="alignnone" width="427"$[![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/longitud_arc.png) Aproximación a la longitud de un arco de curva[/caption]
 
 $\triangle s=\sqrt{\left(\triangle x\right)^2+\;\left(\triangle y\right)^2}.$
 
@@ -79,18 +79,18 @@ En el último paso igualamos el límite de la suma a una integral de Riemann, p
 
 | 
 
-[caption id="attachment_714" align="aligncenter" width="150"][![Catenaria. Licencia Creative Commons](/taller-matematicas/assets/images/catenaria.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.jpg) [Catenaria](http://www.flickr.com/photos/diegobe/226041902/sizes/o/). [Licencia Creative Commons.](https://creativecommons.org/licenses/by-sa/2.0/)[/caption] 
+$caption id="attachment_714" align="aligncenter" width="150"$[![Catenaria. Licencia Creative Commons](/taller-matematicas/assets/images/catenaria.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.jpg) [Catenaria](http://www.flickr.com/photos/diegobe/226041902/sizes/o/). [Licencia Creative Commons.](https://creativecommons.org/licenses/by-sa/2.0/)[/caption] 
 | 
 
-[caption id="attachment_715" align="aligncenter" width="300"][![Curva catenaria (en negro) y parábola (en rojo)](/taller-matematicas/assets/images/catenaria-300x113.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.png) Curva catenaria (en negro) y parábola (en rojo)[/caption] 
+$caption id="attachment_715" align="aligncenter" width="300"$[![Curva catenaria (en negro) y parábola (en rojo)](/taller-matematicas/assets/images/catenaria-300x113.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.png) Curva catenaria (en negro) y parábola (en rojo)[/caption] 
 
 Hallar la longitud de cable tendida entre dos postes sabiendo que la altura mínima es de 6 metros, y que la distancia entre postes es de 15 metros.
 
-$\begin{array}{l}y'=D_x\left[a\cdot \cosh\left(\frac xa\right)\right]=\sinh\left(\frac xa\right)\Leftrightarrow\\\sqrt{1+\left(y'\left(x\right)\right)^2}=\sqrt{1+\left(\sinh\left(\frac xa\right)\right)^2}=\sqrt{\cosh^2\left(\frac xa\right)}=\cosh\left(\frac xa\right).\end{array}$
+$\begin{array}{l}y'=D_x\left$a\cdot \cosh\left(\frac xa\right)\right$=\sinh\left(\frac xa\right)\Leftrightarrow\\\sqrt{1+\left(y'\left(x\right)\right)^2}=\sqrt{1+\left(\sinh\left(\frac xa\right)\right)^2}=\sqrt{\cosh^2\left(\frac xa\right)}=\cosh\left(\frac xa\right).\end{array}$
 
 La longitud del arco viene dada por
 
-$s=\int_{-15/2}^{15/2}\cosh\left(\frac x6\right)\operatorname{d}x=6\left[\sinh\left(\frac x6\right)\right]_{-15/2}^{15/2}=19.2$
+$s=\int_{-15/2}^{15/2}\cosh\left(\frac x6\right)\operatorname{d}x=6\left$\sinh\left(\frac x6\right)\right$_{-15/2}^{15/2}=19.2$
 
 ## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
@@ -118,7 +118,7 @@ $L=\int_a^bf\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_a^{b-\varepsilo
 
 **Ejemplo 4**: La integral impropia de segunda especie $\int_0^1\frac1{1-x}\operatorname{d}x$ se calcula como
 
-$\begin{array}{l}\int_0^1\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_0^{1-\varepsilon}\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\left[-\ln\left(1-x\right)\right]_0^{1-\varepsilon}=\\\lim_{\varepsilon\rightarrow0}-\ln\left(\varepsilon\right)+\ln\left(1\right)=\lim_{\varepsilon\rightarrow0}\ln\left(\frac1\varepsilon\right)=\infty\end{array},$
+$\begin{array}{l}\int_0^1\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_0^{1-\varepsilon}\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\left$-\ln\left(1-x\right)\right$_0^{1-\varepsilon}=\\\lim_{\varepsilon\rightarrow0}-\ln\left(\varepsilon\right)+\ln\left(1\right)=\lim_{\varepsilon\rightarrow0}\ln\left(\frac1\varepsilon\right)=\infty\end{array},$
 
 vemos que no es convergente.
 
@@ -146,7 +146,7 @@ La integral queda $3\int_{-1}^0\frac1{t^3+2}\operatorname{d}t\approx1.77,$ omiti
 **Cálculo de integrales impropias de primera especie**
 
 Definimos: $\int_a^\infty f=\lim_{b\rightarrow\infty}\int_a^bf,\;\int_{-\infty}^bf=\lim_{a\rightarrow-\infty}\int_a^bf.$ Si estos límites existen decimos que la integral converge.
-**Ejemplo 6**: $\int_0^\infty e^{-x}=\lim_{b\rightarrow\infty}\int_0^be^{-x}=\lim_{b\rightarrow\infty}\left[-e^{-x}\right]_0^b=\lim_{b\rightarrow\infty}\left[-e^{-b}+1\right]=1.$
+**Ejemplo 6**: $\int_0^\infty e^{-x}=\lim_{b\rightarrow\infty}\int_0^be^{-x}=\lim_{b\rightarrow\infty}\left$-e^{-x}\right$_0^b=\lim_{b\rightarrow\infty}\left$-e^{-b}+1\right$=1.$
 
 #### Criterio de convergencia de **integrales impropias de primera especie**
 
@@ -221,13 +221,13 @@ El último resultado se ha obtenido con una hoja de cálculo.
 
 **Ejemplo 10**: Calcular $\int_0^\infty e^{-x^2}\operatorname{d}x.$ Es una integral impropia que, además, no tiene solución analítica (no existe ninguna función conocida que sea su primitiva). Comparando con $\Gamma\left(p\right)=\int_0^\infty t^{p-1}e^{-x}\operatorname{d}x,$ podemos ver que, si hacemos el cambio de variable $x^2=t,\;2x\operatorname{d}x=\operatorname{d}t,\;\operatorname{d}x=\frac{\operatorname{d}t}{2x}=\frac{\operatorname{d}t}{2\sqrt t}=\frac12t^{-1/2}\operatorname{d}t,$ entonces la integral nos queda: $\int_0^\infty\frac12t^{-1/2}e^{-t}\operatorname{d}x=\frac12\Gamma\left(\frac12\right).$
 
-Usando la propiedad 1 de la función Beta: $\beta\left(\frac12,\frac12\right)=\frac{\Gamma\left(\frac12\right)\cdot\Gamma\left(\frac12\right)}{\Gamma\left(\frac12+\frac12\right)}=\frac{\left[\Gamma\left(\frac12\right)\right]^2}{\Gamma\left(1\right)}=\left[\Gamma\left(\frac12\right)\right]^2.$
+Usando la propiedad 1 de la función Beta: $\beta\left(\frac12,\frac12\right)=\frac{\Gamma\left(\frac12\right)\cdot\Gamma\left(\frac12\right)}{\Gamma\left(\frac12+\frac12\right)}=\frac{\left$\Gamma\left(\frac12\right)\right$^2}{\Gamma\left(1\right)}=\left$\Gamma\left(\frac12\right)\right$^2.$
 
 Ahora recordamos la propiedad 3:
 
 $\beta\left(\frac12,\frac12\right)=2\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{2\frac12-1}\left(\cos\left(x\right)\right)^{2\frac12-1}\operatorname{d}x\;=2\int_0^{\pi/2}1\operatorname{d}x=2\frac{\mathrm\pi}2=\mathrm\pi$
 
-Nos queda: $\beta\left(\frac12,\frac12\right)=\mathrm\pi=\left[\Gamma\left(\frac12\right)\right]^2\Leftrightarrow\Gamma\left(\frac12\right)=\sqrt{\mathrm\pi}$ y la integral pedida es: $\int_0^\infty e^{-x^2}\operatorname{d}x=\frac12\Gamma\left(\frac12\right)=\frac12\sqrt{\mathrm\pi}.$
+Nos queda: $\beta\left(\frac12,\frac12\right)=\mathrm\pi=\left$\Gamma\left(\frac12\right)\right$^2\Leftrightarrow\Gamma\left(\frac12\right)=\sqrt{\mathrm\pi}$ y la integral pedida es: $\int_0^\infty e^{-x^2}\operatorname{d}x=\frac12\Gamma\left(\frac12\right)=\frac12\sqrt{\mathrm\pi}.$
 
 ## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)Teorema del valor medio: forma integral
 
@@ -237,7 +237,7 @@ En el post [Aplicaciones de las derivadas -> Teoremas de valores intermedios](ht
 
 **Ejemplo 11**: Calculemos el valor promedio de $f(x)=\cos\left(x\right)$ en $[0,2\pi/2]$, que es:
 
-$\frac1{\mathrm\pi-0}\int_0^{\mathrm\pi/2}\cos\left(x\right)=\frac1{\mathrm\pi/2}\left[\sin\left(x\right)\right]_0^{\mathrm\pi/2}=\frac1{\mathrm\pi/2}\left(\sin\left(\mathrm\pi/2\right)-\sin\left(0\right)\right)=\frac2{\mathrm\pi}\approx0.6366.$
+$\frac1{\mathrm\pi-0}\int_0^{\mathrm\pi/2}\cos\left(x\right)=\frac1{\mathrm\pi/2}\left$\sin\left(x\right)\right$_0^{\mathrm\pi/2}=\frac1{\mathrm\pi/2}\left(\sin\left(\mathrm\pi/2\right)-\sin\left(0\right)\right)=\frac2{\mathrm\pi}\approx0.6366.$
 
 El valor promedio integral es una generalización a funciones integrables del concepto de media aritmética, de hecho el valor medio integral es el promedio de todos los infinitos valores $f(x)$ correspondientes al intervalo $[a,b]$:
 
@@ -249,7 +249,7 @@ Con una hoja de cálculo formamos la siguiente tabla de valores:
 Los valores de x se han obtenido mediante
 $x_k=\frac k9\frac{\mathrm\pi}2,\;k=0,1,\cdots,9\Leftrightarrow x_k=\left\{0,\frac19\frac{\mathrm\pi}2,\cdots,\frac89\frac{\mathrm\pi}2,\frac99\frac{\mathrm\pi}2\right\}.$ La suma de la fila $sin(x)$ es 6.22, y el promedio de los valores es 6.22/10 = 0.62; comparando con el ejemplo anterior, hay una diferencia de una centésima. Aumentando el número $n$ de valores de la tabla, la diferencia disminuiría, y en el límite $n\rightarrow\infty$ no habría diferencia.
 
-***Teorema del valor medio integral**: Si $f(x)$ es continua en $[a,b]$, entonces existirá un punto intermedio $c\in\left[a,b\right]$ tal que $f\left(c\right)=\frac1{b-a}\int_a^bf.$*
+***Teorema del valor medio integral**: Si $f(x)$ es continua en $[a,b]$, entonces existirá un punto intermedio $c\in\left$a,b\right$$ tal que $f\left(c\right)=\frac1{b-a}\int_a^bf.$*
 
 **Ejemplo 13**: En un estudio el salario de los ingenieros industriales en función de su edad ha resultado ser, aproximadamente, $salario=-10000+12000\cdot edad^{3/7}$ en el intervalo de edades $[22,60].$ Calcular el salario medio y a que edad se percibe ese salario.
 
@@ -257,9 +257,9 @@ $x_k=\frac k9\frac{\mathrm\pi}2,\;k=0,1,\cdots,9\Leftrightarrow x_k=\left\{0,\fr
 
 Calculamos el valor medio, llamando $x$ a la variable independiente tiempo, e $y$ a la variable dependiente salario:
 
-$\begin{array}{l}\overline y=\frac1{60-22}\int_{22}^{60}\left(-10000+12000\cdot x^{3/7}\right)=\frac1{38}\left[-10^4x+\frac{1.2\cdot10^4}{10/7}x^{10/7}\right]_{22}^{60}\\=\frac1{38}\left(-60\cdot10^4+0.84\cdot10^4\cdot60^{10/7}+22\cdot10^4-0.84\cdot10^4\cdot22^{10/7}\right)\\=\frac{10^4}{38}183.9=4.8\cdot10^4\end{array}.$
+$\begin{array}{l}\overline y=\frac1{60-22}\int_{22}^{60}\left(-10000+12000\cdot x^{3/7}\right)=\frac1{38}\left$-10^4x+\frac{1.2\cdot10^4}{10/7}x^{10/7}\right$_{22}^{60}\\=\frac1{38}\left(-60\cdot10^4+0.84\cdot10^4\cdot60^{10/7}+22\cdot10^4-0.84\cdot10^4\cdot22^{10/7}\right)\\=\frac{10^4}{38}183.9=4.8\cdot10^4\end{array}.$
 
-Como la función es continua, según el teorema del valor medio existe un punto $c\in\left[a,b\right]$ tal que $f(c)=4.8\cdot10^4$, lo planteamos:
+Como la función es continua, según el teorema del valor medio existe un punto $c\in\left$a,b\right$$ tal que $f(c)=4.8\cdot10^4$, lo planteamos:
 
 $\begin{array}{l}f\left(x\right)=-10000+12000\cdot x^{3/7}=4.8\cdot10^4\Leftrightarrow\\x=\left(\frac{4.8\cdot10^4+10^4}{1.2\cdot10^4}\right)^{7/3}=\left(\frac{4.8+1}{1.2}\right)^{7/3}=40.13\\\end{array},$
 

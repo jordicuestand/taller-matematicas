@@ -325,10 +325,10 @@ Para obtener la función de distribución de X basta con calcular la tabla de pr
 
 La gráfica de la función de probabilidad es:
 
-[caption id="attachment_1432" align="aligncenter" width="566"][![Función de probabilidad, variable discreta](/taller-matematicas/assets/images/funcio_prob.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png) Función de probabilidad, variable discreta[/caption]
+$caption id="attachment_1432" align="aligncenter" width="566"$[![Función de probabilidad, variable discreta](/taller-matematicas/assets/images/funcio_prob.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png) Función de probabilidad, variable discreta[/caption]
 La función de distribución suele representarse como una función escalonada:
 
-[caption id="attachment_1433" align="alignnone" width="565"][![Función de distribución, variable discreta](/taller-matematicas/assets/images/escalonada.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png) Función de distribución, variable discreta[/caption]
+$caption id="attachment_1433" align="alignnone" width="565"$[![Función de distribución, variable discreta](/taller-matematicas/assets/images/escalonada.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png) Función de distribución, variable discreta[/caption]
 
 **Propiedades inmediatas de las funciones de distribución discretas F (x)**
 
@@ -347,9 +347,9 @@ En el tema [Estadística Descriptiva](http://tallermatematic.eu/wp/?p=1341) la a
 
  	- No negatividad: f(x) >= 0
 
- 	- Probabilidad de un intervalo: $P\left(X\in\left[a,b\right]\right)=\int_a^bf\left(x\right)\operatorname dx$
+ 	- Probabilidad de un intervalo: $P\left(X\in\left$a,b\right$\right)=\int_a^bf\left(x\right)\operatorname dx$
 
- 	- Normalización: $P\left(X\in\left[max,\;min\right]\right)=\int_{min}^{max}f\left(x\right)\operatorname dx=1$
+ 	- Normalización: $P\left(X\in\left$max,\;min\right$\right)=\int_{min}^{max}f\left(x\right)\operatorname dx=1$
 
 Se deducen las siguientes propiedades:
 
@@ -363,7 +363,7 @@ Se deducen las siguientes propiedades:
 
 Definimos la **función**** de distribución para v.a. continuas,** F (x), como la probabilidad de que X tome valores más pequeños que a x: F (x) = P (X < x_k).  La relación con la función de densidad es inmediata: si el valor mínimo de la v.a. X es min, entonces tendremos que:
 
-$F\left(x_0\right)=P\left(X\in\left[min,\;x_0\right]\right)=\int_{min}^{x_0}f\left(x\right)\operatorname dx$
+$F\left(x_0\right)=P\left(X\in\left$min,\;x_0\right$\right)=\int_{min}^{x_0}f\left(x\right)\operatorname dx$
 
 Si la expresión anterior la expresamos para un valor x genérico y la derivamos respecto ese valor x,  aplicando el [primer teorema fundamental del cálculo](https://es.wikipedia.org/wiki/Teorema_fundamental_del_c%C3%A1lculo#Primer_teorema_fundamental_del_c.C3.A1lculo) obtenemos otra relación importante entre las funciones de densidad y de distribución continuas:
 
@@ -382,11 +382,11 @@ intervalo [a, b] es igual a F (b) - F (a)
 
 **Ejemplo 3**: Sea la función de densidad de probabilidad 
 
-$f\left(x\right)=\left\{\begin{array}{l}0\;\;\;\;\;\;\;\;\;\;\;\;\;\text{si }x\not\in\left[0,\;1\right]\\\frac23\left(x+1\right)\;\text{si }x\in\left[0,\;1\right]\end{array}\right.$
+$f\left(x\right)=\left\{\begin{array}{l}0\;\;\;\;\;\;\;\;\;\;\;\;\;\text{si }x\not\in\left$0,\;1\right$\\\frac23\left(x+1\right)\;\text{si }x\in\left$0,\;1\right$\end{array}\right.$
 
 Calcular $P(0\leq X\leq0.5)$, $P(-3\leq X\leq0.5)$, $P(0\leq X\leq1)$
 
-Según la propiedad 2 de las funciones de densidad: $P(0\leq X\leq0.5)=\int_0^{0.5}f\left(x\right)\operatorname dx=\int_0^{0.5}\frac23\left(x+1\right)\operatorname dx=\frac23\left[\frac{x^2}2+x\right]_0^{0.5}=\frac23\left(\frac{0.5^2}2+0.5-0\right)=\frac5{12}$.
+Según la propiedad 2 de las funciones de densidad: $P(0\leq X\leq0.5)=\int_0^{0.5}f\left(x\right)\operatorname dx=\int_0^{0.5}\frac23\left(x+1\right)\operatorname dx=\frac23\left$\frac{x^2}2+x\right$_0^{0.5}=\frac23\left(\frac{0.5^2}2+0.5-0\right)=\frac5{12}$.
 
 Para el segundo intervalo hemos de tener en cuenta los intervalos de definición de la función f(x):
 
@@ -394,7 +394,7 @@ $P(-3\leq X\leq0.5)=\int_{-3}^{0.5}f\left(x\right)\operatorname dx=\int_{-3}^00\
 
 Para el tercer intervalo tenemos:
 
-$P(-3\leq X\leq0.5)=\int_0^1f\left(x\right)\operatorname dx=\int_0^1\frac23\left(x+1\right)\operatorname dx=\frac23\left[\frac{x^2}2+x\right]_0^1=\frac23\left(\frac12+1-0\right)=1$
+$P(-3\leq X\leq0.5)=\int_0^1f\left(x\right)\operatorname dx=\int_0^1\frac23\left(x+1\right)\operatorname dx=\frac23\left$\frac{x^2}2+x\right$_0^1=\frac23\left(\frac12+1-0\right)=1$
 
 un resultado esperado, pues es la condición de normalización de las funciones de densidad.
 {% endraw %}

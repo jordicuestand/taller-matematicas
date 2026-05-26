@@ -81,11 +81,11 @@ $\begin{array}{l}y_p=C(x)\cdot\eta(x)=\int\frac{F(x)}{\eta(x)}\operatorname dx\c
 
 Ahora también podemos dar la expresión general de la solución completa, obtenida por el método de variación de las constantes:
 
-$\begin{array}{l}\begin{array}{l}y=Cy_h+y_p=\\C\cdot e^{-\int X\left(x\right)\operatorname dx}+e^{-\int X\left(x\right)\operatorname dx}\cdot\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\Rightarrow\\\boxed{y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left[C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right]}.\end{array}\\\end{array}$
+$\begin{array}{l}\begin{array}{l}y=Cy_h+y_p=\\C\cdot e^{-\int X\left(x\right)\operatorname dx}+e^{-\int X\left(x\right)\operatorname dx}\cdot\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\Rightarrow\\\boxed{y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left$C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right$}.\end{array}\\\end{array}$
 
 Se puede simplificar un poco esta expresión usando la función solución de la ecuación homogénea $\eta\left(x\right)$, queda:
 
-$\boxed{y(x)=\eta\left(x\right)\cdot\left[C+\int F(x)\cdot\eta^{-1}\left(x\right)\operatorname dx\right]}$
+$\boxed{y(x)=\eta\left(x\right)\cdot\left$C+\int F(x)\cdot\eta^{-1}\left(x\right)\operatorname dx\right$}$
 
 Por tanto, en el caso de las ecuaciones lineales de primer orden, *tenemos una fórmula que las reduce al cálculo de dos integrales*.  El método de variación de constantes es general: veremos que se puede aplicar a otras ecuaciones diferenciales.
 
@@ -103,16 +103,16 @@ $\begin{array}{l}\frac{\operatorname dI}{\operatorname dt}=-\frac RLI(t)\Leftrig
 
 La solución general viene dada por
 
-$\begin{array}{l}I(t)=\eta\left(t\right)\cdot\left[C+\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt\right];\\\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt=\int\frac VL\cdot e^{\frac RLt}\operatorname dt=\frac VL\cdot\frac LRe^{\frac RLt}=\frac VRe^{\frac RLt};\\I(t)=e^{-\frac RLt}\cdot\left[C+\frac VRe^{\frac RLt}\right]=\boxed{Ce^{-\frac RLt}+\frac VR}.\\\end{array}$
+$\begin{array}{l}I(t)=\eta\left(t\right)\cdot\left$C+\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt\right$;\\\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt=\int\frac VL\cdot e^{\frac RLt}\operatorname dt=\frac VL\cdot\frac LRe^{\frac RLt}=\frac VRe^{\frac RLt};\\I(t)=e^{-\frac RLt}\cdot\left$C+\frac VRe^{\frac RLt}\right$=\boxed{Ce^{-\frac RLt}+\frac VR}.\\\end{array}$
 
 En la práctica se asume
 que para $t=0$ ha de ser $I(0)=0$, por tanto $I(0)=C+\frac VR=0\Rightarrow C=-\frac VR$ y la expresión de la intensidad queda así:
 
-$I(t)=-\frac VRe^{-\frac RLt}+\frac VR=\frac VR\left[1-e^{-\frac RLt}\right]$
+$I(t)=-\frac VRe^{-\frac RLt}+\frac VR=\frac VR\left$1-e^{-\frac RLt}\right$$
 
 El término $-e^{-\frac RLt}$ vale 1 para t = 0 y se atenúa ràpidamente, pasando a ser prácticamente nulo: es el denominado régimen transitorio del circuito; después, solo queda el término constante $I(t) = V/R$ ([Ley de Ohm](http://es.wikipedia.org/wiki/Ley_de_Ohm)): es el régimen estacionario:
 
-[caption id="attachment_909" align="alignnone" width="558"][![Intensidad I(t) en un circuito RL](/taller-matematicas/assets/images/circuit-RL.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/circuit-RL.png) Intensidad I(t) en un circuito RL[/caption]
+$caption id="attachment_909" align="alignnone" width="558"$[![Intensidad I(t) en un circuito RL](/taller-matematicas/assets/images/circuit-RL.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/circuit-RL.png) Intensidad I(t) en un circuito RL[/caption]
 ###  Unicidad de la solución
 
 El teorema siguiente nos asegura que, en ciertas condiciones, la solución de una ecuación diferencial lineal de primer orden es única, o equivalentemente, que no existen [soluciones singulares](http://tallermatematic.eu/wp/?p=855#singulares), toda posible solución está incluida en la solución general.

@@ -106,11 +106,11 @@ $\frac{\partial\log\left(L(x_1,\cdots,x_n,p)\right)}{\partial p}=0$
 
 que en nuestro caso es:
 
-$\begin{array}{l}\frac\partial{\partial p}\log\left(\prod_{i=1}^7f\left(x_i,p\right)\right)=\frac\partial{\partial p}\sum_{i=1}^7\log\left(f\left(x_i,p\right)\right)=\sum_{i=1}^7\frac\partial{\partial p}\log\left(\begin{pmatrix}10\\x_i\end{pmatrix}p^{x_i}\left(1-p\right)^{10-x_i}\right)\\=\sum_{i=1}^7\frac\partial{\partial p}\left[\log\left(\begin{pmatrix}10\\x_i\end{pmatrix}\right)+x_i\log\left(p\right)+\left(10-x_i\right)\log\left(1-p\right)\right]\end{array}$
+$\begin{array}{l}\frac\partial{\partial p}\log\left(\prod_{i=1}^7f\left(x_i,p\right)\right)=\frac\partial{\partial p}\sum_{i=1}^7\log\left(f\left(x_i,p\right)\right)=\sum_{i=1}^7\frac\partial{\partial p}\log\left(\begin{pmatrix}10\\x_i\end{pmatrix}p^{x_i}\left(1-p\right)^{10-x_i}\right)\\=\sum_{i=1}^7\frac\partial{\partial p}\left$\log\left(\begin{pmatrix}10\\x_i\end{pmatrix}\right)+x_i\log\left(p\right)+\left(10-x_i\right)\log\left(1-p\right)\right$\end{array}$
 
 derivando respecto a p cada término de la suma:
 
-$\frac\partial{\partial p}\left[log\left(\begin{pmatrix}10\\x_i\end{pmatrix}\right)+x_ilog\left(p\right)+\left(10-x_i\right)log\left(1-p\right)\right]=\frac{x_i}p-\frac{10-x_i}{1-p}$
+$\frac\partial{\partial p}\left$log\left(\begin{pmatrix}10\\x_i\end{pmatrix}\right)+x_ilog\left(p\right)+\left(10-x_i\right)log\left(1-p\right)\right$=\frac{x_i}p-\frac{10-x_i}{1-p}$
 
 sumando todos los términos e igualando a cero:
 
@@ -151,7 +151,7 @@ Hemos
 
 La función de verosimilitud se reduce a $L(x,p)=3^5p^{17}\left(1-p\right)^{13}$. Planteamos ahora la ecuación de verosimilitud:
 
-$\begin{array}{l}\frac\partial{\partial p}\log\left(3^5p^{17}\left(1-p\right)^{13}\right)=0\Leftrightarrow\\\frac\partial{\partial p}\left[5\log\left(3\right)+17\log\left(p\right)+13\log\left(1-p\right)\right]=0\end{array}$
+$\begin{array}{l}\frac\partial{\partial p}\log\left(3^5p^{17}\left(1-p\right)^{13}\right)=0\Leftrightarrow\\\frac\partial{\partial p}\left$5\log\left(3\right)+17\log\left(p\right)+13\log\left(1-p\right)\right$=0\end{array}$
 
 Derivando:
 

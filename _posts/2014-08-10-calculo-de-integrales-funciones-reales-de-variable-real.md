@@ -104,7 +104,7 @@ $\int5\sin\left(x\right)\cos^2\left(x\right)\operatorname{d}x=5\int\left(\cos\le
 
 **Ejemplo 5:**
 
-$\int e^x\frac{e^{2x}+5}{\sqrt{e^{2x}+4}}\operatorname{d}x=\int\left[\frac{e^x\left(e^{2x}+4\right)}{\sqrt{e^{2x}+4}}+\frac{e^x}{\sqrt{e^{2x}+4}}\right]\operatorname{d}x=\int e^x\sqrt{e^{2x}+4}\operatorname{d}x+\int\frac{e^x}{\sqrt{e^{2x}+4}}\operatorname{d}x.$
+$\int e^x\frac{e^{2x}+5}{\sqrt{e^{2x}+4}}\operatorname{d}x=\int\left$\frac{e^x\left(e^{2x}+4\right)}{\sqrt{e^{2x}+4}}+\frac{e^x}{\sqrt{e^{2x}+4}}\right$\operatorname{d}x=\int e^x\sqrt{e^{2x}+4}\operatorname{d}x+\int\frac{e^x}{\sqrt{e^{2x}+4}}\operatorname{d}x.$
 
 La primera integral es del tipo (3):
 

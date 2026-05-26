@@ -22,10 +22,10 @@ Su hipótesis base es la siguiente: un gas está formado por un gran número de 
 
 ### Presión de un gas confinado
 
-[caption id="attachment_150765" align="alignnone" width="279"]![](/taller-matematicas/assets/images/teoria_cinetica1.png) Fig. 1: moléculas de un gas en movimiento aleatorio[/caption]
+$caption id="attachment_150765" align="alignnone" width="279"$![](/taller-matematicas/assets/images/teoria_cinetica1.png) Fig. 1: moléculas de un gas en movimiento aleatorio[/caption]
 Consideremos un gas confinado en un recipiente de forma cualquiera y  de volumen *V*; habrán moléculas moviéndose en cualquier dirección. Fijamos una de las direcciones, a la que llamamos X, y pensamos en moléculas que, en un instante dado, se mueven en esa dirección;  las velocidades de esas moléculas en la dirección X pueden ser de módulos distintos *v* , y cambian continuamente. Nos acercamos a una de las paredes del recipiente, que supondremos plana y de superficie S (si no es plana, siempre podemos considerar una pequeña parte de la pared, y despreciar la curvatura), y consideramos una pequeña distancia d de la pared, dada por *d = v·dt*, la distancia recorrida por una molécula en un diferencial de tiempo, suficientemente pequeña para suponer que en ese espacio la molécula no chocará con otras.
 
-[caption id="attachment_150768" align="alignright" width="125"]![](/taller-matematicas/assets/images/teoria_cinetica2.png) Fig.2: moléculas moviéndose en la dirección X dentro de un pequeño volumen d·S[/caption]
+$caption id="attachment_150768" align="alignright" width="125"$![](/taller-matematicas/assets/images/teoria_cinetica2.png) Fig.2: moléculas moviéndose en la dirección X dentro de un pequeño volumen d·S[/caption]
 Pensemos ahora en todas las moléculas que en un instante t se mueven en la dirección X y llamemos *N* a su número. Las que ocupan el volumen *dV =  S·d = S-v·dt*, serán *(N/V) · dV*. ya que *N/V* son las moléculas que se mueven en dirección X por unidad de volumen. Las que no se muevan estrictamente en esa dirección pero tengan una componente de velocidad no nula según X también las contaremos, sólo no entran en el cómputo las velocidades ortogonales a X.
 
 Como todas las direcciones y sentidos son *igualmente probables*, en la dirección X la mitad se moverán en el sentido positivo y la otra mitad en el sentido negativo, por tanto  el numero de moléculas que se mueven hacia la pared del recipiente y están dentro del volumen considerado será:

@@ -72,7 +72,7 @@ El binomio *a + bi* se puede representar en un plano coordenado, tomando como ej
 [caption id="" align="alignnone" width="300"]![Plano complejo: reales en eje horizontal, imaginarios en eje vertical](http://3.bp.blogspot.com/-PNlXSOKQBO8/UBk6P2PvhWI/AAAAAAAAAhc/-MnFGJN2QV4/s1600/Argand_diagram.gif) fig. 1: Plano complejo: reales en eje horizontal, imaginarios en eje vertical, y algunos puntos en el plano[/caption]
 La representación de los complejos en el plano proporciona una forma alternativa de expresarlos, denominada **forma polar del complejo**: en la figura 2 vemos que para cualquier complejo (a, b) podemos trazar un segmento de recta desde el origen de coordenadas hasta el punto (a, b); este segmento tendrá una longitud r, llamada **módulo del complejo**,  y formará con ele eje de los números reales un ángulo α, llamado **argumento del complejo**. Estos dos números, (r, α), bastan para localizar el punto (a, b), y son la representación en forma polar del complejo a + bi.
 
-[caption id="attachment_150182" align="aligncenter" width="305"]![Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal](/taller-matematicas/assets/images/imaginarios.png) Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal[/caption]
+$caption id="attachment_150182" align="aligncenter" width="305"$![Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal](/taller-matematicas/assets/images/imaginarios.png) Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal[/caption]
 **Cálculo del módulo y del argumento de un complejo**
 
 Usando trigonometría en la figura 2 es evidente que:
@@ -83,7 +83,7 @@ En el ejemplo de la figura 2, $r=\sqrt{3^2+4^2}=5,\;\alpha=\tan^{-1}\left(\frac4
 
 Si el punto que representa el complejo z está en el primer cuadrante del plano, el argumento $\alpha$ viene dado directamente por [2], pero si está en otros cuadrantes, habrá que modificarlo según la siguiente tabla (en radianes):
 
-[caption id="attachment_150187" align="aligncenter" width="288"]![Los cuatro cuadrantes y las respectivas correcciones al argumento del complejo](/taller-matematicas/assets/images/quadrants.png) Fig. 3: Los cuatro cuadrantes y las respectivas correcciones (en radianes)  al argumento del complejo[/caption]
+$caption id="attachment_150187" align="aligncenter" width="288"$![Los cuatro cuadrantes y las respectivas correcciones al argumento del complejo](/taller-matematicas/assets/images/quadrants.png) Fig. 3: Los cuatro cuadrantes y las respectivas correcciones (en radianes)  al argumento del complejo[/caption]
 En esos casos para usar la tabla de la figura 3 cogeremos los valores absolutos en el cálculo del argumento de la fórmula 2:
 
 $\alpha=\tan^{-1}\left(\frac{\left|b\right|}{\left|a\right|}\right)$

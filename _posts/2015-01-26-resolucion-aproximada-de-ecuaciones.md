@@ -273,7 +273,7 @@ Una especialización de este teorema, especialmente útil para separar raíces, 
  
 | Es una función continua. La gráfica de la función muestra una única raíz cerca del valor $x=-2$; sabemos que los polinomios tienen como máximo tantas raíces como indica su grado, tres en este caso. ¿Puede ser que existan más raíces que no vemos? La derivada $y'=3x^2+2x$ para $x&lt;-2$ toma valores positivos, luego en el intervalo $\left(-\infty,-2\right)$ la función es siempre creciente, además, $\lim_{x\rightarrow-\infty}f(x)=-\infty.$ 
 
-Por otra parte $\lim_{x\rightarrow\infty}f(x)=\infty,$ y también para $x&gt;1$ la derivada es siempre positiva, luego la gráfica no puede volver a cortar el eje X. Así pues hay una única raíz, que separamos diciendo que está, por ejemplo en el intervalo $[-2.5,-1.5].$ En efecto, $f(-2.5)=-51/8&lt;0$ y $f(-1.5)=15/8&gt;0,$ luego por el Teorema de Bolzano ha de existir un $x_0\in\left[-2.5,2.5\right]$ tal que $f(x_0)=0.$
+Por otra parte $\lim_{x\rightarrow\infty}f(x)=\infty,$ y también para $x&gt;1$ la derivada es siempre positiva, luego la gráfica no puede volver a cortar el eje X. Así pues hay una única raíz, que separamos diciendo que está, por ejemplo en el intervalo $[-2.5,-1.5].$ En efecto, $f(-2.5)=-51/8&lt;0$ y $f(-1.5)=15/8&gt;0,$ luego por el Teorema de Bolzano ha de existir un $x_0\in\left$-2.5,2.5\right$$ tal que $f(x_0)=0.$
 ## Algoritmo de bisección
 
 Supongamos que hemos separado una raíz de la función continua $f(x)$ en el intervalo $(a,b)$ de forma que
@@ -293,7 +293,7 @@ Para encontrar la raíz $p$ de la función continua $f(x)$ situada en el interva
 
 	- Paso 4: n = n +1; si $f(a)$ tiene el mismo signo que $f(p)$ entonces hacer $a = p$, si no hacer $b = p$. Ir al paso 1.
 
-**Ejemplo 7**: para hallar la raíz de la función  del ejemplo 6, $y=x^3+x^2+3$, en el intervalo $x_0\in\left[-2.5,2.5\right]$ aplicamos el algoritmo de bisección con una tolerancia $\varepsilon=0.001$ y fijando el número máximo de iteraciones en 20; lo implementamos con hoja de cálculo:
+**Ejemplo 7**: para hallar la raíz de la función  del ejemplo 6, $y=x^3+x^2+3$, en el intervalo $x_0\in\left$-2.5,2.5\right$$ aplicamos el algoritmo de bisección con una tolerancia $\varepsilon=0.001$ y fijando el número máximo de iteraciones en 20; lo implementamos con hoja de cálculo:
 
 | **n** 
 | **a** 
@@ -516,7 +516,7 @@ Comparando con el ejemplo 8, vemos que el algoritmo de Newton obtiene mejores re
 
  El método de Newton puede verse desde el punto de vista geométrico como la aproximación local de la función por su recta tangente en cada punto $x_n$. por ejemplo, en la imagen siguiente, para encontrar $y=f(x)=0$ (línia en negro) por Newton usando como aproximación inicial $x_0=3$ aproximamos la función por su tangente en ese punto (línea amarilla) y hallamos su punto de corte con el eje X, que es la siguiente aproximación $x_1=2$. En el método de la secante usamos un intervalo inicial $(p_0,p_1)$ (como en el método de bisección) y aproximamos la función por la recta secante en el intervalo: en la imagen el intervalo es $(0,3)$, el corte de la secante con el eje X es precisamente en $x=0$ donde $f(x)=0$: el  método encuentra la raíz en un solo paso, ya que hemos tenido la suerte de escoger como extremo del intervalo la solución de la ecuación.
 
-[caption id="attachment_481" align="alignnone" width="442"][![Recta tangente y recta secante a la gráfica de la función y=f(x)](/taller-matematicas/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png) Recta tangente y recta secante a la gráfica de la función y=f(x)[/caption]
+$caption id="attachment_481" align="alignnone" width="442"$[![Recta tangente y recta secante a la gráfica de la función y=f(x)](/taller-matematicas/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png) Recta tangente y recta secante a la gráfica de la función y=f(x)[/caption]
 
 Caso de que la secante tomada en el intervalo$(p_0,p_1)$ no nos dé el resultado, tomamos una nueva recta secante pasando por los puntos $(p_1,p).$
 **Algoritmo de la secante**
@@ -619,7 +619,7 @@ Para encontrar las raíces de una función el primer paso será separarlas, como
 
 Lo expresamos como una función $f(\lambda)=1564000-10^6e^\lambda-\frac{435000}\lambda\left(e^\lambda-1\right)=0$ de la que queremos buscar raíces. La función es continua excepto quizá en $\lambda=0$, para ver que pasa en ese punto hacemos el límite:
 
-$\begin{array}{l}\lim_{\lambda\rightarrow0}\frac{435000}\lambda\left(e^\lambda-1\right)=\frac00=\lim_{\lambda\rightarrow0}\frac{D_\lambda\left[435000\left(e^\lambda-1\right)\right]}{D_\lambda\left[\lambda\right]}\\=\lim_{\lambda\rightarrow0}\frac{435000e^\lambda}1=435000\end{array}$
+$\begin{array}{l}\lim_{\lambda\rightarrow0}\frac{435000}\lambda\left(e^\lambda-1\right)=\frac00=\lim_{\lambda\rightarrow0}\frac{D_\lambda\left$435000\left(e^\lambda-1\right)\right$}{D_\lambda\left$\lambda\right$}\\=\lim_{\lambda\rightarrow0}\frac{435000e^\lambda}1=435000\end{array}$
 
 Por tanto la función es continua en todo su dominio. Tenemos que encontrar un intervalo $(a,b)$ tal que haya un cambio de signo en los extremos del intervalo. Para $\lambda=0$ hemos visto que la función toma el valor $+435000$, y se ve claramente que para valores suficientemente grandes de $\lambda$ el signo será negativo. Si probamos con $\lambda=1$ obtenemos $-406829$, por tanto el intervalo inicial puede ser $(0,1)$. Para no tener que derivar la función usaremos el método de la secante, exigiendo una tolerancia de $10^{-10}$ y con un máximo de 10 iteraciones; hay que tener en cuenta que para $\lambda=0$ obtendremos un error de división por cero, por eso cogemos un valor próximo como extremo inferior del intervalo $a=10^{-6}$, obtenemos:
 

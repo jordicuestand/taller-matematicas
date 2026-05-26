@@ -71,7 +71,7 @@ El primer límite es:
 
 $L_1=\lim_{x\rightarrow\infty}\frac x{x^2+1}=\lim_{x\rightarrow\infty}\frac{x/x^2}{\left(x^2+1\right)/x^2}\lim_{x\rightarrow\infty}\frac{1/x}{1+1/x^2}=\frac0{1+0}=0.$
 
-El segundo límite no existe, pues la función $\sin(x)$ es oscilante; ahora bien, el producto de los límites sí existe, pues $L_1=0$ y $L_2$ está acotado entre los valores $\left[-1,1\right]$, por tanto el producto $L_1·L_2$ es igual a $0$. $\square$
+El segundo límite no existe, pues la función $\sin(x)$ es oscilante; ahora bien, el producto de los límites sí existe, pues $L_1=0$ y $L_2$ está acotado entre los valores $\left$-1,1\right$$, por tanto el producto $L_1·L_2$ es igual a $0$. $\square$
 
 ---
 
@@ -167,7 +167,7 @@ $\lim_{2^+}\frac1{x-2}\left(\frac1{x+2}-\frac3{x^2-4}\right)=\frac1{0^+}\left(\f
 
 En este caso coinciden, la función $f(x)=\frac1{x^2-4}-\frac3{x^3-2x^2-4x+8}$ tiene una asíntota vertical en $x=2$:
 
-[caption id="attachment_109" align="alignnone" width="432"][![problema4-tema4-apunts](/taller-matematicas/assets/images/problema4-tema4-apunts.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/problema4-tema4-apunts.jpg) Realizado con http://fooplot.com/[/caption]
+$caption id="attachment_109" align="alignnone" width="432"$[![problema4-tema4-apunts](/taller-matematicas/assets/images/problema4-tema4-apunts.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/problema4-tema4-apunts.jpg) Realizado con http://fooplot.com/[/caption]
 
 ---
 

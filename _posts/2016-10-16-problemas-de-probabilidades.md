@@ -178,7 +178,7 @@ Obviamente no vamos a hacer un cálculo tan largo para las otras 11 combinacione
 
 Resumimos todo lo que tenemos en una tabla de probabilidades condicionadas P(X | Y), marcamos las casillas que hemos visto que tienen probabilidad 0 (sucesos incompatibles):
 
-[caption id="attachment_997" align="alignnone" width="360"][![Probabilidades condicionadas P(X | Y)](/taller-matematicas/assets/images/conjunta1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta1.png) Probabilidades condicionadas P(X | Y)[/caption]
+$caption id="attachment_997" align="alignnone" width="360"$[![Probabilidades condicionadas P(X | Y)](/taller-matematicas/assets/images/conjunta1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta1.png) Probabilidades condicionadas P(X | Y)[/caption]
 Para obtener la tabla de probabilidades conjunta $P\left(A\cap B\right)$ usaremos la fórmula $P\left(A\cap B\right)=P(A\vert B)\cdot P(B)$ y algunas propiedades útiles:
 
  	- la suma de probabilidades por filas (distribución marginal de X) coincide con las probabilidades P(X),
@@ -219,7 +219,7 @@ y también para la variable X:
 
 Obtenemos la tabla conjunta X,Y:
 
-[caption id="attachment_998" align="alignnone" width="497"][![Probabilidades conjuntas](/taller-matematicas/assets/images/conjunta2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta2.png) Probabilidades conjuntas[/caption]
+$caption id="attachment_998" align="alignnone" width="497"$[![Probabilidades conjuntas](/taller-matematicas/assets/images/conjunta2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta2.png) Probabilidades conjuntas[/caption]
 
 Las casillas en azul se han obtenido aplicando las propiedades 1 y 2, no ha sido necesario el cálculo de probabilidades.
 
