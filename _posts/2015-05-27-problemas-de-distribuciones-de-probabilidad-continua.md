@@ -10,6 +10,7 @@ tags:
   - "distribución de probabilidad"
 math: true
 ---
+{% raw %}
 
 **P1)** Tenemos una distribución de probabilidad continua bidimensional (X,Y) con función de densidad:
 
@@ -202,3 +203,4 @@ Por definición de la función de distribución $F(t)$ tenemos que $F(t)=P(T&lt;
 $f\left(t\right)=\frac{\operatorname d{}}{\operatorname dt}F(t)=\frac{\operatorname d{}}{\operatorname dt}\left(1-e^{2-2t}\right)=2e^{2-2t}.$
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

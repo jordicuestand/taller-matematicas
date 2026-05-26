@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movimiento ondulatorio — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Movimiento ondulatorio</h1>
+    <p class="meta">
+      11/09/2017
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>, <a href="/categoria/mecánica">Mecánica</a>, <a href="/categoria/oscilaciones-y-ondas">Oscilaciones y ondas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h3 id="movimiento-ondulatorio-ejemplos">Movimiento ondulatorio: ejemplos</h3>
+
+<p>Cuando arrojamos una piedra en un estanque vemos que se forman en el agua ondulaciones en forma de círculos concéntricos, que se extienden a partir del punto en que se produjo la perturbación.</p>
+
+<p>[caption id=”attachment_150558” align=”alignnone” width=”413”]<img src="/assets/images/ones-2.png" alt="" /> Fig. 1: ondas en el agua. Fuente: http://hyperphysics.phy-astr.gsu.edu/hbasees/Sound/wavplt.html[/caption]</p>
+
+<p>Si a  una cuerda sujeta por un extremo le damos un movimiento de vaivén, veremos que se forman ondulaciones que se trasladan a lo largo de la cuerda.</p>
+
+<p>[caption id=”attachment_150559” align=”alignnone” width=”528”]<img src="/assets/images/ones-3.png" alt="" /> Fig.2: Al mover la mano arriba y abajo la cuerda oscila. Los puntos de la cuerda se mueven transversalmente a la dirección de propagación de la oscilación.[/caption]</p>
+
+<p>Si ejercemos una fuerza bruscamente sobre un extremo de un resorte que tenemos sujeto por el otro extremo, y después lo liberamos, el resorte oscilará; observando su compresión, podremos ver que hay una zona de compresión que avanza a lo largo del muelle. Cuanto más largo sea el resorte y menor su rigidez (constante elástica), más fácil será observar la onda de compresión.</p>
+
+<p>[caption id=”attachment_150560” align=”aligncenter” width=”212”]<img src="/assets/images/ones-4-e1504079237363.png" alt="" /> Fig. 3: al comprimir rápidamente un muelle podemos observar una onda de compresión que avanza por él.[/caption]</p>
+
+<p>En todos los movimientos ondulatorios el modelo físico es el mismo: una serie de partículas que ejercen un movimiento oscilante idéntico, pero cada una de ellas con cierto retraso (diferencia de fase) entre ellas, además las partículas no se trasladan en la dirección de propagación de la onda, como se muestra en el ejemplo de la figura 4.</p>
+
+<p>[caption id=”attachment_150569” align=”alignnone” width=”148”]<img src="/assets/images/ones-5.png" alt="" /> Fig. 4: las olas no transportan agua, el agua sube y baja al paso de las olas, como indica el movimiento de la barca, que no avanza.[/caption]</p>
+
+<p>Otra propiedad importante de las ondas es su independencia entre sí, si han estado generadas por sucesos independientes: si en las ondas de la figura 1 tiramos otra piedra en un punto cualquiera, se forma otro sistema de ondas con centro en ese punto, que en todo caso puede interferir con el original, sumándose o restándose en cada punto. Es por este motivo que, cuando oímos sonidos procedentes de varias fuentes, podemos distinguirlas por separado, ya que cada sonido es independiente del otro.</p>
+<h3 id="ondas-transversales-y-ondas-longitudinales">Ondas transversales y ondas longitudinales</h3>
+
+<p>En las ondas en el agua o en una cuerda, la oscilación de cada partícula se produce en una dirección transversal a la dirección de propagación de la perturbación, hay unas crestas y unos valles, por ello se llaman <em>ondas transversales</em>. En cambio en un resorte las partículas vibran en la misma dirección de propagación de la perturbación, son una sucesión de compresiones y dilataciones, por lo que se llaman <em>ondas longitudinales</em>. (figura 5).</p>
+
+<p>[caption id=”attachment_150571” align=”alignnone” width=”628”]<img src="/assets/images/ones-6.png" alt="" /> Fig. 5: Ejemplos de ondas longitudinales y transversales[/caption]</p>
+
+<p>En el caso de las <em>ondas longitudinales</em> las partículas, al desplazarse de su posición de equilibrio, presionan a sus vecinas, poniéndolas también en movimiento siempre que el medio sea elástico, ya que si fuera totalmente rígido no podría oscilar. En las ondas transversales para que el movimiento de una partícula afecte (arrastre) a las vecinas, es necesario que entre ellas exista cierta cohesión, que sólo existe en el caso de medios sólidos, pues en los fluidos cada partícula se mueve con fluidez respecto a las otras, por ello estas ondas en general solo existen en los sólidos; la excepción son las ondas transversales que se propagan por la superficie de un líquido, como las olas del mar, en ellas la cohesión la aporta la tensión superficial del líquido.</p>
+<h3 id="matemática-del-movimiento-ondulatorio">Matemática del movimiento ondulatorio</h3>
+
+<p>En la figura 5 vemos una instantánea de un movimiento ondulatorio que se propaga según el eje horizontal X; cada punto, como por ejemplo los puntos A, B, oscilan verticalmente según un eje vertical Y, con una amplitud A. A medida que la onda se propaga, alcanza más puntos que estaban en reposo que pasan también a oscilar. La distancia entre “crestas” es la <strong>longitud de onda</strong> $\lambda$. Los puntos que están en el mismo estado oscilatorio, o sea tienen la misma ordenada Y, y la misma velocidad <em>v</em>, se dicen que están <strong>en fase</strong>, y la distancia que los separa también es igual a la longitud de onda $\lambda$.</p>
+
+<p>[caption id=”attachment_150574” align=”alignnone” width=”539”]<img src="/assets/images/ones-7.png" alt="" /> Fig. 5: longitud de onda[/caption]</p>
+
+<p>El movimiento oscilatorio vertical de amplitud A de cada punto (figura 6) se puede describir imaginando un movimiento circular asociado de forma que al punto oscilante P le sigue como su sombra el punto P’, que localizamos por su posición angular $\theta$. Si tomamos Y = 0 en el punto medio de la oscilación, que corresponde a $\theta=0$, entonces la posición Y = +A/2 corresponde a $\theta=\pi/2$, y en general, $Y = R\sin(\theta)$, siendo R el radio del movimiento circular, R = A/2.</p>
+
+<p>[caption id=”attachment_150575” align=”alignnone” width=”359”]<img src="/assets/images/ones-8.png" alt="" /> Fig. 6: descripción del movimiento oscilatorio[/caption]</p>
+
+<p>Para introducir el tiempo t en la ecuación, definimos la <strong>frecuencia</strong> $\nu$ de la oscilación como el número de oscilaciones completas realizadas por unidad de tiempo; en el movimiento circular asociado, cada oscilación corresponde a una rotación completa $\theta=2\pi$, por tanto la velocidad angular será $\nu\cdot2\pi$, y el ángulo girado en un tiempo t es $\theta=t·\nu\cdot2\pi\cdot$. Sustituyendo:
+$Y(t) = (A/2)\sin(t·\nu\cdot2\pi)$</p>
+
+<p>Hemos obtenido el desplazamiento vertical Y de un punto cualquiera en función del tiempo, sin especificar su posición horizontal X observamos que dos puntos separados una distancia igual a la longitud de onda, $\triangle X=\lambda$, deben oscilar en fase (el ángulo $theta$ del movimiento circular asociado ha de ser idéntico), o sea, $Y\left(x,t\right)=Y\left(x+\triangle X,t\right)=Y\left(x+\lambda,t\right)$; por ello, el desplazamiento Y(x,t) ha se ser una función periódica en la variable x con período $\lambda$. La función $\sin(x)$ tiene periodo $2\pi$, si queremos que tenga periodo $\lambda$ hay que hacer un cambio de escala del eje X, transformándolo en X’,  de forma que la unidad original pasa a valer $\lambda$, esto es, $\frac{2\pi}\lambda=\frac x{x’}\Rightarrow x=\frac{\displaystyle2\pi}{\displaystyle\lambda}x’$. Nos queda el detalle de la dirección de transmisión de la onda: si suponemos que va de izquierda a derecha, entonces el ángulo de fase decrecerá conforme x aumente, y suficientemente lejos del origen valdrá cero (la onda todavía no habrá llegado). Así pues, ensayemos la función:</p>
+
+<p>$Y\left(x,t\right)=\frac A2\sin(2\pi\nu t-\frac{2\pi}\lambda x)=\frac A2\sin(2\pi\left(\nu t-\frac x\lambda\right))$</p>
+
+<p>Observemos que el término en x se resta del ángulo total, tal como hemos comentado. Comprobemos si es periódica en X con periodo $\lambda$ :</p>
+
+<p>$\begin{array}{l}Y\left(x+\lambda,t\right)=\frac A2\sin(2\pi\left(\nu t-\frac{x+\lambda}\lambda\right))=\frac A2\sin(2\pi\left(\nu t-\frac x\lambda+1\right))=\\frac A2\sin(2\pi\left(\nu t-\frac x\lambda\right)+2\pi)=\frac A2\sin(2\pi\left(\nu t-\frac x\lambda\right))=\Y\left(x,t\right)\end{array}$</p>
+
+<p>y cumple con la condición exigida. Llamando $Y_0$ a $A/2$ y definiendo el <strong>período de oscilación</strong>, $T=1/\nu$, tiempo transcurrido en una oscilación completa de cada punto, la ecuación de la onda nos queda en la forma:</p>
+
+<p>$Y\left(x,t\right)=Y_0\sin(2\pi\left(\frac tT-\frac x\lambda\right))$</p>
+
+<p>Para el instante inicial t = 0, y en el punto inicial x = 0, resulta Y(0, 0) = 0, que no siempre será cierto, por ejemplo en la figura 2 movemos inicialmente la cuerda para que empiece a oscilar, por tanto <em>Y</em> no será cero; para tener en cuenta este hecho, consideramos que la fase puede ser distinta de cero en el instante inicial, y definimos esa <strong>fase inicial</strong> por  $\theta_0$, con ello resulta la ecuación de onda (unidimensional, en la dirección X, propagación según la dirección X &gt; 0):</p>
+
+<p>$Y\left(x,t\right)=Y_0\sin(2\pi\left(\frac tT-\frac x\lambda\right)+\theta_0)$ [1]
+<strong>Ejemplo 1</strong>: en la figura 2, en el tiempo inicial t = 0, el extremo de la cuerda está desplazado verticalmente 20cm hacia arriba, y a continuación se hace oscilar con una frecuencia de oscilación es de 2 ciclos por segundo.  La longitud de la onda que se forma en la cuerda es de 40cm. Cuál será la posición Y del punto x = 100cm en el instante t = 5s? Supondremos que la perturbación se mueve con una velocidad constante.</p>
+
+<p>Identificamos parámetros de la ecuación [1]: $ Y(0, 0) = 0.2,\; Y_0=0.2,\;\lambda=0.4,\;\nu=2$, sustituyendo:</p>
+
+<p>$Y\left(x,t\right)=0.2\sin(2\pi\left(\frac t{1/2}+\frac x{0.4}\right)+\theta_0)$</p>
+
+<p>donde hemos usado $T=1/\nu$; para encontrar la fase inicial sustituimos el valor de Y(0,0):</p>
+
+<p>$\begin{array}{l}Y\left(0,0\right)=0.2=0.2\sin(2\pi\left(\frac0{1/2}+\frac0{0.4}\right)+\theta_0)=0.2\sin(\theta_0)\Rightarrow\\sin(\theta_0)=1\Rightarrow\theta_0=\frac{\mathrm\pi}2\end{array}$</p>
+
+<p>Ya tenemos la ecuación de la onda en la cuerda:</p>
+
+<p>$Y\left(x,t\right)=0.2\sin(2\pi\left(2t+\frac x{0.4}\right)+\frac{\mathrm\pi}2)$</p>
+
+<p>Contestemos la pregunta: cuál será la posición Y del punto x = 100cm en el instante t = 5s?</p>
+
+<p>$Y\left(1,5\right)=0.2\sin(2\pi\left(10+\frac1{0.4}\right)+\frac{\mathrm\pi}2)=-0.2$</p>
+
+<p>Pero, un momento, esa posición sólo será correcta si, en el tiempo t = 5 la onda ya ha alcanzado la posición x = 100cm, en otro caso, la cuerda estaría todavía en reposo; tenemos que comprobarlo: la velocidad de transmisión, también conocida por <strong>velocidad de fase</strong>, en el sentido en que es la velocidad a la que la fase de la oscilación se propaga a lo largo de la cuerda, es $v=\lambda\cdot\nu=0.4/2=0.2m/s$ ya que velocidad = espacio/tiempo, la longitud de onda es el espacio recorrido, y la frecuencia es el número de veces que se recorre esa distancia por segundo, a esa velocidad, en 5 segundos la onda se hallará en x = v·t = 0.2·5 = 1m, justo acabará de llegar a ese punto, nuestra respuesta era correcta.</p>
+
+<h3 id="ondas-de-propagación">Ondas de propagación</h3>
+
+<p>Las ondas que hemos visto hasta ahora son generadas desde una fuente (el punto donde lanzamos la piedra en el estanque, el extremo de la cuerda que agitamos…) y se propagan por un medio que, en teoría, es ilimitado; si no lo fuera, la onda llegaría a un “final de trayecto” donde se reflejaría, y al reflejarse interferiría consigo misma, creando patrones de ondas que no estudiaremos en este artículo. Además, suponemos que la fuente de la perturbación no se detiene, sino que sigue impulsando la creación de ondas (la mano que hace oscilar la cuerda no se detiene), si no fuera así, la onda se amortiguaría rápidamente debido a la resistencia del medio (ondas amortiguadas). Cuando tenemos una fuerza motriz actuando que genera las oscilaciones, diremos que formamos oscilaciones forzadas. Las oscilaciones forzadas aplicadas a un medio ilimitado generan las denominadas <strong>ondas de propagación</strong>.</p>
+
+<p>La fuerza motriz puede actuar sólo en un instante (la piedra que cae en el agua) o continuamente, en este último caso si se aplica una oscilación armónica (sinusoidal) obtendremos <strong>ondas armónicas de propagación</strong>.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/fase">fase</a>, <a href="/tag/fase-inicial">fase inicial</a>, <a href="/tag/frecuencia">frecuencia</a>, <a href="/tag/longitud-de-onda">longitud de onda</a>, <a href="/tag/movimiento-oscilatorio">movimiento oscilatorio</a>, <a href="/tag/ondas-de-propagación">ondas de propagación</a>, <a href="/tag/ondas-longitudinales">ondas longitudinales</a>, <a href="/tag/ondas-transversales">ondas transversales</a>, <a href="/tag/período-de-oscilación">período de oscilación</a>, <a href="/tag/velocidad-de-fase">velocidad de fase</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

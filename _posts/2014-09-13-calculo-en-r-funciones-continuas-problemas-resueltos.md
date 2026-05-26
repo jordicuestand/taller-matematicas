@@ -21,6 +21,7 @@ tags:
   - "Teorema de Weierstrass"
 math: true
 ---
+{% raw %}
 
 **1.** Consideramos las funciones que cumplen la igualdad $f\left(\alpha x\right)=\alpha f\left(x\right)$ para cualquier $\alpha\in\mathbb{R}.$ Encontrar la forma explícita de todas las funciones de ese tipo. ¿Son uniformemente continuas en $\mathbb{R}.$?
 
@@ -292,3 +293,4 @@ m = f(50) = -3·50 + 5 = **-145,**
 -100 = f(n) = -3·n + 5 → n = (-100 – 5) / -3 = -105/-3 = **35**.
 
 ---
+{% endraw %}

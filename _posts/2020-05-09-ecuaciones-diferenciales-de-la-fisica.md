@@ -20,6 +20,7 @@ tags:
   - "Teorema de Stokes"
 math: true
 ---
+{% raw %}
 
 "Las ecuaciones diferenciales son la única forma de presentar las leyes de la Física de forma precisa" - R. Feynman. 
 
@@ -195,3 +196,4 @@ y viene expresada en función de gradientes de campos escalares. Veamos ahora co
 [math]Rot\left(\overrightarrow\nabla p+\rho\overrightarrow\nabla\varphi\right)=Rot\left(0\right)\Rightarrow Rot\left(\overrightarrow\nabla p\right)+Rot\left(\rho\overrightarrow\nabla\varphi\right)=0\Rightarrow Rot\left(\rho\overrightarrow\nabla\varphi\right)=0[/math].
 
 En general, para densidades variables segun la posición (x,y,z), esta última ecuación no se cumple, por ejemplo en los gases sometidos a presión y fuerzas conservativas en general, siendo los gases fácilmente compresibles las densidades variarán de forma que habrá movimiento del gas, no habrá equilibrio estático. En el caso de un líquido, mucho más difícil de comprimir, si consideramos que tiene un densidad constante entonces podemos sacarlo fuera del operador rotacional y entonces la condición de equilibrio se cumple siempre: [math]Rot\left(\rho\overrightarrow\nabla\varphi\right)=0\Rightarrow\rho\cdot Rot\left(\overrightarrow\nabla\varphi\right)=0\Rightarrow\rho\cdot0=0[/math]. En este caso la condición [10] implica la igualdad entre gradientes [math]\overrightarrow\nabla p=-\rho\overrightarrow\nabla\varphi[/math] que se cumplirá siempre que [math]p+\rho\varphi=\;[/math] *constante* que es la *ecuación de equilibrio del fluido para densidad constante*.
+{% endraw %}

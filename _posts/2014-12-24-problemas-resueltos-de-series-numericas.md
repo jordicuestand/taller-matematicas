@@ -10,6 +10,7 @@ tags:
   - "series numéricas"
 math: true
 ---
+{% raw %}
 
 La teoría (con ejemplos) correspondiente la encontrareis aquí: [Series de números reales](http://tallermatematic.ovh/wp/index.php/2015/07/25/series-de-numeros-reales/).
 
@@ -176,3 +177,4 @@ por ser el grado del denominador mayor que el del numerador; la serie es absolut
  
 
 Sucesiones y series infinitas (Curso programado de Cálculo C.E.M.). Un libro antiguo e injustamente olvidado, en mi opinión. El Curso programado sigue la didáctica [constructivista](https://es.wikipedia.org/wiki/Constructivismo_%28pedagog%C3%ADa%29), introduciendo cada concepto con ejemplos, de forma que el alumno va construyendo su conocimiento en vez de simplemente memorizarlo.
+{% endraw %}

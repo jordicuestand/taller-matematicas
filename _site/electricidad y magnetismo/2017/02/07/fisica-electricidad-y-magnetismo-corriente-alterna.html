@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física -> Electricidad y Magnetismo -> Corriente alterna — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Física -> Electricidad y Magnetismo -> Corriente alterna</h1>
+    <p class="meta">
+      07/02/2017
+      
+        · <a href="/categoria/electricidad-y-magnetismo">Electricidad y Magnetismo</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p>En los orígenes de la industria eléctrica se descubrió que el transporte de la electricidad es más económico cuando se usa corriente alterna en vez de continua, y desde entonces las instalaciones de potencia cambian la polaridad de la corriente con una frecuencia de 50 ciclos por segundo, o 50 Hertz (en Europa), mientras que en las transmisiones por ondas electromagnéticas se usan frecuencias de millones de Hertz. Este artículo trata sobre cálculo de parámetros de circuitos simples en corriente alterna.</p>
+
+<h3 id="corriente-alterna">Corriente alterna</h3>
+
+<p>Es toda corriente eléctrica cuya intensidad es una función periódica del tiempo y con un sentido de circulación que se invierte también periódicamente. En Análisis Matemático se demuestra que estas funciones periódicas se pueden descomponer en serie de funciones sinusoidales de la forma $A_i\sin\left(\omega_it\right)$, con unas frecuencias que son múltiplos de la más baja; por tanto, toda corriente alterna en general (abreviadamente c.a.) se puede considerar igual a la superposición de corrientes alternas sinusoidales; por ello, basta con estudiar éste último tipo de c.a.</p>
+
+<h3 id="circuito-rlc-serie-con-corriente-alterna">Circuito RLC serie con corriente alterna</h3>
+
+<p>[caption id=”attachment_150438” align=”alignnone” width=”229”]<img src="/assets/images/corrent_alterna1.png" alt="Fig. 1: Circuito RLC serie" /> Fig. 1: Circuito RLC serie[/caption]
+En la figura 1 vemos un tramo de circuito con una resistencia R, una inductancia L y un condensador C conectados en serie; supongamos que es recorrido por una c.a. de intensidad $i=I\sin\left(\omega t\right)$, y que en un instante t circula de izquierda a derecha, provocando una caída de tensión $V_A-V_B=iR$ en la resistencia, otra caída $V_B-V_C=L·i’$ en la inductancia, siendo i’ la derivada respecto del tiempo de la intensidad i, y por último una caída $BV_c-V_D=q/C$ en el condensador, siendo q su carga y C su capacidad. En un instante dt la corriente lleva al condensador una carga dq = i·dt, por tanto la carga total es $q=\int i\cdot\operatorname dt$. La caída total de tensión en el tramo RLC es la suma:</p>
+
+<p>$\triangle V=Ri+L\frac{\operatorname di}{\operatorname dt}+\frac1C\int i\cdot\operatorname dt$ [1]</p>
+
+<p>Como la intensidad es una función sinusoidal, y las derivadas e integrales de funciones sinusoidales también son sinusoidales, la caída de tensión será a su vez una función sinusoidal tal como</p>
+
+<p>$\triangle V=V_0\sin\left(\omega+\varphi\right)$</p>
+
+<p>[caption id=”attachment_150439” align=”alignnone” width=”259”]<img src="/assets/images/corrent_alterna2.png" alt="corrent_alterna2" /> Fig. 2: el circuito RLC con los distintos puntos A, B, C, D a considerar para el cálculo de las diferencias de potencial[/caption]
+Sustituyendo en [1]:</p>
+
+<p>$V_0\sin\left(\omega+\varphi\right)=V_A-V_D=Ri+L\frac{\operatorname di}{\operatorname dt}+\frac1C\int i\operatorname dt$</p>
+
+<p>Esta es una ecuación que matemáticamente parece complicada; en el siguiente apartado vemos los instrumentos para operarla fácilmente, usando sólo geometría elemental.</p>
+
+<h3 id="representación-del-potencial-periódico-mediante-los-vectores-de-fresnel">Representación del potencial periódico mediante los vectores de Fresnel</h3>
+
+<p>Al derivar e integrar la intensidad sinusoidal el resultado tiene un desfase respecto la original; en efecto:</p>
+
+<p>$\frac{\operatorname d\;}{\operatorname dt}A\sin\left(\omega t\right)=A\omega\cos\left(\omega t\right)=A\omega\sin\left(\omega t+\frac{\mathrm\pi}2\right)$</p>
+
+<p>Propiedad 1: La derivada temporal de la función sinusoidal es también sinusoidal con la misma pulsación $\omega$, con amplitud modificada por el factor $\omega$, y con una fase adelantada en $\frac{\mathrm\pi}2$.</p>
+
+<p>Obviamente para la integral tendremos un resultado como este:</p>
+
+<p>Propiedad 2: La integral temporal de la función sinusoidal es también sinusoidal con la misma pulsación $\omega$, con amplitud modificada por el factor $1/\omega$, y con una fase retrasada en $\frac{\mathrm\pi}2$.</p>
+
+<p>Un movimiento oscilatorio simple de pulsación $\omega$ y amplitud A puede representarse por un vector de módulo constante igual a la amplitud A, que efectúa un movimiento circular uniforme con velocidad angular constante $\omega$, es la denominada representación de Fresnel de la oscilación. Entonces, como tanto la intensidad i(t) como su derivada e integral tienen la misma pulsación, si las representamos con vectores de Fresnel girarán con la misma velocidad angular, con módulos distintos, y con un desfase de $\frac{\mathrm\pi}2$ entre ellos; la suma [1] se podrá obtener como suma de los tres vectores.</p>
+
+<p>[caption id=”attachment_150442” align=”alignnone” width=”368”]<img src="/assets/images/corrent_alterna3.png" alt="Fig. 3: representación de Fresnel de la intensidad en el circuito RLC" /> Fig. 3: representación de Fresnel de las diferencias de potencial en el circuito RLC en cada punto[/caption]
+ En la figura 3 se representan las diferencias de potencial: la $V_A-V_B$ debido a la resistencia R tiene por módulo RI, y lo representamos sobre el eje X; a continuación, la $V_B-V_C$ debida a la inductancia L tiene por módulo $L\omegaI$ y forma un ángulo de 90⁰ en el sentido contrario a las agujas del reloj con el vector $V_A-V_B$ (propiedad 1); por último, la $V_C-V_D$ debida al condensador tiene por módulo $I(C\omega)^{-1}$ y forma un ángulo de -90⁰ con el vector $V_A-V_B$ (propiedad 2). La suma vectorial de estos tres vectores se representa en azul, y nos da la diferencia de potencial del tramo completo del circuito, $V_A-V_D$. Llamando $\theta$ al ángulo del vector $V_A-V_D$, es evidente que</p>
+
+<p>$\tan\left(\theta\right)=\frac{L\omega I_0-I_0C^{-1}\omega^{-1}}{RI_0}\Rightarrow\theta=\tan^{-1}\left(\frac{L\omega I_0-{\displaystyle\frac1{C\omega}}}R\right)$ [2]</p>
+
+<p>Por otro lado, aplicando el teorema de Pitágoras al triángulo ABE, y llamando V a la diferencia de potencial $V_A-V_D$, obtenemos:</p>
+
+<p>$V^2=I_0^2R^2+I_0^2\left(L\omega-\frac1{C\omega}\right)^2\Rightarrow I_0=\frac V{\sqrt{R^2+\left(L\omega-\frac1{C\omega}\right)^2}}$ [3]</p>
+
+<p>Las ecuaciones [2] y [3] relacionan la intensidad y la diferencia de potencial en un circuito RLC de corriente alterna.</p>
+
+<h3 id="impedancia-y-reactancia">Impedancia y reactancia</h3>
+
+<p> La ecuación [3] podemos expresarla en forma compacta: I = V / Z, donde Z es la <strong>impedancia</strong> del circuito,</p>
+
+<p>$Z=\sqrt{R^2+\left(L\omega-\frac1{C\omega}\right)^2}$ [4]</p>
+
+<p>De esta forma, la relación entre intensidad y tensión queda parecida a la ley de Ohm de corriente continua, I = V / R, sustituyendo la resistencia R por la impedancia Z, la cual es también una medida de a oposición del circuito al paso de corriente, y también se mide en Ohms.</p>
+
+<p>De forma parecida, podemos simplificar la ecuación [2],</p>
+
+<p>$\theta=\tan^{-1}\left(\frac{L\omega I_0-{\displaystyle\frac1{C\omega}}}R\right)=\tan^{-1}\left(\frac XR\right)$</p>
+
+<p>hemos definido la <strong>reactancia</strong> del circuito, X:</p>
+
+<p>$X=L\omega I_0-\frac1{C\omega}$ [5]</p>
+
+<p>que puede ser positiva o negativa; en los casos particulares de circuitos RC (sin inductancia) se dice que tenemos una <strong>reactancia capacitiva</strong>, que será negativa, y en circuitos RL (sin capacitancia) una <strong>reactancia inductiva</strong>, que será positiva.</p>
+
+<p>Mirando la figura 3 veremos que, cuando la reactancia sea positiva, la intensidad, que está sobre el eje X, estará retrasada un ángulo $\theta$ respecto la tensión V (la línea azul resultante), mientras que para reactancias negativas será al contrario, la intensidad irá avanzada respecto la tensión.</p>
+
+<p>Usando la reactancia, la ecuación [4] queda aún más compacta:</p>
+
+<p>$Z=\sqrt{R^2+X)^2}$ [5]</p>
+
+<p><strong>Ejemplo 1</strong>: Tenemos en serie una resistencia R, una bobina y un condensador. La bobina tiene resistencia despreciable y un coeficiente de autoinducción de 25mH. El condensador tiene una capacidad de 50μF. Sabiendo que la tensión instantánea es V = 120·sen(400t) y que la intensidad está adelantada 60⁰ respecto a la tensión, calcular el valor de R, la caída de tensión en la resistencia y el diagrama de Fresnel de tensiones.</p>
+
+<p>El esquema del circuito es semejante al de la figura 1, y el diagrama de tensiones será como el de la figura 3. Con los datos que tenemos podemos calcular la reactancia del circuito:</p>
+
+<p>$X=L\omega-\frac1{C\omega}=25\cdot10^{-3}\cdot400-\frac1{50\cdot10^{-6}\cdot400}=-40\Omega$</p>
+
+<p>Vemos que la reactancia es negativa, mirando la figura 3 deducimos que el ángulo entre intensidad y tensión ha de ser negativo, e igual a -60⁰. Usando la ecuación [2], en la cual el numerador es igual a la reactancia X:</p>
+
+<p>$\tan\left(-60⁰\right)=\frac XR=\frac{-40}R\Rightarrow R=\frac{40}{\tan\left(60⁰\right)}=\frac{40}{\sqrt3}\Omega$.</p>
+
+<p>La caída de tensión en la resistencia viene dada por la ley de Ohm V = IR, que es una función sinusoidal:</p>
+
+<p>$V=R\cdot I=\frac{40}{\sqrt3}\frac{3\sqrt3}2\sin\left(400t\right)=60\sin\left(400t\right)$.</p>
+
+<p>Teniendo en cuenta el ángulo negativo, el diagrama de Fresnel del circuito tiene este aspecto:</p>
+
+<p>[caption id=”attachment_150450” align=”alignnone” width=”301”]<img src="/assets/images/corrent_alterna4.png" alt="Fig. 4: diagrama de Fresnel para una reactancia X negativa" /> Fig. 4: diagrama de Fresnel para una reactancia X negativa[/caption]
+<img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+<h3 id="valor-eficaz-de-una-corriente-alterna">Valor eficaz de una corriente alterna</h3>
+
+<p>Siendo las tensiones e intensidades variables con el tiempo, a menudo interesa conocer su valor medio, más que su valor instantáneo. Para una función periódica en general y(t) de período T, su valor medio en ese intervalo de tiempo se define como</p>
+
+<p>$\overline y=\sqrt{\int_0^Ty^2\left(t\right)\operatorname dt}$</p>
+
+<p>Para el caso particular de una función sinusoidal,</p>
+
+<p>$\overline y=\sqrt{\int_0^T\left[Y_0\sin\left(\omega t+\varphi\right)\right]^2\operatorname dt}$</p>
+
+<p>Esta integral se resuelve fácilmente teniendo en cuenta la condición de periodicidad $y\left(t+T\right)=y\left(t\right)$ (que se puede expresar como $\omega T=2\pi$) y usando identidades trigonométricas, resulta:</p>
+
+<p>$\overline y=\sqrt{\int_0^T\left[Y_0\sin\left(\omega t+\varphi\right)\right]^2\operatorname dt}=\frac{Y_0}{\sqrt2}$</p>
+
+<p>A este valor medio de la función periódica se le conoce por <strong>valor eficaz</strong>; aplicado al caso de corriente alterna, tenemos la <strong>tensión eficaz</strong> $\frac{I_0}{\sqrt2}$ y la <strong>intensidad eficaz</strong> $\frac{V_0}{\sqrt2}$.</p>
+
+<p><strong>Ejemplo 2</strong>: En el ejemplo 1, la tensión eficaz entre los extremos de la resistencia vale $60/\sqrt2=42.43V$</p>
+
+<h3 id="resonancia-eléctrica">Resonancia eléctrica</h3>
+
+<p>En un circuito de c.a. decimos que hay resonancia eléctrica cuando no hay desfase entre la intensidad y la tensión; en un circuito RLC para que ello ocurra la reactancia ha de valer cero, o sea que
+$L\omega=\frac1{C\omega}\Leftrightarrow\omega^2=\frac1{LC}$</p>
+
+<p>A esta pulsación se la llama pulsación de resonancia, y a su frecuencia asociada, <strong>frecuencia de resonancia</strong> (del circuito RLC):
+$f=\frac\omega{2\mathrm\pi}=\frac1{2\mathrm\pi\sqrt{LC}}$ [6]</p>
+
+<p>El diagrama de Fresnel de un circuito RLC en resonancia tiene este aspecto:</p>
+
+<p>[caption id=”attachment_150451” align=”alignnone” width=”303”]<img src="/assets/images/corrent_alterna5.png" alt="Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia" /> Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia[/caption]
+Vemos que las variaciones de tensión en la inducción y el condensador tienen el mismo valor, pero con signos contrarios. Con ello, la variación en todo el circuito es la misma que en la resistencia, y las tensiones en la inducción y el con-</p>
+
+<p>[caption id=”attachment_150452” align=”alignright” width=”204”]<img src="/assets/images/corrent_alterna6.png" alt="Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión" /> Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión[/caption]
+densador no tienen efectos externos al circuito, son valores internos. Ahora bien, podría darse el caso de que estas tensiones internas fueran grandes, incluso mucho mayores que la tensión externa aplicada (la que medimos en los extremos AD del circuito), apareciendo <em>sobretensiones</em> en los componentes L y C que hay que tener en cuenta en los aislamientos del circuito. Este hecho se puede aprovechar para diseñar <em>amplificadores de tensión</em>, en el que un circuito RLC produce internamente altas tensiones a partir de una tensión aplicada menor; una inductancia sometida a altas tensiones variables se comporta como un generador de ondas electromagnéticas: una antena emisora.</p>
+
+<h3 id="potencia-corriente-activa-y-reactiva">Potencia, corriente activa y reactiva</h3>
+
+<p>La energía disipada en un circuito de corriente continua durante un período de tiempo t es W = VIt; en el caso de un circuito en c.a. nos interesa conocer la energía disipada en un período de oscilación T:</p>
+
+<p>$W=\int_0^Tv\left(t\right)i\left(t\right)\operatorname dt$</p>
+
+<p>Sustituyendo en esta expresión los valores v, i por las funciones sinusoidales,</p>
+
+<p>$W=\int_0^TV_0I_0\sin\left(\omega t\right)\sin\left(\omega t+\theta\right)\operatorname dt$</p>
+
+<p>donde $\theta$ es el desfase entre intensidad y corriente. Usando identidades trigonométricas, y la condición de periodicidad $\omega T=2\pi$ llegamos a</p>
+
+<p>$W=\int_0^TV_0I_0\sin\left(\omega t\right)\sin\left(\omega t+\theta\right)\operatorname dt=\frac{V_0I_0}2T\cos\left(\theta\right)$</p>
+
+<p>y la potencia media por período será el trabajo anterior dividido por el tiempo T:</p>
+
+<p>$P=\frac WT=\frac{V_0I_0}2\cos\left(\theta\right)=\frac{V_0}{\sqrt2}\frac{I_0}{\sqrt2}\cos\left(\theta\right)=VI\cos\left(\theta\right)$ [7]</p>
+
+<p>donde se han utilizado las definiciones de tensión e intensidad eficaces, I, V; a la cantidad $\cos\left(\theta\right)$ se la llama <a href="https://es.wikipedia.org/wiki/Factor_de_potencia"><strong>factor de potencia</strong></a> del circuito considerado:</p>
+
+<p>La potencia media disipada por período en un circuito c.a. es igual al producto de la intensidad y tensión eficaz por el factor de potencia del circuito.</p>
+
+<p>El vector de corriente i(t) formalmente se puede descomponer en dos componentes: una paralela al vector v(t) y otra perpendicular a él; imaginemos que el circuito es atravesado por esas dos corrientes superpuestas, una en concordancia de fase con la tensión, llamada <strong>corriente activa</strong>, la otra a 90⁰ de desfase, llamada <strong>corriente reactiva</strong>. Como el ángulo entre i(t) y v(t) es $\theta$, de la ecuación [7] deducimos que</p>
+
+<p>$P=VI\cos\left(\theta\right)=VI_a$ [8]</p>
+
+<p>o sea que la potencia consumida se debe a la intensidad activa $I_a$, la que está en fase con la tensión; esto puede verse como la consecuencia del hecho de que la potencia se consume sólo en las resistencias del circuito, la corriente activa es la que consume energía, mientras que las inductancias y condensadores (los ideales, que tienen resistencias internas despreciables) no consumen energía. Entonces la corriente reactiva no consume energía. Cuando en un circuito sólo tenemos resistencias, toda la corriente será activa; a medida que vamos conectando elementos capacitivos e inductivos, la intensidad y la tensión se van desfasando y aparece la corriente reactiva. Para una potencia P y una tensión eficaz V dadas, la ecuación [8] nos dice que como menor es el factor de potencia, mayor habrá de ser la intensidad: entonces, si tenemos una instalación de 220V con un factor de potencia bajo, las intensidades de corriente que necesitaremos para consumir una potencia dada fija será mayor que para un factor de potencia alto, es por tanto importante mantener todo lo alto posible el factor de potencia para disminuir la intensidad (altas intensidades calientan más los componentes y se pierde energía por disipación). el factor de potencia es un elemento clave en el diseño de componentes eléctricos y en la optimización de instalaciones.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/corriente-alterna">corriente alterna</a>, <a href="/tag/corriente-eléctrica">corriente eléctrica</a>, <a href="/tag/factor-de-potencia">factor de potencia</a>, <a href="/tag/frecuencia-de-resonancia">frecuencia de resonancia</a>, <a href="/tag/fresnel">Fresnel</a>, <a href="/tag/impedancia">impedancia</a>, <a href="/tag/intensidad-eficaz">intensidad eficaz</a>, <a href="/tag/reactancia">reactancia</a>, <a href="/tag/reactancia-capacitiva">reactancia capacitiva</a>, <a href="/tag/reactancia-inductiva">reactancia inductiva</a>, <a href="/tag/rlc">RLC</a>, <a href="/tag/tensión-eficaz">tensión eficaz</a>, <a href="/tag/valor-eficaz">valor eficaz</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

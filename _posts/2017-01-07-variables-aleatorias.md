@@ -13,6 +13,7 @@ tags:
   - "variable aleatoria"
 math: true
 ---
+{% raw %}
 
 - Concepto de variable aleatoria
 
@@ -396,3 +397,4 @@ Para el tercer intervalo tenemos:
 $P(-3\leq X\leq0.5)=\int_0^1f\left(x\right)\operatorname dx=\int_0^1\frac23\left(x+1\right)\operatorname dx=\frac23\left[\frac{x^2}2+x\right]_0^1=\frac23\left(\frac12+1-0\right)=1$
 
 un resultado esperado, pues es la condición de normalización de las funciones de densidad.
+{% endraw %}

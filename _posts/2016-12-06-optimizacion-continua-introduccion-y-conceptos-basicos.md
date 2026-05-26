@@ -12,6 +12,7 @@ tags:
   - "método del gradiente"
 math: true
 ---
+{% raw %}
 
 ### Introducción
 
@@ -245,3 +246,4 @@ Como consecuencia, si A >> a, entonces $\beta$ tiende a 1, y el error tiende a s
 
 [caption id="attachment_150348" align="alignnone" width="626"]![optimitzacio-9](/assets/images/optimitzacio-9.png) Izquierda: la dirección de máximo descenso es la misma para todas las curvas de nivel cuando son esferas concéntricas. Derecha: cuando son elipsoides muy achatados, las direcciones de máximo descenso cambian continuamente, produciendo pasos muy cortos y perjudicando la tasa de convergencia.[/caption]
 **Ejemplo 7**: La tasa de convergencia del método aplicado a la función cuadrática  del ejemplo 5, con A = 4, a = 2, es $\beta=\frac{\varepsilon_{k+1}}{\varepsilon_k}\leq\frac{\left(4-2\right)^2}{\left(4+2\right)^2}=\frac4{36}=\frac19$, estimación que coincide bastante bien con el descenso en el valor del módulo del gradiente observado en el ejemplo 6.
+{% endraw %}

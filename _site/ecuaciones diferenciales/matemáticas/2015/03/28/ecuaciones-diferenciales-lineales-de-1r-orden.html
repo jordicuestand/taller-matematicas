@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecuaciones diferenciales lineales de 1r orden — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Ecuaciones diferenciales lineales de 1r orden</h1>
+    <p class="meta">
+      28/03/2015
+      
+        · <a href="/categoria/ecuaciones-diferenciales">Ecuaciones Diferenciales</a>, <a href="/categoria/matemáticas">Matemáticas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h1 id="ecuación-diferencial-lineal-de-primer-orden">Ecuación diferencial lineal de primer orden</h1>
+
+<p>Es la que tiene la forma
+$y’+X(x)y=F(x)$</p>
+
+<p>donde $X(x)$ y $F(x)$ son funciones cualesquiera que sólo dependen de la variable independiente $x$.</p>
+
+<p><strong>Ejemplo 1</strong>: Las siguientes ecuaciones de primer orden son lineales</p>
+
+ 	- $y’+y·sin(x)=cos(x)$
+
+ 	- $2y’-5ye^x+x=0$, pues operando se convierte en $y’+y·(-5/2)e^x = -x$
+
+ 	- $x^2y’-e·y+3Ln(x)=0$, pues podemos expresar la ecuación como $y’-\frac e{x^2}\cdot y=-\frac{3Ln(x)}{x^2}$.
+
+<p>En este ejemplo podemos darnos cuenta de que las ecuaciones son lineales en y, no en x. Cuando hay términos no lineales en y, la ecuación deja de ser lineal.</p>
+
+<p><strong>Ejemplo 2</strong>: Las siguientes ecuaciones de primer orden no son lineales, pues incluyen términos no lineales en la variable y, que no podemos linealizar:</p>
+
+ 	- $y’-\frac1{x^2}\cdot y^2=x$
+
+ 	- $yy’-y\;=2x\;$
+
+ 	- $xy’+e^y\;=2xy\;$
+
+<h2 id="solución-de-la-ecuación-lineal-de-primer-orden">Solución de la ecuación lineal de primer orden</h2>
+
+<h3 id="ecuaciones-lineales-homogéneas">Ecuaciones lineales homogéneas</h3>
+
+<p>Primero nos fijamos en el caso especial de que $F(x)=0$, denominado <strong>ecuación diferencial lineal homogénea</strong>: $y’+X(x)y=0.$ En este caso, podemos expresarla en la forma de una <a href="http://tallermatematic.eu/wp/#separables">ecuación de variables separadas</a>:</p>
+
+<p>$\begin{array}{l}y’+X(x)y=0\;\Leftrightarrow\frac{\operatorname dy}{\operatorname dx}=-X(x)y\Leftrightarrow\frac{\operatorname dy}y=-X(x)\operatorname dx\Leftrightarrow\\int\frac{\operatorname dy}y=-\int X(x)\operatorname dx\Leftrightarrow\ln\left(y\right)=-\int X(x)\operatorname dx+C\Leftrightarrow\\boxed{y=C\cdot exp\left(-\int X(x)\operatorname dx\right)=C\eta\left(x\right)}\end{array}.$</p>
+
+<p><strong>Ejemplo 3</strong>: La ecuación diferencial lineal homogénea $y’+cos(x)y=0$ tiene por solución $y=C\cdot exp\left(-\int\cos\left(x\right)\operatorname dx\right)=C\cdot exp\left(-\sin\left(x\right)\right).$</p>
+
+<p><strong>NOTA</strong>: No debemos confundir las ecuaciones lineales homogéneas, $y’+X(x)y=0$, con las denominadas <a href="http://tallermatematic.eu/wp/#homogeneas">ecuaciones diferenciales homogéneas</a> $y’=F(x,y)$ ni con las funciones homogéneas $F(x,y)$, que son tales que cumplen la propiedad $F\left(\lambda x,\lambda y\right)=\lambda^nF\left(x,y\right).$ No tienen nada que ver en absoluto.</p>
+
+<h3 id="soluciones-particulares-y-solución-general">Soluciones particulares y solución general</h3>
+
+<p>Supongamos ahora que tenemos una ecuación lineal $y’+X(x)y=F(x)$ para la que conocemos una solución particular $y_p(x).$ Entonces, si resolvemos la ecuación homogénea asociada $y’+X(x)y=0$, con solución $y_h(x)$, se cumple que la solución general de la ecuación “completa” será $y=Cy_h+y_p$. Es fácil comprobar que es solución sustituyendo en la ecuación completa:</p>
+
+<p>$\begin{array}{l}y=Cy_h+y_p\Rightarrow y’=Cy’_h+y’_p\Rightarrow\y’+X(x)y=\left(Cy’_h+y’_p\right)+X(x)\cdot\left(Cy_h+y_p\right)=\Cy’_h+X(x)\cdot Cy_h+y’_p+X(x)\cdot y_p=\C\left(y’_h+X(x)\cdot y_h\right)+\left(y’_p+X(x)\cdot y_p\right)=C\cdot0+F(x)=F(x).\end{array}$</p>
+
+<p>Por tanto, <em>en las ecuaciones lineales, si tenemos una solución particular, entonces sabemos hallar la solución general</em>.</p>
+
+<p><strong>Ejemplo 4</strong>: La ecuación lineal $y’-3xy=xe^{2x^2}$ tiene la solución particular $y_p=e^{2x^2}$. Obtenemos la solución de la lineal homogénea asociada, $y’-3xy=0$, que es $y_h=C\cdot exp\left(-\int e^{2x^2}\operatorname dx\right)=C\cdot\frac{-1}{4x}e^{2x^2}$. Entonces, la solución general es $y=e^{2x^2}+C\cdot\frac{-1}{4x}e^{2x^2}.$</p>
+
+<h3 id="método-de-variación-de-constantes">Método de variación de constantes</h3>
+
+<p>La propiedad anterior con la cual obtenemos la solución general, en la práctica exige el conocimiento de una solución particular de la ecuación, que por lo general no tendremos; no obstante, tenemos un método que puede llevarnos a la obtención de una solución particular conociendo la solución de la ecuación homogénea asociada.</p>
+
+<p>El método de variación de las constantes sustituye la constante C de la solución de la homogénea $y_h=C·\eta(x)$ por una función de x, en principio desconocida: $C(x)$. Se trata entonces de ver si $y=C(x)·\eta(x)$ puede ser una solución particular; para ello, la derivamos y sustituimos en la ecuación lineal completa:</p>
+
+<p>$\begin{array}{l}y=C(x)\cdot\eta(x)\Rightarrow y’=C’(x)\cdot\eta(x)+C(x)\cdot\eta’(x);\y’+X(x)y=F(x)\Leftrightarrow\left(C’(x)\cdot\eta(x)+C(x)\cdot\eta’(x)\right)+X(x)\left(C(x)\cdot\eta(x)\right)=F(x)\Leftrightarrow\C(x)\cdot\left(\eta’(x)+X(x)\cdot\eta(x)\right)+C’(x)\cdot\eta(x)=F(x)\\end{array},$</p>
+
+<p>teniendo en cuenta que $\eta’(x)+X(x)\eta(x)=0$ (basta tomar $C=1$ en la solución de la homogénea $y_h=C·\eta(x)$, nos queda:</p>
+
+<p>$\begin{array}{l}C(x)\cdot\left(\cancel{\eta’(x)+X(x)\cdot\eta(x)}\right)+C’(x)\cdot\eta(x)=F(x)\Leftrightarrow\C’(x)\cdot\eta(x)=F(x)\Leftrightarrow\frac{\operatorname dC}{\operatorname dx}\eta(x)=F(x)\Leftrightarrow\operatorname dC=\frac{F(x)}{\eta(x)}\operatorname dx\Leftrightarrow\C(x)=\int\frac{F(x)}{\eta(x)}\operatorname dx\\\end{array}.$</p>
+
+<p>Si podemos resolver esta integral, entonces tenemos una solución particular de la ecuación lineal, $y_p=C(x)·\eta(x)$, que es:</p>
+
+<p>$\begin{array}{l}y_p=C(x)\cdot\eta(x)=\int\frac{F(x)}{\eta(x)}\operatorname dx\cdot\eta(x)=e^{-\int X\left(x\right)\operatorname dx}\cdot\int\frac{F(x)}{\eta(x)}\operatorname dx\Leftrightarrow\\\boxed{y_p=e^{-\int X\left(x\right)\operatorname dx}\cdot\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx.}\end{array}$</p>
+
+<p>Ahora también podemos dar la expresión general de la solución completa, obtenida por el método de variación de las constantes:</p>
+
+<p>$\begin{array}{l}\begin{array}{l}y=Cy_h+y_p=\C\cdot e^{-\int X\left(x\right)\operatorname dx}+e^{-\int X\left(x\right)\operatorname dx}\cdot\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\Rightarrow\\boxed{y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left[C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right]}.\end{array}\\end{array}$</p>
+
+<p>Se puede simplificar un poco esta expresión usando la función solución de la ecuación homogénea $\eta\left(x\right)$, queda:</p>
+
+<p>$\boxed{y(x)=\eta\left(x\right)\cdot\left[C+\int F(x)\cdot\eta^{-1}\left(x\right)\operatorname dx\right]}$</p>
+
+<p>Por tanto, en el caso de las ecuaciones lineales de primer orden, <em>tenemos una fórmula que las reduce al cálculo de dos integrales</em>.  El método de variación de constantes es general: veremos que se puede aplicar a otras ecuaciones diferenciales.</p>
+
+<p><strong>Ejemplo 5</strong>: En un circuito eléctrico que contiene una resistencia R y una <a href="http://es.wikipedia.org/wiki/Inductancia">inductancia</a> L (abreviadamente, <a href="http://es.wikipedia.org/wiki/Circuito_RL">circuito RL</a>) la intensidad de corriente generada al aplicar una tensión V viene dada por la ecuación</p>
+
+<p>$RI(t)=V(t)-LI’(t)$</p>
+
+<p> que es una ecuación diferencial lineal en la variable $I(t)$, pues:</p>
+
+<p>$RI(t)=V(t)-LI’(t)\Leftrightarrow I’(t)+\frac RLI(t)=V(t)$</p>
+
+<p>Si la tensión es constante, $V(t)=V$, y la ecuación es $I’(t)+\frac RLI(t)=V.$ La ecuación homogénea asociada es $I’(t)+\frac RLI(t)=0$ que es de variables separables:</p>
+
+<p>$\begin{array}{l}\frac{\operatorname dI}{\operatorname dt}=-\frac RLI(t)\Leftrightarrow\frac{\operatorname dI}{I(t)}=-\frac RL\operatorname dt\Leftrightarrow\int\frac{\operatorname dI}{I(t)}=-\int\frac RL\operatorname dt\Leftrightarrow\\ln\left(I(t)\right)=-\frac RLt+C\Leftrightarrow I(t)=C\cdot exp\left(-\frac RLt\right)=C\eta\left(t\right)\end{array}$</p>
+
+<p>La solución general viene dada por</p>
+
+<p>$\begin{array}{l}I(t)=\eta\left(t\right)\cdot\left[C+\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt\right];\\int X(t)\cdot\eta^{-1}\left(t\right)\operatorname dt=\int\frac VL\cdot e^{\frac RLt}\operatorname dt=\frac VL\cdot\frac LRe^{\frac RLt}=\frac VRe^{\frac RLt};\I(t)=e^{-\frac RLt}\cdot\left[C+\frac VRe^{\frac RLt}\right]=\boxed{Ce^{-\frac RLt}+\frac VR}.\\end{array}$</p>
+
+<p>En la práctica se asume
+que para $t=0$ ha de ser $I(0)=0$, por tanto $I(0)=C+\frac VR=0\Rightarrow C=-\frac VR$ y la expresión de la intensidad queda así:</p>
+
+<p>$I(t)=-\frac VRe^{-\frac RLt}+\frac VR=\frac VR\left[1-e^{-\frac RLt}\right]$</p>
+
+<p>El término $-e^{-\frac RLt}$ vale 1 para t = 0 y se atenúa ràpidamente, pasando a ser prácticamente nulo: es el denominado régimen transitorio del circuito; después, solo queda el término constante $I(t) = V/R$ (<a href="http://es.wikipedia.org/wiki/Ley_de_Ohm">Ley de Ohm</a>): es el régimen estacionario:</p>
+
+<p>[caption id=”attachment_909” align=”alignnone” width=”558”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/03/circuit-RL.png"><img src="/assets/images/circuit-RL.png" alt="Intensidad I(t) en un circuito RL" /></a> Intensidad I(t) en un circuito RL[/caption]</p>
+<h3 id="unicidad-de-la-solución"> Unicidad de la solución</h3>
+
+<p>El teorema siguiente nos asegura que, en ciertas condiciones, la solución de una ecuación diferencial lineal de primer orden es única, o equivalentemente, que no existen <a href="http://tallermatematic.eu/wp/?p=855#singulares">soluciones singulares</a>, toda posible solución está incluida en la solución general.</p>
+
+<p><em><strong>Teorema 1</strong>: Unicidad de la solución de la ecuación diferencial lineal de primer orden.</em></p>
+
+<p><em>Dada la ecuación $y’+X(x)y=F(x)$, si las funciones $X(x)$ y $F(x)$ son continuas en un entorno abierto I que contiene a $x_0$, entonces el problema de valor inicial</em></p>
+
+<p><em>$y’+X(x)y=F(x), y(x_0)=y_0$,</em></p>
+
+<p><em>tiene una única solución (la que hemos obtenido, dando un valor adecuado a la constante C).</em></p>
+
+<p>#</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/ecuación-diferencial-lineal-homogénea">ecuación diferencial lineal homogénea</a>, <a href="/tag/ecuación-lineal-de-primer-orden">ecuación lineal de primer orden</a>, <a href="/tag/solución-general-de-la-ecuación-diferencial-ordinaria">solución general de la ecuación diferencial ordinaria</a>, <a href="/tag/solución-particular-de-la-ecuación-diferencial-ordinaria">solución particular de la ecuación diferencial ordinaria</a>, <a href="/tag/soluciones-singulares">Soluciones singulares</a>, <a href="/tag/variación-de-constantes">variación de constantes</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -6,6 +6,7 @@ categories:
   - "Uncategorised"
 math: true
 ---
+{% raw %}
 
 ### Vector electric field
 
@@ -241,3 +242,4 @@ $'overrightarrow E'left(P'right)'frac43k''th'cdot'overrightarrow''''''''''''''''
 Note that E is a constant vector directed according to the OO' line (the module vector d equal to the distance d between centers).
 
 [caption id="attachment_150835" align="aligncenter" width="205"]![](/assets/images/esfera_cavitat.png) The field inside a cavity within a uniformly charged sphere is constant[/caption]
+{% endraw %}

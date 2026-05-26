@@ -14,6 +14,7 @@ tags:
   - "mecánica"
 math: true
 ---
+{% raw %}
 
 - [Física](http://tallermatematic.ovh/wp/?page_id=333) -> Mecánica -> Choques: teoria y ejemplos
 
@@ -243,3 +244,4 @@ $omega=frac{ph}{frac25mR^2}=frac52frac{ph}{mR^2}$
 Tomemos los siguientes **datos**: radio de la bola R = 0.1m, masa = 0.1 Kg, h=0.05m, fuerza aplicada F=10N, tiempo de percusión t=0.05s. Sustituyendo:
 
 $omega=frac52frac{10cdot0.05cdot0.05}{0.1cdot0.1^2}=62.5;rad/s$
+{% endraw %}

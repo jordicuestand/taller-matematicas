@@ -8,6 +8,7 @@ tags:
   - "diferencial"
 math: true
 ---
+{% raw %}
 
 Frecuentemente encontramos en los libros de texto y apuntes de clase, en las demostraciones de leyes físicas, que aparecen "cantidades diferenciales". Estas diferenciales tienen relación con el concepto de diferencial de una función y con su derivada en Matemáticas, pero a veces puede quedar un poco oscura esta relación. En este breve artículo pretendemos aclarar conceptos con algunos ejemplos.
 
@@ -41,3 +42,4 @@ Ejemplo 6: siguiendo con el ejemplo 5 del cable eléctrico, la carga que está c
 $I=\frac{\operatorname dq}{\operatorname dt}=\frac{\operatorname d\left(eNSL\right)}{\operatorname dt}=\frac{eNS\operatorname dL}{\operatorname dt}=eNSv$
 
  Fijémonos que la diferencial de $eNSL$ se ha igualado a $eNS·dL$, pues no estamos considerando intervalos en la magnitudes *e* (una constante universal) ni *N* o *S* (constantes del cable) sinó solo de *L* (un desplazamiento longitudinal).
+{% endraw %}

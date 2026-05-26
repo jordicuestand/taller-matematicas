@@ -4,6 +4,7 @@ title: "Problemas resueltos de integrales de Riemann"
 date: 2015-01-18 11:33:49 +0000
 math: true
 ---
+{% raw %}
 
 **1.** Calcular la derivada de la función $f\left(x\right)=\int_1^{x^2-2}t^2\operatorname{d}t.$
 
@@ -145,3 +146,4 @@ En el apartado b nos piden un área, que será: $A=\int_0^2\left|\ln\left(x\rig
 $\begin{array}{l}A=\int_0^2\left|\ln\left(x\right)\right|\operatorname{d}x=-\int_0^1\ln\left(x\right)\operatorname{d}x+\int_1^2\ln\left(x\right)\operatorname{d}x\\=-\left[1\left(\ln\left(1\right)-1\right)\right]+\left[2\left(\ln\left(2\right)-1\right)-1\left(\ln\left(1\right)-1\right)\right]\\=2\left(\ln\left(2\right)-1\right)-2\left(\ln\left(1\right)-1\right)=2\left(\ln\left(2\right)-\ln\left(1\right)\right)=2\ln\left(2\right)=1.3863\end{array}$
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

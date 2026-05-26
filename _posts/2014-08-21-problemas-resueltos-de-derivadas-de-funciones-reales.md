@@ -4,6 +4,7 @@ title: "Problemas resueltos de derivadas de funciones reales"
 date: 2014-08-21 20:06:55 +0000
 math: true
 ---
+{% raw %}
 
 **1.** Calcular la derivada de $f(x)=\sqrt{\sqrt x}.$
 
@@ -170,3 +171,4 @@ La gráfica de la función derivada muestra discontinuidades en los puntos donde
 [![Exer7b_Derivades](/assets/images/Exer7b_Derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Exer7b_Derivades.png)
 
 ---
+{% endraw %}

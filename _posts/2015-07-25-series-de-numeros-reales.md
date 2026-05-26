@@ -19,6 +19,7 @@ tags:
   - "series numéricas"
 math: true
 ---
+{% raw %}
 
 # Introducción
 
@@ -147,3 +148,4 @@ que, siendo mayor que 1, nos dice que la serie es convergente.
 En el siguiente gráfico vemos la evolución de las sumas parciales de algunas de las series que hemos dado en los ejemplos; de ellas, sólo una es divergente, la serie armónica.
 
 [![series](/assets/images/series.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/series.png)
+{% endraw %}

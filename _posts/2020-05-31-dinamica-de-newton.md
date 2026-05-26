@@ -20,6 +20,7 @@ tags:
   - "vector polar"
 math: true
 ---
+{% raw %}
 
 ![](/assets/images/Newton.jpg)La obra magna de Newton
 
@@ -114,3 +115,4 @@ Para entender esta ley en casos prácticos es preciso distinguir claramente a qu
 ## Conclusión
 
 Aunque a primera vista las leyes de Newton parezcan simples, hemos visto que sólo lo son para cuerpos puntuales y referencias inerciales, e incluso en este caso el problema se complica en seguida debido al caracter vectorial de las fuerzas y aceleraciones. Si el cuerpo tiene dimensiones no despreciables al aplicarle fuerzas en distintos puntos aparecen efectos de giro y necesitamos especializar las ecuaciones al caso de pares de fuerzas e inercias de giro (momentos de inercia). Si la masa o la fuerza o ambas no son constantes, entonces necesitamos la forma diferencial de la 2a ley, que es una ecuación diferencial que puede ser complicada de resolver en muchos casos prácticos, en realidad, en la mayoría. Además si el cuerpo está situado en una referencia acelerada, no inercial, necesitamos también ampliar el modelo incluyendo fuerzas y aceleraciones ficticias. Todo ello lleva a que saber resolver problemas con la mecánica de Newton necesite un trabajo de horas de estudio y práctica, y que además su aplicación directa sólo sea posible en un rango limitado de problemas. Para potenciar la resolución de las ecuaciones de Newton se han desarrollado métodos de solución de ecuaciones diferenciales así como planteamientos alternativos: la [mecánica analítica de Lagrange](https://es.wikipedia.org/wiki/Mec%C3%A1nica_lagrangiana).
+{% endraw %}

@@ -18,6 +18,7 @@ tags:
   - "tendencia de la serie"
 math: true
 ---
+{% raw %}
 
 **
 
@@ -287,3 +288,4 @@ A partir de aquí procederíamos como en la sección anterior: restando la tende
 ### Conclusión
 
 Este artículo es sólo una breve introducción práctica al estudio de las series temporales, presentando los aspectos básicos. En el estudio de las series de datos en el tiempo interesa analizar sus variaciones para detectar sus posibles causas, normalmente interesa reducir esas variaciones (tasa de empleo constante, por ejemplo) o bien mantenerlas siempre positivas (aumento continuo de las ventas), e incluso, más difícil, hacer predicciones de futuro.
+{% endraw %}

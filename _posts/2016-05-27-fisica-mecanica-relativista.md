@@ -12,6 +12,7 @@ tags:
   - "velocidad límite"
 math: true
 ---
+{% raw %}
 
 En este artículo nos introducimos en la **cinemática y dinámica relativistas** a partir de ejemplos, buscando la máxima comprensión en detrimento del rigor, para exposiciones rigurosas podemos acudir a la bibliografía.
 
@@ -91,3 +92,4 @@ Como comprobación, si encontramos la velocidad relativa v'  a una referencia q
 $v'=\frac{0.61c-(-0.61c)}{1-0.61c\cdot(-0.61c)/c^2}=\frac{2\cdot0.61c}{1+0.61^2}=0.89c$
 
 que es la velocidad dada en el enunciado.
+{% endraw %}

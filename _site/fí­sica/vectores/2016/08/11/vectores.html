@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vectores en Física — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Vectores en Física</h1>
+    <p class="meta">
+      11/08/2016
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>, <a href="/categoria/vectores">Vectores</a>, <a href="/categoria/vectores">vectores</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h2 id="invariancia-y-vectores">Invariancia y vectores</h2>
+
+<p>Muchas leyes físicas tienen la propiedad llamada <em>invariancia</em> frente a transformaciones de coordenadas, concretamente presentan invariancia respecto a la traslación y a la rotación de los ejes. Por ejemplo, pensemos en una fuerza aplicada sobre un objeto de masa m = 1Kg tal que su magnitud es de 10N y su dirección forma un ángulo de 45 con el eje X, siendo su sentido positivo. Esa fuerza provocará una aceleración sobre el cuerpo, de magnitud dada por la ley de Newton a = F / m = 10N / 1Kg = 10 m/s² y dirección coincidente con la de la fuerza. Si nos preguntamos que cambiará cuando movemos los ejes de coordenadas hacia la derecha, y los giramos 30 grados en sentido antihorario, la respuesta es que la aceleración será exactamente la misma.</p>
+
+<p>[caption id=”attachment_150007” align=”alignnone” width=”389”]<img src="/assets/images/invariancia.png" alt="La aceleración producida por la fuerza no depende de la traslación o rotación de los ejes de referéncia" /> Fig. 1: La aceleración producida por la fuerza no depende de la traslación o rotación de los ejes de referencia, lo que varia es su expresión en términos de coordenadas, pero no su magnitud, dirección y sentido[/caption]
+Para aprovechar esta característica de la invariancia y simplificar los enunciados de las leyes y la resolución de problemas se desarrollaron técnicas matemáticas: el álgebra vectorial y el análisis vectorial.</p>
+
+<p>Cuando expresamos una igualdad física en términos de vectores, estamos asegurando que se cumplirá en cualquier sistema de coordenadas.  Las propiedades de transformación de un vector cuando modificamos las coordenadas son las mismas que las de un movimiento en línea recta de un punto A hasta otro B.</p>
+
+<p>[caption id=”attachment_150008” align=”alignnone” width=”365”]<img src="/assets/images/moviment.png" alt="Fig. 2: el movimiento de A hasta B puede definirse por las coordenadas según unos ejes de los puntos A, B" /> Fig. 2: el movimiento de A hasta B puede definirse por las coordenadas según unos ejes de los puntos A, B. En la figura se indican las coordenadas de A en dos ejes de coordenadas distintos.[/caption]
+De la figura 2, usando la geometría del problema y las funciones trigonométricas, y llamando $\theta$ al ángulo que forman los ejes X’Y’ con los ejes XY, puede deducirse que las ecuaciones de transformación para pasar de las coordenadas (x, y) a las (x’, y’) son:</p>
+
+<p>$x’=x\cos\left(\theta\right)+y\sin\left(\theta\right),\;y’=ycos\left(\theta\right)-xsin\left(\theta\right)$ [1]</p>
+
+<p>Como los vectores y los movimientos en linea recta se transforman igual, suele representarse gráficamente un vector como un segmento orientado: una flecha que va de un punto a otro. También se representan por letras en negrita, como F (vector fuerza), o con flechas encima de la letra: $\overrightarrow F$. A menudo se adjunta al vector sus componentes en unos ciertos ejes, como por ejemplo $\overrightarrow F\left(3,4,-1\right)$, en este caso es importante recordar que implícitamente se está dando también unos ejes de coordenadas. Esto significa que, dados unos números cualesquiera ordenados, como (1, 2, 3), no tienen porque ser un vector, excepto si nos dicen que son las componentes de un vector en unos ejes determinados.</p>
+
+<h2 id="álgebra-vectorial">Álgebra vectorial</h2>
+
+<p>El álgebra vectorial describe las operaciones matemáticas que podemos efectuar con vectores: podemos sumar y restar vectores entre sí, multiplicarlos entre sí, multiplicarlos por un número real; no podemos dividir un vector por otro, esa operación no está definida. Las reglas de definición de estas operaciones han estado “diseñadas” de forma que se cumpla la invariancia respecto a diferentes ejes de coordenadas. De hecho, las transformaciones de coordenadas dadas por las ecuaciones [1] son <a href="https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_lineal">transformaciones lineales</a>, por lo que el álgebra vectorial forma parte del <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_lineal">álgebra lineal</a>. A partir de estas transformaciones puede demostrarse que si definimos la suma <strong>a</strong> + <strong>b</strong> de los vectores $\boldsymbol a\left(a_x,a_y\right),\;\boldsymbol b\left(b_x,b_y\right)$ es tambien un vector, con componentes $\left(a_x+b_x,a_y+b_y\right)$, y que esta suma verifica las propiedades conmutativa, asociativa, tiene  un elemento neutro (el vector nulo) y un elemento opuesto: el opuesto de un vector $\boldsymbol a\left(a_x,a_y\right)$ es también un vector -<strong>a</strong> de componentes $\left(-a_x,-a_y\right)$.</p>
+
+<p>Definiendo el producto de un vector $\boldsymbol a\left(a_x,a_y\right)$ por un número real <em>k</em> como el vector $k\cdot\boldsymbol a\boldsymbol=\left(ka_x,ka_y\right)$ tenemos completada la denominada <a href="https://es.wikipedia.org/wiki/Espacio_vectorial#Definici.C3.B3n_de_espacio_vectorial">estructura de espacio vectorial</a>.</p>
+
+<h2 id="vectores-polares-y-vectores-axiales-o-pseudovectores"><strong>Vectores polares y vectores axiales, o pseudovectores</strong></h2>
+
+<p>En Física, los vectores que se transforman según las leyes [1] se denominan vectores polares (o simplemente vectores), pero no cualquier “montaje” $\boldsymbol a\boldsymbol=\left(a_x,a_y,a_z,\cdots\right)$ con cantidades físicas arbitrarias cumplirá las expresiones [1]. Por ejemplo, definamos en cada punto del espacio (x, y, z) la terna (P, T, H) que contiene la presión P, temperatura T y humedad H en ese punto; si cambiamos el sistema de ejes de forma que el punto (x, y, z) pasa a tener coordenadas (x’, y’, z’), la terna correspondiente seguirá siendo la misma (P, T, H) en ese punto (no cambian la presión ni la temperatura ni la humedad en el punto). Por tanto (P, T, H) no se transforma según las ecuaciones [1] y (P, T, H) no es un vector polar.</p>
+
+<p>En la Física aparecen frecuentemente unos vectores especiales, llamados vectores axiales, o pseudovectores, que se diferencian de los vectores polares al realizar la transformación lineal llamada reflexión respecto de un plano, en la cual dado un vector <strong>a</strong> y un plano P se busca el vector simétrico <strong>b</strong> de <strong>a</strong> respecto de P. En el caso simple de dos dimensiones la reflexión es respecto a una recta, por ejemplo, la reflexión de (x, y) por el eje X (recta y = 0) es el punto (x, -y):</p>
+
+<p>[caption id=”attachment_150012” align=”alignnone” width=”338”]<img src="/assets/images/reflexio_pla.png" alt="Fig. 3: reflexión de un punto sobre el eje de abscisas X" /> Fig. 3: reflexión de un punto sobre el eje de abscisas X[/caption]
+Los vectores polares, cuando se reflejan respecto a un plano paralelo a los ejes coordenados, sólo cambian una coordenada, como en el ejemplo de la figura 3. Equivalentemente, un vector polar <strong>a</strong>(x, y) se transforma en su inverso <strong>b</strong>(-x, -y)  cuando se cambian de signo sus coordenadas (doble reflexión por planos ortogonales, equivale a girarlo 180⁰), de forma que <strong>a</strong> + <strong>b</strong> = <strong>0</strong>. Los pseudovectores por su parte cambian todas las coordenadas cuando se reflejan según un plano, equivalentemente, cuando los reflejamos dos veces según los planos coordenados ortogonales obtenemos el pseudovector original.</p>
+
+<p>[caption id=”attachment_150013” align=”alignnone” width=”397”]<img src="/assets/images/doble_reflexio.png" alt="Fig. 4: dos reflexiones consecutivas de un vector polar respecto de los ejes coordenados resultan en el vector polar inverso del original" /> Fig. 4: dos reflexiones consecutivas de un vector polar respecto de los ejes coordenados resultan en el vector polar inverso del original[/caption]
+Los vectores axiales necesitan 3 dimensiones para ser visualizados, pero podemos extender su definición a las <a href="https://es.wikipedia.org/wiki/Escalar_(f%C3%ADsica)">magnitudes escalares</a>: una magnitud que sólo necesita un número real para expresarse, como por ejemplo la temperatura, se denomina magnitud escalar. Pues bien, igual que existen vectores y pseudovectores, también existen escalares y <a href="https://en.wikipedia.org/wiki/Pseudoscalar">pseudoescalares</a>.  Los escalares no quedan afectados por una reflexión de los ejes XY, en cambio los pseudoescalares cambian de signo. El ejemplo más simple de pseudoescalar es el módulo de la <a href="https://es.wikipedia.org/wiki/Velocidad_angular">velocidad angular w </a>en un movimiento circular plano de radio R, en dos dimensiones, con velocidad tangencial v, que numéricamente es <em>w = v²/R</em>; de hecho, la velocidad angular se define como perpendicular al plano de rotación (se “sale” del plano), con un valor positivo si el giro es de derecha a izquierda, y negativo en caso contrario.</p>
+
+<p>[caption id=”” align=”alignnone” width=”207”]<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Vector-omega.svg" alt="" /> Fig. 5: pseudovector velocidad angular, fuente: LP. via Wikimedia Commons[/caption]
+En la figura 6 vemos un movimiento circular plano con dos sistemas de coordenadas, el XY habitual, y otro X’Y’ obtenido reflejando sobre el eje X, con lo cual Y’ = -Y, y X’ = X. En la tabla de la izquierda vemos, en la columna W &gt; 0, la dirección del movimiento cuando la velocidad angular es positiva: en el primer cuadrante se mueve desde el eje X hacia el Y, después del Y hacia el -X, después del -X al -Y, y para terminar del -Y volvemos al X. En la 2ª columna tenemos el movimiento para una velocidad angular negativa. En la 3ª columna está el movimiento visto desde los ejes X’Y’, y observamos que coincide con la 2ª columna: este movimiento, según los ejes XY, tiene velocidad angular positiva, pero al reflejar según un eje para obtener los ejes X’Y’ la velocidad angular pasa a ser negativa, luego la velocidad angular es un pseudoescalar (en tres dimensiones, será un pseudovector).</p>
+
+<p>[caption id=”attachment_150014” align=”alignnone” width=”499”]<img src="/assets/images/vel_angular.png" alt="Fig. 6: movimiento circular plano y signo de la velocidad angular" /> Fig. 6: movimiento circular plano y signo de la velocidad angular[/caption]</p>
+
+<p><strong>Obtención de las coordenadas de un vector axial</strong>
+La regla de formación habitual de un vector axial en 3 dimensiones <strong>w</strong>, es formando el denominado producto vectorial de dos vectores polares <strong>u</strong>, v, denotado por $\boldsymbol a\times\boldsymbol b$ y que se calcula usando el determinante:</p>
+
+<p>$\boldsymbol w=\boldsymbol u\times\boldsymbol v\boldsymbol\;=\begin{vmatrix}i&amp;j&amp;k\u_x&amp;u_y&amp;u_z\v_x&amp;v_y&amp;v_z\end{vmatrix}$ [2]</p>
+
+<p>donde i, j, k son los vectores unitarios en las direcciones de los ejes X, Y, Z (también llamados <em>versores</em>) o equivalentemente, desarrollando el determinante, por las expresiones:</p>
+
+<p>[caption id=”attachment_150015” align=”alignnone” width=”250”]<img src="/assets/images/producte-vectorial.png" alt="Fig.7: pseudovector w como producto vectorial de vectores polares u, v" /> Fig.7: pseudovector w como producto vectorial de vectores polares u, v. Fuente: es.wikipedia.org/wiki/Producto_vectorial[/caption]</p>
+
+<p>El producto vectorial cumple que:</p>
+
+ 	- [vector] x [vector] = [pseudovector]
+
+ 	- [pseudovector] x [pseudovector] = [pseudovector]
+
+ 	- [vector] x [pseudovector] = [vector]
+
+<p>Otros ejemplos importantes de vectores axiales son el momento angular L , el par de fuerzas o momento de una fuerza, el campo magnético H , y el momento del dipolo magnético.</p>
+<h3 id="orientación-de-los-ejes-y-vectores">Orientación de los ejes y vectores</h3>
+
+<p>Hemos visto que las transformaciones de coordenadas denominadas reflexiones afectan de forma distinta a los vectores polares que a los axiales. Otra forma de exponerlo se refiere a la orientación del sistema de referencia en 3 dimensiones, que puede ser de dos tipos, como vemos en la figura 7.</p>
+
+<p>[caption id=”” align=”alignnone” width=”400”]<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cartesian_coordinate_system_handedness.svg/400px-Cartesian_coordinate_system_handedness.svg.png" alt="" /> Fig. 7: orientación relativa de los ejes en tres dimensiones. Fuente: Wikipedia under GFDL by en:User:Tarquin[/caption]
+En el sistema de la izquierda pasamos de X a Y siguiendo el movimiento de las agujas del reloj, en el de la derecha vamos al contrario que el reloj; éste último es el que se utiliza habitualmente. Según lo que hemos explicado del producto vectorial, el de la derecha cumple, llamando <strong>x</strong> al vector unitario según X, <strong>y</strong> al vector unitario según Y, <strong>z</strong> al vector unitario según Z, que</p>
+
+<p>$\boldsymbol x\times\boldsymbol y\boldsymbol\;=\begin{vmatrix}x&amp;y&amp;z\1&amp;0&amp;0\0&amp;1&amp;0\end{vmatrix}=\left(0,0,1\right)=\boldsymbol z$</p>
+
+<p>Abreviadamente, $\boldsymbol x\times\boldsymbol y\boldsymbol\;=\boldsymbol z$, en cambio en el sistema de referencia de la izquierda se cumple que $\boldsymbol x\times\boldsymbol y\boldsymbol\;=-\boldsymbol z$. Ambos <a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system#Orientation_and_handedness">sistemas de coordenadas cartesianos</a> son igualmente válidos para describir las leyes de la Física, aunque de forma estándar se usa el de la derecha.</p>
+
+<h3 id="análisis-vectorial">Análisis vectorial</h3>
+
+<p>La otra rama matemática que se ha desarrollado en torno a los vectores tiene que ver con el cálculo diferencial e integral. Considerando que los vectores pueden ser funciones, podemos aplicarles el análisis matemático, teniendo en cuenta sus propiedades como vectores.</p>
+
+<p>Por ejemplo, dado un vector velocidad <strong>v</strong> variable, que es función del tiempo, como $\boldsymbol v=3t\boldsymbol i+t^2\boldsymbol j-6=\left(3t,t^2,-6\right)$, su derivada será otro vector, el vector aceleración <strong>a</strong>, que se obtiene derivando cada coordenada por separado:</p>
+
+<p>$\frac{\operatorname d\overset\rightharpoonup v}{\operatorname dt}=\left(3t\overset\rightharpoonup i+t^2\overset\rightharpoonup j-6\overset\rightharpoonup k\right)’=3\overset\rightharpoonup i+2t\overset\rightharpoonup j=(3,2t,0)$,</p>
+
+<p>donde el apostrofe indica la derivada respecto al tiempo: $\frac{\operatorname d\overset\rightharpoonup v}{\operatorname dt}=\overset\rightharpoonup v’$.</p>
+
+<p><strong>Leyes de Newton en notación vectorial: mecánica vectorial</strong></p>
+
+<p>Como ejemplo importante de análisis vectorial podemos dar la 2ª ley de Newton en forma vectorial, y usando derivadas vectoriales:</p>
+
+<p>$\overset\rightharpoonup F=\frac{\operatorname d\overset\rightharpoonup p}{\operatorname dt}=\frac{\operatorname d\left(m\overset\rightharpoonup v\right)}{\operatorname dt}$ [3]</p>
+
+<p>donde <strong>F</strong> es el vector fuerza, <strong>p</strong> es el vector impulso, y <strong>v</strong> el vector velocidad. La expresión vectorial [3] indica que se cumplen tres igualdades (una para cada componente de los vectores), en un sistema de ejes cartesianos cualquiera. A esta presentación de la dinámica de Newton usando vectores se la denomina <em>Mecánica Vectorial</em>.</p>
+
+<p><strong>Ejemplo 1</strong>: un punto material se mueve describiendo una trayectoria curva complicada, de forma que en el instante t = 1 su vector velocidad es (3, 1, -1) y en el instante t = 2 es (2, 0, 0). Calcular su vector aceleración media en ese intervalo de tiempo.</p>
+
+<p>Como no tenemos la expresión de la velocidad como función del tiempo, no podemos usar derivadas, hay que proceder con la definición de aceleración media usando diferencias:</p>
+
+<p>$\boldsymbol a=\frac{\triangle\boldsymbol v}{\triangle t}=\frac{(2,\;0,\;0)-(3,\;1,\;-1)}{2-1}=\left(-1,-1,+1\right)$</p>
+
+<p><strong>Ejemplo 2</strong>: un objeto puntual P se mueve radialmente encima de un disco, moviéndose desde el centro O hacia la periferia, viniendo dada su distancia al centro por la función <em>r(t) = t²+2t</em>.</p>
+
+<p>[caption id=”attachment_150017” align=”aligncenter” width=”300”]<img src="/assets/images/exemple_mecanica_vect-300x226.png" alt="Fig. 8: partícula con un movimiento radial sobre un disco giratorio" /> Fig. 8: partícula con un movimiento radial sobre un disco giratorio[/caption]
+El disco gira con velocidad angular $\psi’$  respecto a nuestro sistema de referencia en reposo, donde $\psi$ es el ángulo que forma el radio que está recorriendo el objeto respecto a su posición inicial, y el apostrofe indica la derivada respecto al tiempo: $\psi’=\frac{\operatorname d\psi}{\operatorname dt}$.  Calcular la velocidad del objeto respecto a nosotros.</p>
+
+<p>Este tipo de problemas se resuelve considerando la composición de movimientos: tenemos el movimiento del disco, con vector velocidad angular $\overset\rightharpoonup\psi=\left(0,0,\psi’\right)$, ya que hemos visto que al girar en el sentido contrario a las agujas del reloj, el vector velocidad angular saldrá del plano XY en sentido positivo. Por otro lado si definimos otro sistema de coordenadas X’Y’Z’ que gira solidariamente con el disco, de forma que su eje X’ coincide con la trayectoria del punto P, y su eje Z’ coincide con el vector velocidad angular, entonces el vector posición del punto P respecto a X’Y’Z’ será $\overset\rightharpoonup{OP}=\left(r\left(t\right),0,0\right)$.</p>
+
+<p>El vector velocidad se obtiene derivando el vector posición, pero como lo queremos respecto al sistema de referencia fijo, usaremos el siguiente resultado del análisis vectorial referente a derivadas con respecto a referencias que se mueven uno respecto a la otra, como es el caso de XYZ y X’Y’Z’:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\boxed{{\left.\frac d{dt}\right</td>
+      <td>}_{XYZ}\overset\rightharpoonup{OP}={\left.\frac d{dt}\right</td>
+      <td>}_{X’Y’Z’}\overset\rightharpoonup{OP}+\overset\rightharpoonup\psi\times OP}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Lo aplicamos al problema dado:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{l}{\left.\frac d{dt}\right</td>
+      <td>}_{XYZ}\overset\rightharpoonup{OP}={\left.\frac d{dt}\right</td>
+      <td>}_{X’Y’Z’}\left(t^2+2t,0,0\right)+\left(0,0,\psi’\right)\times\left(t^2+2t,0,0\right)=\\left(2t+2,0,0\right)+\left(0,\left(2t+2\right)\psi’,0\right)=\left(2t+2,\left(2t+2\right)\psi’,0\right)=\\boxed{\left(2t+2\right)\left(1,\psi’,0\right)}\end{array}$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="campos-vectoriales-y-teoría-de-campos">Campos vectoriales y teoría de campos</h3>
+
+<p>Cuando asociamos a cada punto del espacio, localizado por su vector posición, otro vector, que representa una magnitud vectorial, estamos definiendo una aplicación vectorial de variable vectorial, que denominamos campo vectorial. Por ejemplo, en el movimiento de un fluido por un conducto, por cada punto del espacio tendremos un vector velocidad del fluido. El análisis matemático aplicado a campos vectoriales proporciona herramientas para obtener analíticamente propiedades del campo físico real; por ejemplo la ley de Faraday que relaciona el campo eléctrico $\overset\rightharpoonup E$ con el campo magnético $\overset\rightharpoonup B$ utiliza derivadas e <a href="https://es.wikipedia.org/wiki/Integral_de_l%C3%ADnea">integrales de línea</a>:</p>
+
+<p>[caption id=”” align=”aligncenter” width=”240”]<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8097523c109bf46df802db54996da37ba25f9d13" alt="" /> Ley de Faraday. Fuente: https://es.wikipedia.org/wiki/Ecuaciones_de_Maxwell[/caption]
+La rama de la Física Matemática que relaciona los campos vectoriales con los campos físicos reales, como el campo gravitatorio, el eléctrico, etc, es la <a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_de_campos">teoría de campos</a>. Siendo que esta teoría se ha desarrollado hasta abarcar la Mecánica Cuántica y la Física de partículas (como por ejemplo hace la teoría de campos llamada <a href="https://es.wikipedia.org/wiki/Cromodin%C3%A1mica_cu%C3%A1ntica">Cromodinámica Cuántica</a>), resulta que prácticamente todo en Física moderna son campos, aunque no vectoriales, sino de un tipo más general.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/álgebra-vectorial">álgebra vectorial</a>, <a href="/tag/análisis-vectorial">análisis vectorial</a>, <a href="/tag/campos-vectoriales">campos vectoriales</a>, <a href="/tag/escalar">escalar</a>, <a href="/tag/mecánica-vectorial">mecánica vectorial</a>, <a href="/tag/orientación-de-ejes">orientación de ejes</a>, <a href="/tag/producto-vectorial">producto vectorial</a>, <a href="/tag/pseudoescalar">pseudoescalar</a>, <a href="/tag/pseudovector">pseudovector</a>, <a href="/tag/vector">vector</a>, <a href="/tag/vector-axial">vector axial</a>, <a href="/tag/vector-polar">vector polar</a>, <a href="/tag/velocidad-angular">Velocidad angular</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -17,6 +17,7 @@ tags:
   - "velocidad del sonido"
 math: true
 ---
+{% raw %}
 
 En anteriores artículos de la categoría "Acústica" hemos sobre todo realizado una descripción de las características del sonido y de la música, un tipo especial de sonido. En este  artículo tratamos los detalles desde un punto de vista más matemático.
 ### Intensidad del sonido
@@ -138,3 +139,4 @@ $T'=0.16\frac V{1.2S\overline\alpha}$
 dividiendo la 1a por la 2a:
 
 $\frac T{T'}=1.2\Rightarrow T'=\frac T{1.2}=\frac{\displaystyle1}{\displaystyle1.2}=\frac56\approx0.8s$
+{% endraw %}

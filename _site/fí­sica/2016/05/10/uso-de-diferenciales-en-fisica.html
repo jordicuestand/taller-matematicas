@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de diferenciales en Física — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Uso de diferenciales en Física</h1>
+    <p class="meta">
+      10/05/2016
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p>Frecuentemente encontramos en los libros de texto y apuntes de clase, en las demostraciones de leyes físicas, que aparecen “cantidades diferenciales”. Estas diferenciales tienen relación con el concepto de diferencial de una función y con su derivada en Matemáticas, pero a veces puede quedar un poco oscura esta relación. En este breve artículo pretendemos aclarar conceptos con algunos ejemplos.</p>
+
+<h3 id="magnitudes-diferenciales-en-física">Magnitudes diferenciales en Física</h3>
+
+<p>Definición 1: Dada una magnitud X denotamos por $\triangle X$ la variación de esa magnitud, o equivalentemente, un intervalo en la magnitud.</p>
+
+<p>Ejemplo 1: Si la magnitud es el tiempo t, entonces $\triangle t$ es un intervalo de tiempo.</p>
+
+<p>Ejemplo 2:  Si la magnitud es una longitud L, entonces $\triangle L$ es un intervalo de longitud, un segmento.</p>
+
+<p>Definición 2: Dada una magnitud X que supondremos continua, denotamos por $\operatorname dX$ su <strong>diferencial</strong>, y el concepto asociado es un intervalo $\triangle X$ “infinitesimal”, esto es , un intervalo <em>prácticamente</em> nulo. A pesar de que matemáticamente es demasiado ambiguo hablar de “intervalo prácticamente nulo”, el concepto es muy útil en Física, y es usado muy frecuentemente.</p>
+
+<p>Ejemplo 3: El número de electrones N que circulan por segundo por un conductor no es una magnitud continua, sino entera, así que en principio no podemos definir su diferencial; ahora bien, en los casos prácticos, este número es tan elevado que podemos suponer que sí es contínuo, y pensar en diferenciales de N, dN.</p>
+
+<p>Ejemplo 4: Sea un cable que está conduciendo corriente eléctrica</p>
+
+<p>[caption id=”attachment_1652” align=”aligncenter” width=”300”]<img src="/assets/images/element_corrent-300x146.png" alt="Fig. 4: sección de un conductor recorrido por una corriente de electrones" /> Fig. 4: sección de un conductor recorrido por una corriente de electrones[/caption]
+El número de electrones que se estan moviendo por el cable es muy elevado, del orden de $10^{20}$ por $cm^3$; queremos considerar aquellos que se hallen en una cierta posición x, medida desde el extremo del cable. Si consideramos que los electrones estan distribuidos de forma más o menos uniforme y contínua por el cable, podemos definir la densidad de electrones N por $cm^3$, pero exactamente en la posición x no podemos calcular cuantos hay; el artificio que se usa consiste en considerar un elemento infinitesimal (muy corto pero no nulo) de longitud $\operatorname dL$, que empieza en la posición x y termina en la posición x+dL, que tendrá un volumen infinitesimal dV=S·dL (donde S es el área de la sección transversal del cable), y por tanto un número de electrones N·dV=NS·dL. Entonces aproximamos el número de electrones en la posición x por NS·dL.</p>
+
+<h3 id="relación-con-la-derivación-de-funciones">Relación con la derivación de funciones</h3>
+
+<p>Nos podemos encontrar también con que a veces se relacione el cociente de diferenciales con la derivación. Para la descripción matemática de la derivada podemos consultar mi post <a href="http://tallermatematic.ovh/wp/?p=461">Cálculo -&gt;Funciones derivables → Introducción al estudio local de una función</a>, del que reproduzco aquí un párrafo:</p>
+
+<p><img src="/assets/images/derivada-incrementos.png" alt="derivada-incrementos" /></p>
+
+<p>Ejemplo 5:  La intensidad de corriente se define como la cantidad de carga que pasa por una sección S por unidad de tiempo, $I=\frac{\triangle q}{\triangle t}$, si la intensidad es variable, entonces se define en un intervalo de tiempo infinitesimal, tan corto que podemos considerar que la intensidad es prácticamente constante (“no la da tiempo” a cambiar), o sea $I=\frac{\operatorname dq}{\operatorname dt}$.</p>
+
+<p>Ejemplo 6: siguiendo con el ejemplo 5 del cable eléctrico, la carga que está contenida en una sección de longitud L y sección S, teniendo una densidad de N electrones por $m^3$, será $eNSL$, siendo <em>e</em> la carga del electrón.  Entonces la intensidad será</p>
+
+<p>$I=\frac{\operatorname dq}{\operatorname dt}=\frac{\operatorname d\left(eNSL\right)}{\operatorname dt}=\frac{eNS\operatorname dL}{\operatorname dt}=eNSv$</p>
+
+<p> Fijémonos que la diferencial de $eNSL$ se ha igualado a $eNS·dL$, pues no estamos considerando intervalos en la magnitudes <em>e</em> (una constante universal) ni <em>N</em> o <em>S</em> (constantes del cable) sinó solo de <em>L</em> (un desplazamiento longitudinal).</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/diferencial">diferencial</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

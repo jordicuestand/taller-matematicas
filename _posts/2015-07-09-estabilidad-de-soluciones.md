@@ -4,6 +4,7 @@ title: "Estabilidad de soluciones: introducción"
 date: 2015-07-09 20:47:16 +0000
 math: true
 ---
+{% raw %}
 
 En las aplicaciones prácticas a menudo interesa ya no resolver exactamente una ecuación diferencial sino además saber si la solución obtenida es estable en el sentido de si es poco o muy sensible a los cambios que podamos introducir en las condiciones iniciales, los coeficientes de la ecuación, o simplemente al movernos de un punto $x_0$ a otro punto próximo $x_1$. También puede interesar conocer el comportamiento (continuidad, límites, etc) de la solución de la ecuación incluso en aquellos casos en los que no podemos obtener esa solución de forma explícita.
 
@@ -49,3 +50,4 @@ Este sistema tiene un único punto crítico en (x, y) = (0, 0). ¿Cuáles son la
 [caption id="attachment_1244" align="aligncenter" width="443"][![centre_estable](/assets/images/centre_estable.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/centre_estable.png) Trayectorias x(t), y(t) para tres diferentes combinaciones de los parámetros en un oscilador armónico simple; en abscisas tenemos el desplazamiento x, en ordenadas la velocidad y=x'[/caption]
 
 Un punto crítico como el del ejemplo 5, que está rodeado por trayectorias cerradas, se denomina** centro estable**.
+{% endraw %}

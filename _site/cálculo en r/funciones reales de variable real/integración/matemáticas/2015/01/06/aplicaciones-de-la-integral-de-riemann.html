@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicaciones de la integral de Riemann — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Aplicaciones de la integral de Riemann</h1>
+    <p class="meta">
+      06/01/2015
+      
+        · <a href="/categoria/cálculo-en-r">Cálculo en R</a>, <a href="/categoria/funciones-reales-de-variable-real">Funciones reales de variable real</a>, <a href="/categoria/integración">Integración</a>, <a href="/categoria/matemáticas">Matemáticas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p>De entre las muchas aplicaciones de la integral (cálculo de áreas y volúmenes, de longitudes de curvas, desarrollos en serie de Fourier, transformadas integrales, ecuaciones integrales, etc.) sólo veremos aquí unas pocas, ajustadas al nivel de estos apuntes: primer curso de ingeniería. Concretamente se tratan:</p>
+
+ 	- <a href="#areas">Cálculo de áreas planas</a>
+
+ 	- <a href="#longitud">Cálculo de la longitud de curvas</a>
+
+ 	- <a href="#impropias">Integrales impropias</a>
+
+ 	- <a href="#Euler">Integrales de Euler: funciones Gamma  y Beta</a>
+
+ 	- <a href="#medio">Teorema del valor medio: forma integral</a>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+
+<h2 id="cálculo-de-áreas-planas">Cálculo de áreas planas</h2>
+
+<p>Si calculamos áreas habrá que tener en cuenta que debemos tomar los valores absolutos. Ejemplo: el área delimitada por $f(x)=sin(x)$ entre $(0,2\mathrm\pi)$ no puede calcularse como $\int_0^{2\mathrm\pi}\sin\left(x\right)\operatorname{d}x$ ya que esta integral vale cero, debido a que la función $sin(x)$ cambia de signo periódicamente.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area3.png"><img src="/assets/images/area3.png" alt="Para calcular áreas hemos de tener en cuenta los cambios de signo de la función" /></a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>El valor real del área será $A=\int_0^{2\mathrm\pi}\left</td>
+      <td>\sin\left(x\right)\right</td>
+      <td>\operatorname{d}x,$ o bien $A=\int_0^\mathrm\pi\sin\left(x\right)\operatorname{d}x+\int_\mathrm\pi^{2\mathrm\pi}-\sin\left(x\right)\operatorname{d}x=2+2=4.$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Para hallar el área en una región entre dos gráficas de funciones $y=f(x), y=g(x)$, hallamos el valor absoluto de la diferencia :</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\int_a^b\left</td>
+      <td>\left(f-g\right)\right</td>
+      <td>\operatorname{d}x=\left{\begin{array}{l}\int_a^b\left(f-g\right)\operatorname{d}x\;\text{si }f\geq g\;\text{en }\left(a,b\right)\\int_a^b\left(g-f\right)\operatorname{d}x\;\text{si }g\geq f\;\text{en }\left(a,b\right)\end{array}\right.$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En ocasiones, el valor absoluto en el intervalo de integración $(a,b)$ habrá de calcularse por subintervalos, como en el siguiente ejemplo.
+<strong>Ejemplo 1</strong>: calcular el área $A$ de la región comprendida entre las gráficas de las funciones $y=\sin(x), y=\cos(x+1)$ y el intervalo $x\in\left(1,4\right).$</p>
+
+<p>[caption id=”attachment_707” align=”aligncenter” width=”350”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area5.png"><img src="/assets/images/area5.png" alt="Cálculo del área comprendida entre las gráficas de dos funciones" /></a> Cálculo del área comprendida entre las gráficas de dos funciones[/caption]
+$\begin{array}{l}A=\int_1^4\left|\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\right|\operatorname{d}x=\begin{array}{l}\int_1^{x_0}\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\operatorname{d}x+\end{array}\int_{x_0}^4\left(\cos\left(x+1\right)-\sin\left(x\right)\right)\end{array},$</p>
+
+<p>donde $x_0$ es el punto de intersección de las dos gráficas, situado dentro del intervalo de integración $(1,4)$; en ese punto, se invierte la diferencia de funciones. Integrando: $\int\left(\sin\left(x\right)-\cos\left(x+1\right)\right)=-\cos\left(x\right)-\sin\left(x+1\right). $ Entonces:</p>
+
+<p>$\begin{array}{l}A=\left[-\cos\left(x\right)-\sin\left(x+1\right)\right]<em>1^{x_0}+\left[\cos\left(x\right)+\sin\left(x+1\right)\right]</em>{x_0}^4\=\left[-\cos\left(x_0\right)-\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)\right]+\left[\cos\left(4\right)+\sin\left(5\right)-\cos\left(x_0\right)-\sin\left(x_0+1\right)\right]\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)+\cos\left(1\right)+\sin\left(2\right)+\cos\left(4\right)+\sin\left(5\right)\=-2\cos\left(x_0\right)-2\sin\left(x_0+1\right)-0.1630.\end{array}$</p>
+
+<p>Para hallar el punto $x_0$ planteamos la ecuación $\sin\left(x\right)=\cos\left(x+1\right); $ usando la fórmula de la suma de ángulos: $\cos\left(x+1\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)\sin\left(1\right)$, obtenemos:</p>
+
+<p>$\begin{array}{l}\sin\left(x\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)\sin\left(1\right)\Leftrightarrow\\sin\left(x\right)\left[1+\sin\left(1\right)\right]=\cos\left(x\right)\cos(1)\Leftrightarrow\\tan\left(x\right)=\frac{\cos(1)}{1+\sin\left(1\right)}\Leftrightarrow x=\tan^{-1}\left(\frac{\cos(1)}{1+\sin\left(1\right)}\right)\approx0.285\end{array}.$</p>
+
+<p>El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, o sea: $x=0.285+k\mathrm\pi,\;\mathrm k=0,1,2,\dots.$ De todas estas soluciones, la única que cae dentro del intervalo de integración $(1,4)$ es $x=0.285+\mathrm\pi\approx3.427$, este es el valor $x_0$ buscado. Sustituimos: $A=-2\cos\left(3.427\right)-2\sin\left(4.427\right)-0.1630=\boxed{3.675}.$</p>
+
+<h2><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></h2>
+
+<h2 id="cálculo-de-la-longitud-de-curvas">Cálculo de la longitud de curvas</h2>
+
+<p>Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la <a href="http://tallermatematic.eu/wp/?p=674">integral de Riemann</a>, dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$</p>
+
+<p>[caption id=”attachment_717” align=”alignnone” width=”427”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/longitud_arc.png"><img src="/assets/images/longitud_arc.png" alt="Aproximación a la longitud de un arco de curva" /></a> Aproximación a la longitud de un arco de curva[/caption]</p>
+
+<p>$\triangle s=\sqrt{\left(\triangle x\right)^2+\;\left(\triangle y\right)^2}.$</p>
+
+<p>Operando:</p>
+
+<p>$\begin{array}{l}\triangle s=\sqrt{\left(\triangle x\right)^2+\;\left(\triangle y\right)^2}=\sqrt{\left(\left(\triangle x\right)^2+\;\left(\triangle y\right)^2\right)\frac{\left(\triangle x\right)^2}{\left(\triangle x\right)^2}}\=\sqrt{1+\frac{\;\left(\triangle y\right)^2}{\left(\triangle x\right)^2}}\triangle x\end{array}.$</p>
+
+<p>La longitud total del arco será aproximadamente la suma de los n segmentos de arco: $s\approx\sum_{k=0}^n\triangle s_k=\sum_{k=0}^n\sqrt{1+\frac{\;\left(\triangle y_k\right)^2}{\left(\triangle x_k\right)^2}}\triangle x_k.$ Pasando al límite: $s=\lim_{n\rightarrow\infty}\sum_{k=0}^n\sqrt{1+\frac{\;\left(\triangle y_k\right)^2}{\left(\triangle x_k\right)^2}}\triangle x_k,$  cada intervalo tendrá una longitud $\triangle x_k\rightarrow0.$ Recordando que $\lim_{\triangle x\rightarrow0}\frac{\triangle x}{\triangle y}=y’(x)$ obtenemos</p>
+
+<p>$s=\lim_{n\rightarrow\infty}\sum_{k=0}^n\sqrt{1+\left(y’\left(x_k\right)\right)^2}\triangle x_k=\int_a^b\sqrt{1+\left(y’\left(x\right)\right)^2}\operatorname{d}x.$</p>
+
+<p>En el último paso igualamos el límite de la suma a una integral de Riemann, pues hemos supuesto que la derivada es continua, y por tanto $\sqrt{1+\left(y’\left(x\right)\right)^2}$ también será continua, e integrable.
+<strong>Ejemplo 2</strong>: cuando un cable flexible se tiende entre dos extremos, toma la forma conocida como curva catenaria, cuya expresión analítica es $y=a·\cosh(x/a),$ donde $a$ es la distancia entre el origen de coordenadas y la curva (o sea la altura mínima de la catenaria respecto al suelo):</p>
+
+<table>
+  <tbody>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+
+<p>[caption id=”attachment_714” align=”aligncenter” width=”150”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.jpg"><img src="/assets/images/catenaria.jpg" alt="Catenaria. Licencia Creative Commons" /></a> <a href="http://www.flickr.com/photos/diegobe/226041902/sizes/o/">Catenaria</a>. <a href="https://creativecommons.org/licenses/by-sa/2.0/">Licencia Creative Commons.</a>[/caption] 
+|</p>
+
+<p>[caption id=”attachment_715” align=”aligncenter” width=”300”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.png"><img src="/assets/images/catenaria-300x113.png" alt="Curva catenaria (en negro) y parábola (en rojo)" /></a> Curva catenaria (en negro) y parábola (en rojo)[/caption]</p>
+
+<p>Hallar la longitud de cable tendida entre dos postes sabiendo que la altura mínima es de 6 metros, y que la distancia entre postes es de 15 metros.</p>
+
+<p>$\begin{array}{l}y’=D_x\left[a\cdot \cosh\left(\frac xa\right)\right]=\sinh\left(\frac xa\right)\Leftrightarrow\\sqrt{1+\left(y’\left(x\right)\right)^2}=\sqrt{1+\left(\sinh\left(\frac xa\right)\right)^2}=\sqrt{\cosh^2\left(\frac xa\right)}=\cosh\left(\frac xa\right).\end{array}$</p>
+
+<p>La longitud del arco viene dada por</p>
+
+<p>$s=\int_{-15/2}^{15/2}\cosh\left(\frac x6\right)\operatorname{d}x=6\left[\sinh\left(\frac x6\right)\right]_{-15/2}^{15/2}=19.2$</p>
+
+<h2 id="-1"><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></h2>
+
+<h2 id="integrales-impropias">Integrales impropias</h2>
+
+<p>En las aplicaciones prácticas a menudo encontramos integrales definidas en intervalos que no son del tipo $(a,b)$, o bien que toman valores infinitos en algún punto (no estan acotadas en el intervalo de integración). Por ejemplo, la <a href="http://tallermatematic.eu/wp/?p=1075">transformada de Laplace</a> muy usada en <a href="https://es.wikipedia.org/wiki/Transformada_de_Laplace_en_circuitos">teoría de circuitos</a> se basa en una integral impropia. La definición dada de <a href="http://tallermatematic.eu/wp/?p=674">integral de Riemann</a> no puede usarse con este tipo de funciones e intervalos, pero puede generalizarse para cubrir dos casos:</p>
+
+<p><em><strong>Definición 1</strong>: Si el dominio de integración $(a,b)$ contiene puntos donde $f(c)=\pm\infty,\;c\in\left(a,b\right),$ denominamos a $\int_a^bf\operatorname{d}x$ <strong>integral impropia de segunda especie</strong>.</em></p>
+
+<p><em><strong>Definición 2</strong>: Si el dominio de integración es una semirrecta $(-\infty,b)$ o $(a,\infty)$ denominamos a $\int_a^bf\operatorname{d}x$ <strong>integral impropia de primera especie</strong>.</em></p>
+
+<p><strong>Ejemplo 3</strong>: La integral $\int_0^1\frac1{1-x}\operatorname{d}x$ es impropia de segunda especie, pues $\lim_{x\rightarrow1}\frac1{1-x}=\pm\infty.$</p>
+
+<h4 id="cálculo-de-integrales-impropias-de-segundaespecie"><strong>Cálculo de integrales impropias de segunda especie</strong></h4>
+
+<p>Supongamos que $\lim_{x\rightarrow b}f\left(x\right)=\infty.$ Definimos:</p>
+
+<p>$L=\int_a^bf\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_a^{b-\varepsilon}f\operatorname{d}x.$</p>
+
+ 	-  Si este límite L existe y es finito, diremos que la integral de segunda especie es convergente. De forma similar, si $\lim_{x\rightarrow a}f\left(x\right)=\infty$ definimos $\int_a^bf\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_{a+\varepsilon}^bf\operatorname{d}x,$ que puede existir o no.
+
+ 	- En el caso de que $f(x)$ tenga un número finito de puntos $c_1,c_2,\dots,c_n\in\left(a,b\right)$ tales que $\lim_{x\rightarrow c_i}f\left(x\right)=\infty$ para todos ellos, entonces aplicamos la propiedad de la partición del intervalo de integración: $\int_a^bf\operatorname{d}x=\int_a^{c_1}f\operatorname{d}x+\int_{c_1}^{c_2}f\operatorname{d}x+\dots+\int_{c_{n-1}}^{c_n}f\operatorname{d}x+\int_{c_n}^bf\operatorname{d}x.$
+
+ 	- Por último, si $f(x)$ toma valores infinitos en ambos extremos del intervalo de integración, entonces escogemos un punto $c\in\left(a,b\right)$ arbitrario tal que $f(c)\neq0$ y aplicamos $\int_a^bf\operatorname{d}x=\int_a^cf\operatorname{d}x+\int_c^bf\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_{a+\varepsilon}^cf\operatorname{d}x+\lim_{\varepsilon\rightarrow0}\int_c^{b-\varepsilon}f\operatorname{d}x.$
+
+<p><strong>Ejemplo 4</strong>: La integral impropia de segunda especie $\int_0^1\frac1{1-x}\operatorname{d}x$ se calcula como</p>
+
+<p>$\begin{array}{l}\int_0^1\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\int_0^{1-\varepsilon}\frac1{1-x}\operatorname{d}x=\lim_{\varepsilon\rightarrow0}\left[-\ln\left(1-x\right)\right]<em>0^{1-\varepsilon}=\\lim</em>{\varepsilon\rightarrow0}-\ln\left(\varepsilon\right)+\ln\left(1\right)=\lim_{\varepsilon\rightarrow0}\ln\left(\frac1\varepsilon\right)=\infty\end{array},$</p>
+
+<p>vemos que no es convergente.</p>
+
+<h4 id="criterio-de-convergencia-deintegrales-impropias-de-segundaespecie">Criterio de convergencia de <strong>integrales impropias de segunda especie</strong></h4>
+
+<p><em><strong>Proposición 1</strong>:</em></p>
+
+<p><em>$\int_a^b\frac1{\left(b-x\right)^n}\operatorname{d}x\;\text{es }\left{\begin{array}{l}\text{convergente para }n&lt;1\\text{divergente para }n\geq1\end{array}\right.$</em></p>
+
+<p><em><strong>Proposición 2</strong>:</em></p>
+
+<p><em>$\int_a^b\frac1{\left(x-a\right)^n}\operatorname{d}x\;\text{es }\left{\begin{array}{l}\text{convergente para }n&lt;1\\text{divergente para }n\geq1\end{array}\right.$</em></p>
+
+<p>Estas integrales sirven para estudiar la convergencia de otras más generales, comparándolas.
+<strong>Ejemplo 5</strong>: La integral $I=\int_1^2\frac1{x\sqrt[3]{x^2-4x+4}}$  es impropia de 2ª especie  pues en $x=2$ el denominador vale cero y la función toma valores no acotados. Sabiendo que $x=2$ es una raíz de $x^2-4x+4,$ dividimos este polinomio por $(x-2)$ para simplificarlo; resulta $x^2-4x+4=\left(x-2\right)^2\Leftrightarrow\int_1^2\frac1{x\sqrt[3]{x^2-4x+4}}=\int_1^2\frac1{x\left(x-2\right)^{2/3}}.$ Usamos ahora la proposición 2:</p>
+
+<p>$\int_1^2\frac1{x\left(x-2\right)^{2/3}}&lt;\int_1^2\frac1{\left(x-2\right)^{2/3}}=\int_1^2\frac1{\left(2-x\right)^{2/3}}=\int_a^b\frac1{\left(x-b\right)^n},$</p>
+
+<p>pues $(a-b)^2=(b-a)^2\Leftrightarrow\sqrt[3]{(a-b)^2}=\sqrt[3]{(b-a)^2};$ la última integral es convergente, pues $n=2/3&lt;1$, luego $I$ también es convergente. Calcular esta integral no es inmediato: haciendo el cambio de variable $x-2=t^3$ el integrando se simplifica: $\frac1{x\left(x-2\right)^{2/3}}\operatorname{d}x=\frac1{\left(t^3+2\right)t^2}3t^2\operatorname{d}t=3\frac1{t^3+2}.$ Los límites de integración también quedan afectados por el cambio de variable:</p>
+
+<p>$\begin{array}{l}x=1\Leftrightarrow t=\sqrt[3]{1-2}=\sqrt[3]{-1}=-1;\;\x=2\Leftrightarrow t=\sqrt[3]{2-2}=0.\end{array}$</p>
+
+<p>La integral queda $3\int_{-1}^0\frac1{t^3+2}\operatorname{d}t\approx1.77,$ omitimos el cálculo de esta última integral (en los ejemplos de <a href="http://tallermatematic.eu/wp/?p=172">Problemas resueltos de integrales indefinidas</a> se resuelven integrales parecidas). Observad que, con el cambio de variable, la integral ha dejado de ser impropia.</p>
+
+<p><strong>Cálculo de integrales impropias de primera especie</strong></p>
+
+<p>Definimos: $\int_a^\infty f=\lim_{b\rightarrow\infty}\int_a^bf,\;\int_{-\infty}^bf=\lim_{a\rightarrow-\infty}\int_a^bf.$ Si estos límites existen decimos que la integral converge.
+<strong>Ejemplo 6</strong>: $\int_0^\infty e^{-x}=\lim_{b\rightarrow\infty}\int_0^be^{-x}=\lim_{b\rightarrow\infty}\left[-e^{-x}\right]<em>0^b=\lim</em>{b\rightarrow\infty}\left[-e^{-b}+1\right]=1.$</p>
+
+<h4 id="criterio-de-convergencia-deintegrales-impropias-de-primeraespecie">Criterio de convergencia de <strong>integrales impropias de primera especie</strong></h4>
+
+<p><em><strong>Proposición 3</strong>: las integrales impropias de primera especie $\int_a^\infty\frac1{x^n},\int_{-\infty}^b\frac1{x^n}$ son convergentes si y sólo si $n&gt;1.$</em></p>
+
+<p><strong>Ejemplo 7</strong>: $\int_1^\infty\frac1{\sqrt[3]{x^2}}=\int_1^\infty\frac1{x^{2/3}}$ es divergente, pues $2/3&lt;1$.</p>
+
+<h2 id="-2"><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></h2>
+
+<h2 id="integrales-de-euler-funciones-gammatext-y-beta">Integrales de Euler: funciones $\Gamma\;\text{ y }\;\beta$</h2>
+
+<p><em><strong>Definición 3</strong>: La <strong>función Gamma</strong> se
+define como $\Gamma\left(x\right)=\int_0^\infty t^{x-1}e^{-t}\operatorname{d}t$ para $x&gt;0$. </em></p>
+
+<p>Esta integral impropia es convergente para $x&gt;0$, pero no puede resolverse analíticamente, o sea, no existe la función primitiva $F(t)$ tal que $F’(t)=t^{x-1}e^{-t}.$ En cambio, tiene numerosas aplicaciones prácticas, una de ellas es la de generalizar la función factorial,  que sólo está definida para enteros, $n!=n·(n-1)·\dots·2·1$, a números reales.</p>
+
+<p><strong>Proposición 4</strong>: La función Gamma tiene las siguientes propiedades</p>
+
+<p>1) $\Gamma\left(x+1\right)=x!$ si $x$ es un entero positivo</p>
+
+<p>2) $\Gamma\left(x+1\right)=x\Gamma\left(x\right)$ para todo $x&gt;0$</p>
+
+<p>3) Utilizando repetidamente la segunda propiedad se deduce la siguiente expresión: $\Gamma\left(x\right)=\left(x-1\right)\left(x-2\right)\dots\left(x-n\right)\Gamma\left(1+r\right),$ donde $n$ verifica que $n+1$ es el mayor entero menor que $x$, y $0\leq r\le1$. Con esta expresión, conociendo los valores de $\Gamma\left(x\right)$ en el intervalo $[1,2)$, podemos calcular \Gamma\left(x\right) para cualquier $x$:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>x</strong></td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>1.9</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td> <strong>$\Gamma\left(x\right)$</strong></td>
+    </tr>
+    <tr>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>0.951</td>
+    </tr>
+    <tr>
+      <td>0.918</td>
+    </tr>
+    <tr>
+      <td>0.897</td>
+    </tr>
+    <tr>
+      <td>0.887</td>
+    </tr>
+    <tr>
+      <td>0.886</td>
+    </tr>
+    <tr>
+      <td>0.894</td>
+    </tr>
+    <tr>
+      <td>0.909</td>
+    </tr>
+    <tr>
+      <td>0.931</td>
+    </tr>
+    <tr>
+      <td>0.962</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo 8</strong>: Calculemos $\Gamma\left(3.1\right),$ el mayor entero $n+1$ menor que 3.1 es 2, luego $n=2$ y los términos del desarrollo son  $\Gamma\left(3.1\right)=\left(3.1-1\right)\left(3.1-2\right)\Gamma\left(3.1-2\right)=2.1\cdot1.1\cdot\Gamma\left(1.1\right)=2.1\cdot1.1\cdot0.951=2.197.$</p>
+
+<p><strong> Definición 5</strong>: Dados $p, q&gt;0$, definimos la <strong>función Beta(p,q)</strong>: $\beta\left(p,q\right)=\int_0^1x^{p-1}\left(1-x\right)^{q-1}.$ Su utilidad viene dada por sus propiedades.
+<strong>Proposición 5</strong>: La función Beta tiene las siguientes propiedades</p>
+
+<ol>
+  <li>
+    <p>$\beta\left(p,q\right)=\frac{\Gamma\left(p\right)\Gamma\left(q\right)}{\Gamma\left(p+q\right)}$</p>
+  </li>
+  <li>
+    <p>$\beta\left(p,q\right)=\beta\left(q,p\right)$</p>
+  </li>
+  <li>
+    <p>$\beta\left(p,q\right)=2\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{2p-1}\left(\cos\left(x\right)\right)^{2q-1}\operatorname{d}x$</p>
+  </li>
+</ol>
+
+<p>La primera propiedad es útil para resolver ciertas integrales exponenciales que suelen presentarse en Cálculo de probabilidades y Estadística, mientras que la tercera es útil para resolver ciertas integrales trigonométricas.
+<strong>Ejemplo 9</strong>: Calcular $\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{25}\left(\cos\left(x\right)\right)^{30}\operatorname{d}x.$ Usando la propiedad 3: $25=2p-1\Leftrightarrow p=13;\;30=2q-1\Leftrightarrow q=31/2,$ entonces: $\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{25}\left(\cos\left(x\right)\right)^{30}\operatorname{d}x=\frac122\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{2p-1}\left(\cos\left(x\right)\right)^{2q-1}=\frac12\beta\left(13,15.5\right).$ Usemos ahora la propiedad 1: $\frac12\beta\left(13,15.5\right)=\frac{\Gamma\left(13\right)\Gamma\left(15.5\right)}{\Gamma\left(13+15.5\right)}.$ Calculamos cada uno de estos valores por separado:</p>
+
+<p>$\begin{array}{l}\Gamma\left(13\right)=12!\\Gamma\left(15.5\right)=14.5\cdot13.5\cdot\dots\cdot2.5\cdot\Gamma\left(1.5\right)\\Gamma\left(13+15.5\right)=\Gamma\left(28.5\right)=27.5\cdot26.5\cdot\dots\cdot2.5\cdot\Gamma\left(1.5\right)\\end{array},$</p>
+
+<p>por tanto:</p>
+
+<p>$\begin{array}{l}\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{25}\left(\cos\left(x\right)\right)^{30}\operatorname{d}x=\frac{\Gamma\left(13\right)\Gamma\left(15.5\right)}{\Gamma\left(13+15.5\right)}=\\frac{\left(12!\right)\left(14.5\cdot13.5\cdot\dots\cdot2.5\cdot\Gamma\left(1.5\right)\right)}{27.5\cdot26.5\cdot\dots\cdot2.5\cdot\Gamma\left(1.5\right)}=\frac{12!}{27.5\cdot26.5\cdot\dots\cdot15.5}\approx2.7961\cdot10^{-9}\end{array}.$</p>
+
+<p>El último resultado se ha obtenido con una hoja de cálculo.</p>
+
+<p><strong>Ejemplo 10</strong>: Calcular $\int_0^\infty e^{-x^2}\operatorname{d}x.$ Es una integral impropia que, además, no tiene solución analítica (no existe ninguna función conocida que sea su primitiva). Comparando con $\Gamma\left(p\right)=\int_0^\infty t^{p-1}e^{-x}\operatorname{d}x,$ podemos ver que, si hacemos el cambio de variable $x^2=t,\;2x\operatorname{d}x=\operatorname{d}t,\;\operatorname{d}x=\frac{\operatorname{d}t}{2x}=\frac{\operatorname{d}t}{2\sqrt t}=\frac12t^{-1/2}\operatorname{d}t,$ entonces la integral nos queda: $\int_0^\infty\frac12t^{-1/2}e^{-t}\operatorname{d}x=\frac12\Gamma\left(\frac12\right).$</p>
+
+<p>Usando la propiedad 1 de la función Beta: $\beta\left(\frac12,\frac12\right)=\frac{\Gamma\left(\frac12\right)\cdot\Gamma\left(\frac12\right)}{\Gamma\left(\frac12+\frac12\right)}=\frac{\left[\Gamma\left(\frac12\right)\right]^2}{\Gamma\left(1\right)}=\left[\Gamma\left(\frac12\right)\right]^2.$</p>
+
+<p>Ahora recordamos la propiedad 3:</p>
+
+<p>$\beta\left(\frac12,\frac12\right)=2\int_0^{\pi/2}\left(\sin\left(x\right)\right)^{2\frac12-1}\left(\cos\left(x\right)\right)^{2\frac12-1}\operatorname{d}x\;=2\int_0^{\pi/2}1\operatorname{d}x=2\frac{\mathrm\pi}2=\mathrm\pi$</p>
+
+<p>Nos queda: $\beta\left(\frac12,\frac12\right)=\mathrm\pi=\left[\Gamma\left(\frac12\right)\right]^2\Leftrightarrow\Gamma\left(\frac12\right)=\sqrt{\mathrm\pi}$ y la integral pedida es: $\int_0^\infty e^{-x^2}\operatorname{d}x=\frac12\Gamma\left(\frac12\right)=\frac12\sqrt{\mathrm\pi}.$</p>
+
+<h2 id="teorema-del-valor-medio-forma-integral"><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a>Teorema del valor medio: forma integral</h2>
+
+<p>En el post <a href="http://tallermatematic.eu/wp/?p=547#intermedios">Aplicaciones de las derivadas -&gt; Teoremas de valores intermedios</a> se vieron  algunos teoremas relativos a la relación entre derivadas y  valores de la función en un intervalo. Vemos ahora la relación entre integración y valores de la función en un intervalo.</p>
+
+<p><em><strong>Definición 6</strong>: Si $f(x)$ es integrable en $[a,b]$, el <strong>valor medio promedio de la función</strong> en ese intervalo es $\frac1{b-a}\int_a^bf\left(x\right).$</em></p>
+
+<p><strong>Ejemplo 11</strong>: Calculemos el valor promedio de $f(x)=\cos\left(x\right)$ en $[0,2\pi/2]$, que es:</p>
+
+<p>$\frac1{\mathrm\pi-0}\int_0^{\mathrm\pi/2}\cos\left(x\right)=\frac1{\mathrm\pi/2}\left[\sin\left(x\right)\right]_0^{\mathrm\pi/2}=\frac1{\mathrm\pi/2}\left(\sin\left(\mathrm\pi/2\right)-\sin\left(0\right)\right)=\frac2{\mathrm\pi}\approx0.6366.$</p>
+
+<p>El valor promedio integral es una generalización a funciones integrables del concepto de media aritmética, de hecho el valor medio integral es el promedio de todos los infinitos valores $f(x)$ correspondientes al intervalo $[a,b]$:</p>
+
+<p><strong>Ejemplo 12</strong>: Calcular el promedio de 10 valores de $f(x)=\cos\left(x\right)$ tomados en el intervalo $[0,2\pi/2]$ y compararlo con el resultado del ejemplo 9.</p>
+
+<p>Con una hoja de cálculo formamos la siguiente tabla de valores:</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/taula_valors_sinus.png"><img src="/assets/images/taula_valors_sinus.png" alt="taula_valors_sinus" /></a>
+Los valores de x se han obtenido mediante
+$x_k=\frac k9\frac{\mathrm\pi}2,\;k=0,1,\cdots,9\Leftrightarrow x_k=\left{0,\frac19\frac{\mathrm\pi}2,\cdots,\frac89\frac{\mathrm\pi}2,\frac99\frac{\mathrm\pi}2\right}.$ La suma de la fila $sin(x)$ es 6.22, y el promedio de los valores es 6.22/10 = 0.62; comparando con el ejemplo anterior, hay una diferencia de una centésima. Aumentando el número $n$ de valores de la tabla, la diferencia disminuiría, y en el límite $n\rightarrow\infty$ no habría diferencia.</p>
+
+<p><em><strong>Teorema del valor medio integral</strong>: Si $f(x)$ es continua en $[a,b]$, entonces existirá un punto intermedio $c\in\left[a,b\right]$ tal que $f\left(c\right)=\frac1{b-a}\int_a^bf.$</em></p>
+
+<p><strong>Ejemplo 13</strong>: En un estudio el salario de los ingenieros industriales en función de su edad ha resultado ser, aproximadamente, $salario=-10000+12000\cdot edad^{3/7}$ en el intervalo de edades $[22,60].$ Calcular el salario medio y a que edad se percibe ese salario.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/01/exemple11_aplic_integral.png"><img src="/assets/images/exemple11_aplic_integral.png" alt="exemple11_aplic_integral" /></a></p>
+
+<p>Calculamos el valor medio, llamando $x$ a la variable independiente tiempo, e $y$ a la variable dependiente salario:</p>
+
+<p>$\begin{array}{l}\overline y=\frac1{60-22}\int_{22}^{60}\left(-10000+12000\cdot x^{3/7}\right)=\frac1{38}\left[-10^4x+\frac{1.2\cdot10^4}{10/7}x^{10/7}\right]_{22}^{60}\=\frac1{38}\left(-60\cdot10^4+0.84\cdot10^4\cdot60^{10/7}+22\cdot10^4-0.84\cdot10^4\cdot22^{10/7}\right)\=\frac{10^4}{38}183.9=4.8\cdot10^4\end{array}.$</p>
+
+<p>Como la función es continua, según el teorema del valor medio existe un punto $c\in\left[a,b\right]$ tal que $f(c)=4.8\cdot10^4$, lo planteamos:</p>
+
+<p>$\begin{array}{l}f\left(x\right)=-10000+12000\cdot x^{3/7}=4.8\cdot10^4\Leftrightarrow\x=\left(\frac{4.8\cdot10^4+10^4}{1.2\cdot10^4}\right)^{7/3}=\left(\frac{4.8+1}{1.2}\right)^{7/3}=40.13\\end{array},$</p>
+
+<p>a la edad de 40 años se està cobrando el salario medio segun este estudio.</p>
+
+<h1 id="bilbliografía"><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a>Bilbliografía</h1>
+
+<p> </p>
+
+<p><strong>Análisis Matemático</strong> - Un clásico, y uno de los mejores libros de Cálculo diferencial e integral, de nivel medio. Toda una referencia como libro de teoría.</p>
+
+<p> </p>
+
+<p><strong>Problemas resueltos de cálculo</strong> - Antiguo, económico y eficaz libro de problemas</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/integral">integral</a>, <a href="/tag/integral-de-riemann">integral de Riemann</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

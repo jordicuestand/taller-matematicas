@@ -20,6 +20,7 @@ tags:
   - "valor eficaz"
 math: true
 ---
+{% raw %}
 
 En los orígenes de la industria eléctrica se descubrió que el transporte de la electricidad es más económico cuando se usa corriente alterna en vez de continua, y desde entonces las instalaciones de potencia cambian la polaridad de la corriente con una frecuencia de 50 ciclos por segundo, o 50 Hertz (en Europa), mientras que en las transmisiones por ondas electromagnéticas se usan frecuencias de millones de Hertz. Este artículo trata sobre cálculo de parámetros de circuitos simples en corriente alterna.
 
@@ -174,3 +175,4 @@ El vector de corriente i(t) formalmente se puede descomponer en dos componentes:
 $P=VI\cos\left(\theta\right)=VI_a$ [8]
 
 o sea que la potencia consumida se debe a la intensidad activa $I_a$, la que está en fase con la tensión; esto puede verse como la consecuencia del hecho de que la potencia se consume sólo en las resistencias del circuito, la corriente activa es la que consume energía, mientras que las inductancias y condensadores (los ideales, que tienen resistencias internas despreciables) no consumen energía. Entonces la corriente reactiva no consume energía. Cuando en un circuito sólo tenemos resistencias, toda la corriente será activa; a medida que vamos conectando elementos capacitivos e inductivos, la intensidad y la tensión se van desfasando y aparece la corriente reactiva. Para una potencia P y una tensión eficaz V dadas, la ecuación [8] nos dice que como menor es el factor de potencia, mayor habrá de ser la intensidad: entonces, si tenemos una instalación de 220V con un factor de potencia bajo, las intensidades de corriente que necesitaremos para consumir una potencia dada fija será mayor que para un factor de potencia alto, es por tanto importante mantener todo lo alto posible el factor de potencia para disminuir la intensidad (altas intensidades calientan más los componentes y se pierde energía por disipación). el factor de potencia es un elemento clave en el diseño de componentes eléctricos y en la optimización de instalaciones.
+{% endraw %}

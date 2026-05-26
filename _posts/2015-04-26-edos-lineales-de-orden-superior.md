@@ -18,6 +18,7 @@ tags:
   - "variación de constantes"
 math: true
 ---
+{% raw %}
 
 - [EDOs lineales de segundo orden](#EDO_lineales)
 
@@ -301,3 +302,4 @@ $\begin{array}{l}y=Ate^t;\;\frac{\operatorname dy}{\operatorname dt}=\left(1+t\r
 La solución particular la obtenemos deshaciendo el cambio de variable: $y_p=te^t=\ln\left(x\right)\cdot x;\;$ y la solución general será:
 
 $y=y_h+y_p=C_1x+C_2x^{\frac{1+\sqrt{13}}6}+C_3x^{\frac{1-\sqrt{13}}6x}+x\ln\left(x\right)\;$.
+{% endraw %}

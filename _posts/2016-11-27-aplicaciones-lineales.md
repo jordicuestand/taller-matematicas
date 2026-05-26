@@ -17,6 +17,7 @@ tags:
   - "rango de una aplicación"
 math: true
 ---
+{% raw %}
 
 **Competencias**:
 
@@ -296,3 +297,4 @@ $P=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$
 Aplicamos la propiedad 3:
 
 $\begin{array}{l}\left(B\right)=\left(Q\right)\left(A\right)\left(P\right)=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}\cdot\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}\cdot\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}=\\\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}\cdot\begin{pmatrix}-1&amp;1\\1&amp;1\end{pmatrix}=\frac12\begin{pmatrix}0&amp;2\\-2&amp;0\end{pmatrix}=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\end{array}$
+{% endraw %}

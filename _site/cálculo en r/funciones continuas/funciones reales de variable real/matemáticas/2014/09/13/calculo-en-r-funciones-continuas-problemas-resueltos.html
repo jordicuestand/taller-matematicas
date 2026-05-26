@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo en R -> Funciones continuas - > Problemas resueltos — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Cálculo en R -> Funciones continuas - > Problemas resueltos</h1>
+    <p class="meta">
+      13/09/2014
+      
+        · <a href="/categoria/cálculo-en-r">Cálculo en R</a>, <a href="/categoria/funciones-continuas">Funciones continuas</a>, <a href="/categoria/funciones-reales-de-variable-real">Funciones reales de variable real</a>, <a href="/categoria/matemáticas">Matemáticas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p><strong>1.</strong> Consideramos las funciones que cumplen la igualdad $f\left(\alpha x\right)=\alpha f\left(x\right)$ para cualquier $\alpha\in\mathbb{R}.$ Encontrar la forma explícita de todas las funciones de ese tipo. ¿Son uniformemente continuas en $\mathbb{R}.$?</p>
+
+<p>Consideremos dos puntos $x_1, x_2=\alpha x_1$. Se cumple:</p>
+
+<p>$\frac{y_2}{x_2}=\frac{f\left(x_2\right)}{x_2}=\frac{f\left(\alpha x_1\right)}{\alpha x_1}=\frac{\alpha f\left(x_1\right)}{\alpha x_1}=\frac{\alpha y_1}{\alpha x_1}=\frac{y_1}{x_1}.$</p>
+
+<p>Como $\alpha$ puede ser cualquier valor, la igualdad anterior es cierta para todos los valores $x_1,y_1,x_2,y_2$, y la razón $y/x$ es una constante: $\frac yx=C\Leftrightarrow\boxed{y=Cx}.$ Ésta es la forma general de las funciones que buscábamos.</p>
+
+<p>Es fácil ver ahora que son uniformemente continuas:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$f\left(x\right)=Cx\Rightarrow\left</td>
+      <td>y_1-y_2\right</td>
+      <td>\leq R\Leftrightarrow\left</td>
+      <td>Cx_1-Cx_2\right</td>
+      <td>\leq R\Leftrightarrow\left</td>
+      <td>C\right</td>
+      <td>\cdot\left</td>
+      <td>x_1-x_2\right</td>
+      <td>\leq R\Leftrightarrow\left</td>
+      <td>x_1-x_2\right</td>
+      <td>\leq\frac R{\left</td>
+      <td>C\right</td>
+      <td>}.$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Tomando $r=\frac R{\left</td>
+      <td>C\right</td>
+      <td>}$ se cumple la condición de continuidad uniforme: dado un $R$ cualquiera, si se cumple $\left</td>
+      <td>y_1-y_2\right</td>
+      <td>\leq R$ entonces existe un $r$ tal que $\left</td>
+      <td>x_1-x_2\right</td>
+      <td>\leq r$ (ver, si es necesario, la <a href="http://tallermatematic.eu/wp/?p=377">teoría de continuidad</a>).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>2.</strong> Estudiar la continuidad de la función dada por:
+$\left{\begin{array}{l}\sqrt{x^2-1}\;\text{si }x\in\left(-\infty,-1\right),\x^2+2x+1\;\text{si }x\in\left[-1,10\right],\\frac{121}{10}x\;\text{si }x\in\left(10,+\infty\right).\end{array}\right.$</p>
+
+<p>La primera expresión de la función, $\sqrt{x^2-1}\;\text{si }x\in\left(-\infty,-1\right),$ es la composición de dos funciones:</p>
+
+<p>$f(x)=\sqrt{x^2-1}\;=f_1(x)\circ f_2(x),\;f_1(x)=\sqrt x,\;f_2(x)=x^2-1.$
+Ambas funciones $f_1, f_2$ son continuas, luego su composición también lo es. No obstante, la función $f_1(x)=\sqrt x$ sólo está definida para $x\geq0$, por tanto la función compuesta también estará definida sólo en $x^2-1\geq0\Rightarrow\left|x\right|\geq1$, que es compatible con el intervalo de definición dado, $x\in\left(-\infty,-1\right), $ hasta aquí tenemos continuidad.</p>
+
+<p>La siguiente expresión es un polinomio de segundo grado, que es continuo en todo el dominio. La última expresión también lo es. Ahora queda estudiar los puntos de enlace entre las tres expresiones, donde tendremos que aplicar la definición de continuidad:</p>
+
+<p><strong>Definición 1</strong>: Si $f:A\subset\mathbb{R}\rightarrow\mathbb{R}$ y el punto $a$ pertenece al conjunto de puntos de acumulación de $A$, $a\in\text{Acum}\left(A\right)$, diremos que $f$ es continua en $a$ si existe el límite $L=\lim_{x\rightarrow a}f\left(x\right)\neq\pm\infty$ y además se cumple que $L=f(a)$. </p>
+
+<p>Para el punto $x=-1$, donde pasamos de la expresión 1 a la 2, hacemos los límites laterales:</p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow-1^-}f(x)=\sqrt{-1^2-1}=0;\\lim_{x\rightarrow-1^+}f(x)=-1^2+2(-1)+1=0;\\end{array}$</p>
+
+<p>Puesto que coinciden entre sí en el valor $L=-1$, y además $f(-1)=-1=L$. la función es continua en $x=-1$. Para el otro punto de transición, $x=10$, procedemos igual:</p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow10^-}f(x)=10^2+2(10)+1=121;\\lim_{x\rightarrow-1^+}f(x)=\frac{121}{10}10=121;\\end{array}$</p>
+
+<p>los límites laterales coinciden, luego el límite en $x=10$ toma el valor 121, que es el mismo que f(10), y la función es continua en ese punto. En conclusión, $f(x)$ es continua en todo su dominio.</p>
+
+<hr />
+
+<p><strong>3.</strong> Estudiar la continuidad de  $f(x)=\frac{\sqrt{1+2x}-\sqrt{1+55x}}{x+\sqrt{x+1}}.$</p>
+
+<p>La función será continua en todo punto $a$ en que $\lim_{x\rightarrow a}f\left(x\right)=f\left(a\right);$ como es una función irracional (por la presencia de raíces), será continua en todo su dominio. Además, como la expresión de la función tiene un cociente, también tendremos en cuenta el dominio de las funciones racionales:</p>
+
+ 	- funciones del tipo $f\left(x\right)=\frac{g(x)}{h(x)}$: tienen dominio $\mathbb{R}-\left{x:\;g(x)=0\right}$
+
+ 	- funciones del tipo $f\left(x\right)=\sqrt[n]x$ con $n$ par: tienen dominio $\mathbb{R}-\left{x:\;g(x)&lt;0\right}$
+
+<p>Lo aplicamos; primero el cociente:</p>
+
+<p>$\begin{array}{l}x+\sqrt{x+1}=0\Rightarrow x=-\sqrt{x+1}\Rightarrow x^2=x+1\Rightarrow x^2-x-1=0\Rightarrow\x=\frac{1\pm\sqrt{1+4}}2=\left{\begin{array}{l}\frac{1+\sqrt5}2\\frac{1-\sqrt5}2\end{array}\right.\end{array}$</p>
+
+<p>Siempre que elevamos una expresión al cuadrado, se genera una solución que no lo es de la ecuación original; comprobamos las dos obtenidas:</p>
+
+<p>$\begin{array}{l}x=\frac{1+\sqrt5}2\Rightarrow x+\sqrt{x+1}\approx3.236\neq0;\x=\frac{1-\sqrt5}2\Rightarrow x+\sqrt{x+1}=0.\end{array}$</p>
+
+<p>La solución “buena” es por tanto $x=\frac{1-\sqrt5}2.$ Ahora estudiamos el dominio de las funciones irracionales:</p>
+
+<p>$\frac{\sqrt{1+2x}-\sqrt{1+55x}}{x+\sqrt{x+1}}\rightarrow\left{\begin{array}{l}1+2x\geq0\Rightarrow x\geq\frac{-1}2\1+55x\geq0\Rightarrow x\geq\frac{-1}{55}\x+1\geq0\Rightarrow x\geq-1.\end{array}\right.$</p>
+
+<p>Para encontrar el dominio de $f(x)$ imponemos todas las condiciones simultáneamente:</p>
+
+<p>$Dom\;f\left(x\right)=\left{x\neq\frac{1-\sqrt5}2\right}\;\text{y }\left{x\geq\frac{-1}{55}\right}\;\text{y }\left{x\geq\frac{-1}2\right}\;\text{y }\left{x\geq-1\right}$</p>
+
+<p>Imponer varias restricciones, como es el caso, equivale a encontrar la intersección de todas ellas: sustituimos algunas expresiones por sus valores calculados aproximados, para poder compararlas:</p>
+
+<p>$\begin{array}{l}\left{x\neq-0.618\right}\cap\left{x\geq-0.0\overset\frown{18}\right}\cap\left{x\geq\frac{-1}2\right}\cap\left{x\geq-1\right}=\\left{x\geq-0.0\overset\frown{18}\right}\end{array}$</p>
+
+<p>La última condición implica todas las demás. Nos queda por tanto $Dom\;f\left(x\right)=\left{x:\;x\geq\frac{-1}{55}\right}$ y la función es continua en ese dominio.</p>
+
+<hr />
+
+<p><strong>4.</strong> Demostrar que la ecuación $x^5+4x^3-2x+2=0$ tiene al menos una solución real.
+Definimos la función $f\left(x\right)=x^5+4x^3-2x+2$ que es continua en todo $\mathbb{R}$ por ser un polinomio. Buscamos algunos puntos para encontrar un cambio de signo en la función:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{c}\begin{array}{ccccc}\left.x\right</td>
+      <td>&amp;-2&amp;-1&amp;0&amp;1\\left.f\left(x\right)\right</td>
+      <td>&amp;-58&amp;-1&amp;2&amp;5\end{array}\end{array}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vemos que hay un cambio de signo entre $x=-1$ y $x=0$, por el Teorema de Bolzano ha de existir al menos un $c\in\left(-1,0\right)$ tal que $f(c)=0.$</p>
+
+<hr />
+
+<p><strong>5</strong>. ¿Existe alguna función continua tal que no alcance (no tome valores en) su supremo ni si ínfimo? Si es así, ¿contradice el Teorema de Weierstrass de funciones continuas?</p>
+
+<p>Hay infinitas funciones como las que nos piden: las funciones con asíntotas horizontales no alcanzan nunca ciertos valores. Por ejemplo, la función:</p>
+
+<p>[caption id=”attachment_442” align=”alignnone” width=”507”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim.png"><img src="/assets/images/ni_suprem_ni_infim.png" alt="f(x)= 1+exp(x) si x=0" /></a> f(x)= 1+exp(x) si x&lt;0, 1èxp(-x) si x&gt;=0[/caption]</p>
+
+<p>$f\left(x\right)=\left{\begin{array}{l}1+e^x\;\text{si }x&lt;0\1+e^{-x}\;\text{si }x\geq0\end{array}\right.$</p>
+
+<p>es continua en todos sitios, tiene una asíntota horizontal en $y=1$ y ademas está acotada; en efecto:</p>
+
+<p>$\lim_{x\rightarrow0^-}f\left(x\right)=1+e^0=2=\lim_{x\rightarrow0^+}f\left(x\right)=1+e^{-0}=f(0).$ luego es continua.</p>
+
+<p>$\begin{array}{l}{\text{Máx}}<em>{x&lt;0}1+e^x=2;\;{\text{Mín}}</em>{x&lt;0}1+e^x=1;\{\text{Máx}}<em>{x\geq0}1+e^{-x}=2;\;{\text{Mín}}</em>{x\geq0}1+e^{-x}=1;\end{array}$</p>
+
+<p>Luego está acotada superiormente por 2 e inferiormente por 1.</p>
+
+<p>$\lim_{x\rightarrow\infty}f\left(x\right)=1+e^{-\infty}=1;\;\lim_{x\rightarrow-\infty}f\left(x\right)=1+e^{-\infty}=1,$</p>
+
+<p>luego
+$y=1$ es una asíntota horizontal.
+Observemos que $1&lt;f\left(x\right)\leq2$ así que la función no alcanza nunca su valor ínfimo (la mayor de las cotas inferiores). En cambio si que alcanza su valor supremo $y=2$ en $x=0$. Necesitamos una función con dos asíntotas horizontales distintas, por ejemplo:</p>
+
+<p>[caption id=”attachment_443” align=”alignnone” width=”500”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/09/ni_suprem_ni_infim2.png"><img src="/assets/images/ni_suprem_ni_infim2.png" alt="Función con dos asíntotas horizontales" /></a> Función con dos asíntotas horizontales[/caption]</p>
+
+<p>$\left{\begin{array}{l}\frac{5x^2-1}{x^2}\;\text{si }x&lt;-1\\frac{7-x}2\;\text{si }-1\leq x\leq1\\frac{2x^2+1}{x^2}\;\text{si }x&gt;1\end{array}\right.$
+El lector puede comprobar, por el mismo método del ejemplo anterior, que esta función tiene una asíntota a la derecha  $y=2$, otra asíntota a la izquierda $y=5$ y que es continua en todos los puntos. En este caso la función no alcanza ni su supremo $y=5$ ni su ínfimo $y=2$. Esto no contradice el teorema de Weierstrass (recordemos que nos dice que toda función continua en un compacto alcanza su valor máximo y su mínimo) puesto que el dominio de definición debería ser un compacto (un conjunto cerrado y acotado), mientras que para esta función el dominio es todo $\mathbb{R}$, que no es cerrado ni acotado.</p>
+
+<p>En cambio, si limitamos el dominio de esta forma:</p>
+
+<p>$\left{\begin{array}{l}\frac{5x^2-1}{x^2}\;\text{si}-2\leq x&lt;-1\\frac{7-x}2\;\text{si}-1\leq x\leq1\\frac{2x^2+1}{x^2}\;\text{si}1&lt;x\leq2\end{array}\right.$</p>
+
+<p>entonces el dominio de definición es el conjunto cerrado y acotado $[-2, 2]$, el Teorema de Weierstrass es aplicable, y la función alcanza su mínimo en $x=2$ y su máximo en $x=-2$.</p>
+
+<hr />
+
+<p> <strong>6.</strong> ¿Es posible que la composición de dos funciones que no sean ambas continuas, pueda ser continua? Dar algún ejemplo.</p>
+
+<p>Una de las propiedades de las funciones continuas es:
+$f,g$ funciones continuas $\begin{array}{c}\Rightarrow\\nLeftarrow\end{array}f\circ g,\;g\circ f$ continuas</p>
+
+<p>o sea que, si $f,g$ son continuas, seguro que $f\circ g,\;g\circ f$ también lo son, en cambio si $f$ o $g$ no son continuas, no podemos concluir nada. Por tanto sí es posible que la composición de dos funciones que no sean ambas continuas, pueda ser continua.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Como ejemplo veamos las funciones valor absoluto $f\left(x\right)=\left</td>
+      <td>x\right</td>
+      <td>$ y la función siguiente:</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>$g\left(x\right)=\left{\begin{array}{l}1\;\text{si }x&lt;0\-1\;\text{si }x\geq0\end{array}\right.$</p>
+
+<p>Esta segunda función es claramente discontinua en $x=0$, pero en cambio veamos que pasa con $f\circ g:$</p>
+
+<p>$f\circ g\left(x\right)=\left{\begin{array}{l}f\left(1\right)\;\text{si }x&lt;0\f\left(-1\right)\;\text{si }x\geq0\end{array}\right.=\left{\begin{array}{l}1\;\text{si }x&lt;0\1\;\text{si }x\geq0\end{array}\right.$</p>
+
+<p>O sea que $h=f\circ g$ es la función constante $h(x)=1$, que es continua.</p>
+
+<hr />
+
+<p><strong>7.</strong> Estudiar la continuidad de la función:</p>
+
+<p>$f\left(x\right)=\left{\begin{array}{l}x\;\text{ si }x\;\text{ es racional}\1-x\;\text{ si }x\;\text{ es irracional}\end{array}\right.$</p>
+
+<p>Necesitamos recordar la siguiente propiedad de los números reales y racionales:</p>
+
+<p>Entre dos números reales cualesquiera, existen infinitos números reales (racionales e irracionales). En particular, entre dos números racionales cualesquiera, existen infinitos números reales (racionales e irracionales). 
+Entonces, dado un racional cualquiera $a\in\mathbb{Q}$, si intentamos calcular el límite $\lim_{x\rightarrow a\in\mathbb{Q}}f\left(x\right)$, nos encontramos con problemas, pues tenemos que aplicar las dos definiciones de la función, no importa lo cerca que nos aproximemos al punto $a$. Más precisamente, si aplicamos la definición de límite, dado un $\delta&gt;0$, no existe un $\varepsilon&gt;0$ tal que, si $\left|x-a\right|&lt;\varepsilon$ entonces $\left|f\left(x\right)-f\left(a\right)\right|&lt;\delta$, pues en el intervalo centrado en <em>a</em> $\left(a-x,\;a+x\right)$ con $\left|a-x\right|&lt;\varepsilon$ existen infinitos racionales e infinitos irracionales, y no todos ellos estarán dentro del intervalo $\left(f\left(a\right)-\delta,\;f\left(a\right)+\delta\right).$ Hay una excepción: si vemos la gráfica de la función nos daremos cuenta.</p>
+
+<p>[caption id=”attachment_445” align=”alignnone” width=”407”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/09/discontinua_tot_punt.png"><img src="/assets/images/discontinua_tot_punt.png" alt="Función discontinua en todos los puntos, excepto en x=1/2" /></a> Función discontinua en todos los puntos, excepto en x=1/2[/caption]
+Las dos rectas contienen infinitos puntos, pero no todos: la de pendiente positiva contiene los racionales, la otra los irracionales.  Vemos pues que dado cualquier $x=a$, por ejemplo, $a=1$, en cualquier entorno de ese punto hay infinitas imágenes en las dos rectas, cuando nos acercamos al punto $a$ la función va oscilando entre las dos rectas. Pero en el punto $x=1/2$ se cruzan ambas . En ese punto:</p>
+
+<p>$\lim_{x\rightarrow1/2}f\left(x\right)=\left{\begin{array}{l}\frac12\;\text{si }x\;\text{es racional}\1-\frac12\;=\frac12\;\text{si }x\;\text{es irracional}\end{array}\right.$</p>
+
+<p>Entonces el límite existe y vale $1/2$, que además coincide con el valor de la función en $x=1$, con lo cual podemos afirmar que $f(x)$ es continua en $x=1$ y discontinua en cualquier otro punto.</p>
+
+<hr />
+
+<p><strong>8.</strong> Supongamos que $f(x)$ es continua en todo $\mathbb{R}$, y que $f(x)=0$ para todo $x$ racional. Probar que $f(x)$ ha de ser la función nula $f(x)=0$ para todo $\mathbb{R}$.</p>
+
+<p>Definimos $f$ como sigue:</p>
+
+<p>$f\left(x\right)=\left{\begin{array}{l}0\;\;\;\;\;\text{si }x\;\text{esracional}\g\left(x\right)\;\text{si }x\;\text{esirracional}\end{array}\right.$
+donde $g(x)$ es desconocida. Nos piden que demostremos que $g(x)=0$. Siguiendo el razonamiento del ejercicio anterior, dado un racional cualquiera $a\in\mathbb{Q}$, si intentamos calcular el límite $\lim_{x\rightarrow a\in\mathbb{Q}}f\left(x\right)$, nos encontramos con problemas, pues tenemos que aplicar las dos definiciones de la función, no importa lo cerca que nos aproximemos al punto $a$. Entonces, la única forma de que la función sea continua en todos los puntos es que tomen el mismo valor en las dos ramas de la función, esto es, que $g(x)=0$.</p>
+
+<hr />
+
+<p><strong>9.</strong> Sea la función continua $f(x)$ definida en el intervalo cerrado $[a,b]$. Definimos la función $g(x)$ de la siguiente forma: $g(a)=f(a)$, y para valores distintos de $a$, definimos $g\left(x_0\right)=\text{Max }\left{f\left(x\right)\left|x\in\left[a,x_0\right]\right.\right}$. Estudiar la continuidad de $g(x)$.
+En primer lugar nos damos cuenta de que la función $g(x)$ tiene sentido, está bien definida, esto es, para cada valor $x$ existe la imagen $g(x)$; en efecto, como $f(x)$ es continua, alcanzará su valor máximo en todo intervalo cerrado (Teorema de Weierstrass). Al definir $g(y)$ com el valor máximo de $f(x)$ en el intervalo cerrado $[a,x]$, aseguramos que ese máximo existe.</p>
+
+<p>En segundo lugar, es fácil ver que $g(x)$ es una función creciente: a medida que aumentamos los valores de $x$, el máximo de $f(x)$ en el intervalo  $[a,x]$ no puede disminuir por definición: o bien no aumenta, o bien encontramos un nuevo máximo mayor que el anterior.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Además, siendo $f$ continua, al movernos de un valor $x$ a otro próximo $x+\varepsilon$ las imágenes no pueden variar “demasiado”, esto es, la variación estará acotada, y también los valores máximos de $f$  han de estarlo; por ello, dado un $\delta&gt;0$, siempre podremos encontrar un $\varepsilon&gt;0$ tal que si $\left</td>
+      <td>x_1-x_2\right</td>
+      <td>&lt;\varepsilon$ entonces la variación en los máximos en los intervalos $[a,x_1]$ y $[a,x_2]$ no será mayor que $\varepsilon$: la función $g$ es continua.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Como ejemplo concreto, consideremos $f(x)=\sin\left(x\right)$ en $\left[0,2\pi\right]$, y representemos $f,g$:</p>
+
+<p>[caption id=”attachment_446” align=”alignnone” width=”496”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/09/Apostol_4_19.png"><img src="/assets/images/Apostol_4_19.png" alt="Función f(x)=Sin(x) (azul), y función g(x) (verde)" /></a> Función f(x)=Sin(x) (azul), y función g(x) (verde)[/caption]</p>
+
+<p>Vemos que $g(x)$ coincide con $f(x)$ en $\left[0,\pi/2\right]$ hasta que $f(x)$ alcanza su valor máximo absoluto en $x=\pi/2$, a partir de ahí $g(x)$ queda constante.</p>
+
+<hr />
+
+<p> </p>
+
+<p><strong>10.</strong> Estudiar la continuidad de la función</p>
+
+<p>$\left{\begin{array}{l}\frac2x,\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;x\leq-2\\frac1{x+2},\;\;\;\;\;\;\;-2&lt;x\leq1\\frac{x-1}{x^2-5x+4},\;x&gt;1,\;x\neq4\2,\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;x=4\end{array}\right.$
+$2/x$ es continua para todo $x\ne0$, como esta rama de la función está definida para $x\leq-2$, esta primera rama es continua.</p>
+
+<p>Igualmente, $\frac1{x+2}$ es continua excepto en $x=-2$, que no pertenece al dominio de esta rama: $-2&lt;x\leq1.$</p>
+
+<p>$\frac{x-1}{x^2-5x+4}$ es continua excepto en los puntos que cumplen $x^2-5x+4=0,$ que son $x=1,\;x=4,$ que tampoco pertenecen al dominio de esta tercera rama de la función.</p>
+
+<p>Así pues, la función es continua en cada rama de su definición; falta comprobar los puntos de unión de cada rama; en esos puntos, como tenemos una definición “doble” de la función (el punto está en la intersección de dos ramas) hay que calcular los límites laterales.</p>
+
+<p>En $x=-2$ tenemos:</p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow-2^-}f\left(x\right)=\frac2{-2}=-1;\\lim_{x\rightarrow-2^+}f\left(x\right)=\frac1{-2^++2}=\frac1{0^+}=+\infty\end{array}$</p>
+
+<p>El límite no existe, y $f(x)$ no es continua en $x=-2$. Para el siguiente punto,  $x=1$ tenemos:</p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow1^-}f\left(x\right)=\frac1{1+2}=\frac13;\\lim_{x\rightarrow1^+}f\left(x\right)=\frac{1^+-1}{1^+-5^++4}=\frac{0^+}{0^{}}=?\end{array}$</p>
+
+<p>Para resolver la indeterminación del segundo límite simplificamos la fracción:</p>
+
+<p>$\lim_{x\rightarrow1^+}\frac{x-1}{x^2-5x+4}=\lim_{x\rightarrow1^+}\frac{x-1}{\left(x-4\right)\left(x-1\right)}=\lim_{x\rightarrow1^+}\frac1{x-4}=\frac1{-3}$</p>
+
+<p>Como no coinciden los límites laterales, no existe el límite, y la función es discontinua en $x=1$. Para $x=4$ los límites laterales  izquierda no existen, por ejemplo, por la izquierda: $\lim_{x\rightarrow4^-}f\left(x\right)=\lim_{x\rightarrow4^-}\frac1{x-4}=\frac1{0^-}=-\infty, $ y la función tampoco es continua en ese punto.</p>
+
+<p>En resumen, $f(x)$ es continua en todo $\mathbb{R}$ excepto en $x=-2,\;1,\;4.$</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/09/a_trossos.png"><img src="/assets/images/a_trossos.png" alt="a_trossos" /></a></p>
+
+<hr />
+
+<p><strong>11</strong>. Una función lineal f(x) se define por los siguientes valores de la función:</p>
+
+<p>| <strong>x</strong> 
+| 
+2</p>
+
+<p>| 
+6</p>
+
+<p>| 
+50</p>
+
+<p>| 
+n</p>
+
+<p>| <strong>f(x)</strong> 
+| 
+-1</p>
+
+<p>| 
+-13</p>
+
+<p>| 
+m</p>
+
+<p>| 
+-100</p>
+
+<p> </p>
+
+<p>Encontrar los valores m, n.</p>
+
+<p>Solución: las funciones lineales tienen la forma f(x) = Ax + B. Con los datos de la tabla podemos encontrar A, B. Planteamos dos ecuaciones, usando las parejas de valores (x, f(x)) de la tabla (2, -1) y (6, -13):</p>
+
+<p>$\begin{array}{l}-1\;=\;2A\;+\;B\-13\;=\;6A\;+\;B\end{array}$</p>
+
+<p>Este es un sistema lineal de dos ecuaciones con dos incógnitas; restamos las dos ecuaciones (método de reducción) para eliminar la B, que està en las dos, para ello, cambiamos todos los signos de la primera ecuación y sumamos ámbas:</p>
+
+<p>$\begin{array}{l}\begin{array}{l}1\;=\;-2A\;-\;B\\underline{-13\;=\;6A\;+\;B}\end{array}\-12=4A\Leftrightarrow A=-12/4=-3\\end{array}$</p>
+
+<p>Luego B = -1 -2A = -1 +6 = 5. Ya tenemos que f(x) = -3x + 5.</p>
+
+<p>Ahora es inmediato encontrar m, n:</p>
+
+<p>m = f(50) = -3·50 + 5 = <strong>-145,</strong></p>
+
+<p>-100 = f(n) = -3·n + 5 → n = (-100 – 5) / -3 = -105/-3 = <strong>35</strong>.</p>
+
+<hr />
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/asíntota">asíntota</a>, <a href="/tag/conjunto-acotado">conjunto acotado</a>, <a href="/tag/conjunto-cerrado">conjunto cerrado</a>, <a href="/tag/continuidad">Continuidad</a>, <a href="/tag/continuidad-a-trozos">continuidad a trozos</a>, <a href="/tag/continuidad-uniforme">continuidad uniforme</a>, <a href="/tag/dominio">dominio</a>, <a href="/tag/función-creciente">función creciente</a>, <a href="/tag/funciones">funciones</a>, <a href="/tag/supremo">supremo</a>, <a href="/tag/teorema-de-weierstrass">Teorema de Weierstrass</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

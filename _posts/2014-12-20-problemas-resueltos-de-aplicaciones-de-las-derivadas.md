@@ -12,6 +12,7 @@ tags:
   - "función"
 math: true
 ---
+{% raw %}
 
 **1.** Comprobar que podemos aplicar el teorema de Rolle a la función $y=x-x^3$ en el intervalo $[-1,0]$, y hallar el valor particular para el que se cumple el teorema.
 La función es derivable en todo $\mathbb{R}$. Los valores en los extremos coinciden: $f(-1)=0=f(0)$. Luego existe un $c\in\left[-1,0\right]$ tal que $f'(c)=0$. Para hallarlo simplemente resolvemos la ecuación $f'(x)=0\Leftrightarrow1-3x^2=0\Leftrightarrow x=\pm1/\sqrt3$, el valor $c=-1/\sqrt3$ es el que buscamos.
@@ -139,3 +140,4 @@ Por tanto el polinomio de Taylor será de grado 4:
 $\begin{array}{l}f\left(x\right)=\sin(0)+\frac{\cos\left(0\right)}{1!}x+\frac{-\sin\left(0\right)}{2!}x^2+\frac{-\cos\left(0\right)}{3!}x^3+\frac{\sin\left(0\right)}{4!}x^4\\=x-\frac16x^3+\varepsilon_5\left(x\right)\end{array}.$
 
 Por ejemplo, para $x=0.5$, el polinomio anterior vale $0.5-\frac160.5^3+\varepsilon_5\left(x\right)=\frac{23}{48}\approx0.4792$ mientras que el valor exacto es 0.4794 (redondeado con cuatro decimales), el error absoluto es de |0.4792-0.4794|=0.0002 < 1/500. [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

@@ -12,6 +12,7 @@ tags:
   - "producto vectorial"
 math: true
 ---
+{% raw %}
 
 ### Magnetismo
 
@@ -72,3 +73,4 @@ En la figura 5 vemos un circuito cerrado cuadrado de lado d por el que circula u
 ### Bibliografia
 
  	- Julián Fernandez y Marcos Pujal: Iniciación a la Física, volumen II, 1973
+{% endraw %}

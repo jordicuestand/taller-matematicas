@@ -4,6 +4,7 @@ title: "Física"
 date: 2014-08-31 17:13:12 +0000
 math: true
 ---
+{% raw %}
 
 | 
 #### **Física matemática**
@@ -101,3 +102,4 @@ math: true
  	- [Música](http://tallermatematic.ovh/wp/index.php/2017/08/26/acustica-musica/)
 
  	- [Física del sonido](http://tallermatematic.ovh/wp/index.php/2018/07/03/fisica-del-sonido/)
+{% endraw %}

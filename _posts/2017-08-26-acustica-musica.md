@@ -18,6 +18,7 @@ tags:
   - "tubos sonoros"
 math: true
 ---
+{% raw %}
 
 La sucesión de sonidos con ciertas características especiales la denominamos *música*. El oído es capaz de percibir, dados dos sonidos emitidos en sucesión, la relación entre sus frecuencias (o tonos), esa relación se denomina *intervalo musical*. Por ejemplo, dados dos sonidos a 300Hz y 150Hz, el oído notará que entre ellos existe la misma relación que entre otros dos de 800Hz y 400Hz, ya que el intervalo es el mismo para las dos secuencias, 300:150 = 800:400 = 2. En la siguiente grabación puede escucharse dos secuencias de 11 notas cada una formando las denominadas escalas musicales (concretamente la escala pentatónica);  las relaciones de frecuencias entre las notas son las mismas en ambas escalas, pero la primera escala tiene una frecuencia superior.
 
@@ -219,3 +220,4 @@ Ambas obras están descatalogadas, siendo textos excelentes, he intentado aprove
  	- M. Catalán, Andres León: Física y Química – Madrid, 1945
 
  	- J. Fernandez, M. Pujal: Iniciación a la Física – Barcelona, 1975
+{% endraw %}

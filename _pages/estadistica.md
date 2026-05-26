@@ -4,6 +4,7 @@ title: "Estadística"
 date: 2015-04-14 12:44:23 +0000
 math: true
 ---
+{% raw %}
 
 **Estadística teórica (modelos matemáticos)**
 
@@ -28,3 +29,4 @@ math: true
  	- [Introducción a las probabilidades](http://tallermatematic.eu/wp/?p=1389)
 
  	- [Series temporales](http://tallermatematic.ovh/wp/index.php/2016/11/27/estadistica-estadistica-aplicada-series-temporales/)
+{% endraw %}

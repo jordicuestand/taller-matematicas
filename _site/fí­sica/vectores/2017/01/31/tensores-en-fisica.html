@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tensores en Física — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Tensores en Física</h1>
+    <p class="meta">
+      31/01/2017
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>, <a href="/categoria/vectores">Vectores</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h2 id="magnitudes-tensoriales">Magnitudes tensoriales</h2>
+
+<p>En Física nos encontramos frecuentemente con <strong>magnitudes escalares</strong> que son aquellas que numéricamente se expresan mediante un único número real, como el tiempo o la temperatura, también con <strong>magnitudes vectoriales</strong> que se expresan mediante un vector (ver <a href="http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/">vectores en Física</a>), como la fuerza o el campo eléctrico. A menudo estas magnitudes se refieren a puntos del espacio o bien a objetos puntuales, como por ejemplo objetos puntuales, cargas eléctricas puntuales, etc. Así, hablamos de “el vector fuerza <strong>F</strong> aplicado a un punto material P de masa m”, que ejercerá una aceleración, etc, como vemos a la izquierda de la figura 1, y todo queda bien determinado conociendo la posición de P, su masa m, y la fuerza <strong>F</strong>.</p>
+
+<p>Para objetos no puntuales, como el de la figura 1 a la derecha, nos encontramos que una misma fuerza <strong>F</strong> aplicada en partes distintas del cuerpo C produce efectos distintos: el cuerpo C girará sobre sí mismo de forma distinta según el punto de aplicación de la fuerza. Notemos que, a pesar de haber rotulado las fuerzas $F_1,F_2,F_3$ de distinto modo, de hecho como vectores tienen la misma representación numérica, ya que tienen el mismo módulo, dirección y sentido (se dice que son vectores equipolentes). Entonces tenemos que la masa m del cuerpo C, un escalar, por sí sola, no nos da suficiente información para deducir la velocidad angular del cuerpo en función de la fuerza aplicada.</p>
+
+<p>[caption id=”attachment_150167” align=”alignnone” width=”457”]<img src="/assets/images/tensors1.png" alt="Fig. 1: fuerza F aplicada sobre un objeto puntual (izquierda) y sobre un cuerpo (derecha)" /> Fig. 1: fuerza F aplicada sobre un objeto puntual (izquierda) y sobre un cuerpo (derecha)[/caption]
+Otro ejemplo lo encontramos en el electromagnetismo en la materia: cuando aplicamos un campo eléctrico <strong>E</strong> a un material susceptible de <a href="https://es.wikipedia.org/wiki/Polarizabilidad">polarización</a>, se induce la creación de <a href="https://es.wikipedia.org/wiki/Dipolo_el%C3%A9ctrico#Momento_dipolar_de_una_distribuci.C3.B3n_de_carga">dipolos eléctricos</a> atómicos, caracterizados por la magnitud  <a href="https://es.wikipedia.org/wiki/Dipolo_el%C3%A9ctrico#Densidad_volum.C3.A9trica_dipolar_y_densidades_de_carga_ligada">momento dipolar P</a> que es proporcional al campo: $\overrightarrow P=\alpha\overrightarrow E$, donde $\alpha$ es una constante escalar que depende del material; ahora bien, para los sólidos cristalinos, como por ejemplo la calcita, la constante de proporcionalidad  depende de la dirección del campo eléctrico aplicado. De nuevo la información proporcionada por la constante escalar $\alpha$ es insuficiente para definir la situación física.</p>
+
+<p>Vemos pues que abundan las situaciones reales en las que las magnitudes escalares y vectoriales aportan información insuficiente para describir la situación; en estos casos necesitamos las <strong>magnitudes tensoriales</strong>:</p>
+
+<p>Las magnitudes tensoriales son útiles para describir propiedades físicas que varían con la dirección en la que se aplica una magnitud vectorial.</p>
+
+<h2 id="tensores-y-vectores"> Tensores y vectores</h2>
+
+<p>Consideremos un sólido localizado según unos ejes en el espacio XYZ al que aplicamos una fuerza <strong>F</strong> paralela al eje X; dependiendo del punto de aplicación sobre el sólido, éste girará de forma distinta, expresada por las velocidades angulares $\Omega$.</p>
+
+<p>[caption id=”attachment_150170” align=”alignnone” width=”349”]<img src="/assets/images/tensors2.png" alt="Fig. 2: vectores fuerza equipolentes y vectores velocidad angular producidos" /> Fig. 2: vectores fuerza equipolentes y vectores velocidad angular producidos[/caption]
+En general, para una fuerza $\overrightarrow F=\left(F_x,0,0\right)$ obtendremos una velocidad angular proporcional a la fuerza pero que puede tener cualquier dirección: $\overrightarrow\Omega=\left(\alpha_xF_x,\alpha_yF_x,\alpha_zF_x\right)$, donde los coeficientes $\alpha_x,\alpha_y,\alpha_z$ son las constantes de proporcionalidad, propiedades del material. Si ahora aplicamos la fuerza F paralelamente al eje Y, obtendremos unas velocidades angulares distintas, con unas constantes de proporcionalidad también distintas, para distinguirlas de las obtenidas en la dirección del eje X, añadimos un subíndice:</p>
+
+ 	- fuerza en la dirección del eje X: $\overrightarrow\Omega=\left(\alpha_{xx}F_x,\alpha_{xy}F_x,\alpha_{xz}F_x\right)$
+
+ 	- fuerza en la dirección del eje Y: $\overrightarrow\Omega=\left(\alpha_{yx}F_x,\alpha_{yy}F_x,\alpha_{yz}F_x\right)$
+
+<p>Por último, consideramos que la fuerza es paralela al eje Z, entonces:</p>
+
+ 	- fuerza en la dirección del eje Z: $\overrightarrow\Omega=\left(\alpha_{zx}F_x,\alpha_{zy}F_x,\alpha_{zz}F_x\right)$
+
+<p>Para una fuerza en dirección arbitraria, sabemos que la podemos descomponer en suma de tres fuerzas, cada una en la dirección de un eje: $\overrightarrow F=F_x\widehat x+F_y\widehat y+F_z\widehat z$, entonces la velocidad angular resultante será también la suma de la producida para cada componente de la fuerza:</p>
+
+<p>$\overrightarrow\Omega=\left(\alpha_{xx}F_x,\alpha_{xy}F_x,\alpha_{xz}F_x\right)+\left(\alpha_{yx}F_y,\alpha_{yy}F_y,\alpha_{yz}F_y\right)+\left(\alpha_{zx}F_z,\alpha_{zy}F_z,\alpha_{zz}F_z\right)=\;\sum_{ij}\alpha_{ij}\cdot{\overrightarrow F}_i\cdot\widehat j[1]$</p>
+
+<p>donde el sumatorio recorre los índices i, j con los valores X, Y, Z, o bien 1, 2, 3, identificando el eje X como el primero, etc, y el vector $\widehat j$ simboliza el vector unitario en la dirección de cada eje coordenado.</p>
+
+<p>En la expresión [1] tenemos que la relación entre los vectores <strong>F</strong> y $\overrightarrow\Omega$ viene dada por 3 x 3 = 9 escalares $\alpha_{ij}$; en general, dados dos vectores $\overrightarrow a, \overrightarrow b$ si la relación entre ellos viene dada por una doble suma sobre los coeficientes $\alpha_{ij}$, diremos que los $\alpha_{ij}$ son un <strong>tensor de rango 2</strong> (de rango 2 significa que el tensor tiene dos índices, el i y el j):</p>
+
+<p> 
+$a_j=\underset{1\leq i\leq3}{\sum\alpha_{ij}b_i}[2]$</p>
+
+<p><strong>Definición 1</strong>:  <em>un tensor de rango 2 en el espacio R³ es un conjunto de 3 x 3 = 3² = 9 valores $\alpha_{ij},\; 1\leq i,j\leq3$ que sirven para transformar un vector en otro vector</em>.</p>
+
+<h2 id="ejemplos-de-tensores-en-física">Ejemplos de tensores en Física</h2>
+
+ 	- En mecánica, un objeto sólido que gira alrededor de un eje fijo tiene un vector <a href="https://es.wikipedia.org/wiki/Momento_angular">momento angular</a> L proporcional al vector velocidad angular $\Omega$, y la proporcionalidad viene dada por el <a href="https://es.wikipedia.org/wiki/Tensor_de_inercia"><strong>tensor de inercia</strong></a> I del sólido: $\overrightarrow L=I\cdot\overrightarrow\Omega$, un tensor de rango 2.
+
+ 	- En electromagnetismo los vectores polarización P inducida sobre un sólido por el  vector campo eléctrico E vienen relacionados por el <strong>tensor de polarizabilidad</strong> del sólido, $\overrightarrow P=\alpha\cdot\overrightarrow E$, un tensor de rango 2.
+
+ 	- Cuando una corriente eléctrica recorre un cristal conductor, la relación entre el vector densidad de corriente j y el vector campo eléctrico E viene dada por el <strong>tensor de conductividad</strong> del cristal, $\overrightarrow j=\sigma\cdot\overrightarrow E$, un tensor de rango 2.
+
+ 	- Dado un vector axial v (o pseudovector), sus componentes $v_x,v_y,v_z$ forman un tensor de rango 2 que sólo tiene 3 componentes distintas de cero; se comprueba aplicando la expresión [2] al vector axial, para comprobar que para todo vector b la expresión [2] produce un vector a (ver la definición 1). En general, las componentes de todo producto vectorial a x b forman un tensor de grado 2.
+
+ 	- En un sólido sometido a una fuerza externa, las fuerzas internas de resistencia dependen de la dirección de la fuerza externa aplicada y también del punto de aplicación; para cada punto (x,y,z), la relación entre el vector fuerza y el vector deformación es el <a href="https://es.wikipedia.org/wiki/Tensor_tensi%C3%B3n"><strong>tensor de esfuerzo</strong></a> del material en ese punto, $\overrightarrow F=S\left(x,y,z\right)\cdot\left(x,y,z\right)$. Como para cada punto (x,y,z) tenemos un tensor de esfuerzo S(x,y,z), para caracterizar todo el sólido necesitamos una función S(x,y,z) que asigna a cada punto del sólido un tensor de grado 2, a estas funciones se les llama <a href="https://es.wikipedia.org/wiki/Campo_tensorial"><strong>campos tensoriales</strong></a>, por analogía a los <a href="https://es.wikipedia.org/wiki/Campo_vectorial"><strong>campos vectoriales</strong></a>, que asignan un vector a cada punto (x,y,z) del espacio.
+
+ 	- En un sólido elástico sometido a una fuerza externa, las deformaciones en cada punto dependen del punto considerado, formando un tensor de rango 2 de deformaciones T; el valor de estas deformaciones dependen a su vez del tensor de esfuerzos S en ese punto, también de rango 2; aquí tenemos pues una relación entre tensores, no entre vectores como en los ejemplos anteriores. No es difícil ver que para relacionar dos tensores de rango 2 entre sí, cada uno con 9 componentes, necesitamos 9 x 9 = 81 componentes, organizados en 4 índices de 3 valores (ejes x, y, z), que forman un <strong>tensor de rango superior</strong>, concretamente de rango 4: $T_{ij}=\sum_{k,l}\alpha_{ijkl}S_{kl}$. Es el <strong>tensor de deformación elástica</strong>.
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/campo-tensorial">campo tensorial</a>, <a href="/tag/tensor">tensor</a>, <a href="/tag/tensor-de-conductividad">tensor de conductividad</a>, <a href="/tag/tensor-de-esfuerzo">tensor de esfuerzo</a>, <a href="/tag/tensor-de-inercia">tensor de inercia</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

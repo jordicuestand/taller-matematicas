@@ -4,6 +4,7 @@ title: "Problemas de EDOs de primer orden"
 date: 2015-04-28 13:07:16 +0000
 math: true
 ---
+{% raw %}
 
 **Enunciados**
 
@@ -100,3 +101,4 @@ La solución es $F(x,y)=C$ donde $F\left(x,y\right)=\int M\operatorname dx=\int 
 $x^2+\frac xy+\ln\left(y\right)=C$
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

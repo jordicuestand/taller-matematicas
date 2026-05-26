@@ -12,6 +12,7 @@ tags:
   - "tensor"
 math: true
 ---
+{% raw %}
 
 En aquest article exposem les bases de la Teoria de la Relativitat Especial tal com va ser concebuda per Einstein, seguint la seva exposició del llibre "El significado de la Relatividad" editat a Espanya per Espasa-Calpe. No és una exposició simple tal com es dona en els primers cursos dels graus, va al fons de la qüestió de la naturalesa de l'espai i del temps. 
 
@@ -294,3 +295,4 @@ que és un tensor antisimétric ($F_{\mu\nu}=F_{\nu\mu}=$) amb zeros a la diagon
 Usant tot el vist en els apartats anteriors pot demostrar-se ( veure per exemple *Electrodinàmica Clàssica - Jackson*) que les quatre equacions vectorials de Maxwell es redueixen a dues tensorials:
 
 [math]\frac{\partial F_{\mu\nu}}{\partial x_\nu}=\frac{4\pi}cJ_\mu;\;\frac{\partial F_{\mu\nu}}{\partial x_\lambda}+\frac{\partial F_{\lambda\mu}}{\partial x_\nu}+\frac{\partial F_{\nu\lambda}}{\partial x_\mu}=0[/math]
+{% endraw %}

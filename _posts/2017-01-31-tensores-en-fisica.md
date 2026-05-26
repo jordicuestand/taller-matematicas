@@ -13,6 +13,7 @@ tags:
   - "tensor de inercia"
 math: true
 ---
+{% raw %}
 
 ## Magnitudes tensoriales
 
@@ -68,3 +69,4 @@ $a_j=\underset{1\leq i\leq3}{\sum\alpha_{ij}b_i}[2]$
  	- En un sólido sometido a una fuerza externa, las fuerzas internas de resistencia dependen de la dirección de la fuerza externa aplicada y también del punto de aplicación; para cada punto (x,y,z), la relación entre el vector fuerza y el vector deformación es el [**tensor de esfuerzo**](https://es.wikipedia.org/wiki/Tensor_tensi%C3%B3n) del material en ese punto, $\overrightarrow F=S\left(x,y,z\right)\cdot\left(x,y,z\right)$. Como para cada punto (x,y,z) tenemos un tensor de esfuerzo S(x,y,z), para caracterizar todo el sólido necesitamos una función S(x,y,z) que asigna a cada punto del sólido un tensor de grado 2, a estas funciones se les llama [**campos tensoriales**](https://es.wikipedia.org/wiki/Campo_tensorial), por analogía a los [**campos vectoriales**](https://es.wikipedia.org/wiki/Campo_vectorial), que asignan un vector a cada punto (x,y,z) del espacio.
 
  	- En un sólido elástico sometido a una fuerza externa, las deformaciones en cada punto dependen del punto considerado, formando un tensor de rango 2 de deformaciones T; el valor de estas deformaciones dependen a su vez del tensor de esfuerzos S en ese punto, también de rango 2; aquí tenemos pues una relación entre tensores, no entre vectores como en los ejemplos anteriores. No es difícil ver que para relacionar dos tensores de rango 2 entre sí, cada uno con 9 componentes, necesitamos 9 x 9 = 81 componentes, organizados en 4 índices de 3 valores (ejes x, y, z), que forman un **tensor de rango superior**, concretamente de rango 4: $T_{ij}=\sum_{k,l}\alpha_{ijkl}S_{kl}$. Es el **tensor de deformación elástica**.
+{% endraw %}

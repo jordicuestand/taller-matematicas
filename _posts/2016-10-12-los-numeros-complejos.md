@@ -15,6 +15,7 @@ tags:
   - "raíz complejo"
 math: true
 ---
+{% raw %}
 
 #### Motivación
 
@@ -200,3 +201,4 @@ Así pues, en toda aplicación práctica en que tengamos oscilaciones complicada
 [caption id="" align="aligncenter" width="213"]![Ecuación de Schrödinger (fuente: Wikipedia)](https://wikimedia.org/api/rest_v1/media/math/render/svg/327546c3f8bd78d7d533c5c04f7602086862dfd4) Ecuación de Schrödinger (fuente: Wikipedia)[/caption]
 
  	- En la teoría de la Relatividad restringida, una de las formas de presentarla es a través del espacio-tiempo de Minkowski, en el cual el tiempo se toma como si fueran números imaginarios; también en Relatividad General, y en Cosmología, se usan tiempos que son números imaginarios, no por motivos "esotéricos", si no para simplificar las complicadas ecuaciones de la relatividad. Ver por ejemplo mi post [La naturaleza del espacio y del tiempo (II)](http://matfisfil.blogspot.com/2012/08/la-naturaleza-del-espacio-y-del-tiempo.html).
+{% endraw %}

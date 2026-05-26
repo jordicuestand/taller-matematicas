@@ -20,6 +20,7 @@ tags:
   - "velocidad relativa"
 math: true
 ---
+{% raw %}
 
 Problemas de Física -> Mecánica -> Cinemática
 
@@ -210,3 +211,4 @@ $a_t={\overline a}_t=\frac{\triangle v}{\triangle t}=\frac{85/3.6}{49.7}=0.475\f
 La aceleración centrípeta, o normal, $a_n$, no es constante, sino que vale $a_n=\frac{v^2}r=\frac{\left(at\right)^2}r=\frac{0.475^2t^2}{280}=0.806\times10^{-3}t^2\frac m{s^2}.$ Al completar el arco, esta aceleración tangencial normal vale $a_n=0.806\times10^{-3}\cdot49.7^2=1.99\frac m{s^2}.$ La aceleración total es el módulo del vector que tiene por componentes $(a_t,a_n)$, y vale $\sqrt{1.99^2+0.48^2}=2.05\;\frac m{s^2}.$
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

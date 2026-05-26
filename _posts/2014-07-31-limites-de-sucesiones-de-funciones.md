@@ -13,6 +13,7 @@ tags:
   - "sucesión funcional"
 math: true
 ---
+{% raw %}
 
 Recientemente he estado ayudando a un alumno con un problema relativo a la convergencia de una sucesión de funciones; a parte de la técnica de resolución, que puede más o menos aprenderse de memoria, comprobé que mi alumno no había entendido ni el significado ni la utilidad de los conceptos, de forma que, por así decirlo, navegaba entre la niebla. De hecho, recordé que yo mismo en mi época de estudiante tampoco lo entendí. Estoy seguro de que se debe a la forma de explicarlo, demasiado formal. Voy a intentar en este post explicar claramente tres conceptos, que son:
 
@@ -175,3 +176,4 @@ Por tanto la función es uniformemente convergente en cualquier intervalo $(a, 
  
 
 Análisis Matemático: un buen libro de teoría de nivel más bien elevado; el capítulo 9 se dedica a las series funcionales
+{% endraw %}

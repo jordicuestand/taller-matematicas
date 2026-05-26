@@ -15,6 +15,7 @@ tags:
   - "sucesión monótona"
 math: true
 ---
+{% raw %}
 
 [Cálculo en R](http://mathseng.blogspot.com.es/p/blog-page.html) -> [Sucesiones](http://mathseng.blogspot.com.es/2014/06/sucesiones-en-r.html) -> problemas resueltos
 
@@ -181,3 +182,4 @@ Por tanto la sucesión es de Cauchy, no obstante, ahora no implica que sea conv
  
 
 Sucesiones y series infinitas (Curso programado de Cálculo C.E.M.). Un libro antiguo e injustamente olvidado, en mi opinión. El Curso programado sigue la didáctica [constructivista](https://es.wikipedia.org/wiki/Constructivismo_%28pedagog%C3%ADa%29), introduciendo cada concepto con ejemplos, de forma que el alumno va construyendo su conocimiento en vez de simplemente memorizarlo.
+{% endraw %}

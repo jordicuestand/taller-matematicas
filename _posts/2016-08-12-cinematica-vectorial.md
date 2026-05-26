@@ -20,6 +20,7 @@ tags:
   - "vector velocidad"
 math: true
 ---
+{% raw %}
 
 La **Cinemática** se ocupa de describir matemáticamente el movimiento de los cuerpos materiales, en este artículo sólo trataremos *cuerpos de dimensiones puntuales,* y en este caso simple la descripción del movimiento se basa en los conceptos de posición, velocidad y aceleración. La **Cinemática Vectorial**, parte de la **Mecánica Vectorial**, usa la matemática de los vectores, el Álgebra vectorial y el Cálculo diferencial vectorial, para describir y calcular posiciones, velocidades y aceleraciones.
 
@@ -172,3 +173,4 @@ Esto se ve muy bien en la teoría de la Relatividad General y su [principio de e
 Entonces, hay una aceleraciones producidas directamente por fuerzas aplicadas, y hay otras producidas por el espacio de referencia no inercial; en este último caso, también pueden existir fuerzas reales vinculadas: en el caso del coche que toma la curva, la fuerza que hace el asiento, el cinturón de seguridad, y quizás la puerta, sobre nosotros, es la que genera la aceleración centrípeta necesaria para que nuestra masa tome la curva; si soltamos el cinturón y abrimos la puerta, salimos despedidos hacia fuera del coche, en dirección tangencial a la curva, debido a que en ausencia de fuerzas nuestra masa vuelve a la referencia inercial sin aceleración: a la trayectoria recta. En cambio, la fuerza centrífuga si podría llamarse una pseudo-fuerza, pero creo que es más apropiado no llamarla de ningún modo, pues simplemente no existe: no hay ninguna fuerza que nos empuje fuera del coche en la curva, al contrario, hay una única fuerza real, la centrípeta, que nos obliga a tomar la curva.
 
 ![separador2](/assets/images/separador2-300x38.png)
+{% endraw %}

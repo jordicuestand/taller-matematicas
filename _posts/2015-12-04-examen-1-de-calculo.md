@@ -13,6 +13,7 @@ tags:
   - "puntos extremos"
 math: true
 ---
+{% raw %}
 
 **1.** Estudiar la continuidad o en su caso, discontinuidad, en x=1, de la función real:
 
@@ -54,3 +55,4 @@ $f\left(x,y\right)=\left\{\begin{array}{l}\frac{x^3}{x^2+y^2},\;\left(x,y\right)
 
 Calcular sus derivadas parciales en (0, 0)  y estudiar su diferenciabilidad en el origen.
 Respuesta: La derivada parcial según X en (0, 0) no existe; según la dirección Y sí tenemos derivada en el origen. No es diferenciable en (0, 0).
+{% endraw %}

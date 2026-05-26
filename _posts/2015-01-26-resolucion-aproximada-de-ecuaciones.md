@@ -4,6 +4,7 @@ title: "Resolución aproximada de ecuaciones"
 date: 2015-01-26 20:45:14 +0000
 math: true
 ---
+{% raw %}
 
 - Introducción
 
@@ -688,3 +689,4 @@ Por tanto la función es continua en todo su dominio. Tenemos que encontrar un 
 | 5.7838E-010 
 
 La convergencia ha sido rápida porque el intervalo inicial es suficientemente bueno.
+{% endraw %}

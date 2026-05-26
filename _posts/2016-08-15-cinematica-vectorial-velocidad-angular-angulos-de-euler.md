@@ -13,6 +13,7 @@ tags:
   - "Velocidad angular"
 math: true
 ---
+{% raw %}
 
 ### Velocidad angular y rotaciones en el espacio
 
@@ -119,3 +120,4 @@ $\overrightarrow{OP}=\overrightarrow{OO'}+\overrightarrow{O'P}=\begin{bmatrix}0\
 Aplicamos [5] usando [6] y [2]:
 
 $\begin{array}{l}{\left\{{\left.\frac{\operatorname d\overrightarrow{OP}}{\operatorname dt}\right|}_{Ref1}\right\}}_{Ref2}=\frac d{dt}\begin{bmatrix}rcos\left(\gamma\right)\\rsin\left(\gamma\right)\\L\end{bmatrix}+\begin{bmatrix}\alpha'cos\left(\beta\right)\\\beta'\\-\alpha'sin\left(\beta\right)\end{bmatrix}\times\begin{bmatrix}rcos\left(\gamma\right)\\rsin\left(\gamma\right)\\L\end{bmatrix}=\\\begin{bmatrix}-r\gamma'\sin\left(\gamma\right)\\r\gamma'cos\left(\gamma\right)\\0\end{bmatrix}+\begin{vmatrix}i&amp;j&amp;k\\\alpha'cos\left(\beta\right)&amp;\beta'&amp;-\alpha'sin\left(\beta\right)\\rcos\left(\gamma\right)&amp;rsin\left(\gamma\right)&amp;L\end{vmatrix}=\\\begin{bmatrix}-r\gamma'sin\left(\gamma\right)\\r\gamma'cos\left(\gamma\right)\\0\end{bmatrix}+\begin{bmatrix}\beta'L+\alpha'rsin\left(\beta\right)sin\left(\gamma\right)\\-L\alpha'cos\left(\beta\right)-\alpha'rsin\left(\beta\right)cos\left(\gamma\right)\\\alpha'rcos\left(\beta\right)sin\left(\gamma\right)-\beta'rcos\left(\gamma\right)\end{bmatrix}=\\\begin{bmatrix}\beta'L+\alpha'rsin\left(\beta\right)sin\left(\gamma\right)-r\gamma'sin\left(\gamma\right)\\-L\alpha'cos\left(\beta\right)-\alpha'rsin\left(\beta\right)cos\left(\gamma\right)+r\gamma'cos\left(\gamma\right)\\\alpha'rcos\left(\beta\right)sin\left(\gamma\right)-\beta'rcos\left(\gamma\right)\end{bmatrix}.\\\end{array}$
+{% endraw %}

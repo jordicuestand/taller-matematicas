@@ -11,6 +11,7 @@ tags:
   - "probabilidad"
 math: true
 ---
+{% raw %}
 
 Contenido (sólo disponible el primer apartado):
 
@@ -82,3 +83,4 @@ Total: $\begin{pmatrix}19\\2\end{pmatrix}\begin{pmatrix}17\\6\end{pmatrix}\begin
 # Problemas de particiones de conjuntos
 
 ( ... proximamente ...)
+{% endraw %}

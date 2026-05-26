@@ -14,6 +14,7 @@ tags:
   - "trabajo"
 math: true
 ---
+{% raw %}
 
 ### Problemas resueltos
 
@@ -155,3 +156,4 @@ Con todo ello nos resulta un ciclo con forma de paralelogramo:
 [caption id="attachment_150701" align="alignnone" width="259"]![](/assets/images/diagrama-PV-en-PT.png) Fig. 3: diagrama PT equivalente[/caption]
 
 ---
+{% endraw %}

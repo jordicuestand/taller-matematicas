@@ -13,6 +13,7 @@ tags:
   - "subespacio vectorial"
 math: true
 ---
+{% raw %}
 
 **1** - Dada la aplicación lineal f con matriz A en bases canónicas dada por
 
@@ -74,3 +75,4 @@ Si queremos estar seguros de que forman base, lo podemos comprobar viendo el ran
 Vemos que ninguna fila se anula, luego el rango es 5, los cinco vectores son linealmente independientes entre sí.
 
 ![separador2](/assets/images/separador2.png)
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Sistemas de EDOs"
 date: 2015-06-21 13:12:44 +0000
 math: true
 ---
+{% raw %}
 
 ###### 
 
@@ -484,3 +485,4 @@ Damos a continuación un resumen de los métodos expuestos para que sirva de gu�
 
 | Transformada de Laplace 
 | Solución particular de EDOs lineales con coeficientes constantes y condiciones iniciales dadas
+{% endraw %}

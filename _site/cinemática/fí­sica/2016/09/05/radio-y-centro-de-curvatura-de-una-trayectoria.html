@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio y centro de curvatura de una trayectoria — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Radio y centro de curvatura de una trayectoria</h1>
+    <p class="meta">
+      05/09/2016
+      
+        · <a href="/categoria/cinemática">Cinemática</a>, <a href="/categoria/fí-sica">Fí­sica</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h3 id="trayectorias-diferenciables-radio-y-centro-de-curvatura">Trayectorias diferenciables: radio y centro de curvatura</h3>
+
+<p>Cuando un punto móvil P se mueve en el espacio describe una trayectoria que en el caso más general es una curva; en el caso de que esta curva sea “suave”, esto es, sin cambios de trayectoria bruscos, será diferenciable, esto es, podrá aproximarse localmente por una circunferencia (en el caso de un movimiento plano) o una esfera (caso de movimiento en el espacio). En la figura 1 se representa una trayectoria plana con dos puntos no diferenciables (en rojo); se denomina a esta curva diferenciable a trozos, pues podemos distinguir en ella tres secciones en las cuales la curva sí es suave.</p>
+
+<p>[caption id=”attachment_150106” align=”alignnone” width=”458”]<img src="/assets/images/Corba_diferenciable.png" alt="Fig. 1: Trayectoria curva en general" /> Fig. 1: Trayectoria curva, en dos dimensiones, en general[/caption]
+Así, en las cercanías del punto móvil P, podemos aproximar la trayectoria por una circunferencia (o esfera) de centro C y radio R, siempre que la curva sea suave en P (figura 2). Llamamos a C al <strong>centro de curvatura de la trayectoria</strong> en P, y a R el <strong>radio de curvatura de la trayectoria</strong> en P.</p>
+
+<p>[caption id=”attachment_150107” align=”alignnone” width=”436”]<img src="/assets/images/Corba_diferenciable2.png" alt="Fig. 2: aproximación local en el punto P por una circunferencia" /> Fig. 2: aproximación local en el punto P por una circunferencia[/caption]
+En general, el centro y el radio van variando conforme P se mueve, esto es, C y R son propiedades locales de la trayectoria (figura 3). En el caso particular de movimiento circular evidentemente serán constantes. Otro caso particular es el del movimiento rectilíneo, en el que consideramos que R es infinito y que el centro C está en el infinito.</p>
+
+<p>[caption id=”attachment_150108” align=”alignnone” width=”445”]<img src="/assets/images/Corba_diferenciable3.png" alt="Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria" /> Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria[/caption]</p>
+<h3 id="aceleración-y-curvatura">Aceleración y curvatura</h3>
+
+<p>Siempre que hay un cambio de dirección en una trayectoria de un móvil, ha de existir una aceleración; es por ello que es de esperar que exista alguna relación entre las propiedades puramente geométricas radio y centro de curvatura de la trayectoria en un punto P y el vector aceleración de P.  Sabiendo esa relación, podríamos deducir la geometría de la trayectoria a partir del vector aceleración, o bien calcular la aceleración a partir del conocimiento de la trayectoria.</p>
+
+<p>Consideremos un movimiento Δs del punto P en la trayectoria s (figura 4) suficientemente pequeña para que se pueda considerar que en esa sección la trayectoria sea aproximadamente circular con radio R y centro C.</p>
+
+<p>[caption id=”attachment_150109” align=”alignnone” width=”329”]<img src="/assets/images/Corba_diferenciable4.png" alt="Fig. 4: el punto P se mueve hasta otra posición muy próxima P" /> Fig. 4: el punto P se mueve hasta otra posición muy próxima P’ a lo largo de la trayectoria s[/caption]
+Consideremos también una referencia fija Ref, con centro en O. El vector velocidad en el punto P se puede expresar como el límite de la velocidad media en el sector Δs:</p>
+
+<p>$\overrightarrow v=\lim_{\triangle t\rightarrow0}\frac{\overrightarrow{OP}’-\overrightarrow{OP}}{\triangle t}=\frac{\operatorname d\overrightarrow{OP}}{\operatorname dt}=\frac{\overrightarrow t\cdot\operatorname ds}{\operatorname dt}=\overrightarrow t\cdot v,$</p>
+
+<p>donde hemos definido el vector $\overrightarrow t$ como un vector  unitario en la dirección del vector velocidad (también llamado versor velocidad), que sabemos que es tangente a la trayectoria s en el punto P, y v es el módulo de la velocidad en el punto, también llamado <strong>celeridad</strong>. Observemos que al hacer el límite la cuerda Δs y el segmento PP’ van a coincidir.</p>
+
+<p>Ahora que tenemos la velocidad, obtenemos la aceleración derivando respecto la referencia fija:</p>
+
+<p>$\overrightarrow a=\frac{\operatorname d\overrightarrow v}{\operatorname dt}=\frac{\operatorname d\overrightarrow t}{\operatorname dt}v+\overrightarrow t\cdot\frac{\operatorname dv}{\operatorname dt}=\frac{\operatorname d\overrightarrow t}{\operatorname dt}v+\overrightarrow t\cdot a$; [1]</p>
+
+<p>para obtener la derivada del vector unitario tangente, primero pensamos que a medida que el punto P cambia de dirección, el versor t irá girando, moviéndose en un círculo (esfera en el caso de movimiento en el espacio) de radio 1 (pues es un vector unitario).</p>
+
+<p>[caption id=”attachment_150111” align=”alignnone” width=”218”]<img src="/assets/images/versor_tangent-1.png" alt="" /> Fig. 5: el versor velocidad, tangente a la trayectoria, describe un círculo unitario[/caption]</p>
+
+<p>Si el versor gira un ángulo θ en radianes, siendo el radio la unidad, la longitud de arco valdrá también θ; definiendo el vector unitario n como muestra la figura 5, y llamando t, t’ a los versores tangentes, tendremos,</p>
+
+<p>$\overrightarrow t’-\overrightarrow t\approx\theta\cdot\overrightarrow n$</p>
+
+<p>la aproximación será buena si el ángulo θ es pequeño, pues el arco y la cuerda serán casi coincidentes, y en el límite será exacta:</p>
+
+<p>$\operatorname d\overrightarrow t=\operatorname d\theta\cdot\overrightarrow n$,
+además, en el límite dθ el vector normal n será perpendicular al versor velocidad t; como éste es a su vez tangente a la trayectoria s, tendremos que el vector n será perpendicular a la trayectoria: es un vector normal unitario a la trayectoria, llamado versor normal.</p>
+
+<p>[caption id=”attachment_150112” align=”alignnone” width=”300”]<img src="/assets/images/versor-normal-300x177.png" alt="Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria" /> Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria[/caption]</p>
+
+<p>Ahora podemos expresar la derivada temporal del versor velocidad tangencial en función del versor normal:</p>
+
+<p>$\frac{\operatorname d\overrightarrow t}{\operatorname dt}=\frac{\operatorname d\theta\cdot\overrightarrow n}{\operatorname dt}=\frac{\operatorname d\theta}{\operatorname ds}\frac{\operatorname ds}{\operatorname dt}\cdot\overrightarrow n.$ [2]</p>
+
+<p>En la figura 4 vemos que podemos expresar el arco recorrido en función del ángulo girado y del radio de curvatura R: $\nabla s=R\nabla\theta$, que pasado al límite es</p>
+
+<p>$\operatorname ds=R\operatorname d\theta\Leftrightarrow R=\frac{\operatorname ds}{\operatorname d\theta}$ [3]</p>
+
+<p>Usando [3] en [2]:</p>
+
+<p>$\frac{\operatorname d\overrightarrow t}{\operatorname dt}=\frac{\operatorname d\theta}{\operatorname ds}\frac{\operatorname ds}{\operatorname dt}\cdot\overrightarrow n=\frac1Rv\cdot\overrightarrow n$ [4]</p>
+
+<p>Sustituimos [4] en [1] y resulta:</p>
+
+<p>$\boxed{\overrightarrow a=\frac{\operatorname d\overrightarrow t}{\operatorname dt}v+\overrightarrow t\cdot a=\frac{v^2}R\overrightarrow n+\overrightarrow t\cdot a={\overrightarrow a}_n+{\overrightarrow a}_t}$ [5]
+que es una generalización de los resultados conocidos del movimiento circular a trayectorias en general, siendo $a_n$ la <strong>aceleración normal</strong> y $a_t$ la <strong>aceleración tangencial</strong>, también llamadas <strong>componentes intrínsecas de la aceleración</strong>. Dado un movimiento con una trayectoria diferenciable la ecuación [5] relaciona el vector aceleración con el radio de curvatura y la celeridad. Para obtener el centro de curvatura C, observamos en la figura 6 que el vector $\overrightarrow{PC}$ será igual a $R \overrightarrow{n}$ [7].</p>
+
+<h4 id="procedimiento-general-de-obtención-del-radio-y-centro-de-curvatura-de-una-trayectoria">Procedimiento general de obtención del radio y centro de curvatura de una trayectoria</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Dados los vectores velocidad y aceleración $\overrightarrow{v}, \overrightarrow{a}$, encontramos la celeridad v, el versor tangente $\overrightarrow t=\overrightarrow v/v$, el módulo a de la aceleración, la aceleración tangencial y la normal ${\overrightarrow a}_t=a\cdot\overrightarrow t,\;{\overrightarrow a}_n=\overrightarrow a-{\overrightarrow a}_t$, el módulo de la velocidad normal, $a_n=\left</td>
+      <td>\left</td>
+      <td>\;{\overrightarrow a}_n\right</td>
+      <td>\right</td>
+      <td>$, e igualamos este valor con v²/R, para obtener el radio: $R=\frac{v^2}{\left</td>
+      <td>\left</td>
+      <td>\;{\overrightarrow a}_n\right</td>
+      <td>\right</td>
+      <td>}$. Por último, usamos [7] para obtener el centro de curvatura C.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo</strong>: Desde un punto O de la costa observamos un barco situado en P, midiendo la distancia r = 1000m y el ángulo θ = 30⁰ formado por su visual y el eje de dirección Norte-Sur tal como muestra la figura 7, en la que también se incluyen el supuesto centro de curvatura C de la trayectoria del barco. Medimos también, en un instante dado, las velocidades radial y angular, dr/dt = 19m/s, dθ/dt = 0.3 ⁰/s, y las aceleraciones radial y angular, d²r/dt² = 2 m/s², d²θ/dt² = 0.05 ⁰/s². Calcular la posición del centro de curvatura C y el radio de curvatura R de la trayectoria del barco usando la base vectorial móvil {12} de la figura y la referencia móvil que usa estos ejes y el origen P. Este ejemplo está tomado de los apuntes de la asignatura de Mecánica de la Escuela Superior de Ingenieros Industriales, escritos por el catedrático Joaquím Agulló.</p>
+
+<p>[caption id=”attachment_150116” align=”aligncenter” width=”364”]<img src="/assets/images/Agulló_F3_Exemple2.png" alt="Fig. 6: Esquema del movimiento de un barco visto desde la costa" /> Fig. 7: Esquema del movimiento de un barco visto desde la costa[/caption]
+Primero de todo necesitamos obtener los vectores velocidad y aceleración en la base móvil {123}, siendo el eje 3 perpendicular al plano definido por {12}; el vector posición de P en esta base es evidentemente (r, 0 , 0). Derivamos este vector expresado en la base móvil respecto a la referencia fija (ver “Derivación de vectores respecto a bases móviles” en el post <a href="http://tallermatematic.ovh/wp/index.php/2016/08/12/cinematica-vectorial/">Cinemática vectorial: sistemas de referencia, vectores posición, velocidad y aceleración</a>) teniendo en cuenta que la velocidad angular de la base {123} es el vector $\left(0,0,\overset.\theta\right)$, con lo cual:</p>
+
+<p> 
+$\begin{array}{l}\begin{array}{l}{\left{\frac d{dt}\overrightarrow{OP}\right}}_{Ref\;fija}=\\frac d{dt}\;\begin{bmatrix}r\0\0\end{bmatrix}\;+\;\begin{bmatrix}0\0\\overset.\theta\end{bmatrix}\times\begin{bmatrix}r\0\0\end{bmatrix}=\begin{bmatrix}\overset.r\0\0\end{bmatrix}+\begin{bmatrix}0\\overset.\theta r\0\end{bmatrix}=\begin{bmatrix}\overset.r\\overset.\theta r\0\end{bmatrix}\end{array}\\end{array}$</p>
+
+<p>Sustituimos los valores del enunciado, y calculamos la celeridad:</p>
+
+<p>$\overrightarrow v=\begin{bmatrix}\overset.r\\overset.\theta r\0\end{bmatrix}=\begin{bmatrix}19\\left(0.3\frac{2\mathrm\pi}{360}\right)\cdot1000\0\end{bmatrix}=\begin{bmatrix}19\5\mathrm\pi/3\0\end{bmatrix};\;v=\sqrt{19^2+\left(5\mathrm\pi/3\right)^2}\approx20\frac ms.$</p>
+
+<p>Derivamos la velocidad para obtener la aceleración, recordando de volver a aplicar la fórmula de derivación respecto referencias fijas de vectores en bases móviles:</p>
+
+<p>${\left{\frac d{dt}\overrightarrow v\right}}_{Ref\;fija}=\frac d{dt}\begin{bmatrix}\overset.r\r\overset.\theta\0\end{bmatrix}+\begin{bmatrix}0\0\\overset.\theta\end{bmatrix}\times\begin{bmatrix}\overset.r\r\overset.\theta\0\end{bmatrix}=\begin{bmatrix}\overset{..}r\\overset.r\overset.\theta+r\overset{..}\theta\0\end{bmatrix}+\begin{bmatrix}-r\overset.\theta^2\\overset.r\overset.\theta\0\end{bmatrix}=\begin{bmatrix}\overset{..}r-r\overset.\theta^2\2\overset.r\overset.\theta+r\overset{..}\theta\0\end{bmatrix}.$</p>
+
+<p>Sustituimos valores:</p>
+
+<p>$\overrightarrow a=\begin{bmatrix}\overset{..}r-r\overset.\theta^2\2\overset.r\overset.\theta+r\overset{..}\theta\0\end{bmatrix}=\begin{bmatrix}2\1\0\end{bmatrix}\;m/s^2$</p>
+
+<p>La aceleración tangencial será la proyección de la aceleración sobre la dirección del vector velocidad tangente:</p>
+
+<p>${\overrightarrow a}_t=a\cdot\frac{\overrightarrow v}v=\sqrt{4+1}\cdot\frac1{20}\begin{bmatrix}19\5\mathrm\pi/3\0\end{bmatrix}\;=\begin{bmatrix}19\sqrt5/20\\sqrt5\mathrm\pi/60\0\end{bmatrix}\approx\begin{bmatrix}2\0.6\0\end{bmatrix}\;m/s^2$</p>
+
+<p>la aceleración normal la obtenemos restando:</p>
+
+<p>${\overrightarrow a}_n=\overrightarrow a-{\overrightarrow a}_t\approx\begin{bmatrix}2\1\0\end{bmatrix}-\begin{bmatrix}2\0.6\0\end{bmatrix}\;=\begin{bmatrix}0\0.4\0\end{bmatrix}$,</p>
+
+<p>igualamos el módulo de este vector con v²/R, para obtener el radio de curvatura: $0.4=20^2/R\Rightarrow R=1000m.$ El centro de curvatura lo encontramos a partir de la expresión [7]:</p>
+
+<p>$\overrightarrow{PC}=R\overrightarrow n=1000\cdot\begin{bmatrix}0\1\0\end{bmatrix}=\begin{bmatrix}0\1000\0\end{bmatrix}.$</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/aceleración-tangencial">aceleración tangencial</a>, <a href="/tag/centro-curvatura">centro curvatura</a>, <a href="/tag/componentes-intrínsecas-de-la-aceleración">componentes intrínsecas de la aceleración</a>, <a href="/tag/radio-curvatura">radio curvatura</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a las probabilidades — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Introducción a las probabilidades</h1>
+    <p class="meta">
+      25/09/2015
+      
+        · <a href="/categoria/estadística">Estadística</a>, <a href="/categoria/probabilidades">Probabilidades</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<ul>
+  <li>Introducción</li>
+</ul>
+
+ 	- Probabilidad y predicción
+
+ 	Precisión
+
+ 	- Cálculo de probabilidades
+
+ 	- Interpretación de la probabilidad como una frecuencia teórica
+
+ 	- Resultados no equiprobables
+
+ 	- Combinación de casos independientes
+
+ 	- Definiciones: Espacio muestral de un experimento aleatorio, puntos muestrales, sucesos.
+
+ 	- Álgebra de sucesos
+
+ 	- Regularidad estadística. Primera definición de probabilidad
+
+ 	- Segunda definición de probabilidad: regla de Laplace, combinatoria
+
+ 	- Tercera definición de probabilidad: axiomas y propiedades
+
+ 	- Probabilidad condicionada. sucesos independientes
+
+ 	- Teoremas de la probabilidad total y de Bayes
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="introducción">Introducción</h1>
+
+<p>Históricamente la Estadística, en sus inicios, no usaba la teoría de las probabilidades, de hecho, ambas ramas de la Matemática en sus inicios fueron independientes; esto es así debido a que la Estadística era de naturaleza descriptiva, como se ha visto en el tema <a href="http://tallermatematic.eu/wp/?p=1341">Estadística descriptiva, análisis de datos</a>. Con el tiempo, empezó a usarse para predecir sucesos a partir de datos anteriores, y también para llegar a conclusiones globales usando datos parciales, es lo que se denomina <a href="https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial">inferencia estadística</a>. Pero estas predicciones y conclusiones no deben nunca interpretarse como precisas, como puede ser en Ciencias Exactas, sino que siempre están limitadas por conceptos como “margen de confianza”, “valor estimado”, “hipótesis” y también “probabilidad”. En este post vemos una introducción breve y simple a la teoría de la probabilidad aplicada a la Estadística.</p>
+
+<h1 id="probabilidad-ypredicción">Probabilidad y predicción</h1>
+
+<p>El concepto de probabilidad es la base de la Estadística, y no es un concepto fàcil de entender. La utilidad de los datos del pasado es comprender el presente y poder hacer predicciones sobre el futuro. También, la utilidad de tener unos datos parciales, una <strong>muestra</strong> de datos, es la de poder hacer predicciones sobre el conjunto total de los datos, o <strong>población</strong>. A estas predicciones en Estadística las llamamos inferencias, y al conjunto de técnicas para lograrlo, técnicas de <strong>inferencia Estadística</strong>.</p>
+
+<p>Pero en Estadística estas inferencias no son nunca predicciones exactas sino aproximadas. Para dar una valoración de cuan aproximadas son, utilizamos el concepto de probabilidad. Así, una predicción con una probabilidad asociada del 100% tendría certeza absoluta, y en el otro extremo, con una probabilidad asociada del 0% tendría falsedad absoluta: nunca se cumpliría. En las aplicaciones prácticas, estos valores extremos nunca se alcanzan.</p>
+
+<h3 id="precisión">Precisión</h3>
+
+<p>[caption id=”attachment_536” align=”alignnone” width=”300”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/12/Petronas.png"><img src="/assets/images/Petronas.png" alt="Torres Petronas" /></a> Torres Petronas[/caption]
+Si leyéramos que la altura de la <a href="http://ca.wikipedia.org/wiki/Torres_Petronas">torres Petronas</a> en Kuala Lumpur es de 452,340 metros, podríamos pensar, con razón, que no tiene mucho sentido detallar los decímetros, centímetros y milímetros de la altura, con lo metros sería suficiente, debido a que unos milímetros más o menos no tienen importancia en este caso concreto.</p>
+
+<p>La valoración del número de decimales correcto es una dificultad para muchos estudiantes; es típico usar una calculadora y dar como resultado demasiados decimales. ¿Cuál es el número correcto de decimales? Depende del problema que estemos resolviendo.</p>
+
+<p>[caption id=”attachment_537” align=”alignnone” width=”300”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/12/calculadora.png"><img src="/assets/images/calculadora-300x181.png" alt="calculadora" /></a> El número de decimales de un cálculo frecuentemente es infinito. El número de decimales significativo depende del problema concreto que estamos resolviendo: la media de calificaciones, las medidas de un estante, la longitud de una pieza de relojería, etc.[/caption]
+En Estadística los resultados nunca son precisos, al contrario se intenta averiguar cuanta probabilidad de certeza tiene una afirmación, una hipótesis o un resultado.</p>
+
+<h3 id="cálculo-de-probabilidades">Cálculo de probabilidades</h3>
+
+<p>Usaremos el clásico ejemplo de la moneda. Es de conocimiento general que, si la moneda no está trucada, la probabilidad de obtener cara o cruz al lanzarla es la misma: 1/2 para los dos resultados. ¿Qué significa realmente esta afirmación?  Significa que, en un gran número de tiradas, las frecuencias de obtención de cara y de cruz serían aproximadamente la mitad del total. En la tabla siguiente vemos una simulación por ordenador del lanzamiento de la moneda:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>lanzamientos</strong></td>
+    </tr>
+    <tr>
+      <td><strong>caras</strong></td>
+    </tr>
+    <tr>
+      <td><strong>% caras</strong></td>
+    </tr>
+    <tr>
+      <td><strong>cruces</strong></td>
+    </tr>
+    <tr>
+      <td><strong>% cruces</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>40.00%</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>60.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>41.00%</td>
+    </tr>
+    <tr>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>59.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>54.00%</td>
+    </tr>
+    <tr>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>46.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>56.00%</td>
+    </tr>
+    <tr>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>44.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>485</td>
+    </tr>
+    <tr>
+      <td>48.50%</td>
+    </tr>
+    <tr>
+      <td>515</td>
+    </tr>
+    <tr>
+      <td>51.50%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vemos que al aumentar el número de lanzamientos, los porcentajes de caras y cruces se van aproximando al 50% predicho. Pero en ningún caso ha coincido exactamente en ese 50%. Es una predicción aproximada, tanto más precisa como mayor sea el número de tiradas de la moneda. A este concepto de probabilidad, una aproximación a la frecuencia esperada, le podemos dar una definición más matemática:</p>
+
+<p><strong>Definición 1</strong>: Dado uno de los posibles resultados de un experimento, el cual repetimos <em>n</em> veces, la probabilidad de ese resultado se define como el límite, cuando <em>n</em> es muy grande, de la frecuencia relativa del resultado respecto al número total de repeticiones; si <em>x</em> es el número de veces que hemos obtenido el resultado, la frecuencia relativa es <em>x/n</em> y la probabilidad será
+$P(\text{resultado})=\lim_{n\rightarrow\infty}\frac xn$</p>
+
+<p>En el ejemplo de la moneda, la probabilidad 1/2 se obtiene de realizar infinitos lanzamientos de la moneda:</p>
+
+<p>$P(cara)=\lim_{n\rightarrow\infty}\frac{\text{número de caras}}n$</p>
+
+<p><strong>Regla de Laplace</strong></p>
+
+<p>Para el cálculo práctico de las probabilidades no se usa la definición anterior, sino otros métodos, el más simple de ellos es la conocida regla de Laplace:</p>
+
+<p>$P(\text{resultado})=\frac{\text{número de casos favorables}}{\text{número de casos totales}}$</p>
+
+<p>Es un hecho notable que el valor de la probabilidad calculada con la regla de Laplace coincida con la de la definición 1, que usa límites.  La regla de Laplace tal como se ha dado supone que cada caso posible es igualmente probable, de lo contrario no funcionará.</p>
+
+<p><strong>Ejemplo 1</strong>: la regla aplicada al lanzamiento de la moneda, para obtener la probabilidad de obtener cara en un lanzamiento, es:</p>
+
+<p>$P(\text{cara})=\frac{\text{número de caras}}{\text{número de casos totales}}=\frac12$</p>
+
+<p>Esto es correcto siempre que todos los resultados (cara y cruz) sean igualmente probables. Si realizamos dos lanzamientos de la moneda y queremos saber la probabilidad de obtener al menos una cara, tendremos que contar los casos favorables y los posibles; abreviando por C el resultado “sale cara” y por “X” el resultado “sale cruz”, los casos son:</p>
+
+<p>casos posibles: CC, CX, XC, XX</p>
+
+<p>casos favorables: CC, CX, XC</p>
+
+<p>por tanto la P(al menos una cara en dos lanzamientos) = 3/4.</p>
+
+<h3 id="interpretación-de-la-probabilidad-como-una-frecuencia-teórica">Interpretación de la probabilidad como una frecuencia teórica</h3>
+
+<p>De la definición 1 podemos obtener una igualdad útil en los problemas:</p>
+
+<p>$P(\text{resultado})=\lim_{n\rightarrow\infty}\frac xn\Leftrightarrow x\xrightarrow[\infty]{}n\cdot P(\text{resultado})$</p>
+
+<p>Para el caso de un número de repeticiones muy elevado, tendremos la igualdad $x\approx n\cdot P(\text{resultado})$, donde $x$ es el número de repeticiones del resultado estudiado.</p>
+
+<p><strong>Ejemplo 2</strong>: La probabilidad de que una bombilla halógena recién fabricada sea defectuosa es del 0,01%. ¿Cuántas bombillas defectuosas esperamos encontrar en una remesa de 10.000 bombillas? Aplicamos la fórmula anterior, teniendo en cuenta que el número de “repeticiones” considerado (el número de bombillas) es elevado: $\text{número de defectuosas}\approx10.000\cdot\frac{0.01}{100}=1.$ Recordemos que esta cifra es solo una aproximación.</p>
+
+<h3 id="combinación-de-casos-independientes">Combinación de casos independientes</h3>
+
+<p>Volvamos al lanzamiento de dos monedas (o al lanzamiento de una moneda dos veces). Los resultados posibles eran CC, CX, XC, XX. Si nos preguntamos por la probabilidad de obtener cualquiera de estos resultados, como por ejemplo “sacar dos caras”, obtenemos para todos ellos el valor 1/4 (un caso favorable de cuatro posibles), pero la probabilidad de obtener una cara es 1/2. Vemos que P(CC) = 1/4 = 1/2 · 1/2 = P(C)·P(C). Para tres monedas, los casos posibles son ocho: CCC, CCX, CXC, XCC, XXC, XCX, CXX, XXX, y la probabilidad de obtener cualquiera de estos resultados es de 1/8 = 1/2 · 1/2 · 1/2 = P(C)·P(C)·P(C). En general, la probabilidad de cada combinación posible al realizar n veces el lanzamiento se obtiene
+multiplicando las probabilidades de todos los resultados que intervienen en la combinación, siempre que cada lanzamiento sea independiente del anterior, esto es, que los resultados no estén influenciados por los obtenidos anteriormente.</p>
+
+<h3 id="resultados-no-equiprobables">Resultados no equiprobables</h3>
+
+<p>Cuando cada caso tiene una probabilidad distinta, no podemos aplicar la regla de Laplace. Debemos estudiar la probabilidad de cada caso.</p>
+
+<p><strong>Ejemplo 3</strong>: siguiendo con las bombillas del ejemplo 2, si compramos 3 bombillas, y las probamos ¿cuál es la probabilidad de que la primera sea defectuosa y las otras dos no?</p>
+
+<p>La probabilidad de que una bombilla sea defectuosa es 0.0001, y de que no lo sea de 0.9999. Entonces como cada bombilla es independiente de las demás, la probabilidad del caso “defectuosa, correcta, correcta” será 0.0001·0.9999·0.9999=0.000099.</p>
+
+<p><strong>Ejemplo 4</strong>: siguiendo con las bombillas del ejemplo 2, si compramos 3 bombillas, ¿cuál es la probabilidad de que una sea defectuosa?</p>
+
+<p>Llamemos C al resultado “pruebo una bombilla y es correcta”, y D al resultado “pruebo una bombilla y es defectuosa”. Las combinaciones posibles son CCC, CCD, CDC, DCC, DDC, DCD, CDD, DDD. No son igualmente probables, luego no podemos aplicar Laplace. La probabilidad de cada una de ellas se obtiene multiplicando las probabilidades de todos los resultados que intervienen en la combinación, teniendo en cuenta que P(C)=0.9999, P(D)=0.001. Obtenemos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Caso</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Probabilidad</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>CCC</td>
+    </tr>
+    <tr>
+      <td>0.99970003</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>CCD</td>
+    </tr>
+    <tr>
+      <td>0.00009998</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>CDC</td>
+    </tr>
+    <tr>
+      <td>0.00009998</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>DCC</td>
+    </tr>
+    <tr>
+      <td>0.00009998</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>DDC</td>
+    </tr>
+    <tr>
+      <td>0.00000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>DCD</td>
+    </tr>
+    <tr>
+      <td>0.00000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>CDD</td>
+    </tr>
+    <tr>
+      <td>0.00000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>DDD</td>
+    </tr>
+    <tr>
+      <td>1E-012</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La probabilidad pedida “una es defectuosa”, comprende tres casos: CCD, CDC, DCC. Sumemos ahora sus probabilidades: 0.00009998 + 0.00009998 + 0.00009998 = 0.00029994. </p>
+
+<p>Por otro lado, si sumamos las probabilidades de todos los casos posibles, el resultado es 1. Esta es una regla fundamental: la suma de probabilidades de todos los casos posibles es siempre igual a 1.</p>
+
+<h1 id="espacio-muestral-de-un-experimento-aleatorio">Espacio muestral de un experimento aleatorio</h1>
+
+<p>Damos algunas definiciones básicas, y luego vemos sus propiedades y aplicaciones.
+<strong>**Definición 2</strong>: Dado un <a href="https://es.wikipedia.org/wiki/Experimento_aleatorio">experimento aleatorio</a> (ver el tema <a href="http://tallermatematic.eu/wp/?p=1341">Estadística descriptiva, análisis de datos</a>), su <strong>espacio muestral</strong> Ω es el conjunto de todos los posibles resultados del experimento. Ejemplos:</p>
+
+ 	- Lanzamiento de un dado: Espacio muestral Ω = {1,2,3,4,5,6}, un conjunto de  6 elementos.
+
+ 	- Medición de la temperatura en un reactor químico: Ω contiene todos los valores reales positivos (espacio muestral infinito).
+
+<p><strong>Definición 3</strong>: **Puntos muestrales **son cada uno de los posibles resultados de un experimento aleatorio; también podemos decir que son los elementos que componen el conjunto espacio muestral Ω del experimento. Ejemplos:  en el caso del dado los puntos muestrales son {1}, {2}, … {6}.</p>
+
+<p><strong>Definición 4</strong>: <strong>Sucesos.</strong> Un suceso S es un subconjunto cualquiera del espacio muestral Ω de un experimento aleatorio. Ejemplo: para el experimento “lanzar un dado y anotar la puntuación” un suceso puede ser el subconjunto S = {2, 4, 6}. En particular un <strong>suceso elemental</strong> es un subconjunto formado por un único punto muestral, como S = {2}.</p>
+
+<h1><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></h1>
+
+<h1 id="álgebra-de-sucesos">Álgebra de sucesos</h1>
+
+<p>Temporalmente, nos situamos en otra área: la <a href="https://es.wikipedia.org/wiki/L%C3%B3gica_proposicional">lógica de proposiciones</a>, aplicándola al caso de sucesos aleatorios.
+<strong>Definición 5</strong>: Una <strong>proposición lógica</strong> P será una afirmación cualquiera sobre el resultado de un experimento aleatorio. Por ejemplo, en el caso del dado, algunas proposiciones son:</p>
+
+ 	- P1: “Ha salido un número par”
+
+ 	- P2: “Ha salido un número mayor que 4”
+
+ 	- P3: “No ha salido mayor que 4”
+
+ 	- P4: “Ha salido un número par que es mayor que 2 y menor que 5”
+
+<p>La  correspondencia que estamos definiendo entre las proposiciones lógicas y los sucesos ha de cumplir:</p>
+
+ 	- Cada proposición lógica se entenderá que se está refiriendo a algún suceso del espacio muestral Ω de un experimento aleatorio; este suceso es único: no pueden haber dos sucesos distintos relacionados con la misma proposición.
+
+ 	- En cambio, dado un suceso, podemos asociarle muchas proposiciones lógicas
+
+<p>En otras palabras, la relación entre entre el conjunto de proposiciones Σ de un experimento y el conjunto de sucesos Ψ del mismo experimento es una aplicación inyectiva (o de uno-a-muchos).</p>
+
+<p>Ejemplo 5: para el experimento de lanzar un dado, con Ω = {1,2,3,4,5,6}:</p>
+
+ 	- P1: “Ha salido un número par”, se relaciona con el suceso S1 = {2, 4, 6}
+
+ 	- P2: “Ha salido un número mayor que 4”, se relaciona con el suceso S2 = {5, 6}
+
+ 	- P3: “No ha salido mayor que 4”, se relaciona con el suceso S3 = {1,2,3,4}
+
+ 	- P4: “Ha salido un número par que es mayor que 2 y menor que 5”, se relaciona con el suceso S4 = {4}
+
+<p>Todas las proposiciones posibles respecto al experimento aleatorio son válidas, incluso aquellas que no tienen sentido, o son triviales:</p>
+
+ 	- P5: “Ha salido un número mayor que 6”, se relaciona con el subconjunto vacío S = ø, a este suceso se le llama suceso imposible.
+
+ 	- P6: ”Ha salido un número entre 1 y 6”, se relaciona con el conjunto total S = Ω = {1,2,3,4,5,6}, a este suceso se le llama suceso seguro.
+
+<p><strong>Álgebra de sucesos</strong>
+Dentro del conjunto de proposiciones se pueden definir operaciones lógicas que le proporcionan estructura algebraica: el <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole">álgebra de Boole</a>. Las <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole#Operaciones_en_.C3.A1lgebra_de_Boole">operaciones</a> son: AND (y), OR (o), NOT (no). El resultado de una operación lógica entre proposiciones es otra proposición lógica.</p>
+
+<p><strong>Ejemplo 6</strong>:</p>
+
+ 	- AND: P1: “Ha salido un número par”, P2: “Ha salido un número mayor que 4”, P = P1 y P2: ”Ha salido un número par y mayor que 4”.
+
+ 	- NOT: P1: “Ha salido un número par”; negación: P = No “Ha salido un número par”
+
+ 	- OR: P3: “No ha salido mayor que 4”, P5: “Ha salido un número mayor que 6”, P = P4 o P5: “O bien no ha salido mayor que 4, o bien ha salido un número mayor que 6”
+
+<p>También tenemos una correspondencia entre las operaciones lógicas y las operaciones en el espacio muestral:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>operación lógica**</td>
+    </tr>
+    <tr>
+      <td><strong>Operación entre conjuntos de </strong><strong>Ω</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>AND (“y”)</td>
+    </tr>
+    <tr>
+      <td>Intersección de conjuntos, símbolo ∩</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>OR (“o”)</td>
+    </tr>
+    <tr>
+      <td>Unión de conjuntos, símbolo ∪</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>NOT (“no”)</td>
+    </tr>
+    <tr>
+      <td>Complementario de un conjunto S es Sc</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo 7</strong>:</p>
+
+ 	- A la proposición P = (P1 y P2) = (“Ha salido un número par” y “Ha salido un número mayor que 4”) corresponde el suceso (S1∩ S2) = {2,4,6}∩ {5,6 } = {6}
+
+ 	- A la proposición P = no (“Ha salido un número par”) corresponde el suceso complementario del {2,4,6} que es {1,3,5}
+
+ 	- <strong>Sucesos excluyentes</strong>: son aquellos que no tienen elementos en común, es decir, que su intersección es nula.
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="regularidad-estadística-primera-definición-de-probabilidad">Regularidad estadística. Primera definición de probabilidad</h1>
+
+<p>Supongamos que realizamos N repeticiones de un experimento aleatorio y que formamos la tabla de frecuencias relativas. Entonces, el <a href="https://en.wikipedia.org/wiki/Statistical_regularity">principio de regularidad Estadística</a> afirma que, conforme N se hace más grande, las frecuencias relativas de todos los resultados tienden a ser constantes.</p>
+
+<p><strong>Ejemplo 8</strong>: lanzamiento de una moneda. Tabla de frecuencias relativas</p>
+
+<p>| 
+Punto muestral</p>
+
+<p>| 
+N=10</p>
+
+<p>| 
+N=100</p>
+
+<p>| 
+N=1000</p>
+
+<p>| 
+“cara”</p>
+
+<p>| 
+4/10 = 0.4</p>
+
+<p>| 
+46/100 = 0.46</p>
+
+<p>| 
+502/1000 = 0.502</p>
+
+<p>| 
+“cruz”</p>
+
+<p>| 
+6/10 = 0.6</p>
+
+<p>| 
+54/100 = 0.54</p>
+
+<p>| 
+498/100 = 0.498</p>
+
+<p>Se observa que las frecuencias relativas se estabilizan alrededor del valor 0.5. Tomamos este valor límite de la frecuencia relativa cuando N es muy grande como la primera definición de probabilidad:</p>
+
+<p><strong>Definición 5</strong>: <strong>Probabilidad (frecuencialista) de un suceso S</strong>. Dado un suceso S asociado al espacio muestral Ω de un experimento aleatorio, del cual podamos realizar un número cualquiera N de ejecuciones, la probabilidad P(S) del suceso viene dada por:
+$P(S)=\underset{N\rightarrow\infty}{lim}f(S)$</p>
+
+<p>donde f(S) representa la frecuencia relativa del suceso S cuando hacemos N repeticiones del experimento aleatorio.
+<strong>Ejemplo 9</strong>: la probabilidad de S: “ha salido cara” en el experimento de lanzar la moneda es 0.5, pues ese el valor obtenido al simular por ordenador el lanzamiento un número elevado de repeticiones.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="segunda-definición-de-probabilidad-regla-de-laplace-combinatoria">Segunda definición de probabilidad: regla de Laplace, combinatoria</h1>
+
+<p>Esta primera definición de probabilidad como límite de frecuencias relativas es útil para interpretar resultados de cálculos, pero no lo es para obtener probabilidades, pues obliga a realizar un límite de una frecuencia relativa, para la cual en general no tenemos ninguna expresión analítica. La siguiente definición, debida a Laplace, soluciona este inconveniente:</p>
+
+<p><strong>Definición 6</strong>: <strong>Probabilidad de un suceso S, regla de Laplace. </strong>Dado un suceso S asociado al espacio muestral Ω de un experimento aleatorio, si el número de puntos muestrales de S es card(S) y el número de puntos muestrales de Ω es card(Ω), la probabilidad P(S) del suceso viene dada por:
+$P(S)=\frac{\text{card }\left(S\right)}{\text{card }\left(\Omega\right)}$</p>
+
+<p>Ejemplo: la probabilidad de S: “ha salido cara” en el experimento de lanzar la moneda se calcula contando el número de puntos muestrales de S = {“cara”}, que es 1, y del espacio Ω = {“cara”, “cruz”}, que es 2. Luego P(“cara”) = 1/2 = 0.5.</p>
+
+<p><strong>Ejemplo 10</strong>: la probabilidad de sacar un número par al lanzar un dado, según la regla de Laplace, es:</p>
+
+<p>$P(par)=\frac{\text{card }\left(par\right)}{\text{card }\left(\Omega\right)}=\frac{\text{card }\left(\left{2,4,6\right}\right)}{\text{card }\left{1,2,3,4,5,6\right}}=\frac36=\frac12$</p>
+
+<p><strong>Teoría combinatoria</strong>
+En casos simples es inmediato aplicar la regla de Laplace pero en general no será tan simple. Consideremos por ejemplo el siguiente problema: ”<em>Una lotería está formada por N números, de los que m tendrán premio. Calcular la probabilidad de que nos toque algún premio si hemos comprado k números</em> “. Calcular el número de puntos muestrales ahora no es trivial. La <a href="https://en.wikipedia.org/wiki/Enumerative_combinatorics">teoría combinatoria</a> proporciona técnicas directas para hacerlo; en nuestro caso la solución viene dada por:</p>
+
+<p>$P(premio)=1-P(no\;premio)=1-\frac{C_{N-m,k}}{C_{N,k}}=1-\frac{\left(N-k\right)!\left(N-m\right)
+}{N!\left(N-m-k\right)!}$
+donde $C_{a,b}$ representan la combinaciones de a elementos tomados de b en b, y el símbolo ! representa la operación factorial. No trataremos esta teoría aquí, aunque en este blog hay una<a href="http://tallermatematic.eu/wp/?p=1449"> introducción a la teoría</a> y se pueden encontrar algunos <a href="http://tallermatematic.eu/wp/?p=1311">problemas resueltos de combinatoria</a>.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="tercera-definición-de-probabilidad-axiomas-y-propiedades">Tercera definición de probabilidad: axiomas y propiedades</h1>
+
+<p>La definición más moderna de probabilidad se debe a <a href="https://es.wikipedia.org/wiki/Andr%C3%A9i_Kolmog%C3%B3rov">Kolmogorov</a>:
+<strong>Definición 7</strong>: <strong>Probabilidad de un suceso S, Kolmogorov. </strong>Dado un suceso S asociado al espacio muestral Ω de un experimento aleatorio, probabilidad es toda función P que asigna a cada suceso S de un espacio muestral un número P (S) comprendido en el intervalo [0, 1] y que además verifica las siguientes propiedades (axiomas de la probabilidad):</p>
+<ol>
+  <li>P (Ω) = 1</li>
+  <li>Si A, B son sucesos excluyentes, entonces P (A ∪ B) = P (A) + P (B)</li>
+</ol>
+
+<p>Se puede demostrar que esta definición es más general que las dos anteriores: La regla de Laplace y el límite de la frecuencia relativa verifican los axiomas, pero hay probabilidades que no se pueden calcular con la regla de Laplace ni con frecuencias, y si según la definición de Kolmogorov.</p>
+
+<p>De la definición de Kolmogorov se pueden deducir otras propiedades de la probabilidad:</p>
+
+ 	- 
+<p>P(no S) = P(Sc) = 1 – P(S)</p>
+
+ 	- 
+<p>P(suceso imposible) = P(ø) = 0</p>
+
+ 	- 
+<p>P(A o B) = P(A∪ B) = P(A) + P(B) – P(A∩ B)</p>
+
+ 	- Si el espacio muestral Ω se puede considerar dividido en n subconjuntos disjuntos entre sí, Ω = A1 ∪ A2 ∪ … ∪ An, entonces P(A1) + P(A2) + … + P(An) = 1
+
+<p>En las aplicaciones y problemas, se suele usar la definición 2 (Laplace) para calcular, la definición 1 para interpretar el significado de la probabilidad, y las propiedades de la probabilidad para simplificar los cálculos.</p>
+
+<p><strong>Ejemplo 11:</strong> <em>Calcular la probabilidad de que al lanzar dos dados simultáneamente, o bien la suma de las puntuaciones de ambos dados mayor que 6, o bien la puntuación de ambos dados sea al menos de 4. Si realizamos ese experimento 100 veces, ¿en cuantas de ellas esperaremos que se cumpla que “las puntuaciones de ambos dados mayor que 6 o bien la puntuación de ambos dados sea al menos de 4</em>”?</p>
+
+<p>Definimos los sucesos S: “la suma de las puntuaciones de ambos dados mayor que 6”, y T: “la puntuación de ambos dados sea al menos de 4”. Para hallar las probabilidades por la regla de Laplace necesitamos contar los puntos muestrales (resultados posibles) de cada suceso y también del espacio total.</p>
+
+<p>Resultados posibles para S: {1+6, 2+5, 2+6, 3+4, 3+5, 3+6, 4+3, 4+4, 4+5, 4+6, 5+2, 5+3, 5+4, 5+5, 5+6, 6+1, 6+2, 6+3, 6+4, 6+5, 6+6}, total 21</p>
+
+<p>Resultados posibles para T:  {4+4, 4+5, 4+6, 5+4, 5+5, 5+6, 6+4, 6+5, 6+6}, total 9</p>
+
+<p>Resultados posibles totales: tantos como parejas (a, b) podemos formar siendo a,b números entre 1 y 6: son 6·6 = 36.</p>
+
+<p>Ahora aplicamos la tercera propiedad de Kolmogorov: P(S o T) = P(S∪T) = P(S) + P(T) – P(S ∩ T). Necesitamos calcular el número de puntos del conjunto (S ∩ T) = {1+6, 2+5, 2+6, 3+4, 3+5, 3+6, 4+3, 4+4, 4+5, 4+6, 5+2, 5+3, 5+4, 5+5, 5+6, 6+1, 6+2, 6+3, 6+4, 6+5, 6+6} ∩ {4+4, 4+5, 4+6, 5+4, 5+5, 5+6, 6+4, 6+5, 6+6} = {4+4, 4+5, 4+6, 5+4, 5+5, 5+6, 6+4, 6+5, 6+6} = T; esto sucede porque T está incluido en S (T es un subconjunto de S).</p>
+
+<p>También se puede visualizar gráficamente: en una cuadrícula de 6 x 6 marcamos las casillas con una suma superior a 6 con un 1, y las que cumplen que los dos valores son al menos 4 las resaltamos en amarillo:</p>
+
+<p>[caption id=”attachment_1392” align=”aligncenter” width=”256”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exper_dos_daus.png"><img src="/assets/images/exper_dos_daus.png" alt="Valores posibles de las puntuaciones del lanzamiento de dos dados" /></a> Valores posibles de las puntuaciones del lanzamiento de dos dados; hay 21 combinaciones con suma &gt; 6, y 9 combinaciones con los dos valores mayores o iguales a 4[/caption]
+Probabilidades según Laplace: P(S) = 21/36, P(T) = 9/36. P(S ∩ T) = 9/36</p>
+
+<p>Probabilidad P(S o T) = P(S∪T) = 21/36 + 9/36 - 9/36 = 21/36.</p>
+
+<p>Si repetimos N = 100 veces el lanzamiento de los dos dados, usando la definición 4 de probabilidad, esperaremos que en 100·21/36 = 58 ocasiones suceda que se cumpla que “la suma de puntuaciones de ambos dados mayor que 6 o bien la puntuación de ambos dados sea al menos de 4”.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="probabilidad-condicionada-sucesos-independientes">Probabilidad condicionada. Sucesos independientes</h1>
+
+<p>Cuando tenemos un conocimiento parcial del resultado de un experimento aleatorio podemos utilizarlo para mejorar nuestras predicciones. Por ejemplo: sabemos que en un dado ha salido al menos un 4. ¿Cuál es ahora la probabilidad de que sea un número par? Si no utilizamos la información “ha salido al menos un 4” será, por la regla de Laplace:</p>
+
+<p>P(par) = card {2,4,6} / card {1,2,3,4,5,6} = 3/6</p>
+
+<p>Si en cambio utilizamos la información “extra”, entonces el espacio muestral queda restringido a ser los puntos del suceso “ha salido al menos un 4” que son {4,5,6} y en el
+suceso “número par” habrá que eliminar el punto {2} que es incompatible. Por lo tanto será:</p>
+
+<p>P (“par” condicionada por “ha salido al menos un 4”) = card {4,6} / card {4,5,6} = 2/3</p>
+
+<p>En general:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Definición 8</strong>: Diremos que el <strong>suceso A está condicionado por el suceso B</strong> cuando el conocimiento parcial del resultado B modifica el espacio muestral original Ω, reduciéndolo a otro Ω’, de tal modo que la probabilidad de A respecto a Ω’ es diferente a la original respecto a Ω. La notación para la probabilidad de A condicionada a B es P (A</td>
+      <td>B).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Se puede demostrar fácilmente que la nueva función de probabilidad P (S</td>
+      <td>B) verifica los axiomas y propiedades de la probabilidad de Kolmogorov, y por tanto está bien definida.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sucesos independientes</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>En el ejemplo anterior hemos visto que si A = {“un número par”} y B = {“ha salido al menos un 4”} entonces P (A) = 3/6 = 1/2, P (A</td>
+      <td>B) = 2/3, y las probabilidades no son las mismas. ¿Siempre será así? En general no.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Definición 9</strong>: Cuando tengamos que  P (A</td>
+      <td>B) = P (A) diremos que los sucesos A y B son <strong>independientes</strong>. El condicionamiento impuesto por B no afecta a A. En cambio cuando el condicionamiento si afecte a la probabilidad, diremos que los sucesos son <strong>dependientes</strong>,</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En general se cumple que:
+$P\left(A\vert B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$</p>
+
+<p>Si los sucesos A, B son independientes, entonces:
+$P\left(A\vert B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}=P\left(A\right)\Rightarrow\boxed{P\left(A\cap B\right)=P\left(A\right)P\left(B\right)}$ [1]</p>
+
+<p> </p>
+
+<p><strong>Interpretar correctamente la probabilidad condicionada</strong>
+Los conceptos de dependencia e independencia de sucesos, así como el condicionamiento suelen ser mal comprendidos la primera vez que los vemos. Por ejemplo, en los enunciados de problemas hay que distinguir claramente cuando nos están hablando de probabilidad condicionada o de probabilidad conjunta de dos sucesos; en el primer caso hay una información previa: un suceso se supone que ya ha sucedido, el otro no, mientras que en la probabilidad conjunta no hay esa información previa. Por ejemplo: En una urna hay 4 bolas de color azul, 6 de color rojo y 3 de color amarillo. Sacamos una bola al azar sin mirarla; suponiendo que alguien nos dice “no es de color amarillo”, ¿cuál es la probabilidad de que sea roja? Esta es una probabilidad condicionada, pues ya ha sucedido el suceso “no es de color amarillo” (la información previa), y por tanto calcularemos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>P(roja</td>
+      <td>no es de color amarillo ) = P(roja ∩ no es de color amarillo ) / P(no es de color amarillo )</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En cambio si sacamos una bola al azar y la pregunta es ¿cuál es la probabilidad de que simultáneamente suceda que la bola no sea amarilla y sea roja? el cálculo será simplemente P(roja ∩ no es de color amarillo ).</p>
+
+<p>Consideremos otro experimento con la misma urna: sacamos una bola que resulta ser roja; la devolvemos a la urna, y a continuación volvemos a sacar una bola. Nos preguntamos por la probabilidad de que vuelva a ser roja. Aquí entra un nuevo elemento: si consideramos que las distintas extracciones (que son las repeticiones del mismo experimento aleatorio) son independientes entre sí, entonces la probabilidad entre extracciones no varia, dado que hemos devuelto la bola a la urna para que haya exactamente el mismo número de bolas en la segunda extracción. Entonces:</p>
+
+<p>P(bola roja en cada extracción) = 6 / (4 + 6 + 3) = 6 / 13</p>
+
+<p>P((roja en 1ª) Y (roja en 2ª extracción)) = P(roja en 1ª) · P(roja en 2ª extracción) = 6 / 13 · 6 / 13 = 36 / 13²</p>
+
+<p>Aquí hemos usado la igualdad [1] para calcular la probabilidad P((roja en 1ª) Y (roja en 2ª extracción)), teniendo en cuenta que las extracciones son independientes.</p>
+
+<p><strong>Sucesos realmente independientes</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>¿Cuando podemos considerar que dos sucesos son independientes? Siempre que no se afecten el uno al otro por cualquier medio, ni queden afectados por agentes externos. Por ejemplo, en un laboratorio realizamos, por primera vez, un experimento con una cierta medida <em>M</em>, y la repetimos unos días después. Nos preguntamos por la probabilidad de haber cometido un error absoluto en la medida respecto al valor real <em>R</em>, *</td>
+      <td>R - M</td>
+      <td>*, mayor que una tolerancia e: P(</td>
+      <td>R - M</td>
+      <td>&gt; e). ¿Esta probabilidad será la misma el primer dia y el segundo dia? Aquí es más delicado suponer independencia de sucesos, ya que hay diversos factores externos que pueden influir, por ejemplo, la segunda vez se tiene la experiencia de la primera, y podría ser que se procediera mejor en la preparación previa del experimento. También podría ser que los con los resultados de la primera prueba hubiéramos intercambiado información con otros compañeros de trabajo sobre el experimento en cuestión, de forma que en la segunda ocasión sabemos algo más. Por ello en esta situación es más arriesgado suponer que los sucesos son independientes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo 11:</strong> (<a href="http://www.amazon.es/gp/product/B0046A9M7C/ref=as_li_ss_tl?ie=UTF8&amp;camp=3626&amp;creative=24822&amp;creativeASIN=B0046A9M7C&amp;linkCode=as2&amp;tag=tallerma-21">Nonplussed!: Mathematical Proof of Implausible Ideas</a><img src="http://ir-es.amazon-adsystem.com/e/ir?t=tallerma-21&amp;l=as2&amp;o=30&amp;a=B0046A9M7C" alt="" /> - by Julian Havil): <em>Como condición para ser aceptado en un club de tenis un jugador novato N ha de jugar tres partidos contra dos miembros del club, que les llamaremos B (jugador de nivel bueno) y M (jugador de nivel medio). Para ser aceptado, N debe ganar dos partidos consecutivos de los tres. N debe elegir uno de las dos posibilidades: jugar en el orden  M, B, M o en el orden B, M, B. La pregunta es: ¿cuál es la mejor opción?</em></p>
+
+<p>Este es un buen ejemplo de que en ocasiones las probabilidades no son intuitivas en absoluto. Sin hacer ningún cálculo, de forma intuitiva, creeremos que el más importante es jugar lo menos posible con el jugador B, y por tanto la mejor opción es escoger el orden de juego M, B, M i no el B, M, B. Vamos a hacer el cálculo de probabilidades.</p>
+
+<p>Supongamos que la probabilidad de que N venza a M es m, y de que venza a B es b, y que los sucesos son independientes (no afecta al partido siguiente el resultado del anterior).  En el orden de juego M, B, M, todas las combinaciones para vencer dos partidos consecutivos son: (vencer M, vencer B, vencer M), (vencer M, vencer B, perder M), (perder M, vencer B, vencer M). ¿Cuáles son las probabilidades de estas combinaciones? Son:</p>
+
+ 	- P(vencer M, vencer B, vencer M) = m·b·m
+
+ 	- P(vencer M, vencer B, perder M) = m·b·(1-m)
+
+ 	- P(perder M, vencer B, vencer M) = (1-m)·b·m
+
+<p>Observar que para calcular la probabilidad de perder aplicamos la 1ª propiedad de la probabilidad de Kolmogorov: P(no S) = 1 – P(S). La probabilidad de vencer dos partidos consecutivos en el orden M, B, M será la suma de las anteriores probabilidades, ya que los sucesos (vencer M, vencer B, vencer M), (vencer M, vencer B, perder M), (perder M, vencer B, vencer M) son mutuamente excluyentes: la suma es mbm + mb(1-m) + (1-m)bm = bm(m + 1 - m + 1 - m) = bm(2 - m).</p>
+
+<p>Hacemos lo mismo para el orden de juego B, M, B. Las combinaciones y sus probabilidades son:</p>
+
+ 	- P(vencer B, vencer M, vencer B) = b·m·b
+
+ 	- P(vencer B, vencer M, perder B) = b·m·(1-b)
+
+ 	- P(perder B, vencer M, vencer B) = (1-b)·m·b
+
+<p>La suma es b·m·b + b·m·(1-b) + (1-b)·m·b = bm(b + 1 - b + 1 - b) = bm(2 - b)</p>
+
+<p>Como b &lt; m (menos probabilidad de ganar el jugador bueno que el medio), resulta que bm(2 - b) &gt; bm(2 - m), o sea que en el orden de juego B, M, B el jugador novicio tiene más probabilidades de vencer en dos partidos consecutivos que en el orden M, B, M, !incluso siendo  que deberá jugar dos partidos contra el mejor jugador en vez de sólo uno! Un resultado contra intuitivo, pero rigurosamente cierto.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+
+<p>**Ejemplo 12:  **Consideremos el mismo problema del club de tenis pero esta vez incorporando aspectos subjetivos; si el jugador novicio gana en un partido al jugador de mejor nivel B, consideraremos que su motivación aumenta y también mejorará su nivel de juego; por otro lado si pierde contra el jugador de nivel medio M entonces bajará ligeramente. **
+**</p>
+
+ 	- si gana a B, sus probabilidades de ganar en el siguiente partido, que eran m, b respectivamente, pasan a ser m’, b’, que cumplirán m &lt; m’ &lt; 1, b &lt; b’ &lt; 1. Concretamente, es P( ganar a M | haber ganado B) = m’, P( ganar a B | haber ganado B) = b’
+
+ 	- si pierde con M, sus probabilidades de ganar en el siguiente partido, que eran m, b respectivamente, pasan a ser m’’, b’’, que cumplirán m’’ &lt; m &lt; 1, b’’ &lt; b &lt; 1
+
+<p>Ahora estamos considerando probabilidades condicionadas: la probabilidad de ganar un partido depende del resultado del partido anterior. Rehacemos los cálculos; para el orden de juego M, B, M</p>
+
+ 	- P(vencer M, vencer B, vencer M) = m·b·m’
+
+ 	- P(vencer M, vencer B, perder M) = m·b·(1-m)
+
+ 	- P(perder M, vencer B, vencer M) = (1-m)·b’‘·m’
+
+<p>La suma de estas probabilidades es m·b·m’ + m·b·(1-m) + (1-m)·b’‘·m’ = mbm’ + mb - m²b + m’b’’ - mm’b’’ = mm’(b - b’’) + mb(1 - m) + m’b’’</p>
+
+<p>para el orden de juego B, M, B. Las combinaciones y sus probabilidades son:</p>
+
+ 	- P(vencer B, vencer M, vencer B) = b·m’·b’
+
+ 	- P(vencer B, vencer M, perder B) = b·m’·(1-b’)
+
+ 	- P(perder B, vencer M, vencer B) = (1-b)·m·b
+
+<p>La suma de estas probabilidades es b·m’·b’ + b·m’·(1-b’) + (1-b)·m·b = bm’b’ + bm’ - bm’b’ + mb - b²m = bm’ + bm - bbm</p>
+
+<p>¿Cuál es ahora la mejor opción? Para simplificar, damos valores concretos a las probabilidades: m = 0.7, b = 0.5, m’=0.8, b’= 0.6, m’’= 0.6, b’‘=0.4. Sustituimos:</p>
+
+ 	- P(ingresar en el club jugando M, B, M) =  mm’(b - b’’) + mb(1 - m) + m’b’’ = 0.7·0.8·(0.5 - 0.4) + 0.7·0.5(1 - 0.7) + 0.8·0.4 = 0.481
+
+ 	- P(ingresar en el club jugando B, M, B) = bm’ + bm - bbm = 0.5·0.8 + 0.5·0.7 - 0.5·0.5·0.7 = 0.575
+
+<p>Vemos que sigue siendo la mejor opción la que incluye más partidos contra el mejor jugador.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+
+<p><strong>Ejemplo 13</strong>: En una encuesta, al 29% le gusta la música clásica. Este 29% se desglosa en un 17% que no les gusta la música moderna y un 12% que también les gusta la música moderna. Por otro lado en un 68% sólo les gusta la música moderna y a un 3% no les gusta la música. Planteamos el experimento aleatorio: preguntar a una persona al azar sobre sus gustos musicales. Sean los sucesos siguientes:</p>
+
+ 	- M: le gusta la música moderna
+
+ 	- X: sólo le gusta un tipo de música
+
+<p>La pregunta que nos hacemos es: ¿Son M y X independientes? Dicho de otro modo, el conocimiento previo de que a una persona les guste la música moderna condiciona el que le guste sólo ese tipo de música?</p>
+
+<p>Representamos los datos en un diagrama:</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/condicionada.png"><img src="/assets/images/condicionada-300x143.png" alt="condicionada" /></a></p>
+
+<p>Hacemos los cálculos teniendo en cuenta el diagrama:</p>
+
+ 	- P(M) =P(“sólo moderna” O “clásica y también moderna”) = 0.68 + 0.12 = 0.8
+
+ 	- P(X) = P(“sólo moderna” O “sólo clásica”) = 0.68 + 0.17 = 0.85
+
+ 	- P(X ∩ M) = P(“sólo un tipo de música” Y “sí la moderna”) = P(“sólo moderna” ) = 0.68
+
+ 	- P(X)·P(M) = 0.85 · 0.8 = 0.68
+
+<p>Resulta que P(X∩ M) = P(X) · P(M), por tanto X, M son independientes</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+
+<h1 id="teoremas-de-la-probabilidad-total-y-de-bayes">Teoremas de la probabilidad total y de Bayes</h1>
+
+<p><strong>Teorema 1 (de la probabilidad total)</strong>: Si tenemos un conjunto de sucesos B1, B2, …, Bn excluyentes entre sí de tal forma que el espacio muestral Ω pueda expresarse como la unión = B1∪ B2∪ …∪ Bn, (decimos queB1, B2, …, Bn es una <strong>partición de Ω</strong>)  y además conocemos las probabilidades P(B1), P(B2) … P(Bn), entonces para cualquier suceso A se cumple:</p>
+
+<p>$P(A)=\sum_{i=1}^nP\left(A\vert B_i\right)\cdot P\left(B_i\right)$</p>
+
+<p><strong>Teorema 2 (de Bayes)</strong>: En las mismas condiciones del teorema anterior tendremos que:
+$P(B_k\;\vert\;A)=\frac{P\left(B_k\right)\cdot P\left(A\;\vert\;B_k\right)}{\sum_{i=1}^nP\left(A\;\vert\;B_i\right)\cdot P\left(B_i\right)}$</p>
+
+<p>Equivalentemente, usando el teorema de la probabilidad total:</p>
+
+<p>$P(B_k\;\vert\;A)=\frac{P\left(B_k\right)\cdot P\left(A\;\vert\;B_k\right)}{P\left(A\right)}$</p>
+
+<p><strong>Ejemplo 14</strong>: El 20% de cierta población tiene estudios superiores, el 60% medios y el 20% básicos. Sabemos que leen habitualmente algún periódico local el 40% de los que tienen estudios superiores, el 25% de lo que tienen estudios medios y el 10% de los que tienen estudios básicos. Elegida una persona al azar resulta que lee habitualmente algún
+ periódico. ¿Cuál es la probabilidad de que tenga estudios superiores?</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>La población total está dividida en tres conjuntos disjuntos B1: estudios superiores, B2: medios, B3: básicos. Sabemos las probabilidades condicionadas siguientes: si escogemos al azar una persona, y resulta que tiene estudios superiores, entonces P(leer</td>
+      <td>B1) = 0.4. Igualmente, P(leer</td>
+      <td>B2) = 0.25, P(leer</td>
+      <td>B3) = 0.1. La probabilidad pedida tiene una información previa: “resulta que lee habitualmente algún periódico”, por tanto es condicionada, es: P(estudios superiores</td>
+      <td>lee). Usamos el teorema de Bayes:</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>$P(superiores\;\vert\;lee)=\frac{P\left(superiores\right)\cdot P\left(lee\;\vert\;superiores\right)}{\sum_{i=1}^nP\left(lee\;\;\vert\;B_i\right)\cdot P\left(B_i\right)}$</p>
+
+<p>Calculamos primero el denominador, que es la probabilidad total de leer un periódico en esa población, sin tener en cuenta el factor estudios:</p>
+
+<p>$\sum_{i=1}^nP\left(lee\;\;\vert\;B_i\right)\cdot P\left(B_i\right)=0.4\cdot0.2+0.25\cdot0.60+0.10\cdot0.20=0.25$</p>
+
+<p>Un 25% de la población lee habitualmente un periódico. Sustituimos en el teorema de Bayes:</p>
+
+<p>$P(superiores\;\vert\;lee)=\frac{0.2\cdot0.4}{0.25}=0.32$</p>
+
+<p>La probabilidad de que una persona con estudios superiores sea lector es superior a la media de la población, 25%, como era de esperar.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p><strong><em>Métodos Estadísticos</em></strong>: Lo utilicé cuando estudiaba en la UNED, y tengo un buen recuerdo, porque no era muy extenso pero contenía todo el temario bastante bien explicado. Otra parte que me gustó fue que cada capítulo tiene una lista de problemas (ejercicios de autocomprobación) con las soluciones, perfecto para estudiar a distancia. En definitiva, no es una biblia de la Estadística Aplicada ni mucho menos, pero para introducirte en los temas básicos (Estadística descriptiva, probabilidades, variables aleatorias, funciones de distribución, intervalos de confianza, contrastes de hipótesis y ANOVA) cumple bien.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/álgebra-de-sucesos">Álgebra de sucesos</a>, <a href="/tag/axiomas-probabilidad">axiomas probabilidad</a>, <a href="/tag/combinatoria">combinatoria</a>, <a href="/tag/espacio-muestral">espacio muestral</a>, <a href="/tag/predicción">predicción</a>, <a href="/tag/probabilidad">probabilidad</a>, <a href="/tag/probabilidad-condicionada">probabilidad condicionada</a>, <a href="/tag/probabilidad-total">Probabilidad total</a>, <a href="/tag/punto-muestral">punto muestral</a>, <a href="/tag/regla-de-laplace">regla de Laplace</a>, <a href="/tag/sucesos-condicionados">sucesos condicionados</a>, <a href="/tag/sucesos-dependientes">sucesos dependientes</a>, <a href="/tag/sucesos-exluyentes">sucesos exluyentes</a>, <a href="/tag/sucesos-independientes">sucesos independientes</a>, <a href="/tag/teorema-de-bayes">Teorema de Bayes</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

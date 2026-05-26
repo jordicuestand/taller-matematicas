@@ -7,6 +7,7 @@ categories:
   - "Matemáticas"
 math: true
 ---
+{% raw %}
 
 **1**. Calcular $\underset{n\rightarrow\infty}{lim}\frac{\sqrt{n^2+1}-\sqrt{9n^2+2}}{3n-2+\sqrt{4n^2-3}}$
 
@@ -27,3 +28,4 @@ math: true
 **Solución**: El único punto crítico es x=0, y=0.
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

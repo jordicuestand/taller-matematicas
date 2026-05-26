@@ -11,6 +11,7 @@ tags:
   - "movimiento vibratorio"
 math: true
 ---
+{% raw %}
 
 **1** - Una masa de 300 gr está encima de una superficie horizontal con rozamiento despreciable.  Fijamos la masa a un resorte de constante k = 22 N/m, y a continuación impulsamos la masa, que alcanza una velocidad inicial de 2 m/s. Debido a la fuerza variable del resorte, la masa describe un movimiento vibratorio armónico. ¿Cuál será su posición y velocidad  2 s después del instante inicial? ¿Cuál será su energía cinética cuando esté a 10c m del punto de equilibrio de la oscilación?
 
@@ -108,3 +109,4 @@ $N=\left(20+40\right)9.8-20\cdot\left(2\mathrm\pi\cdot5\right)^2\cdot0.02\cdot\s
 La fuerza mínima N sobre el soporte sucederá cuando x sea igual a la amplitud A, o equivalentemente, cuando la fase sea tal que el seno valga 1: $N_{min}=588-395\cdot1=193\;N$. Será máxima cuando x sea negativa e igual a A, o sea cuando el seno de la fase valga -1: $N_{min}=588-395\cdot\left(-1\right)=983\;N$. Finalmente, cuando x = 0 el muelle no ejerce fuerza, y sobre el soporte solo actúa el peso del conjunto: $N_{x=0}=588-395\cdot\left(0\right)=588\;N$.
 
 ![separador2](/assets/images/separador2-300x38.png)
+{% endraw %}

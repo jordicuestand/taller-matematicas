@@ -4,6 +4,7 @@ title: "Combinatoria"
 date: 2015-11-03 13:26:37 +0000
 math: true
 ---
+{% raw %}
 
 La combinatoria es la teoría matemática que trata de las técnicas para contar el número de elementos de un subconjunto, o el número de subconjuntos de un conjunto, o el número de listas de elementos del conjunto determinados por un criterio. Algunos problemas de [probabilidades](http://tallermatematic.eu/wp/?p=1389) utilizan estas técnicas, de las que  aquí vemos un repaso breve.
 
@@ -111,3 +112,4 @@ Por tanto hay 4 posiciones posibles distintas para las mujeres restantes: 1[H][M
 $CR_{4,3}=\begin{pmatrix}4+3-1\\3\end{pmatrix}=\begin{pmatrix}6\\3\end{pmatrix}=\frac{6!}{3!\cdot3!}=\frac{6\cdot5\cdot4}6=20$.
 
 **Ejemplo 7**: Es importante entender bien los conceptos para no errar al aplicarlos; para verlo, consideremos una "solución alternativa" al ejemplo 6: esta vez consideramos que, como cada hombre ha de tener una mujer al lado, manejamos parejas en vez de sujetos aislados. Sean las parejas HM, HM, HM, ¿de cuántas formas podemos sentarlas en los 8 asientos? Como cada pareja ocupa dos asientos, es como si consideramos asientos dobles, tendremos 8/2 = 4 asientos dobles, y tres parejas para sentar: $C_{4,3}=\begin{pmatrix}4\\3\end{pmatrix}=\frac{4!}{3!\cdot1!}=4$ formas posibles. Una vez colocadas las parejas, nos quedan 2 mujeres por colocar en 2 asientos libres, que pueden ser cualesquiera: el análisis es el mismo de antes, las posiciones pueden ser cuatro, a la izquierda, entre la pareja 1 y 2, entre la 2 y 3, o al final, y las dos mujeres pueden ir en la misma posición: combinaciones con repetición de 4 elementos tomados de dos en dos: $CR_{4,2}=\begin{pmatrix}4+2-1\\2\end{pmatrix}=\begin{pmatrix}5\\2\end{pmatrix}=\frac{5!}{2!\cdot3!}=\frac{5\cdot4}2=10$. El total de combinaciones serà 10·4 = 40. Pero además, podemos considerar las parejas en el orden MH, MH, MH, y repitiendo todo el razonamiento tenemos 40 posibilidades más, luego en total son 80 ... un momento ... ¡nos han resultado cuatro veces más combinaciones que por el método anterior! ¿Dónde está el error? Queda como ejercicio, podeis comentar vuestra solución en el [FB del blog](https://www.facebook.com/tallermatematic/). ¡Ánimo!
+{% endraw %}

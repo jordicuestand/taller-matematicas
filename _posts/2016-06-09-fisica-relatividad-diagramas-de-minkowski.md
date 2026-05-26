@@ -11,6 +11,7 @@ tags:
   - "referencia inercial"
 math: true
 ---
+{% raw %}
 
 Las transformaciones de Lorentz pueden ser a veces algo laboriosas de utilizar en cierto problemas, dando lugar a largos cálculos; H. Minkowski introdujo en 1908 unos diagramas en donde se representa el espacio-tiempo de forma que permite obtener las transformaciones de Lorentz de forma gráfica. En el eje de abscisas se representa el espacio unidimensional, *x*, y en el eje de abscisas el tiempo, pero multiplicado por *c*.
 
@@ -99,3 +100,4 @@ La radiación viajará a velocidad c tanto en el sentido positivo como en el neg
 
 [caption id="attachment_1731" align="aligncenter" width="383"]![Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles](/assets/images/Minkowski7.png) Fig. 8: la radiación (líneas naranja) viajan a velocidad c (45⁰ con los ejes de S) en los dos sentidos posibles[/caption]
 La radiación que viaja en el sentido negativo de x alcanza al eje ct' en el punto marcado en rojo, ese punto tiene coordenada x'=0, lo que significa que la radiación ha alcanzado a la nave, pero además lo ha hecho un poco antes de que se despliegue el escudo (suceso B), por tanto la nave ha tenido mala suerte con este diagrama. Ejercicio para el lector: ¿cómo se resolvería este problema usando transformaciones de Lorentz?
+{% endraw %}

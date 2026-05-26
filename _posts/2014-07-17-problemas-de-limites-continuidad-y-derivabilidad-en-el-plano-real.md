@@ -15,6 +15,7 @@ tags:
   - "problemas resueltos de cálculo"
 math: true
 ---
+{% raw %}
 
 **1.** Ver si la función f(x,y) es continua en (0,0), donde
 $f(x,y)=\left\{\begin{array}{l}\frac{x^3}{x^2-y^2}\;\;\text{si }x^2-y^2\neq0\\0\;\;\text{si }\;x^2-y^2=0\end{array}\right.$
@@ -232,3 +233,4 @@ $\lim_{r\rightarrow0\;}\left(1+r\cos\left(\theta\right)\right)^\frac1{r\cos\left
 En conclusión, $\lim_{\left(x,y\right)\rightarrow\left(0,0\right)}\left(x\sin\left(x+y\right),\left(1+x\right)^x\right)=\left(0,e\right).$
 
 ---
+{% endraw %}

@@ -15,6 +15,7 @@ tags:
   - "problemas resueltos de cálculo"
 math: true
 ---
+{% raw %}
 
 **1.** Estudiar la continuidad o en su caso, discontinuidad, en x=1, de la función real:
 
@@ -86,3 +87,4 @@ La derivada parcial según x en (0, 0) no existe; vamos por la otra derivada par
 
 $\begin{array}{l}\frac{\partial f}{\partial y}=\underset{h\rightarrow0}{lim}\frac{\frac{\left(x\right)^3}{\left(x\right)^2+\left(y+h\right)^2}-0}h=\underset{h\rightarrow0}{lim}\frac{x^3}{x^2+y^2+h^2+2yh}\xrightarrow{}\frac{x^3}{x^2+y^2}\\\end{array}$
 vemos que según la dirección y sí tenemos derivada en el origen. Vamos a ver si es diferenciable: no puede serlo, pues las funciones diferenciables tienen derivadas parciales en cualquier dirección, esto es, no solo han de existir las derivadas parciales, sino que además se exige que existan las derivadas direccionales en cualquier dirección. Si la función hubiera tenido derivadas parciales, entonces tendríamos que haber comprobado si también tenía derivadas direccionales. Otra posibilidad para ver que es diferenciable, es probar que tiene derivadas parciales que además sean continuas.
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Differential equations"
 date: 2015-07-08 19:03:03 +0000
 math: true
 ---
+{% raw %}
 
 **Ordinary differential equations**
 
@@ -26,3 +27,4 @@ math: true
 	- [Solution Stability: Introduction](http://tallermatematic.eu/wp/?p=1227)
 
 	- [Nonlinear, second-order, and higher-order EDO problems](http://tallermatematic.eu/wp/?p=1124)
+{% endraw %}

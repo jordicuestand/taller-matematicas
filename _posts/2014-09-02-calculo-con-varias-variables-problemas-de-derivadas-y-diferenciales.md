@@ -12,6 +12,7 @@ tags:
   - "diferencial"
 math: true
 ---
+{% raw %}
 
 **1.** Dada la función $f(x,y,z)=3x+y+z^2$, y las funciones $g(u,v)=uv, h(u,v)=sin(u)+3, k(u,v)=exp(u)$, calcular el gradiente de la función $f(g(u,v),h(u,v),k(u,v))$ en el punto $(u,v)=(1,0)$.
 
@@ -131,3 +132,4 @@ $\begin{array}{l}\lim_{r\rightarrow0}\cos^2\left(\theta\right)\cdot\left[3\cos\l
 que no depende del ángulo $\theta$, luego el límite existe y vale cero, y la función derivada parcial respecto a x es continua. Por el criterio de diferenciabilidad, la función es diferenciable.
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

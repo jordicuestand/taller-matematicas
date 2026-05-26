@@ -4,6 +4,7 @@ title: "Cálculo en R -> Funciones continuas"
 date: 2014-09-07 16:39:47 +0000
 math: true
 ---
+{% raw %}
 
 ## Definición de continuidad
 
@@ -185,3 +186,4 @@ En general es complicado establecer si una función es uniformemente continua ap
 
 [caption id="attachment_417" align="alignnone" width="323"][![Disminución de r, para un R dado, a medida que x aumenta](/assets/images/continuitat_uniforme.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/continuitat_uniforme.png) Disminución de r, para un R dado, a medida que x aumenta[/caption]
 Si nos limitamos a un intervalo cerrado cualquiera, entonces bastará con tomar $r$ suficientemente pequeño para que se satisfaga la condición en todo el intervalo de $x$, y tendremos la continuidad uniforme asegurada.
+{% endraw %}

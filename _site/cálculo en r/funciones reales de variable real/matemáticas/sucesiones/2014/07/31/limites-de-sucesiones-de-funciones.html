@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Límites de sucesiones de funciones — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Límites de sucesiones de funciones</h1>
+    <p class="meta">
+      31/07/2014
+      
+        · <a href="/categoria/cálculo-en-r">Cálculo en R</a>, <a href="/categoria/funciones-reales-de-variable-real">Funciones reales de variable real</a>, <a href="/categoria/matemáticas">Matemáticas</a>, <a href="/categoria/sucesiones">Sucesiones</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p>Recientemente he estado ayudando a un alumno con un problema relativo a la convergencia de una sucesión de funciones; a parte de la técnica de resolución, que puede más o menos aprenderse de memoria, comprobé que mi alumno no había entendido ni el significado ni la utilidad de los conceptos, de forma que, por así decirlo, navegaba entre la niebla. De hecho, recordé que yo mismo en mi época de estudiante tampoco lo entendí. Estoy seguro de que se debe a la forma de explicarlo, demasiado formal. Voy a intentar en este post explicar claramente tres conceptos, que son:</p>
+
+ 	- Sucesión de funciones
+
+ 	- Convergencia puntual de una sucesión de funciones
+
+ 	- Convergencia uniforme de una sucesión de funciones
+
+<hr />
+
+<p> </p>
+<h1 id="sucesión-de-funciones">Sucesión de funciones</h1>
+
+<p>Una sucesión de funciones, a semejanza de una <a href="http://mathseng.blogspot.com.es/2014/06/sucesiones-en-r.html">sucesión numérica</a>, es una colección infinita de funciones. Por ejemplo:</p>
+
+<p>$\begin{array}{l}f_1(x)=x,\f_2(x)=x^2,\f_3(x)=x^3,\\dots,\f_n(x)=x^n\end{array}$
+Más formalmente, si tenemos una función $F:\mathbb{N}\rightarrow\Omega$, donde $\mathbb{N}$: números naturales,  $\Omega$: conjunto de funciones reales de variable real, tal que a cada número natural n hace corresponder una función real $f_n(x)$, diremos que tenemos definida una sucesión de funciones reales. En el ejemplo anterior:</p>
+
+<p>$\begin{array}{l}1\rightarrow f_1(x)=x,\2\rightarrow f_2(x)=x^2,\3\rightarrow f_3(x)=x^3,\\dots,\n\rightarrow f_n(x)=x^n\end{array}$</p>
+
+<p>A la función de la sucesión correspondiente al número n, $f_n(x)$ se le llama el <strong>término general de la sucesión</strong>.</p>
+
+<p><strong>Ejemplo 1</strong>: Escribir los tres primeros términos de la sucesión de funciones de término general $f_n(x)=\frac1{1-nx^2}$.</p>
+
+<p>Son:</p>
+
+<p>$\begin{array}{l}n=1\rightarrow f_1(x)=\frac1{1-x^2},\n=2\rightarrow f_2(x)=\frac1{1-2x^2},\n=3\rightarrow f_3(x)=\frac1{1-3x^2}\end{array}$</p>
+
+<hr />
+
+<h1 id="convergencia-puntual-de-una-sucesión-de-funciones">Convergencia puntual de una sucesión de funciones</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>En las sucesiones numéricas ya se ha visto el concepto de convergencia: informalmente hablando, es un número x al que progresivamente se va acercando la sucesión, sin alcanzarlo nunca. Extendiendo el concepto a sucesiones de funciones, el límite también ha de ser una función a la que la sucesión de funciones se va acercando, pero, ¿que entendemos por “acercarse a una función”? Con números reales $x, y$ sabemos que si la diferencia $\left</td>
+      <td>x-y\right</td>
+      <td>$ es pequeña, entonces los números  $x, y$  estan cerca. ¿Cómo lo hacemos con funciones? Bueno, hay varias formas de hacerlo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Definición 1</strong>: Convergencia puntual de una sucesión de funciones.</p>
+
+<p>Sean las funciones $f_n\left(x\right)$ con dominio $D$. Si existe una función $f(x)$ tal que se cumpla, para todo $x\in D$:</p>
+
+<p>$\lim_{n\rightarrow\infty}f_n\left(x\right)=f\left(x\right)$</p>
+
+<p>diremos que $f(x)$ es la función límite de la sucesión $f_n\left(x\right)$ y que esta sucesión converge puntualmente a $f(x)$.</p>
+
+<p><strong>Ejemplo 2</strong>: La sucesión $f_n(x)=\frac1{1+nx^2}$ tiende a la función</p>
+
+<p>$f(x)=\left{\begin{array}{l}0\;\text{si }x\neq0\1\;\text{si }x=0\end{array}\right.$</p>
+
+<p>en efecto:</p>
+
+<p>$\lim_{n\rightarrow\infty}\frac1{1+nx^2}=\left{\begin{array}{l}\frac1{1+\infty\cdot x^2}=\frac1{\infty}=0\;\text{si }x\neq0\\frac1{1+n\cdot0}=\frac11=1\;\text{si }x=0\end{array}\right.$</p>
+
+<p>Gráficamente, representamos los términos 1, 2, 3, 50 y 1000 de la sucesión :</p>
+
+<p>[caption id=”attachment_118” align=”alignnone” width=”616”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional1.jpg"><img src="/assets/images/sucesion-funcional1.jpg" alt="fn(x) = 1/(1+nx²)" /></a> fn(x) = 1/(1+nx²)[/caption]</p>
+
+<p>Vemos que,  a medida que avanzamos en la sucesión, la gráfica de $f_n(x)$ se va estrechando; en el límite vale cero en todo punto excepto en $x=0$, donde vale 1.</p>
+
+<p>En este ejemplo vemos que, aun siendo todas las funciones de la sucesión $f_n(x)$ funciones continuas, la función límite $f(x)$ no lo es. Por tanto, la definición que hemos dado de convergencia de series de funciones no conserva la continuidad. En el siguiente apartado encontramos la segunda definición de convergencia que conservará la continuidad.</p>
+
+<hr />
+
+<p> </p>
+<h1 id="convergencia-uniformede-una-sucesión-de-funciones">Convergencia uniforme de una sucesión de funciones</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Para ver el motivo de por qué la convergencia puntual no conserva la continuidad, y como puede solucionarse, veamos un ejemplo. Sea la sucesión funcional definida por $f_n(x)=\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}$. En la imagen hemos representado los términos $n=1, 2, 3, 100$, así como las rectas $y=0.3$, e $y=-0.3$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[caption id=”attachment_120” align=”alignnone” width=”580”][![fn(x) =</td>
+      <td>x</td>
+      <td>/ (1 + nx²)](/assets/images/sucesion-funcional2.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional2.jpg) fn(x) =</td>
+      <td>x</td>
+      <td>/ (1 + nx²). Los términos a partir del tercero  estan dentro de la franja -0,3 &lt; y &lt; 0,3.[/caption]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La función límite es:</p>
+
+<p>$\lim_{n\rightarrow\infty}f_n(x)=\frac{\left|x\right|}{1+nx^2}=\left{\begin{array}{l}0\;\text{si }x=0\\frac{\left|x\right|}{1+\infty}\rightarrow0\;\text{si }x\neq0\end{array}\right.$
+Luego $f(x)=0$. En la imagen observamos que, a partir de cierto término (el tercero, $f_3(x)$) todas las funciones quedan dentro de la franja delimitada por las rectas $y=0,3$, e $y=-0,3$, o sea que la distancia entre la gráfica de $f(x)$ y de $f_n(x)$ es menor que $d=0,3$.  Dicho de otro modo,  toda la gráfica de cada función $f_n(x)$ se acerca uniformemente a la función límite $f(x)=0$. Cuando sucede esto, queda asegurada la continuidad de la función límite, como en este caso sucede. Tenemos pues una nueva definición de convergencia:</p>
+
+<p><strong>Definición 2:</strong> Convergencia uniforme de una sucesión de funciones.</p>
+
+<p>$f_n(x)$ tiende uniformemente a $f(x)$ si converge puntualmente a $f(x)$ y además, dada una distancia $d$ cualquiera, la separación entre la función límite y todas las funciones de la sucesión a partir de una de ellas es menor que $d$.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Ejemplo 3</strong>:  la sucesión funcional $f_n(x)=\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}$ converge puntualmente a $f(x)=0$. ¿Convergerá uniformemente? Sea un número $d&gt;0$ cualquiera; queremos que</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>=\left</td>
+      <td>\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}-0\right</td>
+      <td>=\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}&lt;d\Leftrightarrow\frac x{1+nx^2}&lt;d$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>siempre que $n&gt;n_0$. Operando:</p>
+
+<p>$\frac x{1+nx^2}&lt;d\Leftrightarrow-ndx^2+x-d&gt;0\Leftrightarrow n&gt;\frac{x-d}{dx^2}.$</p>
+
+<p>Para asegurar que se cumpla la última desigualdad para todo $x$, buscamos el valor máximo del término de la derecha; lo consideramos una función de $x$, derivamos respecto $x$ e igualamos a cero:</p>
+
+<p>$D_x\left(\frac{x-d}{dx^2}\right)=\frac{1\left(dx^2\right)-\left(x-d\right)\cdot2dx}{\left(dx^2\right)^2}=0\Leftrightarrow-dx^2+2d^2x=0\Leftrightarrow x=2d.$</p>
+
+<p>Para ver que es un máximo y no un mínimo basta con observar que la expresión $\frac{x-d}{dx^2}$ tiende al valor cero para $x\rightarrow\infty$, mientras que si sustituimos el valor $x=2d$ obtenemos el valor $\frac{2d-d}{d\cdot4d^2}=\frac d{4d^3}=\frac1{4d^2}&gt;0.$.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Así pues, dado un valor $d&gt;0$ cualquiera (de hecho, se supone que damos valores “pequeños” a $d$) hemos encontrado que, tomando los términos $n&gt;n_0$ con $n_0=\frac1{4d^2}$, todos ellos cumpliran la condición $\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>&lt;d$. Por ejemplo, sea $d=0,3$ (recordar que en la imagen anterior hemos trazado la región $-0,3 &lt; y &lt;0,3$); entonces $n_0=\frac1{4d^2}=\frac1{4\cdot0,3^2}=2,7.\;$. Cogiendo $n\geq3$ todos los términos iguales o posteriores al tercero entrarán dentro de la franja $-0,3 &lt; y &lt;0,3$, tal como se observa en la figura anterior. Por tanto concluimos que esta sucesión de funciones converge uniformemente a $f(x)=0$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="procedimiento-práctico-para-estudiar-la-convergencia-puntual-yla-convergenciauniforme-de-sucesiones-de-funciones">Procedimiento práctico para estudiar la convergencia puntual y la convergencia uniforme de sucesiones de funciones</h1>
+
+<p><strong>1.</strong> Dada una sucesión de funciones $f_n(x)$, primero estudiamos el límite $\lim_{n\rightarrow\infty}f_n\left(x\right)$ para ver si es puntualmente convergente. Hay que tener en cuenta al hacer el límite que la variable $x$ puede tomar cualquier valor en el dominio de la función. Si no es puntualmente convergente hemos terminado, pues ya no puede ser uniformemente convergente.</p>
+
+<p><strong>2.</strong> Si las funciones $f_n(x)$ son continuas pero la función límite es discontinua, también hemos terminado, pues no puede ser uniformemente convergente, dado que uniformemente convergente $\Rightarrow$ se conserva la continuidad en la función límite.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>3.</strong> Si tenemos convergencia puntual a la función $f(x)$ y queremos comprobar la convergencia uniforme, podemos aplicar la definición 2, demostrando que para todo $d&gt;0$ siempre existe un $n_0$ tal que, para todo $n&gt;n_0$ se cumple la desigualdad $\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>&lt;d$. Esto puede ser inmediato, o no. En los casos que no sea fácil, podemos intentar aplicar un criterio equivalente:</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Criterio de convergencia uniforme de una sucesión $f_n(x)$</strong></p>
+
+<p>$f_n(x)$ converge uniformemente al límite puntual $f(x)$ siempre que se cumpla:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\lim_{n\rightarrow\infty}{\text{Sup}}_x\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>\text{=0}$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo 4</strong>: La sucesión $f_n(x)=\frac1{1+nx^2}$ de los ejemplos 1 y 2 no converge uniformemente a su límite puntual $f(x)=0$ para $x\neq0$,  $f(x)=1$ para $x=0$, pues todas las funciones $\frac1{1+nx^2}$ son continuas en todo su dominio, pero la función límite es discontinua.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Ejemplo 5</strong>: apliquemos el criterio de convergencia uniforme a la sucesión del ejemplo 3. Primero calculamos el valor ${\text{Sup}}_x\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>$:</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>${\text{Sup}}_x\left</td>
+      <td>\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}-0\right</td>
+      <td>={\text{Sup}}_x\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}\text{.}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Derivamos la expresión para obtener el valor máximo:</p>
+
+<p>$D_x\left(\frac x{1+nx^2}\right)=\frac{1\left(1+nx^2\right)-x\left(2nx\right)}{\left(1+nx^2\right)^2}=0\Rightarrow1-nx^2=0\Rightarrow x=\frac1{\sqrt n}.$</p>
+
+<p>Hemos ignorado el valor absoluto pues la expresión $h(x)=\frac x{1+nx^2}$ es impar: $h(-x)=-h(x)$, entonces un máximo digamos en un punto $x_0$ implica un mínimo en $-x_0$ y viceversa.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Tenemos que ${\text{Sup}}_x\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}\text{=}\frac1{\sqrt n}$ (observamos que no puede ser un mínimo pues para $x=0$ la expresión vale $0$). Pasamos ahora al límite:</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\lim_{n\rightarrow\infty}{\text{Sup}}_x\frac{\left</td>
+      <td>x\right</td>
+      <td>}{1+nx^2}\text{=}\lim_{n\rightarrow\infty}\frac1{\sqrt n}\text{=0.}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Efectivamente se cumple la condición dada por el criterio, luego la sucesión converge uniformemente.</p>
+
+<p><strong>Ejemplo 6:</strong> Estudiar la convergencia de la sucesión $f_n\left(x\right)=\frac{\sin\left(nx\right)}{\sqrt n}$.</p>
+
+<p>$\lim_{n\rightarrow\infty}f_n\left(x\right)=\lim_{n\rightarrow\infty}\frac{\sin\left(nx\right)}{\sqrt n}=0$, ya que el valor del numerador oscila entre -1 y 1 mientras que el denominador tiende a $\infty$. Luego la función límite es $f(x)=0$.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>${\text{Sup}}_x\left</td>
+      <td>f_n\left(x\right)-f\left(x\right)\right</td>
+      <td>={\text{Sup}}_x\left</td>
+      <td>\frac{\sin\left(nx\right)}{\sqrt n}\right</td>
+      <td>=\frac1{\sqrt n}$, por la misma razón:  el valor del numerador oscila entre -1 y 1. Pasamos al límite: $\lim_{n\rightarrow\infty}\frac1{\sqrt n}=0$, luego la sucesión converge uniformemente. En la imagen siguiente vemos los términos 1, 5 y 100 de la serie (éste último en rojo). La amplitud de las oscilaciones tiende a $0$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>[caption id=”attachment_134” align=”alignnone” width=”529”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional4.jpg"><img src="/assets/images/sucesion-funcional4.jpg" alt="sin(nx) / n^(1/2)" /></a> sin(nx) / n^(1/2)[/caption]
+<strong>Ejemplo 7</strong>: Estudiar la convergencia de la sucesión $f_n\left(x\right)=\frac{x^{2n}}{1+x^{2n}}$.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{l}\lim_{n\rightarrow\infty}\frac{x^{2n}}{1+x^{2n}}=\left{\begin{array}{c}0\;\text{si }x=0\\frac12\;\text{si }x=1\1\;\text{si }\left</td>
+      <td>x\right</td>
+      <td>&gt;1\end{array}\right.\\end{array}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La función límite es discontinua, pero las funciones de la sucesión son todas continuas, por tanto no puede ser uniformemente convergente. En la figura siguiente vemos los términos 1, 2, 3 y 10, éste último en rojo. Todas las funciones de la sucesión pasan por el punto $(x,y)=(1, 0.5)$. En el límite, este punto pasa a ser un punto aislado de la gráfica, resultando una función límite discontínua.</p>
+
+<p>[caption id=”attachment_135” align=”alignnone” width=”623”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/sucesion-funcional5.jpg"><img src="/assets/images/sucesion-funcional5.jpg" alt="(x^2n)/(1+x^2n)" /></a> (x^2n)/(1+x^2n)[/caption]
+<strong>Ejemplo 8</strong>: Estudiar la convergencia de la sucesión $\begin{array}{l}f_n\left(x\right)=x\left(1+\frac1n\right)\\end{array}$.</p>
+
+<p>$\begin{array}{l}\lim_{n\rightarrow\infty}x\left(1+\frac1n\right)=x\\end{array}$, luego la función límite es $f(x)=x$. Todas las funciones de la sucesión, y también la función límite, son continuas, por lo que no podemos decir nada de la convergencia uniforme, debemos comprobarla.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{l}{\text{Sup}}_x\left</td>
+      <td>x\left(1+\frac1n\right)-x\right</td>
+      <td>={\text{Sup}}_\mathrm x\left</td>
+      <td>\frac{\mathrm x}{\mathrm n}\right</td>
+      <td>\\end{array}$. Esta expresión no está acotada, no existe el supremo. No obstante, si nos restringimos a cualquier intervalo $(a, b)$ de la recta real, entonces:</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{l}{\text{Sup}}_\mathrm x\left</td>
+      <td>\frac{\mathrm x}{\mathrm n}\right</td>
+      <td>=\frac{\mathrm b}{\mathrm n}\;\text{si }\mathrm x\in\left(\mathrm a,\mathrm b\right)\\end{array}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pasando al límite:</p>
+
+<p>$\begin{array}{l}\lim_{n\rightarrow\infty}\frac{\mathrm b}{\mathrm n}=0\;\text{si }\mathrm x\in\left(\mathrm a,\mathrm b\right)\\end{array}$.</p>
+
+<p>Por tanto la función es uniformemente convergente en cualquier intervalo $(a, b)$ pero no lo es en todo el dominio $\mathbb{R}$.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+
+<h1 id="bibliografía">Bibliografía</h1>
+
+<p> </p>
+
+<p>Análisis Matemático: un buen libro de teoría de nivel más bien elevado; el capítulo 9 se dedica a las series funcionales</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/convergencia-puntual">Convergencia puntual</a>, <a href="/tag/convergencia-uniforme">Convergencia uniforme</a>, <a href="/tag/sucesión-funcional">sucesión funcional</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

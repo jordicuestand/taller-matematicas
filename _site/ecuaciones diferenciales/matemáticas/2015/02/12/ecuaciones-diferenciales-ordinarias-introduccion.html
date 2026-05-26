@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecuaciones diferenciales ordinarias: introducción — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Ecuaciones diferenciales ordinarias: introducción</h1>
+    <p class="meta">
+      12/02/2015
+      
+        · <a href="/categoria/ecuaciones-diferenciales">Ecuaciones Diferenciales</a>, <a href="/categoria/matemáticas">Matemáticas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h2 id="motivación">Motivación</h2>
+
+<p>Las ecuaciones que se estudian en el Álgebra, tales como $x^{3}+7x^{2}+41=0$,
+expresan relaciones numéricas estáticas, y su solución son números que cumplen la ecuación. Ahora bien, los fenómenos naturales más interesantes implican relaciones dinámicas y se expresan mejor con relaciones entre cantidades variables, esto es, con ecuaciones que no son estáticas, sino que expresan variaciones y relaciones entre magnitudes cambiantes: son las ecuaciones diferenciales.</p>
+
+<p>Recordemos que la derivada de una función $dy/dt=f’(t)$ se puede interpretar como la proporción de cambio de la variable dependiente $y$ respecto a los cambios en la variable dependiente $t$. Es por ello las ecuaciones que describen cambios utilizan derivadas de funciones.</p>
+
+<p><em><strong>Definición 1</strong>: una ecuación que contiene una función desconocida y una o más de una de sus derivadas se llama <strong>ecuación diferencial</strong>. Al resolverla, obtenemos funciones $y = f (x)$ que verifican la ecuación. Si la función sólo tiene una variable independiente, la ecuación se llama <strong>ecuación diferencial ordinaria</strong>. Si la función depende de dos o más variables, las derivadas serán parciales y la ecuación se llama <strong>ecuación en derivadas parciales</strong>. El orden de una ecuación diferencial es el de la derivada más alta que aparece en la ecuación</em>.</p>
+
+<p>En este post sólo introduciremos las ecuaciones diferenciales ordinarias, dando algunas definiciones, y resolviendo las más inmediatas.</p>
+
+<p><strong>Ejemplo 1</strong>: La variación de la temperatura <em>T</em> de un cuerpo con respecto al tiempo es proporcional a la diferencia $(T-A)$ donde <em>A</em> es la temperatura del medio ambiente (<a href="http://es.wikipedia.org/wiki/Enfriamiento_newtoniano">ley de enfriamiento de Newton</a>). La ley física se representa por una ecuación diferencial ordinaria de primer orden (EDO de orden 1):</p>
+
+<p>$\frac{dT}{dt}=k\left(T-A\right)$</p>
+
+<p><strong>Ejemplo 2</strong>: La variación con respecto al tiempo de una población $P(t)$ con índices constantes de nacimiento y mortalidad es proporcional al tamaño de la población, y también es una EDO de orden 1:</p>
+
+<p>$\frac{dP}{dt}=kP$</p>
+
+<p><strong>Ejemplo 3</strong>: La <a href="http://es.wikipedia.org/wiki/Teorema_de_Torricelli">ley de Torricelli</a> establece que la variación respecto al tiempo del volumen <em>V</em> de agua en un depósito que se está vaciando es proporcional a la raíz cuadrada de la profundidad <em>y</em> del agua del depósito:</p>
+
+<p>$\frac{dV}{dt}=-ky^{1/2}$</p>
+
+<p><strong>Ejemplo 4</strong>: La distancia $x(t)$ recorrida en el movimiento acelerado de un cuerpo de masa <em>m</em> sometido a una fuerza variable $F(t)$  viene dada por una EDO de orden 2:</p>
+
+<p>$\frac{d^{2}x}{dt}=\frac{F(t)}{m}$</p>
+
+<p><strong>Definición 2</strong>: <em>una función $y = f (x)$ se llama <strong>solución de una ecuación diferencial</strong> si la ecuación se cumple cuando se sustituyen $y$ y sus derivadas por $f (x)$ y sus derivadas, respectivamente. Una <strong>solución particular</strong> de una ecuación diferencial es cualquier solución que se obtiene asignando valores concretos a las constantes en la solución general. En la práctica, las soluciones particulares se obtienen a partir de condiciones iniciales que proporcionan el valor de la variable dependiente o de alguna de sus derivadas para un valor particular de la variable independiente.</em></p>
+
+<p><strong>Ejemplo 5</strong>:  de la ecuación diferencial $y’‘-y=0$ son soluciones: a)  $y=sin(x)$,  b) $y=4e^{-x}$  c) $y=Ce^{-x}$ para cualquier valor <em>C</em> real. La solución b) es una solución particular obtenida a partir de la solución general c). Aunque es menos obvio, también la solución a) es una solución particular obtenida a partir de la solución general (puede verse usando los desarrollos de Taylor de la función exponencial y de la función seno).</p>
+<h3 id="haz-de-curvas-y-ecuaciones-diferenciales-de-primer-orden">Haz de curvas y ecuaciones diferenciales de primer orden</h3>
+
+<p>Otra forma de introducir las ecuaciones diferenciales es desde el punto de vista geométrico. Consideremos la gráfica de la función $y=Cx^2$ para todos los posibles valores reales de <em>C</em>. En la imagen se representan los valores <em>C=1, 2, 4, 8</em>.</p>
+
+<p>[caption id=”attachment_847” align=”alignnone” width=”497”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes.png"><img src="/assets/images/feix_corbes.png" alt="Haz de curvas y=Cx²" /></a> Haz de curvas y=Cx²[/caption]
+Se denomina <strong>haz de curvas planas</strong> al conjunto de todas las curvas que son gráficas de una función general $y=F(x,C)$. Cuando damos a <em>C</em> todos los valores posibles, las curvas generadas van llenando una región <em>R</em> del plano; en el caso de la imagen anterior esa región es todo el semiplano superior $x\in\left(-\infty,\infty\right),\;y\in\left[0,\infty\right).$ En general la región <em>R</em> dependerá del haz.</p>
+
+<p>Nos preguntamos ahora: ¿para cada punto $(x,y)$ del plano existirá un único valor <em>C</em> tal que nos define de forma unívoca la función $y=F(x,C)$ que pase por ese punto? Podemos plantearlo en estos términos: fijando $x=x_0$ la función <em>F</em> pasa a depender sólo de <em>C</em>: $y=F(x_0,C)=f(C)$; ¿para cada valor de <em>y</em> habrá un único valor de <em>C</em>? Será así siempre que la función <em>f</em> sea estrictamente creciente o decreciente en <em>R</em>, y eso sucederá cuando su derivada no se anule: $\frac{\operatorname df}{\operatorname dC}\neq0$. En este caso es como si tuviéramos otra función $C=\psi(x,y)$ de dos variables que determina <em>C</em> para cada punto del plano.</p>
+
+<p>En el ejemplo de la imagen anterior, fijando $x=x_0$ cualquiera obtenemos $y=f(C)=Cx_0^2, f’(C)=x_0^2$, este valor es siempre distinto de cero excepto en el origen de coordenadas, por tanto para el haz $y=Cx^2$ tenemos unicidad en el sentido de que dado un $\left(x,y\right)\neq\left(0,0\right)$ existe un único valor $C=\psi(x,y)=y/x^2$ que determina la curva que pasa por ese punto; por el origen $(0,0)$ en cambio pasan todas las curvas del haz.</p>
+
+<p>Si derivamos la ecuación del haz obtenemos $y’=2Cx$, entonces, sustituyendo el valor anterior $C=\psi(x,y)$ eliminamos la <em>C</em> para obtener: $y’=2Cx=2\left(\frac y{x^2}\right)x=\frac{2y}x$, que es la **ecuación diferencial del haz de curvas, **que es una ecuación de primer orden.</p>
+
+<p><strong>Ejemplo 6</strong>: Hallar la ecuación diferencial del haz de curvas plano $y=Csin(x).$</p>
+
+<p>La región R es la unión de los cuadrantes +X+Y  y -X-Y, en la figura se muestran algunas curvas.</p>
+
+<p>[caption id=”attachment_848” align=”alignnone” width=”503”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes1.png"><img src="/assets/images/feix_corbes1.png" alt="Haz de curvas y=C·Sin(x)" /></a> Haz de curvas y=C·Sin(x)[/caption]</p>
+
+<p>Fijando $x=x_0$ cualquiera obtenemos $y=C\sin\left(x_0\right)=f\left(C\right);f’\left(C\right)=\sin\left(x_0\right)$. Este valor será cero siempre que $x_0=k\mathrm\pi,\;\mathrm k=0,1,\dots.$ En este conjunto de puntos todas las curvas del haz coinciden, y en el resto de puntos tenemos unicidad: una única curva para cada punto, dada por: $C=\frac y{\sin\left(x\right)}=\psi(x,y)$.</p>
+
+<p>Derivando la ecuación del haz: $y’=C\cdot\cos\left(x\right).$ Sustituimos el valor de <em>C</em>:</p>
+
+<p>$\left.\begin{array}{r}y’=C\cdot\cos\left(x\right)\C=\frac y{\sin\left(x\right)}\end{array}\right}\Rightarrow y’=\frac{y\cos\left(x\right)}{\sin\left(x\right)}=\frac y{\tan\left(x\right)}$
+<em><strong>Definición 2</strong>: El haz de curvas $y=f(C,x)$ es la <strong>solución general de la ecuación diferencial ordinaria</strong>; si fijamos un valor de $C=C_0$, obtenemos una única curva del haz, que denominamos <strong>solución particular de la ecuación diferencial ordinaria</strong>.</em></p>
+
+<p><strong>Ejemplo 7</strong>: el haz de curvas $y=Csin(x)$ es la solución general de la ecuación diferencial $y’=\frac y{\tan\left(x\right)}$. Por el punto $\left(\frac{\mathrm\pi}2,3\right)$ pasa una única curva, $y=3Sin(x)$, que es una solución particular de la ecuación diferencial.</p>
+
+<h3 id="existencia-y-unicidad-de-la-solución-de-una-ecuación-diferencial-de-primer-orden">Existencia y unicidad de la solución de una ecuación diferencial de primer orden</h3>
+
+<p>Hemos visto que para obtener la ecuación diferencial de un haz de curvas hay que derivar y eliminar la constante. Planteamos ahora el problema inverso: ¿dada una ecuación diferencial cualquiera, existe “su” haz de curvas  tal como lo hemos definido? El siguiente teorema nos responde para el caso de ecuaciones de primer orden.</p>
+
+<p><strong>Teorema 1</strong>: <strong>existencia y unicidad</strong>. Si tenemos una ecuación diferencial dada en la forma  $y’=f(x,y)$  tal que la función f es derivable de todos los órdenes (existen todas las derivadas de cualquier orden) en un entorno de $(x_0,y_0)$, entonces existe una única curva $y(x)$ tal que pasa por el punto $(x_0,y_0)$ y cumple la ecuación $y’=f(x,y).$</p>
+
+<h2 id="ecuaciones-diferenciales-ordinarias-de-primer-orden-inmediatas">Ecuaciones diferenciales ordinarias de primer orden inmediatas</h2>
+
+<p>Vemos en este apartado sólo las EDO de 1r orden más simples de resolver, en otros posts veremos los casos más generales.</p>
+<h3 id="ecuaciones-del-tipo-dydxfleftxright">Ecuaciones del tipo $dy/dx=f\left(x\right)$</h3>
+
+<p>Son integrables directamente, escribiéndolas como $dy=f(x)\Rightarrow y=\int f(x)dx+C.$</p>
+
+<p><strong>Ejemplo 8</strong>: Resolver la ecuación diferencial $y’+x^{2}-1=e^{x}.$</p>
+
+<p>La ecuación es equivalente a $dy/dx=e^{x}-x^{2}+1\Rightarrow y=\int\left(e^{x}-x^{2}+1\right)dx+C=e^{x}-\frac{1}{3}x^{3}+x+C.$</p>
+<h3 id="ecuaciones-del-tipodydxky">Ecuaciones del tipo $dy/dx=ky$</h3>
+
+<p>Si $y = f (x)$ es una función, las ecuaciones del tipo $dy / dx = ky$ tienen por solución al conjunto de funciones $y (x) = Ce ^ {kx}$ donde C es un número real cualquiera. En general una ecuación diferencial tiene infinitas soluciones.</p>
+
+<p><strong>Ejemplo 9</strong>: la solución de la ecuación $\frac {dP} {dt} = kp$  que establece la evolución de una población $P(t)$ con índices constantes de nacimiento y mortalidad es cualquier función de la forma $y (x) = Ce^{kx}$.</p>
+
+<p><strong>Ejemplo 10</strong>: Supongamos que $P(t)$ es la población de una colonia de bacterias en el tiempo <em>t,</em> que la población en $t = 0$ es de 1000, y que la población se duplica en una hora. Entonces podemos decir que</p>
+
+<p>$1000 = P(0)=C$
+$2000 = P(1)=Ce^{k}$</p>
+
+<p>por tanto $C=1000$ y $k=\ln2$, luego $P(t)=1000e^{x\text{·}\ln2}$.
+La condición $P(0) = 1000$ se llama <strong>condición inicial</strong> pues normalmente el valor $t = 0$ se toma como el estado inicial. Cuando damos una condición inicial, la solución de la ecuación diferencial ya no tendrá en general infinitas soluciones, sino que tendrá sólo una,  o quizá ninguna si las condiciones son incompatibles. Equivalentemente, al dar una condición inicial pasamos, si existe, de la solución general a la solución particular que cumple esa condición. Así, la condición inicial $P (0) = - 1000$ no tiene ninguna solución del tipo $P(t) = Ce^{kt}$.</p>
+
+<p><strong>Ejemplo 11</strong>: Para resolver la ecuación $dy / dx = \frac{x} {\left (x^{2} +9 \right)^{1/2}}$ con la condición inicial $y(4)=2$ hacemos $y(x)=\int\frac{x}{\left(x^{2}+9\right)^{1/2}}dx=\left(x^{2}+9\right)^{1/2}+C$, como  $y(4)=\left(16+9\right)^{1/2}+C=5+C$ ha de ser $C=-3$.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="bibliografía">Bibliografía</h1>
+
+<p>ECUACIONES DIFERENCIALES - Resumen teórico y colección de ejercicios resueltos, y propuestos.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/ecuación-diferencial">ecuación diferencial</a>, <a href="/tag/ecuación-diferencial-ordinaria">ecuación diferencial ordinaria</a>, <a href="/tag/ecuación-diferencial-del-haz-de-curvas">ecuación diferencial del haz de curvas</a>, <a href="/tag/existencia-y-unicidad">existencia y unicidad</a>, <a href="/tag/haz-de-curvas-planas">haz de curvas planas</a>, <a href="/tag/solución-general-de-la-ecuación-diferencial-ordinaria">solución general de la ecuación diferencial ordinaria</a>, <a href="/tag/solución-particular-de-la-ecuación-diferencial-ordinaria">solución particular de la ecuación diferencial ordinaria</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -4,6 +4,7 @@ title: "Sobre enseñar, aprender y educar"
 date: 2014-06-17 10:37:47 +0000
 math: true
 ---
+{% raw %}
 
 He sido "cliente" (o quizá debería decir "paciente") del *sistema educativo* durante media vida, y profesor durante la otra mitad, con períodos en los cuales era ambas cosas a la vez. En pocas profesiones se llega a tener tanta experiencia. He visto un poco de todo: algunos profesores pésimos, muchos de mediocres, algunos buenos y competentes, incluso unos pocos muy buenos. En cuanto a sistemas de enseñanza, lo mismo, desde "la letra con sangre entra" que tuve que soportar en primaria (para el que no conozca el término: o te aprendes la lección o vas a recibir una paliza que no olvidarás nunca), pasando por muchísimos profesores que van dictando sin preocuparse por si el alumno entiende algo, hasta enfoques constructivistas, orientados a competencias, o a resolución de problemas y de proyectos.
 
@@ -31,3 +32,4 @@ El acto de conocer, de aprender, de saber, proporciona una satisfacción, una se
 
 «Cuéntamelo y lo olvidaré, enséñamelo y lo recordaré, involúcrame con ello y lo aprenderé." Benjamin Franklin
 Involucrar al alumno con el proceso de aprendizaje es lo que intentan las modernas técnicas de aprendizaje activo y orientado a competencias ... aunque Franklin ya lo tenía claro hace tres siglos, vamos con retraso.
+{% endraw %}

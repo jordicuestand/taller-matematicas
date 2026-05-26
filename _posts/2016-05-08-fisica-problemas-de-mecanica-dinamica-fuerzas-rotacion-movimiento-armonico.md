@@ -18,6 +18,7 @@ tags:
   - "Velocidad angular"
 math: true
 ---
+{% raw %}
 
 Colección de problemas resueltos basados en el libro *J. M. Vidal; V. Gandia (1976): Problemas De Fisica. 305 problemas resueltos y 552 con las soluciones*. Los que figuran en este blog son algunos de los no resueltos del libro, que según creo, está descatalogado.
 
@@ -175,3 +176,4 @@ Si las masas fueran distintas, no cambiarían los resultados, pues vemos que las
 NOTA: otra forma de atacar el problema es considerar la rotación alrededor del punto P y no de O; en este caso, como el punto P tiene velocidad cero, su energía cinética de traslación es cero, y sólo consideramos la energía de rotación en torno al punto P; hay que tener en cuenta que el momento de inercia I' respecto al punto P no es el mismo que el I respecto al centro de gravedad O, sino que viene dado por el teorema de Steiner, I' = I + md² siendo r la distancia entre los puntos O y P. Haciéndolo así, igualaríamos la energía cinética de rotación del sólido al llegar al final del plano inclinado con la energía potencial en el punto inicial, y se llega a los mismos resultados.
 
 ![separador2](/assets/images/separador2.png)
+{% endraw %}

@@ -11,6 +11,7 @@ tags:
   - "rozamiento"
 math: true
 ---
+{% raw %}
 
 Colección de problemas resueltos de Estática a nivel medio, tratando los conceptos de equilibrio de fuerzas y momentos de las fuerzas.
 
@@ -126,3 +127,4 @@ Fig. 5: relación entre el peso P y la distancia x subiendo las escaleras
 Para llegar arriba de la escalera el operario debería pesar sólo unos 2Kg, a partir de ese peso la distancia x decrece rápidamente pero se estabiliza a partir de los 20Kg de peso, quedando prácticamente constante, cercano a x = 3,2m, que son unos (3,2/5,5)·20 = 12 peldaños. En efecto, haciendo el límite en la expresión de x: $\lim_{P\rightarrow\infty}\frac{5.5}{3.2}\left(1.8+\frac{4g}P\right)=\frac{5.5}{3.2}1.8=3,09375$, vemos la distancia x prácticamente no varía, entre 11 y 12 peldaños para un peso P > 40Kg.
 
 ![separador2](/assets/images/separador2.png)
+{% endraw %}

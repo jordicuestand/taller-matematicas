@@ -7,6 +7,7 @@ categories:
   - "Termodinámica"
 math: true
 ---
+{% raw %}
 
 Se observa que el calor Q fluye de forma natural desde las fuentes térmicas de más temperatura a las de menos, pero al revés no sucede, excepto si lo forzamos gastando un trabajo W. El 1r principio de la termodinámica establece un balance entre el calor entregado a un sistema, el trabajo realizado por el sistema y su incremento de energía interna, Q = W + ΔE, pero no dice nada del sentido de la transferencia de calor, nada prohíbe que fluya de menos a más temperatura. Se necesita un criterio adicional al 1r principio que regule el sentido de las transferencias de calor, y ese será el 2º principio.
 
@@ -212,3 +213,4 @@ entonces el rendimiento del ciclo irreversible será R = W/Q:
 $R=\left(\frac{T-T'}T\right)-\frac{T'\triangle S''}Q=r-\frac{T'\triangle S''}Q$
 
 donde r es el rendimiento de un ciclo de Carnot (reversible por tanto), vemos que el rendimiento irreversible R es siempre menor que el reversible r: los rendimientos de las máquinas reales son inferiores a los de las máquinas ideales reversibles.
+{% endraw %}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física -> Problemas de Mecánica -> Dinámica: campo gravitatorio — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Física -> Problemas de Mecánica -> Dinámica: campo gravitatorio</h1>
+    <p class="meta">
+      09/05/2016
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>, <a href="/categoria/mecánica">Mecánica</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p><strong>1</strong> - Un objeto se aleja de la Tierra a una velocidad radial de 5 m/s; observamos que 20 minutos después su velocidad ha pasado a ser de 4.5 m/s. ¿Cuál es la intensidad media del campo gravitatorio terrestre en ese intervalo?</p>
+
+<p>Solución:</p>
+
+<p>Llamando g(r) a la intensidad del campo gravitatorio a una distancia r de la Tierra, la fuerza gravitatoria sobre una masa m será F=mg(r); sabemos que en t=0 la velocidad era de 5 m/s, y en t=20·60=1200s era de 4.5 m/s, luego la aceleración media ha sido</p>
+
+<p>$a=\frac{\triangle v}{\triangle t}=\frac{4.5-5}{1200}=-\frac1{2400}\frac m{s^2}$</p>
+
+<p>Aplicando la 2ª ley de Newton F=ma, e igualando con la fuerza gravitatoria, obtenemos</p>
+
+<p>$F=ma=\frac m{2400}=mg\Rightarrowboxed{g=\frac1{2400}\frac m{s^2}}$</p>
+
+<p><img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+<p><strong>2</strong>. Dos objetos de masas m y M se atraen con una fuerza gravitatoria de 80N cuando están a una cierta distancia d; ¿con que fuerza se atraerán dos objetos de masa 10m y M situados a una distancia de 4d?</p>
+
+<p>Solución:</p>
+
+<p>En el primer caso la fuerza gravitatoria será $F=G\frac{mM}{d^2}=80N$ y en el segundo será $F’=G\frac{10mM}{\left(4\dright)^2}=G\frac{10mM}{16d^2}=\frac{10}{16}\left(G\frac{mM}{d^2}\right)=\frac58F=\frac5880=\boxed{50N}$</p>
+
+<p><img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+<p><strong>3.</strong> Calcular a que altura la intensidad del campo gravitatorio terrestre se reduce a la mitad del que tiene en la superficie,</p>
+
+<p>Solución:</p>
+
+<p>La intensidad del campo gravitatorio es $g=GM_T/R^2$; en la superficie tenemos $R=R_T$, el radio de la Tierra, y a una altura h tenemos $R=R_T+h$. La proporción entre intensidades es</p>
+
+<p>$\frac g{g’}=\frac{GM_T/R_T^2}{GM_T/\left(R_T+hright)^2}=\frac{1/R_T^2}{1/\left(R_T+h\right)^2}=\frac{\left(R_T+h\right)^2}{R_T^2}=\left(\frac{R_T+h}{R_T}\right)^2$</p>
+
+<p>Como esa proporción queremos que valga $g/g’=g/(0.5g)=1/0.5=2$, sustituimos y despejamos h:</p>
+
+<p>$h=2639 Km$</p>
+
+<p>Este resultado es fácilmente generalizable a cualquier proporción p&gt;1: $h=\left(sqrt {p-1}\right)R_T$</p>
+
+<p><img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: 
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -12,6 +12,7 @@ tags:
   - "recorrido libre medio"
 math: true
 ---
+{% raw %}
 
 La teoría cinética de los gases, originaria del siglo XIX, es un modelo de la realidad que utiliza la mecánica de Newton, algunos conceptos de la Estadística, y la teoría molecular de la materia, para explicar el porqué de las propiedades macroscópicas observadas de los gases, como la presión, la temperatura o la conducción del calor.
 
@@ -136,3 +137,4 @@ El principio de equipartición enuncia que *cada contribución a la energía tot
 $E=\frac52kT\;\;\;\lbrack11\rbrack$
 
 En general, si el gas admite L grados de libertad, la relación entre su energía interna y su temperatura será $E=\frac L2kT$, en particular, ese gas aumentará menos su energía cinética, a una temperatura T dada, que un gas monoatómico; como hemos visto que la energía cinética del gas es proporcional a la temperatura, deducimos que dada una transferencia de calor Q, *los gases poliatómicos aumentaran menos de temperatura que los monotaómicos*. Otra forma de decir lo mismo es que *el coeficiente calorífico de un gas poliatómico es mayor que el de un gas monoatómico*; de hecho puede demostrarse que $c_V=\frac L2R$.
+{% endraw %}

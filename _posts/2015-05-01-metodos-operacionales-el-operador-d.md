@@ -12,6 +12,7 @@ tags:
   - "operador diferencial"
 math: true
 ---
+{% raw %}
 
 **Introducción**
 Los métodos de resolución de EDO vistos en los post anteriores han sido parecidos "recetas" matemáticas, en el sentido de que no hemos visto ninguna justificación de por que funcionan. Así, nos hemos encontrado con rectas del tipo "*si la ecuación es lineal homogénea de coeficientes constantes, entonces tenemos que encontrar las raíces de su ecuación característica asociada, y ...*".  En este post vemos una introducción a los métodos basados en el operador derivación D que nos permiten justificar algunos de los métodos anteriores, y nos proporciona uno de de nuevo para encontrar soluciones particulares.  También señalaremos que este método es más "algebraico" que los anteriores, de hecho, utiliza conceptos del Álgebra Lineal, que nosotros, en nuestra introducción práctica, no necesitaremos.
@@ -208,3 +209,4 @@ $\begin{array}{l}e^t\boldsymbol R\boldsymbol e\left\{\mathrm e^{it}\frac1{\mathr
 **2.** Resolver $y''-2y'=x^2-5$
 
 **3.** Resolver $y''-2y'+2y=e^x\cdot\cos(x)$ usando exponenciales complejas para representar la función coseno.
+{% endraw %}

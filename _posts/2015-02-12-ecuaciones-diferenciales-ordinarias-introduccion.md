@@ -15,6 +15,7 @@ tags:
   - "solución particular de la ecuación diferencial ordinaria"
 math: true
 ---
+{% raw %}
 
 ## Motivación
 
@@ -110,3 +111,4 @@ La condición $P(0) = 1000$ se llama **condición inicial** pues normalmente el
 # Bibliografía
 
 ECUACIONES DIFERENCIALES - Resumen teórico y colección de ejercicios resueltos, y propuestos.
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Problemas resueltos de Mecánica->Vectores"
 date: 2014-08-24 09:52:41 +0000
 math: true
 ---
+{% raw %}
 
 **1.** Escribir la ecuación vectorial de un plano que tiene por vector normal el vector unitario $n$ y que está a una distancia $d$ del origen de coordenadas. ¿Cuál es la distancia de un punto $Q$ cualquiera a ese plano?
 
@@ -122,3 +123,4 @@ La hipotenusa del triángulo es mayor que cualquiera de los catetos, por tanto $
 El producto vectorial $c=a\times b$ es un vector perpendicular al plano formado por $a, b$. Luego dividiendo $c$ por su módulo, obtendremos el vector unitario pedido: $u=\frac{a\times b}{\left\|a\times b\right\|}.$
 
 ---
+{% endraw %}

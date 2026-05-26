@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Límites de funciones reales de variable real — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Límites de funciones reales de variable real</h1>
+    <p class="meta">
+      13/07/2014
+      
+        · <a href="/categoria/cálculo-en-r">Cálculo en R</a>, <a href="/categoria/funciones-reales-de-variable-real">Funciones reales de variable real</a>, <a href="/categoria/matemáticas">Matemáticas</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h1 id="introducción">Introducción</h1>
+
+<p>[caption id=”attachment_48” align=”alignleft” width=”523”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_1.png"><img src="/assets/images/limit_funció_1.png" alt="limit_funció_1" /></a> El límite de f(x) en x=a es L si y=f(x) se acerca al valor L a medida que x se acerca al valor a[/caption]</p>
+
+<p>Intuitivamente, decimos que el límite de la función $f(x)$ en el punto $x=a$ es $L$, y escribimos $\lim_{x\rightarrow a}f(x)=L$, si se cumple que, cuanto más nos acercamos al punto $x=a$, más se acerca el valor correspondiente de la función a $L$.</p>
+
+<p>Más formalmente (o sea, con más exactitud), definimos:</p>
+
+<p><strong>Definición 1</strong>: <strong>límite de una función $f(x)$  en un punto $x=a$</strong>
+Sea la función $f(x)$ con dominio A. Decimos que $\lim_{x\rightarrow a}f(x)=L$ si y sólo si para cada entorno del punto $L$ con radio $R$, $B(L, R)$, existe otro entorno del punto $a$  con radio $r$, $B(a, r)$, tal que los valores $f(x)$ de la función pertenecen al entorno $B(L, R)$ para todo $x\in B^\ast(a,r)\bigcap A$. La notación $B^\ast(a,r)$ indica un <em>entorno reducido</em> de $a$, que es igual al entorno  al cual se le ha “extraído” el propio punto $a$: $B^\ast(a,r)=B(a,r)-\left{a\right}$.</p>
+
+<p>En particular, tanto el punto $a$ como el límite $L$ pueden tomar valores infinitos $\infty$.</p>
+
+<p>Nota: El uso del entorno reducido $B^\ast(a,r)$  es equivalente a decir que el punto $a$ pertenenece al conjunto de puntos de acumulación del dominio $A$ de la función: $a\in Acum\left(A\right)$.  Dicho con menos tecnicismo: en cualquier entorno del punto $a$ han de haber puntos del dominio de la función, excluido el propio $a$.</p>
+
+<p>Las definiciones matemáticas, exactas, sin ambigüedades,  suelen sin embargo ser “oscuras” para los no “iniciados”, por ello vamos a ver algunos ejemplos.</p>
+
+<p><strong>Ejemplo 1. Limite finito en un punto. </strong></p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_21.png"><img src="/assets/images/limit_funció_21.png" alt="limit_funció_2" /></a></p>
+
+<p> 
+La función $f(x)=x^2$ tiene dominio $A=\mathbb{R}$. El límite de $f(x)$ en $x=\frac12$ es $L=\frac14$. Entonces, dado un $R&gt;0$, por ejemplo $R=0.001$ (se suelen tomar valores “pequeños” de R, para comprobar que podemos acercarnos al límite $L$ todo lo que queramos), existirá un $r&gt;0$, por ejemplo tomemos $r=0.0001$, tal que para cualquier punto $x$ dentro del entorno $B(\frac12, 0.0001)$, la imágen $y=f(x)$ estará dentro del entorno  $B(\frac14, 0.001)$. En efecto,</p>
+
+<p>$x\in B(\frac12,0.0001)\Leftrightarrow\frac12-0.0001\leq x\leq\frac12+0.0001\Leftrightarrow0.4999\leq x\leq0.5001$</p>
+
+<p>Elevando al cuadrado:</p>
+
+<p>$0.24990001\leq x^2\leq0.25001\Leftrightarrow0.249\;\leq x^2\leq0.251\Leftrightarrow\frac12-0.001\leq f(x)\leq\frac12+0.001$,</p>
+
+<p>por tanto se cumple la condición. Lo hemos probado para un valor concreto de $R$, y hemos encontrado el valor correspondiente $r$ por tanteo. Para hacerlo bien, habría que demostrar que podemos encontrar un $r$ para cualquier $R$ dado. En los ejercicios resueltos lo veremos.</p>
+
+<p><strong>Ejemplo 2. Límite infinito en un punto. Límite en el infinito.</strong></p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_3.png"><img src="/assets/images/limit_funció_3.png" alt="limit_funció_3" /></a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>El dominio de la función $Ln(x)$ es $\mathbb{R}^+-\left{0\right}$, o, equivalentemente, $\left{x\left</td>
+      <td>0&lt;x&lt;+\infty\right.\right}$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En el caso $\lim_{x\rightarrow0}Ln(x)=-\infty$ tenemos que el límite $L$ en un punto tiene un valor infinito. ¿Cómo afecta entonces la definición que hemos dado usando entornos? Siendo $L=-\infty$ el entorno $B(L, R)$  se convierte en $B(-\infty, R)$ que equivale al valor $-\infty$, ya que para cualquier $R$ los entornos de $-\infty$ estan en el $-\infty$. Por tanto la definición de límite es ahora: dado cualquier valor $-\infty&lt;L&lt;0$, existirá un $r&gt;0$ tal que, si $x\in B^\ast(0,r)\bigcap A$, entonces $f(x)&gt;L$. Observemos que $x\in B^\ast(0,r)\bigcap A\Leftrightarrow0&lt;x&lt;r$.</p>
+
+<p>El otro caso interesante es $\lim_{x\rightarrow\infty}Ln(x)=+\infty$, no es un límite en un punto $x=a$ sino en el infinito. La definición con entornos también ha de ajustarse en este caso. Intuitivamente, $\lim_{x\rightarrow\infty}Ln(x)=+\infty$ indica que cuando  los valores de $x$ se hacen arbitrariamente grandes, los valores de la función  también lo hacen.</p>
+
+<p><strong>Ejemplo 3. Límite finito en el infinito.</strong></p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_4.png"><img src="/assets/images/limit_funció_4.png" alt="limit_funció_4" /></a></p>
+
+<p>$\lim_{x\rightarrow\infty}\frac1x=0$, el límite en el infinito és un valor finito, en este caso cero.</p>
+
+<p><strong>Proposición 1, unicidad del límite:</strong></p>
+
+<p>Si existe el límite $L=\lim_{x\rightarrow a}f(x)$ entonces $L$ es el único limite de la función $f(x)$ en el punto $x=a$.</p>
+
+<h1 id="límites-laterales">Límites laterales</h1>
+
+<p>Consideremos la función $y=f(x)=tg(x)=\frac{\sin(x)}{\cos(x)}$, y fijémonos en una parte de su gráfica, entre los puntos $x=0$ y $x=\mathrm\pi$</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_5.png"><img src="/assets/images/limit_funció_5.png" alt="limit_funció_5" /></a></p>
+
+<p>¿Que vale el límite $\lim_{\mathrm x\rightarrow\mathrm\pi/2}\mathrm f(\mathrm x)$? Cerca del punto $x=\mathrm\pi/2 \approx 1.57$ el valor de $f(x)$ se hace infinito, pero con distinto signo dependiendo si nos acercamos por la izquierda, $+\infty$ en este caso, o por la derecha, $-\infty$. De hecho, el punto $x=\mathrm\pi/2$ no es del dominio de la función, pero ya sabemos que esto no es un problema para el cálculo de límites, basta con que sea un punto de acumulación del dominio.</p>
+
+<p>Entonces en este caso no está bien definido el $\lim_{x\rightarrow\frac{\mathrm\pi}2}\tan\left(x\right)$, en cambio sí lo tenemos definido si lo calculamos o bien por la derecha o bien por la izquierda. Por tanto, tiene sentido definir los límites laterales:</p>
+
+<p><strong>Definición 2</strong>: <strong>límite lateral por la izquierda de una función $f(x)$  en un punto $x=a$</strong></p>
+
+<p>Si el punto $a$ pertenece al conjunto de puntos de acumulación del dominio $A$ del la función $f(x)$, definimos el conjunto $A^-=\left(-\infty,a\right)\cap A$, y el <strong>límite lateral por la izquierda en $a$ es</strong></p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow a^{-\;\;}}f(x)=\lim_\overset{x\rightarrow a}{x\in A^-}f(x)\\end{array}$</p>
+
+<p><strong>Definición 3</strong>: <strong>límite lateral por la derecha de una función $f(x)$  en un punto $x=a$</strong>
+Si el punto $a$ pertenece al conjunto de puntos de acumulación del dominio $A$ de la función $f(x)$, definimos el conjunto $A^+=\left(a,+\infty\right)\cap A$ y el <strong>límite lateral por la derecha en $a$ es</strong></p>
+
+<p>$\begin{array}{l}\lim_{x\rightarrow a^{+\;\;}}f(x)=\lim_\overset{x\rightarrow a}{x\in A^+}f(x)\end{array}$</p>
+
+<p> <strong>Proposición 2, límites laterales y convergéncia:</strong>
+El $\lim_{x\rightarrow a}f(x)$ existe si y solo si existen los  límites laterales y además coinciden entre sí:  $\lim_{x\rightarrow a^+}f(x)=\lim_{x\rightarrow a^-}f(x)=\lim_{x\rightarrow a^{}}f(x)$</p>
+
+<p><strong>Ejemplo 4: no coincidencia de límites laterales en la función $tg(x)$</strong></p>
+
+<p>$\lim_{x\rightarrow\frac{\mathrm\pi}2^+}tg(x)=-\infty,\lim_{x\rightarrow\frac{\mathrm\pi}2^-}tg(x)=+\infty$. Por tanto el $\lim_{x\rightarrow\frac{\mathrm\pi}2^{}}tg(x)$ no existe, la función $tg(x)$ no es convergente en el punto $x=\frac{\mathrm\pi}2$</p>
+
+<p><strong>Ejemplo 5: no coincidencia de límites laterales en la función parte entera.</strong></p>
+
+<p>La función parte entera se define así:
+$f(x)=\left{\begin{array}{l}x\;\text{si }x\in\mathbb{Z}\max\;\left{k\in\mathbb{Z}\left|k\leq x\right.\right}\end{array}\right.$</p>
+
+<p>Por ejemplo, $f(1) =1$ , $f(1.5) = 1$, pues 1 es el mayor entero menor o igual a 1.5 .</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/part_entera.png"><img src="/assets/images/part_entera.png" alt="part_entera" /></a></p>
+
+<p>Si estudiamos los límites laterales en, por ejemplo, $x=1$:
+$\lim_{x\rightarrow1^-}f(x)=0,\;\lim_{x\rightarrow1+}f(x)=1$</p>
+
+<p>Por tanto no existe el $\lim_{x\rightarrow1}f(x)=0$. En cambio, en el punto $x=1.5$ si coinciden los límites laterales: $\lim_{x\rightarrow1.5^-}f(x)=1,\;\lim_{x\rightarrow1.5+}f(x)=1$, luego $\lim_{x\rightarrow1.5}f(x)=1$.</p>
+
+<p><strong>Ejemplo 6: una función no convergente en ningún punto.</strong></p>
+
+<p>Sea la <a href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_Dirichlet">función de Dirichlet</a>:
+ $f(x)=\left{\begin{array}{l}x\;\text{si }x\in\mathbb{Q}\0\;\text{si }x\not\in\mathbb{Q}\end{array}\right.$</p>
+
+<p>Entonces para cualquier punto $a\in\mathbb{R}$ no existen los límites laterales en ese punto, y por tanto la función no tiene límite en ningún punto.  Esto es debido a las propiedades de los números reales: entre dos números racionales cualquiera, hay infinitos números reales e infinitos números racionales, y al acercarnos lateralmente la función va tomando valores distintos, sin converger a ningún valor particular.</p>
+
+<p> </p>
+<h1 id="propiedades-de-los-límites-de-funciones">Propiedades de los límites de funciones</h1>
+
+<p><strong>Propiedades de orden</strong></p>
+
+<p>Si $f:A\rightarrow\mathbb{R}$  tiene límite $L$ en $x=a$, y $g:A\rightarrow\mathbb{R}$  tiene límite $M$ en $x=a$, y además se cumple que $f(x)\leqg(x)$, entonces $L\leqM$.</p>
+
+<p>Si $f,g,h:A\rightarrow\mathbb{R}$ , $f(x)\leqg(x)\leqh(x)$ y además $\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}h(x)=L$, entonces $\lim_{x\rightarrow a}g(x)=L$.</p>
+
+<p><strong>Propiedades aritmèticas</strong></p>
+
+<p>$\lim_{x\rightarrow a}\left(f\pm g\right)(x)=\lim_{x\rightarrow a}f(x)\pm\lim_{x\rightarrow a}g(x)$</p>
+
+<p>$\lim_{x\rightarrow a}\left(f\cdot g\right)(x)=\lim_{x\rightarrow a}f(x)\cdot\lim_{x\rightarrow a}g(x)$</p>
+
+<p>$\lim_{x\rightarrow a}\left(f/g\right)(x)=\lim_{x\rightarrow a}f(x)/\lim_{x\rightarrow a}g(x)$ siempre que $\lim_{x\rightarrow a}g(x)\neq0$.</p>
+
+<p><strong>Límite de un polinomio</strong></p>
+
+<p>Si $f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots+a_1x+a_0$, entonces $\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+
+<p><strong>Ejemplo 7</strong></p>
+
+<p>$\lim_{x\rightarrow\frac{\mathrm\pi}2}x^2\sin\left(x\right)=\lim_{x\rightarrow\frac{\mathrm\pi}2}x^2\cdot\lim_{x\rightarrow\frac{\mathrm\pi}2}\sin\left(x\right)=\frac{\mathrm\pi^2}4\cdot1=\frac{\mathrm\pi^2}4$  por la propiedad de la suma de límites.</p>
+<h1 id="límites-de-funciones-racionales">Límites** de funciones racionales**</h1>
+
+<p>Una función racional $f(x)$ es la que tiene como expresión un cociente de polinomios $\frac{g(x)}{h(x)}$. En general hemos visto que $\lim_{x\rightarrow a}\frac{g(x)}{h(x)}=\frac{\lim_{x\rightarrow a}g(x)}{\underset{x\rightarrow a}{\lim\;h(x)}}$, excepto si $\underset{x\rightarrow a}{\lim\;h(x)}=0$. Vamos a estudiar este caso.</p>
+
+<p><strong>Caso particular $f(x)=\frac1{\left(x-a\right)^n}$ </strong></p>
+
+<p>Comencemos por la función racional $f(x)=\frac1{\left(x-a\right)^n}$ estudiando el límite $\lim_{x\rightarrow a}f(x)$. Supongamos que $n$ es un entero par. En este caso, el denominador $\left(x-a\right)^n$ será mayor que cero para todo $x$. En la siguiente figura vemos representada la función para $n=2$ y $a=1$.</p>
+
+<p>[caption id=”attachment_71” align=”aligncenter” width=”393”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional1.png"><img src="/assets/images/racional1.png" alt="racional1" /></a> f(x) = 1/(x-1)²[/caption]
+Vemos que los límites laterales en $x=a$ son ambos coincidentes y valen $+\infty$.  En el caso de que $n$ sea impar, el signo de $\left(x-a\right)^n$  será positivo para $x&gt;a$ y negativo para  $x&lt;a$. En la siguiente figura vemos el caso $f(x)=\frac1{x-1}$.</p>
+
+<p>[caption id=”attachment_73” align=”aligncenter” width=”504”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional3.png"><img src="/assets/images/racional3.png" alt="racional3" /></a> f(x) = 1/(x-1)[/caption]
+Ahora los límites laterales en $x=1$ no coinciden, así que no tenemos ĺimite en ese punto.</p>
+
+<p>Concluimos pues:</p>
+
+ 	- Si $n$ es par, $\lim_{x\rightarrow a}\frac1{\left(x-a\right)^n}=+\infty$
+
+ 	- Si $n$ es impar, no existe el límite $\lim_{x\rightarrow a}\frac1{\left(x-a\right)^n}$
+
+<p><strong>Caso general</strong></p>
+
+<p>Estudiamos ahora $L=\lim_{x\rightarrow a}\frac{a_nx^n+a_{n-1}x^{n-1}+\dots+a_1x+a_0}{b_mx^m+b_mx^{m-1}+\dots+b_1x+b_0}=\lim_{x\rightarrow a}\frac{g(x)}{h(x)}$.  Observemos que el numerador es un polinomio de grado $n$ y el denominador otro polinomio de grado $m$.</p>
+
+<p><strong>1)</strong> Si $h(a)\neq0$ entonces simplemente $L=f(a)$.</p>
+
+<p><strong>2)</strong> Si $h(a)=0$, pero $g(a)\neq0$, significa que $x=a$ es una raíz (o un “cero”) del polinomio $h(x)$ con multiplicidad $p$, lo cual significa que se cumple la siguiente igualdad:</p>
+
+<p>$h(x)=\left(x-a\right)^p\cdot h_r(x)$</p>
+
+<p>donde $p$ es un entero menor o igual al grado $m$ del polinomio, y $h_r(x)$ es otro polinomio de grado $m-p$ que cumple $h_r(a)\neq0$. En notación de división de polinomios:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\begin{array}{l}h(x)\;\left</td>
+      <td>\underline{\left(x-a\right)}^p\right.\\underline0\;\;\;\;\;\;\;h_r(x)\end{array}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Entonces:</p>
+
+<p>$L=\underset{x\rightarrow a}{\lim\;\;}\frac{g(x)}{h(x)}=\underset{x\rightarrow a}{\lim\;\;}\frac{g(x)}{\left(x-a\right)^p\cdot h_r(x)}=\underset{x\rightarrow a}{\lim\;\;}\frac1{\left(x-a\right)^p}\cdot\underset{x\rightarrow a}{\lim\;\;}\frac{g(x)}{h_r(x)}$</p>
+
+<p>Pero del caso particular que hemos estudiado sabemos que</p>
+
+<p>$\underset{x\rightarrow a}{\lim\;\;}\frac1{\left(x-a\right)^p}=\left{\begin{array}{l}+\infty\text{ si }p\;\text{es par}\\text{no existe si }p\;\text{es impar}\;\end{array}\right.$</p>
+
+<p>Por tanto</p>
+
+<p>$L=\left{\begin{array}{l}+\infty\text{ si }p\;\text{es par}\\text{no existe si }p\;\text{es impar}\;\end{array}\right.$</p>
+
+<p>**3) **Si $g(a)\eq0$ pero $h(a)\neq0$ entonces $L\eq0$.</p>
+
+<p><strong>4)</strong> El último caso posible es $g(a)\eq0$ y simultáneamente $h(a)\eq0$, con lo que tenemos un límite indeterminado del tipo $\frac00$. Sabemos que $x\eqa$ es una raíz tanto del numerador como del denominador:</p>
+
+<p>$\left.\begin{array}{r}g(x)=\left(x-a\right)^pg_r(x)\h(x)=\left(x-a\right)^qh_r(x)\end{array}\right}\Rightarrow\frac{g(x)}{h(x)}=\frac{\left(x-a\right)^pg_r(x)}{\left(x-a\right)^qh_r(x)}=\left(x-a\right)^{p-q}\frac{g_r(x)}{h_r(x)}$,</p>
+
+<p>con $g_r(a)\ne0$ y $h_r(a)\ne0$. Entonces:</p>
+
+ 	- Si $p-q&gt;0$ entonces $L=0·\frac{g_r(a)}{h_r(a)}=0$.
+
+ 	- Si $p-q&lt;0$ vale lo dicho en el caso 2: $L=\left{\begin{array}{l}+\infty\text{ si }p\;\text{es par}\\text{no existe si }p\;\text{es impar}\;\end{array}\right.$
+
+ 	- Si $p-q=0$ entonces $L = 1·\frac{g_r(a)}{h_r(a)}=\frac{g_r(a)}{h_r(a)}$.
+
+<p><strong>Ejemplos de límites de funciones racionales</strong></p>
+
+<p>Sea la función $f(x)=\frac{x+1}{x^2-1}$.</p>
+
+<p>**(a) **$L=\lim_{x\rightarrow0}f(x)=\frac{0+1}{0-1}=-1.$</p>
+
+<p><strong>(b)</strong> $L=\lim_{x\rightarrow1}f(x)=\frac20=?$. Observamos que $a=1$ es una raíz del polinomio $h(x)=x^2-1$, ¿cuál es su multiplicidad $p$? Igualando a cero y resolviendo la ecuación: $x^2-1=0\Rightarrow x^2=1\Rightarrow x=\pm1$, la multiplicidad $p=1$, un número impar, por lo tanto no existe el límite $L$. En efecto, si estudiamos los límites laterales en $x=1$ vemos que no coinciden:</p>
+
+<p>$\left{\begin{array}{l}\lim_{x\rightarrow1^-}\frac{x+1}{x^2-1}=\frac2{0^-}=-\infty\\lim_{x\rightarrow1^+}\frac{x+1}{x^2-1}=\frac2{0^+}=+\infty\end{array}\right.$</p>
+
+<p><strong>(c)</strong> $L=\lim_{x\rightarrow-1}f(x)=\frac00=?$. ¿Cuál es la multiplicidad de la raíz $a=-1$? En este caso es inmediato ver que tanto para el numerador como para el denominador la multiplicidad es 1.  Por tanto,  $L=\lim_{x\rightarrow-1}\frac{x+1}{x^2-1}=\lim_{x\rightarrow-1}\frac{x+1}{\left(x+1\right)\left(x-1\right)}=\lim_{x\rightarrow-1}\frac1{\left(x-1\right)}=\frac1{-2}$.</p>
+
+<p><strong>(d)</strong> Sea ahora la función $f(x)=\frac{\left(x+1\right)^3}{x^2-1}$. ¿Qué vale el límite de la función en el punto $x=-1$?. Si sustituimos el valor resulta $\frac00=?$. Evidentemente, la multiplicidad del numerador es $p=3$, y la del numerador hemos visto antes que es $q=1$.  Así pues $p-q&gt;0$, y por tanto $L=0$.</p>
+
+<hr />
+
+<p><a href="http://tallermatematic.eu/wp/?p=219">Ir a problemas resueltos de límites de funciones </a></p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/función-de-dirichlet">función de Dirichlet</a>, <a href="/tag/límite-función">límite función</a>, <a href="/tag/límites-de-funciones-racionales">límites de funciones racionales</a>, <a href="/tag/límites-laterales">límites laterales</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

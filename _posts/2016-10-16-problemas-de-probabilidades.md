@@ -8,6 +8,7 @@ tags:
   - "problemas probabilidades"
 math: true
 ---
+{% raw %}
 
 **1.** En una red local hay las conexiones mostradas en la figura, donde los números indican las probabilidades de que cada rama esté abierta en un cierto intervalo de tiempo dado. Suponiendo que las probabilidades son independientes entre sí, calcular la probabilidad de que haya transmisión de datos entre A y D por cualquier camino. Suponiendo que hay transmisión de datos entre A y D, calcular la probabilidad de que se esté transmitiendo por la ruta ACD.
 
@@ -315,3 +316,4 @@ Los elementos que entran en el cálculo de la covarianza los disponemos también
 La suma de todos ellos es la covarianza: -0.5, un valor negativo indica dependencia inversa:  valores de X  grandes implican pequeños valores de Y.
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

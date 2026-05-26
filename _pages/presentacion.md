@@ -4,6 +4,7 @@ title: "Presentación"
 date: 2015-05-19 11:13:23 +0000
 math: true
 ---
+{% raw %}
 
 Mathematics is a language plus reasoning; it is like a language plus logic. Mathematics is a tool for reasoning." Feynman, R.P. (1965) "The Character of Physical Law"
 
@@ -22,3 +23,4 @@ Ecuaciones mostradas en [LaTex](http://www.latex-project.org/) usando [![wiris_
  
 
 [![](/assets/images/logo-creative-commons.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Optimización Matemática"
 date: 2022-04-01 06:52:55 +0000
 math: true
 ---
+{% raw %}
 
 **Optimizar** siginifica encontrar la forma de realizar alguna acción de la forma más eficiente posible, minimizando los costes y/o maximizando los beneficios. La **Investigación Operativa** estudia la forma de tomar decisiones que sean ótimas, elaborando modelos de la realidad y desarrollando métodos para esos modelos. Cuando esos modelos son formeles y pueden ser explicitados de forma rigurosa y exacta, entra en juego la **Optimización Matemática **que usa modelos matemáticos de la  realidad para encontrar soluciones óptimas a problemas.
 
@@ -24,3 +25,4 @@ Temas
 - Enumeración implícita
 - Método de planos secantes
 - Branch and Bound. Heurísticas. Problema TSP
+{% endraw %}

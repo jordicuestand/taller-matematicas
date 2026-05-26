@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables aleatorias — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Variables aleatorias</h1>
+    <p class="meta">
+      07/01/2017
+      
+        · <a href="/categoria/estadística">Estadística</a>, <a href="/categoria/matemáticas">Matemáticas</a>, <a href="/categoria/probabilidades">Probabilidades</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<ul>
+  <li>Concepto de variable aleatoria</li>
+</ul>
+
+ 	- Variable aleatoria discreta: funciones de probabilidad y distribución
+
+ 	- Variable aleatoria continua: funciones de densidad y distribución
+
+ 	- Esperanza matemática
+
+ 	- Varianza
+
+ 	- Desigualdad de Txebixef
+
+ 	- Variable aleatoria bidimensional
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="concepto-de-variable-aleatoria">Concepto de variable aleatoria</h1>
+
+<p>Es la generalización de las variables estadísticas que se han visto en el tema <a href="http://tallermatematic.eu/wp/?p=1341">Estadística descriptiva, análisis de datos</a> ; la definición era:
+<strong>**Variable estadística</strong>: una característica numérica de la población que nos interesa estudiar
+Pues bien, una <strong>variable aleatoria</strong> (v.a.) es:</p>
+
+ 	- O bien una variable estadística
+
+ 	- O bien una función de una variable estadística
+
+<p><strong>Ejemplo 1</strong> :</p>
+<ol>
+  <li>El resultado de lanzar un dado es una v.a.: X = {1, 2, 3, 4, 5, 6}</li>
+  <li>La (función) suma de puntos de dos dados: S = X1 + X2 = {2, 3, 4, …, 12}</li>
+  <li>La temperatura del aula en días sucesivos: T = {17, 17.3, …}</li>
+  <li>El consumo de energía E en calefacción en el aula en función de la temperatura T,  $E(T) = Ke^{T-C}$, donde C es una constante. Siendo la temperatura T una variable aleatoria, la función E(T) también lo será.</li>
+</ol>
+
+<p><strong>Variables aleatorias discretas y continuas</strong>
+Si la variable estadística es discreta (toma valores enteros) entonces la variable aleatoria también lo será (como en los ejemplos 1 y 2). Si la variable estadística es continua (toma valores reales) entonces la variable aleatoria también lo será (como en los ejemplos 3 y 4).</p>
+
+<p><strong>Notación para las variables aleatorias</strong>
+Usaremos letras mayúsculas para las variables aleatorias, tales como X, Y, T, …, y letras minúsculas para valores concretos de la variable: x = 17.3.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="variable-aleatoria-discreta-funciones-de-probabilidad-y-distribución">Variable aleatoria discreta: funciones de probabilidad y distribución</h1>
+
+<p>Cada valor que toma la variable aleatoria es: o bien un punto muestral (ver: <a href="http://tallermatematic.eu/wp/?p=1389">introducción a las probabilidades</a>) o bien una función de un punto muestral. Como cada punto muestral tiene asociada una probabilidad, también la tendrá la variable aleatoria. Cuando la v.a. es discreta (todos sus valores son enteros), llamamos <strong>función de probabilidad</strong> a la asignación de probabilidades para cada valor posible:</p>
+
+<p>| 
+<strong>Valores de la v.a. X</strong></p>
+
+<p>| 
+<strong>Probabilidad</strong></p>
+
+<p>| 
+X = x1</p>
+
+<p>| 
+p1 = P(X = x1)</p>
+
+<p>| 
+…</p>
+
+<p>| 
+…</p>
+
+<p>| 
+X = xn</p>
+
+<p>| 
+pn = P(X = xn)</p>
+
+<p>En general tendremos $P (X = x_i) = p_i$. Por las propiedades de la probabilidad es inmediato que $P (X = x_i) &gt; 0$ para todos los puntos $x_i$. La suma de valores de la función de probabilidad valdrá 1: $\sum_iP(X=x_i)=1.$</p>
+
+<p>La función de probabilidad podemos verla como la generalización de la frecuencia relativa (ver <a href="http://tallermatematic.eu/wp/?p=1341">Estadística descriptiva</a>, análisis de datos). Definimos la <strong>función de distribución</strong> para v.a. discreta, F(x), como la probabilidad de que la v.a. X tome valores más pequeños o iguales al valor $x_k$:</p>
+
+<p>$F (x_k) = P (X &lt;= x_k)$</p>
+
+<p>La relación con la función de probabilidad es inmediata:
+$F\left(x_k\right)=\sum_{1\leq i\leq k}P\left(X\leq x_i\right)=P\left(X\leq x_k\right)$</p>
+
+<p>La función de probabilidad viene a ser la generalización de la frecuencia relativa acumulada (ver <a href="http://tallermatematic.eu/wp/?p=1341">Estadística descriptiva</a>, análisis de datos).</p>
+
+<p><strong>Ejemplo 2</strong>: Lanzamos un dado dos veces y definimos la variable aleatoria X restando a los puntos obtenidos en el primer lanzamiento los obtenidos en el segundo lanzamiento. Los valores posibles que puede tomar X son {0, 1, 2, 3, 4, 5, -1, -2, -3, -4, -5}. Para calcular la probabilidad de obtener cada uno de esos valores enumeramos los casos posibles para cada uno de ellos; la probabilidad, por la regla de Laplace, será P(caso) = casos posibles / casos totales, teniendo en cuenta que el número de casos totales es 6·6 = 36 combinaciones de puntuaciones, y que los sucesos son excluyentes (si sucede un caso no puede suceder ningún otro). Por ejemplo, para X = 4 tenemos dos casos: (6, 2) y (5, 1), cada uno de ellos tiene probabilidad 1/36, la probabilidad de que suceda uno o el otro, siendo excluyentes, es la suma 1/36 + 1/36. Procediendo de esta forma obtenemos la función de probabilidad de la v.a. X:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>x**</td>
+    </tr>
+    <tr>
+      <td><strong>puntuaciones</strong></td>
+    </tr>
+    <tr>
+      <td><strong>cuenta</strong></td>
+    </tr>
+    <tr>
+      <td><strong>probabilidad: f(x)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1-1, 2-2, 3-3, 4-4, 5-5, 6-6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>6/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6-5, 5-4, 4-3, 3-2, 2-1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6-4, 5-3, 4-2, 3-1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6-3, 5-2, 4-1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6-2, 5-1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6-1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Para los valores que faltan en la tabla, {-1, -2, -3, -4, -5}, las probabilidades son las mismas que para {1, 2, 3, 4, 5}. Así pues la función de probabilidad viene dada por la tabla:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>x</strong></td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>-3</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+    </tr>
+    <tr>
+      <td>-5</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>f(x)</strong></td>
+    </tr>
+    <tr>
+      <td>6/36</td>
+    </tr>
+    <tr>
+      <td>5/36</td>
+    </tr>
+    <tr>
+      <td>4/36</td>
+    </tr>
+    <tr>
+      <td>3/36</td>
+    </tr>
+    <tr>
+      <td>2/36</td>
+    </tr>
+    <tr>
+      <td>1/36</td>
+    </tr>
+    <tr>
+      <td>5/36</td>
+    </tr>
+    <tr>
+      <td>4/36</td>
+    </tr>
+    <tr>
+      <td>3/36</td>
+    </tr>
+    <tr>
+      <td>2/36</td>
+    </tr>
+    <tr>
+      <td>1/36</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Como comprobación, siempre tenemos que obtener la suma de todos los valores f(x), que ha de valer 1 (una de las propiedades de las probabilidades: si el espacio muestral Ω se puede considerar dividido en n subconjuntos disjuntos entre sí, Ω = A1 ∪ A2 ∪ … ∪ An, entonces P(A1) + P(A2) + … + P(An) = 1 (ver Introducción a las probabilidades, tercera definición de probabilidad). En efecto: 6/36 + 5/36 + 4/36 + 3/36 + 3/36 + 1/36 + 5/36 + 4/36 + 3/36 + 3/36 + 1/36 = 36/36 = 1.</p>
+
+<p>Para obtener la función de distribución de X basta con calcular la tabla de probabilidades acumuladas:</p>
+
+<p>| 
+<strong>x</strong></p>
+
+<p>| 
+0</p>
+
+<p>| 
+1</p>
+
+<p>| 
+2</p>
+
+<p>| 
+3</p>
+
+<p>| 
+4</p>
+
+<p>| 
+5</p>
+
+<p>| 
+-1</p>
+
+<p>| 
+-2</p>
+
+<p>| 
+-3</p>
+
+<p>| 
+-4</p>
+
+<p>| 
+-5</p>
+
+<p>| 
+<strong>f(x)</strong></p>
+
+<p>| 
+6/36</p>
+
+<p>| 
+5/36</p>
+
+<p>| 
+4/36</p>
+
+<p>| 
+3/36</p>
+
+<p>| 
+2/36</p>
+
+<p>| 
+1/36</p>
+
+<p>| 
+5/36</p>
+
+<p>| 
+4/36</p>
+
+<p>| 
+3/36</p>
+
+<p>| 
+2/36</p>
+
+<p>| 
+1/36</p>
+
+<p>| 
+<strong>F(x)</strong></p>
+
+<p>| 
+6/36</p>
+
+<p>| 
+11/36</p>
+
+<p>| 
+15/36</p>
+
+<p>| 
+18/36</p>
+
+<p>| 
+20/36</p>
+
+<p>| 
+21/36</p>
+
+<p>| 
+26/36</p>
+
+<p>| 
+30/36</p>
+
+<p>| 
+33/36</p>
+
+<p>| 
+35/36</p>
+
+<p>| 
+36/36</p>
+
+<p>La gráfica de la función de probabilidad es:</p>
+
+<p>[caption id=”attachment_1432” align=”aligncenter” width=”566”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png"><img src="/assets/images/funcio_prob.png" alt="Función de probabilidad, variable discreta" /></a> Función de probabilidad, variable discreta[/caption]
+La función de distribución suele representarse como una función escalonada:</p>
+
+<p>[caption id=”attachment_1433” align=”alignnone” width=”565”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png"><img src="/assets/images/escalonada.png" alt="Función de distribución, variable discreta" /></a> Función de distribución, variable discreta[/caption]</p>
+
+<p><strong>Propiedades inmediatas de las funciones de distribución discretas F (x)</strong></p>
+
+ 	- El valor de F(x) está en el intervalo [0, 1]
+
+ 	- F(x) es no decreciente
+
+ 	- La probabilidad $P(X &gt; x_k)$ és igual a $1 – F(x_k)$
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separador2" /></a></p>
+<h1 id="variable-aleatoria-continua-funciones-de-densidad-y-distribución">Variable aleatoria continua: funciones de densidad y distribución</h1>
+
+<p>Cuando la variable es continua sabemos que se trabaja con intervalos de la variable (ver <a href="http://tallermatematic.eu/wp/?p=1341">Estadística Descriptiva</a> =&gt; Agrupación de datos en intervalos). La asignación de probabilidades se hará por tanto para cada intervalo que definamos.</p>
+
+<p>En el tema <a href="http://tallermatematic.eu/wp/?p=1341">Estadística Descriptiva</a> la anchura de cada intervalo la definíamos arbitrariamente según el número de intervalos y el recorrido de la variable. Ahora hay que generalizar para intervalos de cualquier anchura: supongamos que el recorrido de la variable aleatoria es [max, min]; entonces definimos una <strong>función</strong>** de densidad de probabilidad f(x) de la v.a. continua X** como cualquiera que verifica las tres condiciones siguientes:</p>
+
+ 	- No negatividad: f(x) &gt;= 0
+
+ 	- Probabilidad de un intervalo: $P\left(X\in\left[a,b\right]\right)=\int_a^bf\left(x\right)\operatorname dx$
+
+ 	- Normalización: $P\left(X\in\left[max,\;min\right]\right)=\int_{min}^{max}f\left(x\right)\operatorname dx=1$
+
+<p>Se deducen las siguientes propiedades:</p>
+
+ 	- La probabilidad en las variables continuas se calcula con una integral sobre un intervalo (2ª propiedad de las funciones de densidad)
+
+ 	- La probabilidad de un punto siempre es cero: P (X = x) = P (x &lt;= X &lt;= x) = 0 pues coinciden los límites de la integral (es un intervalo de longitud nula)
+
+ 	- En cambio f (x) no tiene porque ser cero en ningún punto
+
+ 	- La gráfica de la función de densidad es la generalización del histograma de frecuencias relativas (<a href="http://tallermatematic.eu/wp/?p=1341">Estadística Descriptiva</a>).
+
+<p>Definimos la <strong>función</strong>** de distribución para v.a. continuas,** F (x), como la probabilidad de que X tome valores más pequeños que a x: F (x) = P (X &lt; x_k).  La relación con la función de densidad es inmediata: si el valor mínimo de la v.a. X es min, entonces tendremos que:</p>
+
+<p>$F\left(x_0\right)=P\left(X\in\left[min,\;x_0\right]\right)=\int_{min}^{x_0}f\left(x\right)\operatorname dx$</p>
+
+<p>Si la expresión anterior la expresamos para un valor x genérico y la derivamos respecto ese valor x,  aplicando el <a href="https://es.wikipedia.org/wiki/Teorema_fundamental_del_c%C3%A1lculo#Primer_teorema_fundamental_del_c.C3.A1lculo">primer teorema fundamental del cálculo</a> obtenemos otra relación importante entre las funciones de densidad y de distribución continuas:</p>
+
+<p>$F’\left(x\right)=\frac{\operatorname d{}}{\operatorname dx}\int_{min}^xf\left(t\right)\operatorname dt=f\left(x\right)$</p>
+
+<p>Que se expresa como “<em>La derivada de la función de distribución es la función de densidad</em>”</p>
+
+<p>La función de distribución continua tiene ciertas propiedades:</p>
+
+ 	- Asíntotas horizontales izquierda y derecha: F (-∞) = 0, F (+∞) = 1
+
+ 	- F (x) es continua y no decreciente
+
+ 	- La probabilidad de un
+<p>intervalo [a, b] es igual a F (b) - F (a)</p>
+
+<p><strong>Ejemplo 3</strong>: Sea la función de densidad de probabilidad</p>
+
+<p>$f\left(x\right)=\left{\begin{array}{l}0\;\;\;\;\;\;\;\;\;\;\;\;\;\text{si }x\not\in\left[0,\;1\right]\\frac23\left(x+1\right)\;\text{si }x\in\left[0,\;1\right]\end{array}\right.$</p>
+
+<p>Calcular $P(0\leq X\leq0.5)$, $P(-3\leq X\leq0.5)$, $P(0\leq X\leq1)$</p>
+
+<p>Según la propiedad 2 de las funciones de densidad: $P(0\leq X\leq0.5)=\int_0^{0.5}f\left(x\right)\operatorname dx=\int_0^{0.5}\frac23\left(x+1\right)\operatorname dx=\frac23\left[\frac{x^2}2+x\right]_0^{0.5}=\frac23\left(\frac{0.5^2}2+0.5-0\right)=\frac5{12}$.</p>
+
+<p>Para el segundo intervalo hemos de tener en cuenta los intervalos de definición de la función f(x):</p>
+
+<p>$P(-3\leq X\leq0.5)=\int_{-3}^{0.5}f\left(x\right)\operatorname dx=\int_{-3}^00\operatorname dx+\int_0^{0.5}\frac23\left(x+1\right)\operatorname dx=0+\frac5{12}=\frac5{12}$</p>
+
+<p>Para el tercer intervalo tenemos:</p>
+
+<p>$P(-3\leq X\leq0.5)=\int_0^1f\left(x\right)\operatorname dx=\int_0^1\frac23\left(x+1\right)\operatorname dx=\frac23\left[\frac{x^2}2+x\right]_0^1=\frac23\left(\frac12+1-0\right)=1$</p>
+
+<p>un resultado esperado, pues es la condición de normalización de las funciones de densidad.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/distribución-de-probabilidad">distribución de probabilidad</a>, <a href="/tag/función-de-densidad-de-probabilidad">función de densidad de probabilidad</a>, <a href="/tag/probabilidad">probabilidad</a>, <a href="/tag/variable-aleatoria">variable aleatoria</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnetismo: campo magnético — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Magnetismo: campo magnético</h1>
+    <p class="meta">
+      15/09/2016
+      
+        · <a href="/categoria/electricidad-y-magnetismo">Electricidad y Magnetismo</a>, <a href="/categoria/fí-sica">Fí­sica</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h2 id="magnetismo">Magnetismo</h2>
+
+<p>[caption id=”attachment_1625” align=”alignleft” width=”199”]<img src="/assets/images/470px-Magnetite-118736-294x300.jpg" alt=" Magnetita (By Rob Lavinsky, iRocks.com – CC-BY-SA-3.0, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10139390)" /> Magnetita (By Rob Lavinsky, iRocks.com – CC-BY-SA-3.0, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10139390)[/caption]
+Se conoce la piedra imán,la <a href="https://es.wikipedia.org/wiki/Magnetita">magnetita</a>, desde la antigüedad, y se aprovechó para <a href="https://es.wikipedia.org/wiki/Br%C3%BAjula#Historia_de_la_br.C3.BAjula">las primeras brújulas</a> usadas en navegación. Gilbert (1600) establece que los imanes tienen <a href="https://es.wikipedia.org/wiki/Im%C3%A1n#Polos_magn.C3.A9ticos">polos magnéticos</a>,  y postula que el planeta Tierra es un enorme imán que actúa sobre la magnetita, orientándola según el eje de la Tierra Norte-Sur. Cavendish y Coulomb inician la experimentación y descripción matemática del magnetismo, y descubren que la fuerza magnética $F_m$ tiene una expresión similar a la electrostática $F_e$, sustituyendo las cargas eléctricas por “masas magnéticas”:</p>
+
+<p>$F_e=K\frac{q_1q_2}{d^2},\;F_m=\frac{m_1m_2}{d^2}$</p>
+
+<p>Viendo las dos leyes, parecía haber una relación entre electricidad y magnetismo no intuida hasta entonces; <a href="https://es.wikipedia.org/wiki/Hans_Christian_%C3%98rsted">Oersted</a> descubrió que una aguja imantada cerca de una corriente eléctrica recibía una fuerza, igual que si se ponía cerca de un imán.</p>
+
+<p><a href="https://es.wikipedia.org/wiki/Andr%C3%A9-Marie_Amp%C3%A8re">Ampère</a> impulsa el nuevo campo de conocimiento deduciendo que el magnetismo se relaciona con las cargas eléctricas en movimiento, poniendo las bases de la <a href="https://es.wikipedia.org/wiki/Electrodin%C3%A1mica">Electrodinámica</a>; deduce también que si una corriente se comporta como un imán, entonces dos corrientes próximas se ejercerán efectos magnéticos como si fueran dos imanes, y propone, correctamente, que quizás los imanes permanentes tienen corrientes eléctricas en su interior, que son las que provocan su magnetismo, y que las “masas magnéticas” de Coulomb no existen, sólo existen las cargas eléctricas y sus efectos. Inventa el <a href="https://es.wikipedia.org/wiki/Solenoide">solenoide,</a> el primer <a href="https://es.wikipedia.org/wiki/Electroim%C3%A1n">electroimán</a>, y el <a href="https://es.wikipedia.org/wiki/Galvan%C3%B3metro">galvanómetro</a>.</p>
+
+<h2 id="origen-relativista-de-las-fuerzas-magnéticas">Origen relativista de las fuerzas magnéticas</h2>
+
+<p>No deduciremos el origen del magnetismo a partir de la Relatividad especial, pero daremos una idea de por donde va. Imaginemos una carga libre positiva moviéndose a velocidad constante <em>v</em> de forma paralela a un conductor por la que circula una corriente eléctrica; esta corriente de hecho es un movimiento de los electrones del conductor, quedando fijas las cargas positivas .  Para simplificar, supondremos que la velocidad de los electrones es también <em>v</em>. Siendo dos sistemas de cargas en movimiento, deberán experimentar fuerzas magnéticas. Dado que el número de cargas positivas y negativas en el conductor está compensado, la carga libre no experimentará fuerza eléctrica alguna.</p>
+
+<p>[caption id=”attachment_150131” align=”alignnone” width=”504”]<img src="/assets/images/magnetisme1.png" alt="Fig. 1: carga en movimiento paralelo a una corriente eléctrica en un conductor" /> Fig. 1: carga en movimiento paralelo a una corriente eléctrica en un conductor. Fuente: <a href="http://galileo.phys.virginia.edu/">http://galileo.phys.virginia.edu/</a>[/caption]</p>
+
+<p>Cambiemos ahora al sistema de referencia que se mueve con la carga libre; desde esta referencia las cargas negativas del conductor están fijas y las que se  mueven son las positivas, en sentido contrario:</p>
+
+<p>[caption id=”attachment_150132” align=”alignnone” width=”491”]<img src="/assets/images/magnetisme2.png" alt="Fig. 2: la misma situación de la figura 1 vista desde el sistema de referencia de la partícula libre" /> Fig. 2: la misma situación de la figura 1 vista desde el sistema de referencia de la partícula libre[/caption]
+Ahora bien, siendo ésta referencia móvil respecto a la de la figura 1, debemos aplicar las transformaciones de Lorentz relativistas para tener una imagen real de lo que sucede; concretamente, si aplicamos la <a href="https://es.wikipedia.org/wiki/Contracci%C3%B3n_de_Lorentz">contracción de Lorentz</a> (disminución de las distancias en la dirección del movimiento) obtenemos que las distancias entre las cargas positivas se verán como menores desde la referencia de la carga libre, algo así como:</p>
+
+<p>[caption id=”attachment_150133” align=”alignnone” width=”491”]<img src="/assets/images/magnetisme3.png" alt="Fig. 3: vista de las cargas móviles aplicando la contracción de Lorentz" /> Fig. 3: vista de las cargas móviles aplicando la contracción de Lorentz[/caption]
+Ahora las cargas en el conductor no están compensadas: hay más densidad de carga positiva que negativa, y en consecuencia la partícula libre experimentará un campo eléctrico, una fuerza, inducida por la velocidad relativa de las cargas positivas del conductor. Esta fuerza será perpendicular a la velocidad que la genera:</p>
+
+<p>[caption id=”attachment_150137” align=”alignnone” width=”509”]<img src="/assets/images/magnetisme6.png" alt="Fig. 6: fuerza debida a la desigual densidad de cargas negativa y positiva" /> Fig. 6: fuerza debida a la desigual densidad de cargas negativa y positiva[/caption]
+Esta fuerza, vista desde la referencia 1 en reposo, es la denominada fuerza magnética. Decir que la contracción mostrada en las figuras está muy exagerada pues en los casos reales las velocidades de las cargas son muchísimo más pequeñas que la velocidad de la luz, y la contracción relativista es casi despreciable. No obstante, incluso esa pequeña contracción a nivel microscópico (electrones del material) ejerce una fuerza apreciable a nivel macroscópico pues el número de electrones portadores de la electricidad es muy elevado. Estos detalles no se trataran aquí, el sitio adecuado seria un articulo sobre electricidad y magnetismo en la materia.</p>
+
+<p>Así pues, el magnetismo es una de las pruebas, y de las más “cercanas” que tenemos, de los efectos predichos por la Relatividad de Einstein.</p>
+
+<h3 id="vector-campo-magnético">Vector campo magnético</h3>
+
+<p>Si reflejamos la vista de la figura 1, como si la viéramos en un espejo, ¿qué dirección tomará la fuerza magnética? La situación la vemos en la figura 7:</p>
+
+<p>[caption id=”attachment_150161” align=”alignnone” width=”504”]<img src="/assets/images/magnetisme10-2.png" alt="Fig. 7: hilo conductor recorrido por una corriente y carga en movimiento, y su reflejo" /> Fig. 7: hilo conductor recorrido por una corriente y carga en movimiento, y su reflejo respecto un plano perpendicular a la corriente I[/caption]
+El espejo invierte el sentido de los vectores velocidad e intensidad de corriente, pero el vector fuerza no se modifica; esto es porque el sentido de la fuerza sólo cambia si la velocidad de la carga no es la misma que la de la corriente, ya que entonces la contracción de Lorentz afectaría  a las cargas positivas y negativas del conductor justo al revés, haciendo que la densidad de negativas fuera mayor que la de positivas.</p>
+
+<p>En el siglo XIX cuando se estudiaba el magnetismo los investigadores no tenían todavía la teoría de la Relatividad, pero ya encontraron este comportamiento extraño en sus experimentos. Este comportamiento anómalo del vector fuerza no se da en otros campos de la Física. En el artículo <a href="http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/">vectores en Física</a> se explicó que hay dos tipos de vectores: los polares, que bajo una reflexión como la de la figura 7 cambian como lo hacen la velocidad y la intensidad de corriente, y los pseudovectores, que se modifican de otra forma. Parecería entonces que la fuerza magnética no es un vector polar, pero esto es difícilmente aceptable, ya que los vectores fuerza se comportan como vectores polares en todas las situaciones. ¿Cómo solucionamos este comportamiento anómalo del vector fuerza en este caso?  Recordando la propiedad del producto vectorial <em>[vector] x [pseudovector] = [vector] </em> se planteó <em>vector velocidad de la carga x pseudovector campo magnético = vector fuerza</em>.  O sea, definimos de forma indirecta el pseudovector <strong>campo magnético B</strong> como aquel que cumple</p>
+
+<p>$\overrightarrow F=q\cdot\overrightarrow v\times\overrightarrow B$ [1]</p>
+
+<p>Con esta definición, el vector fuerza sigue siendo un vector polar, como en el resto de la Física.</p>
+
+<p>[caption id=”” align=”alignnone” width=”399”]<img src="/assets/images/força-induccio.png" alt="la fuerza de inducción magnética sobre una carga en movimiento siempre es perpendicular a la velocidad de la carga" /> Fig. 8; la fuerza inducida por el campo  magnético sobre una carga en movimiento siempre es perpendicular a la velocidad de la carga, su módulo depende del ángulo que forma con el vector campo magnético B[/caption]</p>
+
+<p> </p>
+
+<p>[caption id=”” align=”alignleft” width=”256”]<a href="https://commons.wikimedia.org/wiki/File%3AProducto_Vectorial_seg%C3%BAn_el_angulo_entre_vectores.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Producto_Vectorial_seg%C3%BAn_el_angulo_entre_vectores.gif" alt="Producto Vectorial según el angulo entre vectores" /></a> Fig. 9: El producto vectorial de los vectores a, b siempre es otro vector perpendicular a los dos, pero no en el mismo plano que los contiene. Además, el módulo del producto es variable entre un valor máximo y cero. Fuente: https://es.wikipedia.org/wiki/Producto_vectorial[/caption]Tal como “funciona” el producto vectorial, si el campo <strong>B</strong> resulta ser paralelo a la velocidad <strong>v</strong>, la fuerza resultante vale cero, y si <strong>B</strong> y <strong>v</strong> son perpendiculares, entonces <strong>F</strong> toma su valor máximo. El producto <em>a x b</em> de dos vectores es perpendicular al plano que contiene a los vectores a, b.</p>
+
+<p>El módulo de <strong>F</strong> viene dada por</p>
+
+<p> 
+$F=qvB· \sin \left(\alpha \right)$ [2]</p>
+
+<p>donde $\alpha$ es el ángulo que forman el campo <strong>B</strong> y la velocidad <strong>v</strong>.
+Como consecuencia de esta fuerza la carga móvil <em>q</em> variará su trayectoria, girando, pero sin perder velocidad, pues la fuerza es siempre perpendicular a la velocidad; entonces la carga describirá una trayectoria curva en el campo, esta curva dependerá de como varía B en el espacio. En el caso más simple, si suponemos que B es constante en todo el espacio, la fuerza también será constante, y cuando la carga “entre” en el campo, describirá una trayectoria circular, con una aceleración normal $a_n=F/m=v^2/R$, siendo m la masa de la partícula y R el radio del círculo. Si además el campo B es perpendicular a v tendremos fuerza máxima F=qvB, sustituyendo tenemos $qvB/m=v²/R$ y por tanto el radio de giro es $R=\frac{qB}{mv}$.</p>
+
+<p>[caption id=”attachment_1628” align=”alignnone” width=”328”]<img src="/assets/images/curvatura-camp-magnetic.png" alt="Fig. 4: la carga q con velocidad v curva su trayectoria al entrar en una región con campo magnético perpendicular al plano (aquí B se saldría de la pantalla apuntando hacia nosotros)" /> Fig. 10: la carga q con velocidad v curva su trayectoria al entrar en una región con campo magnético perpendicular al plano (aquí B se saldría de la pantalla apuntando hacia nosotros)[/caption]
+Si en vez de una corriente tenemos un conjunto de corrientes con diversas intensidades, cada una de ellas creará un campo de inducción magnética; puede demostrarse que el campo magnético conjunto será la suma de cada uno de los generados por cada corriente.</p>
+
+<p>[caption id=”attachment_150134” align=”alignnone” width=”433”]<img src="/assets/images/magnetisme4.png" alt="Fig. 4: Campo magnético B creado por un sistema de corrientes y fuerza ejercida sobre una carga q con velocidad v" /> Fig. 11: Campo magnético B creado por un sistema de corrientes y fuerza ejercida sobre una carga q con velocidad v[/caption]
+<strong>Ejemplo 1</strong>: En la figura 4 el campo magnético en cada punto del espacio próximo al origen de coordenadas puede considerarse uniforme y viene dado por B= (0, 5, 0) Tesla; la partícula de carga q = 1C tiene una velocidad v = (-3, 2, 0) m/s. Calcular el vector fuerza F ejercido sobre la partícula. Si la partícula tiene una masa de 100 gramos, describir su movimiento.</p>
+
+<p>Aplicando [1]:</p>
+
+<p>$\overrightarrow F=q\overrightarrow v\times\overrightarrow B=1\cdot\begin{bmatrix}-3\2\0\end{bmatrix}\times\begin{bmatrix}0\5\0\end{bmatrix}=\begin{vmatrix}i&amp;j&amp;k\-3&amp;2&amp;0\0&amp;5&amp;0\end{vmatrix}=\begin{bmatrix}0\0\-15\end{bmatrix}.$</p>
+
+<p>La fuerza perpendicular a la velocidad actúa como una fuerza centrípeta, produciendo una aceleración normal $a = F/m$ perpendicular a la velocidad: la partícula gira con velocidad conatante, y como la fuerza también lo es, el movimiento será circular uniforme; dado que la aceleración normal en un movimiento  circular vale a = v²/R, siendo R el radio del círculo descrito, tendremos que F/m = v² / R, por tanto $R\;=\;mv²/F=0.1\cdot\left(\sqrt{3^2+2^2+0}\right)^2/15=9\cdot10^{-2}m$, la partícula gira con un radio de 9cm.</p>
+
+<p>Una vez definido el pseudovector campo magnético, necesitamos saber calcularlo en situaciones diversas; como suele suceder en Física, sólo podremos hacerlo en casos simples, resultando bastante complicado en los casos más generales.</p>
+
+<h2 id="fuerza-ejercida-por-un-campo-magnético-sobre-una-corriente-eléctrica">Fuerza ejercida por un campo magnético sobre una corriente eléctrica</h2>
+
+<p>[caption id=”attachment_150138” align=”alignnone” width=”397”]<img src="/assets/images/magnetisme7.png" alt="Fig. 7: elemento de corriente " /> Fig. 5: elemento de corriente[/caption]
+Imaginemos una corriente rectilínea de portadores negativos de carga, todos ellos con la misma velocidad, y consideremos una pequeña porción de longitud <em>dx</em>. Definamos $\rho$ como la densidad de portadores de carga por unidad de volumen (un dato que depende del material conductor) y <em>S</em> como la sección recta del conductor. En la sección considerada tendremos<em> </em>$dn = \rho·S·dx$ portadores de carga (escribimos <em>dn</em> para indicar que es el número de cargas dentro de la pequeña sección dx). Si ahora aplicamos un campo magnético uniforme y constante B, cada una de las n cargas en movimiento experimentará una fuerza  dada por [1],  y la fuerza total sobre la sección del conductor será n veces esa fuerza:</p>
+
+<p>$\operatorname d\overrightarrow F=\left(q\overrightarrow v\times\overrightarrow B\right)\cdot\operatorname dn=\left(q\overrightarrow v\times\overrightarrow B\right)\cdot\rho S\operatorname dx=q\rho S\operatorname dx\cdot\left(\overrightarrow v\times\overrightarrow B\right)$</p>
+
+<p>Siendo la velocidad constante, podemos definir un vector unitario u en su dirección y sacar la celeridad fuera del producto vectorial:</p>
+
+<p>$\operatorname d\overrightarrow F=q\rho Sv\operatorname dx\cdot\left(\overrightarrow u\times\overrightarrow B\right)$</p>
+
+<p>Por definición, $q\rho Sv$ es la intensidad de la corriente, I, luego</p>
+
+<p>$\operatorname d\overrightarrow F=I\operatorname dx\cdot\left(\overrightarrow u\times\overrightarrow B\right)$</p>
+
+<p>Definiendo el vector dl = u·dx, denominado elemento de corriente, obtenemos la fórmula de Laplace para la fuerza ejercida sobre un elemento de corriente por un campo magnético:</p>
+
+<p>$\operatorname d\overrightarrow F=I\cdot\left(\operatorname d\overrightarrow l\times\overrightarrow B\right)$[3]</p>
+
+<p>Dado que hemos trabajado con elementos diferenciales, que hemos supuesto rectilíneos, se puede aplicar [3] para encontrar la fuerza ejercida sobre corrientes en circuitos que no sean rectílineos pero si describan curvas “suaves” (diferenciables), integrando sobre la trayectoria L que recorre la corriente:</p>
+
+<p>$\overrightarrow F=\int_L\operatorname d\overrightarrow F=\int_LI\cdot\left(\operatorname d\overrightarrow l\times\overrightarrow B\right)$ [4].</p>
+
+<p><strong>Ejemplo 2:</strong> Fuerza ejercida por un campo magnético sobre una corriente que recorre una espira rectangular.</p>
+
+<p>[caption id=”attachment_150139” align=”aligncenter” width=”321”]<img src="/assets/images/magnetisme8.png" alt="Fig. 6: corriente que recorre una espira en un campo magnético" /> Fig. 6: corriente que recorre una espira en un campo magnético[/caption]
+Una espira rectangular, de lados <em>a, b</em>, es recorrida por una corriente de intensidad I, y está situada en un campo magnético uniforme B que forma un ángulo θ con la recta normal al plano de la espira, como muestra la figura 6. Hallar la fuerza total ejercida sobre la espira.</p>
+
+<p>Consideramos primero el segmento superior de la espira, y los descomponemos en elementos diferenciales de corriente <em>dl</em>; cada uno de ellos estará sometido a una fuerza dada por [3]; el producto vectorial $\operatorname d\overrightarrow l\times\overrightarrow B$ nos indica que la fuerza dF estarà dirigida verticalmente hacia arriba (la dirección de giro desde dl hacia B es contraria a las agujas del reloj). Si nos fijamos ahora en el segmento inferior, obtenemos el mismo valor, sólo que aquí la fuerza estará dirigida hacia abajo; luego las fuerzas en los segmentos inferior y superior son iguales en valor pero de sentido contrario: se anulan entre sí.</p>
+
+<p>Vamos por el segmento vertical izquierdo; el módulo del vector fuerza, dado por [3], teniendo en cuenta que el vector B está en el plano perpendicula al segmento, será</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\left</td>
+      <td>\operatorname d\overrightarrow F\right</td>
+      <td>=I\cdot\left</td>
+      <td>\left(\operatorname d\overrightarrow l\times\overrightarrow B\right)\right</td>
+      <td>=I\cdot\operatorname dl\cdot B$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A lo largo de todo el segmento vertical izquierdo, cada elemento de corriente estará sometido a esa misma fuerza constante, al integrarlas todas:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\int_L\left</td>
+      <td>\operatorname d\overrightarrow F\right</td>
+      <td>=\int_LI\cdot\operatorname dl\cdot B=IB\int_L\operatorname dl=IBa$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>donde a es la longitud del segmento; para el segmento vertical derecho obtenemos el mismo valor, pero en sentido contrario, sólo que ahora no se anulará con el segmento izquierdo, pues ambas fuerza resultantes no están aplicadas sobre la misma línea de acción:</p>
+
+<p>[caption id=”attachment_150140” align=”aligncenter” width=”339”]<img src="/assets/images/magnetisme9.png" alt="Fig. 8: fuerzas sobre la espira. Las verticales se anulan, las horizontales no están sobre la misma recta" /> Fig. 8: fuerzas sobre la espira. Las verticales se anulan, las horizontales no están sobre la misma recta[/caption]
+En la figura podemos ver que la distancia <em>d</em> entre las líneas de aplicación de las fuerzas de los segmentos verticales es igual a $b \sin\left(\theta\right)$; tenemos pues dos fuerzas de igual valor, sentido contrario, y diferente línea de acción, aplicadas sobre un objeto: constituyen un <a href="https://es.wikipedia.org/wiki/Par_de_fuerzas">par de fuerzas</a>, que ejercerán un momento angular que provocará un giro  de la espira (movimiento circular acelerado); el momento resultante será $M=F\cdot d=IBa\cdot d=IBab\sin\left(\theta\right)$.</p>
+
+<p>Usando cálculo integral, puede mostrarse que este resultado se cumple para espiras de cualquier forma, incluso circulares u ovaladas. (Fernandez-Pujal, 1973)</p>
+
+<h2 id="campo-magnético-inducido-por-una-corriente-rectilínea">Campo magnético inducido por una corriente rectilínea</h2>
+
+<p>Hemos visto que una corriente eléctrica de intensidad I crea un campo magnético. En el caso ideal simple de que la corriente sea rectilínea “indefinida” (hilo conductor muy largo en comparación al espacio que estamos estudiando) por consideraciones de simetría tendremos que la magnitud de B sólo puede depender de la distancia r al conductor. Lo mismo puede decirse de la fuerza F resultante, dada por la expresión [2]. Además, vimos que esta fuerza puede deducirse por aplicación de la relatividad restringida, y vimos que será perpendicular al conductor (figura 6). Siendo además que esta fuerza F es a su vez perpendicular al campo B, encontramos que los vectores F, B han de ser como los de la figura 9.</p>
+
+<p>[caption id=”attachment_150148” align=”aligncenter” width=”442”]<img src="/assets/images/magnetisme10.png" alt="Fig. 9: campo magnético y fuerza resultante inducida por una corriente rectilínea" /> Fig. 9: campo magnético y fuerza resultante inducida por una corriente rectilínea: F es radial, y B es tangencial.[/caption]
+Vectorialmente podemos expresar este resultado con la siguiente expresión, conocida como ley de <a href="https://es.wikipedia.org/wiki/Ley_de_Biot-Savart">Biot-Savart</a>:</p>
+
+<p>$\overrightarrow B=K\cdot\frac{\overrightarrow l\times\overrightarrow r}{r^3}$[5]</p>
+
+<p>donde $\overrightarrow l$ es el vector intensidad de corriente, que tiene por módulo la intensidad de corriente I y por dirección la del hilo conductor, el vector $\overrightarrow r$ es el vector radial, que apunta al punto P donde queremos obtener el campo B, y es perpendicular al hilo conductor, y la constante K depende del medio, en el sistema internacional  y en el vacío vale 10⁻⁷</p>
+
+<p> <strong>Ejemplo 3</strong>: A lo largo de un hilo conductor muy largo, alineado en la dirección del vector unitario $(1,0,0)$ circula una corriente de 1A; calcular el campo magnético en el punto P(1, 1, 1). Si colocamos en ese punto una carga q = 0.1C, ¿que fuerza se ejercerá sobre ella?</p>
+
+<p>Aplicamos [5]; necesitamos antes obtener el vector radial de P, que en este caso será simplemente (0, 1, 1). Entonces:</p>
+
+<p>$\overrightarrow B=K\cdot\frac{\overrightarrow l\times\overrightarrow r}{r^3}=\frac K{2^{3/2}}\begin{bmatrix}1\0\0\end{bmatrix}\times\begin{bmatrix}1\1\1\end{bmatrix}=\frac K{2^{3/2}}\begin{vmatrix}i&amp;j&amp;k\1&amp;0&amp;0\1&amp;1&amp;1\end{vmatrix}=\frac K{2^{3/2}}\begin{bmatrix}0\-1\1\end{bmatrix}$</p>
+
+<p>La fuerza ejercida sobre la carga viene dada por [2], y será cero, pues la velocidad de la carga es cero: sólo se ejerce fuerza magnética sobre cargas en movimiento.</p>
+
+<p>##</p>
+
+<h3 id="bibliografía">Bibliografía</h3>
+
+ 	- Julián Fernández - Marcos Pujal: Iniciación a la Física
+
+ 	- E. M. Purcell: Electricidad y Magnetismo
+
+ 	- Feynmann: Física, volumen 3, Electromagnetismo y materia
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/campo-magnético">Campo magnético</a>, <a href="/tag/magnetismo">magnetismo</a>, <a href="/tag/producto-vectorial">producto vectorial</a>, <a href="/tag/relatividad-especial">Relatividad especial</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

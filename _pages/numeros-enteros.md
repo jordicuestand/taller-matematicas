@@ -4,6 +4,7 @@ title: "Teoría de Números"
 date: 2015-10-30 10:06:50 +0000
 math: true
 ---
+{% raw %}
 
 **Números enteros**
 
@@ -16,3 +17,4 @@ math: true
 **Números complejos**
 
  	- [Los números complejos](http://tallermatematic.ovh/wp/index.php/2016/10/12/los-numeros-complejos/)
+{% endraw %}

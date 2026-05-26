@@ -4,6 +4,7 @@ title: "Una variable"
 date: 2014-08-31 17:30:34 +0000
 math: true
 ---
+{% raw %}
 
 **Cálculo con Funciones reales de variable real**
 
@@ -72,3 +73,4 @@ math: true
  	- [Examen resuelto de Cálculo ](http://tallermatematic.ovh/wp/index.php/2016/10/16/examen-1-resuelto-de-calculo/)
 
  	- [Otro examen resuelto de cálculo](http://tallermatematic.ovh/wp/index.php/2016/10/16/examen-2-de-calculo/)
+{% endraw %}

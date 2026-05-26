@@ -15,6 +15,7 @@ tags:
   - "Teorema de Gauss"
 math: true
 ---
+{% raw %}
 
 ### Vector campo eléctrico
 
@@ -252,3 +253,4 @@ $\overrightarrow E\left(P\right)=\frac43k\pi\rho\cdot\overrightarrow{OO}'=\frac4
 Observemos que E es un vector constante dirigido según la recta OO' (el vector **d** de módulo igual a la distancia *d* entre centros).
 
 [caption id="attachment_150835" align="aligncenter" width="205"]![](/assets/images/esfera_cavitat.png) El campo en el interior de una cavidad dentro de una esfera uniformemente cargada es constante[/caption]
+{% endraw %}

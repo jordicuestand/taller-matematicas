@@ -4,6 +4,7 @@ title: "Problemas de estimación de parámetros"
 date: 2015-11-18 11:15:38 +0000
 math: true
 ---
+{% raw %}
 
 **1.** Se da a un grupo de 9 personas un curso de Estadística, realizando a cada persona un test de conocimientos antes y después del curso, para ver si se ha obtenido mejora; los resultados obtenidos fueron:
  
@@ -157,3 +158,4 @@ Derivando:
 $\frac{17}p-\frac{13}{1-p}=0\Leftrightarrow\boxed{\widehat p=\frac{17}{30}}$
 
 Observar que en el paso final hemos sustituido el parámetro p por su estimador $\widehat p$, pues realmente el parámetro p es desconocido, los que hacemos es realizar una estimación.
+{% endraw %}

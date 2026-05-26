@@ -18,6 +18,7 @@ tags:
   - "resistencia serie"
 math: true
 ---
+{% raw %}
 
 ### Generador eléctrico, f.e.m.
 
@@ -164,3 +165,4 @@ Finalmente para el punto D sumamos los 16V de la f.e.m. V3, resulta $V_D=V_C+16=
  
 
 Los circuitos de este post han sido dibujados con la herramienta on-line easyeda.com
+{% endraw %}

@@ -11,6 +11,7 @@ tags:
   - "integral doble"
 math: true
 ---
+{% raw %}
 
 # Integral de Riemann en dos dimensiones (integral doble)
 
@@ -221,3 +222,4 @@ $\begin{array}{l}\int_0^{\pi/2}\left(\frac{2sin\left(\theta\right)-cos\left(\the
 **2.** Calcular el volumen cortado en el [paraboloide](https://es.wikipedia.org/wiki/Paraboloide) x² + y² = z por el plano z = 2 + 2x + 2y.
 
 **3**. Calcular el volumen interior a la superficie $x^\frac23+y^\frac23+z^\frac23=a^\frac23$  usando el cambio de variables x = r·cos²(θ), y = r·sin²(θ).
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Ecuaciones diferenciales"
 date: 2015-07-08 19:03:03 +0000
 math: true
 ---
+{% raw %}
 
 **Ecuaciones diferenciales ordinarias**
 
@@ -26,3 +27,4 @@ math: true
 	- [Estabilidad de soluciones: introducción](http://tallermatematic.eu/wp/?p=1227)
 
 	- [Problemas de EDO no lineales, de segundo orden y orden superior](http://tallermatematic.eu/wp/?p=1124)
+{% endraw %}

@@ -4,6 +4,7 @@ title: "Transformada de Laplace"
 date: 2015-06-12 15:11:47 +0000
 math: true
 ---
+{% raw %}
 
 # Introducción
 
@@ -148,3 +149,4 @@ $\begin{array}{l}\frac1{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}=\f
 entonces, usando la tabla de transformadas, tenemos que el desplazamiento x(t) es:
 
 $\begin{array}{l}x\left(t\right)=\mathcal{L}^{-1}\left[\frac{F\omega}{\left(z^2+\omega_0^2\right)\left(z^2+\omega^2\right)}\right]=\mathcal{L}^{-1}\left[\frac{F\omega}{\omega^2-\omega_0^2}\left(\frac1{z^2+\omega_0^2}-\frac1{z^2+\omega^2}\right)\right]=\\\frac{F\omega}{\omega^2-\omega_0^2}\left[\mathcal{L}^{-1}\left(\frac1{z^2+\omega_0^2}\right)-\mathcal{L}^{-1}\left(\frac1{z^2+\omega^2}\right)\right]=\\\frac{F\omega}{\omega^2-\omega_0^2}\left[\frac1{\omega_0}\sin\left(\omega_0t\right)-\frac1\omega\sin\left(\omega t\right)\right]\end{array}$
+{% endraw %}

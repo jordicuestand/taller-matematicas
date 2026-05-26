@@ -4,6 +4,7 @@ title: "Problemas de EDO no lineales, de segundo orden y orden superior"
 date: 2015-09-05 09:42:47 +0000
 math: true
 ---
+{% raw %}
 
 **1.** Resolver $y'''+y''-2y'=-e^x$
 
@@ -124,3 +125,4 @@ $\begin{array}{l}u\left(x\right)=\frac{\begin{vmatrix}\sin\left(x\right)&amp;\si
 La solución particular es:
 
 $\begin{array}{l}y=u\left(x\right)\cdot\sin\left(2x\right)+v\left(x\right)\cdot\cos\left(2x\right)=\\-\sin\left(x\right)\cos\left(x\right)\cdot\sin\left(2x\right)-\sin^2\left(x\right)\left[2\cos^2\left(x\right)+\cos\left(2x\right)\right]\cdot\cos\left(2x\right)\end{array}$
+{% endraw %}

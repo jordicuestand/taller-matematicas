@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1st-order ordinary differential equations — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>1st-order ordinary differential equations</h1>
+    <p class="meta">
+      22/02/2015
+      
+        · <a href="/categoria/mathematics">Mathematics</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<ul>
+  <li><a href="#separables">Separable equations</a></li>
+</ul>
+
+ 	- <a href="#singulares">Unique solutions</a>
+
+ 	- <a href="#envolvente">Enveloping curve of a beam of curves</a>
+
+ 	- <a href="#homogeneas">Homogeneous functions. Application to differential equations</a>
+
+ 	- <a href="#exactas">Exact equations</a>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separator2" /></a></p>
+<h2 id="separable-equations">Separable equations</h2>
+
+<p>The separable differential equations are those of the form $dy / dx = H (x, y)$ where $H (x, y)$ can be expressed either as the quotient $H (x, y) = f (x) / g (y)$ or as the product $H (x, y) = f (x) text {·} g (y)$.</p>
+
+<p>In the first case, $dy / dx = f (x) / g (y) Rightarrow g (y) dy = f (x) dx Rightarrow int g (y) dy = int f (x) dx + C$, while in the second case $dy/dx=f(x) text{·} g(y) Rightarrow g^{-1}(y)dy=f(x)dx Rightarrow int g^{-1}(y)dy = int f(x)dx+C.$</p>
+
+<p><strong>Example 1</strong>: Solve the differential equation $x^{2}frac{dy}{dx}=frac{x^{2}+1}{3y^{2}+1}.$
+Let’s take $H(x,y)=frac{left(x^{2}+1right)/x^{2}}{3y^{2}+1}=frac{f(x)}{g(y)}$ so that $int f(x)dx=intfrac{x^{2}+1}{x^{2}}dx=x-frac{1}{x},
+int g(y)dy=intleft(3y^{2}+1right)dy=y^{3}+y$ and therefore the solution will be given implicitly by $y^{3}+y=x-frac{1}{x}+C.$</p>
+
+<p><strong>Example 2</strong>: Find all the solutions of the equation $dy/dx=2xsqrt{y-1}.$</p>
+
+<p>Let’s $H(x,y) = 2x sqrt{y-1} = f(x) text{·} g(y),$ and let’s integrate each function: $int f(x)dx=int2xdx=x^{2};
+int g^{-1}(y)dy=intfrac{1}{sqrt{y-1}}dy=2sqrt{y-1}.$ Solutions are $2sqrt{y-1}=x^{2}+CRightarrow y=left(frac{x^{2}+C}{2}right)^{2}+1
+.$ Note that the function $y (x) = 1$ is also a solution of the equation, but it is not included in the general solution $y = left ( frac {x ^ {2} + C} {2} right) ^ {2} +1,$ that is to say that for all <em>C</em> we will have $y = left (frac {x ^ {2} + C} {2} right) ^ {2} +1 neq1$. We call solutions not included in the general solution <strong>singular solutions</strong> of the differential equation.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separator2" /></a></p>
+
+<h2 id="unique-solutions">Unique solutions</h2>
+
+<p>In example 2 we have seen that we can have solutions that are not included in the general solution, called singular solutions. When will this happen and how can we find those other solutions? Let’s remember what we have seen in the post <a href="http://tallermatematic.eu/wp/?p=844">Ordinary differential equations: introduction</a>, section “Bundle of curves and differential equations of the first order”: the general solution of the ordinary differential equation $y'=F(x,y)$ represents a bundle of curves $y=f(C,x)$ such that each curve of that beam satisfies the equation, that is, for each point $(x, y)$ the slope of any of the curves $y=f(C,x)$ at that point fulfills $y'=F(x,y)$.</p>
+
+<h3 id="enveloping-curve-of-a-bundle-of-curves-and-singular-solution">Enveloping curve of a bundle of curves and singular solution</h3>
+
+<p>[caption id=”attachment_868” align=”alignnone” width=”436”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png"><img src="/assets/images/Feix_corbes_env1.png" alt="Two one-beam lines (blue and red) and beam envelope curve (green)" /></a> Two one-beam lines (blue and red) and beam envelope curve (green)[/caption]
+Given a bundle of curves $F(x,y,C)=0$ the curve $f(x,y)$ is called the beam envelope curve such that it is tangent to all the curves of the beam.</p>
+
+<p><strong>Example 3</strong>: The image shows two lines of the line bundle $y=(1-10/C)*x+(10-C)$, specifically the two lines corresponding to the values $C=3$ in red and $C=6$ in blue, and the enveloping curve of the beam, which is tangent to the first line at a point close to $x=1,  y=5$ and the second line about $x=3.5, y=1.5$.</p>
+
+<p>Remember that we can associate to any bundle of curves $F(x,y,C)=0$ a differential equation $y'=f(x,y)$ such that the beam is the general solution of the equation: for each value of C, we have a curve of the beam such that its derivative verifies$y'=f(x,y)$. But we have seen that the enveloping curve is tangent to all the curves of the beam, that is, its derivative at each point coincides with the derivative of one of the curves of the beam; this is why the enveloping curve is also a solution of the differential equation of the beam.</p>
+
+<p><strong>Example 4</strong>.Consider the parabolal bundle $4y=(x + C)^2$, all curves are tangent to the X axis at some point; the image depicts three of the beam curves, tangent to $y=$0 at points $x=-3, -2, -$1.</p>
+
+<p>[caption id=”attachment_866” align=”alignnone” width=”502”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png"><img src="/assets/images/Feix_corbes_env.png" alt="Parabola beam 4y=(x + C)²" /></a> Parabola beam 4y=(x + C)²[/caption]
+What is the differential equation of the curve beam? We derive with respect to <em>x *the equation of the beam: $4y'=2(x + C)$, and eliminate the constant *C</em> using this equality and the equation of the beam:</p>
+
+<p>$left.begin{array}{r}4y'=2(x+C)Rightarrow C=2y'-x\4y=(x;+; C)^2end{array}right}Rightarrow4y=(2y'{)^2=4y'^2}Rightarrow y=y'^2.$
+Note that the line $y=0$, being tangent to all the curves of the beam, has the same derivative as the curves of the beam at each point on the X axis; therefore, it also verifies the differential equation of the beam. In general: if there exists an enveloping curve that is tangent to all the curves of a beam, then that curve will be a singular solution of the differential equation of the beam.</p>
+
+<h4 id="calculating-the-envelope-of-a-beam-of-curves">Calculating the envelope of a beam of curves</h4>
+
+<p>Given any value $x=x_0$, the envelope will have the same derivative at that point as some curve of the beam, that is, there will be a constant C, dependent on $x=x_0$, such that the derivative of the beam curve $F(x_0,y,C)=0$ will have the same value at that point. We dispense with $x_0$: in general for each x we will have a C(x). Let us derive with respect to x the expression of the beam, taking into account that y also depends on x, using the rule of the chain and the implicit derivation:</p>
+
+<p>$F(x,y,C)=0Rightarrowfrac{operatorname d{F(x,y,C)}}{operatorname dx}=frac{partial F(x,y,C)}{partial x}+frac{partial F(x,y,C)}{partial y}frac{operatorname dy}{operatorname dx}=frac{partial F(x,y,C)}{partial x}+frac{partial F(x,y,C)}{partial y}y'=0$</p>
+
+<p>We clear y’ to obtain the derivative at any point of any curve of the beam:</p>
+
+<p>$y'=-frac{partial F(x,y,C)}{partial x}left(frac{partial F(x,y,C)}{partial y}right)^{-1}.$</p>
+
+<p>We now turn to the enveloping curve; at the contact points $(x,y)$ between each curve and the envelope the derivatives match the curves of the beam; in each given value x we will have determined a C(x), as the value y(x) also coincides with that of the beam, we will have that at the point of contact $F(x,y,C(x))$ is fulfilled. We derive again with respect to x:</p>
+
+<p>$begin{array}{l}F(x,y,Cleft(xright))=0Rightarrow\frac{operatorname d{F(x,y,Cleft(xright))}}{operatorname dx}=frac{partial F(x,y,C)}{partial x}+frac{partial F(x,y,C)}{partial y}frac{operatorname dy}{operatorname dx}+frac{partial F(x,y,C)}{partial C}frac{operatorname dC}{operatorname dx}=frac{partial F(x, y,C)}{partial x}+frac{partial F(x,y,C)}{partial y}y'+frac{partial F(x,y,C)}{partial C}C'=0end{array}.$</p>
+
+<p>We clear and’:</p>
+
+<p>$y'=left(frac{partial F(x,y,C)}{partial y}right)^{-1}left[frac{partial F(x,y,C)}{partial x}+frac{partial F(x,y,C)}{partial C}C’right].$</p>
+
+<p>The two expressions for the derivative y’ must be equal:</p>
+
+<p>$y'=left(frac{partial F(x,y,C)}{partial y}right)^{-1}left[frac{partial F(x,y,C)}{partial x}+frac{partial F(x,y,C)}{partial C}C’right]=left(frac{partial F(x,y,C)}{partial y}right)^{-1}left[frac{partial F(x,y,C)}{partial x}right].$</p>
+
+<p>We see that it must be: $frac{partial F(x,y,C)}{partial C}C'=0,$ that has two possible solutions, the trivial $C'=0Rightarrow C=cte$ and the condition $frac{partial F(x,y,C)}{partial C}=0.$ The first is an unimportant solution because it tells us that the constant C will not depend
+of x (degenerate curve beam: all curves are equal), while the second is the general condition to be met by the envelope.</p>
+
+<p><strong>Example 5</strong>: Find the expression of the enveloping curve of the line bundle of example 3, $y=(1-10/C)*x+(10-C).$</p>
+
+<p>We express it in the form $F(x,y,C)=y-(1-10/C)ast x-(10-C)=0$ to derive with respect to C and equal to zero:</p>
+
+<p>$frac{partial{F(x,y,C)}}{partial C}=frac{-10}{C^2}x+1=0Rightarrow C=sqrt{10x}.$</p>
+
+<p>We substitute this value in the expression of the beam to remove C and get the equation of the envelope:</p>
+
+<p>$F(x,y)=y(1-frac{10}{sqrt{10x}})x+(10-sqrt{10x})=y-10-x+2sqrt{10x}=0.$</p>
+
+<p>The envelope is $y=10+x-2sqrt{10x}.$</p>
+
+<p><strong>Example 6</strong>: Calculate the envelope of the curve beam $4y=(x + C)^2$ of example 4.</p>
+
+<p>$begin{array}{l}F(x,y,C)=4y-(x+C)^2=0;\frac{partial F}{partial C}=2(x+C)=0Rightarrow C=-x;\F(x,y)=4y-(x-x)^2=4y=0Rightarrowboxed{y=0}.end{array}$</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separator2" /></a></p>
+<h2 id="homogeneous-functions-application-to-differential-equations">Homogeneous functions. Application to differential equations.</h2>
+
+<p>A function $F(x,y)$ is homogeneous of degree n if $F(lambda x,lambda y)=lambda^nF(x,y)$ for every parameter $lambdaneq0.$ Per example, the function $F(x,y)=xy-x^2$ is homogeneous of degree 2, since $F(lambda x,lambda y)=lambda xlambda y- ( lambda x)^2=lambda^2F(x,y).$</p>
+
+<p>In the special case that $F(x,y)$ is homogeneous of degree 0 we have $F(lambda x,lambda y)=F(x,y)$, and gives us a method of solving differential equations $y'=F(x,y)$ in which the F is homogeneous of degree 0: with the change of variable $u=y/x$ they become equations of separate variables. Indeed:</p>
+
+<p>$begin{array}{l}u=y/xLeftrightarrow y=uxRightarrow y'=u'x+u;\y'=F(x,y)Leftrightarrow u'x+u=F(x,ux)=F(1,u)end{array}$</p>
+
+<p>where we have used the x instead of the $lambda$ as a parameter of the homogeneous. Then</p>
+
+<p>$begin{array}{l}frac{du}{dx}x+u=F(u)Leftrightarrowfrac{du}{dx}x=F(u)-uLeftrightarrowfrac{du}{F(u)-u}=frac{dx}xLeftrightarrow\intfrac{du}{F(u)-u}=intfrac{dx}x=lnleft(xright)+Cend{array}.$</p>
+
+<p><strong>Example 7</strong>: Solve $y'=frac y{sqrt{x^2+y^2}-x}.$</p>
+
+<p>$F(lambda x,lambda y)=frac{lambda y}{sqrt{lambda^2x^2+lambda^2y^2}-lambda x}=frac{lambda y}{lambdaleft(sqrt{x^2+y^2}-xright)}=frac y{sqrt{x^2+y^2}-x}$ then it is homogeneous of degree 0. We make the change $u=y/x$ to get it to be of separate variables:</p>
+
+<p>$begin{array}{l}y'=u'x+u=frac{ux}{sqrt{x^2+u^2x^2}-x}=frac u{sqrt{1+u^2}-1};\frac{du}{dx}x=frac u{sqrt{1+u^2}-1}-u=frac{uleft(sqrt{1+u^2}+1right)}{1+u^2-1}-u=frac{sqrt{1+u^2}+1}u-u=\frac{sqrt{1+u^2}+1-u^2}u;\frac{udu}{sqrt{1+u^2}+1-u^2}= frac{dx}x\end{array}.$</p>
+
+<p>Then $intfrac{udu}{sqrt{1+u^2}+1-u^2}=intfrac{dx}x=lnleft(xright)+C.$ In the first integral we make the variable change $1+u^2=t^2$ that makes it:</p>
+
+<p>$intfrac{udu}{sqrt{1+u^2}+1-u^2}=intfrac{toperatorname dt}{t+1-left(t^2-1right)}=intfrac{toperatorname dt}{-t^2+t+2},$</p>
+
+<p>that it is of a rational type; we decompose into simple fractions:</p>
+
+<p>$begin{array}{l}intfrac{toperatorname dt}{-t^2+t+2}=intfrac{-1/3}{t+1}+intfrac{-2/3}{t-2}=-frac13lnleft(t+1right)-frac23lnleft(t-2right)=-frac13lnleft(left(t+1right)left(t-2right)^2right)=lnleft(left(t+1right)left(t-2right)^2right)^{-1/3}end{array}.$</p>
+
+<p>We equate the two integrals, and undo the changes to obtain the general solution implicitly:</p>
+
+<p>$begin{array}{l}lnleft(left(t+1right)left(t-2right)^2right)^{-1/3}=lnleft(xright)+CLeftrightarrow\Cx=left(left(t+1right)left(t-2right)^2right)^{-1/3}=left(t^3-3t^2+4right)^{-1/3}Leftrightarrow\frac C{x^3}=left(u^2+1right)^{3/2}-3u^2+1Leftrightarrow\C=x^3left[left(left(frac yxright)^2+1right)^frac32-3left(frac yxright)^2+1right].end{array}.$</p>
+
+<h4 id="reduction-to-homogeneous">Reduction to homogeneous</h4>
+
+<p>The rational functions of form</p>
+
+<p>$F(x,y)=frac{ax+by+c}{a'x+b'y+c'}$
+they are only homogeneous of degree 0 when $c=c'=0$, however if we think of the numerator and denominator of the function as if they were two lines $ax+by+c=0,;a'x+b'y+c'=0$, we can try to find its intersection point $(x_0,y_0)$, if it exists, then the variable change $X = x - x_0,  Y = y - y_0$ (which is a translation of the xy axes to the XY axes, taking as the coordinate origin the point $(x_0,y_0)$), converts the function into homogeneous of degree 0.</p>
+
+<p><strong>Example 8</strong>: Solve $y'=frac{y-x-1}{x+y-1}.$</p>
+
+<p>We find the intersection of the lines:</p>
+
+<p>$left.begin{array}{r}y-x-1=0\x+y-1=0end{array}right}y=1,;x=0$</p>
+
+<p>we make the change $X=x, Y=y-1$ which transforms the equation into:</p>
+
+<p>$y'=frac{y-x-1}{x+y-1}Leftrightarrow Y'=frac{Y-X}{X+Y}$</p>
+
+<p>containing a homogeneous $f(X,Y)$ function of degree 0; we make the change $u=Y/X$ to separate the variables:</p>
+
+<p>$begin{array}{l}u'X+u=frac{u-1}{1+u}Leftrightarrowfrac{operatorname du}{operatorname dX}X=frac{u-1}{1+u}-u=frac{-1-u^2}{1+u}=-frac{1+u^2}{1+u};\intfrac{1+u}{1+u^2}operatorname du=intfrac{operatorname dX}X=lnleft(Xright)+Cend{array}.$</p>
+
+<p>We decompose the first integral:</p>
+
+<p>$begin{array}{l}intfrac{1+u}{1+u^2}=intfrac1{1+u^2}+intfrac u{1+u^2}=tan^{-1}left(uright)+frac12intfrac{2u}{1+u^2}=\tan^{-1}left(uright)+frac12lnleft(1+u^2right)end{array}.$</p>
+
+<p>We equalize integrals and undo the change:</p>
+
+<p>$begin{array}{l}-tan^{-1}left(uright)-frac12lnleft(1+u^2right)=lnleft(Xright)+C=lnleft(CXright)Leftrightarrow-tan^{-1}left(frac YXright)=lnleft(CXleft(1+left(frac YXright)^2right)right);\lnleft(Cxleft(1+left(frac{y-1}xright)^2right)right)+tan^{-1}left(frac{y-1}xright)=0.\end{array}$</p>
+
+<h4 id="special-case-the-lines-are-parallel">Special case: the lines are parallel</h4>
+
+<p>In the special case that the two lines have no intersection, then they are parallel, with proportional director vectors: $frac ba=frac{b'}{a'}=r$; but then we can do</p>
+
+<p>$F(x,y)=frac{ax+by+c}{a'x+b'y+c}=frac{a'rx+b'ry+c}{a'x+b'y+c}=frac{rleft(a'x+b'yright)+c}{a'x+b'y+c},$</p>
+
+<p>with variable change $Y=a'x+b'y$ becomes</p>
+
+<p>$begin{array}{l}F(x,Y)=frac{rY+c}{Y+c'};;y=frac{Y-a'x}{b'}Rightarrowfrac{operatorname dy}{operatorname dx}=frac1{b'}left(frac{operatorname dY}{operatorname dx}-a'right);\frac{operatorname dy}{operatorname dx}=F(x,y)Leftrightarrowfrac1{b'}left(frac{operatorname dY}{operatorname dx}-a'right)=frac{rY+c}{Y+c'}Leftrightarrow\frac{operatorname dY}{operatorname dx}=b'frac{rY+c}{ Y+c'}+a'end{array}$</p>
+
+<p>which is of separate variables.</p>
+
+<p><strong>Example 9</strong>: $y'=frac{x+y+1}{x+y-1}.$</p>
+
+<p>The lines $x+y+1=0$ and $x+y-1$ have no intersection, they are parallel; we make the change $Y=x+y, Y'=1+y'$ to obtain:</p>
+
+<p>$begin{array}{l}Y'-1=frac{Y+1}{Y-1};;frac{operatorname dY}{operatorname dx}=frac{Y+1}{Y-1}+1=frac{Y+1+Y-1}{Y-1}=frac{2Y}{Y-1};\intfrac{Y-1}{2Y}operatorname dY=intoperatorname dx;\frac12intleft(1-frac1Yright)operatorname dY=x+C;\Y-lnleft(Yright)=2x+C;\x+y-lnleft(x+yright)=2x+C;\y=x+lnleft(x+yright)+C.end{array}$</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separator2" /></a></p>
+
+<h2 id="exact-equations">Exact equations</h2>
+
+<p>The equations of the form $M (x, y) + N (x, y) frac {dy} {dx} = 0,$ or equivalently, $M (x, y) dx + N (x, y) dy = 0$, we will say that they are exact as long as M and N are continuous functions and
+check the condition $frac {partial M} {partial y} = frac {partial N} {partial x}.$</p>
+
+<p>The solution will be given implicitly by $F (x, y) = C$ where $frac {partial F} {partial x} = M, : frac {partial F} {partial y} = N.$</p>
+
+<p><strong>Example 10</strong>: The equation $y^{3} dx + 3xy^{2} dy = 0$ is exact, because $N = 3xy^{2}, frac{partial N} {partial x} = 3y^{2}, : M = y^{3}, : frac {partial M} {partial y} = 3y^{2}.$ As $frac {partial F} {partial x} = M,$ will be $F (x, y) = int MDX = xy^{3} + C (y)$ and also $F (x, y) = int Ndy = xy^{3} + C (x);$ equalizing the two expressions we have $F (x,  y) = xy^{3}, C(x) = C(y) = 0,$ so the general solution is $xy^{3} = C.$</p>
+
+<p><strong>Example 11</strong>: Solve the differential equation $left (6xy-y^{3} right) dx + left (4y + 3x^{2} -3xy^{2} right) dy = 0.$</p>
+
+<p>As $M = 6xy-y^{3}, N = 4y + 3x^{2} -3xy^{2}, frac {partial N} {partial x} = 6x-3y^{2} = frac {partial M} {partial y},$ the equation is exact. Then</p>
+
+<p>$F (x, y) = int Ndy = 2y^{2} + 3x^{2} y-xy^{3} + C (x), F (x, y) = int MDX = 3x^{2} y-xy^{3} + C(y),$</p>
+
+<p>and when we equalize the two expressions we get $C (y) = 2y^{2}.$</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: 
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

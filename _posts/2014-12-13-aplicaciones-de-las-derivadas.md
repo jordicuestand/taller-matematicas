@@ -4,6 +4,7 @@ title: "Aplicaciones de las derivadas"
 date: 2014-12-13 18:34:12 +0000
 math: true
 ---
+{% raw %}
 
 - Màximos y mínimos locales
 
@@ -239,3 +240,4 @@ En los puntos en que se anula $f''(x)$ tenemos $f'(\pm2)=-\frac{10\cdot\left(\pm
 La gráfica de la función es:
 
 [![save (2)](/assets/images/save-2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/save-2.png)
+{% endraw %}

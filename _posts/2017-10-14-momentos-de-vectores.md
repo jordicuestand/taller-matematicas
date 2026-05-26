@@ -15,6 +15,7 @@ tags:
   - "vector deslizante"
 math: true
 ---
+{% raw %}
 
 ### Introducción
 
@@ -261,3 +262,4 @@ y estan aplicados en los puntos O(-1, 2, 1) y S(2,2,11/2). Junto con el vector R
  	- vector equipolente $w'=\left(\frac{17}6,\frac43,\frac{17}6\right)$ aplicado en S(2,2,11/2)
 
 ![](/assets/images/separador2.png)
+{% endraw %}

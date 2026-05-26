@@ -6,6 +6,7 @@ categories:
   - "Mathematics"
 math: true
 ---
+{% raw %}
 
 ## Motivation
 
@@ -101,3 +102,4 @@ The condition $P(0) = $1000 is called the **initial condition** because normally
 # Bibliography
 
 DIFFERENTIAL EQUATIONS - Theoretical summary and collection of solved and proposed exercises.
+{% endraw %}

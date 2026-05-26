@@ -12,6 +12,7 @@ tags:
   - "integral de Riemann"
 math: true
 ---
+{% raw %}
 
 De entre las muchas aplicaciones de la integral (cálculo de áreas y volúmenes, de longitudes de curvas, desarrollos en serie de Fourier, transformadas integrales, ecuaciones integrales, etc.) sólo veremos aquí unas pocas, ajustadas al nivel de estos apuntes: primer curso de ingeniería. Concretamente se tratan:
 
@@ -273,3 +274,4 @@ a la edad de 40 años se està cobrando el salario medio segun este estudio.
  
 
 **Problemas resueltos de cálculo** - Antiguo, económico y eficaz libro de problemas
+{% endraw %}

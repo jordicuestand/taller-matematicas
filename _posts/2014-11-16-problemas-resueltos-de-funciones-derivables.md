@@ -13,6 +13,7 @@ tags:
   - "regla de la cadena"
 math: true
 ---
+{% raw %}
 
 **1.** Derivar $y=\sqrt{\sqrt{\sqrt x.}}$
 La forma más simple de derivar esta función será, primero simplificar su expresión: utilizamos la notación de raíz en forma de potencia: $y=\sqrt{\sqrt{\sqrt x}}=\left(\left(x^\frac12\right)^\frac12\right)^\frac12=x^{\frac12\cdot\frac12\cdot\frac12}=x^\frac18$. Ahora usamos la derivada del monomio $(Ax^n)'=Anx^{n-1}$, que en este caso será $y'=\frac18x^{\frac18-1}=\frac18x^\frac78=\frac18\sqrt[8]{x^7}.$
@@ -255,3 +256,4 @@ $f''(0)=\lim_{x\rightarrow0\;}\frac{f'(x)-f'(0)}{x-0}=\lim_{x\rightarrow0\;}\fra
  y en general para la derivada n-èsima tendremos
 
 $f^n(0)=\lim_{x\rightarrow0}\frac2{x^ke^{\displaystyle\frac1{x^2}}}\rightarrow0.$
+{% endraw %}

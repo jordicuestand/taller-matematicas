@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordinary Differential Equations: Introduction — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Ordinary Differential Equations: Introduction</h1>
+    <p class="meta">
+      12/02/2015
+      
+        · <a href="/categoria/mathematics">Mathematics</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<h2 id="motivation">Motivation</h2>
+
+<p>The equations studied in Algebra, such as $x^{3}+7x^{2}+41=0$,
+they express static numerical relationships, and their solution is numbers that fulfill the equation. Now, the most interesting natural phenomena involve dynamic relationships and are best expressed with relationships between variable quantities, that is, with equations that are not static, but express variations and relationships between changing magnitudes: they are the differential equations.</p>
+
+<p>Recall that the derivative of a function $dy/dt=f'(t)$ can be interpreted as the proportion of change of the dependent variable $y$ with respect to the changes in the dependent variable $t$. That is why equations describing changes use derivatives of functions.</p>
+
+<p><em><strong>Definition 1</strong>: An equation containing an unknown function and one or more of its derivatives is called a <strong>differential equation</strong>. By solving it, we get functions $y = f(x)$ that verify the equation. If the function has only one independent variable, the equation is called the <strong>ordinary differential equation</strong>. If the function depends on two or more variables, the derivatives will be partial and the equation is called <strong>the partial differential equation</strong>. The order of a differential equation is that of the highest derivative that appears in the equation</em>.</p>
+
+<p>In this post we will only introduce ordinary differential equations, giving some definitions, and solving the most immediate ones.</p>
+
+<p><strong>Example 1</strong>: The variation of the temperature <em>T</em> of a body with respect to time is proportional to the difference $(T-A)$ where <em>A</em> is the temperature of the environment (<a href="http://es.wikipedia.org/wiki/Enfriamiento_newtoniano">Newton’s cooling law</a>). The physical law is represented by a first-order ordinary differential equation (EDO of order 1):</p>
+
+<p>$frac{dT}{dt}=kleft(T-Aright)$</p>
+
+<p><strong>Example 2</strong>: The variation with respect to the time of a population $P(t)$ with constant rates of birth and mortality is proportional to the size of the population, and is also an EDO of order 1:</p>
+
+<p>$frac{dP}{dt}=kP$</p>
+
+<p><strong>Example 3</strong>: <a href="http://es.wikipedia.org/wiki/Teorema_de_Torricelli">Torricelli’s law</a> states that the variation with respect to the time of volume <em>V</em> of water in a tank being emptied is proportional to the square root of the depth <em>and</em> water of the reservoir:</p>
+
+<p>$frac{dV}{dt}=-ky^{1/2}$</p>
+
+<p><strong>Example 4</strong>: The distance $x(t)$ traveled in the accelerated motion of a mass body <em>m</em> subjected to a variable force $F(t)$ is given by an EDO of order 2:</p>
+
+<p>$frac{d^{2}x}{dt}=frac{F(t)}{m}$</p>
+
+<p><strong>Definition 2</strong>: <em>A function $y = f(x)$ is called <strong>a solution of a differential equation</strong> if the equation is fulfilled when $y$ and its derivatives are replaced by $f(x)$ and their derivatives, respectively. A <strong>particular solution</strong> of a differential equation is any solution that is obtained by assigning concrete values to the constants in the general solution. In practice, particular solutions are obtained from initial conditions that provide the value of the dependent variable or any of its derivatives for a particular value of the independent variable.</em></p>
+
+<p><strong>Example 5</strong>: of the differential equation $y''-y=0$ are solutions: a) $y=sin(x)$, b) $y=4e^{-x}$  c) $y=Ce^{-x}$ for any real <em>C</em> value. Solution (b) is a particular solution obtained from general solution (c). Although less obvious, also solution a) is a particular solution obtained from the general solution (it can be seen using Taylor’s developments of the exponential function and the sine function).</p>
+<h3 id="bundle-of-curves-and-first-order-differential-equations">Bundle of curves and first-order differential equations</h3>
+
+<p>Another way to introduce differential equations is from the geometric point of view. Consider the graph of the function $y=Cx^2$ for all possible real values of <em>C</em>. The image represents the values <em>C=1, 2, 4, 8</em>.</p>
+
+<p>[caption id=”attachment_847” align=”alignnone” width=”497”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes.png"><img src="/assets/images/feix_corbes.png" alt="Curve beam y=Cx²" /></a> Curve beam y=Cx²[/caption]
+A <strong>bundle of plane curves</strong> is the set of all curves that are graphs of a general function $y=F(x,C)$. When we give <em>C</em> all possible values, the generated curves fill an <em>R</em> region of the plane; in the case of the image above that region is the entire upper half-plane $xinleft(-infty,inftyright),;yinleft[0,inftyright).$ In general the <em>R</em> region will depend on the beam.</p>
+
+<p>We ask ourselves now: for each point $(x,y)$ of the plane there will be a single value <em>C</em> such that it defines us unequivocally the function $y=F(x,C)$ that passes through that point? We can put it in these terms: fixing $x=x_0$ the function <em>F</em> becomes dependent only on <em>C</em>: $y=F(x_0,C)=f(C)$; For each value of <em>and</em> will there be a unique value of <em>C</em>? This will be the case as long as the function <em>f</em> is strictly increasing or decreasing in <em>R</em>, and that will happen when its derivative is not overridden: $frac{operatorname df}{operatorname dC}neq0$. In this case it is as if we had another function $C=psi(x,y)$ of two variables that determines <em>C</em> for each point in the plane.</p>
+
+<p>In the example of the previous image, fixing $x=x_0$ any we obtain $y=f(C)=Cx_0^2, f'(C)=x_0^2$, this value is always non-zero except in the origin of coordinates, therefore for the beam $y=Cx^2$ we have uniqueness in the sense that given a $left(x, yright)neqleft(0,0right)$ there is a single value $C=psi(x,y)=y/x^2$ that determines the curve that passes through that point; by the origin $(0,0)$ instead all the curves of the beam pass.</p>
+
+<p>If we derive the equation from the beam we obtain $y'=2Cx$, then, substituting the previous value $C=psi(x,y)$ we eliminate <em>the C</em> to obtain: $y'=2Cx=2left(frac y{x^2}right)x=frac{2y}x$, which is **the differential equation of the bundle of curves, **which is a first-order equation.</p>
+
+<p><strong>Example 6</strong>: Find the differential equation of the plane curved beam $y=Csin(x).$</p>
+
+<p>The R region is the union of the +X+Y and -X-Y quadrants, some curves are shown in the figure.</p>
+
+<p>[caption id=”attachment_848” align=”alignnone” width=”503”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes1.png"><img src="/assets/images/feix_corbes1.png" alt="Beam of curves y=C·Sin(x)" /></a> Beam of curves y=C·Sin(x)[/caption]</p>
+
+<p>Setting $x=x_0$ any we get $y=Csinleft(x_0right)=fleft(Cright);f'left(Cright)=sinleft(x_0right)$. This value will be zero whenever $x_0=kmathrmpi,;mathrm k=0,1,dots.$ In this set of points all the curves of the beam coincide, and in the rest of the points we have uniqueness: a single curve for each point, given by: $C=frac y{sinleft(xright)}=psi(x,y)$.</p>
+
+<p>Deriving the equation of the beam: $y'=Ccdotcosleft(xright).$ We substitute the value of <em>C</em>:</p>
+
+<p>$left.begin{array}{r}y'=Ccdotcosleft(xright)\C=frac y{sinleft(xright)}end{array}right}Rightarrow y'=frac{ycosleft(xright)}{sinleft(xright)}=frac y{tanleft(xright)}$
+<em><strong>Definition 2</strong>: The beam of curves $y=f(C,x)$ is the <strong>general solution of the ordinary differential equation</strong>; if we fix a value of $C=C_0$, we obtain a single curve of the beam, which we call <strong>the particular solution of the ordinary differential equation</strong>.</em></p>
+
+<p><strong>Example 7</strong>: The curve beam $y=Csin(x)$ is the general solution of the differential equation $y'=frac y{tanleft(xright)}$. By the point $left(frac{mathrmpi}2,3right)$ passes a single curve, $y=3Sin(x)$, which is a particular solution of the differential equation.</p>
+
+<h3 id="existence-and-uniqueness-of-the-solution-of-a-first-order-differential-equation">Existence and uniqueness of the solution of a first-order differential equation</h3>
+
+<p>We have seen that to obtain the differential equation of a beam of curves you have to derive and eliminate the constant. We now pose the inverse problem: given any differential equation, is there “its” bundle of curves as we have defined it? The following theorem answers us for the case of first-order equations.</p>
+
+<p><strong>Theorem 1</strong>: <strong>existence and uniqueness</strong>. If we have a differential equation given in the form $y'=f(x,y)$ such that the function f is derivable from all orders (there are all derivatives of any order) in an environment of $(x_0,y_0)$, then there exists a single curve $y(x)$ such that it passes through the point $(x_0,y_0)$ and satisfies the equation $y'=f(x, and).$</p>
+
+<h2 id="immediate-first-order-ordinary-differential-equations">Immediate first-order ordinary differential equations</h2>
+
+<p>We see in this section only the 1st order OEDs simplest to solve, in other posts we will see the more general cases.</p>
+<h3 id="equations-of-type-dydxfleftxright">Equations of type $dy/dx=fleft(xright)$</h3>
+
+<p>They are integrable directly, writing them as $dy=f(x)Rightarrow y=int f(x)dx+C.$</p>
+
+<p><strong>Example 8</strong>: Solving the differential equation $y'+x^{2}-1=e^{x}.$</p>
+
+<p>The equation is equivalent to $dy/dx=e^{x}-x^{2}+1Rightarrow y=intleft(e^{x}-x^{2}+1right)dx+C=e^{x}-frac{1}{3}x^{3}+x+C.$</p>
+<h3 id="equations-of-type-dydxky">Equations of type $dy/dx=ky$</h3>
+
+<p>If $y = f(x)$ is a function, the equations of type $dy / dx = ky$ have as a solution the set of functions $y (x) = Ce ^ {kx}$ where C is any real number. In general, a differential equation has infinite solutions.</p>
+
+<p><strong>Example 9</strong>: The solution of the equation $frac {dP} {dt} = kp$ which establishes the evolution of a population $P(t)$ with constant birth and mortality rates is any function of the form $y(x) = Ce^{kx}$.</p>
+
+<p><strong>Example 10</strong>: Suppose $P(t)$ is the population of a colony of bacteria at time <em>t,</em> that the population in $t = 0$ is 1000, and that the population doubles in one hour. Then we can say that</p>
+
+<p>$1000 = P(0)=C$
+$2000 = P(1)=Ce^{k}$</p>
+
+<p>therefore $C=$1000 and $k=ln2$, then $P(t)=1000e^{xtext{·} ln2}$.
+The condition $P(0) = $1000 is called the <strong>initial condition</strong> because normally the value $t = $0 is taken as the initial state. When we give an initial condition, the solution of the differential equation will no longer have infinite solutions in general, but will have only one, or perhaps none if the conditions are incompatible. Equivalently, by giving an initial condition we pass, if it exists, from the general solution to the particular solution that satisfies that condition. Thus, the initial condition $P (0) = - $1000 has no solution of the type $P(t) = Ce^{kt}$.</p>
+
+<p><strong>Example 11</strong>: To solve the equation $dy / dx = frac{x} {left (x^{2} +9 right)^{1/2}}$ with the initial condition $y(4)=2$ we do $y(x)=intfrac{x}{left(x^{2}+9right)^{1/2}}dx=left(x^{2}+9right)^{1/2}+C$, as $y(4)=left(16+9right)^{1/2}+C=5+C$ must be $C=-3$.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2.png" alt="separator2" /></a></p>
+<h1 id="bibliography">Bibliography</h1>
+
+<p>DIFFERENTIAL EQUATIONS - Theoretical summary and collection of solved and proposed exercises.</p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: 
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

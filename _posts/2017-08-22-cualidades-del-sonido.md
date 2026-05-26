@@ -17,6 +17,7 @@ tags:
   - "ultrasonidos"
 math: true
 ---
+{% raw %}
 
 ### Sonidos musicales y sonidos ruidosos
 
@@ -76,3 +77,4 @@ Ambas obras están descatalogadas, siendo textos excelentes, he intentado aprove
  	- M. Catalán, Andres León: Física y Química - Madrid, 1945
 
  	- J. Fernandez, M. Pujal: Iniciación a la Física - Barcelona, 1975
+{% endraw %}

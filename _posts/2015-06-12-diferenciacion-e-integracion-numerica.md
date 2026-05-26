@@ -4,6 +4,7 @@ title: "Diferenciación e integración numérica"
 date: 2015-06-12 17:25:20 +0000
 math: true
 ---
+{% raw %}
 
 ## Introducción
 
@@ -223,3 +224,4 @@ Calculamos los valores de la función que aparecen en la fórmula de Simpson:
 Sustituimos los valores en la fórmula:
 
 $\int_0^1\ln\left(\cos^2\left(x\right)\right)\operatorname dx\approx\frac{0.25}6\left[0+4\cdot\left(-0,01567\right)+2\cdot\left(-0,0632\right)+\dots+\left(-1,2313\right)\right]=-0,3751.$
+{% endraw %}

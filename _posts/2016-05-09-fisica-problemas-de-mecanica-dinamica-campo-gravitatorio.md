@@ -7,6 +7,7 @@ categories:
   - "Mecánica"
 math: true
 ---
+{% raw %}
 
 **1** - Un objeto se aleja de la Tierra a una velocidad radial de 5 m/s; observamos que 20 minutos después su velocidad ha pasado a ser de 4.5 m/s. ¿Cuál es la intensidad media del campo gravitatorio terrestre en ese intervalo?
 
@@ -45,3 +46,4 @@ $h=2639 Km$
 Este resultado es fácilmente generalizable a cualquier proporción p>1: $h=\left(sqrt {p-1}\right)R_T$
 
 ![separador2](/assets/images/separador2.png)
+{% endraw %}

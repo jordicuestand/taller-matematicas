@@ -14,6 +14,7 @@ tags:
   - "Schrödinger"
 math: true
 ---
+{% raw %}
 
 El estudio del comportamiento de sistemas muy pequeños, como las moléculas y los átomos, utilizando la ecuación de ondas de Schrödinger es una parte de la Mecánica Cuántica conocida por el nombre de Mecánica Ondulatoria; este post la trata a nivel técnico, para un introducción menos técnica a la ecuación de Schrödinger y a la Mecánica Cuántica en general recomiendo mi serie de artículos en el blog [http://matfisfil.blogspot.com.es/](http://matfisfil.blogspot.com.es/), concretamente el post [Entendiendo la mecánica cuántica](http://matfisfil.blogspot.com.es/2012/01/entendiendo-la-mecanica-cuantica.html).
 # La ecuación de Schrödinger
@@ -153,3 +154,4 @@ En la gráfica siguiente se representa la densidad de probabilidad u(x)² para l
 [caption id="attachment_150524" align="alignnone" width="647"]![](/assets/images/nivells-energia-basics.png) Densidad de probabilidad para los primeros niveles energéticos permitidos, caso de partícula confinada en una región (-a, a). La escala de la abcisa viene dada en fraciones de a.[/caption]
 
 Estas formas de la función de densidad de probabilidad recuerdan a las de las [ondas estacionarias de la cuerda vibrante](https://es.wikipedia.org/wiki/Cuerda_vibrante), que también presentant modos de vibración parecidos a los niveles energéticos cuánticos.
+{% endraw %}

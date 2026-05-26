@@ -12,6 +12,7 @@ tags:
   - "vector propio"
 math: true
 ---
+{% raw %}
 
 ## Vectores propios y valores propios
 
@@ -148,3 +149,4 @@ Vemos que es distinto de cero, luego efectivamente los vectores forman base. A c
 $det\begin{pmatrix}2-k&amp;-3&amp;0\\2&amp;-k&amp;0\\0&amp;-3&amp;-k\end{pmatrix}$
 
 y lo resolvemos de nuevo con WolframAlpha: el código es det {{2-k, 2, 0}, {-3, -k, -3}, {0, 0, -k}}, y el resultado $-k (k^2 - 2 k + 6)$, este polinomio tiene una única raíz real, k = 0, con lo cual la matriz no es diagonalizable (ver definición 2).
+{% endraw %}

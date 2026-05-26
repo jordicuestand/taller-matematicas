@@ -4,6 +4,7 @@ title: "Problemas de números enteros"
 date: 2015-10-29 20:27:22 +0000
 math: true
 ---
+{% raw %}
 
 **1.** ¿Cuál es el dígito correspondiente a las unidades del número 7²⁰¹⁴? Por ejemplo, el dígito correspondiente a las unidades del número 56789 es el 9. Ayuda: siendo 7²⁰¹⁴ demasiado grande para usar la calculadora, hay que utilizar la propiedades de las potencias de números enteros, concretamente una que dice así: *el dígito de las unidades para las potencias sucesivas de cualquier número entero toma siempre unos valores determinados de forma cíclica*; por ejemplo: 4¹ = 4, 4² = 16, 4³ = 64, 4⁴ = 256, 4⁵ = 1024, ... vemos que para las potencias de 4 las unidades siempre son o 4 o 6.
 
@@ -98,3 +99,4 @@ $\begin{array}{l}\log\left(\frac{10^{(N+1)}}{7^{2014}}\right)\;\;\;\;&gt;\;\log\
 Por tanto el número  7²⁰¹⁴  tiene N = 1702 cifras decimales.
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

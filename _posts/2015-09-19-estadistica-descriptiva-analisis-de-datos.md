@@ -22,6 +22,7 @@ tags:
   - "varianza"
 math: true
 ---
+{% raw %}
 
 - Estadística: concepto, contenido, aplicaciones
 
@@ -575,3 +576,4 @@ El histograma de frecuencias absolutas, para el pan de 1Kg, con indicación del 
 En este ejemplo vemos que la media aritmética no parece ser un buen representante de la distribución de pesos, simplemente es un valor central.
 
 [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

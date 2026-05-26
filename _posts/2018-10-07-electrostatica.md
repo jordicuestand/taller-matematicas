@@ -7,6 +7,7 @@ categories:
   - "Fí­sica"
 math: true
 ---
+{% raw %}
 
 Tales de Mileto (600 aC) observó que una barra de [ámbar](https://es.wikipedia.org/wiki/%C3%81mbar) (una resina vegetal) frotada con fuerza atraía y levantaba objetos pequeños; en griego el ámbar se llama "*elektron*", y de aquí vino que se llamara a estos fenómenos como "eléctricos".  William Gilbert (siglo XVI) descubre que sucede lo mismo con otros materiales, a los que llama materiales eléctricos, que hoy en dia llamamos  *materiales aislantes,* los cuales presentan este fenómeno de *electrización por frotamiento*.
 
@@ -146,3 +147,4 @@ $\frac{F_e}{F_g}=\frac{9\cdot10^9}{6,7\cdot10^{-11}}\frac{\left(1,6\cdot10^{-19}
 Vemos que la fuerza electrostática es prodigiosamente mayor que la gravitatoria. Imaginemos que tenemos dos máquinas de tren de 100 toneladas, que supondremos son de hierro,  cada una separadas a la distancia de 1 metro. La atracción gravitatoria entre ellas es despreciable comparada con la atracción de la Tierra sobre ellas. Supongamos que, por algún procedimiento, pudiéramos conseguir que uno de cada 100 millones de átomos del hierro (Fe) de las máquinas perdiera un sólo electrón, de los 55 que tiene cada uno. Sabiendo que un mol de Fe son 55gr, y que cada mol contiene el número de Avogradro de átomos, 6·10²³, obtenemos que cada locomotora contiene alrededor de 10³⁰ átomos de Fe, y por tanto 55·10³⁰ electrones. Al quitar uno de cada 100·10⁶ = 10⁸, quitariamos un total del 55·10²² electrones; como cada electrón tiene una carga de 1,6·10⁻¹⁹C, habría más carga positiva que negativa, siendo la carga total neta = 55·10²² · 1,6·10⁻¹⁹ = 8800 Coulomb ... esta es una carga enorme. En efecto, las dos locomotoras electrificadas se repelerian con una fuerza de 9·10⁹·(8800)² / 1 = 7·10¹⁷Newton, y serian aceleradas una respecto la otra con una aceleración a = F/m = 7·10¹⁷/10⁵ = 7·10¹², aproximadamente un billón de veces la aceleración de la gravedad: las locomotoras saldrian despedidas y en millonesimas de segundo alcanzarian una valocidad próxima a la de la luz.
 
 4. Ejercicio para el lector. Si quereis la solución, podeis contactar por la página den Facebook.
+{% endraw %}

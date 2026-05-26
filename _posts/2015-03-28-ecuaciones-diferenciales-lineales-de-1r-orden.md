@@ -14,6 +14,7 @@ tags:
   - "variación de constantes"
 math: true
 ---
+{% raw %}
 
 # Ecuación diferencial lineal de primer orden
 
@@ -125,3 +126,4 @@ El teorema siguiente nos asegura que, en ciertas condiciones, la solución de un
 *tiene una única solución (la que hemos obtenido, dando un valor adecuado a la constante C).*
 
 #
+{% endraw %}

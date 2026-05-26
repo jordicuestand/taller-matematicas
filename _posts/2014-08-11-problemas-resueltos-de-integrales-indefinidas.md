@@ -13,6 +13,7 @@ tags:
   - "integral inmediata"
 math: true
 ---
+{% raw %}
 
 **[Apuntes de Matemáticas](http://tallermatematic.eu/math/) -> Integración ****de funciones reales de variable real -> Problemas resueltos de integrales indefinidas**
 
@@ -385,3 +386,4 @@ Deshacemos el cambio de variable:
 $I=\frac{-1}{\sqrt{10}}\tan^{-1}\left(\sqrt{\frac25}\cos\left(x\right)\right).$
 
 ---
+{% endraw %}

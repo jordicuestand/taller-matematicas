@@ -7,6 +7,7 @@ categories:
   - "Termodinámica"
 math: true
 ---
+{% raw %}
 
 **1.** En un ciclo de Carnot ¿en qué isoterma se producirá mayor variación de entropía del sistema?**
 **
@@ -124,3 +125,4 @@ $\frac{T'-T}{T''}&lt;\frac{T'-T}{T'}=1-\frac T{T'}$ [2]
 Comparemos ahora $1-\frac T{T'}$ con $\ln\left(\frac{T'}T\right)$: llamemos $x=\frac{T'}T; f(x)=\ln\left(x\right); g(x) = 1 - 1/x$; derivando las funciones f, g vemos que sus pendientes son f'(x) = 1/x, g'(x) = 1/x², ambas funciones son crecientes, pero la segunda  crece a menor tasa pues 1/x² < 1/x. Los valores mínimos de f, g se dan para x = 1 (que se corresponde con T = T') en donde coinciden, f(1) = g(1) = 0. Así pues, f(x) es siempre mayor que g(x) y por tanto [1] será siempre positiva: la entropía del universo siempre aumenta. En la figura se representan las funciones f(x) (azul) y g(x) (rojo), la diferencia en vertical entre las dos líneas es la variación de entropía del universo en función de x = T' / T. En el caso de T'' > T' la diferencia será mayor.
 
 [caption id="attachment_150756" align="alignnone" width="497"]![](/assets/images/compara_entropia.png) Comparación de la funciones de variación de entropía del sistema y de la fuente térmica[/caption]
+{% endraw %}

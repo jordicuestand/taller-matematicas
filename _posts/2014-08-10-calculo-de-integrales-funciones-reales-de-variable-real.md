@@ -17,6 +17,7 @@ tags:
   - "teorema fundamental del cálculo"
 math: true
 ---
+{% raw %}
 
 Este es un post eminentemente práctico: se dan métodos de obtención de la función primitiva $F(x)$ de una función real de variable real $f(x)$ dada, simbólicamente:
 $F(x)=\int f(x)\operatorname{d}x$
@@ -258,3 +259,4 @@ $\begin{array}{l}\left\{\begin{array}{l}B-1=0\Rightarrow B=1\\C=1\end{array}\rig
 **3)** Integramos, tenemos dos inmediatas y una casi inmediata:
 
 $\begin{array}{l}I=\int\frac{-1}x+\int\frac{x+1}{x^2+1}=-\ln\left(x\right)+\int\frac1{x^2+1}+\int\frac x{x^2+1}=\\-\ln\left(x\right)+\tan^{-1}\left(x\right)+\frac12\int\frac{2x}{x^2+1}=\\-\ln\left(x\right)+\tan^{-1}\left(x\right)+\frac12\ln\left(x^2+1\right).\\\end{array}.$
+{% endraw %}

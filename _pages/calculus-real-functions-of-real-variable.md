@@ -4,6 +4,7 @@ title: "Calculus: real functions of real variable"
 date: 2017-06-03 13:17:58 +0000
 math: true
 ---
+{% raw %}
 
 Calculus with real functions of real variable
 
@@ -45,3 +46,4 @@ Polynomial interpolation
 Differentiation and numerical integration
 
 Resolved Exams
+{% endraw %}

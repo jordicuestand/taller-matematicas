@@ -4,6 +4,7 @@ title: "Problemas resueltos de límites de funciones reales"
 date: 2014-08-15 19:14:29 +0000
 math: true
 ---
+{% raw %}
 
 **[Apuntes de Matemáticas](http://tallermatematic.eu/math/) -> Funciones reales de variable real**** -> Problemas resueltos de límites de funciones**
 
@@ -175,3 +176,4 @@ Nos queda:
 $L=\lim_{x\rightarrow\infty}\sqrt[3]{27x^2\left(x-1\right)}-\sqrt{9x^2+1}=\lim_{x\rightarrow\infty}\frac{1458x^5+O_-\left(x^4\right)}{1458x^5+O_-\left(x^4\right)}=1.$
 
 ---
+{% endraw %}

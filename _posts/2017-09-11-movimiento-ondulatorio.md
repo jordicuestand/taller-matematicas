@@ -19,6 +19,7 @@ tags:
   - "velocidad de fase"
 math: true
 ---
+{% raw %}
 
 ### Movimiento ondulatorio: ejemplos
 
@@ -99,3 +100,4 @@ Pero, un momento, esa posición sólo será correcta si, en el tiempo t = 5 la o
 Las ondas que hemos visto hasta ahora son generadas desde una fuente (el punto donde lanzamos la piedra en el estanque, el extremo de la cuerda que agitamos...) y se propagan por un medio que, en teoría, es ilimitado; si no lo fuera, la onda llegaría a un "final de trayecto" donde se reflejaría, y al reflejarse interferiría consigo misma, creando patrones de ondas que no estudiaremos en este artículo. Además, suponemos que la fuente de la perturbación no se detiene, sino que sigue impulsando la creación de ondas (la mano que hace oscilar la cuerda no se detiene), si no fuera así, la onda se amortiguaría rápidamente debido a la resistencia del medio (ondas amortiguadas). Cuando tenemos una fuerza motriz actuando que genera las oscilaciones, diremos que formamos oscilaciones forzadas. Las oscilaciones forzadas aplicadas a un medio ilimitado generan las denominadas **ondas de propagación**.
 
 La fuerza motriz puede actuar sólo en un instante (la piedra que cae en el agua) o continuamente, en este último caso si se aplica una oscilación armónica (sinusoidal) obtendremos **ondas armónicas de propagación**.
+{% endraw %}

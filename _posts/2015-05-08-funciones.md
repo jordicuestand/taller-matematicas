@@ -4,6 +4,7 @@ title: "Funciones"
 date: 2015-05-08 09:24:03 +0000
 math: true
 ---
+{% raw %}
 
 Este post es una breve  introducción a la teoría de funciones, un tema extenso, que aquí solo pretende repasar y aclarar algunos conceptos que, quizás, no han quedado claros o no se han visto en el bachillerato y en cambio se dan por sabidos en los primeros cursos de carrera.
 
@@ -153,3 +154,4 @@ En las aplicaciones prácticas a menudo se encuentran ecuaciones en las que se i
  de Lambert](http://mathworld.wolfram.com/LambertW-Function.html)**: $\left(xe^x\right)^{-1}=W(x)$; usando esta función puede demostrarse que $\ln\left(x\right)=Ax^B\Rightarrow x=exp\left(-\frac{W\left(A\cdot B\right)}B\right)$. Siendo W también una función trascendente, no tenemos una expresión algebraica que nos permita obtener sus valores, que deben ser obtenidos mediante algoritmos computacionales. La función W la encontramos en diversas aplicaciones, como por ejemplo la relación entre el voltaje, corriente y resistencia en un diodo, trayectorias de proyectiles balísticos en presencia de resistencia del aire,  ingeniería de películas delgadas o hidrología.
 
 # Bibliografía
+{% endraw %}

@@ -6,6 +6,7 @@ categories:
   - "Mathematics"
 math: true
 ---
+{% raw %}
 
 - [Separable equations](#separables)
 
@@ -194,3 +195,4 @@ As $M = 6xy-y^{3}, N = 4y + 3x^{2} -3xy^{2}, frac {partial N} {partial x} = 6x-3
 $F (x, y) = int Ndy = 2y^{2} + 3x^{2} y-xy^{3} + C (x), F (x, y) = int MDX = 3x^{2} y-xy^{3} + C(y),$
 
 and when we equalize the two expressions we get $C (y) = 2y^{2}.$
+{% endraw %}

@@ -12,6 +12,7 @@ tags:
   - "Relatividad especial"
 math: true
 ---
+{% raw %}
 
 ## Magnetismo
 
@@ -157,3 +158,4 @@ La fuerza ejercida sobre la carga viene dada por [2], y será cero, pues la velo
  	- E. M. Purcell: Electricidad y Magnetismo
 
  	- Feynmann: Física, volumen 3, Electromagnetismo y materia
+{% endraw %}

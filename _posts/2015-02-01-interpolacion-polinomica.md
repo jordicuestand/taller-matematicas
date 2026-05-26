@@ -4,6 +4,7 @@ title: "Interpolación polinómica"
 date: 2015-02-01 12:20:48 +0000
 math: true
 ---
+{% raw %}
 
 ## Introducción
 
@@ -222,3 +223,4 @@ Otra solución consiste en evitar el uso de polinomios de grado elevado, interpo
 
 [caption id="attachment_837" align="alignnone" width="396"][![Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección](/assets/images/interpolacio_trossos1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/interpolacio_trossos1.png) Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección[/caption]
 Siendo la derivabilidad una condición deseable, este procedimiento puede resultar no aconsejable. Para solucionarlo, se pueden emplear la denominada [interpolación por splines](http://es.wikipedia.org/wiki/Spline), un tipo de interpolación polinómica a trozos que asegura la derivabilidad, y es muy empleada en diseño industrial para aproximar matemáticamente formas diversas.
+{% endraw %}

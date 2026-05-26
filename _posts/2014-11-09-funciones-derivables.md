@@ -6,6 +6,7 @@ categories:
   - "Uncategorized"
 math: true
 ---
+{% raw %}
 
 ## Introducción al estudio local de una función
 
@@ -272,3 +273,4 @@ Despejando $y'$ del lado izquierdo de la igualdad anterior:
 $\begin{array}{l}y'=y\cdot\left(-\sin\left(x\right)\cdot Ln\left(\sin\left(x\right)\right)+\cos\left(x\right)\cdot\frac{\cos\left(x\right)}{\sin\left(x\right)}\right)=\\(sen(x))^{\cos(x)}\cdot\left(-\sin\left(x\right)\cdot Ln\left(\sin\left(x\right)\right)+\cos\left(x\right)\cdot\frac{\cos\left(x\right)}{\sin\left(x\right)}\right).\end{array}$.
 
 [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+{% endraw %}

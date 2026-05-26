@@ -15,6 +15,7 @@ tags:
   - "vector"
 math: true
 ---
+{% raw %}
 
 **Competencias**:
 
@@ -142,3 +143,4 @@ $U\oplus V=\left\{\left(a+b,a,a-b\right)\;\vert\;a,\;b\in\mathbb{R}\right\}$
 **NOTA 3**: El vector nulo **0** está presente en cualquier espacio o subespacio vectorial (es el elemento neutro de la suma de vectores), por ello, la intersección de subespacios siempre contiene al vector nulo. Geométricamente, los subespacios son rectas, planos o hiperplanos que pasan por el origen de coordenadas. La intersección de subespacios U, V sólo será distinta del conjunto {**0**} cuando o bien U esté contenido en V o bien V esté contenido en U. Por ejemplo, la intersección del plano U: (x, y, z) = a·(1,0,0) + b(0,1,0) con la recta V: c·(-1, 3, 0) es la propia recta V, pues V está contenida en U. En este ejemplo la suma U + V no es directa, el subespacio intersección tiene dimensión 1 y el subespacio suma tiene dimensión 2 (y se cumple la fórmula de Grassmann, como podeis verificar fácilmente).
 
 ![separador2](/assets/images/separador2.png)
+{% endraw %}

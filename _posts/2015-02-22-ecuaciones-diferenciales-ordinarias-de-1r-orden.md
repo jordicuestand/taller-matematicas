@@ -14,6 +14,7 @@ tags:
   - "Soluciones singulares"
 math: true
 ---
+{% raw %}
 
 - [Ecuaciones separables](#separables)
 
@@ -204,3 +205,4 @@ Como $M = 6xy-y^{3},&nbsp;&nbsp;N = 4y + 3x^{2} -3xy^{2},&nbsp;\frac {\partial N
 $F (x, y) = \int Ndy = 2y^{2} + 3x^{2} y-xy^{3} + C (x),&nbsp;&nbsp; F (x, y) = \int MDX = 3x^{2} y-xy^{3} + C(y),$
 
 y cuando igualamos las dos expresiones obtenemos $C (y) = 2y^{2}.$
+{% endraw %}

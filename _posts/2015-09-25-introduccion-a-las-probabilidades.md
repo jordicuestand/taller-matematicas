@@ -23,6 +23,7 @@ tags:
   - "Teorema de Bayes"
 math: true
 ---
+{% raw %}
 
 - Introducción
 
@@ -601,3 +602,4 @@ La probabilidad de que una persona con estudios superiores sea lector es superio
 # Bibliografia
 
 ***Métodos Estadísticos***: Lo utilicé cuando estudiaba en la UNED, y tengo un buen recuerdo, porque no era muy extenso pero contenía todo el temario bastante bien explicado. Otra parte que me gustó fue que cada capítulo tiene una lista de problemas (ejercicios de autocomprobación) con las soluciones, perfecto para estudiar a distancia. En definitiva, no es una biblia de la Estadística Aplicada ni mucho menos, pero para introducirte en los temas básicos (Estadística descriptiva, probabilidades, variables aleatorias, funciones de distribución, intervalos de confianza, contrastes de hipótesis y ANOVA) cumple bien.
+{% endraw %}

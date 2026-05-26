@@ -12,6 +12,7 @@ tags:
   - "test"
 math: true
 ---
+{% raw %}
 
 Supongamos que hemos comprado un saco de nueces que contiene unas 1000, y que al llegar a casa cogemos una al azar, resultando que está seca, incomestible. Un optimista pensará, "¡bah! he ido a coger la única que está pasada, no importa", mientras que un pesimista pensará "buenoo ... este saco estará lleno de nueces podridas".  Cualquiera de los dos puede tener razón. Para saberlo, sin tener que vaciar todo el saco, podemos tomar una muestra representativa, esto es, suficientemente grande (por ejemplo, 20 nueces) y bien tomada (mezclamos bien las nueces, cogemos una de arriba, otra del lado derecho, otra de abajo, etc., cambiando de sitio cada vez de forma aleatoria). Después, observando el número de nueces buenas de la muestra, podemos intentar inferir cuantas nueces buenas habrá en el saco. Este procedimiento de comprobación de un producto comercial es parte del proceso de control de calidad, que se hace tanto por parte del fabricante (control de calidad de producción) como del comprador (control de calidad a la recepción del producto). La herramienta estadística que permite, con cierto grado de certeza (denominado nivel de confianza), decidir si una compra como la del saco de nueces es acertada o por el contrario debemos reclamar al fabricante es el contraste de hipótesis estadísticas. Por supuesto, como siempre en Estadística, no podremos saber realmente cuantas nueces están estropeadas a menos que las miremos una por una: aceptar las conclusiones del contraste conllevan un riesgo, como vemos en el siguiente apartado.
 
@@ -330,3 +331,4 @@ Establecemos el contraste:
 
  
 Si H0 es cierta, esperaríamos que los signos de las diferéncias fueran por igual positivos que negativos, la proporción para ambos ha de ser 1/2 ; tenemos 3 positivos y 2 negativos.
+{% endraw %}

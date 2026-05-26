@@ -13,6 +13,7 @@ tags:
   - "ecuacíón diferencial no lineal"
 math: true
 ---
+{% raw %}
 
 **Introducción**
 En este post vemos algunos métodos de cambio de variable para resolver ecuaciones diferenciales ordinarias no lineales; en general estas ecuaciones son difíciles de resolver, y muchas veces de hecho no existe una solución analítica, esto es, una función $y=f(x)$ explícita, que sea un polinomio, una función trigonométrica, exponencial, etc. o una combinación de las anteriores, por lo que hay que resolver la ecuación con métodos numéricos. Sólo en algunos casos especiales podemos obtener la solución analítica; incluso en estos casos, puede pasar que no podamos dar la el haz de curvas solución en forma explícita $y=f(C,x)$, sino en forma paramétrica $\phi\left(x,y,p,C\right)=0.$
@@ -187,3 +188,4 @@ Son un caso particular de las ecuaciones en las que se pueden despejar $y$, tien
 #### Ecuación de Clairaut
 
 Tienen la forma $y=xy'+G(y')$ y su haz de curvas integral es directamente $y=Cx+G(x)$, fácil de comprobar derivando y sustituyendo en la ecuación.
+{% endraw %}

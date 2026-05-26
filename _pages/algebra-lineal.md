@@ -4,6 +4,7 @@ title: "Álgebra Lineal"
 date: 2016-10-29 12:19:43 +0000
 math: true
 ---
+{% raw %}
 
 En esta página iré publicando artículos, problemas resueltos y algo de teoría de Álgebra Lineal a nivel de primer curso de grado en Ingeniería, pero con una novedad importante respecto al resto del blog: la orientación a competencias. Esto significa que todo el material que colgaré está pensado para capacitar en las siguientes competencias:
 
@@ -56,3 +57,4 @@ Los conceptos asociados a estas competencias son:
  	- [Vectores y valores propios, diagonalización de matrices](http://tallermatematic.ovh/wp/index.php/2016/12/19/vectores-y-valores-propios-diagonalizacion-de-matrices/)
 
  	- Geometría lineal
+{% endraw %}

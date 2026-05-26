@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problemas resueltos de Física -> Mecánica -> Estática — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Problemas resueltos de Física -> Mecánica -> Estática</h1>
+    <p class="meta">
+      23/10/2016
+      
+        · <a href="/categoria/fí-sica">Fí­sica</a>, <a href="/categoria/mecánica">Mecánica</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<p>Colección de problemas resueltos de Estática a nivel medio, tratando los conceptos de equilibrio de fuerzas y momentos de las fuerzas.</p>
+
+<p><strong>1</strong> - Un cuerpo está sostenido por tres cables que forman unos ángulos con la vertical de 28⁰, 47⁰ y 53⁰. Las tensiones de los cables son 12, 10 y 16,2 kilopondios. ¿Cuál es el peso del cuerpo?</p>
+
+<p>[caption id=”attachment_150227” align=”aligncenter” width=”287”]<img src="/assets/images/estatica1.png" alt="Fig. 1: diagrama de fuerzas estáticas" /> Fig. 1: diagrama de fuerzas estáticas (los ángulos de las tensiones no se corresponden con los del enunciado)[/caption]
+Como el cuerpo esté en reposo, tiene aceleración nula, y por tanto la suma (vectorial) de fuerzas ha de ser nula. La figura 1 muestra las cuatro fuerzas que intervienen; las descomponemos según los ejes XY e igualamos su suma a cero:</p>
+
+<p>$\begin{array}{l}\left.\begin{array}{r}X)\;-12\sin\left(28\right)-10\sin\left(47\right)+16.2\sin\left(53\right)=0\Y)\;12\cos\left(28\right)+10\cos\left(47\right)+16.2\cos\left(53\right)-mg=0\end{array}\right}\\end{array}$</p>
+
+<p>La 1ª ecuación es una igualdad que ha de cumplirse, no hay incógnitas en ella; si no se cumpliera, es por que hemos equivocado el esquema de fuerzas (figura 1): obsérvese que no sabíamos por el enunciado si eran como muestra la figura. Se ha supuesto así por lógica: para que se anulen la componente horizontal de la suma de tres fuerzas, dos de ellas han de ir en sentido contrario que la tercera, y hemos supuesto que las dos de módulo menor, 12 y 10 Kp van en un sentido y la mayor, de 16,2Kp va en el otro sentido. En general se podría plantear la 1ª ecuación como $\;l_112\sin\left(28\right)+l_210\sin\left(47\right)+l_316.2\sin\left(53\right)=0$, con los coeficientes $l_1,l_2,l_3$ que pueden valer 1 o -1, pero de forma que dos de ellos tengan el mismo signo y el tercero signo contrario. Hay 6 combinaciones posibles, y para cada una con hoja de cálculo vemos que valor toma la primera igualdad:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>l1</strong></td>
+    </tr>
+    <tr>
+      <td><strong>l2</strong></td>
+    </tr>
+    <tr>
+      <td><strong>l3</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Ec1</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11,2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14,6</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>-11,2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>-14,6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vemos que hay dos combinaciones posibles; la segunda, (-1, -1, 1) es la que hemos tomado, la otra es la versión simétrica, que también era posible, y nos lleva al mismo resultado. Pero de hecho observad que no necesitamos la 1ª ecuación para nada, para calcular la masa podemos ir directamente a la ecuación 2, de la que despejamos la masa del cuerpo:</p>
+
+<p>$\begin{array}{l}12\cos\left(28\right)+10\cos\left(47\right)+16.2\cos\left(53\right)-mg=0\Rightarrow\m=27,2Kp\;/\;g\;=\;\boxed{27,2Kg}\end{array}$</p>
+
+<p><img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+<p><strong>2</strong>. Una escalera de 20 peldaños, 20Kg de peso y 5,5m de longitud se apoya, sin rozamiento apreciable, en una pared vertical. El extremo inferior de la escalera está a una distancia de 3,2m de la pared. El coeficiente de rozamiento entre la escalera y el suelo vale 0,4. Un operario, que pesa P kilogramos, empieza a subir por la escalera. Deducir si la escalera deslizará antes de que el operario llegue arriba en función de su peso P, y decir en qué peldaño estará cuando ocurra el deslizamiento.</p>
+
+<p>En la figura 1 vemos la geometría del problema, con las fuerzas en juego (en rojo).</p>
+
+<p>[caption id=”attachment_150213” align=”aligncenter” width=”380”]<img src="/assets/images/dinamica_basica1.png" alt="Fig. 1: problema del operario y la escalera" /> Fig. 1: problema del operario y la escalera[/caption]
+El peso P se supone aplicado en el centro de gravedad del operario, situado a una distancia variable <em>x</em> de la base de la escalera, mientras que el peso de la escalera está aplicado en el punto medio de la escalera. Hay una única fuerza de rozamiento $F_R$ variable aplicada a la base de la escalera, y dos fuerzas normales N, una en el suelo y otra en la pared. La escalera empezará a deslizar cuando la fuerza de rozamiento $F_R$ tenga alcance su valor máximo, a partir del cual no podrá garantizarse el equilibrio de todas la fuerzas; <strong>este equilibrio obliga a que la suma (vectorial) de todas las fuerzas sea cero</strong>: ${\textstyle\sum_i}{\overrightarrow F}_i=0$. Usando como ejes el propio suelo y la pared, y origen de coordenadas el punto O, el equilibrio de fuerzas se expresa así:</p>
+
+<p>$\left.\begin{array}{r}N_2-F_R=0\N_1-P-20g=0\end{array}\right}$[1]</p>
+
+<p>Hay demasiadas incógnitas, necesitamos más relaciones; nos las proporcionan la <strong>condición de equilibrio de los momentos de las fuerzas</strong>: el momento total de todas las fuerzas respecto a cualquier punto arbitrario ha de ser cero en situación de equilibrio.  Recordemos que el momento de una fuerza F que es aplicada en un punto p respecto a otro punto q es el producto vectorial</p>
+
+<p>${\overset\rightharpoonup M}_q=\overrightarrow{qp}\times\overrightarrow F$ [2]</p>
+
+<p>donde ${\overset\rightharpoonup M}_q$ es el <strong>pseudovector momento</strong> respecto al punto q (para repasar el concepto de pseudovector tenéis mi artículo <a href="http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/">Vectores en Física</a>).</p>
+
+<p>Calculemos los momentos respecto al punto O:</p>
+
+<p>Momento de la fuerza $N_2$: en la figura 2 vemos que las componentes del vector fuerza son $\left(N_2,0\right)$ y las del vector posición del punto de aplicación p de la fuerza, respecto al origen de momentos O, es $\overrightarrow{Op}=\left(0,4.5\right)$, el valor 4,5 viene de aplicar el T. de Pitágoras al triángulo rectángulo escalera-suelo-pared.</p>
+
+<p>[caption id=”attachment_150214” align=”aligncenter” width=”270”]<img src="/assets/images/dinamica_basica2.png" alt="Fig. 2: cálculo del momento" /> Fig. 2: cálculo del momento[/caption]
+Calculamos el producto vectorial:</p>
+
+<p>$\overrightarrow{Op}\times{\overrightarrow N}_2=\begin{vmatrix}\widehat i&amp;\widehat i&amp;\widehat k\0&amp;4.5&amp;0\N_2&amp;0&amp;0\end{vmatrix}=\left(0,0,-4.5N_2\right)={\overset\rightharpoonup M}_O\left({\overrightarrow N}_2\right)$</p>
+
+<p>El  momento que obtenemos es perpendicular al plano, dirigido hacia abajo; en realidad, el producto vectorial de dos vectores perpendiculares siempre es perpendicular al plano que los contiene y tiene por módulo su producto de módulos y una dirección dada por la “regla del tornillo” o <a href="https://es.wikipedia.org/wiki/Regla_de_la_mano_derecha">“de la mano derecha”</a>;  si los vectores son paralelos entonces su producto vectorial vale cero.</p>
+
+<p>Momento de la fuerza $N_1$: hay que multiplicar el vector $ON_1$ = (3.2, 0) por el vector ${\overrightarrow N}_1=(0,N_1)$, como ambos son  perpendiculares, usando la regla mencionada, resulta ${\overset\rightharpoonup M}_O\left({\overrightarrow N}_1\right)=(0,0,3.2N_1)$.</p>
+
+<p>Momento de la fuerza $F_R$: como el vector posición $OF_R$ es paralelo a la fuerza $F_R$, el momento es cero.</p>
+
+<p>Momentos de las fuerzas peso del operario P y peso de la escalera: El momento del peso del operario lo obtenemos a partir del vector de posición del operario, Oq, dónde q es el punto situado a x metros del punto de apoyo de la escalera sobre el suelo; sus componentes son $\overrightarrow{Oq}=\left(3.2-\frac{32x}{55},\frac{45x}{55},0\right)$, las distancias las calculamos usando las razones de los triángulos semejantes (figura 3).</p>
+
+<p>[caption id=”attachment_150216” align=”aligncenter” width=”247”]<img src="/assets/images/dinamica_basica3.png" alt="Fig. 3: cálculo del vector de posición del operario, Oq" /> Fig. 3: cálculo del vector de posición del operario, Oq[/caption]
+El momento del peso del operario es:</p>
+
+<p>${\overset\rightharpoonup M}_O\left(\overrightarrow P\right)=\begin{vmatrix}\widehat i&amp;\widehat j&amp;\widehat k\3.2-\frac{32x}{55}&amp;\frac{45x}{55}&amp;0\0&amp;-P&amp;0\end{vmatrix}=-P\left(3.2-\frac{32x}{55}\right)\widehat k$</p>
+
+<p>NOTA: cuando todos los vectores fuerza y posición están en el mismo plano, los momentos siempre serán perpendiculares al plano, con sentido dado por la regla de la mano derecha; entonces para determinar el módulo se puede recurrir a imaginar que el vector fuerza se desliza por su línea de acción hasta quedar perpendicular al vector posición, tomando la nueva distancia, más reducida, para calcular el momento:  en la figura 4 el vector peso se ha deslizado hasta quedar perpendicular al vector OO’, donde O’ es el nuevo punto de aplicación del peso del operario. Calculamos entonces por triángulos semejantes la distancia l, y la OO’ = 3,2 - l. Resulta ser 3.2 - 3.2x/5.5. Por tanto el momento será un vector perpendicular al plano, dirigido hacia “abajo” (el sentido de giro del vector peso respecto a O es en el sentido de las agujas del reloj), y de módulo $P\left(3.2-\frac{32x}{55}\right)$, resultado que coincide con el encontrado por producto vectorial.</p>
+
+<p>[caption id=”attachment_150217” align=”aligncenter” width=”280”]<img src="/assets/images/dinamica_basica4.png" alt="Fig. 4: deslizamiento del vector peso P hasta quedar perpendicular al vector posición OP para el cálculo del momento respecto a O" /> Fig. 4: deslizamiento del vector peso P hasta quedar perpendicular al vector posición OP para el cálculo del momento respecto a O[/caption]
+El último momento es el de la escalera, que usando el método de vector deslizante y la regla de la mano derecha vale (3.2/2)·20 dirigido hacia abajo.</p>
+
+<p>Sumamos todos los momentos e igualamos a cero (sólo consideramos las componentes no nulas, las otras ya son cero):</p>
+
+<p>$\begin{array}{l}-P\left(3.2-\frac{32x}{55}\right)-\frac{3.2\cdot20}2+3.2N_1-4.5N_2=0\Leftrightarrow\3.2N_1-4.5N_2+\frac{32x}{55}P=3.2P+32\end{array}$ [3]</p>
+
+<p>Todavía tenemos más incógnitas $N_1,N_2,F_R,x$ que ecuaciones, tres de momento, las [1] y la [3]. Recordemos ahora que la fuerza de rozamiento cumple, en general, $F_R\leq\mu\cdot N$ siendo N la fuerza normal de reacción aplicada entre las superficies en contacto y $\mu$ el coeficiente de rozamiento; como estamos buscando el límite de deslizamiento, la fuerza de rozamiento será máxima: $F_R=0.4\cdot N_1$. Sustituimos en la primera de las dos ecuaciones [1] y obtenemos:</p>
+
+<p>$\left.\begin{array}{r}N_2-0.4N_1=0\N_1-P-20g=0\end{array}\right}\Rightarrow\boxed{N_1=P+20g};\;\Rightarrow\boxed{N_2=0.4\left(P+20g\right)}$</p>
+
+<p>Sustituimos en la [3], despejando <em>x</em>, dejando el peso P como parámetro:</p>
+
+<p>$\begin{array}{l}\left[3.2P+64g\right]-\left[3.2-\frac{3.2}{5.5}x\right]P-32g-\left[1.8P+36g\right]=0\Rightarrow\\boxed{x=\frac{5.5}{3.2}\left(1.8+\frac{4g}P\right)}\end{array}.$</p>
+
+<p>Para ver como afecta el peso P del operario a la distancia máxima x alcanzada subiendo los peldaños, introducimos la expresión anterior en una hoja de cálculo y creamos un gráfico peso-distancia x: <img src="/assets/images/dinamica_basica5.png" alt="Fig. 5: relación entre el peso P y la distancia x subiendo las escaleras" /></p>
+
+<p>Fig. 5: relación entre el peso P y la distancia x subiendo las escaleras
+Para llegar arriba de la escalera el operario debería pesar sólo unos 2Kg, a partir de ese peso la distancia x decrece rápidamente pero se estabiliza a partir de los 20Kg de peso, quedando prácticamente constante, cercano a x = 3,2m, que son unos (3,2/5,5)·20 = 12 peldaños. En efecto, haciendo el límite en la expresión de x: $\lim_{P\rightarrow\infty}\frac{5.5}{3.2}\left(1.8+\frac{4g}P\right)=\frac{5.5}{3.2}1.8=3,09375$, vemos la distancia x prácticamente no varía, entre 11 y 12 peldaños para un peso P &gt; 40Kg.</p>
+
+<p><img src="/assets/images/separador2.png" alt="separador2" /></p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/estática">estática</a>, <a href="/tag/momento-fuerza">momento fuerza</a>, <a href="/tag/rozamiento">rozamiento</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

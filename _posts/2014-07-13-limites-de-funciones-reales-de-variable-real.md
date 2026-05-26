@@ -13,6 +13,7 @@ tags:
   - "límites laterales"
 math: true
 ---
+{% raw %}
 
 # Introducción
 
@@ -216,3 +217,4 @@ $\left\{\begin{array}{l}\lim_{x\rightarrow1^-}\frac{x+1}{x^2-1}=\frac2{0^-}=-\in
 ---
 
 [Ir a problemas resueltos de límites de funciones ](http://tallermatematic.eu/wp/?p=219)
+{% endraw %}

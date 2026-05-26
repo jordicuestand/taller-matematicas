@@ -22,6 +22,7 @@ tags:
   - "transformación isotéŕmica"
 math: true
 ---
+{% raw %}
 
 La *Termo-dinámica* se ocupa de la dinámica (movimiento, transferencia) térmica, y utiliza las magnitudes temperatura, volumen, presión, energía, calor y trabajo para relacionarlas entre sí. El intercambio calor-energía-trabajo supondremos que se realiza entre un "sistema" - una parte del Universo delimitada por un volumen cerrado - y su entorno - el resto del Universo - , aunque a menudo restringiremos el entorno a las denominadas "fuentes térmicas" que definiremos. Entonces, hay magnitudes que utilizaremos para definir el *estado termodinámico del sistema*, y otras para definir su evolución o cambio de estado. Si tenemos alguna ecuación matemática que relacione entre sí las magnitudes que definen el estado, la llamaremos *ecuación de estado*; un ejemplo conocido de ecuación de estado es la de los gases perfectos, PV = nRT.
 
@@ -192,3 +193,4 @@ Nos preguntamos, ¿que trabajo neto W obtenemos a cambio de inyectar un calor ne
 $r=\frac{T-T'}T=1-\frac{T'}T$ [6]
 
 que sólo depende de las temperaturas de los focos térmicos, y será siempre menor que 1 excepto en el caso extremo de T' = 0 (medio exterior en el cero absoluto de temperaturas). Se puede definir un índice análogo para bombas de calor.
+{% endraw %}

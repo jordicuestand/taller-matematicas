@@ -15,6 +15,7 @@ tags:
   - "R"
 math: true
 ---
+{% raw %}
 
 En esta entrada sólo pretendemos dar una introducción breve a un tema extenso y complejo como es el análisis estadístico multivariante, y lo haremos de forma constructiva, partiendo de un ejemplo simple pero real que iremos desarrollando. No se incluyen demostraciones matemáticas, sólo nos centramos en el "para qué sirve?" y en el "cómo se hace?". Espero que sea de utilidad para los estudiantes no especialistas en Estadística que necesitan tener las ideas claras en esta materia sin perderse en detalles técnicos. En este primer artículo sólo introducimos conceptos, y luego aplicamos dos técnicas relacionadas con la simplificación y reducción de datos: componentes principales y factores; en un segundo artículo trataremos de la otra posibilidad del análisis multivariante: la detección de grupos y clasificación de los individuos.
 
@@ -283,3 +284,4 @@ Así pues, resumimos las 11 variables por tres factores, con la siguiente compos
 Las conclusiones que podemos obtener son:
 
 *en este análisis la variable TEC que estudiamos no parece desempeñar ningún papel, sólo entra en el factor 3 con un peso del 15.8%, y además queda no explicada en un 95.6% (Uniquenesses). Las variables relacionadas que tienen más peso son CAL y ATE en el factor 2, lo que sugiere que la atención en clase es la variable mas correlacionada con la calificación obtenida; en el factor 3 la variable dominante es PAR, participación activa, que tiene una relación más bien débil con la calificación (38.1%) y aún más débil con las otras variables.*
+{% endraw %}

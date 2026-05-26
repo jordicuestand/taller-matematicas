@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadística descriptiva, análisis de datos — Taller de Matemáticas</title>
+  <meta name="description" content="
+">
+
+  <!-- MathJax — renderitza fórmules LaTeX $...$ i $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <link rel="stylesheet" href="/taller-matematicas/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <a href="/taller-matematicas/"><h1>Taller de Matemáticas</h1></a>
+      <p>Apuntes de Matemáticas y Física</p>
+      <nav>
+        <a href="/taller-matematicas/">Inicio</a>
+        <a href="/taller-matematicas/matematicas/">Matemáticas</a>
+        <a href="/taller-matematicas/fisica/">Física</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+  <header>
+    <h1>Estadística descriptiva, análisis de datos</h1>
+    <p class="meta">
+      19/09/2015
+      
+        · <a href="/categoria/estadística-aplicada">Estadística aplicada</a>
+      
+    </p>
+  </header>
+  <div class="post-content">
+    
+<ul>
+  <li>Estadística: concepto, contenido, aplicaciones</li>
+</ul>
+
+ 	- Concepto de población, muestra, individuo y variable estadística
+
+ 	- Clasificación de las variables estadísticas
+
+ 	- Distribución de frecuencias. representaciones gráficas
+
+ 	- Agrupación de datos en intervalos
+
+ 	- Estadísticos muestrales
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></p>
+<h1 id="estadística-concepto-contenido-aplicaciones">Estadística: concepto, contenido, aplicaciones</h1>
+
+<h2 id="fenómenos-y-experimentos-deterministas-y-aleatorios">Fenómenos y experimentos deterministas y aleatorios.</h2>
+
+<p>Los fenómenos y experimentos en los que hay definidos una causa y su efecto de forma determinista pueden, en principio, ser formulados con ecuaciones matemáticas exactas:</p>
+
+ 	- <em>F = ma</em> Ley de Newton: dada una fuerza F y una masa m, determinamos su aceleración a.
+
+ 	- <em>V = IR</em> Ley de Ohm: dado un potencial V y una resistencia R, determinamos la intensidad de corriente I
+
+ 	- PV = nRT Ley de los gases perfectos: dadas la presión P, la temperatura T y el número de moles n de un gas, determinamos el volumen V del gas
+
+ 	- Etc…
+
+<p>En la realidad se presenta una variabilidad no predecible que da lugar a los fenómenos y experimentos con cierto grado de aleatoriedad:</p>
+
+ 	- F = ma + E, donde E es el error experimental, variable en cada repetición del experimento, aleatorio, indeterminado a priori
+
+ 	- Lanzamiento de un dado (condiciones iniciales no controlables)
+
+ 	- Encuesta de opinión sobre una población (componente psicológico aleatorio)
+
+ 	- Electrón que pasa a través de una barrera de potencial (incertidumbre cuántica)
+
+<p>En los ejemplos anteriores el grado de aleatoriedad no es el mismo: en el primer ejemplo tenemos un comportamiento en principio exacto y determinado, F = ma, sólo que debido a errores de medición, de preparación del experimento, humanos, etc, los resultados realmente obtenidos no coinciden con la teoría: es el error experimental, que idealmente tiende a cero. En los ejemplos del dado y de la encuesta de opinión no conocemos ninguna ecuación que nos permita hacer predicciones, aunque quizá existan, pero son desconocidas, por tanto son experimentos totalmente aleatorios. El último ejemplo es distinto, la aleatoriedad es intrínseca al electrón, no puede haber ninguna ley determinista por la propia naturaleza del experimento.</p>
+
+<h2 id="estadística-objeto">Estadística: objeto</h2>
+
+<p>**
+La Estadística estudia los fenómenos aleatorios, midiendo las fuentes de variabilidad y permitiendo hacer predicciones sobre el comportamiento de un experimento aleatorio.</p>
+
+<h3 id="aplicaciones-de-la-estadística">Aplicaciones de la Estadística</h3>
+
+<p><strong>Estadística descriptiva</strong>: a partir de los resultados de un número de repeticiones de un experimento aleatorio, obtenemos una descripción numérica resumida (parámetros estadísticos) y unos gráficos descriptivos.</p>
+
+<p>[caption id=”attachment_1342” align=”alignnone” width=”600”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/grafic_est_descrip.png"><img src="/assets/images/grafic_est_descrip.png" alt="Resumir datos: parámetros y gráficos estadísticos " /></a> Resumir datos: parámetros y gráficos estadísticos[/caption]
+<strong>Estadística matemática</strong>: utiliza la teoría de la probabilidad y las herramientas del análisis matemático para elaborar modelos matemáticos probabilistas que describen el comportamiento del fenómeno aleatorio en estudio.</p>
+
+<p><strong>Inferencia estadística</strong>: a partir de un número limitado de experimentos aleatorios elabora una estimación del comportamiento del fenómeno en general. Por ejemplo, sabiendo, por datos históricos, que el número medio de accidentes laborales en un año en cierto polígono industrial es de 3 accidentes, calcular la probabilidad de que ocurra al menos un accidente antes del mes de junio del año actual.</p>
+
+<p>[caption id=”attachment_1343” align=”alignnone” width=”619”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/inferencia_esquema.png"><img src="/assets/images/inferencia_esquema.png" alt="De los datos experimentales a las predicciones" /></a> De los datos experimentales a las predicciones[/caption]
+<strong>Control de calidad y de fiabilidad</strong>: utilizando una muestra de la producción, realiza inferencia sobre las calidad de toda la producción siguiendo un conjunto estándar de normas.</p>
+
+<h3 id="fases-de-un-trabajo-estadístico">Fases de un trabajo estadístico</h3>
+
+<p>Típicamente, en un estudio estadístico pasamos por las siguientes fases de trabajo:</p>
+
+ 	- Recogida de datos (laboratorio, encuestas, …)
+
+ 	- Descripción, representación y análisis de los datos recogidos (Estadística Descriptiva)
+
+ 	- Cotejo de los datos con el modelo teórico adecuado (Estadística Matemática)
+
+ 	- Obtención de inferencias o conclusiones (Estadística Inferencial)
+
+<p><strong>Ejemplo 1</strong>: En el estudio de siniestralidad laboral en un cierto polígono industrial se han recogido los siguientes datos históricos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Año</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Accidentes</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2001</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Obtenemos algunos parámetros y gráficos estadísticos:</p>
+
+<p>[caption id=”attachment_1344” align=”alignnone” width=”502”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/fase1_estad.png"><img src="/assets/images/fase1_estad.png" alt="Fase 1: Estadística descriptiva resumen de los datos" /></a> Fase 2: Estadística descriptiva resumen de los datos[/caption]
+En la siguiente fase utilizamos el modelo matemático de Poisson, que es útil para el estudio de la siniestralidad en general, para comparar los datos experimentales con los teóricos suministrados por el modelo, asegurando que el modelo teórico es válido en este caso.</p>
+
+<p>Por último, podemos responder a preguntas como “<em>calcular la probabilidad de que ocurra al menos un accidente
+antes del mes de junio del año actual</em>” usando el modelo matemático: resulta ser del 77%.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></p>
+
+<h1 id="concepto-de-población-muestra-individuo-y-variable-estadística">Concepto de población, muestra, individuo y variable estadística</h1>
+
+<p><strong>Población</strong>: el conjunto de todos las posibles realizaciones de un experimento aleatorio.
+<strong>Ejemplo 2</strong>: Encuesta de opinión dirigida a universitarios, población: todos los universitarios. Lanzamiento de un dado, población infinita (todos los posibles lanzamientos). Estudio de calidad de un componente electrónico, población: todos los componentes fabricados en un cierto periodo de tiempo.</p>
+
+<p><strong>Muestra</strong>: subconjunto representativo de la población de un experimento aleatorio.
+<strong>Ejemplo 3</strong>: Encuesta a 20 estudiantes elegidos al azar de cada universidad en la zona de estudio. Lanzamos 100 veces un dado (de las infinitas veces que podemos hacerlo, nos conformamos con 100). Estudiamos 20 unidades del componente electrónico fabricados en cierto día.</p>
+
+<p><strong>Individuo</strong>: cada elemento de la población o de la muestra (un universitario, un lanzamiento del dado, una unidad del componente electrónico)</p>
+
+<p><strong>Variable estadística</strong>: una característica numérica de la población que nos interesa estudiar
+<strong>Ejemplo 4</strong>: preguntamos a cada estudiante si está de acuerdo o no con cierta ley, definimos la variable estadística asignando el valor 1 a la respuesta afirmativa y el valor 0 en la negativa. En el lanzamiento de un dado, la variable es el número de puntos obtenidos.  En el estudio del componente electrónico, la variable puede ser la resistencia eléctrica, o el tiempo de servicio hasta que queda inservible, etc.</p>
+
+<h2 id="clasificación-de-las-variables-estadísticas">Clasificación de las variables estadísticas</h2>
+
+<p><strong>Variables discretas</strong>: el conjunto de diferentes valores que puede tomar (dominio de la variable) es finito o infinito numerable (un entero). Ejemplo: lanzamiento de un dado, con dominio {1,2,3,4,5,6}.</p>
+
+<p><strong>Variables continuas</strong>: el dominio es infinito no numerable (un intervalo de la recta real). Ejemplo: tiempo de servicio de un componente electrónico.</p>
+<h1> <a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></h1>
+
+<h1 id="distribución-de-frecuencias-representaciones-gráficas">Distribución de frecuencias. representaciones gráficas</h1>
+
+<p>En Estadística Descriptiva el conjunto de valores a estudiar siempre se representa en forma de tabla de frecuencias observadas. Los programas de estadística toman estas tablas como dato de entrada y nos devuelven parámetros y representaciones gráficas</p>
+
+<p><strong>Ejemplo 5</strong>: Sea el experimento aleatorio: lanzamiento N = 10 veces de un dado. Tipo de variable: discreta. Población infinita. Muestra con N = 10. Resultados muestrales: {3, 4, 6, 1, 5, 2, 4, 6, 6, 1}. Con ellos formamos la tabla de frecuencias sin agrupar y el <a href="https://es.wikipedia.org/wiki/Histograma">histograma</a> de frecuencias absolutas:</p>
+
+<p>[caption id=”attachment_1347” align=”alignnone” width=”637”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/est-descrp.png"><img src="/assets/images/est-descrp.png" alt="Ejemplo de tabla de frecuencias y su representación gráfica" /></a> Ejemplo de tabla de frecuencias y su representación gráfica[/caption]</p>
+
+<p>El software permite generar una gran variedad de gráficos estadísticos con facilidad, es tarea del analista escoger cuál de ellos es el más adecuado para resumir los datos del estudio y mostrar las propiedades que desea poner de manifiesto.</p>
+
+<p>[caption id=”attachment_1348” align=”alignnone” width=”543”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/graph_types.png"><img src="/assets/images/graph_types.png" alt="Opciones de tipo de gráfico en OpenOffice" /></a> Opciones de tipo de gráfico en OpenOffice[/caption]</p>
+
+<p>La utilidad de los gráficos estadísticos es:</p>
+
+ 	- Mostrar de forma explícita la distribución de valores de la variable, para hacernos una idea rápida de su distribución (uniforme, no uniforme, homogénea, heterogénea, máximos, mínimos, etc.)
+
+ 	- Poner de manifiesto tendencias y efectos que de otra forma pueden quedar ocultos
+
+<p><strong> Ejemplo 6</strong>: uso práctico de gráficos en el control de calidad de un proceso de fabricación. En una cierta fábrica de bizcochería industrial se han recibido algunas quejas de clientes debido a que sus departamentos de calidad han detectado que en las remesas recibidas los bizcochos tienen un peso medio inferior al esperado, que es de 220 gramos con una tolerancia de ±10 gr. Para comprobarlo, se realiza una muestra aleatoria del peso en gramos del bizcocho producido que puede ser elaborado por dos máquinas diferentes (1 y 2) atendidas indistintamente por dos operarios (A y B), tomando una muestra diaria aleatoriamente de una de las máquinas y uno de los operarios (nota: realmente esto no se hace exactamente así, sólo es un ejemplo), los resultados han sido:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Dia**</td>
+    </tr>
+    <tr>
+      <td><strong>Peso (gr)</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Máquina</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Operario</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>195,0</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>228,5</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>217,6</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>207,2</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>213,8</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>217,6</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>211,5</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>202,7</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>207,8</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>203,1</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>204,0</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>215,7</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>202,7</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>225,6</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>230,3</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>216,6</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>217,3</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>223,3</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>221,9</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>220,1</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Representando todos los pesos en un histograma, en el que agrupamos los datos en las categorías [200, 205), [205, 210), [210, 215), [215, 220), [220, 225), [225, 230), [230, 235], resulta:</p>
+
+<p>[caption id=”attachment_1350” align=”alignnone” width=”572”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript_tots.png"><img src="/assets/images/descript_tots.png" alt="Histograma de datos agrupados en categorías" /></a> Histograma de datos agrupados en categorías[/caption]
+Las dos líneas verticales rojas representan los límites de tolerancia: vemos que efectivamente el proceso de producción está desviado a la izquierda, produce demasiadas unidades por debajo del peso mínimo establecido. Para saber cuál puede ser el orígen del problema, representamos de nuevo los datos pero esta vez separando por categorias: por máquinas y por operarios. Obtenemos:</p>
+
+<p>[caption id=”attachment_1351” align=”alignnone” width=”760”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript-categories.png"><img src="/assets/images/descript-categories.png" alt="Datos según las categorías máquinas y operarios" /></a> Datos según las categorías máquinas y operarios[/caption]
+Vemos que hay una diferencia acusada entre las dos máquinas, pues la M1 presenta pesos mucho más dispersos del peso medio (220 gr), y con mayor número de unidades en la gama baja de pesos. En cambio entre operarios hay pocas diferencias. En conclusión, parece que debemos revisar la máquina 1.</p>
+
+<p> <a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></p>
+<h1 id="agrupación-de-datos-en-intervalos">Agrupación de datos en intervalos</h1>
+
+<p> En el ejemplo anterior hemos visto que los datos de una variable continua (peso en gramos) es más cómodo agruparlos en intervalos de valores. Esto se hace más patente cuando aumenta el tamaño de la muestra. Supongamos que en vez de 20 pesos de bizcochos tenemos 160. Para organizar esos datos en intervalos procedemos como sigue:</p>
+
+ 	- Hallamos el valor mínimo (redondeado), por ejemplo: 207
+
+ 	- Hallamos el valor máximo (redondeado), por ejemplo: 231
+
+ 	- calculamos el <strong>recorrido</strong> = Valor máximo valor mínimo =  231 - 207 =  24
+
+ 	- Fijamos el número de intervalos, que suele estar entre 6 y 10, por ejemplo k = 8
+
+ 	- Calculamos la anchura de cada intervalo  = recorrido / k = 24 / 8  = 3
+
+<p>Los intervalos (o <strong>clases</strong>) serán pues: [207, 210), [210, 213), … [228, 231]. Entonces contamos cuantos de los datos caen en cada intervalo, formando la tabla de frecuencias:</p>
+
+<p>[caption id=”attachment_1354” align=”alignnone” width=”722”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/taula_freq.png"><img src="/assets/images/taula_freq.png" alt=" " /></a> Tabla de datos agrupados en clases, con las frecuencias absolutas y relativas[/caption]
+La marca de clase es simplemente el punto medio del intervalo que define a la clase. La frecuencia relativa se obtiene dividiendo la absoluta por el número N de datos. Las frecuencias acumuladas son sumas parciales de frecuencias.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></p>
+<h1 id="estadísticos-muestrales">Estadísticos muestrales</h1>
+
+<p>Un estadístico muestral, también llamado parámetro estadístico, es una función de los datos que devuelve un número, intentando resumir el conjunto de datos en un único indicador. El típico ejemplo es la media aritmética de N datos.</p>
+
+<h2 id="estadísticos-de-posición">Estadísticos de posición</h2>
+
+<p>Resumen la distribución de datos muestrales dando un valor que los representa atendiendo a la posición que ocupan en la recta real. Hay de dos tipos: de posición central y de posición no central.</p>
+
+<h3 id="estadísticos-de-posición-central">Estadísticos de posición central</h3>
+
+<p>Resumen todos los datos con un único valor que intenta ser central a todos.</p>
+
+<p><strong>Media aritmética</strong>: Si tenemos N datos $x_1, …, x_N$ la media aritmética es simplemente $\overline x=\frac1N\sum\nolimits_{i=1}^Nx_i$;  si tenemos los datos agrupados por frecuencias de forma que hay k clases, con k marcas de clase diferentes $x_1, …, x_k$, con frecuencias absolutas $F_1, …, F_k$ y un total de $N=\sum\nolimits_{i=1}^kF_i$ datos, la media aritmética es:</p>
+
+<p>$\overline x=\frac1N\sum\nolimits_{i=1}^kx_iF_i=\frac{\sum_{i=1}^kx_iF_i}{\sum_{i=1}^kF_i}$</p>
+
+<p><strong>Mediana</strong>
+Si ordenamos en orden creciente los datos no agrupados {x_1, … x_N} la mediana m ocupa la posición central. Para N impar resulta ser el dato que ocupa la posición (N + 1) / 2; para N par la definimos como la media de los datos que ocupan las posiciones (N / 2) y (N / 2) +1.
+Si los datos vienen agrupados en intervalos entonces usamos la fórmula de los centiles Ci (ver más bajo) con i = 50.</p>
+
+<p><strong>Moda</strong>
+Es el valor que presenta la frecuencia máxima. Puede haber más de una moda (distribución de datos multimodal).</p>
+
+<p><strong>Ejemplo</strong>:  la serie de 9 datos ordenados de menor a mayor {2, 5, 6, 6, 7, 9, 9, 9, 10} tiene moda = 9 (dato con más ocurrencia), mediana = 7 (pues con 9 datos el que ocupa la posición central es el quinto dato, que es el número 7) y la media aritmética = 7 (en este caso coincide con la mediana, pero no tiene porque ser así)</p>
+<h3 id="de-posición-no-central">De posición no central</h3>
+
+<p>Proporcionan valores que, ordenando los datos en orden creciente, dividen la distribución en partes iguales.</p>
+
+ 	- <strong>Cuartiles</strong>: son tres valores que hacen cuatro partes iguales
+
+ 	- <strong>Deciles</strong>: son nueve valores que hacen diez partes iguales (10% de los datos)
+
+ 	- <strong>Centiles o percentiles</strong>: son noventa nueve valores que hacen cien partes iguales (1% de los datos).
+
+<p>Evidentemente, se cumple que Primer cuartil = 25º centil, segundo cuartil = 50º centil, …. También, primer decil = 10º centil, segundo decil = 20º centil, …. Además, la Mediana = 50 centil.</p>
+
+<p>[caption id=”attachment_1356” align=”alignnone” width=”684”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/quartils.png"><img src="/assets/images/quartils.png" alt="Los tres quartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una " /></a> Los tres cuartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una[/caption]</p>
+
+<p>Con N datos no agrupados, el centil $C_i$ es el número que ocupa la posición $(iN / 100)$, donde $1\leq i\leq N$. Con datos agrupados en intervalos usamos la formula:</p>
+
+<p>$C_i=L_{j-1}+\frac{{\displaystyle\frac{i\left(N-1\right)}{100}}+1-N_{j-1}}{n_j}a_j$</p>
+
+<p>donde:</p>
+
+<p>$N_{j-1}$: frecuencia absoluta acumulada del intervalo anterior
+$L_{j-1}$: extremo inferior del intervalo donde está el dato que ocupa la posición (N-1) / 100
+$a_j$: anchura del intervalo donde está el dato que ocupa la posición (N-1) / 100
+$n_j$: frecuencia absoluta del intervalo donde está el dato que ocupa la posición (N-1) / 100
+Los percentiles pueden calcularse gráficamente usando el diagrama de frecuencias relativas acumuladas, con líneas que unen los puntos, obtenemos el denominado polígono de frecuencias acumuladas. Para encontrar digamos el percentil $c_{20}$ hallamos la abscisa correspondiente a la ordenada Y = 20:</p>
+
+<p>[caption id=”attachment_1358” align=”alignnone” width=”663”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/poligon_acumulatiu.png"><img src="/assets/images/poligon_acumulatiu.png" alt="Polígono acumulativo de frecuencias, y obtención del percentil 20" /></a> Polígono acumulativo de frecuencias, y obtención del percentil 20[/caption]</p>
+
+<p>De hecho la formula que hemos dado no es más que una semejanza entre triángulos; en la figura, si nos fijamos en los dos triángulos semejantes delimitados por los puntos (200, 5%), (C, 20%), y (205, 25%) planteamos:</p>
+
+<p>[caption id=”attachment_1360” align=”alignnone” width=”220”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/percentils.png"><img src="/assets/images/percentils.png" alt="Triángulos semejantes en el polígono de frecuencias acumuladas" /></a> Triángulos semejantes en el polígono de frecuencias acumuladas[/caption]</p>
+
+<p>$\frac{205-200}{25-5}=\frac{205-C}{25-20}\Rightarrow C=205-\frac5{20}5=203.8$</p>
+
+<p>Por tanto el percentil 20 vale 203.8. En general, la formula que se deriva del método gráfico será:</p>
+
+<p>$\frac{X_{sup}-X_{inf}}{Y_{sup}-Y_{inf}}=\frac{X_{sup}-C}{Y_{sup}-p}\Rightarrow C=X_{sup}-\frac{X_{sup}-X_{inf}}{Y_{sup}-Y_{inf}}\left(Y_{sup}-p\right)$
+donde p es es porcentaje para el que buscamos el percentil (por ejemplo, para $C_{20}$ será p=20), C es el valor del percentil, $Y_{sup}$ es un porcentaje superior a p,  $Y_{inf}$ es un porcentaje inferior a p, y $X_{sup}, X_{inf}$ los valores de abscisas correspondientes.</p>
+
+<p>Al aplicar las dos formulas de percentiles, la primera que es útil para trabajar con tablas de frecuencias y la segunda para gráficas de frecuencias, encontraremos diferencias en los resultados, debido a que ninguno de los dos son métodos exactos sino aproximaciones. Esto es así debido a que un percentil $C_p$, en sentido estricto, es un valor de la distribución que la divide en dos partes, con el p% de valores por un lado y el 100-p%  por el otro, pero es posible que ese valor no exista realmente en la distribución, lo que tomamos es una aproximación. Además al trabajar con tablas de frecuencias en vez de con los datos originales siempre tenemos alguna pérdida de información.</p>
+
+<p>Esto se aprecia fácilmente con la mediana, que equivale al percentil 50. Tomemos por ejemplo la siguiente distribución de 19  valores:</p>
+
+<p>$\left{107,\;113,\;119,\;125,\;131,\;135,\;146,\;147,\;147,\;149,\;160,\;162,\;172,\;173,\;177,\;187,\;191,\;193,\;193\right}$</p>
+
+<p>Siendo un número impar de valores, la mediana es el valor que ocupa la posición (N + 1) / 2 = (19 + 1) / 2 = 10, que es el valor X = 149, exactamente.</p>
+
+<p>Agrupemos ahora los datos en una tabla de frecuencias, por ejemplo con cuatro intervalos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Xinf</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Xsup</strong></td>
+    </tr>
+    <tr>
+      <td><strong>freq.</strong></td>
+    </tr>
+    <tr>
+      <td>** freq %**</td>
+    </tr>
+    <tr>
+      <td><strong>F % acum</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>21,1</td>
+    </tr>
+    <tr>
+      <td>21,1</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>31,6</td>
+    </tr>
+    <tr>
+      <td>52,6</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>21,1</td>
+    </tr>
+    <tr>
+      <td>73,7</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>26,3</td>
+    </tr>
+    <tr>
+      <td>100,0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En amarillo se destaca el intervalo donde debe de estar la mediana, pues su frecuencia acumulada supera el 50%. Si aplicamos ahora las dos formulas aproximadas, obtenemos los valores 150 y 148 respectivamente; en este caso el valor exacto se sitúa en el punto medio entre los dos valores aproximados.</p>
+<h2 id="medidas-de-dispersión">Medidas de dispersión</h2>
+
+<p>Indican numéricamente si los valores de los datos están agrupados en torno a la media o dispersos.</p>
+
+ 	- <strong>Recorrido</strong> = valor máximo - valor mínimo
+
+ 	- <strong>Desviación media</strong>: $D=\frac1N\sum\nolimits_{i=1}^n\left|x_i-\overline x\right|$
+
+ 	- <strong>Varianza</strong>: $\sigma^2=\frac1N\sum\nolimits_{i=1}^n\left(x_i-\overline x\right)^2$
+
+ 	- <strong>Desviación típica</strong>:
+<p>$\sigma=\sqrt{\sigma^2}=\sqrt{\frac1N\sum\nolimits_{i=1}^n\left(x_i-\overline x\right)^2}$</p>
+
+ 	- <strong>Coeficiente de variación</strong> (Pearson). Proporciona un valor de la dispersión independiente de las unidades. Útil para comparar dispersiones de variables diferentes: $V=\sigma/\overline x$
+
+<p>Las fórmulas de la desviación media, varianza y desviación típica han de adaptarse para trabajar con datos de tablas de frecuencias; llamando $n_i$ a la frecuencia absoluta del valor $x_i$ serán: $D=\frac1N\sum\nolimits_{i=1}^n\left|x_i-\overline x\right|n_i$, $\sigma^2=\frac1N\sum\nolimits_{i=1}^n\left(x_i-\overline x\right)^2n_i$ y $\sigma=\sqrt{\sigma^2}=\sqrt{\frac1N\sum\nolimits_{i=1}^n\left(x_i-\overline x\right)^2n_i}$ respectivamente.
+<strong>Ejemplo 8</strong>: En una panadería quieren comparar la distribución de pesos de dos de sus productos, las piezas de pan de 1Kg y las de 1/4Kg. Para ello pesan 20 piezas de cada producto, en días distintos, obteniendo estos resultados, en gramos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Pan 1Kg (gr)</td>
+    </tr>
+    <tr>
+      <td>986</td>
+    </tr>
+    <tr>
+      <td>976</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>965</td>
+    </tr>
+    <tr>
+      <td>961</td>
+    </tr>
+    <tr>
+      <td>987</td>
+    </tr>
+    <tr>
+      <td>1009</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+    </tr>
+    <tr>
+      <td>961</td>
+    </tr>
+    <tr>
+      <td>999</td>
+    </tr>
+    <tr>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <td>964</td>
+    </tr>
+    <tr>
+      <td>978</td>
+    </tr>
+    <tr>
+      <td>989</td>
+    </tr>
+    <tr>
+      <td>969</td>
+    </tr>
+    <tr>
+      <td>1007</td>
+    </tr>
+    <tr>
+      <td>971</td>
+    </tr>
+    <tr>
+      <td>997</td>
+    </tr>
+    <tr>
+      <td>980</td>
+    </tr>
+    <tr>
+      <td>982</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Pan 1/4 Kg (gr)</td>
+    </tr>
+    <tr>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>238</td>
+    </tr>
+    <tr>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>233</td>
+    </tr>
+    <tr>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>233</td>
+    </tr>
+    <tr>
+      <td>239</td>
+    </tr>
+    <tr>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>253</td>
+    </tr>
+    <tr>
+      <td>236</td>
+    </tr>
+    <tr>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>241</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Con la hoja de cálculo, sin agrupar los datos por frecuencias, obtenemos:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Media</td>
+    </tr>
+    <tr>
+      <td>Mediana</td>
+    </tr>
+    <tr>
+      <td>Varianza</td>
+    </tr>
+    <tr>
+      <td>Desv.Tip</td>
+    </tr>
+    <tr>
+      <td>Desv. Media</td>
+    </tr>
+    <tr>
+      <td>Coef.Var</td>
+    </tr>
+    <tr>
+      <td>Recorrido</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Pan 1Kg (gr)</td>
+    </tr>
+    <tr>
+      <td>984,5</td>
+    </tr>
+    <tr>
+      <td>983,8</td>
+    </tr>
+    <tr>
+      <td>274,1</td>
+    </tr>
+    <tr>
+      <td>16,6</td>
+    </tr>
+    <tr>
+      <td>14,0</td>
+    </tr>
+    <tr>
+      <td>0,02</td>
+    </tr>
+    <tr>
+      <td>49,6</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Pan 1/4 Kg (gr)</td>
+    </tr>
+    <tr>
+      <td>242,1</td>
+    </tr>
+    <tr>
+      <td>241,8</td>
+    </tr>
+    <tr>
+      <td>59,7</td>
+    </tr>
+    <tr>
+      <td>7,7</td>
+    </tr>
+    <tr>
+      <td>6,5</td>
+    </tr>
+    <tr>
+      <td>0,03</td>
+    </tr>
+    <tr>
+      <td>23,1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Analizando estos parámetros, vemos que:</p>
+
+ 	- la media de los dos productos está ligeramente por debajo del peso anunciado.
+
+ 	- La media y la mediana son muy parecidas; esto sucede cuando la distribución de valores cumple que tanto los valores altos como los bajos tienen frecuencias parecidas, de forma simétrica respecto al valor medio.
+
+ 	- Lo mismo sucede con las desviaciones típica y media, son parecidas entre sí. Además, las desviaciones son medidas absolutas que han de comparase con la media para hacerse una idea de su significado. En la barra de 1Kg la desviación típica, 16.6gr, viene a ser un 16.6·100/984.5 = 1.7%; en general, en los procesos productivos, las desviaciones han de ser lo menor posible, este valor de 1.7% puede ser aceptable para una empresa familiar, pero no serlo para un gran fabricante, pues implica un desconocimiento del peso real de cada unidad.
+
+ 	- Para comparar las desviaciones entre los dos productos, usamos el coeficiente de variación, y vemos que es superior en la barra de 1/4.
+
+<p>Si queremos una representación gráfica, agrupamos los valores por intervalos para formar la tabla de frecuencias. Por ejemplo escogemos el número de intervalos k = 4, teniendo en cuenta los recorridos, calculamos las anchuras de los intervalos: para las barras de 1Kg será 49,6/4 = 12,4 y para las de 1/4 tenemos 24/4 = 6. Los valores mínimos son 960 y 230 respectivamente. Establecemos los siguientes intervalos: [960, 973), [973, 986), [986, 999) y [999, 1012] para las barras de 1Kg, [230, 236), [236, 242), [242, 248) y [248, 254] para las barras de 1/4. La tabla de frecuencias es:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>desde</strong></td>
+    </tr>
+    <tr>
+      <td><strong>hasta</strong></td>
+    </tr>
+    <tr>
+      <td><strong>frecuencia</strong></td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>desde</strong></td>
+    </tr>
+    <tr>
+      <td><strong>hasta</strong></td>
+    </tr>
+    <tr>
+      <td><strong>frecuencia</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>960</td>
+    </tr>
+    <tr>
+      <td>973</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>236</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>973</td>
+    </tr>
+    <tr>
+      <td>986</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>236</td>
+    </tr>
+    <tr>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>986</td>
+    </tr>
+    <tr>
+      <td>999</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>999</td>
+    </tr>
+    <tr>
+      <td>1012</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>El histograma de frecuencias absolutas, para el pan de 1Kg, con indicación del valor medio, es:</p>
+
+<p>[caption id=”attachment_1368” align=”alignnone” width=”440”]<a href="http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exemple1_descriptiva.png"><img src="/assets/images/exemple1_descriptiva.png" alt="Histograma de frecuencias absolutas" /></a> Histograma de frecuencias absolutas[/caption]
+En este ejemplo vemos que la media aritmética no parece ser un buen representante de la distribución de pesos, simplemente es un valor central.</p>
+
+<p><a href="http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png"><img src="/assets/images/separador2-300x37.png" alt="separador2" /></a></p>
+
+  </div>
+  
+  <footer class="post-tags">
+    Tags: <a href="/tag/centil">centil</a>, <a href="/tag/cuartil">cuartil</a>, <a href="/tag/datos-agrupados">datos agrupados</a>, <a href="/tag/decil">decil</a>, <a href="/tag/desviación-típica">desviación típica</a>, <a href="/tag/desviación-media">desviación media</a>, <a href="/tag/estadísticos">estadísticos</a>, <a href="/tag/frecuencia-absoluta">frecuencia absoluta</a>, <a href="/tag/frecuencia-relativa">frecuencia relativa</a>, <a href="/tag/histograma">Histograma</a>, <a href="/tag/media">media</a>, <a href="/tag/moda">moda</a>, <a href="/tag/percentil">percentil</a>, <a href="/tag/recorrido">recorrido</a>, <a href="/tag/varianza">varianza</a>
+  </footer>
+  
+</article>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jordi Cuesta Andrea</p>
+  </footer>
+
+</body>
+</html>

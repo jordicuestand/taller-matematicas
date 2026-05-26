@@ -12,6 +12,7 @@ tags:
   - "radio curvatura"
 math: true
 ---
+{% raw %}
 
 ### Trayectorias diferenciables: radio y centro de curvatura
 
@@ -108,3 +109,4 @@ ${\overrightarrow a}_n=\overrightarrow a-{\overrightarrow a}_t\approx\begin{bmat
 igualamos el módulo de este vector con v²/R, para obtener el radio de curvatura: $0.4=20^2/R\Rightarrow R=1000m.$ El centro de curvatura lo encontramos a partir de la expresión [7]:
 
 $\overrightarrow{PC}=R\overrightarrow n=1000\cdot\begin{bmatrix}0\\1\\0\end{bmatrix}=\begin{bmatrix}0\\1000\\0\end{bmatrix}.$
+{% endraw %}

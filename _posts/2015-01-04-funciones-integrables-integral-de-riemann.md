@@ -16,6 +16,7 @@ tags:
   - "teorema fundamental del cálculo"
 math: true
 ---
+{% raw %}
 
 ## Introducción: el problema del cálculo del área y sus aplicaciones
 
@@ -214,3 +215,4 @@ Esta función es continua: se deja como ejercicio comprobar que $\lim_{x_0\right
 Pero a pesar de ser continua, $I(x)$ no es derivable en el punto $x=1$ (observar en la gráfica anterior el cambio brusco de pendiente en ese punto), se puede comprobar aplicando la definición de derivada en ese punto: $I'(1)=\lim_{x\rightarrow1}\frac{I\left(x\right)-I(1)}{x-1},$ al hacer los límites laterales $\lim_{x\rightarrow1^-}$ y $\lim_{x\rightarrow1^+}$ no coinciden (ejercicio para el lector), luego no existe la derivada en $x=1$.
 
 Entonces, la función primitiva $F(x)$ no está definida para $x=1$, y se cumple que $F(x)=I(x)$ y que $F'(x)=f(x)$ para todo $x\in\left[0,2\right]$ excepto en $x=1.$
+{% endraw %}
