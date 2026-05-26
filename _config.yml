@@ -5,8 +5,8 @@ email: jordicuestand@gmail.com
 lang: es
 
 # URL del lloc (canvia-ho quan tinguis el domini de GitHub Pages)
-url: "https://TU_USUARI.github.io"
-baseurl: "/taller-matematiques"
+url: "https://jordicuestand.github.io"
+baseurl: "/taller-matematicas"
 
 # Jekyll
 theme: minima
