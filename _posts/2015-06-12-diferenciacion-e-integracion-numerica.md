@@ -112,10 +112,10 @@ sustituyendo el valor $x=15$ obtenemos $f'(15)=-10.5$.
 
 | 
 
-[caption id="attachment_818" align="alignnone" width="315"]![Polinomio interpolador](/assets/images/polinomi_interpolant_derivació_num1.png) Polinomio interpolador[/caption] 
+[caption id="attachment_818" align="alignnone" width="315"]![Polinomio interpolador](/taller-matematicas/assets/images/polinomi_interpolant_derivació_num1.png) Polinomio interpolador[/caption] 
 | 
 
-[caption id="attachment_819" align="alignnone" width="316"][![Derivada del polinomio](/assets/images/derivada_interpolada1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/derivada_interpolada1.png) Derivada del polinomio[/caption] 
+[caption id="attachment_819" align="alignnone" width="316"][![Derivada del polinomio](/taller-matematicas/assets/images/derivada_interpolada1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/derivada_interpolada1.png) Derivada del polinomio[/caption] 
 
 **Ejemplo 3**: De una función de la que desconocemos su expresión analítica sabemos su valor en tres puntos, son: $\left(0,1\right),\;\left(\frac{2\mathrm\pi}6,0.5\right),\;\left(\frac{\mathrm\pi}2,0\right).$ Evaluar el valor de la derivada de la función en el punto $x=\frac{\mathrm\pi}4.$
 
@@ -152,7 +152,7 @@ derivando y sustituyendo el valor pedido: $P'(x)=-0.608x-0.159;\;P'(\frac{\mathr
 
 Dada una función [integrable Riemann](http://tallermatematic.eu/wp/?p=674) $f(x)$ de la cual no podemos obtener su función primitiva $F\left(x\right)=\int f\left(x\right)$, pero sí sabemos sus valores en un conjunto de puntos interior al intervalo $(a,b)$, entonces podemos calcular la integral definida $F\left(x\right)=\int_a^bf\left(x\right)$ con el siguiente método aproximado: consideramos una partición del intervalo $(a,b)$ según $n+1$ puntos equidistantes $x_0=a, x_1, ..., x_{n-1}, x_n=b$;  podemos aproximar la función $f(x)$ en cada subintervalo $(x_{i-1},x_i)$ por su polinomio interpolador de grado 1, o sea una recta. El área comprendida entre la gráfica de la función y el eje X podrá aproximarse sumando las áreas de los trapecios formados por los puntos $x_{i-1},x_i, f(x_{i-1}),f(x_i)$, como muestra la figura:
 
-[caption id="attachment_1142" align="alignnone" width="570"][![integración por interpolación de grado 1: trapecios](/assets/images/formula_Trapeci.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/06/formula_Trapeci.png) integración por interpolación
+[caption id="attachment_1142" align="alignnone" width="570"][![integración por interpolación de grado 1: trapecios](/taller-matematicas/assets/images/formula_Trapeci.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/06/formula_Trapeci.png) integración por interpolación
  de grado 1: trapecios. Se muestra la gráfica de f(x) y los segmentos rectos que aproximan a la función en cada intervalo, así como uno de los trapecios: entre los puntos segundo y tercero.[/caption]
 
 El área del trapecio formado por esos puntos es:

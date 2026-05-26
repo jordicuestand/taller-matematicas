@@ -20,7 +20,7 @@ math: true
 
 	- Estratégias para la búsqueda de raíces
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  
 ## Introducción
@@ -249,7 +249,7 @@ Hemos necesitado tres iteraciones del algoritmo para obtener la precisión desea
 | **0.4285714285** 
 | 11 
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ## Búsqueda de una raíz de una ecuación
 
@@ -268,7 +268,7 @@ Una especialización de este teorema, especialmente útil para separar raíces, 
 **Ejemplo 6**: separar las raíces de la función $y=x^3+x^2+3.$
 
 | 
-[![exemple2_equacions](/assets/images/exemple2_equacions-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/exemple2_equacions.png)
+[![exemple2_equacions](/taller-matematicas/assets/images/exemple2_equacions-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/exemple2_equacions.png)
 
  
 | Es una función continua. La gráfica de la función muestra una única raíz cerca del valor $x=-2$; sabemos que los polinomios tienen como máximo tantas raíces como indica su grado, tres en este caso. ¿Puede ser que existan más raíces que no vemos? La derivada $y'=3x^2+2x$ para $x&lt;-2$ toma valores positivos, luego en el intervalo $\left(-\infty,-2\right)$ la función es siempre creciente, además, $\lim_{x\rightarrow-\infty}f(x)=-\infty.$ 
@@ -516,7 +516,7 @@ Comparando con el ejemplo 8, vemos que el algoritmo de Newton obtiene mejores re
 
  El método de Newton puede verse desde el punto de vista geométrico como la aproximación local de la función por su recta tangente en cada punto $x_n$. por ejemplo, en la imagen siguiente, para encontrar $y=f(x)=0$ (línia en negro) por Newton usando como aproximación inicial $x_0=3$ aproximamos la función por su tangente en ese punto (línea amarilla) y hallamos su punto de corte con el eje X, que es la siguiente aproximación $x_1=2$. En el método de la secante usamos un intervalo inicial $(p_0,p_1)$ (como en el método de bisección) y aproximamos la función por la recta secante en el intervalo: en la imagen el intervalo es $(0,3)$, el corte de la secante con el eje X es precisamente en $x=0$ donde $f(x)=0$: el  método encuentra la raíz en un solo paso, ya que hemos tenido la suerte de escoger como extremo del intervalo la solución de la ecuación.
 
-[caption id="attachment_481" align="alignnone" width="442"][![Recta tangente y recta secante a la gráfica de la función y=f(x)](/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png) Recta tangente y recta secante a la gráfica de la función y=f(x)[/caption]
+[caption id="attachment_481" align="alignnone" width="442"][![Recta tangente y recta secante a la gráfica de la función y=f(x)](/taller-matematicas/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png) Recta tangente y recta secante a la gráfica de la función y=f(x)[/caption]
 
 Caso de que la secante tomada en el intervalo$(p_0,p_1)$ no nos dé el resultado, tomamos una nueva recta secante pasando por los puntos $(p_1,p).$
 **Algoritmo de la secante**

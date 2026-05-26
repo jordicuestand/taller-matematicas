@@ -42,7 +42,7 @@ Los conceptos asociados a estas competencias son:
 
  	- Comprende el concepto de matriz diagonalizable y su relación con las aplicaciones lineales.
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
  	- [Espacios vectoriales](http://tallermatematic.ovh/wp/index.php/2016/11/02/espacios-vectoriales/)
 

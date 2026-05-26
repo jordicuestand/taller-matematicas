@@ -21,7 +21,7 @@ Aplicando la 2ª ley de Newton F=ma, e igualando con la fuerza gravitatoria, obt
 
 $F=ma=\frac m{2400}=mg\Rightarrowboxed{g=\frac1{2400}\frac m{s^2}}$
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **2**. Dos objetos de masas m y M se atraen con una fuerza gravitatoria de 80N cuando están a una cierta distancia d; ¿con que fuerza se atraerán dos objetos de masa 10m y M situados a una distancia de 4d?
 
@@ -29,7 +29,7 @@ Solución:
 
 En el primer caso la fuerza gravitatoria será $F=G\frac{mM}{d^2}=80N$ y en el segundo será $F'=G\frac{10mM}{\left(4\dright)^2}=G\frac{10mM}{16d^2}=\frac{10}{16}\left(G\frac{mM}{d^2}\right)=\frac58F=\frac5880=\boxed{50N}$
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **3.** Calcular a que altura la intensidad del campo gravitatorio terrestre se reduce a la mitad del que tiene en la superficie,
 
@@ -45,5 +45,5 @@ $h=2639 Km$
 
 Este resultado es fácilmente generalizable a cualquier proporción p>1: $h=\left(sqrt {p-1}\right)R_T$
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 {% endraw %}

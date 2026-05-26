@@ -17,7 +17,7 @@ math: true
 **1.** Comprobar que podemos aplicar el teorema de Rolle a la función $y=x-x^3$ en el intervalo $[-1,0]$, y hallar el valor particular para el que se cumple el teorema.
 La función es derivable en todo $\mathbb{R}$. Los valores en los extremos coinciden: $f(-1)=0=f(0)$. Luego existe un $c\in\left[-1,0\right]$ tal que $f'(c)=0$. Para hallarlo simplemente resolvemos la ecuación $f'(x)=0\Leftrightarrow1-3x^2=0\Leftrightarrow x=\pm1/\sqrt3$, el valor $c=-1/\sqrt3$ es el que buscamos.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 **2.** Estudiar la existencia de valores máximos y mínimos de la función $\frac{x+1}{x^2+1}$ definida en el intervalo $[-1,0.5]$.
 
 el intervalo $A=[-1,0.5]$ es cerrado y acotado, por tanto es un conjunto compacto (Teorema de Heine-Borel, ver [Cálculo en R -> Tolopologia de R](http://mathseng.blogspot.com.es/2014/02/topologia-de-r.html) ), además la función es contínua en $A$: las fracciones racionales $P(x)/Q(x)$ (cociente de polinomios) son continuas excepto en los puntos donde $Q(x)=0$, en nuestro caso es $x^2+1=0$ que no se cumple para ningun $x$ real. Entonces tenemos una función continua en un conjunto compacto, por el Teorema de Weierstrass (ver [Cálculo en R -> Funciones continuas](http://tallermatematic.eu/wp/?p=377), teorema 2) ha de tener un máximo y un mínimo absolutos en $A$. Además, la función es derivable (las fracciones racionales lo son). Entonces los máximos y mínimos absolutos o bien son  puntos donde la derivada vale 0, o bien estan en los extremos del intervalo de definición $A$. Calculamos la derivada:
@@ -48,9 +48,9 @@ De estos dos puntos, solo uno de ellos, $x=-1+\sqrt2$, pertenece al dominio $A$,
 
 Tenemos el máximo absoluto (también es un máximo relativo) en $x=-1+\sqrt2$ y el mínimo absoluto en el extremo inferior del intervalo, $x=-1.$
 
-[caption id="attachment_589" align="alignnone" width="300"][![Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.](/assets/images/exercici2_aplic_derivadas-300x292.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici2_aplic_derivadas.png) Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.[/caption]
+[caption id="attachment_589" align="alignnone" width="300"][![Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.](/taller-matematicas/assets/images/exercici2_aplic_derivadas-300x292.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici2_aplic_derivadas.png) Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.[/caption]
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **3.** Calcular el límite $\lim_{x\rightarrow0}\frac{\tan\left(x\right)-\sin\left(x\right)}{x-\sin\left(x\right)}$ usando la regla de l'Hôpital.
 $\lim_{x\rightarrow0}\frac{\tan\left(x\right)-\sin\left(x\right)}{x-\sin\left(x\right)}=\frac{0-0}{0-0}=\frac00=?$ el límite es indeterminado, y las funciones del numerador y denominador son derivables en el punto $x=0$, podemos aplicar l'Hôpital:
@@ -65,13 +65,13 @@ de nuevo tenemos una indeterminación del mismo tipo $0/0$, aplicamos otra vez
 
 $\begin{array}{l}\lim_{x\rightarrow0}\frac{\displaystyle\frac{2\sin\left(x\right)}{\cos^3\left(x\right)}+\sin\left(x\right)}{\sin\left(x\right)}=\lim_{x\rightarrow0}\frac{\displaystyle D\left|\frac{2\sin\left(x\right)}{\cos^3\left(x\right)}+\sin\left(x\right)\right|}{D\left[\sin\left(x\right)\right]}=\\\lim_{x\rightarrow0}\frac{\displaystyle\frac{2\cos\left(x\right)\cos^3\left(x\right)+2\sin\left(x\right)\cdot3\cos^2\left(x\right)\sin\left(x\right)}{\cos^6\left(x\right)}+\cos\left(x\right)}{\cos\left(x\right)}=\\\lim_{x\rightarrow0}\frac{2\cos^2\left(x\right)+2\sin\left(x\right)\cdot3\sin\left(x\right)}{\cos^5\left(x\right)}+1=\frac{2+2\cdot0}1+1=3.\end{array}$
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **4.** Hallar el radio de la base de un cono con una generatriz de 2 unidades de longitud tal que el volumen del cono sea máximo.
 
 | 
 
-[caption id="attachment_598" align="alignnone" width="150"][![Radio r, altura h y generatriz s de un cono](/assets/images/exercici4_aplic_derivadas-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici4_aplic_derivadas.png) Radio r, altura h y generatriz s de un cono[/caption] 
+[caption id="attachment_598" align="alignnone" width="150"][![Radio r, altura h y generatriz s de un cono](/taller-matematicas/assets/images/exercici4_aplic_derivadas-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici4_aplic_derivadas.png) Radio r, altura h y generatriz s de un cono[/caption] 
 | El volumen de un cono de radio $r$ y altura $h$ es $V=\frac13\mathrm{πr}^2\mathrm h$. En el triángulo de la figura, siendo rectángulo, podemos aplicar Pitágoras: $s^2= h^2+r^2$, sustituyendo en la expresión del volumen: $V=\frac13\mathrm{πr}^2\mathrm h=\frac13\mathrm{πr}^2\sqrt{\mathrm s^2-\mathrm r^2}.$ 
 
 Ahora que tenemos la expresión del volumen como una función del radio (dado que la generatriz tiene el valor dado 2), para hallar su máximo derivamos:
@@ -85,7 +85,7 @@ $\begin{array}{l}\frac13\mathrm\pi\left(2\mathrm r\sqrt{4-\mathrm r^2}+\mathrm r
 La solución $r=0$ evidentemente nos da el volumen mínimo $V=0$. La segunda solución $r=\sqrt{\frac83}$ es el candidato a máximo; como función de $r$ el volumen $V\left(r\right)\frac13\mathrm{πr}^2\sqrt{\mathrm s^2-\mathrm
 r^2}$ está definida en el intervalo $\in\left[0,2\right]$, ya que no es posible tener un radio mayor que 2 si la generatriz es 2 (si $r=2$ tenemos  un cono degenerado: una recta, con volumen nulo); en ese intervalo la función volumen es una función continua, o sea que tenemos una función continua definida en un conjunto compacto, por lo tanto ha de tener mínimo y máximo abolutos. Como en los extremos del intervalo el volumen vale cero, el valor del volumen correspondiente a $r=\sqrt{\frac83}$ ha de ser el máximo, y valdrá $V=\frac13\pi\left(\sqrt{\frac83}\right)^2\sqrt{4-\left(\sqrt{\frac83}\right)^2}=\frac89\pi\sqrt{4-\frac83}=\frac89\pi\sqrt{\frac43}=\frac{16\pi}{9\sqrt3}.$
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **5.** Calcular el límite $\lim_{x\rightarrow0^+}\left(\cos\left(3x\right)\right)^{1/x^3}$ aplicando la regla de l'Hôpital.
 
@@ -110,7 +110,7 @@ $\lim_{x\rightarrow0^+}\frac{-\tan\left(3x\right)}{x^2}=\lim_{x\rightarrow0^+}-\
 
 y llegamos al mismo resultado. De paso hemos visto un ejemplo de como aplicar la fórmula de Taylor en límites indeterminados.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**6.** Calcular el límite $\lim_{x\rightarrow0}\frac{\sin\left(x\right)\sin\left(2x\right)}{\left(x-x^2\right)\left(x+x^2\right)}$ aplicando la regla de l'Hôpital.
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**6.** Calcular el límite $\lim_{x\rightarrow0}\frac{\sin\left(x\right)\sin\left(2x\right)}{\left(x-x^2\right)\left(x+x^2\right)}$ aplicando la regla de l'Hôpital.
 
 $\begin{array}{l}\lim_{x\rightarrow0}\frac{\sin\left(x\right)\sin\left(2x\right)}{\left(x+x^2\right)^2}=\frac{0\cdot0}0=?=\lim_{x\rightarrow0}\frac{D\left[\sin\left(x\right)\sin\left(2x\right)\right]}{D\left(x+x^2\right)^2}=\\\lim_{x\rightarrow0}\frac{\cos\left(x\right)\sin\left(2x\right)+\sin\left(x\right)\cos\left(2x\right)\cdot2}{2\left(x+x^2\right)\left(1+2x\right)}=\frac00=?\end{array}$
 
@@ -124,7 +124,7 @@ $\begin{array}{l}\lim_{x\rightarrow0}\frac{\sin\left(x\right)}{x+x^2}=\lim_{x\ri
 
 Por tanto el límite pedido es $L=1\cdot2=2$.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ** 7.** Hallar el polinomio de Taylor que aproxima a la función $sin(x)$ para $x\in\left(0,1\right)$ con una precisión de al menos $1/500.$
 
@@ -139,5 +139,5 @@ Por tanto el polinomio de Taylor será de grado 4:
 
 $\begin{array}{l}f\left(x\right)=\sin(0)+\frac{\cos\left(0\right)}{1!}x+\frac{-\sin\left(0\right)}{2!}x^2+\frac{-\cos\left(0\right)}{3!}x^3+\frac{\sin\left(0\right)}{4!}x^4\\=x-\frac16x^3+\varepsilon_5\left(x\right)\end{array}.$
 
-Por ejemplo, para $x=0.5$, el polinomio anterior vale $0.5-\frac160.5^3+\varepsilon_5\left(x\right)=\frac{23}{48}\approx0.4792$ mientras que el valor exacto es 0.4794 (redondeado con cuatro decimales), el error absoluto es de |0.4792-0.4794|=0.0002 < 1/500. [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+Por ejemplo, para $x=0.5$, el polinomio anterior vale $0.5-\frac160.5^3+\varepsilon_5\left(x\right)=\frac{23}{48}\approx0.4792$ mientras que el valor exacto es 0.4794 (redondeado con cuatro decimales), el error absoluto es de |0.4792-0.4794|=0.0002 < 1/500. [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

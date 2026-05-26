@@ -17,7 +17,7 @@ math: true
 
 # Introducción
 
-[caption id="attachment_48" align="alignleft" width="523"][![limit_funció_1](/assets/images/limit_funció_1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_1.png) El límite de f(x) en x=a es L si y=f(x) se acerca al valor L a medida que x se acerca al valor a[/caption]
+[caption id="attachment_48" align="alignleft" width="523"][![limit_funció_1](/taller-matematicas/assets/images/limit_funció_1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_1.png) El límite de f(x) en x=a es L si y=f(x) se acerca al valor L a medida que x se acerca al valor a[/caption]
 
 Intuitivamente, decimos que el límite de la función $f(x)$ en el punto $x=a$ es $L$, y escribimos $\lim_{x\rightarrow a}f(x)=L$, si se cumple que, cuanto más nos acercamos al punto $x=a$, más se acerca el valor correspondiente de la función a $L$.
 
@@ -34,7 +34,7 @@ Las definiciones matemáticas, exactas, sin ambigüedades,  suelen sin embargo 
 
 **Ejemplo 1. Limite finito en un punto. **
 
-[![limit_funció_2](/assets/images/limit_funció_21.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_21.png)
+[![limit_funció_2](/taller-matematicas/assets/images/limit_funció_21.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_21.png)
 
  
 La función $f(x)=x^2$ tiene dominio $A=\mathbb{R}$. El límite de $f(x)$ en $x=\frac12$ es $L=\frac14$. Entonces, dado un $R&gt;0$, por ejemplo $R=0.001$ (se suelen tomar valores "pequeños" de R, para comprobar que podemos acercarnos al límite $L$ todo lo que queramos), existirá un $r&gt;0$, por ejemplo tomemos $r=0.0001$, tal que para cualquier punto $x$ dentro del entorno $B(\frac12, 0.0001)$, la imágen $y=f(x)$ estará dentro del entorno  $B(\frac14, 0.001)$. En efecto,
@@ -49,7 +49,7 @@ por tanto se cumple la condición. Lo hemos probado para un valor concreto de $R
 
 **Ejemplo 2. Límite infinito en un punto. Límite en el infinito.**
 
-[![limit_funció_3](/assets/images/limit_funció_3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_3.png)
+[![limit_funció_3](/taller-matematicas/assets/images/limit_funció_3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_3.png)
 
 El dominio de la función $Ln(x)$ es $\mathbb{R}^+-\left\{0\right\}$, o, equivalentemente, $\left\{x\left|0&lt;x&lt;+\infty\right.\right\}$.
 
@@ -59,7 +59,7 @@ El otro caso interesante es $\lim_{x\rightarrow\infty}Ln(x)=+\infty$, no es un 
 
 **Ejemplo 3. Límite finito en el infinito.**
 
-[![limit_funció_4](/assets/images/limit_funció_4.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_4.png)
+[![limit_funció_4](/taller-matematicas/assets/images/limit_funció_4.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_4.png)
 
 $\lim_{x\rightarrow\infty}\frac1x=0$, el límite en el infinito és un valor finito, en este caso cero.
 
@@ -71,7 +71,7 @@ Si existe el límite $L=\lim_{x\rightarrow a}f(x)$ entonces $L$ es el único lim
 
 Consideremos la función $y=f(x)=tg(x)=\frac{\sin(x)}{\cos(x)}$, y fijémonos en una parte de su gráfica, entre los puntos $x=0$ y $x=\mathrm\pi$
 
-[![limit_funció_5](/assets/images/limit_funció_5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_5.png)
+[![limit_funció_5](/taller-matematicas/assets/images/limit_funció_5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/limit_funció_5.png)
 
 ¿Que vale el límite $\lim_{\mathrm x\rightarrow\mathrm\pi/2}\mathrm f(\mathrm x)$? Cerca del punto $x=\mathrm\pi/2 \approx 1.57$ el valor de $f(x)$ se hace infinito, pero con distinto signo dependiendo si nos acercamos por la izquierda, $+\infty$ en este caso, o por la derecha, $-\infty$. De hecho, el punto $x=\mathrm\pi/2$ no es del dominio de la función, pero ya sabemos que esto no es un problema para el cálculo de límites, basta con que sea un punto de acumulación del dominio.
 
@@ -102,7 +102,7 @@ $f(x)=\left\{\begin{array}{l}x\;\text{si }x\in\mathbb{Z}\\max\;\left\{k\in\mathb
 
 Por ejemplo, $f(1) =1$ , $f(1.5) = 1$, pues 1 es el mayor entero menor o igual a 1.5 .
 
-[![part_entera](/assets/images/part_entera.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/part_entera.png)
+[![part_entera](/taller-matematicas/assets/images/part_entera.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/part_entera.png)
 
 Si estudiamos los límites laterales en, por ejemplo, $x=1$:
 $\lim_{x\rightarrow1^-}f(x)=0,\;\lim_{x\rightarrow1+}f(x)=1$
@@ -148,10 +148,10 @@ Una función racional $f(x)$ es la que tiene como expresión un cociente de poli
 
 Comencemos por la función racional $f(x)=\frac1{\left(x-a\right)^n}$ estudiando el límite $\lim_{x\rightarrow a}f(x)$. Supongamos que $n$ es un entero par. En este caso, el denominador $\left(x-a\right)^n$ será mayor que cero para todo $x$. En la siguiente figura vemos representada la función para $n=2$ y $a=1$.
 
-[caption id="attachment_71" align="aligncenter" width="393"][![racional1](/assets/images/racional1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional1.png) f(x) = 1/(x-1)²[/caption]
+[caption id="attachment_71" align="aligncenter" width="393"][![racional1](/taller-matematicas/assets/images/racional1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional1.png) f(x) = 1/(x-1)²[/caption]
 Vemos que los límites laterales en $x=a$ son ambos coincidentes y valen $+\infty$.  En el caso de que $n$ sea impar, el signo de $\left(x-a\right)^n$  será positivo para $x&gt;a$ y negativo para  $x&lt;a$. En la siguiente figura vemos el caso $f(x)=\frac1{x-1}$.
 
-[caption id="attachment_73" align="aligncenter" width="504"][![racional3](/assets/images/racional3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional3.png) f(x) = 1/(x-1)[/caption]
+[caption id="attachment_73" align="aligncenter" width="504"][![racional3](/taller-matematicas/assets/images/racional3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/racional3.png) f(x) = 1/(x-1)[/caption]
 Ahora los límites laterales en $x=1$ no coinciden, así que no tenemos ĺimite en ese punto.
 
 Concluimos pues:

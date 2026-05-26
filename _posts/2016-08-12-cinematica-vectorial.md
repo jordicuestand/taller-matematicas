@@ -30,12 +30,12 @@ El movimiento es siempre relativo a quién lo describe; el pasajero de un tren d
 
 La cinemática del punto usa el concepto de [espacio euclídeo](https://es.wikipedia.org/wiki/Espacio_eucl%C3%ADdeo) para representar el espacio físico real: para definir un marco de referencia euclídeo debemos dar un **origen de coordenadas** O y una **base**, que para el espacio tridimensional es un conjunto de tres vectores ortogonales unitarios $e_1,e_2,e_3$ (también llamados *ortonormales*).
 
-[caption id="attachment_150036" align="alignnone" width="386"]![Fig. 1: ejes ortogonales, base ortogonal, origen de coordenadas, definen una referencia euclídea](/assets/images/referencia_euclidea.png) Fig. 1: ejes ortogonales, base ortogonal, origen de coordenadas, definen una referencia euclídea[/caption]
+[caption id="attachment_150036" align="alignnone" width="386"]![Fig. 1: ejes ortogonales, base ortogonal, origen de coordenadas, definen una referencia euclídea](/taller-matematicas/assets/images/referencia_euclidea.png) Fig. 1: ejes ortogonales, base ortogonal, origen de coordenadas, definen una referencia euclídea[/caption]
 Cualquier punto P en el espacio tendrá asociado un **vector de posición** OP, que se expresará según una combinación lineal de los vectores de la base; esto significa que, dados dos sistemas de referencia con el mismo origen O pero distintas bases, los vectores de posición de un mismo punto del espacio P serán distintos en cada referencia. También, dos referencias con la misma base pero distintos orígenes O, O' darán, para un mismo punto del espacio, diferentes vectores de posición.
 
 **Ejemplo 1**: En el sistema de referencia Ref1, el vector posición OP de un punto tiene por coordenadas (0, 2, 2); otro sistema de referencia Ref2 tiene los ejes paralelos a Ref1, y la misma base, pero su origen O' tiene coordenadas en Ref1 (0, 0, -2). Determinar el vector posición O'P en la referencia Ref2.
 
-[caption id="attachment_150037" align="alignnone" width="342"]![Fig. 2: dos referencias con distintos orígenes y la misma base](/assets/images/referencia_euclidea2.png) Fig. 2: las dos referencias del ejemplo 1[/caption]
+[caption id="attachment_150037" align="alignnone" width="342"]![Fig. 2: dos referencias con distintos orígenes y la misma base](/taller-matematicas/assets/images/referencia_euclidea2.png) Fig. 2: las dos referencias del ejemplo 1[/caption]
 En la figura 2 vemos la geometría del problema; el vector O'P forma un triángulo con los vectores OP, OO'. Usando las propiedades de los vectores, O'P = O'O + OP; el vector O'O es el inverso de OO', el cual a su vez es el vector posición de O' respecto a O, que es un dato del problema: O'O = -OO' = - (0, 0, -2) = (0, 0, 2). Nos queda:
 
 O'P = O'O + OP = (0, 0, 2) + (0, 2, 2) = (0, 2, 4).
@@ -93,7 +93,7 @@ que se expresará como propiedad así:
 
 **Ejemplo 2**: Un disco de radio R está girando respecto nuestro sistema de referencia fijo con una velocidad angular Ω. Encima del disco, a una distancia r del centro, una partícula P se está moviendo a velocidad constante y siguiendo una línea paralela al diámetro del disco, como muestra la figura 3; en el instante t = 0 ocupaba la posición O'. Definimos la referencia Ref1 como la fija, y la Ref2 con origen en O', un eje que sigue la trayectoria del punto, y el otro eje perpendicular al anterior; esta Ref2 vista desde la Ref1 gira con el disco, como se ve en la figura 3. Notar que, al no tener movimiento rectilíneo uniforme, Ref2 no es galileana. Hallar el vector velocidad de P respecto la Ref1 en (a) la base de Ref2, (b) la base de Ref1.
 
-  ![](/assets/images/velocitat-base-mòbil3.png)
+  ![](/taller-matematicas/assets/images/velocitat-base-mòbil3.png)
 
 Fig. 3: referencias fijas y móviles
  La velocidad de P respecto la Ref1 viene dada por la derivada del vector OP respecto a Ref1; queremos expresar este vector en la base de la Ref2, que es móvil. Para ello, usamos la expresión [4], siendo el vector $\overrightarrow u=\overrightarrow{OP}$. El vector OP cumple OP = OO' + O'P, tenemos que expresar estos vectores en la base móvil de la Ref2:
@@ -114,17 +114,17 @@ $\left[S\right]=\begin{bmatrix}\sin\left(\theta\right)&amp;\cos\left(\theta\righ
 
 donde $\theta$ es el ángulo formado por los ejes de Ref2 y Ref1, que será igual a la velocidad angular por el tiempo: $\theta=\omega t$. Los coeficientes de la matriz S los deducimos de la geometría del problema:
 
-[caption id="attachment_150051" align="aligncenter" width="300"]![Fig. 4: Los vectores e1, e2 de la base móvil Ref2 pueden descomponerse según las direcciones de los ejes de Ref1 ](/assets/images/velocitat-base-mòbil4-300x190.png) Fig. 4: Los vectores e1, e2 de la base móvil Ref2 pueden descomponerse según las direcciones de los ejes de Ref1[/caption]
+[caption id="attachment_150051" align="aligncenter" width="300"]![Fig. 4: Los vectores e1, e2 de la base móvil Ref2 pueden descomponerse según las direcciones de los ejes de Ref1 ](/taller-matematicas/assets/images/velocitat-base-mòbil4-300x190.png) Fig. 4: Los vectores e1, e2 de la base móvil Ref2 pueden descomponerse según las direcciones de los ejes de Ref1[/caption]
 Aplicamos el cambio de base:
 
 ${\left\{\overrightarrow v\left(P\right)\right\}}_{Ref1}=\left[S\right]\cdot{\left\{\overrightarrow v\left(P\right)\right\}}_{Ref2}=\begin{bmatrix}\sin\left(\theta\right)&amp;\cos\left(\theta\right)&amp;0\\-\cos\left(\theta\right)&amp;\sin\left(\theta\right)&amp;0\\0&amp;0&amp;1\end{bmatrix}\begin{bmatrix}v-r\omega\\\omega vt\\0\end{bmatrix}=\begin{bmatrix}\left(v-r\omega\right)\cdot sin\left(\omega t\right)+\omega vt\cdot cos\left(\omega t\right)\\-\left(v-r\omega\right)\cdot cos\left(\omega t\right)+\omega vt\cdot sin\left(\omega t\right)\\0\end{bmatrix}$ [7].
 
 Comparando [5] con [7] vemos que el último tiene una expresión bastante más complicada, aunque hay que recordar que ambas expresiones son el mismo vector velocidad del punto P respecto Ref1, sólo que expresadas en bases distintas. Es por esto que puede ser conveniente trabajar con bases móviles, para simplificar las expresiones.  En la figura 5 vemos las gráficas de las componentes del vector velocidad [7] respecto al tiempo; son oscilantes con módulo creciente, ya que a medida que P se mueve hacia la periferia del disco, su distancia al centro de giro O aumenta, y por tanto también su velocidad lineal respecto Ref1 (respecto Ref2 es constante). Los picos de velocidad respecto a cada eje corresponden a ceros en el otro eje perpendicular.
 
-[caption id="attachment_150053" align="alignnone" width="422"]![Fig. 6: gráficas de las componentes de la velocidad respecto Ref1](/assets/images/velocitat-base-mòbil5.png) Fig. 5: gráficas de las componentes de la velocidad respecto Ref1[/caption]
+[caption id="attachment_150053" align="alignnone" width="422"]![Fig. 6: gráficas de las componentes de la velocidad respecto Ref1](/taller-matematicas/assets/images/velocitat-base-mòbil5.png) Fig. 5: gráficas de las componentes de la velocidad respecto Ref1[/caption]
 **Ejemplo 3**: Consideramos el mismo disco del ejemplo 2, pero ahora el punto se está moviendo a lo largo de un radio.
 
-[caption id="attachment_150063" align="aligncenter" width="486"]![velocitat base mòbil6](/assets/images/velocitat-base-mòbil6.png) Fig. 6: movimiento radial de un punto P sobre un disco giratorio[/caption]
+[caption id="attachment_150063" align="aligncenter" width="486"]![velocitat base mòbil6](/taller-matematicas/assets/images/velocitat-base-mòbil6.png) Fig. 6: movimiento radial de un punto P sobre un disco giratorio[/caption]
 En la referencia móvil Ref2, que está girando con el disco, la posición O'P es simplemente (0, r(t), 0), y el vector OP expresado en la base móvil será el mismo, {OP}ref2 = {O'P}ref2, ya que O y O' coinciden. La velocidad de P respecto la referencia fija Ref1 expresada en función de la base de Ref2 es:
 
 $\begin{array}{l}{\left\{{\left.\frac{\operatorname d\overset\rightharpoonup{OP}}{\operatorname dt}\right|}_{Ref}\right\}}_{base}={\left\{\frac{\operatorname d\overset\rightharpoonup{OP}}{\operatorname dt}\right\}}_{base}+{\left\{\overset\rightharpoonup\omega{\textstyle\times}{\textstyle\overset\rightharpoonup{OP}}\right\}}_{base}=\\\frac d{dt}\begin{bmatrix}0\\r(t)\\0\end{bmatrix}+\begin{bmatrix}0\\0\\\omega\end{bmatrix}\times\begin{bmatrix}0\\r(t)\\0\end{bmatrix}=\begin{bmatrix}0\\r'(t)\\0\end{bmatrix}+\begin{vmatrix}i&amp;j&amp;k\\0&amp;0&amp;\omega\\0&amp;r(t)&amp;0\end{vmatrix}=\begin{bmatrix}0\\r'(t)\\0\end{bmatrix}+\begin{bmatrix}-r(t)\omega\\0\\0\end{bmatrix}=\begin{bmatrix}-r(t)\omega\\r'(t)\\0\end{bmatrix}\end{array}$
@@ -172,5 +172,5 @@ Esto se ve muy bien en la teoría de la Relatividad General y su [principio de e
 
 Entonces, hay una aceleraciones producidas directamente por fuerzas aplicadas, y hay otras producidas por el espacio de referencia no inercial; en este último caso, también pueden existir fuerzas reales vinculadas: en el caso del coche que toma la curva, la fuerza que hace el asiento, el cinturón de seguridad, y quizás la puerta, sobre nosotros, es la que genera la aceleración centrípeta necesaria para que nuestra masa tome la curva; si soltamos el cinturón y abrimos la puerta, salimos despedidos hacia fuera del coche, en dirección tangencial a la curva, debido a que en ausencia de fuerzas nuestra masa vuelve a la referencia inercial sin aceleración: a la trayectoria recta. En cambio, la fuerza centrífuga si podría llamarse una pseudo-fuerza, pero creo que es más apropiado no llamarla de ningún modo, pues simplemente no existe: no hay ninguna fuerza que nos empuje fuera del coche en la curva, al contrario, hay una única fuerza real, la centrípeta, que nos obliga a tomar la curva.
 
-![separador2](/assets/images/separador2-300x38.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x38.png)
 {% endraw %}

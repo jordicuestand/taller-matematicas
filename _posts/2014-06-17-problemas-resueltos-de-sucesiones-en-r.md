@@ -82,7 +82,7 @@ El teŕmino general es del tipo fracción racional polinómica, aplicando el cri
 
 Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\{-1,\frac-14,0,\frac18,\dots\right\}$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
 
-[caption id="attachment_26" align="aligncenter" width="290"][![recta](/assets/images/recta.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2[/caption]
+[caption id="attachment_26" align="aligncenter" width="290"][![recta](/taller-matematicas/assets/images/recta.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2[/caption]
 
  
 
@@ -176,7 +176,7 @@ $\left|\left(a_p\right)-\left(a_q\right)\right|=\left|\frac1{2p-1}-\frac1{2q-1}\
 
 Por tanto la sucesión es de Cauchy, no obstante, ahora no implica que sea convergente, pues la implicación Cauchy $\Rightarrow$ convergente sólo es válida para sucesiones de números reales, y esta sucesión es de números racionales. De hecho, esta sucesión se conoce como [serie de Leibniz](http://es.wikipedia.org/wiki/Serie_de_Leibniz) y se puede probar que converge a $\mathrm\pi/4$, que es un número irracional, por lo tanto la sucesión no converge a ningún número racional: es divergente.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Bibliografia
 
  

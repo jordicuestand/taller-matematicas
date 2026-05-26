@@ -10,7 +10,7 @@ As professor of Mathematics, I have taught Applied Statistics, Calculus, Differe
 
 Class notes include exercises and problems, originally in Spanish, it took me a few years, in my free time, to pass all the material to the web format. The next project is publish the English translate, and also to add other resources, such as some specific video classes, or Moodle self-assessment questionnaires.
 
-[![](/assets/images/logo-creative-commons-1.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![](/taller-matematicas/assets/images/logo-creative-commons-1.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 {% endraw %}

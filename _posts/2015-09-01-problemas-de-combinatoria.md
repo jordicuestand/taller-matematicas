@@ -27,7 +27,7 @@ Contenido (sólo disponible el primer apartado):
 
  	- Funciones generatrices
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Problemas de variaciones, permutaciones, combinaciones y la regla del producto:
 
 **Regla del producto para listas de elementos de n conjuntos**
@@ -41,35 +41,35 @@ Ejemplo: Sea el conjunto de palabras de 4 letras, la segunda de las cuales es vo
 Solución: "CAD" puede comenzar en las posiciones CADxx, xCADx, xxCAD. Para las dos restantes posiciones XX, podemos tomar cualquiera de las 4  letras: posibles formas de hacerlo 4²  (***regla*** ***del producto***: 4 · 4 = 4²). En total hay $3\cdot4^2$ palabras de 5 letras que contienen "CAD".
 Cuantas palabras de 5 letras podemos formar en total? $4^{5}$. Por tanto que no contengan la palabra "CAD" serán $4^{5} -3 \text{·} 4^{2}=976$
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **2.**  Cuantos divisores positivos de 6000 hay?
 
 Solución: descomponemos 6000 en factores primos: $6000=2^4\cdot3\cdot5^3$.  Entonces cualquier divisor x de 6000 debe ser una combinación de los tres factores primos: $x=2^\alpha\;\cdot3^\beta\;\cdot5^\gamma$ donde $0\leq\alpha\leq4,\;0\leq\beta\leq1,\;0\leq\gamma\leq3$. El número de divisores de 6000 coincide con el número de 3-listas $\left(\alpha,\beta,\gamma\right)$ que podemos formar. Por la ***regla del producto*** tenemos $\vert A1\vert\cdot\vert A2\vert\cdot\vert A3\vert=5\cdot2\cdot4=40$ divisores positivos de 6000.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**3.** De cuántas formas podemos colocar m bolas de colores diferentes en n cajas numeradas, si podemos colocar cualquier número de bolas en cada caja, y el orden dentro de cada caja no importa?
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**3.** De cuántas formas podemos colocar m bolas de colores diferentes en n cajas numeradas, si podemos colocar cualquier número de bolas en cada caja, y el orden dentro de cada caja no importa?
 
 Solución: ***Regla del producto***: para la 1ª bola tenemos n posibilidades, para la 2ª también, ..., por la m-ésima también, por la regla del producto tenemos $n·n·...·n = n^{m}<span class="hps">$.
 
-Si tiramos k dados, cuántos posibles resultados obtenemos?Sol) Regla del producto: por 1º dado tenemos 6 posibilidades, y por el resto también, así que el total será $6 \ text {·} 6 \ text {·} \ ldots \ text {·} 6 = 6 ^ {k}$.[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**4.** Sean los conjuntos A, B con m, n elementos respectivamente. Cuantas posibles aplicaciones inyectivas $A \rightarrow B$ podemos formar tales que verifiquen a) si f (x) = f (y) entonces x = y , B) si $x \neq y$ entonces $f (x) \neq f (y)$
+Si tiramos k dados, cuántos posibles resultados obtenemos?Sol) Regla del producto: por 1º dado tenemos 6 posibilidades, y por el resto también, así que el total será $6 \ text {·} 6 \ text {·} \ ldots \ text {·} 6 = 6 ^ {k}$.[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**4.** Sean los conjuntos A, B con m, n elementos respectivamente. Cuantas posibles aplicaciones inyectivas $A \rightarrow B$ podemos formar tales que verifiquen a) si f (x) = f (y) entonces x = y , B) si $x \neq y$ entonces $f (x) \neq f (y)$
 .Solución: Debemos tener $m \leq n$, de otro modo no se verificará la inyectividad. Para el elemento $a_{1}$ de A podemos elegir cualquiera de los n elementos
 de B. Para el siguiente elemento $a_{2}$ dispondremos de todos menos uno, el que ya hemos elegido para $a_ {1}$, esto es: n-1, y así sucesivamente. Aplicando la regla del producto tenemos $n\text{·}\left(n-1\right)\text{·}\left(n-2\right)\text{·}\ldots(n-m+1)=\frac{n!}{\left(n-m\right)!}$.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **5.** ¿Cuántas palabras de 3 letras pueden formarse si las tres letras deben ser diferentes?Solución: Para la 1ª letra tenemos todo el alfabeto, 26 letras; para la 2ª dispondremos de todas menos una, la que ya hemos elegido, por tanto 25 opciones, y por la 3ª de 24: por la regla del producto, $26 \cdot25 \cdot24 = 15600$.
 En general, si tomamos de forma ordenada m elementos distintos $a_1,a_2,\dots,a_m$ de un conjunto de n elementos, el número de combinaciones será $n\cdot\left(n-1\right)\cdot\left(n-2\right)\cdot\dots\cdot\left(n-m+1\right)=\frac{n!}{\left(n-m\right)!}$. LLamamos Variaciones de n elementos tomados de m en m: V(n,k) a ese número de combinaciones.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**6.** De cuántas formas posibles pueden sentarse 8 personas, entre las que están Ram y Snatam, en 8 asientos, de forma que Ram y Snatam se sienten juntos?
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**6.** De cuántas formas posibles pueden sentarse 8 personas, entre las que están Ram y Snatam, en 8 asientos, de forma que Ram y Snatam se sienten juntos?
 
 Solución: Formas posibles de que Ram y Snatam se sienten juntos: representando por x el resto de personas, por R a Ram y por S a Snatam, las disposiciones son 7: RSxxxxxx, xRSxxxxxx, ..., xxxxxxRS, pero ademas tenemos que considerar las 7 disposiciones inversas SRxxxxxx, ..., xxxxxxSR. Tenemos R en la 1ª, 2ª, ... 7ª posición, o bien S en la 1ª, 2ª, ... 7ª posición, total 14 combinaciones. Por cada una de ellas, podemos sentar las 6 personas restantes de cualquier forma en los 6 asientos: permutaciones de 6 elementos: 6! formas de hacerlo. Por la regla del producto, tenemos 14 · 6! = 10080 formas de que Ram y Snatam se sienten juntos.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ** 7.** De cuántas formas posibles se pueden elegir un libro de Geometría, uno de Cálculo y uno de Álgebra de entre 3, 4 y 5 libros de Geometría, Cálculo y Álgebra respectivamente, sabiendo que los libros son diferentes entre sí?
 
 Solución: Las formas de escoger un libro de Cálculo de entre 3 vienen dadas por las combinaciones de 3 elementos tomadas de 1 en uno: $\begin{pmatrix}3\\1\end{pmatrix}$. Para los otros libros procedemos igual. El total de posibilidades viene dado por la regla del producto: $\begin{pmatrix}3\\1\end{pmatrix}\cdot\begin{pmatrix}4\\1\end{pmatrix}\cdot\begin{pmatrix}5\\1\end{pmatrix}.$
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**8.** ¿Cuántas maneras hay de organizar las letras de la palabra MISSISSIPPIMISSOURI?
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**8.** ¿Cuántas maneras hay de organizar las letras de la palabra MISSISSIPPIMISSOURI?
 
 Solución: La longitud de la palabra es 19, el conjunto de letras usado para formar la palabra es: {MISPOUR}; el número de ocurrencias de cada letra es {2, 6, 6, 2, 1, 1, 1} respectivamente. Debemos encontrar de cuántas formas podemos colocar dos "M" en 19 posiciones, seis "Y" en 19-2 = 17 posiciones, seis "S" en 17-6 = 11 posiciones, dos "P" en 11-6 = 5 posiciones, y las letras "O", "U", "R" en las 5-2 = 3 posiciones restantes. El número total de palabras será, por la regla del producto, el producto de las anteriores combinaciones.Formas de colocar dos "M" en 19 posiciones = formas de elegir dos números de entre el conjunto de posiciones {1, 2, ..., 19} = $</span><span title="\end{array}\right). ">\begin{pmatrix}19\\2\end{pmatrix}.$
 
@@ -78,7 +78,7 @@ El resto de combinaciones con las otras letras, se razona igual, y son:
 $\begin{pmatrix}17\\6\end{pmatrix},\begin{pmatrix}11\\6\end{pmatrix},\begin{pmatrix}5\\2\end{pmatrix}i\begin{pmatrix}3\\1\end{pmatrix},\begin{pmatrix}2\\1\end{pmatrix},\begin{pmatrix}1\\1\end{pmatrix}$
 
 Total: $\begin{pmatrix}19\\2\end{pmatrix}\begin{pmatrix}17\\6\end{pmatrix}\begin{pmatrix}5\\2\end{pmatrix}\begin{pmatrix}3\\1\end{pmatrix}\begin{pmatrix}2\\1\end{pmatrix}\begin{pmatrix}1\\1\end{pmatrix}=171\cdot12376\cdot462\cdot10\cdot3\cdot2\cdot1=58663725120$
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Problemas de particiones de conjuntos
 

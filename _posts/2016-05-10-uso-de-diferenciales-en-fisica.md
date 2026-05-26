@@ -26,14 +26,14 @@ Ejemplo 3: El número de electrones N que circulan por segundo por un conductor 
 
 Ejemplo 4: Sea un cable que está conduciendo corriente eléctrica
 
-[caption id="attachment_1652" align="aligncenter" width="300"]![Fig. 4: sección de un conductor recorrido por una corriente de electrones](/assets/images/element_corrent-300x146.png) Fig. 4: sección de un conductor recorrido por una corriente de electrones[/caption]
+[caption id="attachment_1652" align="aligncenter" width="300"]![Fig. 4: sección de un conductor recorrido por una corriente de electrones](/taller-matematicas/assets/images/element_corrent-300x146.png) Fig. 4: sección de un conductor recorrido por una corriente de electrones[/caption]
 El número de electrones que se estan moviendo por el cable es muy elevado, del orden de $10^{20}$ por $cm^3$; queremos considerar aquellos que se hallen en una cierta posición x, medida desde el extremo del cable. Si consideramos que los electrones estan distribuidos de forma más o menos uniforme y contínua por el cable, podemos definir la densidad de electrones N por $cm^3$, pero exactamente en la posición x no podemos calcular cuantos hay; el artificio que se usa consiste en considerar un elemento infinitesimal (muy corto pero no nulo) de longitud $\operatorname dL$, que empieza en la posición x y termina en la posición x+dL, que tendrá un volumen infinitesimal dV=S·dL (donde S es el área de la sección transversal del cable), y por tanto un número de electrones N·dV=NS·dL. Entonces aproximamos el número de electrones en la posición x por NS·dL.
 
 ### Relación con la derivación de funciones
 
 Nos podemos encontrar también con que a veces se relacione el cociente de diferenciales con la derivación. Para la descripción matemática de la derivada podemos consultar mi post [Cálculo ->Funciones derivables → Introducción al estudio local de una función](http://tallermatematic.ovh/wp/?p=461), del que reproduzco aquí un párrafo:
 
-![derivada-incrementos](/assets/images/derivada-incrementos.png)
+![derivada-incrementos](/taller-matematicas/assets/images/derivada-incrementos.png)
 
 Ejemplo 5:  La intensidad de corriente se define como la cantidad de carga que pasa por una sección S por unidad de tiempo, $I=\frac{\triangle q}{\triangle t}$, si la intensidad es variable, entonces se define en un intervalo de tiempo infinitesimal, tan corto que podemos considerar que la intensidad es prácticamente constante ("no la da tiempo" a cambiar), o sea $I=\frac{\operatorname dq}{\operatorname dt}$.
 

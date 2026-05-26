@@ -153,7 +153,7 @@ $L=\lim_{x\rightarrow\infty}f(x)=\frac{-5+0}{\infty+0}=0.$
 
 Comprobando con la hoja de cálculo vemos que coinciden los valores con el límite 0, si bien la convergéncia es muy lenta (el eje X tiene escala logarítmica).
 
-[![limit_arrel_6](/assets/images/limit_arrel_6.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/limit_arrel_6.png)
+[![limit_arrel_6](/taller-matematicas/assets/images/limit_arrel_6.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/limit_arrel_6.png)
 
 ---
 

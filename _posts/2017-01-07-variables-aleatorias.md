@@ -29,7 +29,7 @@ math: true
 
  	- Variable aleatoria bidimensional
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Concepto de variable aleatoria
 
 Es la generalización de las variables estadísticas que se han visto en el tema [Estadística descriptiva, análisis de datos](http://tallermatematic.eu/wp/?p=1341) ; la definición era:
@@ -52,7 +52,7 @@ Si la variable estadística es discreta (toma valores enteros) entonces la varia
 **Notación para las variables aleatorias**
 Usaremos letras mayúsculas para las variables aleatorias, tales como X, Y, T, ..., y letras minúsculas para valores concretos de la variable: x = 17.3.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Variable aleatoria discreta: funciones de probabilidad y distribución
 
 Cada valor que toma la variable aleatoria es: o bien un punto muestral (ver: [introducción a las probabilidades](http://tallermatematic.eu/wp/?p=1389)) o bien una función de un punto muestral. Como cada punto muestral tiene asociada una probabilidad, también la tendrá la variable aleatoria. Cuando la v.a. es discreta (todos sus valores son enteros), llamamos **función de probabilidad** a la asignación de probabilidades para cada valor posible:
@@ -325,10 +325,10 @@ Para obtener la función de distribución de X basta con calcular la tabla de pr
 
 La gráfica de la función de probabilidad es:
 
-[caption id="attachment_1432" align="aligncenter" width="566"][![Función de probabilidad, variable discreta](/assets/images/funcio_prob.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png) Función de probabilidad, variable discreta[/caption]
+[caption id="attachment_1432" align="aligncenter" width="566"][![Función de probabilidad, variable discreta](/taller-matematicas/assets/images/funcio_prob.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png) Función de probabilidad, variable discreta[/caption]
 La función de distribución suele representarse como una función escalonada:
 
-[caption id="attachment_1433" align="alignnone" width="565"][![Función de distribución, variable discreta](/assets/images/escalonada.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png) Función de distribución, variable discreta[/caption]
+[caption id="attachment_1433" align="alignnone" width="565"][![Función de distribución, variable discreta](/taller-matematicas/assets/images/escalonada.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png) Función de distribución, variable discreta[/caption]
 
 **Propiedades inmediatas de las funciones de distribución discretas F (x)**
 
@@ -338,7 +338,7 @@ La función de distribución suele representarse como una función escalonada:
 
  	- La probabilidad $P(X &gt; x_k)$ és igual a $1 – F(x_k)$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Variable aleatoria continua: funciones de densidad y distribución
 
 Cuando la variable es continua sabemos que se trabaja con intervalos de la variable (ver [Estadística Descriptiva](http://tallermatematic.eu/wp/?p=1341) => Agrupación de datos en intervalos). La asignación de probabilidades se hará por tanto para cada intervalo que definamos. 

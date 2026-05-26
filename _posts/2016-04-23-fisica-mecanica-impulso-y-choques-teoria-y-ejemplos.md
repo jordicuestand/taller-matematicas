@@ -22,7 +22,7 @@ math: true
 
 ### Cantidad de movimiento
 
-[caption id="attachment_1554" align="alignnone" width="480"]![Newtons_cradle_animation_book](/assets/images/Newtons_cradle_animation_book.gif) Fig.1: Péndulo de Newton. Fuente: De DemonDeLuxe (Dominique Toussaint) - Trabajo propio, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1031903[/caption]
+[caption id="attachment_1554" align="alignnone" width="480"]![Newtons_cradle_animation_book](/taller-matematicas/assets/images/Newtons_cradle_animation_book.gif) Fig.1: Péndulo de Newton. Fuente: De DemonDeLuxe (Dominique Toussaint) - Trabajo propio, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1031903[/caption]
 En el [péndulo de Newton](https://es.wikipedia.org/wiki/P%C3%A9ndulo_de_Newton) tenemos un buen ejemplo experimental que nos servirá de punto de partida para entender el concepto de impulso (o cantidad de movimiento) y su aplicación a la Física de los choques. Separamos una de las bolas de su posición inicial, y la dejamos caer, al chocar con las demás, se detiene completamente, y en cambio la última bola de la filera sale despedida, iniciando un ciclo de vaivén. Si separamos dos bolas, entonces se produce el mismo efecto pero con las dos.
 
 Newton definió: "*la cantidad de movimiento es la medida del mismo, surgida de la velocidad y la cantidad de materia conjuntamente; en un cuerpo con cantidad de materia doble e igual velocidad la cantidad de movimiento será doble, y para un cuerpo con el doble de masa y el doble de velocidad, la cantidad será cuádruple*". Matemáticamente esta afirmación significa que la cantidad de movimiento *p* será proporcional al producto de la masa del cuerpo *m*, por su velocidad *v*:
@@ -98,7 +98,7 @@ Al nivel de estos apuntes, no entraremos en detalle en estas desviaciones, seran
 
 En el choque elástico de la figura 2 supongamos que *v1*=3m/s, y que después del choque observamos que el ángulo α es de 30 grados; además, la masa de la bola 1 es de 100 gramos, y la masa de la bola 2, 70 gramos. Queremos determinar el resto de parámetros del choque: ángulo β y velocidades *v1f*, *v2f*.  Planteamos las ecuaciones [1] adaptadas a dos dimensiones: según el eje X y según el eje Y:
 
-[caption id="attachment_1564" align="aligncenter" width="274"]![xoc en 2D](/assets/images/xoc-en-2D.png) Fig.3: Ejes cartesianos en el choque en dos dimensiones[/caption]
+[caption id="attachment_1564" align="aligncenter" width="274"]![xoc en 2D](/taller-matematicas/assets/images/xoc-en-2D.png) Fig.3: Ejes cartesianos en el choque en dos dimensiones[/caption]
 Según el eje X:
 
 $begin{array}{l}m_1v_1=m_1v_{1f}cosleft(alpharight)+m_2v_{2f}cosleft(betaright)\frac12m_1v_1^2=frac12m_1v_{1f}^2+frac12mv_{2f}^2end{array}$
@@ -125,7 +125,7 @@ Para encontrar la β tenemos dos ecuaciones, lo más exacto será combinarlas: 
 
 **Ejemplo 2: Péndulo balístico**
 
-[caption id="attachment_1573" align="alignnone" width="225"]![De Algarabia - Trabajo propio, Dominio público, https://commons.wikimedia.org/w/index.php?curid=7705870](/assets/images/pendulo_balistico.jpg) Fig. 4: Péndulo balístico. Fuente: De Algarabia - Trabajo propio, Dominio público,https://commons.wikimedia.org/w/index.php?curid=7705870[/caption]
+[caption id="attachment_1573" align="alignnone" width="225"]![De Algarabia - Trabajo propio, Dominio público, https://commons.wikimedia.org/w/index.php?curid=7705870](/taller-matematicas/assets/images/pendulo_balistico.jpg) Fig. 4: Péndulo balístico. Fuente: De Algarabia - Trabajo propio, Dominio público,https://commons.wikimedia.org/w/index.php?curid=7705870[/caption]
 Un proyectil de masa *m* se incrusta a una velocidad *v* en un bloque de masa *M* que se mantiene colgado por dos hilos de longitud l; supondremos que el tiempo que tarda en penetrar en el bloque es muy corto, tanto que no da tiempo a que el bloque oscile mientras el proyectil penetra.
 
 Este es un ejemplo típico de choque inelástico, pues los objetos que chocan no se consideran perfectamente rígidos, no hay un rebote perfecto, al contrario, el bloque es penetrado por el proyectil. Pero aún se conserva la cantidad de movimiento; llamemos v' a la velocidad del bloque (que contiene dentro el proyectil) inmediatamente después del impacto, entonces: $mv=(m+M)v'$, de donde $v'=vm/(m+M)$.
@@ -146,7 +146,7 @@ $0.05frac{139^2}2left(frac{0.05^{}}{(0.05+10)}-1right)=-481J$
 
 Para entender mejor el principio de conservación de la cantidad de movimiento en los choques es muy útil el concepto de [centro de masas](https://es.wikipedia.org/wiki/Centro_de_masas).
 
-[caption id="attachment_1578" align="alignnone" width="428"]![Centro de masas de dos objetos](/assets/images/centre_mases.png) Fig. 5: Centro de masas de dos objetos[/caption]
+[caption id="attachment_1578" align="alignnone" width="428"]![Centro de masas de dos objetos](/taller-matematicas/assets/images/centre_mases.png) Fig. 5: Centro de masas de dos objetos[/caption]
  Si tenemos dos objetos en el plano con masas *m* y *M*, su **centro de masas** CM es un "punto virtual" situado entre ambos con masa *m + M* y coordenadas
 
 $x_{cm}=frac{mx_m+Mx_M}{m+M},;y_{cm}=frac{my_m+My_M}{m+M}$
@@ -175,7 +175,7 @@ Pues depende: hemos visto que sí siempre que no actúen fuerzas exteriores a lo
 
 **Ejemplo 3: choque inelástico no instantáneo.**
 
-[caption id="attachment_1579" align="alignnone" width="300"]![Choque entre dos vehículos](/assets/images/xoc_vehicles-300x111.png) Fig. 6: Choque entre dos vehículos[/caption]
+[caption id="attachment_1579" align="alignnone" width="300"]![Choque entre dos vehículos](/taller-matematicas/assets/images/xoc_vehicles-300x111.png) Fig. 6: Choque entre dos vehículos[/caption]
 Este ejemplo está basado en un caso real, encontrado como consulta en un foro de tráfico. Una furgoneta de reparto, de masa 2000Kg, está parada en un semáforo cuando es embestida por detrás por un coche de masa 900Kg moviéndose a una velocidad v = 30m/s.  En el choque la carrocería del coche se deforma, y como reacción acelera a la furgoneta durante 5 centésimas de segundo, después de ese tiempo los dos vehículos quedan unidos moviéndose a la misma velocidad. La furgoneta vió como se acercaba por detrás el coche, así que pisó a fondo los frenos para evitar en lo posible el pasar el semáforo en rojo, como consecuencia del empujón recibido, y quizá provocar otro accidente en cadena. El coeficiente de fricción entre los neumáticos del camión y el asfalto es de $mu=0.6$. Queremos saber cuantos metros más allá del semáforo en rojo recorrerán los vehículos, así como si se conserva la cantidad de movimiento en este choque.
 
 Solución:  Si la cantidad de movimiento se conservara, seria fácil encontrar la velocidad inmediatamente después del choque:
@@ -206,7 +206,7 @@ Consideraremos para este estudio un ejemplo:
 
 **Ejemplo 4**: **bola de billar golpeada con un taco** (fig. 7).
 
-[caption id="attachment_1583" align="alignnone" width="220"]![Bola de billar golpeada en un punto con un taco](/assets/images/percusio.png) Fig. 7: Bola de billar golpeada en un punto con un taco[/caption]
+[caption id="attachment_1583" align="alignnone" width="220"]![Bola de billar golpeada en un punto con un taco](/taller-matematicas/assets/images/percusio.png) Fig. 7: Bola de billar golpeada en un punto con un taco[/caption]
 Supondremos que le aplicamos un impulso P en un punto situado una altura h por encima del centro de la bola, que por ser homogénea, será también su centro de masas CM. El radio de la bola será R, y el punto de contacto con la mesa es O.
 
  

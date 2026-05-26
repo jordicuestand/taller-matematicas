@@ -30,7 +30,7 @@ Para simplificar esta expresión, usamos exponentes:
 
 $\begin{array}{l}\frac1{2\sqrt{\sqrt{\sqrt x}}}\cdot\frac1{2\sqrt{\sqrt x}}\cdot\frac1{2\sqrt x}=\frac12x^{-\frac12\frac12\frac12}\cdot\frac12x^{-\frac12\frac12}\frac12x^{-\frac12}=\\\frac18x^{-\frac18-\frac14-\frac12}=\frac18x^{-\frac18-\frac28-\frac48}=\frac18x^{-\frac78}=\frac1{8\sqrt[8]{x^7}}.\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **2.** Derivar $f(x)=\sqrt{\ln\left(x\right)}$.
 
@@ -38,7 +38,7 @@ Expresemos la función como composición: $f(x)=\sqrt{\ln\left(x\right)}=\sqrt x
 
 $\begin{array}{l}f'(x)=\left(\sqrt x\circ\ln\left(x\right)\right)'=\left(\sqrt x\right)'\circ\ln\left(x\right)\cdot\left(\ln\left(x\right)\right)'=\\\frac1{2\sqrt x}\circ\ln\left(x\right)\cdot\frac1x=\frac1{2\sqrt{\ln\left(x\right)}}\cdot\frac1x=\frac1{2x\sqrt{\ln\left(x\right)}}.\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **3.** Derivar $f(x)=e^{x^2+\sin\left(x^3+1\right)}$.
 
@@ -54,7 +54,7 @@ Sustituimos en la expresión de $f'(x)$ para obtener:
 
 $\begin{array}{l}y'=e^x\circ\left(x^2+\sin\left(x^3+1\right)\right)\cdot\left(2x+3x^2\cos\left(x^3+1\right)\right)=\\\left(2x+3x^2\cos\left(x^3+1\right)\right)\cdot e^{\left(x^2+\sin\left(x^3+1\right)\right)}.\end{array}.$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **4. **Derivar $y=\tan^{-1}\left(\sin\left(x\right)\right).$
 
@@ -62,7 +62,7 @@ Expresemos la función como composición: $y=\tan^{-1}\left(\sin\left(x\right)\r
 
 $\begin{array}{l}y'=\left(\tan^{-1}\left(x\right)\right)'\circ\left(\sin\left(x\right)\right)\cdot\left(\sin\left(x\right)\right)'=\\\frac1{1+x^2}\circ\left(\sin\left(x\right)\right)\cdot\cos\left(x\right)=\frac{\cos\left(x\right)}{1+\sin^2\left(x\right)}.\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **5.** Hallar la recta tangente a la gráfica de la función $f(x)=\sqrt{1+x^2}$ en los puntos $x=0$, $x=1$.
 La recta $y=mx+b$ es tangente a la gráfica de la función $f(x)$ en el punto $(x_0,f(x_0))$ si la pendiente $m$ cumple que $m=f'(x_0)$ y ademaś la recta pasa por el punto $(x_0,f(x_0))$. Para la primera condición hemos de calcular $f'(x)$:
@@ -73,9 +73,9 @@ En el punto $x_0=0$ la derivada vale $f'(0)=0=m$. La segunda condición es que l
 
 En el punto $x_1=0$ la derivada vale $f'(1)=\frac1{\sqrt2}=m$. La segunda condición es que la recta $y=mx+b=\frac1{\sqrt2}·x+b=b$ pase por el punto $(1,f(1)=(1,\sqrt2)$, o sea que $\sqrt2=\frac1{\sqrt2}\cdot1+b\Rightarrow b=\sqrt2-\frac1{\sqrt2}=\frac2{\sqrt2}-\frac1{\sqrt2}=\frac1{\sqrt2}.$. La recta tangente para $x_0=1$ es $y=1$.
 
-[![recta_tangent_4](/assets/images/recta_tangent_4.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/recta_tangent_4.png)
+[![recta_tangent_4](/taller-matematicas/assets/images/recta_tangent_4.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/recta_tangent_4.png)
 
- [![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+ [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **6.** Calcular la derivada en todos los puntos donde exista de la función dada por:
 
@@ -152,9 +152,9 @@ $f'(x)=\left\{\begin{array}{l}\frac12\;\text{si}x\leq1\\\frac1{2\sqrt{\left|x\ri
 
 Gráfica de la función $f(x)$, observemos que en $x=0$ la gràfica queda vertical, y por tanto la derivada toma valor infinito:
 
-[![Exercici_derivades](/assets/images/Exercici_derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/Exercici_derivades.png)
+[![Exercici_derivades](/taller-matematicas/assets/images/Exercici_derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/Exercici_derivades.png)
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **7.** Verificar si la recta $y=-x$ es tangente a la gráfica de la función $f(x)=x^3-6x^2+8x$ en algún punto, o bien es secante, o bien es tangente en un punto y secante en otro punto.
 
@@ -178,9 +178,9 @@ $-x=x^3-6x^2+8x\Rightarrow x^3-6x^2+9x=0\Rightarrow x\left(x^2-6x+9\right)=0$
 
 y es evidente que $x=0$ tambien es solución. Así pues, la recta dada es tangente a la función $f(x)$ en el punto $x=3$ y secante en el punto $x=0$. La gráfica de ámbas es:
 
-[![recta_tangent_5](/assets/images/recta_tangent_5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/recta_tangent_5.png)
+[![recta_tangent_5](/taller-matematicas/assets/images/recta_tangent_5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/recta_tangent_5.png)
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **8.** Calcular la derivada de la función $y=x^{x^x}.$
 
@@ -203,13 +203,13 @@ Como $D\left[Ln\left(y\right)\right]=\frac1yDy$ (por la regla de la cadena), ten
 
 $\begin{array}{l}\frac1yDy=x^x\left[\ln\left(x\right)+1\right]\cdot Ln\left(x\right)+x^x\cdot\frac1x\Leftrightarrow\\Dy=y\cdot x^x\left[Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right]=x^{x^x}\cdot x^x\left[Ln^2\left(x\right)+Ln\left(x\right)+\frac1x\right].\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **9.** La posición en el tiempo de un punto material que se está moviendo en el plano $(x,y)$ viene dada en función del tiempo por $x(t)= sin(t), y(t)=sin(2t)$. Si consideramos la trayectoria como una función $y=f(x)$, calcular la  derivada $y'(x)$.
 
 La trayectoria viene dada en función del paràmetro tiempo en vez de venir en forma explícita $y=f(x)$; en ocasiones es más cómodo hacerlo así, pues la forma explícita puede ser difícil de expresar. La gráfica de la trayectoria es un lazo:
 
-[![parametriques](/assets/images/parametriques-300x180.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/parametriques.png)
+[![parametriques](/taller-matematicas/assets/images/parametriques-300x180.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/parametriques.png)
 Para calcular la derivada $y'(x)$ usaremos la notación diferencial de la derivada:
 
 $y'(x)=\frac{\operatorname{d}y}{\operatorname{d}x}=\frac{\operatorname{d}y}{\operatorname{d}t}\cdot\frac{\operatorname{d}t}{\operatorname{d}x}$
@@ -220,8 +220,8 @@ $\begin{array}{l}\frac{\operatorname{d}y}{\operatorname{d}t}=D\sin\left(t\right)
 
 Nos queda que $\begin{array}{l}\frac{\operatorname{d}y}{\operatorname{d}x}=2\cos\left(2t\right)\cdot\frac1{\cos\left(t\right)}=2\frac{\cos\left(2t\right)}{\cos\left(t\right)}.\\\end{array}$ La gráfica de la derivada presenta asíntotas verticales, correspondientes a los puntos del eje x donde el lazo tiene tangente vertical:
 
-[![derivada_parametriques1](/assets/images/derivada_parametriques1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/derivada_parametriques1.png)
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![derivada_parametriques1](/taller-matematicas/assets/images/derivada_parametriques1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/11/derivada_parametriques1.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **10.** Dada la función
 

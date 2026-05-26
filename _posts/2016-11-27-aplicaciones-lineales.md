@@ -29,7 +29,7 @@ math: true
 
  	- Conocer el concepto de aplicación lineal y su relación con las matrices.
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Aplicaciones lineales
 
 Las aplicaciones lineales, como todas las aplicaciones, son un tipo de correspondencia entre conjuntos, en este caso entre vectores de dos espacios vectoriales (para un recordatorio de las correspondencias entre conjuntos, ver el artículo [Funciones](http://tallermatematic.ovh/wp/index.php/2015/05/08/funciones/)), de hecho son funciones (o aplicaciones), pero con dos condiciones adicionales:
@@ -42,10 +42,10 @@ Las aplicaciones lineales, como todas las aplicaciones, son un tipo de correspon
 
 **Ejemplo 1**: La correspondencia *f* que relaciona cada vector **u** del plano $V_2$ con el propio vector u girado 90⁰ en sentido horario, ¿es una aplicación lineal? Antes que nada, establecemos que es una aplicación: a cada vector **u** le corresponde un único vector f(**u**). Comprobemos ahora las condiciones de linealidad. La primera nos pregunta que pasa con las sumas de vectores: ¿es lo mismo sumar dos vectores **u** + **u**' y luego girar el resultado, que primero girar cada vector **u**, **u**' y luego sumar los vectores girados? Se puede ver gráficamente que esto es cierto sin dificultad (fig. 1)
 
-[caption id="attachment_150258" align="aligncenter" width="357"]![Fig. 1: comprobación gráfica de que f(u + v) = f(u) + f(v)](/assets/images/aplica_lineals1.png) Fig. 1: comprobación gráfica de que f(u + v) = f(u) + f(v)[/caption]
+[caption id="attachment_150258" align="aligncenter" width="357"]![Fig. 1: comprobación gráfica de que f(u + v) = f(u) + f(v)](/taller-matematicas/assets/images/aplica_lineals1.png) Fig. 1: comprobación gráfica de que f(u + v) = f(u) + f(v)[/caption]
 La demostración general, algebraica, pasa por determinar cómo se transforman las componentes de un vector cualquiera **u** = (x, y) al aplicar el giro, resultando f(**u**) = **v** = (x', y'); la figura 2 nos muestra las relaciones entre (x, y), (x', y'):
 
-[caption id="attachment_150259" align="aligncenter" width="341"]![Fig. 2: coordenadas de un giro cualquiera en el plano](/assets/images/aplica_lineals2.png) Fig. 2: coordenadas de un giro de 90⁰ en el plano[/caption]
+[caption id="attachment_150259" align="aligncenter" width="341"]![Fig. 2: coordenadas de un giro cualquiera en el plano](/taller-matematicas/assets/images/aplica_lineals2.png) Fig. 2: coordenadas de un giro de 90⁰ en el plano[/caption]
 $\begin{array}{l}x'=u\cos\left(90^0-\alpha\right)=u\sin\left(\alpha\right)=y;\;\\y'=u\sin\left(90^0-\alpha\right)=-u\cos\left(\alpha\right)=-x\end{array}$
 
 Por tanto la rotación lo que hace es intercambiar valores i cambiar un signo: (x' , y') = (y, -x). Comprobemos ahora la propiedad 1 de linealidad:
@@ -134,7 +134,7 @@ En el ejemplo 6 hemos usado la base canónica pues es la más simple, tan simple
 
 **Ejemplo 8**: Consideremos un plano P en el espacio, tal que corta a los planos coordenados XZ y YZ a 45⁰ (figura 3)
 
-![aplica_lineals3](/assets/images/aplica_lineals3.png)
+![aplica_lineals3](/taller-matematicas/assets/images/aplica_lineals3.png)
 
 Definimos la aplicación $f:P\rightarrow P$ realizando una rotación de 90⁰, según un eje perpendicular a P, en sentido antihorario, que afecta a todos los vectores contenidos en el plano P.  Dado un vector cualquiera u = (x, y, z) del plano P, ¿cuál es su vector imagen por *f*?
 
@@ -216,13 +216,13 @@ $\begin{pmatrix}a_1^1&amp;\dots&amp;a_1^n\\\vdots&amp;\vdots&amp;\vdots\\a_m^1&a
 
 Que puede entenderse mejor siguiendo esta regla de formación: para hallar el elemento fila1-columna1 del producto de matrices A·B multiplicamos uno por uno los elementos de la 1ª fila de A por los elementos de la 1ª columna de B:
 
-![Fig. 4: obtención del primer elemento del producto de matrices](/assets/images/aplica_lineals4.png)
+![Fig. 4: obtención del primer elemento del producto de matrices](/taller-matematicas/assets/images/aplica_lineals4.png)
 
 Fig. 4: obtención del primer elemento del producto de matrices
 
 En general, multiplicamos uno por uno los elementos de la fila n de A por los elementos de la columna m de B para obtener el elemento de la fila n y columna m de A·B:
 
-[caption id="attachment_150273" align="alignnone" width="307"]![Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B](/assets/images/aplica_lineals5.png) Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B[/caption]
+[caption id="attachment_150273" align="alignnone" width="307"]![Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B](/taller-matematicas/assets/images/aplica_lineals5.png) Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B[/caption]
 **NOTA**: las operaciones con matrices pueden, y creo que deberían hacerse en el siglo XXI, con calculadora o ordenador; hay numerosas páginas que hacen cálculo matricial on-line, como por ejemplo [https://matrixcalc.org/es/](https://matrixcalc.org/es/)  o la potente página [Wolfram Alpha](https://www.wolframalpha.com/examples/Math.html) que todo estudiante debería conocer y utilizar,
 
 También se puede definir la **inversa de una matriz** (A), como la matriz $\left(A\right)^{-1}$ tal que el producto de ambas es igual a la matriz identidad, una matriz con unos en la diagonal y ceros en el resto de posiciones:

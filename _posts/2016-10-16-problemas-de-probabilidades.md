@@ -12,7 +12,7 @@ math: true
 
 **1.** En una red local hay las conexiones mostradas en la figura, donde los números indican las probabilidades de que cada rama esté abierta en un cierto intervalo de tiempo dado. Suponiendo que las probabilidades son independientes entre sí, calcular la probabilidad de que haya transmisión de datos entre A y D por cualquier camino. Suponiendo que hay transmisión de datos entre A y D, calcular la probabilidad de que se esté transmitiendo por la ruta ACD.
 
-[![graf_probabilitats](/assets/images/graf_probabilitats.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/graf_probabilitats.png)
+[![graf_probabilitats](/taller-matematicas/assets/images/graf_probabilitats.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/graf_probabilitats.png)
  Para transmitir entre A y D hay tres caminos: ABD, AD, ACD; si cualquiera de ellos está abierto, hay comunicación entre A y D. ¿cuáles son las posibilidades?
 
  	- ABD abierto, AD y ACD cerrados
@@ -149,7 +149,7 @@ Ampliamos ahora con más columnas:
 
 En "AB y AD" multiplicamos las columnas AB por AD, en "AC y AD" lo mismo, pero en la columna (AB·BD)+AD+(AC·CD) al sumar no obtenemos un número binario: si éste valor es cero significa que no hay transmisión entre A y D (todo cerrado) y con un valor superior a cero hay transmisión entre A y D (alguna ruta abierta). Contando el número de celdas superiores a cero de ésta última columna y dividiendo por el número de filas obtenemos una estimación de la probabilidad pedida, tanto mejor como más filas haya. Con 1000 filas se obtienen valores del orden de 0.98.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  **2.**  Se elige al azar un número de 3 bits $x_1x_2x_3$ donde $x_i=0$ o $x_i=1$. Definimos las variables aleatorias X: el número de ceros que tienen conjuntamente los dos primeros bits, Y: número total de unos entre los tres bits. Calcular la tabla de distribución conjunta de probabilidad de X,Y. ¿Cuál es la covarianza de X,Y?
 
@@ -178,7 +178,7 @@ Obviamente no vamos a hacer un cálculo tan largo para las otras 11 combinacione
 
 Resumimos todo lo que tenemos en una tabla de probabilidades condicionadas P(X | Y), marcamos las casillas que hemos visto que tienen probabilidad 0 (sucesos incompatibles):
 
-[caption id="attachment_997" align="alignnone" width="360"][![Probabilidades condicionadas P(X | Y)](/assets/images/conjunta1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta1.png) Probabilidades condicionadas P(X | Y)[/caption]
+[caption id="attachment_997" align="alignnone" width="360"][![Probabilidades condicionadas P(X | Y)](/taller-matematicas/assets/images/conjunta1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta1.png) Probabilidades condicionadas P(X | Y)[/caption]
 Para obtener la tabla de probabilidades conjunta $P\left(A\cap B\right)$ usaremos la fórmula $P\left(A\cap B\right)=P(A\vert B)\cdot P(B)$ y algunas propiedades útiles:
 
  	- la suma de probabilidades por filas (distribución marginal de X) coincide con las probabilidades P(X),
@@ -219,7 +219,7 @@ y también para la variable X:
 
 Obtenemos la tabla conjunta X,Y:
 
-[caption id="attachment_998" align="alignnone" width="497"][![Probabilidades conjuntas](/assets/images/conjunta2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta2.png) Probabilidades conjuntas[/caption]
+[caption id="attachment_998" align="alignnone" width="497"][![Probabilidades conjuntas](/taller-matematicas/assets/images/conjunta2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/conjunta2.png) Probabilidades conjuntas[/caption]
 
 Las casillas en azul se han obtenido aplicando las propiedades 1 y 2, no ha sido necesario el cálculo de probabilidades.
 
@@ -315,5 +315,5 @@ Los elementos que entran en el cálculo de la covarianza los disponemos también
 
 La suma de todos ellos es la covarianza: -0.5, un valor negativo indica dependencia inversa:  valores de X  grandes implican pequeños valores de Y.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

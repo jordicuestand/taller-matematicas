@@ -18,11 +18,11 @@ El estudio de la variación de los valores que toma una función en las proximid
 
 - Si $f(x)$ es la intensidad de corriente que circula por un aparato eléctrico en un cierto instante de tiempo, su variación alrededor de ese instante se interpreta como la poténcia eléctrica consumida.
 
-![](/assets/images/variacio_local-300x226.png)Variación de la función y=x³ al pasar del punto a al punto x
+![](/taller-matematicas/assets/images/variacio_local-300x226.png)Variación de la función y=x³ al pasar del punto a al punto x
 
 En la figura podemos observar que la variación de la función al pasar del punto $x$ al punto $a$ es $f(x)-f(a)$. Entonces, el cociente $\frac{f(x)-f(a)}{x-a}$ nos proporciona un valor promedio de la variación de la función en el intervalo $(a,x)$. Observemos además que podemos formar un triángulo recto tomando como lados los segmentos  $f(x)-f(a)$ y  $x-a:$
 
-[![Relación entre pendiente y ángulo](/assets/images/Tan-300x233.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/Tan.png)Relación entre pendiente y ángulo
+[![Relación entre pendiente y ángulo](/taller-matematicas/assets/images/Tan-300x233.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/Tan.png)Relación entre pendiente y ángulo
 
 En este triángulo se cumple que $\tan\left(A\right)=\frac{f(x)-f(a)}{x-a}$.
 
@@ -84,7 +84,7 @@ no es derivable en $x=0$ pues no existe el límite en ese punto, ya que los lím
 
 $\lim_{x\rightarrow0}f(0)=\left\{\begin{array}{l}\lim_{x\rightarrow0^+}\frac{f(x)-f(0)}x=\frac{x-0}x=1\;\\\lim_{x\rightarrow0^-}\frac{f(x)-f(0)}x=\frac{-x-0}x=-1\end{array}\;\right.$
 
-[![Función no derivable en el origen: la pendiente en ese punto no está definida](/assets/images/no_derivable-300x230.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/no_derivable.png)Función no derivable en el origen: la pendiente en ese punto no está definida
+[![Función no derivable en el origen: la pendiente en ese punto no está definida](/taller-matematicas/assets/images/no_derivable-300x230.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/no_derivable.png)Función no derivable en el origen: la pendiente en ese punto no está definida
 
 **Ejemplo 4**: en un cierto punto de una carretera vemos una señal de tráfico que indica una pendiente del 10%. Sea $f(x)$ la función que proporciona el perfil de la carretera. ¿Cuál es el valor de la derivada en el punto considerado?
 
@@ -137,7 +137,7 @@ $D\left(\frac1{x^n}\right)=\frac{D\left(1\right)\cdot x^n-1\cdot D\left(x^n\righ
 | 
  
 
-[![Recta tangente y recta secante a la gráfica de la función y=f(x)](/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png)Recta tangente y recta secante a la gráfica de la función y=f(x)
+[![Recta tangente y recta secante a la gráfica de la función y=f(x)](/taller-matematicas/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png)Recta tangente y recta secante a la gráfica de la función y=f(x)
 
 En la imágen vemos una curva, en negro, que es la gráfica de la función $y=\frac1{10}x^3$, y dos rectas que cortan a la gráfica en el punto P con coordenadas $x=3,y=f(3)=2.7$, de forma que las tres gráficas coinciden en el punto P. La recta en rojo $r_s$ además corta a la función $y=\frac1{10}x^3$ en otro punto, el $(0,0)$, mientras que la recta en amarillo $r_t$ sólo corta a  $y=\frac1{10}x^3$ en el punto P. Sin dar la definición formal, diremos que las rectas tales como la $r_s$ que cortan a la gràfica $y=f(x)$ en dos puntos son **rectas secantes** a $y=f(x)$, mientras que las rectas semejantes a $r_t$ que sólo "tocan"  la gráfica en un punto P son **rectas tangentes** a $y=f(x)$ en el punto P.
 
@@ -159,7 +159,7 @@ $y=mx+(y_0-m\cdot x_0)\;=f'(x_0)x+(y_0-f'(x_0)\cdot x_0)$
 
 **NOTA: sobre aproximación local de funciones y recta tangente**
 
-[![Aproximación local a la función y=f(x) mediante su recta tangente](/assets/images/recta_tangent_21.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent_21.png)Aproximación local a la función y=f(x) mediante su recta tangente
+[![Aproximación local a la función y=f(x) mediante su recta tangente](/taller-matematicas/assets/images/recta_tangent_21.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent_21.png)Aproximación local a la función y=f(x) mediante su recta tangente
 
 Si en la imagen de la recta tangente "hacemos zoom" podemos observar que, en la inmediaciones del punto P de contacto, la gráfica de la función $y=f(x)$ y su recta tangente en ese punto prácticamente coinciden. Este es un hecho de gran importáncia práctica, pues nos permite usar, en un cierto entorno de P, la recta tangente en vez de la función original, que puede tener una expresión muy complicada, e incluso desconocida. Volveremos sobre ello más adelante, cuando estudiemos la fórmula de Taylor.
 
@@ -272,5 +272,5 @@ Despejando $y'$ del lado izquierdo de la igualdad anterior:
 
 $\begin{array}{l}y'=y\cdot\left(-\sin\left(x\right)\cdot Ln\left(\sin\left(x\right)\right)+\cos\left(x\right)\cdot\frac{\cos\left(x\right)}{\sin\left(x\right)}\right)=\\(sen(x))^{\cos(x)}\cdot\left(-\sin\left(x\right)\cdot Ln\left(\sin\left(x\right)\right)+\cos\left(x\right)\cdot\frac{\cos\left(x\right)}{\sin\left(x\right)}\right).\end{array}$.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

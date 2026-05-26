@@ -112,7 +112,7 @@ $I(t)=-\frac VRe^{-\frac RLt}+\frac VR=\frac VR\left[1-e^{-\frac RLt}\right]$
 
 El término $-e^{-\frac RLt}$ vale 1 para t = 0 y se atenúa ràpidamente, pasando a ser prácticamente nulo: es el denominado régimen transitorio del circuito; después, solo queda el término constante $I(t) = V/R$ ([Ley de Ohm](http://es.wikipedia.org/wiki/Ley_de_Ohm)): es el régimen estacionario:
 
-[caption id="attachment_909" align="alignnone" width="558"][![Intensidad I(t) en un circuito RL](/assets/images/circuit-RL.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/circuit-RL.png) Intensidad I(t) en un circuito RL[/caption]
+[caption id="attachment_909" align="alignnone" width="558"][![Intensidad I(t) en un circuito RL](/taller-matematicas/assets/images/circuit-RL.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/circuit-RL.png) Intensidad I(t) en un circuito RL[/caption]
 ###  Unicidad de la solución
 
 El teorema siguiente nos asegura que, en ciertas condiciones, la solución de una ecuación diferencial lineal de primer orden es única, o equivalentemente, que no existen [soluciones singulares](http://tallermatematic.eu/wp/?p=855#singulares), toda posible solución está incluida en la solución general.

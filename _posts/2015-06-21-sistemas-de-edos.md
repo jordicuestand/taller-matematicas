@@ -38,7 +38,7 @@ math: true
 
 	- Resumen de métodos
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Introducción
 
@@ -58,7 +58,7 @@ Si las ecuaciones del sistema no tienen las incógnitas "mezcladas", entonces po
 
 En el caso general no podrá hacerse así, y necesitaremos métodos específicos para sistemas de EDOs.
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Reducción de sistemas a ecuaciones, y reducción del orden de un sistema
 
@@ -112,7 +112,7 @@ Podemos aplicar el mismo método para transformar cualquier sistema de EDOs de o
 
 $\left.\begin{array}{r}y''-2z'+3y=0\\z''+y'-2z=e^{2x}\end{array}\right\}\Leftrightarrow\left.\begin{array}{r}y_2'-2z_2+3y_1=0\\z_2'+y_2-2z_1=e^{2x}\\y_2=y_1'\\z_2=z_1'\end{array}\right\}$.
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # EDOs lineales de coeficientes constantes
 
@@ -189,7 +189,7 @@ $W\begin{pmatrix}e^{2x}\\e^{-5x}\end{pmatrix}=det\begin{pmatrix}e^{2x}&amp;e^{-5
 
 pero en el caso de los sistemas homogéneos lineales de coeficientes constantes, como el de este ejemplo, la comprobación no es necesaria, siempre obtendremos soluciones linealmente independientes.
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # EDOs lineales de primer orden con coeficientes variables
 
@@ -261,7 +261,7 @@ $\left.\begin{array}{r}\left(a_{11}-r\right)C_1+a_{12}C_2=0\\a_{21}C_1+\left(a_{
 
 sistema indeterminado que nos proporciona la relación $C_2=C_1·2/3$, y por tanto una pareja de soluciones es $y=C_1e^{2x},\;z=(2/3)C_1e^{2x}$. Usando la segunda raíz $r=-5$ del mismo modo, obtenemos la relación $C_2=3C_1$ y la segunda pareja de soluciones es $y=C_2e^{-5x},\;z=3C_2e^{-5x}.$
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ###  Método de valores propios
 
@@ -345,7 +345,7 @@ y la solución general del sistema es:
 
 $\begin{array}{l}Y=C_1V_1e^{2x}+C_2V_2e^{2x}+C_3\left(V_2x+W\right)e^{2x}=\\C_1\begin{pmatrix}1\\-1\\0\end{pmatrix}e^{2x}+C_2\begin{pmatrix}1\\-1\\1\end{pmatrix}e^{2x}+C_3\begin{pmatrix}x+1\\-x\\1\end{pmatrix}e^{2x}\end{array}$
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ###  Soluciones particulares
 
@@ -387,7 +387,7 @@ Resolviendo el sistema obtenemos: A=3, B=3/10, C=9/50, D=57/100, E=9/4, F=2/5, G
 
 $\begin{pmatrix}y_p\\z_p\end{pmatrix}=\begin{pmatrix}Ae^x+Bx^2+Cx+D\\Ee^x+Fx^2+Gx+H\end{pmatrix}=\begin{pmatrix}3e^x+\frac34x^2+\frac9{50}x+\frac{57}{100}\\\frac94e^x+\frac25x^2+\frac1{25}x+\frac{23}{250}\end{pmatrix}.$
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ### Método de la transformada de Laplace
 
@@ -455,7 +455,7 @@ $\begin{array}{l}z=\;\mathcal{L}^{-1}\left\{\frac{-18}{s^2+9}+\frac{10}{s^2+1}+\
 
 es la solución particular del sistema tal que cumple las condiciones iniciales dadas.
 
-# [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Resumen de métodos
 

@@ -10,7 +10,7 @@ math: true
 
 Para fijar ideas, imaginemos un plano paralelo al plano coordenado $XY$, que corta al eje $Z$ en un punto $P$, a una distancia $d$ del origen $O$. El vector normal $\overrightarrow n$ es perpendicular al plano, y será paralelo al eje vertical $OZ$. El vector $OP$ será también paralelo a $OZ$, y por tanto paralelo al vector $\overrightarrow n$. Esto significa que $OP=\lambda\overrightarrow n$ para un cierto $\lambda$.
 
- [![Pla1](/assets/images/Pla1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Pla1.png)
+ [![Pla1](/taller-matematicas/assets/images/Pla1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Pla1.png)
 
 Pero la distancia $OP$ es igual a la distancia entre el plano y el origen $O$, luego  $\lambda=d$. Entonces $OP=d\overrightarrow n$.
 
@@ -30,7 +30,7 @@ Hallemos ahora la distancia entre un punto cualquiera $r_0$ del espacio y el pla
 
 $r_0=Q+\lambda\cdot\overrightarrow n\Rightarrow Q=r_0-\lambda\cdot\overrightarrow n$.
 
-[![Pla](/assets/images/Pla.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Pla.png)
+[![Pla](/taller-matematicas/assets/images/Pla.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Pla.png)
 
 y la distancia que nos piden es precisamente el valor $\lambda$. Pero para cualquier punto $Q$ del plano se ha de cumplir la ecuación ${\overrightarrow r}_Q\cdot\overrightarrow n-d=0$, así que:
 
@@ -52,7 +52,7 @@ $\overrightarrow{r_Q}\cdot\overrightarrow n-d=\left(1,2,3\right)\cdot\left(0,0,1
 
 Cuando hacemos el producto escalar de dos vectores $\overrightarrow A,\;\overrightarrow B$, el resultado puede interepretarse como el módulo de la proyección de uno de los vectores multiplicado por el módulo del otro vector: $\overrightarrow A\cdot\overrightarrow B=A\cdot B\cdot\cos\;\widehat{\overrightarrow A\overrightarrow B}$
 
-[caption id="attachment_286" align="alignnone" width="283"][![Fuente: http://www.physicsmynd.com](/assets/images/producte_esalar.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/producte_esalar.png) Fuente: http://www.physicsmynd.com[/caption]
+[caption id="attachment_286" align="alignnone" width="283"][![Fuente: http://www.physicsmynd.com](/taller-matematicas/assets/images/producte_esalar.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/producte_esalar.png) Fuente: http://www.physicsmynd.com[/caption]
 
 Por tanto el vector proyección de $\overrightarrow u$ sobre $\overrightarrow v$ se expresará como $\overrightarrow w=\overrightarrow e\cdot\left(\overrightarrow u\cdot\overrightarrow v\right)=\overrightarrow e\cdot u\cdot v\cdot\cos\;\widehat{\overrightarrow u\overrightarrow v}$, donde $\overrightarrow e$ es el vector unitario en la dirección de $\overrightarrow v$: $\overrightarrow e=\frac{\overrightarrow v}v=\frac{\left(1,6,1\right)}{\sqrt{1^2+6^2+1^2}}=\frac{\left(1,6,1\right)}{\sqrt{38}},$ queda por tanto:
 
@@ -62,7 +62,7 @@ Por tanto el vector proyección de $\overrightarrow u$ sobre $\overrightarrow v$
 
 Sabemos que el resultado del producto vectorial $\left(\overrightarrow A\times\;\overrightarrow B\right)$ es otro vector perpendicular al plano formado por $\overrightarrow A,\;\overrightarrow B$ cuyo mòdulo es $A·B·cos(AB)$.
 
-[caption id="attachment_287" align="alignnone" width="300"][![Fuente: Wikipedia](/assets/images/producte_vectorial-300x232.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/producte_vectorial.png) Fuente: Wikipedia[/caption]
+[caption id="attachment_287" align="alignnone" width="300"][![Fuente: Wikipedia](/taller-matematicas/assets/images/producte_vectorial-300x232.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/producte_vectorial.png) Fuente: Wikipedia[/caption]
 
 Entonces $\left(\overrightarrow A\times\;\overrightarrow B\right)^2=\left(\overrightarrow A\times\;\overrightarrow B\right)\cdot\left(\overrightarrow A\times\;\overrightarrow B\right)$ es el producto escalar de ese vector perpendicular consigo mismo, que será igual a su módulo al cuadrado:
 
@@ -108,12 +108,12 @@ pues el producto vectorial de un vector consigo mismo es cero, así como tambien
 
 **6.** ¿Es posible que la suma $w=u+v$ de dos vectores de mòdulos $u=2$ y $v=5$ tenga módulo 1? Justifica la respuesta.
 
-[caption id="attachment_303" align="alignnone" width="194"][![Suma gráfica de los vectores u + v = w: forman un triángulo](/assets/images/suma_vectors.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/suma_vectors.png) Suma gráfica de los vectores u + v = w: forman un triángulo. (Fuente: wikipedia)[/caption]
+[caption id="attachment_303" align="alignnone" width="194"][![Suma gráfica de los vectores u + v = w: forman un triángulo](/taller-matematicas/assets/images/suma_vectors.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/suma_vectors.png) Suma gráfica de los vectores u + v = w: forman un triángulo. (Fuente: wikipedia)[/caption]
 Los vectores que se suman y su resultante forman un triángulo. Por [la desigualdad triangular](http://es.wikipedia.org/wiki/Desigualdad_triangular) la suma de dos lados cualesquiera de un triángulo siempre es mayor que el otro lado. Si tuviéramos un triángulo de lados $u=2, v=5, w=1$ se vulneraría la desigualdad triangular, pues $u + w = 3 &lt; v = 5$. Por tanto no es posible la situación del enunciado.
 
 Otra forma de verlo es pensando en la regla del paralelogramo para la suma de vectores:
 
-[caption id="attachment_304" align="alignnone" width="236"][![Regla del paralelogramo para la suma de vectores: el vector suma es la hipotenusa del rectángulo que tiene por catetos los vectores que sumamos. Fuente: Wikipedia.](/assets/images/suma_vectors2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/suma_vectors2.png) Regla del paralelogramo para la suma de vectores: el vector suma es la hipotenusa del rectángulo que tiene por catetos los vectores que sumamos. Fuente: Wikipedia.[/caption]
+[caption id="attachment_304" align="alignnone" width="236"][![Regla del paralelogramo para la suma de vectores: el vector suma es la hipotenusa del rectángulo que tiene por catetos los vectores que sumamos. Fuente: Wikipedia.](/taller-matematicas/assets/images/suma_vectors2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/suma_vectors2.png) Regla del paralelogramo para la suma de vectores: el vector suma es la hipotenusa del rectángulo que tiene por catetos los vectores que sumamos. Fuente: Wikipedia.[/caption]
 La hipotenusa del triángulo es mayor que cualquiera de los catetos, por tanto $w$ sería mayor que $u$ y que $v$; la excepción es cuando  $u$ y $v$ son paralelos con sentidos opuestos, en este caso el triángulo degenera en una recta, y la longitud mínima de $w$ será $v-u=3&gt;1.$
 
 ---

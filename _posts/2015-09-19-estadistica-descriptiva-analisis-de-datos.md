@@ -36,7 +36,7 @@ math: true
 
  	- Estadísticos muestrales
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Estadística: concepto, contenido, aplicaciones
 
 ## Fenómenos y experimentos deterministas y aleatorios.
@@ -72,12 +72,12 @@ La Estadística estudia los fenómenos aleatorios, midiendo las fuentes de varia
 
 **Estadística descriptiva**: a partir de los resultados de un número de repeticiones de un experimento aleatorio, obtenemos una descripción numérica resumida (parámetros estadísticos) y unos gráficos descriptivos.
 
-[caption id="attachment_1342" align="alignnone" width="600"][![Resumir datos: parámetros y gráficos estadísticos ](/assets/images/grafic_est_descrip.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/grafic_est_descrip.png) Resumir datos: parámetros y gráficos estadísticos[/caption]
+[caption id="attachment_1342" align="alignnone" width="600"][![Resumir datos: parámetros y gráficos estadísticos ](/taller-matematicas/assets/images/grafic_est_descrip.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/grafic_est_descrip.png) Resumir datos: parámetros y gráficos estadísticos[/caption]
 **Estadística matemática**: utiliza la teoría de la probabilidad y las herramientas del análisis matemático para elaborar modelos matemáticos probabilistas que describen el comportamiento del fenómeno aleatorio en estudio.
 
 **Inferencia estadística**: a partir de un número limitado de experimentos aleatorios elabora una estimación del comportamiento del fenómeno en general. Por ejemplo, sabiendo, por datos históricos, que el número medio de accidentes laborales en un año en cierto polígono industrial es de 3 accidentes, calcular la probabilidad de que ocurra al menos un accidente antes del mes de junio del año actual.
 
-[caption id="attachment_1343" align="alignnone" width="619"][![De los datos experimentales a las predicciones](/assets/images/inferencia_esquema.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/inferencia_esquema.png) De los datos experimentales a las predicciones[/caption]
+[caption id="attachment_1343" align="alignnone" width="619"][![De los datos experimentales a las predicciones](/taller-matematicas/assets/images/inferencia_esquema.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/inferencia_esquema.png) De los datos experimentales a las predicciones[/caption]
 **Control de calidad y de fiabilidad**: utilizando una muestra de la producción, realiza inferencia sobre las calidad de toda la producción siguiendo un conjunto estándar de normas.
 
 ### Fases de un trabajo estadístico
@@ -117,13 +117,13 @@ Típicamente, en un estudio estadístico pasamos por las siguientes fases de tra
 
 Obtenemos algunos parámetros y gráficos estadísticos:
 
-[caption id="attachment_1344" align="alignnone" width="502"][![Fase 1: Estadística descriptiva resumen de los datos](/assets/images/fase1_estad.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/fase1_estad.png) Fase 2: Estadística descriptiva resumen de los datos[/caption]
+[caption id="attachment_1344" align="alignnone" width="502"][![Fase 1: Estadística descriptiva resumen de los datos](/taller-matematicas/assets/images/fase1_estad.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/fase1_estad.png) Fase 2: Estadística descriptiva resumen de los datos[/caption]
 En la siguiente fase utilizamos el modelo matemático de Poisson, que es útil para el estudio de la siniestralidad en general, para comparar los datos experimentales con los teóricos suministrados por el modelo, asegurando que el modelo teórico es válido en este caso.
 
 Por último, podemos responder a preguntas como "*calcular la probabilidad de que ocurra al menos un accidente
 antes del mes de junio del año actual*" usando el modelo matemático: resulta ser del 77%.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Concepto de población, muestra, individuo y variable estadística
 
@@ -143,7 +143,7 @@ antes del mes de junio del año actual*" usando el modelo matemático: resulta s
 **Variables discretas**: el conjunto de diferentes valores que puede tomar (dominio de la variable) es finito o infinito numerable (un entero). Ejemplo: lanzamiento de un dado, con dominio {1,2,3,4,5,6}.
 
 **Variables continuas**: el dominio es infinito no numerable (un intervalo de la recta real). Ejemplo: tiempo de servicio de un componente electrónico.
-#  [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+#  [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 # Distribución de frecuencias. representaciones gráficas
 
@@ -151,11 +151,11 @@ En Estadística Descriptiva el conjunto de valores a estudiar siempre se represe
 
 **Ejemplo 5**: Sea el experimento aleatorio: lanzamiento N = 10 veces de un dado. Tipo de variable: discreta. Población infinita. Muestra con N = 10. Resultados muestrales: {3, 4, 6, 1, 5, 2, 4, 6, 6, 1}. Con ellos formamos la tabla de frecuencias sin agrupar y el [histograma](https://es.wikipedia.org/wiki/Histograma) de frecuencias absolutas:
 
-[caption id="attachment_1347" align="alignnone" width="637"][![Ejemplo de tabla de frecuencias y su representación gráfica](/assets/images/est-descrp.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/est-descrp.png) Ejemplo de tabla de frecuencias y su representación gráfica[/caption]
+[caption id="attachment_1347" align="alignnone" width="637"][![Ejemplo de tabla de frecuencias y su representación gráfica](/taller-matematicas/assets/images/est-descrp.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/est-descrp.png) Ejemplo de tabla de frecuencias y su representación gráfica[/caption]
 
 El software permite generar una gran variedad de gráficos estadísticos con facilidad, es tarea del analista escoger cuál de ellos es el más adecuado para resumir los datos del estudio y mostrar las propiedades que desea poner de manifiesto.
 
-[caption id="attachment_1348" align="alignnone" width="543"][![Opciones de tipo de gráfico en OpenOffice](/assets/images/graph_types.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/graph_types.png) Opciones de tipo de gráfico en OpenOffice[/caption]
+[caption id="attachment_1348" align="alignnone" width="543"][![Opciones de tipo de gráfico en OpenOffice](/taller-matematicas/assets/images/graph_types.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/graph_types.png) Opciones de tipo de gráfico en OpenOffice[/caption]
 
 La utilidad de los gráficos estadísticos es:
 
@@ -274,13 +274,13 @@ La utilidad de los gráficos estadísticos es:
 
 Representando todos los pesos en un histograma, en el que agrupamos los datos en las categorías [200, 205), [205, 210), [210, 215), [215, 220), [220, 225), [225, 230), [230, 235], resulta:
 
-[caption id="attachment_1350" align="alignnone" width="572"][![Histograma de datos agrupados en categorías](/assets/images/descript_tots.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript_tots.png) Histograma de datos agrupados en categorías[/caption]
+[caption id="attachment_1350" align="alignnone" width="572"][![Histograma de datos agrupados en categorías](/taller-matematicas/assets/images/descript_tots.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript_tots.png) Histograma de datos agrupados en categorías[/caption]
 Las dos líneas verticales rojas representan los límites de tolerancia: vemos que efectivamente el proceso de producción está desviado a la izquierda, produce demasiadas unidades por debajo del peso mínimo establecido. Para saber cuál puede ser el orígen del problema, representamos de nuevo los datos pero esta vez separando por categorias: por máquinas y por operarios. Obtenemos:
 
-[caption id="attachment_1351" align="alignnone" width="760"][![Datos según las categorías máquinas y operarios](/assets/images/descript-categories.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript-categories.png) Datos según las categorías máquinas y operarios[/caption]
+[caption id="attachment_1351" align="alignnone" width="760"][![Datos según las categorías máquinas y operarios](/taller-matematicas/assets/images/descript-categories.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/descript-categories.png) Datos según las categorías máquinas y operarios[/caption]
 Vemos que hay una diferencia acusada entre las dos máquinas, pues la M1 presenta pesos mucho más dispersos del peso medio (220 gr), y con mayor número de unidades en la gama baja de pesos. En cambio entre operarios hay pocas diferencias. En conclusión, parece que debemos revisar la máquina 1.
 
- [![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+ [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Agrupación de datos en intervalos
 
  En el ejemplo anterior hemos visto que los datos de una variable continua (peso en gramos) es más cómodo agruparlos en intervalos de valores. Esto se hace más patente cuando aumenta el tamaño de la muestra. Supongamos que en vez de 20 pesos de bizcochos tenemos 160. Para organizar esos datos en intervalos procedemos como sigue:
@@ -297,10 +297,10 @@ Vemos que hay una diferencia acusada entre las dos máquinas, pues la M1 present
 
 Los intervalos (o **clases**) serán pues: [207, 210), [210, 213), ... [228, 231]. Entonces contamos cuantos de los datos caen en cada intervalo, formando la tabla de frecuencias:
 
-[caption id="attachment_1354" align="alignnone" width="722"][![ ](/assets/images/taula_freq.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/taula_freq.png) Tabla de datos agrupados en clases, con las frecuencias absolutas y relativas[/caption]
+[caption id="attachment_1354" align="alignnone" width="722"][![ ](/taller-matematicas/assets/images/taula_freq.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/taula_freq.png) Tabla de datos agrupados en clases, con las frecuencias absolutas y relativas[/caption]
 La marca de clase es simplemente el punto medio del intervalo que define a la clase. La frecuencia relativa se obtiene dividiendo la absoluta por el número N de datos. Las frecuencias acumuladas son sumas parciales de frecuencias.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 # Estadísticos muestrales
 
 Un estadístico muestral, también llamado parámetro estadístico, es una función de los datos que devuelve un número, intentando resumir el conjunto de datos en un único indicador. El típico ejemplo es la media aritmética de N datos.
@@ -337,7 +337,7 @@ Proporcionan valores que, ordenando los datos en orden creciente, dividen la dis
 
 Evidentemente, se cumple que Primer cuartil = 25º centil, segundo cuartil = 50º centil, .... También, primer decil = 10º centil, segundo decil = 20º centil, .... Además, la Mediana = 50 centil.
 
-[caption id="attachment_1356" align="alignnone" width="684"][![Los tres quartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una ](/assets/images/quartils.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/quartils.png) Los tres cuartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una[/caption]
+[caption id="attachment_1356" align="alignnone" width="684"][![Los tres quartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una ](/taller-matematicas/assets/images/quartils.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/quartils.png) Los tres cuartiles dividen el rango de datos en cuatro partes iguales, con un 25% de los datos cada una[/caption]
 
 Con N datos no agrupados, el centil $C_i$ es el número que ocupa la posición $(iN / 100)$, donde $1\leq i\leq N$. Con datos agrupados en intervalos usamos la formula:
 
@@ -351,11 +351,11 @@ $a_j$: anchura del intervalo donde está el dato que ocupa la posición (N-1) / 
 $n_j$: frecuencia absoluta del intervalo donde está el dato que ocupa la posición (N-1) / 100
 Los percentiles pueden calcularse gráficamente usando el diagrama de frecuencias relativas acumuladas, con líneas que unen los puntos, obtenemos el denominado polígono de frecuencias acumuladas. Para encontrar digamos el percentil $c_{20}$ hallamos la abscisa correspondiente a la ordenada Y = 20:
 
-[caption id="attachment_1358" align="alignnone" width="663"][![Polígono acumulativo de frecuencias, y obtención del percentil 20](/assets/images/poligon_acumulatiu.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/poligon_acumulatiu.png) Polígono acumulativo de frecuencias, y obtención del percentil 20[/caption]
+[caption id="attachment_1358" align="alignnone" width="663"][![Polígono acumulativo de frecuencias, y obtención del percentil 20](/taller-matematicas/assets/images/poligon_acumulatiu.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/poligon_acumulatiu.png) Polígono acumulativo de frecuencias, y obtención del percentil 20[/caption]
 
 De hecho la formula que hemos dado no es más que una semejanza entre triángulos; en la figura, si nos fijamos en los dos triángulos semejantes delimitados por los puntos (200, 5%), (C, 20%), y (205, 25%) planteamos:
 
-[caption id="attachment_1360" align="alignnone" width="220"][![Triángulos semejantes en el polígono de frecuencias acumuladas](/assets/images/percentils.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/percentils.png) Triángulos semejantes en el polígono de frecuencias acumuladas[/caption]
+[caption id="attachment_1360" align="alignnone" width="220"][![Triángulos semejantes en el polígono de frecuencias acumuladas](/taller-matematicas/assets/images/percentils.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/percentils.png) Triángulos semejantes en el polígono de frecuencias acumuladas[/caption]
 
 $\frac{205-200}{25-5}=\frac{205-C}{25-20}\Rightarrow C=205-\frac5{20}5=203.8$
 
@@ -572,8 +572,8 @@ Si queremos una representación gráfica, agrupamos los valores por intervalos p
 
 El histograma de frecuencias absolutas, para el pan de 1Kg, con indicación del valor medio, es:
 
-[caption id="attachment_1368" align="alignnone" width="440"][![Histograma de frecuencias absolutas](/assets/images/exemple1_descriptiva.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exemple1_descriptiva.png) Histograma de frecuencias absolutas[/caption]
+[caption id="attachment_1368" align="alignnone" width="440"][![Histograma de frecuencias absolutas](/taller-matematicas/assets/images/exemple1_descriptiva.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exemple1_descriptiva.png) Histograma de frecuencias absolutas[/caption]
 En este ejemplo vemos que la media aritmética no parece ser un buen representante de la distribución de pesos, simplemente es un valor central.
 
-[![separador2](/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

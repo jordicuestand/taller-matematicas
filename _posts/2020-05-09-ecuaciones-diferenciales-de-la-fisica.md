@@ -47,7 +47,7 @@ Para terminar con esta introducción, especifiquemos que se entiende por variaci
 
 Un **campo escalar** es una función *f(x,y,z)* que asigna un número real (un *escalar*) a cada punto del espacio o de una región del espacio. Por ejemplo la temperatura T de una sala con calefacción por radiadores tendrá una temperatura ligeramente variable según el punto en que la midamos, más caliente cerca de los radiadores, y la representamos por el campo escalar *T(x,y,z)*. En los mapas meteorológicos, las *líneas isobaras* representan los puntos que están a la misma presión atmosférica P, que también constituye un campo escalar *P(x,y,z)*, y las *líneas isotermas* representan los puntos de la misma temperatura. En general dado un campo escalar C(x,y,z) las líneas que pasan por los puntos con la misma magnitud C se denominan *curvas de nivel*. Si "andamos" por encima de una curva de nivel L cualquiera, la magnitud C se mantiene constante, su variación es cero: [math]\triangle C_L=0[/math], por el contrario si nos alejamos de una curva de nivel perpendicularmente a ella, la variación de la magnitud C será la máxima posible siempre que el desplazamiento sea pequeño, pues para mantener la variación máxima deberíamos movernos por una trayectoria [math]\Gamma[/math] tal que fuera perpendicular en cada uno de sus puntos a la curva de nivel en ese punto. No nos detendremos en las demostraciones matemáticas de estas propiedades ni de otras que saldrán a menos que nos aporten comprensión física de las leyes. En la figura 1 simplificamos el modelo pasando de tres a dos dimensiones, z = f(x,y): vemos tres curvas de nivel en el plano (x,y) correspondientes a tres valores distintos de z, tenemos también tres movimientos entre curvas de nivel, la que proporciona mayor variación con menor desplazamiento es la trayectoria C perpendicular a la curva de nivel. 
 
-![](/assets/images/gradient.png)Fig. 1: curvas de nivel en el plano (X,Y) correspondientes a tres valores de Z=f(X,Y); el movimiento A mantiene el valor de la función Z pues se mueve por encima de una curva de nivel, el movimiento B introduce una variación de una unidad pues pasa de la curva de nivel Z=2 a la Z=3, finalmente el movimiento C al ser perpendicular a la curva de nivel será la distancia más corta entre las curvas consecutivas, y por tanto la que aporta más variación de Z con mínimo desplazamiento.
+![](/taller-matematicas/assets/images/gradient.png)Fig. 1: curvas de nivel en el plano (X,Y) correspondientes a tres valores de Z=f(X,Y); el movimiento A mantiene el valor de la función Z pues se mueve por encima de una curva de nivel, el movimiento B introduce una variación de una unidad pues pasa de la curva de nivel Z=2 a la Z=3, finalmente el movimiento C al ser perpendicular a la curva de nivel será la distancia más corta entre las curvas consecutivas, y por tanto la que aporta más variación de Z con mínimo desplazamiento.
 
 Pasando al límite de desplazamiento infinitesimal, la ratio entre variación del campo C(x,y,z) y la de variación de la posición coincide por definición con la de derivadas parciales del campo escalar C:
 
@@ -93,9 +93,9 @@ Para fijar ideas imaginemos que el campo escalar de la figura 1 nos da las tempe
 
 [math]\overrightarrow q=\frac{\triangle Q}{\triangle s}\;\frac{\overrightarrow\nabla T}{\left|\overrightarrow\nabla T\right|}=\frac{\triangle Q}{\triangle s}\widehat e[/math]
 
-![](/assets/images/Camp-T.png)Fig. 2: El flujo de calor ΔQ por unidad de longitud a través de un pequeño segmento Δs, ΔQ/Δs, define el módulo del vector flujo de calor** q** de dirección igual al gradiente de temperatura pero con sentido contrario.
+![](/taller-matematicas/assets/images/Camp-T.png)Fig. 2: El flujo de calor ΔQ por unidad de longitud a través de un pequeño segmento Δs, ΔQ/Δs, define el módulo del vector flujo de calor** q** de dirección igual al gradiente de temperatura pero con sentido contrario.
 
-![](/assets/images/gradient-angle.png)Fig. 3: elemento de superficie formando un ángulo con el gradiente de temperatura
+![](/taller-matematicas/assets/images/gradient-angle.png)Fig. 3: elemento de superficie formando un ángulo con el gradiente de temperatura
 
 En el caso de un campo T(x,y,z) en el espacio, el flujo de calor lo tomamos a través de la unidad de superficie. En la figura 2 para T(x,y) hemos tomado Δs sobre una curva de nivel T = constante y si T depende de x,y,z hubiéramos tomado Δs sobre una *superficie de nivel* (región del espacio tal que T es constante), pero podemos considerar un Δs cualquiera formando un ángulo con el gradiente (figura 3), llamando **n** al vector unitario normal al elemento Δs obtenemos el flujo de calor a través de Δs con el producto escalar **q**·**n**.  
 
@@ -107,13 +107,13 @@ que leemos así: *el flujo total de un vector **v** a través de una superficie 
 
 ## Circulación de un vector, teorema de Stokes
 
-![](/assets/images/circulacio.png)Fig. 4: circulación de **v** a lo largo de C
+![](/taller-matematicas/assets/images/circulacio.png)Fig. 4: circulación de **v** a lo largo de C
 
 Consideremos ahora un campo vectorial v(x,y,z) y una curva cerrada C suave (sin aristas, y por tanto diferenciable), en la figura 4 tomamos es una elipse pero puede ser cualquier curva suave; escojamos un sentido de recorrido de la curva y dividamos C en segmentos infinitesimales ds, en cada uno de ellos, situados en un punto (x,y,z) de C, tendremos un valor del vector v. Si definimos el vector d**s** como el de módulo ds y dirección la de la tangente a la curva en ese punto, podemos multiplicar escalarmente los vectores d**s** y **v** en cada punto, y sumar los productos a lo largo de toda la curva C, o sea integrar, para obtener la *circulación del vector **v** a lo largo de C*. 
 
 [math]\Phi=\oint_C\overrightarrow v\cdot\operatorname d\overrightarrow s[/math] [5]
 
-![](/assets/images/circulacio-quadrat.png)Fig. 5: camino C cerrado, cuadrado, para el cálculo de la circulación
+![](/taller-matematicas/assets/images/circulacio-quadrat.png)Fig. 5: camino C cerrado, cuadrado, para el cálculo de la circulación
 
 Consideremos el caso particular de que C es un cuadrado "pequeño" que encierra una superficie Δs (figura 5) y tiene lados Δx, Δy. Recorramos C en la dirección marcada por las flechas, en sentido contrario a las agujas del reloj (es el sentido estándard) y calculemos la circulación de un vector [math]\overrightarrow v=\left(v_x,v_y\right)[/math] obteniendo el producto **v**·Δ**s** en cada arista del cuadrado, teniendo en cuenta que en cada arista la dirección de Δ**s** es constante. El que sea pequeño el cuadrado significa que sus dimensiones Δx, Δy no son infinitesimales, de forma que los valores de **v** son distintos en cada arista, pero al mismo tiempo seran válidas las aproximaciones 
 
@@ -135,11 +135,11 @@ Sumando todo nos queda [math]\Phi=\left(v_x\left(1\right)-v_x\left(3\right)\righ
 
 que podemos expresar como operador:
 
-![](/assets/images/rotacional-2-2.png)
+![](/taller-matematicas/assets/images/rotacional-2-2.png)
 
 Si hubiéramos desarrollado la circulación en tres dimensiones (x,y,z) la expresión seria
 
-![](/assets/images/circulacio-quadrat-3D.png)
+![](/taller-matematicas/assets/images/circulacio-quadrat-3D.png)
 
 El determinante al desarrollarlo coincide con el rotacional del vector:
 
@@ -149,7 +149,7 @@ Por tanto para tres dimensiones se cumple que *la circulación de un vector a lo
 
 Si imaginamos un cuadrado formado por n cuadrados pequeños, y miramos la circulación por todos ellos, observaremos que los lados que coinciden anulan la circulación entre sí (figura 6).
 
-![](/assets/images/sumacirculacio.png)Fig.6: unión de caminos elementales y circulación en cada uno
+![](/taller-matematicas/assets/images/sumacirculacio.png)Fig.6: unión de caminos elementales y circulación en cada uno
 
  Por ello si en cada cuadrado elemental se cumple la ecuación [6], también se cumplirá para el cuadrado mayor. Para una superficie S cualquiera delimitada por una curva C cerrada podemos imaginar que la recubrimos con cuadrados elementales, de forma que la circulación total por C es también la suma de circulaciones elementales, que expresamos como integral, en la ecuación conocida como **Teorema de Stokes**: *la circulación de un vector a lo largo de un camino cerrado C es igual a la integral sobre la superficie S contenida por del rotacional del vector:*
 
@@ -161,7 +161,7 @@ La deducción anterior no es rigurosa, lo que nos interesa es ver la relación e
 
 Una propiedad importante de los operadores es que el rotacional de un gradiente es siempre cero: [math]Rot\left(\overrightarrow{Grad}\right)=\nabla\times\nabla=0[/math] que puede verse como la consecuencia de que el producto vectorial de un vector por sí mismo es cero. Segun el teorema de Stokes [7] la circulación sobre una curva cerrada C de un vector gradiente habrá de ser también cero: [math]\int_S\nabla\times\nabla q\operatorname ds=0=\oint_C\overrightarrow q\cdot\operatorname d\overrightarrow s=\Phi[/math]. Nos podemos preguntar que tipos de campos vectoriales proporcionan una circulación nula por cualquier camino cerrado C, tal como sucede con los vectores gradientes. El cálculo diferencial nos asegura que *todo campo vectorial con circulación nula para cualquier camino cerrado C es el vector gradiente de un campo escalar al que llamamos **** potencial* escalar** (o simplemente potencial).  El campo vectorial que es un gradiente de un potencial y por tanto tiene rotacional nulo y circulación nula se llama **campo conservativo**. 
 
-![](/assets/images/camp-vector-gravetat.png)Fig. 7: dos caminos para ir del punto A al B en un campo gravitatorio
+![](/taller-matematicas/assets/images/camp-vector-gravetat.png)Fig. 7: dos caminos para ir del punto A al B en un campo gravitatorio
 
 **Ejemplo 1**: **Trabajo de una fuerza**.  El trabajo realizado por una fuerza **F** actuando sobre una masa m a lo largo de una trayectoria C toma la misma forma que la circulación del vector fuerza a lo largo de C: [math]W=\int_C\overrightarrow F\cdot\operatorname d\overrightarrow s[/math] [8]; si la curva C no es cerrada, el trabajo no tiene por que ser nulo, pero ¿que sucede si C es un ciclo que empieza y acaba en el mismo punto? En el caso del campo vectorial gravitatorio **g**=(0,0,-g) si la fuerza **F** trabaja *contra* ese campo, sólo efectuará trabajo no nulo la componente vertical de **F**, y será un trabajo igual a *menos* el trabajo del campo gravitatorio. En la figura 7 vemos dos caminos distintos para ir desde el punto A al B en un campo gravitatorio; descomponiendo la integral [8] en suma de integrales para cada tramo 1234567, los tramos horizontales 1357 al ser perpendiculares a la gravedad no aportan trabajo, y los verticales 246 al ser paralelos a la gravedad aportan [math]W=-\int_{tramo\;i}m\left(0,0,-g\right)\cdot\operatorname d\overrightarrow s=-mg\int_{tramo\;i}\operatorname d\overrightarrow s=-mg\cdot altura\;tramo\;i[/math] sumando todos los tramos nos queda el trabajo total *W = *-mgh siendo h la diferencia de altura entre A y B. Evidentemente por el camino alternativo 11'2' encontramos lo mismo: *el trabajo efectuado por el campo gravitatorio entre dos puntos sólo depende de la diferencia de altura entre los puntos y no del camino recorrido*.  Por tanto si ejercemos la fuerza **F** en un ciclo cerrado que empieza y acaba en el mismo punto A, el trabajo deberá de ser nulo, y por definición la circulación de **F** también: *el campo gravitatorio es un campo conservativo* y el vector fuerza gravitatoria será igual al gradiente de un potencial: [math]\overrightarrow F=(0,0,-g)=\nabla\psi[/math], además, el rotacional del campo gravitatorio ha de ser nulo. El potencial gravitatorio resulta ser [math]\psi\left(x,y,z\right)=-mgz[/math]. 
 
@@ -177,7 +177,7 @@ Si **∇**·**v** = 0, entonces existe un **w** tal que **v** = **∇** X **w**.
 
 **Ejemplo 4: Ecuación diferencial de la hidrostática**. La hidroestática estudia las leyes físicas de los fluidos en equilibrio estático; consideremos el interior de un fluido en el que hay unas presiones variables que pueden representarse mediante un campo escalar p(x,y,z), e imaginemos un elemento de volumen de lados ∇x, ∇y, ∇z y volumen ∇x∇y∇z = ∇V, sometido a presiones externas en sus caras (figura 8). 
 
-![](/assets/images/element-fluid-estàtic.png)Fig. 8: elemento de volumen de fluido sometido a presión
+![](/taller-matematicas/assets/images/element-fluid-estàtic.png)Fig. 8: elemento de volumen de fluido sometido a presión
 
 La presión dado que el elemento es pequeño podemos considerar que es la misma para cada cara y aplicada en el centro, pero ligeramente diferente entre caras; así, segun el eje X de coordenadas, y dadas la presiones de sentido contrario p, p', podemos expresar la segunda en función de la primera por [math]p'=p+\frac{\partial p}{\partial x}\triangle x[/math]. Nos fijamos ahora en las fuerzas generadas por las presiones p y p' que son, respectivamente F = p·∇x∇y y F' = p'·∇x∇y, la suma de fuerzas en la dirección X será F - F', que es:
 

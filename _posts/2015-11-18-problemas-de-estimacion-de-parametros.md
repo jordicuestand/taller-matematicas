@@ -93,7 +93,7 @@ $P(\overline{D_2}&gt;\overline{D_1})=P\left(\frac{\overline{D_2}}{s_d/\sqrt n}&g
 
 Como $T_2$ también sigue una distribución t de 8 grados de libertad, esta última probabilidad la podemos buscar en las tablas: resulta valer **0.08**. Esta es la respuesta.
 
-[![separador](/assets/images/separador.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador.png)**2.** Usando el método de máxima verosimilitud, estimar el parámetro p de una distribución binomial de N=10 a partir de una muestra de n=7 repeticiones, con valores {7, 6, 2, 5, 6, 3, 7}.
+[![separador](/taller-matematicas/assets/images/separador.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador.png)**2.** Usando el método de máxima verosimilitud, estimar el parámetro p de una distribución binomial de N=10 a partir de una muestra de n=7 repeticiones, con valores {7, 6, 2, 5, 6, 3, 7}.
 **Solución**: La interpretación del enunciado es la siguiente: tenemos una variable X que sigue una distribución de probabilidad binomial, B(N, p), con N = 10, y X tomando valores en el intervalo [0, 10] (desde 0 éxitos hasta 10 éxitos). En 7 repeticiones de un experimento aleatorio se obtuvieron, de un máximo de 10 éxitos, los valores {7, 6, 2, 5, 6, 3, 7}. ¿Cuál es el valor estimado del parámetro p de la binomial?
 
 La función de verosimilitud es:
@@ -124,7 +124,7 @@ Así pues, la estimación de p será:
 
 $\frac1{10}\frac{7+6+2+5+6+3+7}7=\frac{18}{35}\approx0.5143.$
 
-[![separador](/assets/images/separador.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador.png)**3.** Usando el método de máxima verosimilitud, estimar el parámetro p de una distribución discreta de probabilidad con la siguiente función de probabilidad:
+[![separador](/taller-matematicas/assets/images/separador.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador.png)**3.** Usando el método de máxima verosimilitud, estimar el parámetro p de una distribución discreta de probabilidad con la siguiente función de probabilidad:
 
 | **x:** 
 | 1 

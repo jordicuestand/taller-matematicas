@@ -60,13 +60,13 @@ $\begin{array}{l}2014\;\;\;\;\left|\underline{4\;\;\;\;\;}\right.\\\;\;\;\;\;\;2
 
 Como el resto es 2, pertenece a la segunda sucesión, la del primer término igual a 2. En conclusión, las unidades de 7²⁰¹⁴ son: 9.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **1.** ¿Cuál es el dígito correspondiente a las unidades del número 1234²⁰¹⁴?
 
 Solución: aplicar el método del problema anterior directamente es poco recomendable, pues las potencias de 1234 crecen demasiado rápidamente.  Nos fijamos en cómo se calculan las potencias sucesivas con multiplicaciones; para 1234² = 1234 x 1234 resulta:
 
-[![unitats](/assets/images/unitats.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/10/unitats.png)
+[![unitats](/taller-matematicas/assets/images/unitats.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/10/unitats.png)
 
 Vemos que las unidades de 1234² se obtienen tomando las de 4 x 4. Para las potencias sucesivas de 1234 tenemos lo mismo: sólo tenemos que considerar el 4. Busquemos pues el patrón de las potencias de 4:
 
@@ -82,13 +82,13 @@ Vemos que las unidades de 1234² se obtienen tomando las de 4 x 4. Para las pote
 
 Vemos que simplemente el patrón es: para potencias impares las unidades son 4, y para las pares son 6. Por tanto las unidades de 1234²⁰¹⁴, siendo la potencia 2014 par, es 6.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 **3.** ¿Cuantas cifras tiene el número 7²⁰¹⁴?
 
  Solución: en el sistema decimal cada cifra de un número se multiplica por una potencia de 10 para obtener el número dado; por ejemplo, el número 3456 es igual a 3 x 103 + 4 x 102 + 5 x 101 + 6 x 100. Entonces la cantidad N de cifras que contiene un número dado puede obtenerse dividiendo el número por 10 repetidamente, hasta que el cociente sea menor que 1:
 
-[![division_consecutiva](/assets/images/division_consecutiva.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/10/division_consecutiva.png)
+[![division_consecutiva](/taller-matematicas/assets/images/division_consecutiva.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/10/division_consecutiva.png)
 
 Como hemos hecho cuatro divisiones, el número tiene 4 cifras. Otra forma de verlo es: si un número tiene 4 cifras, entonces podemos dividirlo como máximo por 103, para obtener un cociente mayor que 1, en efecto, 3456 / 103 = 3, pero 3456 / 104 = 0. En general:
 Dado un número entero X, su número de cifras decimales N es el número para el que se cumple X / 10N ≥ 1 y además X / 10(N+1) < 1.
@@ -98,5 +98,5 @@ $\begin{array}{l}\log\left(\frac{10^{(N+1)}}{7^{2014}}\right)\;\;\;\;&gt;\;\log\
 
 Por tanto el número  7²⁰¹⁴  tiene N = 1702 cifras decimales.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

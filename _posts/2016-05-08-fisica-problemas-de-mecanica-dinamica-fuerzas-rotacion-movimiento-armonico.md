@@ -55,14 +55,14 @@ $\theta_A=200\cdot10-\frac1220\cdot10^2=1000;\;\theta_B=100\cdot20-\frac125\cdot
 
 ambos valores son las revoluciones completadas, y resultan ser iguales. En la imagen vemos la evolución con el tiempo de ambas velocidades angulares y ángulos girados.
 
-[caption id="attachment_150408" align="alignnone" width="471"]![Fig. 1: velocidades y ángulos en función del tiempo](/assets/images/vel_angular.png) Fig. 1: velocidades y ángulos en función del tiempo[/caption]
-![separador2](/assets/images/separador2.png)
+[caption id="attachment_150408" align="alignnone" width="471"]![Fig. 1: velocidades y ángulos en función del tiempo](/taller-matematicas/assets/images/vel_angular.png) Fig. 1: velocidades y ángulos en función del tiempo[/caption]
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **2.** Un vehículo toma una curva peraltada de radio R=60m en la que el rozamiento es nulo a 60 km/h. Hallar el ángulo que ha de tener el peralte para que no se produzca derrape de las ruedas.
 
 Solución:
 
-[caption id="attachment_1642" align="alignnone" width="471"]![Geometría del problema](/assets/images/peralte.png) Geometría del problema[/caption]
+[caption id="attachment_1642" align="alignnone" width="471"]![Geometría del problema](/taller-matematicas/assets/images/peralte.png) Geometría del problema[/caption]
 En la figura vemos una representación frontal del vehículo, de masa m, tomando la curva peraltada de radio R y ángulo de peralte ɑ. Definimos los ejes coordenados XY como muestra la figura, y aplicamos la 2ª ley de Newton, $\sum_{}F=ma$, a cada eje:
 
 Eje X: Como el vehículo está efectuando un giro de radio R, experimentará una fuerza normal $F_n=mv^2/R$ en la dirección de X. Además, en la figura vemos que el peso mg tiene también una componente según -X que valdrá $mg\sin\left(\alpha\right)$. Como no hay derrape, la aceleración según X ha de ser cero:
@@ -73,13 +73,13 @@ Vemos que el ángulo de peralte no depende de la masa del vehículo; sustituimos
 
 $\alpha=sin^{-1}\left(\frac{\left(60/3.6\right)^2}{9.8\cdot60}\right)=\sin^{-1}\frac{625}{1323}\approx{28.2^\circ}$
 
- ![separador2](/assets/images/separador2.png)
+ ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **3**. Dejamos caer la masa m de un péndulo simple desde la posición horizontal en reposo; ¿cuál será la tensión de la cuerda del péndulo cuando la masa pase por la posición vertical?
 
 Solución:
 
-![pendul](/assets/images/pendul.png)
+![pendul](/taller-matematicas/assets/images/pendul.png)
 
 La masa m del péndulo inicialmente está en la posición superior, suponiendo que el objeto es pequeño, su altura respecto a la posición inferior será aproximadamente igual a la longitud de la cuerda L. Por tanto su energía potencial gravitatoria será $E_p=mgh=mgL$. Esta energía potencial se convertirá totalmente en energía cinética en el punto más bajo de la trayectoria circular:
 
@@ -91,7 +91,7 @@ $T-mg-m2gL/L=0\Rightarrow\boxed{T=3mg}$
 
 La tensión en el punto más bajo resulta ser el triple del peso del objeto que oscila, independientemente de la longitud de la cuerda.
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **4**. Un cilindro de piedra usado para afilar cuchillos mide 80 cm de radio y pesa 55 kg. Si queremos acelerarlo desde 0 hasta 240 rpm en un tiempo de 40s, ¿que par de giro deberemos aplicar, y cuanto trabajo efectuaremos? ?Qué energía cinética tendrá el cilindro?
 
@@ -107,11 +107,11 @@ La energía cinética viene dada por $E_c=\frac12I\omega^2=\frac12\frac{88}5\lef
 
 **Nota respecto a las unidades**: El par de fuerza viene dado en Newtons multiplicado por metros, Nm; observemos que la aceleración angular, en esta conversión de unidades, viene dada en 1/s² y no en rad/s², esto se hace siempre así cuando los ángulos vienen dados en radianes, los radianes no se incluyen. ¿Por qué? Si nos preguntamos cuál es la velocidad lineal de un punto que está girando en movimiento circular uniforme de radio r  con velocidad angular de R revoluciones por segundo, veremos que el punto recorre una distancia de 2πr metros R veces por segundo, por tanto su velocidad será de 2πrR m/s: para pasar de velocidad angular a velocidad lineal, convertimos los ángulos en distancias, dimensionalmente es una conversión de angular a lineal según el factor de conversión : [v] = [ω]·[factor conversión], o sea $\frac ms\;=\frac{\cancel{\;rev}}s\cdot\;2\pi r\;\frac m{\cancel{rev}}$. Cuando los ángulos vienen dados en radianes, el factor de conversión no incluye el 2π, es directamente igual al radio r, y el paso de velocidad angular (o aceleración) a lineal es: $\lbrack v\rbrack=\frac ms\;=\lbrack\omega\rbrack\cdot\lbrack factor\rbrack=\frac{\cancel{rad}}s\cdot\;\frac m{\cancel{rad}}$. Entonces, cuando "eliminamos los radianes" en las dimensiones lineales, lo que estamos haciendo es saltarnos el paso intermedio de las unidades del factor de conversión de angular a lineal, dejando sólo su valor: $\lbrack v\rbrack=\frac ms\;=\lbrack\omega\rbrack\cdot\lbrack r\rbrack=\frac1s\cdot\;m$
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
-**5**.  El cilindro de la figura, de 30cm de radio y 10kg de masa, está girando en torno a su eje al desenrollarse una cuerda que tiene a su alrededor, en el extremo de la cual hay un objeto de 200gr de masa, que cae por efecto de la gravedad.![gir_cilindre](/assets/images/gir_cilindre.png) ¿Cuál es el par de giro sobre el cilindro? Distinguir el momento inicial, en el que el cilindro todavía no gira, de los momentos posteriores, en los que el cilindro está girando aceleradamente: ¿es constante el par? Calcular la aceleración angular del cilindro y la aceleración del objeto. Si sustituimos el peso por una fuerza constante igual a peso del objeto, ¿la aceleración angular será la misma?
+**5**.  El cilindro de la figura, de 30cm de radio y 10kg de masa, está girando en torno a su eje al desenrollarse una cuerda que tiene a su alrededor, en el extremo de la cual hay un objeto de 200gr de masa, que cae por efecto de la gravedad.![gir_cilindre](/taller-matematicas/assets/images/gir_cilindre.png) ¿Cuál es el par de giro sobre el cilindro? Distinguir el momento inicial, en el que el cilindro todavía no gira, de los momentos posteriores, en los que el cilindro está girando aceleradamente: ¿es constante el par? Calcular la aceleración angular del cilindro y la aceleración del objeto. Si sustituimos el peso por una fuerza constante igual a peso del objeto, ¿la aceleración angular será la misma?
 
-Las fuerzas en juego las vemos en la siguiente figura, que muestra la vista axial del cilindro; el par de giro M es causado por el momento de la tensión T de la cuerda r![Vidal 408](/assets/images/Vidal-408.png)especto al centro O fijo del cilindro, M = T·r. Cuando todavía no hay movimiento, por equilibrio de fuerzas, la tensión T ha de ser igual al peso del objeto, T = mg, así que el par inicial aplicado es M = mgr = 0.2·9.8·0.3 = 0.59 Nm.
+Las fuerzas en juego las vemos en la siguiente figura, que muestra la vista axial del cilindro; el par de giro M es causado por el momento de la tensión T de la cuerda r![Vidal 408](/taller-matematicas/assets/images/Vidal-408.png)especto al centro O fijo del cilindro, M = T·r. Cuando todavía no hay movimiento, por equilibrio de fuerzas, la tensión T ha de ser igual al peso del objeto, T = mg, así que el par inicial aplicado es M = mgr = 0.2·9.8·0.3 = 0.59 Nm.
 
 La aceleración angular α del cilindro se relaciona con el par de giro M a través del momento de inercia I = 0.5mr² = 0.5·10·0.3² = 0.45, del cilindro, por la igualdad M = I·α; de aquí encontramos α = M/I = 0.59 / 0.45 = 1.31 rad·s⁻².
 
@@ -131,11 +131,11 @@ Vemos que el par de giro ha cambiado ligeramente respecto al estado inicial. La 
 
 Si sustituimos el peso por una fuerza constante igual a peso del objeto, el movimiento será constante, con  α = 1.31 rad·s⁻² y un par constante M = 0.59 Nm, pues ahora ya no hay ningún objeto acelerándose sino una fuerza constante. 
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **6**. Un aro delgado, un disco y una esfera, todos del mismo diámetro y de la misma masa, descienden por un plano inclinado rodando sin deslizamiento. Comparar los tiempos de descenso entre sí y con un punto material de la misma masa que deslizara sin rozamiento por el mismo plano. Si las masas fueran distintas, ¿qué cambiaría?
 
-![vidal 409](/assets/images/vidal-409.png)
+![vidal 409](/taller-matematicas/assets/images/vidal-409.png)
 
 Las condiciones físicas de la rodadura sin deslizamiento en general las vemos en la figura: la velocidad angular w es constante, y el punto P es el centro de giro instantáneo, o sea que está rodando alrededor de P, el punto P está inmóvil, pues está en contacto con el suelo, y la fuerza de rozamiento impide que deslice, pero el punto P cambia a cada instante, por eso le llamamos centro instantáneo, sólo lo es un instante. Por otro lado el centro geométrico O se mueve con velocidad v constante, paralelamente al suelo, de forma que v = w·r (ya que el punto O gira instantáneamente alrededor de P con velocidad angular w y a una distancia r). Ahora bien, como el punto P es estático, la fuerza de rozamiento F aplicada en P no realiza ningún trabajo W, ya que W = F·d, siendo d la distancia, que en este caso es cero.
 
@@ -175,5 +175,5 @@ Si las masas fueran distintas, no cambiarían los resultados, pues vemos que las
 
 NOTA: otra forma de atacar el problema es considerar la rotación alrededor del punto P y no de O; en este caso, como el punto P tiene velocidad cero, su energía cinética de traslación es cero, y sólo consideramos la energía de rotación en torno al punto P; hay que tener en cuenta que el momento de inercia I' respecto al punto P no es el mismo que el I respecto al centro de gravedad O, sino que viene dado por el teorema de Steiner, I' = I + md² siendo r la distancia entre los puntos O y P. Haciéndolo así, igualaríamos la energía cinética de rotación del sólido al llegar al final del plano inclinado con la energía potencial en el punto inicial, y se llega a los mismos resultados.
 
-![separador2](/assets/images/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 {% endraw %}

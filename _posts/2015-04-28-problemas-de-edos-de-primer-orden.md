@@ -19,7 +19,7 @@ math: true
  
 **Soluciones**
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  
 
@@ -35,7 +35,7 @@ la última integral se puede hacer por partes. La integral general queda:
 
 $y=u\left(C+v\right)=\frac1x\left(C+\sin\left(x\right)-x\cos\left(x\right)\right).$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  
 
@@ -49,7 +49,7 @@ $v'-\frac1xv=-\frac{x\cos\left(x\right)-\sin\left(x\right)}x$
 
 Para resolver la ecuación lineal, que es del tipo $y'+P(x)y=Q(x)$, hallamos $v=-\int e^{P(x)}\operatorname dx,\;w=\int Q(x)\cdot\left[\int e^{P(x)}\operatorname dx\right]\operatorname dx$ y la solución será $y=v(C+w)$; obtendremos: $u=Cx-\sin(x)$, deshaciendo el cambio, $y=(Cx-\sin(x))^{-1}$.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  
 
@@ -77,7 +77,7 @@ El conjunto de la dos igualdades para x, y nos da el haz de curvas solución en 
 
 $\left.\begin{array}{r}x=\frac1{\left(1+p\right)^2}+C\\y=-C-\frac{p^2}{\left(1+p\right)^2}\end{array}\right\}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
  
 
@@ -100,5 +100,5 @@ $\begin{array}{l}x^2+\frac xy+C\left(y\right)=\ln\left(y\right)+\frac xy+C\left(
 La solución es $F(x,y)=C$ donde $F\left(x,y\right)=\int M\operatorname dx=\int N\operatorname dy=x^2+\frac xy+\ln\left(y\right)$, o sea, queda en forma implícita, no damos una expresión $y=f(x)$, sino:
 $x^2+\frac xy+\ln\left(y\right)=C$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 {% endraw %}

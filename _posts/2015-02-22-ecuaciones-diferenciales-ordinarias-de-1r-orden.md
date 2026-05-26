@@ -26,7 +26,7 @@ math: true
 
  	- [Ecuaciones exactas](#exactas)
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Ecuaciones separables
 
 Las ecuaciones diferenciales separables son las de la forma $dy / dx = H (x, y)$ donde $H (x, y)$  se puede expresar bien como el cociente $H (x, y) = f (x) / g (y)$  o bien como el producto $H (x, y) = f (x) \text {·} g (y)$.
@@ -43,7 +43,7 @@ Hagamos $H(x,y) = 2x \sqrt{y-1} = f(x) \text{·}g(y),$ e integremos cada funció
 \int g^{-1}(y)dy=\int\frac{1}{\sqrt{y-1}}dy=2\sqrt{y-1}.$ Las soluciones son $2\sqrt{y-1}=x^{2}+C\Rightarrow y=\left(\frac{x^{2}+C}{2}\right)^{2}+1
 .$ Observemos que la función $y (x) = 1$   también es solución de la ecuación, pero no está incluida en la solución general $y = \left ( \frac {x ^ {2} + C} {2} \right) ^ {2} +1,$  es decir que para todo *C* tendremos $y = \left (\frac {x ^ {2} + C} {2} \right) ^ {2} +1 \neq1$. Llamamos a las soluciones no incluidas en la solución general **soluciones singulares** de la ecuación diferencial.
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ## Soluciones singulares
 
@@ -51,7 +51,7 @@ En el ejemplo 2 hemos visto que podemos tener soluciones que no están incluidas
 
 ### Curva envolvente de un haz de curvas y solución singular
 
-[caption id="attachment_868" align="alignnone" width="436"][![Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)](/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)[/caption]
+[caption id="attachment_868" align="alignnone" width="436"][![Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)](/taller-matematicas/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Dos rectas de un haz (azul y rojo) y curva envolvente del haz (verde)[/caption]
 Dado un haz de curvas $F(x,y,C)=0$ se denomina curva envolvente del haz a la curva $f(x,y)$ tal que es tangente a todas las curvas del haz.
 
 **Ejemplo 3**: en la imagen se muestran dos rectas del haz de rectas $y=(1-10/C)*x+(10-C)$, concretamente las dos rectas correspondientes a los valores $C=3$ en rojo y $C=6$ en azul, y la curva envolvente del haz, que es tangente a la primera recta en un punto cercano a $x=1, y=5$ y a la segunda recta cerca de $x=3.5, y=1.5$.
@@ -60,7 +60,7 @@ Recordemos que podemos asociar a cualquier haz de curvas $F(x,y,C)=0$ una ecuac
 
 **Ejemplo 4**. Consideremos el haz de parábolas $4y=(x + C)^2$, todas las curvas son tangentes al eje X en algún punto; en la imagen se representan tres de las curvas del haz, tangentes a $y=0$ en los puntos $x=-3, -2, -1$.
 
-[caption id="attachment_866" align="alignnone" width="502"][![Haz de parábolas 4y=(x + C)²](/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Haz de parábolas 4y=(x + C)²[/caption]
+[caption id="attachment_866" align="alignnone" width="502"][![Haz de parábolas 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Haz de parábolas 4y=(x + C)²[/caption]
 ¿Cuál es la ecuación diferencial del haz de curvas? Derivamos respecto a *x *la ecuación del haz: $4y'=2(x + C)$, y eliminamos la constante *C* usando esta igualdad y la ecuación del haz:
 
 $\left.\begin{array}{r}4y'=2(x+C)\Rightarrow C=2y'-x\\4y=(x\;+\;C)^2\end{array}\right\}\Rightarrow4y=(2y'{)^2=4y'^2}\Rightarrow y=y'^2.$
@@ -107,7 +107,7 @@ La envolvente es $y=10+x-2\sqrt{10x}.$
 
 $\begin{array}{l}F(x,y,C)=4y-(x+C)^2=0;\\\frac{\partial F}{\partial C}=2(x+C)=0\Rightarrow C=-x;\\F(x,y)=4y-(x-x)^2=4y=0\Rightarrow\boxed{y=0}.\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Funciones homogéneas. Aplicación a las ecuaciones diferenciales.
 
 Una función $F(x,y)$ es homogénea de grado n si $F(\lambda x,\lambda y)=\lambda^nF(x,y)$ para todo parámetro $\lambda\neq0.$ Por ejemple, la función $F(x,y)=xy-x^2$ es homogénea de grado 2, pues $F(\lambda x,\lambda y)=\lambda x\lambda y- ( \lambda x)^2=\lambda^2F(x,y).$
@@ -185,7 +185,7 @@ Las rectas $x+y+1=0$ y $x+y-1$ no tienen intersección, son paralelas; hacemos e
 
 $\begin{array}{l}Y'-1=\frac{Y+1}{Y-1};\;\frac{\operatorname dY}{\operatorname dx}=\frac{Y+1}{Y-1}+1=\frac{Y+1+Y-1}{Y-1}=\frac{2Y}{Y-1};\\\int\frac{Y-1}{2Y}\operatorname dY=\int\operatorname dx;\\\frac12\int\left(1-\frac1Y\right)\operatorname dY=x+C;\\Y-\ln\left(Y\right)=2x+C;\\x+y-\ln\left(x+y\right)=2x+C;\\y=x+\ln\left(x+y\right)+C.\end{array}$
 
-[![separador2](/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
 ## Ecuaciones exactas
 

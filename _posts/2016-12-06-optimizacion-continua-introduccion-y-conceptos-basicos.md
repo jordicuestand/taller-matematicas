@@ -63,7 +63,7 @@ cuyo signo sólo depende del signo de los valores propios $\lambda_i$:
 
 Si *Q* es definida positiva, la gráfica de x'Qx forma un paraboloide elíptico en el cuadrante positivo XYX (fig. 1, izquierda).
 
-[caption id="attachment_150330" align="alignnone" width="500"]![Gráfica de x](/assets/images/optimitzacio-3.png) Fig. 1: Gráfica de x'Qx para x: vector de R², siendo Q def.+ o indefinida[/caption]
+[caption id="attachment_150330" align="alignnone" width="500"]![Gráfica de x](/taller-matematicas/assets/images/optimitzacio-3.png) Fig. 1: Gráfica de x'Qx para x: vector de R², siendo Q def.+ o indefinida[/caption]
 Las curvas de nivel son elipses, todos con los mismos ejes cuyas direcciones vienen determinadas por los vectores propios. Si Q es indefinida, entonces x'Qx forma un paraboloide hiperbólico (una "silla de montar", fig.1, derecha).
 
 ## Máximos y mínimos de funciones convexas; aplicación a formas cuadráticas
@@ -148,7 +148,7 @@ $q\left(x\right)=\frac12\begin{pmatrix}x_1&amp;x_2\end{pmatrix}\begin{pmatrix}4&
 
 tiene el mínimo absoluto (es una función convexa) en $x^\ast=\begin{pmatrix}\frac14&amp;1\end{pmatrix}$; en la siguiente figura representamos sus curvas de nivel, correspondientes a los valores q = 0, 1 y 2, que son una família de elipses concénticas, y el vector óptimo $x^\ast$
 
-![Curvas de nivel y posición del óptimo de la función cuadrática q(x)](/assets/images/optimitzacio-4.png)
+![Curvas de nivel y posición del óptimo de la función cuadrática q(x)](/taller-matematicas/assets/images/optimitzacio-4.png)
 
 Dado el punto x=(2,2), su función error es
 
@@ -168,7 +168,7 @@ El valor de la función en ese nuevo punto será $q\left(\alpha,2\alpha\right)=2
 $\left(x_1,x_2\right)=\left(0,0\right)+\frac5{12}\begin{pmatrix}1\\2\end{pmatrix}=\begin{pmatrix}5/12\\5/6\end{pmatrix}$
 
 Si repetimos este proceso con el nuevo punto, esto es, calcular el gradiente en ese punto, obtener la función $f(\alpha )$ y minimizarla para encontrar $\alpha$, y así obtener el punto siguiente, obtenemos el siguiente punto de la sucesión, que es (1/4, 1.4). En la figura vemos el avance del algoritmo:
-![optimitzacio-8](/assets/images/optimitzacio-8.png)
+![optimitzacio-8](/taller-matematicas/assets/images/optimitzacio-8.png)
 
 Observad que en el primer paso, el que obtiene el primer vector $x_1$, se toma la dirección perpendicular a la curva de nivel (línea de puntos) que pasa por el punto inicial (0. 0); de hecho este método procede siempre así, en todo punto. Las instrucciones precisas son:
 
@@ -204,7 +204,7 @@ Para minimizar una función cuadrática $q\left(x\right)=\frac12x'Qx-c'x$$q\left
 
 **Ejemplo 6**: Aplicando el método del descenso más rápido a la función del ejemplo 5, con el punto inicial (0, 0) y una tolerancia 0.001, obtenemos la secuencia de iteraciones siguiente:
 
-[caption id="attachment_150343" align="aligncenter" width="702"]![Fig. 6: iteraciones del método del descenso más rápido, función cuadrática](/assets/images/optimitzacio-6.png) Fig. 6: iteraciones del método del descenso más rápido, función cuadrática[/caption]
+[caption id="attachment_150343" align="aligncenter" width="702"]![Fig. 6: iteraciones del método del descenso más rápido, función cuadrática](/taller-matematicas/assets/images/optimitzacio-6.png) Fig. 6: iteraciones del método del descenso más rápido, función cuadrática[/caption]
 En 7 iteraciones obtenemos el mínimo aproximado (0.2499, 0.9996) que está cerca del exacto, (0,25, 1).
 
 ## Coste computacional y tasa de convergencia
@@ -244,6 +244,6 @@ $\beta=\frac{\varepsilon_{k+1}}{\varepsilon_k}\leq\frac{\left(A-a\right)^2}{\lef
 El algoritmo del descenso más rápido aplicado a una función cuadrática tiene una tasa de convergencia que depende de los valores propios de la forma cuadrática.
 Como consecuencia, si A >> a, entonces $\beta$ tiende a 1, y el error tiende a ser constante: el algoritmo se estanca, no avanza. En el otro caso extremo, si A = a, entonces $\beta=0$: el algoritmo alcanza el mínimo en un solo paso. La distribución de los valores propios tiene una relación directa con la geometría de las curvas de nivel. Esta situación sugiere que, cambiando la escala del problema, se puede convertir la geometría de forma que se igualen los valores propios de Q, consiguiendo que el método sea eficiente en casos generales. Esto efectivamente es posible, y conduce a los métodos de gradiente conjugado.
 
-[caption id="attachment_150348" align="alignnone" width="626"]![optimitzacio-9](/assets/images/optimitzacio-9.png) Izquierda: la dirección de máximo descenso es la misma para todas las curvas de nivel cuando son esferas concéntricas. Derecha: cuando son elipsoides muy achatados, las direcciones de máximo descenso cambian continuamente, produciendo pasos muy cortos y perjudicando la tasa de convergencia.[/caption]
+[caption id="attachment_150348" align="alignnone" width="626"]![optimitzacio-9](/taller-matematicas/assets/images/optimitzacio-9.png) Izquierda: la dirección de máximo descenso es la misma para todas las curvas de nivel cuando son esferas concéntricas. Derecha: cuando son elipsoides muy achatados, las direcciones de máximo descenso cambian continuamente, produciendo pasos muy cortos y perjudicando la tasa de convergencia.[/caption]
 **Ejemplo 7**: La tasa de convergencia del método aplicado a la función cuadrática  del ejemplo 5, con A = 4, a = 2, es $\beta=\frac{\varepsilon_{k+1}}{\varepsilon_k}\leq\frac{\left(4-2\right)^2}{\left(4+2\right)^2}=\frac4{36}=\frac19$, estimación que coincide bastante bien con el descenso en el valor del módulo del gradiente observado en el ejemplo 6.
 {% endraw %}

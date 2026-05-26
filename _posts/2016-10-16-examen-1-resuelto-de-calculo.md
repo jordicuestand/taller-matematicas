@@ -65,7 +65,7 @@ $\begin{array}{l}f'\left(x\right)=\frac{-x^2+6x-1}{\left(x-3\right)^2}\Rightarro
 
 como el signo es positivo, tenemos un mínimo relativo. Pasamos a estudiar los extremos absolutos: estudiamos los valores de la función en los extremos del intervalo [-1, 1]:  f(-1) = 0, f(1) = 0. Los comparamos con el valor de la función en el mínimo relativo, que es f(0.17) = -0.3. Como la función es continua en el intervalo [-1, 1], concluimos que en ese intervalo toma sus valores máximos en x = -1, x = 1, y su valor mínimo en x=0.17.
 
-[![examen1](/assets/images/examen1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/12/examen1.png)
+[![examen1](/taller-matematicas/assets/images/examen1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/12/examen1.png)
 
  
 

@@ -122,7 +122,7 @@ o sea que nos queda los vectores (x, y, z) en función de z; por ejemplo, dado z
 
 Obtengamos ahora un vector propio para el valor k = 1, o sea, resolvemos la ecuación (f - 1·I)v = 0, donde v = (x, y, z); esta vez usamos una hoja de cálculo para los detalles aritméticos:
 
-![pivote](/assets/images/pivote.png)
+![pivote](/taller-matematicas/assets/images/pivote.png)
 
 Resolviendo las dos ecuaciones independientes:
 
@@ -130,7 +130,7 @@ $\begin{array}{l}\left.\begin{array}{r}5x+3y+z=0\\6y+2z=0\end{array}\right\}\Rig
 
 Por ejemplo, para z = 3, obtenemos el vector propio (0, -1, 3). Como f no diagonaliza, no tenemos una base de vectores propios de f; lo que sí podemos hacer es completar los vectores propios de f con otro vector linealmente independiente para obtener una base que "casi diagonaliza". Por ejemplo, el vector (1, 0, 1) es claramente independiente de (1, -7, 17) y de (0, -1, 3). Tenemos pues la base {(1, -7, 17) , (0, -1, 3) , (1, 0, 1)}. ¿cuál será la matriz de f en esta base? Determinemos f((1, 0, 1), que resulta ser (7, -32, 78). ¿Cómo se expresa este vector en la base dada? Planteamos (7, -32, 78) = x·(1, -7, 17)+y·(0, -1, 3) + z·(1, 0, 1)  resolvemos este sistema, esta vez usamos una de las muchas páginas de Internet gratuitas que hacen el trabajo pesado ([http://wims.unice.fr/wims/wims.cgi](http://wims.unice.fr/wims/wims.cgi)). obtenemos:
 
-![pivote2](/assets/images/pivote2.png)
+![pivote2](/taller-matematicas/assets/images/pivote2.png)
 
 Entonces concluimos que la matriz de f en la base que hemos diseñado es:
 
@@ -142,7 +142,7 @@ $\begin{pmatrix}2&amp;-3&amp;0\\2&amp;0&amp;0\\0&amp;-3&amp;0\end{pmatrix}$.
 
 Antes que nada, si queremos comprobar que  {(1, 1, 0), (1, 0, 1), (2, 2, 1)} es realmente una base, calculamos el determinante que tiene por columnas los vectores, si son independientes el resultado ha de ser distinto de cero, lo hacemos con la web [WolframAlpha](http://www.wolframalpha.com):
 
-![determ](/assets/images/determ.png)
+![determ](/taller-matematicas/assets/images/determ.png)
 
 Vemos que es distinto de cero, luego efectivamente los vectores forman base. A continuación calculamos el polinomio característico del determinante, que recordemos que no depende de la base usada (propiedad 1), planteamos
 

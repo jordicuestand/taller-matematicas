@@ -84,7 +84,7 @@ Considerem ara una superfície de 2n grau arbitraria en l'espai euclidià, com a
 
 Per exemple, la expressió x² - 4y² +6z² +xy -yz +3yz = 24 correspon a un hiperboloide d'una fulla, i es pot expressar també com x²/24 - y²/6 +z²/4 +xy/24 -yz/24 +yz/8  =1.
 
-![](/assets/images/hiperboloide.gif)Fig. 1: Exemple de superfície de 2n grau
+![](/taller-matematicas/assets/images/hiperboloide.gif)Fig. 1: Exemple de superfície de 2n grau
 
 A partir d'ara usarem quan convingui la notació abreviada d'Einstein per els sumatoris:
 
@@ -118,7 +118,7 @@ Aquesta transformació és covariant amb els intervals s² de la Física clàssi
 
  Però en canvoi no compleix el principi de relativitat especial; en efecte: en la figura representem les referències K, K', que després d'un temps $t =  t_0 = t'$ estan separades per una distància A, des de la referència K veiem que s'emet llum des del focus F a velocitat c, ens preguntem quina velocitat veurà la referència K', apliquem les transformacions de Galileo identificant x, x' com l'espai recorregut per la llum: x' = x -vt, com x = ct, és x' = ct - vt; derivant respecte del temps t' i recordant que t = t': dx'/dt' = c' = c - v, veiem que des de K' es diu que la llum es mou amb menor velocitat, contradient el P. Relativitat Especial.
 
-![](/assets/images/Galileo.png)Fig. 2: Referències inercials paral·leles i emissió de llum
+![](/taller-matematicas/assets/images/Galileo.png)Fig. 2: Referències inercials paral·leles i emissió de llum
 
 ## Constància de c i invariant associat
 
@@ -144,9 +144,9 @@ El canvi sembla que sigui només afegir una coordenada més, però cal recordar 
 
 Considerem ara les transformacions ortogonals lineals en l'espai de 4 coordinades $x'_nu=a_nu+b_{\nu\alpha}x_\alpha$; poden ser translacions o rotacions. Les translacions no ofereixen novetats, són moviments lineals de l'origen i en el cas de la coordenada temps només impliquen canvis del origen del temps en cada referència. On trobem novetats és en les rotacions. Recordem que una matriu de rotació M és tota matriu tal que $M^T=M,\;det\left(M\right)=1$, com ara la següent matriu que descriu una rotació en torn a l'eix $x_3$ que canvia $x_1, x_2$ i deixa invariant $x_3$ i $x_4$, amb coeficients
 
-![](/assets/images/gir_real.png)
+![](/taller-matematicas/assets/images/gir_real.png)
 
-![](/assets/images/rotacio-real.png)Gir amb eix z d'eixos cartesians, el eix del temps no es representa
+![](/taller-matematicas/assets/images/rotacio-real.png)Gir amb eix z d'eixos cartesians, el eix del temps no es representa
 
 Les equacions del canvi de coordenades corresponent a la rotació M són
 
@@ -154,7 +154,7 @@ $\left{\begin{array}{l}x'_1=x_1\cos\left(\varphi\right)-x_2\sin\left(\varphi\rig
 
 Veiem que la coordenada temps és idèntica en les dos referències, com en la Física clàssica. Ara bé, formalment podem pensar en una altre rotació que sí afecti al eix dels temps, com ara aquesta que afecta a les coordenades 1 i 4:
 
-![](/assets/images/gir_imaginari.png)
+![](/taller-matematicas/assets/images/gir_imaginari.png)
 
 amb equacions de canvi $x'_2=x_2, x'_3=x_3$ que no varien, i les que sí varien:
 
@@ -288,7 +288,7 @@ que és un tensor antisimétric ($F_{\mu\nu}=F_{\nu\mu}=$) amb zeros a la diagon
 
  Les components del tensor són (veure per exemple *Electrodinàmica Clàssica - Jackson*): 
 
-![](/assets/images/tensor-electromagnetic.png)
+![](/taller-matematicas/assets/images/tensor-electromagnetic.png)
 
 ## Equacions de Maxwell amb quadrivectors i tensors
 

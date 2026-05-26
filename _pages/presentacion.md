@@ -12,15 +12,15 @@ Como profesor asociado de matemáticas he impartido las asignaturas Estadísti
 
 Las notas de clase incluyen ejercicios y problemas; me ha llevado algunos años, en mi tiempo libre, para pasar todo el material al formato web. El próximo proyecto es añadir otros recursos, como algunas clases puntuales en vídeo, o cuestionarios Moodle de auto-evaluación. Debido a que las fórmulas matemáticas están escritas en [LaTex](http://www.latex-project.org/), que ha de procesarse aparte para visualizar la página, he necesitado alojar el blog en un servidor de pago que ofrece más rendimiento, así que de momento mantener estos apuntes en línea me da trabajo y me cuesta dinero.
 
-He cerrado los comentarios para evitar el spam , pero si queréis comentar alguna cosa, señalar algún error, sugerir nuevos problemas, etc. podéis hacerlo en la página FB del blog: [Matemáticas para la ingenieria (Taller de Matemáticas) en Facebook](https://www.facebook.com/tallermatematic) [![facebook-logo-23px](/assets/images/facebook-logo-23px.png) ](https://www.facebook.com/tallermatematic)
+He cerrado los comentarios para evitar el spam , pero si queréis comentar alguna cosa, señalar algún error, sugerir nuevos problemas, etc. podéis hacerlo en la página FB del blog: [Matemáticas para la ingenieria (Taller de Matemáticas) en Facebook](https://www.facebook.com/tallermatematic) [![facebook-logo-23px](/taller-matematicas/assets/images/facebook-logo-23px.png) ](https://www.facebook.com/tallermatematic)
 
-Gráficas realizadas con [![fooplot_logo3](/assets/images/fooplot_logo3.png)](http://fooplot.com/#W3sidHlwZSI6MCwiZXEiOiJ4XjIiLCJjb2xvciI6IiMwMDAwMDAifSx7InR5cGUiOjEwMDB9XQ--)
+Gráficas realizadas con [![fooplot_logo3](/taller-matematicas/assets/images/fooplot_logo3.png)](http://fooplot.com/#W3sidHlwZSI6MCwiZXEiOiJ4XjIiLCJjb2xvciI6IiMwMDAwMDAifSx7InR5cGUiOjEwMDB9XQ--)
 
-Ecuaciones mostradas en [LaTex](http://www.latex-project.org/) usando [![wiris_50](/assets/images/wiris_50.png)](http://www.wiris.com/editor/demo/es/mathml-latex)
-
- 
+Ecuaciones mostradas en [LaTex](http://www.latex-project.org/) usando [![wiris_50](/taller-matematicas/assets/images/wiris_50.png)](http://www.wiris.com/editor/demo/es/mathml-latex)
 
  
 
-[![](/assets/images/logo-creative-commons.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ 
+
+[![](/taller-matematicas/assets/images/logo-creative-commons.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 {% endraw %}

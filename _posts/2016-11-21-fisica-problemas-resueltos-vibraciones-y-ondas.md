@@ -84,29 +84,29 @@ $\left[40\pi\left(\left(x+50\right)-10t\right)\right]-\left[40\pi\left(x-10t\rig
 
 que debemos reducir a fracciones de $2\pi$ haciendo la división entera y tomando el resto (operación módulo): $2000\pi\;\text{Mod  }2\pi=0$,  luego la diferencia de fase es cero. Este resultado también puede deducirse viendo que la distancia 50 m es un múltiplo entero de la longitud de onda $\lambda=1/20$, siendo $50=1000·\lambda$.
 
-![separador2](/assets/images/separador2-300x38.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x38.png)
 
 **3** - Dos piezas A y B, de 20 y 40 Kg respectivamente, estan unidas por un resorte de masa despreciable, estando el conjunto sobre un soporte horizontal S. La pieza A está oscilando verticalmente con una amplitud de 2 cm y frecuencia de 5 Hz. ¿Qué fuerzas ejerce el conjunto sobre el soporte?
 
-![prob_vidal_421](/assets/images/Prob_Vidal_421.png)
+![prob_vidal_421](/taller-matematicas/assets/images/Prob_Vidal_421.png)
 
 **Solución**: las fuerzas *F* sabemos que estan relacionadas con las aceleraciones *a* según *F = ma*; y la aceleración de un movimiento armónico es  *a = *- ω2x* donde x mide la desviación de la posición de equilibrio del muelle, que puede ser positiva o negativa. La pulsación se relaciona con la frecuencia *f* por *ω= 2πf*. Por otro lado tenemos que tener en cuenta la fuerza de la gravedad, y la posición de A.
 
 Cuando x > 0 el muelle ejercerá sobre A una fuerza dirigida hacia abajo, el diagrama de fuerzas sobre las piezas A y B será:
 
-[caption id="attachment_150302" align="aligncenter" width="265"]![prob_vidal_421b](/assets/images/Prob_Vidal_421b.png) Situación cuando el muelle está distendido[/caption]
+[caption id="attachment_150302" align="aligncenter" width="265"]![prob_vidal_421b](/taller-matematicas/assets/images/Prob_Vidal_421b.png) Situación cuando el muelle está distendido[/caption]
 Fuerzas y aceleración sobre A: $-F_m-M_Ag=-M_A\omega^2x$, fuerzasy aceleración sobre B (observemos que B no se mueve): $F_m+N-M_Bg=0$. Operando:
 
 $\left.\begin{array}{r}F_m+N-M_Bg=0\\-F_m-M_Ag=-M_A\omega^2x\end{array}\right\}\Rightarrow\left.\begin{array}{r}N=M_Bg-F_m\\F_m=M_A\left(\omega^2x-g\right)\end{array}\right\}\Rightarrow N=M_Bg-M_A\left(\omega^2x-g\right)=\boxed{\left(M_A+M_B\right)g-M_A\omega^2x}$
 
 La fuerza normal N es la que ejercen entre sí el bloque B y el soporte S; es variable, dependiendo de la posición x, la cual en el movimiento armónico sabemos que viene dada por $x=A\sin\left(\omega t\right)$, siendo A la amplitud, por tanto: $N=\left(M_A+M_B\right)g-M_A\omega^2A\sin\left(\omega t\right)$.  Vemos que la fuerza sobre el soporte es igual al peso total de los dos bloques, $\left(M_A+M_B\right)g$, menos la fuerza producida por la aceleración del movimiento armónico sobre el bloque A, $M_A\omega^2A\sin\left(\omega t\right)$. De hecho esta expresión también será válida cuando x < 0, como podéis comprobar fácilmente:
 
-[caption id="attachment_150305" align="aligncenter" width="268"]![Situación cuando el muelle está comprimido, y x <0. Conduce a la misma expresión para N](/assets/images/Prob_Vidal_421d.png) Situación cuando el muelle está comprimido, y x <0; conduce a la misma expresión para N.[/caption]
+[caption id="attachment_150305" align="aligncenter" width="268"]![Situación cuando el muelle está comprimido, y x <0. Conduce a la misma expresión para N](/taller-matematicas/assets/images/Prob_Vidal_421d.png) Situación cuando el muelle está comprimido, y x <0; conduce a la misma expresión para N.[/caption]
 Sustituimos los valores del enunciado:
 
 $N=\left(20+40\right)9.8-20\cdot\left(2\mathrm\pi\cdot5\right)^2\cdot0.02\cdot\sin\left(2\mathrm\pi\cdot5t\right)=\boxed{588-395\sin\left(10\mathrm{πt}\right)}$
 
 La fuerza mínima N sobre el soporte sucederá cuando x sea igual a la amplitud A, o equivalentemente, cuando la fase sea tal que el seno valga 1: $N_{min}=588-395\cdot1=193\;N$. Será máxima cuando x sea negativa e igual a A, o sea cuando el seno de la fase valga -1: $N_{min}=588-395\cdot\left(-1\right)=983\;N$. Finalmente, cuando x = 0 el muelle no ejerce fuerza, y sobre el soporte solo actúa el peso del conjunto: $N_{x=0}=588-395\cdot\left(0\right)=588\;N$.
 
-![separador2](/assets/images/separador2-300x38.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x38.png)
 {% endraw %}
