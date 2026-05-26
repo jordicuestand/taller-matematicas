@@ -4,7 +4,7 @@ layout: default
 permalink: /all_posts/
 ---
 
-## Lista completa de entrades
+## Lista completa de entradas
 
 <ul>
   {% for post in site.posts %}
