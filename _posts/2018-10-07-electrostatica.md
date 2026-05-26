@@ -1,0 +1,148 @@
+---
+layout: post
+title: "Electrostática"
+date: 2018-10-07 14:01:19 +0000
+categories:
+  - "Electricidad y Magnetismo"
+  - "Fí­sica"
+math: true
+---
+
+Tales de Mileto (600 aC) observó que una barra de [ámbar](https://es.wikipedia.org/wiki/%C3%81mbar) (una resina vegetal) frotada con fuerza atraía y levantaba objetos pequeños; en griego el ámbar se llama "*elektron*", y de aquí vino que se llamara a estos fenómenos como "eléctricos".  William Gilbert (siglo XVI) descubre que sucede lo mismo con otros materiales, a los que llama materiales eléctricos, que hoy en dia llamamos  *materiales aislantes,* los cuales presentan este fenómeno de *electrización por frotamiento*.
+
+## Dos tipos de electrización
+
+Si frotamos dos varillas de vidrio y las acercamos nortaremos que se repelen mútuamente; lo mismo ocurre si lo hacemos con dos varillas de ámbar. En cambio si acercamos una varilla electrizada de vidrio y una de ámbar, se atraen.  Experimentalmente se encuentra que, dados dos materiales electrizados, algunos se repelen entre sí y otros se atraen; más aún, se pueden agrupar sólo en dos categorias: los que son atraidos por la varilla de vidrio y repelidos por la varilla de ámbar, y los que reaccionan al contrario. B. Franklin (siglo XVIII) llamó a estas categorias, de forma arbitraria, "*positiva*" (para las cargas similares a la del vidrio) y "*negativa"* (para las similares al ámbar). La experiencia probaba que electrificaciones del mismo signo se repelen y de distinto signo se atraen.
+
+Creando péndulos con pequeñas masas electrificadas (fig. 1) se puede deducir la fuerza con que se atraen o repelen, midiendo la desviación de la verticalidad y sabiendo las masas.
+
+[caption id="attachment_150784" align="alignright" width="206"]![](/assets/images/electrostatica1.png) Fig. 1: Dos péndulos con material electrificados del mismo signo se repelen entre sí[/caption]
+Supongamos que hemos realizado las mediciones de la fuerza $F_A$ que un cuerpo A ejerce sobre otro C de distinto signo, y también la fuerza$F_B$ de otro cuerpo B sobre C, también de distinto signo (por tanto A y B deben de ser del mismo signo). Podemos conjeturar que si las fuerzas anteriores no son iguales en magnitud, debe de ser por que los materiales A y B no tienen la misma "cantidad de electrificación", cantidad que llamaremos *carga eléctrica*, y simbolizaremos por Q. Entonces, la fuerza deberá ser proporcional a la carga, y al dividir las fuerzas entre sí se cumplirá la proporción
+
+$\frac{F_A}{F_B}=\frac{Q_A}{Q_B}$ [1]
+
+Si ahora medimos la fuerza que ejercen A y B (unidos por ejemplo con cola) sobre C, encontraremos que es $F_{A+B}=F_A+F_B$ (figura 2).
+
+[caption id="attachment_150785" align="aligncenter" width="219"]![](/assets/images/electrostatica2.png) Fig. 2: Al añadir cuerpos cargados, la fuerza electrica aumenta en el mismo grado[/caption]
+
+Usando  la proporción [1] con la fuerza resultante obtenemos:
+$\frac{F_{A+B}}{F_B}=\frac{F_A+F_B}{F_B}=\frac{F_A}{F_B}+1=\frac{Q_A}{Q_B}+1=\frac{Q_A+Q_B}{Q_B}$ [2]
+
+expresión que nos dice que el efecto de acumular el objeto con carga $Q_A$ más el objeto con carga $Q_B$ es el mismo que produciría un objeto con la carga $Q_A+Q_B$, es decir, que la carga es una magnitud física escalar, se pueden comparar cantidad de cargas, sumarlas, etc.
+
+## Ley de conservación de la carga eléctrica
+
+Supongamos que henos frotado una varilla de vidrio con un paño suave para electrificarla con una carga $Q_A$ que será positiva. Con instrumentos más precisos que el péndulo se puede medir que también el paño se ha electrificado, y lo ha hecho con una carga de igual magnitud pero de signo contrario a la de la varilla, $-Q_A$: antes de electrificar la varilla no había carga electrica, y después si consideramos el conjunto varilla + paño tampoco, pues la suma algebraica de cargas sigue siendo cero. Es un caso particular de la ley física de la conservación de la carga eléctrica:
+
+En un sistema aislado la carga eléctrica permanece constante.
+
+En general la materia es eléctricamente neutra; si un objeto adquiere una carga positiva será porque otro cuerpo se la ha cedido, adquiriendo carga negativa, y siendo la suma total de cargas cero.
+
+## Electrones ligados y electrones libres
+
+Sabemos que la materia está constituida por átomos, con un núcleo cargado positivamente rodeado de una nube de electrones cargados negativamente; el núcleo es muy estable, y sólo puede verse afectado por reacciones nucleares o por desintegración natural, si es un elemento radiactivo, en cambio la nube de electrones es mucho más inestable, y es relativamente fácil extraer electrones de esa nube. Eso es lo que sucede al frotar un material aislante con un paño: algunos electrones, por efecto del frotamiento, "cambian de bando", por ejemplo pasan de la varilla al paño, con el efecto de alterar la neutralidad de cargas, el material que pierde elecrones queda con carga neta positiva, y el que los recibe con carga negativa.
+
+También sabemos que la carga eléctrica del electrón $Q_e$ es la unidad básica de carga, no existen cargas inferiores. Por ello, se podrá expresar cualquier carga Q como un múltiplo de $Q_e$.
+
+En los metales los átomos estan en un estado tal que algunos de sus electrones puede "saltar" con facilidad de un átomo a otro; la carga total sigue siendo neutra, pero esos electrones no estan fijados en un átomo en particular sino que se van moviendo por el material, por ejemplo debido a la agitación térmica de las moléculas, que las hace vibrar.  Son los *electrones libres*, o *electrones de conducció*n.  Los demás electrones que están fijados a un átomo son los *electrones ligados*. Los materiales se consideran conductores si disponen de abundantes electrones libres y por el contrario aislantes si sus electrones son mayoritariamente ligados.
+
+Al frotar el vidrio, la energía cinética que suministramos es suficientemente fuerte para arrancar algunos de sus electrones ligados, que pasan al paño, y el vidrio queda con déficit de electrones; en cambio al frotar ámbar, siendo sus electrones ligados más fijos que el vidrio, sucede lo contrario, algunos electrones del paño saltan al ámbar, cargándolo negativamente.  Si lo intentamos con una varilla de madera no conseguiremos que atraiga pequeños objetos, pues los electrones de la madera estan más ligados que los del vidrio y además no admite electrones externos, como sí hace el ámbar: decimos que la madera es muy aislante pues no se electrifica.
+
+### Electrificación por inducción
+
+[caption id="attachment_150787" align="aligncenter" width="257"]![](/assets/images/electrostatica3.png) Fig.3: separación de cargas en el volumen de un conductor[/caption]
+Si acercamos un cuerpo A cargado, por ejemplo positivamente, a un conductor neutro, sus electrones libres seran atraídos cerca de A, formando una región cargada negativamente (figura 3). Habrá una región central de la que habrán salido electrones hacia la izquierda pero que también recibirán electrones de la derecha, quedando neutra, y habrá una región a la derecha que, como no hay más material a su derecha, habrá perdido electrones y quedará cargada positivamente. Si acercamos un tercer cuerpo C por ejemplo con carga positiva, veremos que es repelido por el metal. Al retirar el cuerpo A, los electrones del metal vuelven a dispersarse por todo su volumen, y el cuerpo C dejaría de ser repelido.
+
+Pero si mantenemos A cerca del metal y conectamos el metal con la tierra usando un cable conductor, los electrones libres de la tierra seran atraídos por la carga positiva del metal B y se incorporaran a éste. Si después retiramos tanto el cable como el cuerpo A, el metal quedará con una carga neta negativa distribuida por todo su volumen.
+
+[caption id="attachment_150788" align="aligncenter" width="323"]![](/assets/images/electrostatica4.png) Fig. 4: electrificación de un conductor por inducción[/caption]
+## Ley de Coulomb
+
+Coulomb (siglo XVIII) usó una [balanza de torsión](https://es.wikipedia.org/wiki/Balanza_de_torsi%C3%B3n) para averiguar el efecto de la separación entre cuerpos cargados sobre la fuerza que se ejercen (figura 5).
+
+[caption id="attachment_150789" align="alignright" width="163"]![](/assets/images/electrostatica5.png) Fig.5: Esquema de la balanza de torsión de Coulomb[/caption]
+Dispuso dos bolitas de saúco electrizadas A, B, la primera fijada a la tapa del cilindro por una varilla aislante rígida y la segunda en el extremo de otra varilla, balanceada por un peso, ámbos colgando de un hilo muy fino de plata. La repulsión entre A y B hace que éste se aleje, retorciendo el hilo. Midiendo la torsión del hilo puede deducirse la fuerza de respulsión. Colocando A en diversas posiciones, pudo estudiar el efecto que tenia la separación *r* entre A y B. Su conclusión se conoce como *ley o fórmula de Coulomb de la electrostática:*
+
+$F=k\frac{QQ'}{r^2}$ [3]
+
+La k es una constante de proporcionalidad que depende del medio (aire, vacío, agua, ...), Q y Q' son las cargas y r la distancia que las separa. El hecho de que k dependa del medio indica que hay una transmisión de fuerza electrostática a través del medio, el cual puede ser más o menos permeable eléctricamente.
+
+Inicialmente se propuso como unidad de carga aquella que, siendo Q = Q' = 1, y situadas a una distancia de 1cm produjeran una fuerza atractiva de 1 dina (que a su vez es la fuerza que acelera una masa de un gramo a un cm/s²). En este [sistema de medidas cegesimal](https://es.wikipedia.org/wiki/Sistema_Cegesimal_de_Unidades) la constante k vale la unidad, y a relación entre carga eléctrica y las unidades básicas gr, cm, s son poco intuitivas, pues aparecen exponentes fraccionarios:
+
+$\left[gr\frac{cm}{s^2}\right]=\left[\frac{Q^2}{cm^2}\right]\Rightarrow\left[Q\right]=\left[\sqrt{gr\frac{cm^3}{s^2}}\right]=\left[\frac{gr^{1/2}cm^{3/2}}s\right]$
+
+Se propuso otra unidad de medida, el Coulomb C, derivada de la corriente eléctrica, evitando exponentes racionales: la unidad de carga se define como aquella que es transportada por una corriente de un Ampere en un segundo, [C] = [A/s]. Además, se dió un valor a k adecuado para simplificar expresiones:
+
+![](/assets/images/electrostatica0.png)
+
+El $4\pi$ evita que salga ese término en muchas formulas del electromagnetismo. Este sistema es el [internacional de unidades](https://es.wikipedia.org/wiki/Sistema_Internacional_de_Unidades).
+
+## Distribución de cargas
+
+Como hemos mostrado en [2] las cargas son aditivas; entonces si colocamos diversas cargas en el espacio, para cada par de ellas se aplicará la ley de Coulomb [3]; ¿cuál será la fuerza resultante sobre una de las cargas? Siendo la fuerza un vector, necesitamos una versión vectorial de [3]. Denominando $\overrightarrow r_{21}$ al vector que parte de la carga $Q_2$ y llega a la carga $Q_1$, podemos escribir:
+
+$\overrightarrow F(Q_1)=k\frac{Q_1Q_2}{r_{21}^3}{\overrightarrow r}_{21}$ [4]
+
+en donde tenemos que especificar sobre qué carga estamos calculando la fuerza (el sentido sobre $Q_1$ es el contrario que sobre $Q_2$); observemos que la fuerza sobre $Q_1$ utiliza el vector $r_{21}$ que va de la carga 2 a la 1. Para cargas del mismo signo este convenio proporciona una fuerza de repulsión entre cargas. Otra expresión equivalente es:
+
+${\overrightarrow F}_{A\rightarrow B}=k\frac{Q_AQ_B}{\overrightarrow{\left\|AB\right\|}^3}\overrightarrow{AB}$ [4b]
+
+que expresa la fuerza que ejerce la carga situada en A sobre la carga situada en B, siendo $Q_A,Q_B$ las cargas y $\overrightarrow{AB}$ el vector que va del punto A hasta el B.
+
+Alternativamente, utilizando el vector unitario ${\widehat r}$ que tiene la dirección de$\overrightarrow r_{12}$ pero módulo 1, será:
+
+$\overrightarrow F(Q_1)=k\frac{Q_1Q_2}{r^2}{\widehat r}_{21}$ [5]
+
+Para un conjunto $Q_1,Q_2,...,Q_n$ de cargas, la fuerza ejercida por todas ellas sobre la i-ésima carga $Q_i$ será la suma de las fuerzas de cada pareja posible, o sea sumando las contribuciones dadas por [5]:
+
+$\overrightarrow F(Q_i)=k{\textstyle\sum_{j\neq i}}\frac{Q_iQ_j}{r_{ji}^2}{\widehat r}_{ji}$ [6]
+
+donde el subíndice j recorre todos los valores 1 ... n excepto el propio i (no evaluamos la fuerza de $Q_i$ sobre ella misma).
+
+Ejemplo:  Tenemos tres cargas A, B, C todas de valor 10⁻⁴Coulomb;  A y B son positivas, C es negativa, y estan situadas en un plano, en las coordenadas A(0, 0), B(2,3), C(-1, 2). Calcular la fuerza resultante sobre la carga situada en C.
+
+Aplicamos [4b] a la fuerza de la carga A sobre C, y después a la de B sobre C:
+
+De A hasta C: AC = C(-1, 2) - A(0, 0) = (-1, 2);
+
+${\overrightarrow F}_{A\rightarrow C}=9\cdot10^9\frac{-10^{-4}10^{-4}}{5^{3/2}}\overrightarrow{\left(-1,2\right)}=\frac{90}{5^{3/2}}\overrightarrow{\left(-1,2\right)}$
+
+De B hasta C: C(-1, 2) - B(2,3) = (-3, -1);
+
+${\overrightarrow F}_{A\rightarrow C}=9\cdot10^9\frac{-10^{-4}10^{-4}}{10^{3/2}}\overrightarrow{\left(-3,-1\right)}=\frac{90}{10^{3/2}}\overrightarrow{\left(-3,1\right)}$
+
+Sumamos las fuerzas:
+
+$\begin{array}{l}\overrightarrow F\left(C\right)={\overrightarrow F}_{B\rightarrow C}+{\overrightarrow F}_{A\rightarrow C}=-\frac{90}{5^{3/2}}\overrightarrow{\left(-1,2\right)}-\frac{90}{10^{3/2}}\overrightarrow{\left(-3,-1\right)}=\\\frac{90}{5^{3/2}}\left[\overrightarrow{\left(-1,2\right)}+\frac1{2^{3/2}}\overrightarrow{\left(3,1\right)}\right]\cong\overrightarrow{\left(0.48,20\right)}\end{array}$
+
+## Cuestiones y ejercicios resueltos
+
+ 	- ¿La formula de Coulomb se puede utilizar para calcular la fuerza electrostática entre dos cuerpos de dimensiones arbitrarias?
+
+ 	- Si acercamos una varilla de ámbar a otra varilla electrificada de vidrio, y vemos que se atraen, ¿debemos suponer que la de ámbar también está electrificada? ¿Y si en vez de atraerse se repelen?
+
+ 	- Calcular la proporción que guardan la fuerza de repulsión electrostática y la fuerza gravitatoria entre losprotones  constituyentes de una partícula alfa (idéntica a un núleo de helio; dos protones y dos neutrones). Comentar el valor obtenido, ¿tiene alguna implicación práctica? Datos: masa cada partícula = 1,5·10⁻²⁷kg, carga del protón = 1,6·10⁻¹⁹C, constante de gravitación universal G = 6,7·1⁻¹¹ Nm²Kg⁻¹.
+
+ 	- Dos pequeñas esferas electrificadas de masa 0.1gr  cuelgan de un mismo punto por hilos de longitud 1m. Sabiendo que los hilos forman un ángulo entre sí de 15⁰, calcular la carga eléctrica que poseen.
+
+**Soluciones**
+
+ 	- No, sólo tiene sentido para cargas puntuales o de dimensiones despreciables. Para cuerpos cargados ha de desarrollarse una formula más compleja que usa diferenciales e integración.
+
+2. No necesariamente, incluso si el ámbar es neutro, al acercarlo a la varilla cargada puede producirse el fenómeno de la inducción electrostática, que acumule cargas negativas en la parte del ámbar más cercana al vidrio. En cambio si observamos repulsión sí es seguro que el ámbar está cargado con el mismo signo que el vidrio.
+
+3.  La fuerza de repulsión electrostática viene dada por la ley de Coulomb, en la forma no vectorial, donde d es la distancia entre protones:
+
+$F_e=9\cdot10^9\frac{\left(1,6\cdot10^{-19}\right)^2}{d^2}$
+
+La fuerza de atracción gravitatoria viene dada por la ley de Newton de la gravitación universal:
+
+$F_g=6,7\cdot10^{-11}\frac{\left(1,5\cdot10^{-27}\right)^2}{d^2}$
+
+Dividiendo la primera por la segunda obtenemos la proporción de ámbas fuerzas naturales:
+
+$\frac{F_e}{F_g}=\frac{9\cdot10^9}{6,7\cdot10^{-11}}\frac{\left(1,6\cdot10^{-19}\right)^2}{\left(1,5\cdot10^{-27}\right)^2}\approx0.2\cdot10^{9+11-38+54}\approx10^{35}$
+
+Vemos que la fuerza electrostática es prodigiosamente mayor que la gravitatoria. Imaginemos que tenemos dos máquinas de tren de 100 toneladas, que supondremos son de hierro,  cada una separadas a la distancia de 1 metro. La atracción gravitatoria entre ellas es despreciable comparada con la atracción de la Tierra sobre ellas. Supongamos que, por algún procedimiento, pudiéramos conseguir que uno de cada 100 millones de átomos del hierro (Fe) de las máquinas perdiera un sólo electrón, de los 55 que tiene cada uno. Sabiendo que un mol de Fe son 55gr, y que cada mol contiene el número de Avogradro de átomos, 6·10²³, obtenemos que cada locomotora contiene alrededor de 10³⁰ átomos de Fe, y por tanto 55·10³⁰ electrones. Al quitar uno de cada 100·10⁶ = 10⁸, quitariamos un total del 55·10²² electrones; como cada electrón tiene una carga de 1,6·10⁻¹⁹C, habría más carga positiva que negativa, siendo la carga total neta = 55·10²² · 1,6·10⁻¹⁹ = 8800 Coulomb ... esta es una carga enorme. En efecto, las dos locomotoras electrificadas se repelerian con una fuerza de 9·10⁹·(8800)² / 1 = 7·10¹⁷Newton, y serian aceleradas una respecto la otra con una aceleración a = F/m = 7·10¹⁷/10⁵ = 7·10¹², aproximadamente un billón de veces la aceleración de la gravedad: las locomotoras saldrian despedidas y en millonesimas de segundo alcanzarian una valocidad próxima a la de la luz.
+
+4. Ejercicio para el lector. Si quereis la solución, podeis contactar por la página den Facebook.

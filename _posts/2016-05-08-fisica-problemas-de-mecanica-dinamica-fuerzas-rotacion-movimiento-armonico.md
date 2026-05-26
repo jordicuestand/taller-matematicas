@@ -1,0 +1,177 @@
+---
+layout: post
+title: "Física -> Problemas de Mecánica -> Dinámica de las rotaciones"
+date: 2016-05-08 20:19:52 +0000
+categories:
+  - "Dinámica rotaciones"
+  - "Fí­sica"
+  - "Mecánica"
+tags:
+  - "aceleración angular"
+  - "aceleración normal"
+  - "aceleración tangencial"
+  - "energía cinética"
+  - "energía potencial"
+  - "momento de inercia"
+  - "par de giro"
+  - "radianes"
+  - "Velocidad angular"
+math: true
+---
+
+Colección de problemas resueltos basados en el libro *J. M. Vidal; V. Gandia (1976): Problemas De Fisica. 305 problemas resueltos y 552 con las soluciones*. Los que figuran en este blog son algunos de los no resueltos del libro, que según creo, está descatalogado.
+
+**I.** Dos ruedas de diámetros 0,5m y 0,25m están girando a 200 rpm y 100 rpm respectivamente, cuando les aplicamos simultáneamente un freno, quedando en reposo en 10s y 20s respectivamente. ¿En qué instante de tiempo *t* estarán girando a la misma velocidad? En ese momento, ¿cuales serán las aceleraciones lineales y tangenciales en un punto situado en la periferia de ambas ruedas? Cuando se hayan detenido, ¿qué ángulo total habrán girado desde el momento que aplicamos el freno?
+
+Solución:
+Cuando frenamos las ruedas tendremos un movimiento circular uniformemente acelerado, con aceleración negativa que con los datos del problema supondremos constante. Sabemos que la velocidad angular $\omega$ en un movimiento uniformemente acelerado es $\omega=\omega_0+\alpha t$ donde $\omega_0$ es la velocidad angular inicial, que viene dada por el enunciado, y $\alpha$ es la aceleración angular. Como cada rueda gira y frena a su ritmo, si queremos saber en qué instante coincidirán sus velocidades angulares, plantearemos la ecuación
+
+$\omega_A=\omega_{A0}+\alpha_At=\omega_B=\omega_{B0}+\alpha_Bt$ [1]
+
+donde $\omega_A,\omega_B$ son las velocidades angulares de la rueda  A y de la B, y $\alpha_A,\alpha_B$ las aceleraciones angulares; éstas últimas las consideramos constantes (deceleración uniforme) y pueden calcularse usando la fórmula de la aceleración angula constante:
+
+$\alpha=\frac{\triangle\omega}{\triangle t}=\frac{\omega_f-\omega_0}{t_f-t_0}$
+
+sustituimos valores:
+
+$\alpha_A=\frac{\triangle\omega_A}{\triangle t}=\frac{0-200}{10-0}=-20\frac{rpm}s;\;\alpha_A=\frac{\triangle\omega_B}{\triangle t}=\frac{0-100}{20-0}=-5\frac{rpm}s$
+
+la aceleración angular nos ha quedado en revoluciones por minuto por segundo, que significa el cambio en el valor de las revoluciones por minuto que ocurre en cada segundo. Sustituimos estas aceleraciones en la ecuación [1] para hallar t:
+
+$200-20t=100-5t\Leftrightarrow t=\frac{20}3$, en segundos.
+
+En el instante $t=\frac{20}3$ las velocidades angulares serán idénticas, y valdrán:
+
+$\omega_A=200-20\frac{20}3=100-5\frac{20}3=\frac{200}3$, en rpm
+
+Las aceleraciones tangenciales vienen dadas por $a_t=\alpha R$, para cada rueda tenemos: $a_{At}=-20\cdot0,5=-10;\;a_{Bt}=-5\cdot0,25=-1,25$, en m·s⁻², y las aceleraciones normales se calculan con $a_n=\omega^2R\;=\left(\omega_0+\alpha t\right)^2R$, vemos que la aceleración normal es variable con el tiempo, pues la velocidad angular es variable, en el momento que nos piden ambas ruedas giran a la misma velocidad angular, $\frac{200}3$, y las aceleraciones normales, en m·s⁻²:
+
+$a_{An}=\left(\frac{200}3\right)^2\cdot0.5=2.\overset\frown2\cdot10^3,\;a_{Bn}=\left(\frac{200}3\right)^2\cdot0.25=1.\overset\frown1\cdot10^3.$
+
+El ángulo girado en el movimiento circular uniformemente acelerado viene dado por $\theta=\theta_0+\omega t+\frac12\alpha t^2$. Sustituimos los valores para cada rueda:
+
+$\theta_A=200\cdot10-\frac1220\cdot10^2=1000;\;\theta_B=100\cdot20-\frac125\cdot10^2=1000,$
+
+ambos valores son las revoluciones completadas, y resultan ser iguales. En la imagen vemos la evolución con el tiempo de ambas velocidades angulares y ángulos girados.
+
+[caption id="attachment_150408" align="alignnone" width="471"]![Fig. 1: velocidades y ángulos en función del tiempo](/assets/images/vel_angular.png) Fig. 1: velocidades y ángulos en función del tiempo[/caption]
+![separador2](/assets/images/separador2.png)
+
+**2.** Un vehículo toma una curva peraltada de radio R=60m en la que el rozamiento es nulo a 60 km/h. Hallar el ángulo que ha de tener el peralte para que no se produzca derrape de las ruedas.
+
+Solución:
+
+[caption id="attachment_1642" align="alignnone" width="471"]![Geometría del problema](/assets/images/peralte.png) Geometría del problema[/caption]
+En la figura vemos una representación frontal del vehículo, de masa m, tomando la curva peraltada de radio R y ángulo de peralte ɑ. Definimos los ejes coordenados XY como muestra la figura, y aplicamos la 2ª ley de Newton, $\sum_{}F=ma$, a cada eje:
+
+Eje X: Como el vehículo está efectuando un giro de radio R, experimentará una fuerza normal $F_n=mv^2/R$ en la dirección de X. Además, en la figura vemos que el peso mg tiene también una componente según -X que valdrá $mg\sin\left(\alpha\right)$. Como no hay derrape, la aceleración según X ha de ser cero:
+
+$begin{array}{l}\sum_{}F=ma\Rightarrow\frac{mv^2}R-mg\cdot\sin\left(\alpha\right)=0\Rightarrow\frac{v^2}R-g\cdot\sin\left(\alpha\right)=0\Rightarrow\sin\left(\alpha\right)=\frac{v^2}{gR}\Rightarrow\alpha=sin^{-1}\left(\frac{v^2}{gR}\right)\end{array}$
+
+Vemos que el ángulo de peralte no depende de la masa del vehículo; sustituimos valores:
+
+$\alpha=sin^{-1}\left(\frac{\left(60/3.6\right)^2}{9.8\cdot60}\right)=\sin^{-1}\frac{625}{1323}\approx{28.2^\circ}$
+
+ ![separador2](/assets/images/separador2.png)
+
+**3**. Dejamos caer la masa m de un péndulo simple desde la posición horizontal en reposo; ¿cuál será la tensión de la cuerda del péndulo cuando la masa pase por la posición vertical?
+
+Solución:
+
+![pendul](/assets/images/pendul.png)
+
+La masa m del péndulo inicialmente está en la posición superior, suponiendo que el objeto es pequeño, su altura respecto a la posición inferior será aproximadamente igual a la longitud de la cuerda L. Por tanto su energía potencial gravitatoria será $E_p=mgh=mgL$. Esta energía potencial se convertirá totalmente en energía cinética en el punto más bajo de la trayectoria circular:
+
+$\frac12mv^2=mgL\Left\rightarrow v^2=2gL$
+
+Según el eje de coordenadas vertical Y, las fuerzas que actúan sobre el objeto son: el peso mg, la fuerza normal mv²/L y la tensión T de la cuerda. Como en el punto más bajo de la trayectoria circular no hay aceleración según el eje vertical, aplicando la 2ª ley F=ma obtenemos:
+
+$T-mg-m2gL/L=0\Rightarrow\boxed{T=3mg}$
+
+La tensión en el punto más bajo resulta ser el triple del peso del objeto que oscila, independientemente de la longitud de la cuerda.
+
+![separador2](/assets/images/separador2.png)
+
+**4**. Un cilindro de piedra usado para afilar cuchillos mide 80 cm de radio y pesa 55 kg. Si queremos acelerarlo desde 0 hasta 240 rpm en un tiempo de 40s, ¿que par de giro deberemos aplicar, y cuanto trabajo efectuaremos? ?Qué energía cinética tendrá el cilindro?
+
+El par de giro M es proporcional al momento de inercia I y a la velocidad angular α, según la fórmula $M=I\alpha$. En el caso de un cilindro homogéneo, el momento de inercia es I = 0.5mr² = 0.5·55·0.8² = 88/5 , siendo r su radio (I no depende de la altura del cilindro). La aceleración angular será igual al incremento de velocidad angular dividido por el tiempo, α = 240·(2π/60) / 40 = π/5 rad·s⁻², donde el factor (2π/60) se usa para pasar de revoluciones por minuto a radianes por segundo, pues una revolución = 2π radianes, y un minuto = 60 segundos. En conclusión: $M=\frac{88}5\cdot\frac\pi5=\frac{88}{25}\pi\approx11.06$. Si queremos comprobar las unidades del resultado, operamos con ellas:
+
+$\lbrack M\rbrack=\lbrack I\rbrack\cdot\lbrack\alpha\rbrack=\lbrack m\rbrack\cdot\lbrack r^2\rbrack\cdot\lbrack\alpha\rbrack=kg\cdot m^2\cdot\frac1{s^2}=\frac{kg\cdot m}{s^2}m=N\cdot m$
+
+El trabajo efectuado en un movimiento circular acelerado es $W = M\cdot\theta$, siendo M el par de giro aplicado y $\theta$ el ángulo total girado, que viene dado por $\theta=\theta_0+\omega_0t+\frac12\alpha t^2$, sustituimos valores:
+
+$\theta=0+0\cdot t+\frac12\frac{\mathrm\pi}540^2=160\mathrm\pi;\;\mathrm W=\mathrm M\cdot\mathrm\theta=\frac{88\mathrm\pi}{25}160\mathrm\pi\approx5559.$
+
+La energía cinética viene dada por $E_c=\frac12I\omega^2=\frac12\frac{88}5\left(240\cdot\frac{2\mathrm\pi}{60}\right)^2=5559$, y coincide con el trabajo realizado sobre el rodillo, pues no hay rozamiento.
+
+**Nota respecto a las unidades**: El par de fuerza viene dado en Newtons multiplicado por metros, Nm; observemos que la aceleración angular, en esta conversión de unidades, viene dada en 1/s² y no en rad/s², esto se hace siempre así cuando los ángulos vienen dados en radianes, los radianes no se incluyen. ¿Por qué? Si nos preguntamos cuál es la velocidad lineal de un punto que está girando en movimiento circular uniforme de radio r  con velocidad angular de R revoluciones por segundo, veremos que el punto recorre una distancia de 2πr metros R veces por segundo, por tanto su velocidad será de 2πrR m/s: para pasar de velocidad angular a velocidad lineal, convertimos los ángulos en distancias, dimensionalmente es una conversión de angular a lineal según el factor de conversión : [v] = [ω]·[factor conversión], o sea $\frac ms\;=\frac{\cancel{\;rev}}s\cdot\;2\pi r\;\frac m{\cancel{rev}}$. Cuando los ángulos vienen dados en radianes, el factor de conversión no incluye el 2π, es directamente igual al radio r, y el paso de velocidad angular (o aceleración) a lineal es: $\lbrack v\rbrack=\frac ms\;=\lbrack\omega\rbrack\cdot\lbrack factor\rbrack=\frac{\cancel{rad}}s\cdot\;\frac m{\cancel{rad}}$. Entonces, cuando "eliminamos los radianes" en las dimensiones lineales, lo que estamos haciendo es saltarnos el paso intermedio de las unidades del factor de conversión de angular a lineal, dejando sólo su valor: $\lbrack v\rbrack=\frac ms\;=\lbrack\omega\rbrack\cdot\lbrack r\rbrack=\frac1s\cdot\;m$
+
+![separador2](/assets/images/separador2.png)
+
+**5**.  El cilindro de la figura, de 30cm de radio y 10kg de masa, está girando en torno a su eje al desenrollarse una cuerda que tiene a su alrededor, en el extremo de la cual hay un objeto de 200gr de masa, que cae por efecto de la gravedad.![gir_cilindre](/assets/images/gir_cilindre.png) ¿Cuál es el par de giro sobre el cilindro? Distinguir el momento inicial, en el que el cilindro todavía no gira, de los momentos posteriores, en los que el cilindro está girando aceleradamente: ¿es constante el par? Calcular la aceleración angular del cilindro y la aceleración del objeto. Si sustituimos el peso por una fuerza constante igual a peso del objeto, ¿la aceleración angular será la misma?
+
+Las fuerzas en juego las vemos en la siguiente figura, que muestra la vista axial del cilindro; el par de giro M es causado por el momento de la tensión T de la cuerda r![Vidal 408](/assets/images/Vidal-408.png)especto al centro O fijo del cilindro, M = T·r. Cuando todavía no hay movimiento, por equilibrio de fuerzas, la tensión T ha de ser igual al peso del objeto, T = mg, así que el par inicial aplicado es M = mgr = 0.2·9.8·0.3 = 0.59 Nm.
+
+La aceleración angular α del cilindro se relaciona con el par de giro M a través del momento de inercia I = 0.5mr² = 0.5·10·0.3² = 0.45, del cilindro, por la igualdad M = I·α; de aquí encontramos α = M/I = 0.59 / 0.45 = 1.31 rad·s⁻².
+
+Cuando el cilindro está acelerando, también lo está el objeto, y debemos aplicar la 2ª ley de Newton al conjunto; ¿cuál es la aceleración del objeto? En el instante inicial era igual a la aceleración de la gravedad, g, pero ahora, debido a la tensión T que tira de él hacia arriba, será menor, e igual a g - a, donde a es la aceleración lineal del extremo de la cuerda, en el punto P, que está relacionada con la aceleración angular: a = r·α; planteamos todas las ecuaciones que tenemos:
+
+$\left.\begin{array}{r}M=Tr\\T=m\left(g-a\right)\\a=r\alpha\\\alpha=\frac MI\end{array}\right\}\Rightarrow\left.\begin{array}{r}M=Tr\\T=m\left(g-r\frac MI\right)\\\end{array}\right\}\Rightarrow M=m\left(g-r\frac MI\right)r$
+
+Nos queda una ecuación en M, el par de giro:
+
+$M=m\left(g-r\frac MI\right)r\Leftrightarrow\left(\frac1{mr}+\frac rI\right)M=g\Leftrightarrow M=g\left(\frac1{mr}+\frac rI\right)^{-1}$
+
+Sustituimos valores,
+
+$M=g\left(\frac1{mr}+\frac rI\right)^{-1}=9.8\left(\frac1{0.2\cdot0.3}+\frac{0.3}{0.45}\right)^{-1}=0.57\;Nm$
+
+Vemos que el par de giro ha cambiado ligeramente respecto al estado inicial. La aceleración angular α del cilindro también disminuye un poco, ahora es  α = M/I = 0.57 / 0.45 = 1.27 rad·s⁻². La diferencia es pequeña porque la masa del objeto, 200gr, es mucho menor que la del cilindro, 10kg.  La aceleración lineal del objeto será la misma que la del punto P de la periferia del cilindro, pues están unidos por la cuerda, y ya hemos visto que la aceleración lineal de P es a = α·r = 1.27·0.3 = 0.38 ms⁻².
+
+Si sustituimos el peso por una fuerza constante igual a peso del objeto, el movimiento será constante, con  α = 1.31 rad·s⁻² y un par constante M = 0.59 Nm, pues ahora ya no hay ningún objeto acelerándose sino una fuerza constante. 
+
+![separador2](/assets/images/separador2.png)
+
+**6**. Un aro delgado, un disco y una esfera, todos del mismo diámetro y de la misma masa, descienden por un plano inclinado rodando sin deslizamiento. Comparar los tiempos de descenso entre sí y con un punto material de la misma masa que deslizara sin rozamiento por el mismo plano. Si las masas fueran distintas, ¿qué cambiaría?
+
+![vidal 409](/assets/images/vidal-409.png)
+
+Las condiciones físicas de la rodadura sin deslizamiento en general las vemos en la figura: la velocidad angular w es constante, y el punto P es el centro de giro instantáneo, o sea que está rodando alrededor de P, el punto P está inmóvil, pues está en contacto con el suelo, y la fuerza de rozamiento impide que deslice, pero el punto P cambia a cada instante, por eso le llamamos centro instantáneo, sólo lo es un instante. Por otro lado el centro geométrico O se mueve con velocidad v constante, paralelamente al suelo, de forma que v = w·r (ya que el punto O gira instantáneamente alrededor de P con velocidad angular w y a una distancia r). Ahora bien, como el punto P es estático, la fuerza de rozamiento F aplicada en P no realiza ningún trabajo W, ya que W = F·d, siendo d la distancia, que en este caso es cero.
+
+¿Habrá diferencia entre la rodadura sin deslizamiento por un plano inclinado de una esfera, un disco y un aro? El movimiento es este caso producido por la gravedad, que hace girar los objetos alrededor del punto P; la dinámica del movimiento giratorio de un sólido alrededor de un punto sabemos que viene determinada por su momento de inercia, según M = I·α, siendo M el par de giro, I el momento de inercia y α la aceleración angular; como I depende del objeto, los movimientos serán distintos.
+
+Para ver el tiempo de recorrido, necesitamos la aceleración y la velocidad lineales. Vamos a encontrar las aceleraciones en cada caso. Para ello, usaremos la energía mecánica, que es constante para un sistema aislado, e igual a la suma de la energía cinética más la potencial gravitatoria, $E=E_c+E_p$; en un plano inclinado de altura h,  será $E_p=mgh$ cuando el objeto esté en su posición inicial, con velocidad inicial 0. En cambio cuando el objeto llegue al final del plano inclinado, la potencial será cero, por tanto, por la conservación de la energía mecánica, $mgh + 0 = 0 + E_c$, siendo $E_c$ la energía cinética final. En un sólido rodando, la energía cinética tiene dos componentes: la lineal, 0.5mv², siendo v la velocidad de sus centro de masas, y la energía cinética de rotación, 0.5Iw², siendo w la velocidad angular en torno al centro de giro. Hemos visto que v = w·r, luego 0.5mv² = 0.5m(wr)² = 0.5mw²r².
+
+Esfera que rueda en un plano inclinado: $mgh=0.5\cdot mw^2r^2+0.5\left(\frac25mr^2\right)w^2=0.5\cdot mw^2r^2\frac75$, la expresión entre paréntesis es el momento de inercia de la esfera respecto a su centro; tomando w = v/r y simplificando, encontramos la velocidad final del centro de la esfera al llegar al final del plano inclinado:
+
+$gh=0.5\cdot\left(\frac vr\right)^2r^2\frac75\Leftrightarrow v=\sqrt{\frac{10gh}7}$
+
+Disco que rueda en un plano inclinado: $mgh=0.5\cdot mw^2r^2+0.5\left(\frac{mr^2}2\right)w^2=0.5\cdot mw^2r^2\frac32$, el momento de inercia del disco respecto a su centro es mr²/2. Simplificando:
+
+$gh=0.5\cdot\left(\frac vr\right)^2r^2\frac32\Leftrightarrow v=\sqrt{\frac{4gh}3}$
+
+Anillo que rueda en un plano inclinado: $mgh=0.5\cdot mw^2r^2+0.5\left(mr^2\right)w^2=mw^2r^2$, luego $gh=\left(\frac vr\right)^2r^2\Leftrightarrow v=\sqrt{gh}$.
+
+Punto material que cae sin rozamiento: $mgh=0.5mv^2\Leftrightarrow v=\sqrt{2gh}$
+
+Los tiempos t de descenso serán inversamente proporcionales a las velocidades: si l es la longitud del plano inclinado, t = l /v. Por tanto, comparemos los recíprocos de las velocidades obtenidas. Llamando $t_0$ al tiempo de descenso del punto material, que es proporcional a $\sqrt{2gh}^{-1}$ obtenemos:
+
+Esfera que rueda en un plano inclinado:
+
+$t\propto\sqrt{\frac7{10gh}}\;\Rightarrow\frac t{t_0}\propto\frac{\sqrt{\frac7{10gh}}}{\sqrt{\displaystyle\frac1{2gh}}}=\sqrt{\frac75}$
+
+Disco que rueda en un plano inclinado:
+
+$t\propto\sqrt{\frac3{4gh}}\Rightarrow\frac t{t_0}\propto\frac{\sqrt{\frac3{4gh}}}{\sqrt{\displaystyle\frac1{2gh}}}=\sqrt{\frac32}$
+
+Anillo que rueda en un plano inclinado:
+
+$t\propto\sqrt{\frac1{gh}}\Rightarrow\frac t{t_0}\propto\frac{\sqrt{\frac1{gh}}}{\sqrt{\displaystyle\frac1{2gh}}}=\sqrt2$.
+
+En conclusión, si el punto material emplea un tiempo $t_0$ en el descenso, la esfera, el disco y el anillo emplean $\sqrt{\frac75}t_0,\;\sqrt{\frac32}t_0,\;\sqrt2t_0$, respectivamente.
+
+Si las masas fueran distintas, no cambiarían los resultados, pues vemos que las masas no están en ningún de los tiempos obtenidos, son valores independientes de las masas, sólo dependen de la geometría del problema y de la aceleración de la gravedad.
+
+NOTA: otra forma de atacar el problema es considerar la rotación alrededor del punto P y no de O; en este caso, como el punto P tiene velocidad cero, su energía cinética de traslación es cero, y sólo consideramos la energía de rotación en torno al punto P; hay que tener en cuenta que el momento de inercia I' respecto al punto P no es el mismo que el I respecto al centro de gravedad O, sino que viene dado por el teorema de Steiner, I' = I + md² siendo r la distancia entre los puntos O y P. Haciéndolo así, igualaríamos la energía cinética de rotación del sólido al llegar al final del plano inclinado con la energía potencial en el punto inicial, y se llega a los mismos resultados.
+
+![separador2](/assets/images/separador2.png)

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Inicio
+---
+<h2>Últimas entradas</h2>
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.categories %}
+      <span class="cat">— {{ post.categories | join: ", " }}</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">← Más reciente</a>{% endif %}
+  {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Más antigua →</a>{% endif %}
+</nav>
+{% endif %}

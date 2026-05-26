@@ -1,0 +1,149 @@
+---
+layout: post
+title: "Series de números reales"
+date: 2015-07-25 08:10:00 +0000
+categories:
+  - "Cálculo en R"
+  - "Matemáticas"
+  - "Sucesiones"
+tags:
+  - "convergencia absoluta"
+  - "convergencia condicional"
+  - "criterio de Cauchy"
+  - "criterio de D'Alembert"
+  - "criterio de la raíz"
+  - "criterio de la razón"
+  - "criterio de Leibnitz"
+  - "criterio de Raabe"
+  - "criterios convergéncia"
+  - "series numéricas"
+math: true
+---
+
+# Introducción
+
+Zenón está a ocho metros de un árbol. Llegado un momento, lanza una piedra, tratando de dar al árbol. La piedra, para llegar al objetivo, tiene que recorrer antes la primera mitad de la distancia que lo separa de él, es decir, los primeros cuatro metros, y tardará un tiempo (finito) en hacerlo. Una vez llegue a estar a cuatro metros del árbol, deberá recorrer los cuatro metros que le quedan, y para ello debe recorrer primero la mitad de esa distancia. Pero cuando esté a dos metros del árbol, tardará tiempo en recorrer el primer metro, y luego el primer medio metro restante, y luego el primer cuarto de metro... De este modo, la piedra nunca llegará al árbol. (Wikipedia: [Paradojas de Zenón](https://es.wikipedia.org/wiki/Paradojas_de_Zen%C3%B3n#La_dicotom.C3.ADa))
+
+El problema planteado por las paradojas del filósofo griego Zenón perduró hasta que a partir del siglo XVII se avanzó en el estudio de las sumas de infinitos términos, denominadas series numéricas.
+**Definición 1**: **Serie numérica**. Dada una [sucesión de números reales](http://mathseng.blogspot.com.es/2014/06/sucesiones-en-r.html), $x_1, x_2, ..., x_n, ...$, su serie asociada es la suma infinita $x_1+x_2+\dots+x_n+\dots\;=\sum\nolimits_{i=1}^\infty x_i$.
+
+Vemos que hay siempre una sucesión asociada a una serie: la sucesión de los números reales que sumamos. También podemos definir otra sucesión asociada a una serie: la de sus sumas parciales.
+**Definición 2**: **Sucesión de sumas parciales de una serie numérica**. Dada una serie $\sum\nolimits_{i=1}^\infty x_i$,  definimos su sucesión de sumas parciales como la sucesión de reales $S_1, S_2, ...$ dada por $S_1=\sum\nolimits_{i=1}^1x_i=x_{1\;},\;S_2=\sum\nolimits_{i=1}^2x_i=x_1+x_2,\;\dots,\;S_n=\sum\nolimits_{i=1}^nx_i=x_1+x_2+\dots+x_n.$
+
+**Ejemplo 1**: La distancia entre Zenón y el árbol conforme Zenón avanza es la sucesión ${8, 4, 2, 1, 1/2, ...}$; la distancia recorrida por Zenón es igual a la variación de la distancia entre él y el árbol: 8-4=4, 4-2=2, 2-1=1, ..., que forma la sucesión${4, 2, 1, 1/2, ...}$, con término general $x_n=2^{3-n}, n=1,2,...$. total recorrida por Zenón es la suma de las distancias recorridas: $4+2+1+1/2+...$ que es la serie de término general $\sum\nolimits_{i=1}^\infty2^{3-i}$. La sucesión de sumas parciales viene dada por $S_1=\sum\nolimits_{i=1}^12^{3-i}=2^2=4,\;S_2=\sum\nolimits_{i=1}^22^{3-i}=2^2+2^1=4+2=6,\;\cdots.$ Si escribimos los números de estas sumas parciales obtenemos la sucesión de sumas ${4, 6, 7, 7.5, ...}$.
+
+# Series convergentes y divergentes
+
+**Definición 3**: Una serie $\sum\nolimits_{i=1}^\infty x_i$ es convergente si su sucesión de sumas parciales converge a un valor límite S, esto es: $\underset{n\rightarrow\infty}{lim}\sum\nolimits_{i=1}^nx_i=\underset{n\rightarrow\infty}{lim}S_n=S.$ En caso contrario, la serie es divergente.
+
+**Ejemplo 2**: si una sucesión es divergente, su serie asociada también lo será; por ejemplo, la sucesión aritmética  ${1, 2, 3, ..., n, ...}$ es divergente, y tiene la serie asociada $1 + 2 + 3 +...+ n +...$ que es claramente divergente, ya que la sucesión de sumas parciales $\left\{1,3,6,\cdots,\frac{n\left(n+1\right)}2,\cdots\right\}$ es divergente: $\underset{n\rightarrow\infty}{lim}\frac{n\left(n+1\right)}2=\infty.$
+
+**Ejemplo 3**: La serie asociada a la sucesión geométrica de razón r, con término general $x_n=ar^n$, denominada serie geométrica,  tiene por término general las sumas parciales $S_n=\sum\nolimits_{i=0}^nar^i=a+ar+ar^2+\cdots+ar^n$, y es convergente siempre que $|r|&lt;1$. Es fácil encontrar el término general de la sucesión de sumas parciales: consideramos la suma $S_n$ i su producto por r, y restamos la primera de la segunda:
+
+$\begin{array}{l}\begin{array}{l}rS_n=\sum\nolimits_{i=0}^nar^{i+1}=ar+ar^2+\cdots+ar^n+ar^{n+1}\\-S_n=\sum\nolimits_{i=0}^n-ar^i=-a-ar-ar^2-\cdots-ar^n\\\underline{\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;}\end{array}\\rS_n-S_n=-a+ar^{n+1}\end{array}$
+
+de donde obtenemos $\left(r-1\right)S_n=a\left(-1+r^{n+1}\right)\Rightarrow\boxed{S_n=a\frac{r^{n+1}-1}{r-1}}$. Esta suma es convergente siempre que |r|<1, como podemos comprobar fácilmente:
+
+$\underset{n\rightarrow\infty}{lim}S_n=\underset{n\rightarrow\infty}{lim}a\frac{r^{n+1}-1}{r-1}=\left\{\begin{array}{l}\infty\;\text{si }r&gt;1\\\frac a{1-r}\;\text{si }r&lt;1\end{array}\right.$,
+
+ya que $r^{n+1}$ tiende a cero conforme  n crece siempre que r<1. Cuando $r=1$ entonces la serie es simplemente $a + a + a + ...$ con suma parcial $S_n=na$ y sin límite.
+
+Si las sumas empiezan en la potencia n=1 es inmediato ver que entonces
+
+$S_n=\sum\nolimits_{k=1}^nar^n=a\left(\frac{r^{n+1}-1}{r-1}-r^0\right)=ar\frac{r^n-1}{r-1}$,
+
+y en el límite obtenemos $\underset{n\rightarrow\infty}{lim}S_n=\underset{n\rightarrow\infty}{lim}ar\frac{r^n-1}{r-1}=a\frac r{1-r}.$
+
+**Ejemplo 4**: la distancia total recorrida por Zenón viene dada por el límite del término general de sumas parciales $S_n=\sum\nolimits_{i=1}^12^{3-n}$, que es:
+
+$\underset{n\rightarrow\infty}{lim}S_n=4+2+1+\underset{n\rightarrow\infty}{lim}\sum\nolimits_{i=4}^12^{3-n}=7+\underset{n\rightarrow\infty}{lim}\sum\nolimits_{i=1}^12^{-n}=7+\underset{n\rightarrow\infty}{lim}\sum\nolimits_{i=1}^1\frac1{2^n}=7+\underset{n\rightarrow\infty}{lim}\sum\nolimits_{i=1}^1\left(\frac12\right)^n$
+
+observemos que hemos "apartado" los primeros tres términos para aislar los restantes y poder ver que forman una serie geométrica convergente, ya que r = 1/2 = 1. Usando la fórmula de las sumas parciales de la serie geométrica y pasando al límite: $\underset{n\rightarrow\infty}{lim}S_n=7+1\cdot\frac{1/2}{1-1/2}=7+1=8.$ Vemos que la paradoja queda resuelta: al pasar al límite la suma infinita de pasos resulta la distancia inicial entre el árbol y Zenón: 8 metros.
+
+## Criterios de convergencia
+
+Veamos algunas propiedades clásicas respecto la convergencia de series numéricas.
+**Propiedad 1 (condición necesaria)**: En toda serie convergente, a partir de cierto término, los términos siguientes de la sucesión asociada han de ser decrecientes con límite cero. Esta es una condición necesaria, pero no suficiente de convergencia.
+
+**Ejemplo 5**: La serie $1+\frac12+\frac13+\dots+\frac1n+\dots$, denominada serie armónica, cumple la condición necesaria ya que $\underset{n\rightarrow\infty}{lim}\frac1n=0$, pero es divergente; en efecto, agrupemos los sumandos del siguiente  modo:
+
+$1+\frac12+\frac13+\dots+\frac1n+\dots=\left(1+\frac12\right)+\left(\frac13+\frac14\right)+\left(\frac15+\frac16+\frac17+\frac18\right)+\dots$
+
+Dejamos de lado de momento el primer paréntesis y consideramos el resto de agrupamientos; en general, dado el agrupamiento m-ésimo $P_m$, contendrá $2^m$ términos, que son:
+
+$\left(\frac1{2^m+1}+\frac1{2^m+2}+\frac1{2^m+3}+\dots+\frac1{2^m+2^m}\right)$
+
+por ejemplo, para los dos primeros agrupamientos:
+
+$\begin{array}{l}m=1:\;\left(\frac1{2^1+1}+\frac1{2^1+2^1}\right)=\;\left(\frac13+\frac14\right),\\m=2:\;\left(\frac1{2^2+1}+\frac1{2^2+2}+\frac1{2^2+3}+\frac1{2^2+2^2}\right)=\left(\frac15+\frac16+\frac17+\frac18\right)\end{array}$
+
+Es fácil ver que cualquiera de estos agrupamientos es mayor que 1/2; en efecto, dividimos 1/2 en $2^m$ partes: $1/2:2^m=1/2^{m+1}$, por tanto $\frac12=\left(\frac1{2^{m+1}}+\frac1{2^{m+1}}+\frac1{2^{m+1}}+\dots+\frac1{2^{m+1}}\right)$ (tenemos $2^m$ sumandos), comparando término a término estos sumandos con los del agrupamiento $P_m$ vemos que $\frac12=\left(\frac1{2^{m+1}}+\frac1{2^{m+1}}+\dots+\frac1{2^{m+1}}\right)&lt;\left(\frac1{2^m+1}+\frac1{2^m+2}+\dots+\frac1{2^{m+1}}\right)$, ya que $\frac1{2^{m+1}}\leq\frac1{2^m+k},\;1\leq k\leq2^m$ (para verlo basta con hacer $\frac{2^m+k}{2^{m+1}}=\frac12\frac{2^m+k}{2^m}=\frac12\left(1+\frac
+k{2^m}\right)\leq\frac12\left(1+1\right)=1$).
+
+Siendo todos los agrupamientos de la serie armónica mayores que 1/2, y habiendo un número infinito de agrupamientos, se sigue que $\sum\nolimits_{n=1}^\infty\frac1n&gt;\left(1+\frac12\right)+\frac12+\frac12+\dots\rightarrow+\infty$ y la serie armónica es divergente.
+
+Los siguientes criterios sirven para series de términos positivos, en el siguiente apartado veremos criterios para series generales.
+
+### Criterios de convergencia para series de términos positivos
+
+ **Propiedad 2 (criterio de comparación)**: Si una serie S de términos positivos es tal que, a partir de un cierto término n-ésimo, todos los términos siguientes de su sucesión asociada son menores que otra sucesión T convergente y de términos positivos, entonces la serie S también es convergente. Si una serie S de términos positivos es tal que, a partir de un cierto término n-ésimo, todos los términos siguientes  de su sucesión asociada son mayores que otra sucesión T divergente y de términos positivos, entonces la serie S también es divergente.
+
+**Ejemplo 6**: Hemos visto que la serie geométrica $\frac12+\frac14+\frac18+\dots+\frac1{2^n}+\dots$ es convergente. Entonces  la serie $\frac{\left|\sin\left(2\right)\right|}2+\frac{\left|\sin\left(4\right)\right|}4+\frac{\left|\sin\left(8\right)\right|}8+\dots+\frac{\left|\sin\left(n\right)\right|}{2^n}+\dots$ también es convergente, pues cada uno de sus términos es menor o igual que la de la serie geométrica.
+
+**Propiedad 3 (criterio de D'Alembert o de la razón)**: si a partir de un cierto término de la sucesión ${x_1,x_2,...,x_n}$ asociada a una serie la razón de cada término al siguiente $x_{n+1} / x_n$ se mantiene inferior a una cierta cota superior L, la serie será convergente si y sólo si L < 1.
+
+Es fácil ver que esto es cierto: a partir de un cierto término enésimo de la sucesión asociada tendremos
+
+$\frac{x_{n+1}}{x_n}&lt;L,\;\frac{x_{n+2}}{x_{n+1}}&lt;L,\;\frac{x_{n+3}}{x_{n+2}}&lt;L,\;\dots$
+
+o bien:
+
+$x_{n+1}&lt;x_nL,\;x_{n+2}&lt;x_{n+1}L,\;x_{n+3}&lt;x_{n+2}$
+
+Multiplicando la primera desigualdad por la segunda: $x_{n+1}\;\cdot x_{n+2}&lt;x_n\cdot x_{n+1}L^2\Leftrightarrow x_{n+2}&lt;x_nL^2$. Multiplicando esta última por la tercera desigualdad: $x_{n+2}\cdot x_{n+3}&lt;x_n\cdot x_{n+2}L^3\Leftrightarrow x_{n+3}&lt;x_nL^3$. Así, resulta que los términos a partir de $x_{n+1}$ son menores que los términos de la sucesión ${Lx_n, L^2x_n, L^3x_n,...}$, pero esta última sucesión es geométrica con razón r=L, que será convergente siempre que L<1 (ver el ejemplo 3). Entonces, por el criterio de comparación, la serie ${x_1,x_2,...,x_n}$ será convergente siempre que L<1.
+
+NOTA 1: Cuando la razón L>1 la serie será divergente, pero si L=1 entonces este criterio no decide nada, habrá que probar con otro criterio.
+
+NOTA 2: El criterio puede también aplicarse si encontramos que $\underset{n\rightarrow\infty}{lim}\frac{x_{n+1}}{x_n}=L.$
+
+**Ejemplo 7**: Consideramos la serie de términos positivos $\frac1{1\cdot5}+\frac1{3\cdot5^2}+\frac1{5\cdot5^3}+\frac1{7\cdot5^4}+\dots+\frac1{\left(2n-1\right)\cdot5^n}$, la relación $x_{n+1} / x_n$ es $\frac1{\left(2\left(n+1\right)-1\right)\cdot5^{n+1}}:\frac1{\left(2n-1\right)\cdot5^n}=\frac{\left(2n-1\right)\cdot5^n}{\left(2n+1\right)\cdot5^{n+1}}=\frac{\left(2n-1\right)}{\left(2n+1\right)\cdot5}$, pasando al límite:
+
+$\underset{n\rightarrow\infty}{lim}\frac{\left(2n-1\right)}{\left(2n+1\right)\cdot5}=\underset{n\rightarrow\infty}{lim}\frac{\left(2n-1\right)/n}{\left(2n+1\right)\cdot5/n}=\underset{n\rightarrow\infty}{lim}\frac{\left(2-1/n\right)}{\left(2+1/n\right)\cdot5}=\frac{\left(2\right)}{\left(2\right)\cdot5}=\frac15$
+
+Como L=1/5<1 la serie es convergente.
+
+**Propiedad 4 (criterio de Cauchy o de la raíz)**: si a partir de un cierto término de la sucesión ${x_1,x_2,...,x_n}$ asociada a una serie se cumple que $\sqrt[n]{x_n}&lt;1$ la serie será convergente, si $\sqrt[n]{x_n}&gt;1$ para todos los términos a partir de un cierto término n-ésimo la serie será divergente, y si $\sqrt[n]{x_n}=1$ el criterio no decide.
+
+**Ejemplo 8**: la serie $\frac13+\frac2{3^2}+\frac1{3^3}+\frac{2^2}{3^4}+\frac1{3^5}+\frac{2^3}{3^6}+\dots$ tiene por término general de su sucesión asociada:
+
+$x_n=\left\{\begin{array}{l}\frac1{3^n},\;n=1,3,5,\dots\\\frac{2^{n/2}}{3^n},\;n=2,4,6,\dots\end{array}\right.$
+
+Tomando la raiz n-ésima:
+
+$\sqrt[n]{x_n}=\left\{\begin{array}{l}\frac13,\;n=1,3,5,\dots\\\frac{2^{1/2}}3,\;n=2,4,6,\dots\end{array}\right.$
+
+Vemos que en cualquier caso las raíces n-ésimas de los términos de la sucesión asociada son menores que 1, luego la serie es convergente.
+
+**Propiedad 4 (Criterio de Raabe)**: si la expresión $n\left(1+\frac{x_{n+1}}{x_n}\right)$ toma valores mayores que 1 a partir de un cierto término de la sucesión asociada a una serie, la  serie es convergente, y si la expresión se mantiene menor que 1, la serie es divergente. Este criterio suele emplearse cuando el criterio del cociente no decide.
+
+**Ejemplo 9**: Para la serie $\frac13+\frac17+\frac1{13}+\frac1{21}+\cdots+\frac1{n^2+n+1}$ el criterio del cociente no decide nada, pues $\frac1{\left(n+1\right)^2+\left(n+1\right)+1}:\frac1{n^2+n+1}=\frac{n^2+n+1}{n^2+3n+3}\xrightarrow\infty1$. Aplicando Raabe:
+
+$n\left(1-\frac{x_{n+1}}{x_n}\right)=n\left(1-\frac{n^2+n+1}{n^2+3n+3}\right)=n\frac{\left(n^2+3n+3\right)-\left(n^2+n+1\right)}{n^2+3n+3}=\frac{2n^2+2n}{n^2+3n+3}\xrightarrow\infty2$
+
+que, siendo mayor que 1, nos dice que la serie es convergente.
+
+### Criterios de convergencia para series de términos de cualquier signo
+
+**Propiedad 5 (convergencia de series alternadas, o criterio de Leibnitz)**: Una serie alternada es aquella que tiene términos alternadamente positivos y negativos. Si los términos de la sucesión asociada a una serie alternada decrecen indefinidamente, entonces la serie converge.
+
+**Ejemplo 10**: Hemos visto en el ejemplo 5 que la serie armónica $1+\frac12+\frac13+\dots+\frac1n+\dots$ es divergente a pesar de que el término general de la sucesión $x_n=1/n$ tiende a cero, pero en cambio la serie alternada $1-\frac12+\frac13-\dots+\left(-1\right)^{n-1}\cdot\frac1n+\dots$ es convergente, por la propiedad 5.
+
+**Propiedad 6 (convergencia absoluta)**: Dada una serie cualquiera S, si formamos otra serie T de términos positivos tomando los valores absolutos de los términos de la primera, y resulta que T es convergente, entonces S también será convergente. Esto suele expresarse diciendo que la convergencia absoluta implica la convergencia.
+
+**Ejemplo 11**: la serie S dada por  $\frac{sin\left(2\right)}2+\frac{sin\left(4\right)}4+\frac{sin\left(8\right)}8+\dots+\frac{sin\left(n\right)}{2^n}+\dots$ no es de términos positivos ni es alternada, pero tomando sus valores absolutos obtenemos la serie de términos positivos T del ejemplo 6, que es convergente, luego S es convergente por la propiedad 6.
+
+**Ejemplo 12** (Convergencia condicional): decimos que una serie es condicionalmente convergente cuando es convergente pero no es absolutamente convergente. la serie alternada del ejemplo 10, $1-\frac12+\frac13-\dots+\left(-1\right)^{n-1}\cdot\frac1n+\dots$, es convergente, pero tomando sus valores absolutos obtenemos la serie armónica, divergente, luego es condicionalmente convergente.
+
+En el siguiente gráfico vemos la evolución de las sumas parciales de algunas de las series que hemos dado en los ejemplos; de ellas, sólo una es divergente, la serie armónica.
+
+[![series](/assets/images/series.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/series.png)

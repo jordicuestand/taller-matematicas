@@ -1,0 +1,36 @@
+title: "Taller de Matemáticas"
+description: "Apuntes de Matemáticas y Física"
+author: "Jordi Cuesta Andrea"
+email: jordicuestand@gmail.com
+lang: es
+
+# URL del lloc (canvia-ho quan tinguis el domini de GitHub Pages)
+url: "https://TU_USUARI.github.io"
+baseurl: "/taller-matematiques"
+
+# Jekyll
+theme: minima
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+  input: GFM
+
+# MathJax
+mathjax: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Paginació
+paginate: 10
+paginate_path: "/page:num/"
+
+# Includes/Excludes
+exclude:
+  - images_to_download.txt
+  - Gemfile
+  - Gemfile.lock
