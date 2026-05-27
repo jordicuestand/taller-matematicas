@@ -13,6 +13,7 @@ baseurl: "/taller-matematicas"
 # Jekyll
 theme: minima
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
 
 kramdown:
   math_engine: mathjax
