@@ -18,8 +18,7 @@ title: Inicio
 
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
-  {% if paginator.previous_page %}<a href="{{ paginator.next_page_path | relative_url }}">← Más reciente</a>{% endif %}
-  {% if paginator.next_page %}<a href="{{ paginator.previous_page_path | relative_url }}">Más antigua →</a>{% endif %}
-  <a href="{{ '/page2/' | relative_url }}">Anteriores →</a>
-</nav>
+  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">← Más reciente</a>{% endif %}
+  {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Más antigua →</a>{% endif %}
+ </nav>
 {% endif %}
