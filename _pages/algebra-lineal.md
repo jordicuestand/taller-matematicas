@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Álgebra Lineal"
+permalink: /algebra-lineal/
 date: 2016-10-29 12:19:43 +0000
 math: true
 ---
