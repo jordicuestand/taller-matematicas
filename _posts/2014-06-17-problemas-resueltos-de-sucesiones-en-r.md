@@ -66,13 +66,13 @@ Recordando las propiedades de los límites infinitos, concluimos L = +∞
 
 $L=\lim_n\frac{n!}{n^n}=\lim_n\frac{n\cdot\left(n-1\right)\cdot\left(n-2\right)\cdot\dots\cdot2\cdot1}{n\cdot n\cdot n\dots n\cdot n}=\frac\infty\infty=?$
 
-Observemos que $\frac{n!}{n^n}&gt;0$ para todo n, y que $\left(x_n\right)=\left\{1,\frac12,\frac6{27},\dots\right\}$ es decreciente y acotada, por lo que ha de ser convergente (no demostraremos estas afirmaciones, y que no nos lo piden explícitamente en el enunciado).
+Observemos que $\frac{n!}{n^n}&gt;0$ para todo n, y que $\left(x_n\right)=\left\lbrace1,\frac12,\frac6{27},\dots \right\rbrace$ es decreciente y acotada, por lo que ha de ser convergente (no demostraremos estas afirmaciones, y que no nos lo piden explícitamente en el enunciado).
 
 Si comparamos $\left(x_n\right)$ con la sucesión $\left(y_n\right)$ de términos $\left(y_n\right)=\left(\frac{n^{n-1}}{n^n}\right)=\frac{n\cdot n\dots n\cdot1}{n\cdot n\dots n\cdot n}=\frac1n$  vemos que se cumple, para todo n:
 
 $0\leq\frac{n\cdot\left(n-1\right)\cdot\left(n-2\right)\cdot\dots\cdot2\cdot1}{n\cdot n\cdot n\dots n\cdot n}\leq\frac{n\cdot n\dots n\cdot1}{n\cdot n\dots n\cdot n}=\frac1n\Rightarrow0\leq\left(x_n\right)\leq\left(y_n\right)$
 
-Pero $\left(y_n\right)\rightarrow0$, con lo que tenemos que $0\leq\underset{}{\lim\left(x_n\right)\leq0\Rightarrow\lim\left(x_n\right)=0.}$
+Pero \((y_n)\to 0\), con lo que tenemos que $0\leq\underset{}{\lim\left(x_n\right)\leq0\Rightarrow\lim\left(x_n\right)=0.}$
 
 ---
 
@@ -80,7 +80,7 @@ Pero $\left(y_n\right)\rightarrow0$, con lo que tenemos que $0\leq\underset{}{\
 
 El teŕmino general es del tipo fracción racional polinómica, aplicando el criterio de convergéncia adecuado concluimos inmediatamente que $\lim_{}\left(a_n\right)=\frac12$.
 
-Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\{-1,\frac-14,0,\frac18,\dots\right\}$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
+Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\lbrace-1,\frac-14,0,\frac18,\dots \right\rbrace$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
 
 $caption id="attachment_26" align="aligncenter" width="290"$[![recta](/taller-matematicas/assets/images/recta.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/06/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2[/caption]
 
@@ -98,9 +98,9 @@ Para todo $n&gt;\frac1{2r}$ los valores $x_n$ quedan más cerca de x=1/2 que el 
 
 **4**. Mediante la definición clásica de límite basada en entornos, probar que la sucesión definida por $a_n=1$ si n es impar, $\frac1n$ en otro caso, no es convergente.
 
-Los primeros términos de la sucesión son $\left\{1,\frac12,1,\frac14,1,\frac16,\dots\right\}$. Vemos que la sucesión no es monótona. Procedemos por reducción al absurdo: supongamos que el límite es $x$. Entonces, para todo $r&gt;0$ existirá un $m\in\mathbb{N}$ tal que $x_n\in\Beta\left(x,r\right)$ siempre que $n\geq m$,  equivalentemente, tendremos $x_n\in\left(x-r,x+r\right)$, que implica $x-r\leq x_n\leq x+r$. Entonces tendremos, simultaneamente,
+Los primeros términos de la sucesión son $\left\lbrace1,\frac12,1,\frac14,1,\frac16,\dots \right\rbrace$. Vemos que la sucesión no es monótona. Procedemos por reducción al absurdo: supongamos que el límite es $x$. Entonces, para todo $r&gt;0$ existirá un $m\in\mathbb{N}$ tal que $x_n\in\Beta\left(x,r\right)$ siempre que $n\geq m$,  equivalentemente, tendremos $x_n\in\left(x-r,x+r\right)$, que implica $x-r\leq x_n\leq x+r$. Entonces tendremos, simultaneamente,
 
-$\left\{\begin{array}{l}x-r\leq\frac1n\leq x+r,\;n\;par\\x-r\leq1\leq x+r,\;n\;impar\end{array}\right.$
+$\left\lbrace\begin{array}{l}x-r\leq\frac1n\leq x+r,\;n\;par\\x-r\leq1\leq x+r,\;n\;impar\end{array}\right.$
 
 De la segunda desigualdad, sumando $-x-1$ obtenemos $-1-r&lt;-x&lt;r-1\Leftrightarrow1+r&gt;x&gt;1-r$, que ha de ser cierto para cualquier $r&gt;0$, lo cual nos lleva a concluir que $x=1$. Sustituimos este valor de $x$ en la primera desigualdad para obtener $1-r&lt;\frac1n&lt;1+r$. pero para $n$ suficientemente grande, tenemos que $\frac1n$ tiende a $0$, entonces para valores de $r$ pequeños la desigualdad es imposible. En conclusión no existe el límite de la sucesión.
 
@@ -122,11 +122,11 @@ Supongamos que $n&gt;m$ es par y que $p&gt;m$ es impar; podemos suponerlo por qu
 
 **6.** Clasificar (¿acotada? ¿creciente? ¿decreciente? ¿monótona? ¿convergente?) la sucesión de término general:
 
-$\left(a_n\right)=\left\{\begin{array}{l}\frac{n+1}n,\;n\;\text{par}\\1-\frac1{2n},\;n\;\text{impar}\end{array}\right.$
+$\left(a_n\right)=\left\lbrace\begin{array}{l}\frac{n+1}n,\;n\;\text{par}\\1-\frac1{2n},\;n\;\text{impar}\end{array}\right.$
 
 Escribamos los primeros términos de la sucesión:
 
-$\left(a_n\right)=\left\{\frac12,\frac32,\frac56,\frac54,\frac9{10},\frac76,\frac{13}{14},\frac98,\dots\right\}$
+$\left(a_n\right)=\left\lbrace\frac12,\frac32,\frac56,\frac54,\frac9{10},\frac76,\frac{13}{14},\frac98,\dots \right\rbrace$
 
 Vemos que a medida que avanzamos no hay un orden estricto, a veces aumentan los valores, a veces decrecen: no es una sucesión ni creciente ni decreciente, y por tanto tampoco es monótona. Para ver si es convergente consideremos cómo se comporta la diferencia entre dos términos cualesquiera $\left(a_p\right),\left(a_q\right),\;p,q&gt;m\in\mathbb{N}$ cuando avanzamos en la sucesión; como tenemos dos términos generales, dependiendo de si $p, q$ son pares o impares, tendremos que distinguir cada caso por separado. Suponemos que $q&gt;p$.
 
@@ -146,7 +146,7 @@ El caso restante $p$ es impar, $q$ es par es análogo y lo dejamos para el lect
 
 Si queremos calcular el límite, que ahora sabemos que existe, lo hacemos para ambas expresiones:
 
-$\left(a_n\right)=\left\{\begin{array}{l}\frac{n+1}n\xrightarrow[\infty]{}1\\1-\frac1{2n}\xrightarrow[\infty]{}1-0=1\end{array}\right.$
+$\left(a_n\right)=\left\lbrace\begin{array}{l}\frac{n+1}n\xrightarrow[\infty]{}1\\1-\frac1{2n}\xrightarrow[\infty]{}1-0=1\end{array}\right.$
 
 Vemos que en cualquier caso la sucesión se acerca progresivamente a 1, que es el límite de la sucesión.
 
