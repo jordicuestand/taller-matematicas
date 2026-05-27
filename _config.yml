@@ -34,6 +34,8 @@ paginate: 10
 paginate_path: "/page:num/"
 
 # Includes/Excludes
+include:
+  - _pages
 exclude:
   - images_to_download.txt
   - Gemfile
