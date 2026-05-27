@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Optimización Matemática"
+permalink: /optimizacion/
 date: 2022-04-01 06:52:55 +0000
 math: true
 ---
