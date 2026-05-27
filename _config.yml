@@ -40,3 +40,9 @@ exclude:
   - images_to_download.txt
   - Gemfile
   - Gemfile.lock
+  
+---
+layout: page
+title: Recursos
+permalink: /categorias/
+---
