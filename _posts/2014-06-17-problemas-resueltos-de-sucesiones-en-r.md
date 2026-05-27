@@ -98,9 +98,16 @@ Para todo $n&gt;\frac1{2r}$ los valores $x_n$ quedan más cerca de x=1/2 que el 
 
 **4**. Mediante la definición clásica de límite basada en entornos, probar que la sucesión definida por $a_n=1$ si n es impar, $\frac1n$ en otro caso, no es convergente.
 
-Los primeros términos de la sucesión son $\left\lbrace1,\frac12,1,\frac14,1,\frac16,\dots \right\rbrace$. Vemos que la sucesión no es monótona. Procedemos por reducción al absurdo: supongamos que el límite es $x$. Entonces, para todo $r&gt;0$ existirá un $m\in\mathbb{N}$ tal que $x_n\in\Beta\left(x,r\right)$ siempre que $n\geq m$,  equivalentemente, tendremos $x_n\in\left(x-r,x+r\right)$, que implica $x-r\leq x_n\leq x+r$. Entonces tendremos, simultaneamente,
+Los primeros términos de la sucesión son $\left\lbrace1,\frac12,1,\frac14,1,\frac16,\dots \right\rbrace$. Vemos que la sucesión no es monótona. Procedemos por reducción al absurdo: supongamos que el límite es $x$.
+Entonces, para todo $r&gt;0$ existirá un $m\in\mathbb{N}$ tal que $x_n\in\beta\left(x,r\right)$ siempre que $n\geq m$,  equivalentemente, tendremos $x_n\in\left(x-r,x+r\right)$, que implica $x-r\leq x_n\leq x+r$. 
+Entonces tendremos, simultaneamente,
 
-$\left\lbrace\begin{array}{l}x-r\leq\frac1n\leq x+r,\;n\;par\\x-r\leq1\leq x+r,\;n\;impar\end{array}\right.$
+\[
+\begin{cases}
+x-r \leq \dfrac{1}{n} \leq x+r, & n \text{ par},\\[6pt]
+x-r \leq 1 \leq x+r, & n \text{ impar}.
+\end{cases}
+\]
 
 De la segunda desigualdad, sumando $-x-1$ obtenemos $-1-r&lt;-x&lt;r-1\Leftrightarrow1+r&gt;x&gt;1-r$, que ha de ser cierto para cualquier $r&gt;0$, lo cual nos lleva a concluir que $x=1$. Sustituimos este valor de $x$ en la primera desigualdad para obtener $1-r&lt;\frac1n&lt;1+r$. pero para $n$ suficientemente grande, tenemos que $\frac1n$ tiende a $0$, entonces para valores de $r$ pequeños la desigualdad es imposible. En conclusión no existe el límite de la sucesión.
 
@@ -114,7 +121,8 @@ De la segunda desigualdad, sumando $-x-1$ obtenemos $-1-r&lt;-x&lt;r-1\Leftright
 
 En las sucesiones de Cauchy, la distancia entre los términos posteriores a uno dado puede hacerse tan pequeña como se quiera, esto es, para cualquier valor $r&gt;0$, existirá un $m\in\mathbb{N}$ tal que para cualquiera valores $n, p&gt;m$ se cumplirá $\left|x_n-x_p\right|&lt;r$. ¿Es esto cierto para la sucesión del enunciado?
 
-Supongamos que $n&gt;m$ es par y que $p&gt;m$ es impar; podemos suponerlo por que la propiedad anterior que define la sucesión de Cauchy ha de cumplirse para cualesquiera términos posteriores a uno dado. Entonces $\left|x_n-x_p\right|=\left|\frac1n-1\right|=1-\frac1n$, pero este valor aumenta con $n$, acercándose a $1$ cuando $n$ es muy grande, por lo tanto no podemos hacerlo menor que un $r$ dado para valores grandes de $n$. En conclusión, la sucesión no es de Cauchy, y tampoco puede ser convergente.
+Supongamos que $n&gt;m$ es par y que $p&gt;m$ es impar; podemos suponerlo por que la propiedad anterior que define la sucesión de Cauchy ha de cumplirse para cualesquiera términos posteriores a uno dado. 
+Entonces \(\left|x_n-x_p\right|=\left|\frac{1}{n}-1\right|=1-\frac{1}{n}\), pero este valor aumenta con \(n\), acercándose a \(1\) cuando \(n\) es muy grande; por tanto, no podemos hacerlo menor que un \(r\) dado para valores grandes de \(n\).. En conclusión, la sucesión no es de Cauchy, y tampoco puede ser convergente.
 
 ---
 
@@ -122,7 +130,13 @@ Supongamos que $n&gt;m$ es par y que $p&gt;m$ es impar; podemos suponerlo por qu
 
 **6.** Clasificar (¿acotada? ¿creciente? ¿decreciente? ¿monótona? ¿convergente?) la sucesión de término general:
 
-$\left(a_n\right)=\left\lbrace\begin{array}{l}\frac{n+1}n,\;n\;\text{par}\\1-\frac1{2n},\;n\;\text{impar}\end{array}\right.$
+\[
+(a_n)=
+\begin{cases}
+\dfrac{n+1}{n} \xrightarrow[n\to\infty]{} 1,\\[6pt]
+1-\dfrac{1}{2n} \xrightarrow[n\to\infty]{} 1-0=1.
+\end{cases}
+\]
 
 Escribamos los primeros términos de la sucesión:
 
@@ -172,7 +186,14 @@ $\left(a_p\right)-\left(a_q\right)=\left(-1\right)^{p+1}\frac1{2p-1}-\left(-1\ri
 
 Como solo nos interesa el valor absoluto de la diferencia, ignoramos los signos:
 
-$\left|\left(a_p\right)-\left(a_q\right)\right|=\left|\frac1{2p-1}-\frac1{2q-1}\right|\xrightarrow[\infty]{}\left|\frac1\infty-\frac1\infty\right|=0.$
+\[
+\left|a_p-a_q\right|
+=
+\left|\frac{1}{2p-1}-\frac{1}{2q-1}\right|
+\xrightarrow[p,q\to\infty]{}
+\left|\frac{1}{\infty}-\frac{1}{\infty}\right|
+=0.
+\]
 
 Por tanto la sucesión es de Cauchy, no obstante, ahora no implica que sea convergente, pues la implicación Cauchy $\Rightarrow$ convergente sólo es válida para sucesiones de números reales, y esta sucesión es de números racionales. De hecho, esta sucesión se conoce como [serie de Leibniz](http://es.wikipedia.org/wiki/Serie_de_Leibniz) y se puede probar que converge a $\mathrm\pi/4$, que es un número irracional, por lo tanto la sucesión no converge a ningún número racional: es divergente.
 
