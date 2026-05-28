@@ -48,7 +48,7 @@ Claramente la evaporación es la que aumenta más la entropía.
 
 **5.** Sean 3·10⁻² moles de un gas ideal en el estado A definido por P=1 atm, V=R m³, (R: constante de los gases perfectos), T = 300⁰K que evoluciona irreversiblemente hasta el estado B definido por P=2 atm, V=4R/3 m³, T = 400⁰K según la transformación 1 que puede verse en el diagrama PV (figura 1). Supondremos el valor 1 para el coeficiente térmico a volumen constante, $c_v=1$. Calcular la variación de entropía.
 
-$caption id="attachment_150717" align="alignnone" width="438"$![](/taller-matematicas/assets/images/entropia-irreversible.png) Fig.1: diagrama PV de un sistema que evoluciona irreversiblemente entre los estados A, B
+![](/taller-matematicas/assets/images/entropia-irreversible.png) Fig.1: diagrama PV de un sistema que evoluciona irreversiblemente entre los estados A, B
 
 Solución: Para calcular la variación de entropía, buscamos una transformación reversible, o sea, que respete en cada instante los estados de equilibrio dados por la ecuación de estado PV = nRT. Imaginemos el camino 2 de A->C que mantiene el volumen constante, luego P/T = nR/V = cte, llevando el sistema hasta la temperatura del estado B; todos los estados en equilibrio a temperatura $T_B=400$ están sobre la isoterma en rojo, la isoterma en azul corresponde a T = 300. A continuación, imaginamos que el sistema evoluciona reversiblemente desde C hasta A por la isoterma T =400. La variación de entropía entre A y B será la suma de las entropías A->C más la de C->B. Vamos por ello:
 
@@ -72,7 +72,7 @@ $S_{AB}=S_{AC}+S_{CA}=3\cdot10^{-2}R\ln\left(\frac43\right)+3\cdot10^{-2}\ln\lef
 
 **Solución**: Los cambios de fase (evaporación, solidificación, sublimación ...) son transformaciones de estado especiales pues siendo reales son reversibles (el sistema permanece en equilibrio durante el cambio de fase). En la figura 2 vemos el diagrama PV de la evaporación del agua, a presión y temperatura constante, el volumen específico aumenta linealmente.
 
-$caption id="attachment_150748" align="alignleft" width="528"$![](/taller-matematicas/assets/images/PV-canvi-de-fase.png) Fig.2: diagrama PV de un cambio de fase líquido a gas, caso del agua ( por cm³)
+![](/taller-matematicas/assets/images/PV-canvi-de-fase.png) Fig.2: diagrama PV de un cambio de fase líquido a gas, caso del agua ( por cm³)
 
 Por el 1r principio: Q = W + ΔE; el trabajo realizado por el vapor correspondiente a 1gr de agua al expandirse bajo una presión constante de  P = 1atm (101.325 Pascales) es W = PΔV = 101.325Pa · (1671 - 1)·10⁻⁶m³ = 169.21 J. El calor absorbido sabemos que vale 2257J, luego ΔE = Q - W = 2257 - 169.21 = 2087.79 J.
 
@@ -124,5 +124,5 @@ $\frac{T'-T}{T''}&lt;\frac{T'-T}{T'}=1-\frac T{T'}$ [2]
 
 Comparemos ahora $1-\frac T{T'}$ con $\ln\left(\frac{T'}T\right)$: llamemos $x=\frac{T'}T; f(x)=\ln\left(x\right); g(x) = 1 - 1/x$; derivando las funciones f, g vemos que sus pendientes son f'(x) = 1/x, g'(x) = 1/x², ambas funciones son crecientes, pero la segunda  crece a menor tasa pues 1/x² < 1/x. Los valores mínimos de f, g se dan para x = 1 (que se corresponde con T = T') en donde coinciden, f(1) = g(1) = 0. Así pues, f(x) es siempre mayor que g(x) y por tanto [1] será siempre positiva: la entropía del universo siempre aumenta. En la figura se representan las funciones f(x) (azul) y g(x) (rojo), la diferencia en vertical entre las dos líneas es la variación de entropía del universo en función de x = T' / T. En el caso de T'' > T' la diferencia será mayor.
 
-$caption id="attachment_150756" align="alignnone" width="497"$![](/taller-matematicas/assets/images/compara_entropia.png) Comparación de la funciones de variación de entropía del sistema y de la fuente térmica
+![](/taller-matematicas/assets/images/compara_entropia.png) Comparación de la funciones de variación de entropía del sistema y de la fuente térmica
 {% endraw %}

@@ -33,7 +33,7 @@ $f\left(x,y\right)=\left\{\begin{array}{l}8xy,\;0&lt;x&lt;y&lt;1\\0\;\text{en ot
 
 El dominio de definición D de la función de densidad es el triángulo delimitado por los puntos (0,0), (1,0) y (1,1) en el plano XY:
 
-$caption id="attachment_1097" align="alignnone" width="555"$[![integra_area](/taller-matematicas/assets/images/integra_area.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/integra_area.png) Fig. 1: variación de Y en el dominio D: 0 < Y < X > 1
+![integra_area](/taller-matematicas/assets/images/integra_area.png) Fig. 1: variación de Y en el dominio D: 0 < Y < X > 1
 
 Para encontrar la probabilidad en todo el dominio calculamos la integral doble
 
@@ -56,7 +56,7 @@ $f_x\left(x\right)=\int_0^x8xy\operatorname dy=8x\left$\frac{y^2}2\right$_0^x=4x
 
 Para la marginal de y integramos respecto de x; los límites de integración los visualizamos ahora con una línia horizontal situada dentro del dominio D, desde el valor mínimo x=y sobre la recta hasta el valor máximo x=1:
 
-$caption id="attachment_1106" align="alignnone" width="548"$[![area2](/taller-matematicas/assets/images/area2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/area2.png) Fig. 2: variación de X en el dominio D: 0 < y < x < 1
+![area2](/taller-matematicas/assets/images/area2.png) Fig. 2: variación de X en el dominio D: 0 < y < x < 1
 
 Por tanto la integral es:
 
@@ -87,7 +87,7 @@ $P(\;X&gt;0.8\;\vert\;Y\;&lt;\;0.4)=\frac{P(\;X&gt;0.8\;\cap\;Y\;&lt;\;0.4)}{P(\
 
 El conjunto $X&gt;0.8\;\cap\;Y\;&lt;\;0.4$, teniendo en cuenta el dominio de definición $0&lt;x&lt;y&lt;1$, es un rectángulo:
 
-[![area](/taller-matematicas/assets/images/area-300x165.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/area.png)
+![area](/taller-matematicas/assets/images/area-300x165.png)
 
 Entonces la probabilidad de la intersección es:
 
@@ -127,7 +127,7 @@ $r_{xy}=\frac{\displaystyle\frac4{225}}{\sqrt{\displaystyle\frac2{75}}\sqrt{\dis
 
 Esta es una correlación positiva ("al aumentar X, aumenta también Y") pero baja, debido a que la relación entre X, Y no es lineal.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **P2)** **Función de densidad conjunta**. Sea la función de densidad conjunta $f(x,y)=\left\{\begin{array}{l}xy\;\text{si }0&lt;x&lt;1,\;0&lt;y&lt;1\\0\;\text{si no}\end{array}\right.$.
 
@@ -153,7 +153,7 @@ Sustituyendo:
 
 $\begin{array}{l}Cov\left(X,Y\right)=\int_0^1\operatorname dx\int_0^1\operatorname dy\cdot\left(x-\frac16\right)\left(y-\frac16\right)xy=\\\int_0^1\operatorname dx\int_0^1\operatorname dy\cdot\left(x^2y^2-\frac16x^2y-\frac16xy^2+\frac1{36}xy\right)=\\\int_0^1\operatorname dx\left(x^2\frac13-\frac16x^2\frac12-\frac16x\frac13+\frac1{36}x\frac12\right)=\\\frac13\left(\frac13-\frac1{12}\right)+\frac12\left(-\frac1{18}+\frac1{72}\right)=\frac1{16}\end{array}$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **P3).** **Probabilidad condicionada en funciones de densidad de probabilidad**. Una variable aleatoria continua X tiene por función de densidad $f(x)=kx(1-x)$ siempre que $0&lt;x&lt;1$, valiendo cero en caso contrario. Calcular la probabilidad condicionada $P(X&gt;1/3 | X&gt;1/4)$. ¿Cuál es su varianza?
 
@@ -177,7 +177,7 @@ Ya podemos calcular la varianza:
 
 $\begin{array}{l}Var\left(X\right)=\int\left(x-\mu_x\right)^2f\left(x\right)\operatorname dx=\int_0^1\left(x-\frac12\right)^2\cdot6x(1-x)\operatorname dx=\\6\int_0^1\left(-x^4+2x^3-\frac{5x^2}4+\frac x4\right)\operatorname dx=6\left$-\frac{x^5}5+2\frac{x^4}4-\frac54\frac{x^3}3+\frac14\frac{x^2}2\right$_0^1=\\\frac1{120}\end{array}$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **P4).** **Función de densidad conjunta**. Una variable aleatoria continua X tiene por función de densidad:
 
@@ -202,5 +202,5 @@ Por definición de la función de distribución $F(t)$ tenemos que $F(t)=P(T&lt;
 
 $f\left(t\right)=\frac{\operatorname d{}}{\operatorname dt}F(t)=\frac{\operatorname d{}}{\operatorname dt}\left(1-e^{2-2t}\right)=2e^{2-2t}.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 {% endraw %}

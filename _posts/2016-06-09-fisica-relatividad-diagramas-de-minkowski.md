@@ -65,7 +65,7 @@ Haciendo una tabla de valores (x, ct) para esta ecuación, encontramos los punto
 | 3,1622776602 
 | 3 
 
-$caption id="attachment_1718" align="alignnone" width="432"$![Fig. 3: hipérbola de calibración x² - (ct)² = 1](/taller-matematicas/assets/images/Minkowski2.png) Fig. 3: hipérbola de calibración x² - (ct)² = 1
+![Fig. 3: hipérbola de calibración x² - (ct)² = 1](/taller-matematicas/assets/images/Minkowski2.png) Fig. 3: hipérbola de calibración x² - (ct)² = 1
 Vemos que la hipérbola corta al eje x en el punto 1, use acerca asintóticamente a la línea espacio-tiempo de la luz; *los puntos de corte con los ejes x', x'', etc, de las otras referencias determinan la unidad de longitud en esas referencias vistas desde la referencia x en reposo*. Claramente se ve que la longitud unidad, en cualquier sistema en movimiento, vista desde el reposo, es mayor que la unidad del sistema en reposo, tendiendo a infinito para referencias que se muevan a velocidades cercanas a la de la luz, esto es una consecuencia de la fórmula de la contracción de longitudes de Lorentz:
 
 $triangle x=gammatriangle x'=gammacdot1xrightarrow{vrightarrow c}infty$

@@ -41,12 +41,12 @@ En Física se utiliza el [concepto campo](https://es.wikipedia.org/wiki/Campo_(f
 
 ### Campo eléctrico producido por varias cargas puntuales
 
-$caption id="attachment_150804" align="alignleft" width="135"$![](/taller-matematicas/assets/images/camp_electr3.png) Fig.3: las líneas del campo eléctrico de una única carga puntual son rectas que se cortan en la carga
+![](/taller-matematicas/assets/images/camp_electr3.png) Fig.3: las líneas del campo eléctrico de una única carga puntual son rectas que se cortan en la carga
 En el caso de una única carga puntual hemos visto que todas las las rectas soportes de las fuerzas, rectas que llamaremos **líneas de fuerza del campo** o simplemente líneas del campo  parten de un punto central donde se sitúa la única carga (fig. 3).
 
 ¿Qué pasa con las líneas si el campo es generado por dos cargas? Dado que la fuerza electrostática es acumulativa (se suman las contribuciones de todas las cargas) el campo eléctrico **E** también lo será, y en cada punto del espacio se sumaran los vectores de campo correspondientes a cada carga. Además, la fuerza **F** y el campo **E** decrecen con el cuadrado de la distancia, por ello, las líneas del campo se curvan; por cada punto del espacio pasa una línea de campo, de tal modo que el campo eléctrico en ese punto es tangente a la línea. En la figura 4 se representan dos cargas positivas iguales, y una pequeña carga de prueba en la que se suman los dos vectores E, E' generados por las fuentes del campo. Los vectores resultantes no apuntan a ningún centro, el campo resultante deja de ser central, y las líneas de campo (en color negro en la figura) se curvan.
 
-$caption id="attachment_150806" align="alignnone" width="387"$![](/taller-matematicas/assets/images/camp_electr4b.png) Fig. 4: campo y lineas de campo generadas por dos cargas puntuales iguales
+![](/taller-matematicas/assets/images/camp_electr4b.png) Fig. 4: campo y lineas de campo generadas por dos cargas puntuales iguales
 
 Hay que tener en cuenta que toda carga generará su propio campo eléctrico que se superpondrá a los ya existentes; por ello en lo expuesto hasta ahora hablamos de colocar "cargas de prueba" que se suponen mucho menores que las cargas generadoras del campo, de forma que se puede despreciar su contribución. Además, las cargas fuente, incluso siendo de mucha mayor magnitud que las de prueba, se supone que son de dimensiones puntuales para evitar complicaciones matemáticas.
 ### Campo del dipolo eléctrico
@@ -93,7 +93,7 @@ Cuando en vez de cargas puntuales tenemos cuerpos materiales cargados los modela
 
 El caso más sencillo de distribución de infinidad de cargas puntuales es el de una barra delgada de longitud 2L que tiene cargas sólo en una cara y además están distribuidas de forma uniforme; llamemos ρ a la densidad de carga eléctrica por unidad de longitud, que evidentemente será ρ = Q/2L siendo Q la carga total de la barra. y limitémonos a calcular al campo eléctrico en un punto P situado sobre la bisectriz de la barra, a una altura h:
 
-$caption id="attachment_150810" align="alignnone" width="452"$![](/taller-matematicas/assets/images/camp_electr5.png) Fig. 6: geometría para el cálculo del campo E producido por una línea homogénea de carga en un punto situado sobre la bisectriz de la línea
+![](/taller-matematicas/assets/images/camp_electr5.png) Fig. 6: geometría para el cálculo del campo E producido por una línea homogénea de carga en un punto situado sobre la bisectriz de la línea
 Tomando un elemento diferencial de longitud dx y situado a una distancia x del centro de la barra, por la geometría del problema vemos que la distancia r² será igual a x² + h², y la carga diferencial de ese elemento será dQ =  ρ·dx, por ello el campo diferencial creado por ese elemento en el punto P (punto azul en la figura) tendrá un módulo
 
 $\operatorname dE_1=k\frac{dQ}{r^2}=k\frac{\rho\cdot dx}{x^2+h^2}$
@@ -128,22 +128,22 @@ En el apartado anterior hemos visto que incluso en un caso simple (línea unidim
 
 Consideremos un **campo vectorial central**, que es aquel que hace corresponder a cada punto P del espacio un vector **V** que sigue la dirección OP, siendo O el centro del campo, un punto fijo (figura 7).
 
-$caption id="attachment_150816" align="alignnone" width="219"$![](/taller-matematicas/assets/images/Camp-central.png) Fig.7: Campo central, la masa agente situada en O
+![](/taller-matematicas/assets/images/Camp-central.png) Fig.7: Campo central, la masa agente situada en O
 El caso especial de la forma **V** = **r**·c/r² donde r es el módulo de OP (la distancia al centro del campo), **r** el vector unitario que indica la dirección de OP, y c es una constante que denominamos *masa agente del campo*; se denomina **campo newtoniano**. Son campos newtonianos el campo electrico, el campo magnético y el campo gravitatorio. Vamos a definir el [flujo del campo vectorial a través de una superfície](https://es.wikipedia.org/wiki/Flujo_de_un_campo_vectorial) infinitesimal dS, que denominamos $d\phi$, como el producto escalar **V**·d**S**, donde d**S** es el vector perpendicular a la superfície; siendo dS infinitesimal (muy pequeña), consideraremos que su curvatura es despreciable, y por tanto es plana (figura 8):
 
-$caption id="attachment_150817" align="alignnone" width="219"$![](/taller-matematicas/assets/images/flux_vector.png) Fig. 8: elemento diferencial de superficie, vector dS, y campo vectorial V que suponemos pasa por el centro de la superficie
+![](/taller-matematicas/assets/images/flux_vector.png) Fig. 8: elemento diferencial de superficie, vector dS, y campo vectorial V que suponemos pasa por el centro de la superficie
 $\operatorname d\phi=V\cdot dS=V\cdot dS\cdot\cos\left(\theta\right)$ [7]
 
 Definamos a continuación el [ángulo sólido](https://es.wikipedia.org/wiki/%C3%81ngulo_s%C3%B3lido) de la superficie dS con respecto al origen del campo central O. Unamos los extremos de la superficie dS con el punto O usando líneas OP, y definamos una esfera C de radio 1 con centro en O; las lineas OP cortaran a la esfera definiendo sobre ella una pequeña superficie dΩ a la que llamamos ángulo sólido de dS sobre C (figura 9).
 
-$caption id="attachment_150818" align="alignnone" width="410"$![](/taller-matematicas/assets/images/angle_sòlid.png) Fig. 9: ángulo sólido subtendido sobre la esfera C por el elemento de superficie dS
+![](/taller-matematicas/assets/images/angle_sòlid.png) Fig. 9: ángulo sólido subtendido sobre la esfera C por el elemento de superficie dS
 
 Veamos ahora una propiedad geometrica de los campos newtonianos: el flujo del campo a través de dS es:
 
 $\operatorname d\phi=V\cdot dS=V\cdot dS\cdot\cos\left(\theta\right)=\frac c{r^2}dS\cdot\cos\left(\theta\right)=\frac c{r^2}dS'$ [8]
 donde hemos igualado $dS\cdot\cos\left(\theta\right)=dS'$, que es la proyección de la superficie dS sobre la perpendicular al vector de campo V. Las superficies dS' y dΩ (Fig. 10) son paralelas, y están unidas por las mismas rectas al punto central O, se cumple entonces que la razón de sus áreas es igual a la razón de sus distancias al centro O al cuadrado:
 
-$caption id="attachment_150819" align="alignnone" width="367"$![](/taller-matematicas/assets/images/angle_sòlid2.png) Fig. 10: dS' y dΩ son paralelas, y están unidas por las mismas rectas al punto central O
+![](/taller-matematicas/assets/images/angle_sòlid2.png) Fig. 10: dS' y dΩ son paralelas, y están unidas por las mismas rectas al punto central O
 $\frac{\operatorname d\phi}{dS'}=\frac1{r^2}\Leftrightarrow dS'=r^2\operatorname d\phi$
 
 Si no ve el por qué el lector, piense que el área de la esfera es 4*π*r², el área de la esfera unitaria es 4*π*, y el área de una esfera que pase por dS' es 4*π*r², luego la razón de áreas es 4*π*r² : 4*π* = r². Usando esta proporción en la ecuación [8] obtenemos:
@@ -160,7 +160,7 @@ $\phi=\int_S\operatorname d\phi=\int_SV\cdot dS$  [10]
 
 Si el flujo total es positivo, diremos que es un *flujo entrante en S*, y si es negativo, será un *flujo saliente de S*. Si el centro del campo O está en el exterior de S, las lineas OP desde el centro que pasen por S cortaran a S en un número par de puntos; en cambio si O está en el interior de S, las lineas cortaran a S en un número impar de puntos (figura 11).
 
-$caption id="attachment_150820" align="alignnone" width="570"$![](/taller-matematicas/assets/images/flux_vector2.png) Fig.11: flujos provenientes del centro O a través de superficies cerradas
+![](/taller-matematicas/assets/images/flux_vector2.png) Fig.11: flujos provenientes del centro O a través de superficies cerradas
 Por tanto en el caso exterior cada linea creará una sucesión de flujos entrante-saliente-entrante-saliente-etc en número par, o sea, de flujos positivos y negativos alternados; hemos visto que el flujo no depende de la distancia al centro (ecuación [9]) sino sólo del ángulo sólido subtendido, que será el mismo para cada elemento de superficie sobre las lineas que parten de O. Por ello, para un punto O exterior, los flujos entrantes y salientes tienen el mismo valor y se anulan entre sí, resultando un flujo total nulo:
 
 En un campo newtoniano, el flujo total a través de una superficie cerrada que no contiene al centro del campo es nulo.
@@ -181,7 +181,7 @@ Si tenemos un conjunto de cargas, cada carga creará su flujo de campo, y el flu
 
 Como ejemplo de la utilidad del concepto de flujo de campo y del teoriema de Gauss calcularemos el campo electrico creado por una placa cargada uniformemente, que supondremos de extensión muy grande, sobre un punto P situado a una altura h del plano.  Imaginemos otro punto P' situado al otro lado del plano, simétrico a P, y pensemos en un cilindro con eje PP' y de àrea superior dS (en la figura 12 vemos una vista lateral del plano cargado y de la situación).
 
-$caption id="attachment_150821" align="alignnone" width="421"$![](/taller-matematicas/assets/images/Gauss.png) Fig. 12: usando el teorema de Gauss para calcular el campo eléctrico E
+![](/taller-matematicas/assets/images/Gauss.png) Fig. 12: usando el teorema de Gauss para calcular el campo eléctrico E
 Por simetría el campo **E** ha de ser vertical y en las direcciones indicadas en la figura; los vectores d**S** normales a las bases del cilindro tendrán la misma dirección que **E**, luego el producto escalar resultante, teniendo en cuenta que no habrá flujo de **E** en las paredes laterales del cilindro por ser paralelas al campo (luego el vector normal a las paredes es perpendicular a **E** y su producto escalar, nulo) es $\operatorname d\phi=E\cdot dS+E\cdot dS=2E\cdot dS$.  Si llamamos $\sigma$ a la densidad de carga por unidad de superfície de la placa, la carga encerrada dentro del cilindro será $\operatorname dQ=\sigma\cdot\operatorname dS$. Por el teorema de Gauss, el flujo ha de ser entonces $\operatorname d\phi=4\mathrm\pi\cdot\mathrm k\cdot\mathrm\sigma\cdot\operatorname d\mathrm S$; igualando las dos expresiones para el flujo obtenemos:
 
 $d\phi=4\pi k\sigma\cdot\cancel{dS}=2E\cdot\cancel{dS}\Leftrightarrow\boxed{E=2\pi k\sigma}$
@@ -204,7 +204,7 @@ Vemos que la ingensidad de campo E creada por una placa infinita cargada homogé
 
 **Problema 1** - En la figura vemos la geometría del problema: representamos una superficie esférica S interior y concéntrica  a la esfera cargada (en azul) y sobre S un punto cualquiera P, por la que trazamos una línea que pasa por el centro O y divide a las esferas en dos mitades simétricas; por simetría, el vector campo **E**(P) en el punto P no puede estar dirigido hacia ninguno de las dos mitades en particular, así que ha de ser radial. Además, el punto P podría ser cualquier punto situado en S pues tenemos simetría esférica, luego el módulo del campo E será el mismo en todo S, es decir, el valor de E depende sólo del radio de S.
 
-$caption id="attachment_150832" align="alignnone" width="341"$![](/taller-matematicas/assets/images/TGauss.png) Por simetría del problema respecto cualquier recta que pase por O, el campo E ha de tener el mismo módulo en toda esfera S interior, y ha de ser radial
+![](/taller-matematicas/assets/images/TGauss.png) Por simetría del problema respecto cualquier recta que pase por O, el campo E ha de tener el mismo módulo en toda esfera S interior, y ha de ser radial
 Vamos a aplicar el teorema de Gauss a la superficie S: primero de todo damos forma matemática a las consideraciones anteriores sobre el campo E:
 
 $\overrightarrow E(P)=\frac1rE(r)\cdot\overrightarrow{OP}$,
@@ -238,7 +238,7 @@ $E\left(r\right)=\frac43\pi\frac{a^3}{r^2}\rho\frac1{4\pi\varepsilon_0}=\frac{\r
 
 O sea que en el interior de la esfera el campo E crece linealmente con la distancia a centro, y en el exterior decrece cuadráticamente:
 
-$caption id="attachment_150834" align="alignnone" width="321"$![](/taller-matematicas/assets/images/camp_esfera.png) Variación del campo E con la distancia r al centro en el caso de una esfera de radio a cargada uniformemente
+![](/taller-matematicas/assets/images/camp_esfera.png) Variación del campo E con la distancia r al centro en el caso de una esfera de radio a cargada uniformemente
 
 **Problema 2** - La complicación de este problema está en ver como tratar la cavidad dentro de la esfera; la forma más fácil consiste en darse cuenta de que la situación es equivalente, en cuanto al cálculo del campo E, a suponer que la esfera, de radio R y centro en O, está cargada uniformemente en su totalidad con una densidad de carga $\rho$, y que la cavidad es otra superficie esférica, de radio r < R y centro O', a la que añadimos, superponiéndola, otra densidad de carga de igual valor pero signo contrario, $-\rho$, con ello, la carga neta en la cavidad será cero. Entonces, debido a que el campo electrico es acumulativo, podemos calcular el campo E por superposición del campo creado por toda la esfera de radio R, al que llamamos $E_O$, más el campo creado por la carga negativa en la esfera de radio r, al que llamamos $E'_O$. La geometría de este esquema lo vemos en la imagen, donde hemos dibujado un punto P cualquiera dentro de la cavidad, los dos campos generados en ese punto y el campo total.
 

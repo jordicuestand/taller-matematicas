@@ -18,7 +18,7 @@ math: true
 
  	- [Exact equations](#exactas)
 
-[![separator2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separator2](/taller-matematicas/assets/images/separador2.png)
 ## Separable equations
 
 The separable differential equations are those of the form $dy / dx = H (x, y)$ where $H (x, y)$ can be expressed either as the quotient $H (x, y) = f (x) / g (y)$ or as the product $H (x, y) = f (x) text {·} g (y)$.
@@ -35,7 +35,7 @@ Let's $H(x,y) = 2x sqrt{y-1} = f(x) text{·} g(y),$ and let's integrate each fun
 int g^{-1}(y)dy=intfrac{1}{sqrt{y-1}}dy=2sqrt{y-1}.$ Solutions are $2sqrt{y-1}=x^{2}+CRightarrow y=left(frac{x^{2}+C}{2}right)^{2}+1
 .$ Note that the function $y (x) = 1$ is also a solution of the equation, but it is not included in the general solution $y = left ( frac {x ^ {2} + C} {2} right) ^ {2} +1,$ that is to say that for all *C* we will have $y = left (frac {x ^ {2} + C} {2} right) ^ {2} +1 neq1$. We call solutions not included in the general solution **singular solutions** of the differential equation.
 
-[![separator2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separator2](/taller-matematicas/assets/images/separador2.png)
 
 ## Unique solutions
 
@@ -43,7 +43,7 @@ In example 2 we have seen that we can have solutions that are not included in th
 
 ### Enveloping curve of a bundle of curves and singular solution
 
-$caption id="attachment_868" align="alignnone" width="436"$[![Two one-beam lines (blue and red) and beam envelope curve (green)](/taller-matematicas/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Two one-beam lines (blue and red) and beam envelope curve (green)
+![Two one-beam lines (blue and red) and beam envelope curve (green)](/taller-matematicas/assets/images/Feix_corbes_env1.png) Two one-beam lines (blue and red) and beam envelope curve (green)
 Given a bundle of curves $F(x,y,C)=0$ the curve $f(x,y)$ is called the beam envelope curve such that it is tangent to all the curves of the beam.
 
 **Example 3**: The image shows two lines of the line bundle $y=(1-10/C)*x+(10-C)$, specifically the two lines corresponding to the values $C=3$ in red and $C=6$ in blue, and the enveloping curve of the beam, which is tangent to the first line at a point close to $x=1,  y=5$ and the second line about $x=3.5, y=1.5$.
@@ -52,7 +52,7 @@ Remember that we can associate to any bundle of curves $F(x,y,C)=0$ a differenti
 
 **Example 4**.Consider the parabolal bundle $4y=(x + C)^2$, all curves are tangent to the X axis at some point; the image depicts three of the beam curves, tangent to $y=$0 at points $x=-3, -2, -$1.
 
-$caption id="attachment_866" align="alignnone" width="502"$[![Parabola beam 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Parabola beam 4y=(x + C)²
+![Parabola beam 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png) Parabola beam 4y=(x + C)²
 What is the differential equation of the curve beam? We derive with respect to *x *the equation of the beam: $4y&#39;=2(x + C)$, and eliminate the constant *C* using this equality and the equation of the beam:
 
 $left.begin{array}{r}4y&#39;=2(x+C)Rightarrow C=2y&#39;-x\4y=(x;+; C)^2end{array}right}Rightarrow4y=(2y&#39;{)^2=4y&#39;^2}Rightarrow y=y&#39;^2.$
@@ -99,7 +99,7 @@ The envelope is $y=10+x-2sqrt{10x}.$
 
 $begin{array}{l}F(x,y,C)=4y-(x+C)^2=0;\frac{partial F}{partial C}=2(x+C)=0Rightarrow C=-x;\F(x,y)=4y-(x-x)^2=4y=0Rightarrowboxed{y=0}.end{array}$
 
-[![separator2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separator2](/taller-matematicas/assets/images/separador2.png)
 ## Homogeneous functions. Application to differential equations.
 
 A function $F(x,y)$ is homogeneous of degree n if $F(lambda x,lambda y)=lambda^nF(x,y)$ for every parameter $lambdaneq0.$ Per example, the function $F(x,y)=xy-x^2$ is homogeneous of degree 2, since $F(lambda x,lambda y)=lambda xlambda y- ( lambda x)^2=lambda^2F(x,y).$
@@ -177,7 +177,7 @@ The lines $x+y+1=0$ and $x+y-1$ have no intersection, they are parallel; we make
 
 $begin{array}{l}Y&#39;-1=frac{Y+1}{Y-1};;frac{operatorname dY}{operatorname dx}=frac{Y+1}{Y-1}+1=frac{Y+1+Y-1}{Y-1}=frac{2Y}{Y-1};\intfrac{Y-1}{2Y}operatorname dY=intoperatorname dx;\frac12intleft(1-frac1Yright)operatorname dY=x+C;\Y-lnleft(Yright)=2x+C;\x+y-lnleft(x+yright)=2x+C;\y=x+lnleft(x+yright)+C.end{array}$
 
-[![separator2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separator2](/taller-matematicas/assets/images/separador2.png)
 
 ## Exact equations
 

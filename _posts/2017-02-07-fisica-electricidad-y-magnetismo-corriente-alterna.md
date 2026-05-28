@@ -30,7 +30,7 @@ Es toda corriente eléctrica cuya intensidad es una función periódica del tiem
 
 ### Circuito RLC serie con corriente alterna
 
-$caption id="attachment_150438" align="alignnone" width="229"$![Fig. 1: Circuito RLC serie](/taller-matematicas/assets/images/corrent_alterna1.png) Fig. 1: Circuito RLC serie
+![Fig. 1: Circuito RLC serie](/taller-matematicas/assets/images/corrent_alterna1.png) Fig. 1: Circuito RLC serie
 En la figura 1 vemos un tramo de circuito con una resistencia R, una inductancia L y un condensador C conectados en serie; supongamos que es recorrido por una c.a. de intensidad $i=I\sin\left(\omega t\right)$, y que en un instante t circula de izquierda a derecha, provocando una caída de tensión $V_A-V_B=iR$ en la resistencia, otra caída $V_B-V_C=L·i'$ en la inductancia, siendo i' la derivada respecto del tiempo de la intensidad i, y por último una caída $BV_c-V_D=q/C$ en el condensador, siendo q su carga y C su capacidad. En un instante dt la corriente lleva al condensador una carga dq = i·dt, por tanto la carga total es $q=\int i\cdot\operatorname dt$. La caída total de tensión en el tramo RLC es la suma:
 
 $\triangle V=Ri+L\frac{\operatorname di}{\operatorname dt}+\frac1C\int i\cdot\operatorname dt$ [1]
@@ -39,7 +39,7 @@ Como la intensidad es una función sinusoidal, y las derivadas e integrales de f
 
 $\triangle V=V_0\sin\left(\omega+\varphi\right)$
 
-$caption id="attachment_150439" align="alignnone" width="259"$![corrent_alterna2](/taller-matematicas/assets/images/corrent_alterna2.png) Fig. 2: el circuito RLC con los distintos puntos A, B, C, D a considerar para el cálculo de las diferencias de potencial
+![corrent_alterna2](/taller-matematicas/assets/images/corrent_alterna2.png) Fig. 2: el circuito RLC con los distintos puntos A, B, C, D a considerar para el cálculo de las diferencias de potencial
 Sustituyendo en [1]:
 
 $V_0\sin\left(\omega+\varphi\right)=V_A-V_D=Ri+L\frac{\operatorname di}{\operatorname dt}+\frac1C\int i\operatorname dt$
@@ -60,7 +60,7 @@ Propiedad 2: La integral temporal de la función sinusoidal es también sinusoid
 
 Un movimiento oscilatorio simple de pulsación $\omega$ y amplitud A puede representarse por un vector de módulo constante igual a la amplitud A, que efectúa un movimiento circular uniforme con velocidad angular constante $\omega$, es la denominada representación de Fresnel de la oscilación. Entonces, como tanto la intensidad i(t) como su derivada e integral tienen la misma pulsación, si las representamos con vectores de Fresnel girarán con la misma velocidad angular, con módulos distintos, y con un desfase de $\frac{\mathrm\pi}2$ entre ellos; la suma [1] se podrá obtener como suma de los tres vectores.
 
-$caption id="attachment_150442" align="alignnone" width="368"$![Fig. 3: representación de Fresnel de la intensidad en el circuito RLC](/taller-matematicas/assets/images/corrent_alterna3.png) Fig. 3: representación de Fresnel de las diferencias de potencial en el circuito RLC en cada punto
+![Fig. 3: representación de Fresnel de la intensidad en el circuito RLC](/taller-matematicas/assets/images/corrent_alterna3.png) Fig. 3: representación de Fresnel de las diferencias de potencial en el circuito RLC en cada punto
  En la figura 3 se representan las diferencias de potencial: la $V_A-V_B$ debido a la resistencia R tiene por módulo RI, y lo representamos sobre el eje X; a continuación, la $V_B-V_C$ debida a la inductancia L tiene por módulo $L\omegaI$ y forma un ángulo de 90⁰ en el sentido contrario a las agujas del reloj con el vector $V_A-V_B$ (propiedad 1); por último, la $V_C-V_D$ debida al condensador tiene por módulo $I(C\omega)^{-1}$ y forma un ángulo de -90⁰ con el vector $V_A-V_B$ (propiedad 2). La suma vectorial de estos tres vectores se representa en azul, y nos da la diferencia de potencial del tramo completo del circuito, $V_A-V_D$. Llamando $\theta$ al ángulo del vector $V_A-V_D$, es evidente que
 
 $\tan\left(\theta\right)=\frac{L\omega I_0-I_0C^{-1}\omega^{-1}}{RI_0}\Rightarrow\theta=\tan^{-1}\left(\frac{L\omega I_0-{\displaystyle\frac1{C\omega}}}R\right)$ [2]
@@ -111,7 +111,7 @@ $V=R\cdot I=\frac{40}{\sqrt3}\frac{3\sqrt3}2\sin\left(400t\right)=60\sin\left(40
 
 Teniendo en cuenta el ángulo negativo, el diagrama de Fresnel del circuito tiene este aspecto:
 
-$caption id="attachment_150450" align="alignnone" width="301"$![Fig. 4: diagrama de Fresnel para una reactancia X negativa](/taller-matematicas/assets/images/corrent_alterna4.png) Fig. 4: diagrama de Fresnel para una reactancia X negativa
+![Fig. 4: diagrama de Fresnel para una reactancia X negativa](/taller-matematicas/assets/images/corrent_alterna4.png) Fig. 4: diagrama de Fresnel para una reactancia X negativa
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ### Valor eficaz de una corriente alterna
@@ -142,10 +142,10 @@ $f=\frac\omega{2\mathrm\pi}=\frac1{2\mathrm\pi\sqrt{LC}}$ [6]
 
 El diagrama de Fresnel de un circuito RLC en resonancia tiene este aspecto:
 
-$caption id="attachment_150451" align="alignnone" width="303"$![Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia](/taller-matematicas/assets/images/corrent_alterna5.png) Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia
+![Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia](/taller-matematicas/assets/images/corrent_alterna5.png) Fig. 5: diagrama de Fresnel de un circuito RLC en resonancia
 Vemos que las variaciones de tensión en la inducción y el condensador tienen el mismo valor, pero con signos contrarios. Con ello, la variación en todo el circuito es la misma que en la resistencia, y las tensiones en la inducción y el con-
 
-$caption id="attachment_150452" align="alignright" width="204"$![Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión](/taller-matematicas/assets/images/corrent_alterna6.png) Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión
+![Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión](/taller-matematicas/assets/images/corrent_alterna6.png) Fig. 6: diagrama de tensiones en un circuito RLC resonante usado como amplificador de tensión
 densador no tienen efectos externos al circuito, son valores internos. Ahora bien, podría darse el caso de que estas tensiones internas fueran grandes, incluso mucho mayores que la tensión externa aplicada (la que medimos en los extremos AD del circuito), apareciendo *sobretensiones* en los componentes L y C que hay que tener en cuenta en los aislamientos del circuito. Este hecho se puede aprovechar para diseñar *amplificadores de tensión*, en el que un circuito RLC produce internamente altas tensiones a partir de una tensión aplicada menor; una inductancia sometida a altas tensiones variables se comporta como un generador de ondas electromagnéticas: una antena emisora.
 
 ### Potencia, corriente activa y reactiva

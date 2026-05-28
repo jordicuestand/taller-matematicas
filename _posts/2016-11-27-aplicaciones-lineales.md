@@ -222,7 +222,7 @@ Fig. 4: obtención del primer elemento del producto de matrices
 
 En general, multiplicamos uno por uno los elementos de la fila n de A por los elementos de la columna m de B para obtener el elemento de la fila n y columna m de A·B:
 
-$caption id="attachment_150273" align="alignnone" width="307"$![Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B](/taller-matematicas/assets/images/aplica_lineals5.png) Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B
+![Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B](/taller-matematicas/assets/images/aplica_lineals5.png) Fig. 5: obtención del último elemento de la 1ª fila del producto de matrices A·B
 **NOTA**: las operaciones con matrices pueden, y creo que deberían hacerse en el siglo XXI, con calculadora o ordenador; hay numerosas páginas que hacen cálculo matricial on-line, como por ejemplo [https://matrixcalc.org/es/](https://matrixcalc.org/es/)  o la potente página [Wolfram Alpha](https://www.wolframalpha.com/examples/Math.html) que todo estudiante debería conocer y utilizar,
 
 También se puede definir la **inversa de una matriz** (A), como la matriz $\left(A\right)^{-1}$ tal que el producto de ambas es igual a la matriz identidad, una matriz con unos en la diagonal y ceros en el resto de posiciones:

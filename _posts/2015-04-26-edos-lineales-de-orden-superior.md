@@ -42,7 +42,7 @@ math: true
 
  	- [Ecuación de Euler](#euler)
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 # EDOs lineales de segundo orden
 
@@ -57,7 +57,7 @@ Observemos que el principio de superposición se aplica por igual a ecuaciones l
 
 **Ejemplo 1**:  $y_{1}=\cos x$ e $y_{2}=\sin x$ son dos soluciones independientes de la ecuación $\mbox{y''+y=0}$, por tanto $y=c_{1}\cos x+c_{2}\sin x$ es la solución general.
 
-#### [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+#### ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 #### Combinaciones lineales de soluciones e independencia lineal
 
@@ -77,7 +77,7 @@ $\begin{bmatrix}e^x&amp;e^{-x}&amp;Cosh\left(x\right)\\e^x&amp;-e^{-x}&amp;Sinh\
 
 pues la primera y la última fila del determinante son iguales,y por la propiedades de los determinantes, el resultado es cero.
 
-#### [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+#### ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 #### Caso de coeficientes constantes: ecuación característica
 
@@ -94,7 +94,7 @@ que se reduce a una ecuación algebraica de segundo grado en r, la cual se deno
 **Ejemplo 3**: Resolver $y''-6y'=0$
 
 La ecuación característica se obtiene directamente sustituyendo la "y" por "r" y el orden de la derivada por el exponente correspondiente:  $r^2-6r=0$; la solución es $r^2-6r=0\Rightarrow r_1=0,\;r_2=6$, y la solución general es $y=c_1e^{0x}+c_2e^{6x}=c_1+c_2e^{6x}$.
-#### [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+#### ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 #### Caso de que la ecuación característica tenga solución única
 
@@ -103,7 +103,7 @@ Si la ecuación característica tiene una raíz doble $r_{1}=r_{2}=r$ entonce
 **Ejemplo 4**: Resolver $y''-2y'+y=0.$
 
 La ecuación característica $r^{2}-2r+1=0$ tiene una única solución $r=1$, y por tanto la solución general será $y=\left(c_{1}+c_{2}x\right)e^{x}$.
-#### [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+#### ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 #### Caso de que la ecuación característica tenga soluciones complejas
 
@@ -113,7 +113,7 @@ Cuando la ecuación característica tenga un par de raíces complejas conjugada
 
 La ecuación característica $r^{2}-4r+5=0$ tiene raíces complejas $r_{1}=2+i, r_{2}=2-i$, la solución general és $y=e^{2x}\left(c_{1}\cos x+c_{2}\sin x\right)$.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 ## Ecuaciones lineales de segundo orden no homogèneas
 
 La ecuación lineal no homogènea $A(x)y''+B(x)y'+C(x)y=F(x)$, por ser lineal,  tiene la propiedad de que, si tenemos una solución particular cualquiera $y_{p}(x)$, y si sabemos resolver la ecuación homogénea asociada $A(x)y''+B(x)y'+C(x)y=0$, siendo $y_{h}(x)$ la solución general
@@ -121,7 +121,7 @@ de la homogènea, entonces la solución general de la ecuación no homogénea e
 
 **Ejemplo 6**: la función $y_{p}(x)=3x$ es una solución particular de $y''+4y=12x$. Si resolvemos la ecuación homogènia $y''+4y=0$ obtenemos  $y_{h}(x)=c_{1}\cos x+c_{2}\sin x$, así pues la solución general de la no homogénea es $y=3x+c_{1}\cos x+c_{2}\sin x$.
 
-####  [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+####  ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Método de los coeficientes indeterminados
 
@@ -153,7 +153,7 @@ $\begin{array}{l}y_p=me^x\Rightarrow y'_p=y''_p=y;\\y_p''+y_p=-2e^x\Leftrightarr
 
 entonces la solución particular será la suma de las obtenidas: $y_p=2x^3-12x-e^x.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ### Caso de que la solución particular a ensayar sea solución de la homogénea asociada
 
@@ -165,7 +165,7 @@ $\begin{array}{l}y_p=mxe^x\Rightarrow y'_p=me^x+mxe^x=\left(1+x\right)me^x;y''_p
 
 Tenemos pues la solución general $y=y_h+y_p=C_1e^x+C_2e^{-x}-xe^x.$
 
-## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+## ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## 
 
@@ -256,7 +256,7 @@ obtenemos la solución general:
 
 $y=C_1e^x+C_2e^{-x}+C_3\cos\left(x\right)+C_4\sin\left(x\right)-\frac34x\cdot\sin\left(x\right)$
 
- [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+ ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Ecuación de Euler
 

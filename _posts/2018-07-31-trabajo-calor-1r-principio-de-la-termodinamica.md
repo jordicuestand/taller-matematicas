@@ -30,11 +30,11 @@ La *Termo-dinámica* se ocupa de la dinámica (movimiento, transferencia) térmi
 
 Una herramienta útil para entender y trabajar con cambios de estado es el diagrama de presión y volumen, que muestra como un punto cada valor de esas magnitudes, y como una línea su evolución estado a estado.  Por ejemplo, consideremos un gas encerrado en un cilindro con un émbolo encima del cual hemos colocado un conjunto de pequeños pesos, que vamos quitando uno a uno (figura 1).
 
-$caption id="attachment_150669" align="alignnone" width="168"$![](/taller-matematicas/assets/images/gas-piston.png) Fig. 1: un gas comprimido en un pistón con una presión P que variamos quitando unos pequeños pesos
+![](/taller-matematicas/assets/images/gas-piston.png) Fig. 1: un gas comprimido en un pistón con una presión P que variamos quitando unos pequeños pesos
 
 El  gas, cuando no tocamos los pesos, y si lo hemos dejado en reposo, estará en *equilibrio termodinámico*: no hay flujo de calor y la presión y volumen están estables; tendrá una presión P y un volumen V representados por el punto A del diagrama PV (figura 2).
 
-$caption id="attachment_150671" align="alignnone" width="376"$![](/taller-matematicas/assets/images/clapeyron1.png) Fig.2: diagrama PV de Clapeyron, mostrando cambios irreversibles AB, BA', A'B', ...
+![](/taller-matematicas/assets/images/clapeyron1.png) Fig.2: diagrama PV de Clapeyron, mostrando cambios irreversibles AB, BA', A'B', ...
 
 Entonces levantamos uno de los pesos y la presión disminuye bruscamente: el sistema está ahora en el punto B, que no es un estado de equilibrio (no es estable), entonces el gas se expande espontáneamente hasta alcanzar el punto A' que vuelve a ser de equilibrio.  Vamos repitiendo el procedimiento con los otros pesos, y el gas va pasando por los estados  A",  A''', ...etc hasta llegar al estado final C. La línea continua azul que une todos los estados de equilibrio A, A', ..., C representa una transformación suave desde el estado inicial A hasta el final C sin que el sistema deje de estar en equilibrio.
 
@@ -47,7 +47,7 @@ El estudio de las tranformaciones irreversibles, la *termodinámica de los proce
 
 En el ejemplo del gas en un cilindro de la figura 1, en el cambio brusco de estado AB varia la presión pero no el volumen, que aumenta: decimos que es una *transformación isócora*. Cuando el gas se expande en el cambio BA', lo hace a presión constante: es una *transformación isobárica*.
 
-$caption id="attachment_150672" align="alignnone" width="596"$![](/taller-matematicas/assets/images/bany-tèrmic.png) Fig. 3: sistema de la figura 1 envuelta en un baño térmico a temperatura constante
+![](/taller-matematicas/assets/images/bany-tèrmic.png) Fig. 3: sistema de la figura 1 envuelta en un baño térmico a temperatura constante
 
 Si mantenemos la temperatura constante, por ejemplo fabricando el cilindro de un material muy conductor del calor y rodeándolo de un baño térmico (un entorno que no varia de temperatura por su gran capacidad calorífica, por ejemplo, una habitación acondicionada o una piscina, figura 3) entonces es una *transformación isotérmica;* supongamos que el sistema es un gas perfecto, entonces se cumplirá, para una transformación isotérmica, que PV = cte, y la representación gráfica de la curva de estados de equilibrio del gas ideal en el diagrama PV será una hipérbola con asíntotas en los ejes, tal como la línea azul de la figura 2.
 ### Trabajo realizado por dilatación
@@ -57,12 +57,12 @@ $W=\int_{V_1}^{V_2}P\operatorname dV$ [1]
 
 En el diagrama PV, esta integral coincide con el área bajo la curva de cambio de estado (figura 4)
 
-$caption id="attachment_150673" align="alignnone" width="341"$![](/taller-matematicas/assets/images/treball-pv.png) Fig. 4: El trabajo realizado por el sistema al expandirse de A a B es el área rayada
+![](/taller-matematicas/assets/images/treball-pv.png) Fig. 4: El trabajo realizado por el sistema al expandirse de A a B es el área rayada
 
 Si en vez de una expansión tenemos una contracción, el desplazamiento cambia de signo, y el trabajo resultante es negativo: es trabajo realizado sobre el sistema. Tenemos pues: si el sistema realiza un trabajo W, éste tendrá un valor positivo, y si se realiza un trabajo sobre el sistema, tendrá un valor negativo.
 ### Transformaciones cíclicas
 
-$caption id="attachment_150675" align="alignnone" width="324"$![](/taller-matematicas/assets/images/cicle.png) Fig.5: una transformación termodinámica PV cíclica, o brevemente, un ciclo
+![](/taller-matematicas/assets/images/cicle.png) Fig.5: una transformación termodinámica PV cíclica, o brevemente, un ciclo
 
 Son transformaciones que empiezan y acaban en el mismo estado. En la figura 5 vemos representado un ciclo en el diagrama PV recorrido en el sentido de las agujas del reloj; al recorrer la rama superior el trabajo de dilatación realizado será igual al área bajo la curva roja, en cambio al recorrer la rama inferior el sistema se contrae, luego el trabajo es negativo, y será igual al área bajo la curva azul cambiada de signo. El trabajo total del ciclo será la suma de los dos anteriores, y se ve claramente que será igual al área contenida dentro del ciclo y tendrá un valor positivo (trabajo neto realizado por el sistema).
 
@@ -73,7 +73,7 @@ El principio de conservación de la energía enuncia que ésta nunca se pierde s
 1r principio: Si un sistema absorbe una cantidad de calor Q i una cantidad de trabajo W, y emite una cantidad de calor Q' y realiza una cantidad de trabajo W, se cumple siempre que:
 *Q + Q' = W + W' [2]*
 
-$caption id="attachment_150677" align="alignnone" width="487"$![](/taller-matematicas/assets/images/1r-principi-Termo.png) Fig. 6: balance entre calor absorbido y emitido, y trabajo absorbido y realizado
+![](/taller-matematicas/assets/images/1r-principi-Termo.png) Fig. 6: balance entre calor absorbido y emitido, y trabajo absorbido y realizado
 
 El 1r principio no es más que un balance energético donde usamos el trabajo para explicar lo que sucede con el calor que "desaparece"; observemos los convenios de signo: el trabajo realizado por el sistema y el calor absorbido por él se consideran de signo positivo, mientras que el calor emitido por el sistema y el trabajo recibido sobre él son negativos. Pero no significa que el trabajo sea una forma de energía; parecería pues que el 1r principio violaría la conservación de la energía, veamos que esto no es así.
 ### Energía interna y magnitudes conservativas
@@ -100,7 +100,7 @@ Por ejemplo si un sistema queda totalmente definido por las magnitudes presión 
 P2) El trabajo W no es una función de estado del sistema, para cada estado no es posible asignar un único valor de W.
 En efecto, sabemos que el valor del trabajo es igual al área definida por la curva de cambio de estado PV y el eje V; en la figura 7 vemos tres trayectorias distintas entre los mismos estados A, B, y cada una representa un trabajo distinto. Este hecho también se enuncia diciendo que *el trabajo no es una magnitud conservativa*, significando que si hacemos un ciclo ABA, el trabajo total no tiene porque ser nulo, pues dependerá de las trayectorias seguidas. En cambio* la energía interna es una magnitud conservativa*, pues siempre la recuperaremos en un ciclo (variación total nula) independientemente del camino seguido.
 
-$caption id="attachment_150679" align="alignnone" width="312"$![](/taller-matematicas/assets/images/treball-no-conservatiu.png) Fig. 7: El trabajo ralizado en una tranasformación no depende sólo de los estados inicial A y final B
+![](/taller-matematicas/assets/images/treball-no-conservatiu.png) Fig. 7: El trabajo ralizado en una tranasformación no depende sólo de los estados inicial A y final B
 
 Con esto podemos reformular el 1r principio en una forma equivalente:
 1r principio: El calor absorbido por un sistema se invierte íntegramente en el trabajo realizado por él más su incremento de energía interna, $Q=W+\triangle E$. [3]
@@ -154,7 +154,7 @@ que nos da la *ecuación de los estados de las transformaciones adiabáticas de 
 
 La figura 8 compara gráficamente las transformaciones adiabáticas con las isotérmicas de gases perfectos, en las que PV = cte:
 
-$caption id="attachment_150683" align="alignnone" width="467"$![](/taller-matematicas/assets/images/adiabátiques-PV.png) Fig.8: transformaciones isoterma y adiabáticas de gases perfectos en el diagrama PV
+![](/taller-matematicas/assets/images/adiabátiques-PV.png) Fig.8: transformaciones isoterma y adiabáticas de gases perfectos en el diagrama PV
 
 Observamos que la isotérmica tiene una pendiente menor que todas las adiabáticas, pues $\gamma&gt;1$. Asintóticamente todas coinciden en los ejes P y V.
 ### Máquina térmica de Carnot para gases perfectos

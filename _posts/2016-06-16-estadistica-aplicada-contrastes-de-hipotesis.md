@@ -26,7 +26,7 @@ Veamos ahora que pasa con el caso contrario: el fabricante no dice la verdad, y 
 
 En la figura 1 se muestra el aspecto de las probabilidades de aceptación de una muestra en función de la fracción defectuosa en la población; la línea vertical simboliza la tolerancia anunciada por el fabricante, si la fracción defectuosa es menor, la producción es mejor de lo que anuncia, y si es mayor, la producción resulta peor de lo anunciado. Por supuesto, si la fracción defectuosa es cero (producción perfecta) seguro que aceptaremos cualquier muestra, y no hay error posible. Pero entre el valor de cero y la tolerancia de 0,01 vemos que la probabilidad de no aceptar (rechazar) la muestra va aumentando, en esa región se produce el error de tipo I o α. Por otro lado, cuando la producción es más defectuosa de lo anunciado, sigue habiendo una probabilidad significativa de aceptar la muestra (región β).
 
-$caption id="attachment_1744" align="alignnone" width="515"$![](/taller-matematicas/assets/images/hipotesis-1.png) Fig. 1: Curva de aceptación de una muestra, dependiendo de la proporción real de defectos en la población
+![](/taller-matematicas/assets/images/hipotesis-1.png) Fig. 1: Curva de aceptación de una muestra, dependiendo de la proporción real de defectos en la población
 Así, la curva divide el cuadrante XY en cuatro regiones: las de error I y II, y las otras dos regiones que corresponden a cuando acertamos en el control: aceptamos la muestra que proviene de una población correcta, o bien rechazamos la muestra que proviene de una población incorrecta.
 
 ### La matemática del contraste de hipótesis

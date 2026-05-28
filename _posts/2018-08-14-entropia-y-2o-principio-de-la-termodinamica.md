@@ -16,7 +16,7 @@ Lo que se explica a continuación sigue el siguiente esquema: 1) exploramos la r
 
 En [Trabajo, calor y primer principio de la Termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/) se estudian los *ciclos de Carnot*, que son sucesiones continuas de cambios de estado *reversibles* (en cada instante el sistema está siempre en equilibrio termodinámico) y  *cíclicos* (estado final igual al estado inicial) formados por dos transformaciones isotermas (temperatura T = cte) y dos adiabáticas (calor transferido Q = 0). En la figura 1 vemos en un diagrama Presión-Volumen las isotermas (transformaciones desde 1 a 2 y de 3 a 4) y las adiabáticas 2->3 y 4->1.
 
-$caption id="attachment_150685" align="alignnone" width="268"$![](/taller-matematicas/assets/images/Carnot-1.png) Fig.1: ciclo de Carnot representado en el diagrama Presión-Volumen
+![](/taller-matematicas/assets/images/Carnot-1.png) Fig.1: ciclo de Carnot representado en el diagrama Presión-Volumen
 
 Aplicando la relación PV = cte para las isotermas y $PV^\gamma$ para las adiabáticas del ciclo de Carnot:
 
@@ -38,11 +38,11 @@ que relaciona de forma simple los calores transferidos con las temperaturas a la
 
 Generalicemos ahora el resultado del apartado anterior al caso de ciclos reversibles cualesquiera, que representamos en la figura 2.
 
-$caption id="attachment_150706" align="alignnone" width="270"$![](/taller-matematicas/assets/images/recubriment_Carnot.png) Fig.2: ciclo reversible cualquiera, parcialmente recubierto por ciclos de Carnot
+![](/taller-matematicas/assets/images/recubriment_Carnot.png) Fig.2: ciclo reversible cualquiera, parcialmente recubierto por ciclos de Carnot
 
 Hemos añadido algunos ciclos de Carnot (recordemos, isoterma seguida de adiabática seguida de isoterma seguida de adiabática) tales que recubren parcialmente el área del ciclo C, representado en el diagrama PV por una elipse, pero puede ser cualquier figura (con alguna restricción geométrica que no enunciaremos); los ciclos de Carnot tienen las curvas adiabáticas muy pequeñas, de forma que se van ajustando más o menos a la curva C, mientras que las isotermas son más largas y recorren de lado a lado el interior de C, Podemos imaginarnos que dibujamos más ciclos Carnot hasta recubrir en su totalidad toda el área C. Además, observando la figura 1, como cada ciclo de Carnot está adyacente a otro ciclo, podemos pensar que el calor cedido Q' por cada ciclo es igual al absorbido Q por el siguiente, pero no son exactamente iguales, pues cada ciclo de Carnot tampoco coincide exactamente con su contiguo (fig. 3), de forma que el calor cedido Q' por el i-èsimo ciclo de Carnot no es exactamente igual al absorbido por el (i+1): $\textstyle Q'_i=Q_{i+1}+\triangle Q_{i,i+1}$, hay una diferencia.
 
-$caption id="attachment_150707" align="alignnone" width="206"$![](/taller-matematicas/assets/images/superposicio-cicles-carnot.png) Fig.3: detalle de dos ciclos contiguos de Carnot  del recubrimiento de un ciclo C
+![](/taller-matematicas/assets/images/superposicio-cicles-carnot.png) Fig.3: detalle de dos ciclos contiguos de Carnot  del recubrimiento de un ciclo C
 
 Además, para cada ciclo de Carnot se cumplirá [2]: $\frac{Q_i}{T'_i}+\frac{Q_i'}{T_i'}=0$, y la suma anterior extendida a todos los n ciclos también dará cero:
 
@@ -56,7 +56,7 @@ donde hemos dejado de distinguir calor absorbido Q del emitido Q' y simplemente 
 
 Un *campo vectorial* es una función que asigna a cada punto P un vector **v**(P), como por ejemplo el campo eléctrico, o la asignación a cada punto del espacio (x, y, z) del interior de un gas de una magnitudes (P, V, T) entendidas como un vector en un espacio vectorial. Imaginemos un camino cualquiera (una trayectoria entre dos puntos A, B)  en el espacio a través de una curva C; para cada uno de sus puntos P, existirá un vector campo v(P), y un elemento diferencial d**l** que será tangente a la curva en P:
 
-$caption id="attachment_150708" align="alignnone" width="379"$![](/taller-matematicas/assets/images/circulacio-vector.png) Fig.4: curva C, elemento diferencial dl tangente a C en P, y vector campo v(P) en P
+![](/taller-matematicas/assets/images/circulacio-vector.png) Fig.4: curva C, elemento diferencial dl tangente a C en P, y vector campo v(P) en P
 
 Denominamos *circulación del campo v(P) entre los puntos A, B a lo largo de la curva C* a la suma de los productos escalares **v**(P)·d**l** extendida a todos los puntos P entre A y B:
 $Circ_C\left(\overrightarrow v,A,B\right)={\int_A^B}_C\overrightarrow v\operatorname d\overrightarrow l$ [5]
@@ -81,7 +81,7 @@ $\int_{PQR}\overrightarrow v\operatorname d\overrightarrow l=\int_{PSR}\overrigh
 
 que nos dice que *el valor de la circulación de un campo conservativo sólo depende de los puntos inicial P y final R, y no del camino concreto recorrido entre esos dos puntos*. [7']
 
-$caption id="attachment_150709" align="alignnone" width="284"$![](/taller-matematicas/assets/images/ostres.png) Fig.5: un camino cerrado C y algunos de sus puntos, P, Q, R, S
+![](/taller-matematicas/assets/images/ostres.png) Fig.5: un camino cerrado C y algunos de sus puntos, P, Q, R, S
 
 Debido a esta propiedad de conservar el valor de la circulación entre dos puntos independientemente del camino recorrido, en los campos conservativos se puede la magnitud *diferencia de potencial* $V_{PR}$ como
 $V_{PR}=\int_{PR}\overrightarrow v\operatorname d\overrightarrow l$ [8]
@@ -108,7 +108,7 @@ Observar que en la integral [9] entre los estados A, B hemos incluido el subínd
 
 A continuación aplicaremos la entropía como herramienta para comprender mejor qué sucede en las transformaciones de los denominados  sistemas aislados, que son aquellos que no reciben ni entregan calor ni trabajo, siendo todas sus transformaciones internas. Imaginemos un sistema así, como por ejemplo un recipiente con aislamiento térmico en el que hemos introducido un líquido A a temperatura $T_1$ superior a la $T_2$  del aire que contiene el resto del volumen B del recipiente, y acto seguido lo cerramos. Como hay una diferencia de temperatura interna, habrá un flujo de calor Q (fig. 6)
 
-$caption id="attachment_150714" align="alignnone" width="252"$![](/taller-matematicas/assets/images/sistema-tancat.png) Fig.6: Sistema aislado del exterior, con una transferencia interna de calor Q
+![](/taller-matematicas/assets/images/sistema-tancat.png) Fig.6: Sistema aislado del exterior, con una transferencia interna de calor Q
 
 Llamando $Q_A$ al calor absorbido por A, y $Q_B$ al absorbido por B, en general en un sistema aislado en el que no se intercambia calor con el exterior, $Q_A+Q_B=0$. Por el 1r principio de la termodinámica, Q = W + ΔE, siendo W = 0, tendremos también ΔE = 0, o sea $\triangle E_A+\triangle E_B=0$.
 
@@ -133,7 +133,7 @@ $S_{AB}=S_{AB'}+S_{B'A}=0+\frac Q{T_B}$
 
 pues en una adiabática reversible no varía S. El signo de la ΔS depende pues del calor Q absorbido o emitido en la transformación isoterma B'B; por el 1r principio, Q = W + ΔE = Q, pues ΔE en el gas ideal depende exclusivamente de la temperatura, así pues el signo de Q será igual al del trabajo: positivo si el gas realiza trabajo,
 
-$caption id="attachment_150720" align="alignnone" width="387"$![](/taller-matematicas/assets/images/irreversible.png) Fig. 7: transformación irreversible y camino reversible alternativo
+![](/taller-matematicas/assets/images/irreversible.png) Fig. 7: transformación irreversible y camino reversible alternativo
 
 El recorrido completo A-B'-B produce un trabajo W > 0. Por el primer principio, Q = W + ΔE, siendo Q el calor absorbido total, pero sólo en la isoterma, ya que en la adiabática Q = 0,  y ΔE la variación de energía interna total, pero sólo en la adiabática, ya que en los gases perfectos ΔE depende exclusivamente de la temperatura). La variación de entropía total será
 $S_{AB}=S_{AB'}+S_{B'A}=0+\frac Q{T_B}$,
@@ -151,19 +151,19 @@ El 2º principio afirma que en una transformación irreversible S aumentará inc
 
 Representan los estados y su evolución usando como coordenadas la temperatura y la entropía. En la figura 8 vemos un ciclo de Carnot para un gas perfecto en el diagrama TS, se ven como rectángulos: las líneas horizontales son las isotermas, en las que se transfiere calor y por tanto hay variación de entropía, las líneas verticales son las adiabáticas con Q = 0, la entropía no varía pero la temperatura sí. Como en el diagrama PV, el área interior al ciclo en el TS equivale al valor de trabajo realizado por el ciclo; en efecto, $\operatorname dW=P\operatorname dV$, y además $\operatorname dS=\frac{\operatorname dQ}T\Rightarrow T\operatorname dS=\operatorname dQ=\operatorname dE+\operatorname dW$. Integrando y recordando que la energía interna no varia en un ciclo: $\oint T\operatorname dS=\cancel{\oint\operatorname dE}+\oint\operatorname dW\Rightarrow W=\oint T\operatorname dS$
 
-$caption id="attachment_150742" align="alignnone" width="371"$![](/taller-matematicas/assets/images/diagrama-TS-Carnot.png) Fig.8: un ciclo de Carnot visto en el diagrama TS
+![](/taller-matematicas/assets/images/diagrama-TS-Carnot.png) Fig.8: un ciclo de Carnot visto en el diagrama TS
 
  
 ### Máquina térmica perpetua
 
 Se llama así a una máquina (térmica en estos apuntes) teórica con una eficiencia del 100% de forma que se puede invertir todo el trabajo que genera en producir calor para retroalimentarla y que siga funcionando de forma autónoma y perpetua, o sea que no necesita una fuente térmica externa (fig. 8), tal máquina tendría dos partes, una que se encarga de transformar todo el calor Q en trabajo w, y otra que transforma todo el trabajo W de nuevo en calor Q, sin pérdidas).  Se desarrollaron [diversos intentos de construirla](https://es.wikipedia.org/wiki/M%C3%B3vil_perpetuo#Intentos_de_m%C3%B3vil_perpetuo), todos fallidos.
 
-$caption id="attachment_150726" align="alignnone" width="304"$![](/taller-matematicas/assets/images/maquina-perpetua.png) Fig.8: esquema de una máquina térmica perpetua, que constituye un sistema aislado que se retroalimenta
+![](/taller-matematicas/assets/images/maquina-perpetua.png) Fig.8: esquema de una máquina térmica perpetua, que constituye un sistema aislado que se retroalimenta
 
 Veamos que según el 2º principio es imposible tal máquina; en efecto, por ser S una función de estado, su variación es cero en todo ciclo tanto reversible como no reversible, pero una máquina autónoma y perpetua que no interacciona con nada (ni tiene fuentes térmicas ni intercambia trabajo con el exterior) es por definición un sistema aislado, y el 2º principio afirma que todo sistema aislado que evoluciona de forma irreversible ha de aumentar su entropía: llegamos a una contradicción, luego no existe tal máquina térmica perpetua.
 ### Teorema de Carnot
 
-$caption id="attachment_150727" align="alignleft" width="246"$![](/taller-matematicas/assets/images/TeoremaCarnot-246x300.png) Fig.9: esquema para demostrar el teorema de Carnot con dos máquinas de Carnot conectadas entre sí
+![](/taller-matematicas/assets/images/TeoremaCarnot-246x300.png) Fig.9: esquema para demostrar el teorema de Carnot con dos máquinas de Carnot conectadas entre sí
 
 Dice así:
 el rendimiento de una máquina térmica cualquiera sólo depende de las temperaturas extremas T, T' con las que trabaja.
@@ -177,11 +177,11 @@ Consideremos dos máquinas A y B acopladas que trabajan entre los mismos focos t
 
 Entonces será W = W', además, $W = Q_A-Q'_A$ y $W'=Q_B-Q'_B$ luego $ Q_A-Q'_A=Q_B-Q'_B$. Recordemos que los rendimientos de las máquinas son $r_A=W/Q_A,r_B=W'/Q_B$ o sea  $r_A=W/Q_A,r_B=W/Q_B$ , y vamos a suponer que A tiene más rendimiento que B, $r_A &gt; r_B$, que implica $W/Q_A&gt;W/Q_B$, que equivale a $Q_A&lt;Q_B$: la máquina A toma menos calor de la fuente caliente que el calor devuelt por B.
 
-$caption id="attachment_150730" align="alignnone" width="300"$![](/taller-matematicas/assets/images/TeoremaCarnot2-300x238.png) Fig.11: combinación de máquinas térmicas equivalente a una que viola el 2º principio
+![](/taller-matematicas/assets/images/TeoremaCarnot2-300x238.png) Fig.11: combinación de máquinas térmicas equivalente a una que viola el 2º principio
 
 Entonces, podemos prescindir de la fuente térmica T acoplando las máquinas como muestra la figura 11; el conjunto A+B toma un calor $Q'_B-Q'_A$  de un foco T' y devuelve un calor neto $Q_B-Q_A&gt;0$, obviamente este calor podría pasarse a una tercera máquina C que produciria un trabajo neto  W'' con lo cual el sistema completo A+B+C (linea de trazos en la figura 11) produciria un trabajo neto W''' con un único foco térmico: tendríamos una máquina térmica perpetua en contradicción con el 2º principio.
 
-$caption id="attachment_150731" align="alignleft" width="276"$![](/taller-matematicas/assets/images/TeoremaCarnot3-276x300.png) Fig.12: con rendimentos iguales, la combinación propuesta equivale a una máquina nula que no transfiere calor ni trabajo y por tanto no vulnera ningún principio
+![](/taller-matematicas/assets/images/TeoremaCarnot3-276x300.png) Fig.12: con rendimentos iguales, la combinación propuesta equivale a una máquina nula que no transfiere calor ni trabajo y por tanto no vulnera ningún principio
 
  
 

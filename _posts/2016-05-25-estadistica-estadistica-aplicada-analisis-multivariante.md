@@ -157,7 +157,7 @@ Veamos a continuación ejemplos y técnicas para estas aplicaciones.
 
 Usaremos el método de análisis de componentes principales; una vez cargados los datos en el entorno R, accedemos a *Estadísticos -> Análisis dimensional -> análisis de componentes principales*. Seleccionamos todas las variables y en Opciones marcamos "*Añadir componentes principales al conjunto de datos*"; cuando nos pregunta cuantos componentes vamos a incluir, estamos diciendo a cuantas variables queremos reducir las 11 originales, pondremos 3 (idealmente reduciremos a 4 como máximo, para que los datos sean manejables), y aceptamos. R efectúa el análisis y nos proporciona este informe:
 
-$caption id="attachment_1667" align="alignnone" width="368"$![multivariant1](/taller-matematicas/assets/images/multivariant1.png) Fig. 1: Componentes principales: coeficientes de las combinaciones
+![multivariant1](/taller-matematicas/assets/images/multivariant1.png) Fig. 1: Componentes principales: coeficientes de las combinaciones
 R siempre generará tantos componentes principales como variables originales, 11 en este caso. En la figura 1 no se muestran las columnas 4, 5, ... 11, pues nos interesa estudiar sólo 3. Lo que ha hecho R es crear nuevas variables Comp.1, Comp.2, ..., por combinación lineal de las originales, siendo los coeficientes de las combinaciones los que vemos en la figura 1. O sea que se cumple que:
 
 $Comp.1;=;0.06cdot ASIG;-;0.453cdot ATE;-;0.558cdot CAL;+;...;-;0.187cdot TEC$
@@ -168,10 +168,10 @@ $Comp.2;=;-0.686cdot ASIG;-;0.012cdot ATE;+;0.029cdot CAL;+;...;;+0.264cdot TEC$
 
 etc. En el mismo informe de R encontramos esta otra sección:
 
-$caption id="attachment_1670" align="alignnone" width="466"$![Fig. 2: importancia de cada componente principal](/taller-matematicas/assets/images/multivariant2.png) Fig. 2: importancia de cada componente principal
+![Fig. 2: importancia de cada componente principal](/taller-matematicas/assets/images/multivariant2.png) Fig. 2: importancia de cada componente principal
 Nos fijamos en la fila *Cumulative Proportion*: nos da la "representatividad" acumulada de las nuevas variables, en tanto por uno; vemos que tomando los tres primeras componentes quedan representados en un 0.50 todas las variables, o en un 50%, por tanto si pasamos de 11 a tres variables perdemos la mitad de la información. Parece una pérdida importante ... si cogemos más componentes principales, perdemos menos información, pero ampliamos de nuevo el número de variables, por ejemplo ampliando a 5 llegamos al 69% de representatividad, con 6 llegamos al 77% y con 7 componentes cubrimos hasta el 85% de la información original, pero la reducción de número de variables es ya escasa:
 
-$caption id="attachment_1671" align="alignnone" width="559"$![Fig. 3: ampliando el número de componentes con los que trabajar](/taller-matematicas/assets/images/multivariant3.png) Fig. 3: ampliando el número de componentes con los que trabajar
+![Fig. 3: ampliando el número de componentes con los que trabajar](/taller-matematicas/assets/images/multivariant3.png) Fig. 3: ampliando el número de componentes con los que trabajar
 La elección del número de componentes principales con los que trabajar es una elección del experimentador; los problemas "de clase" suelen venir preparados de forma que con pocos componentes principales, 2 o 3, se resumen bien los datos, pero en los problemas reales no suele ser tan evidente.
 
 Para saber cómo se relacionan las nuevas variables con las originales podemos usar la **matriz de correlaciones entre pares de variables**: en R haremos *Estadísticos -> Resúmenes -> Matriz de correlación*, escogemos todas las variables, y marcamos la opción *Parejas de datos*. En la matriz de correlaciones resultante nos fijamos en la columna correspondiente al componente principal PC1, para el cual las correlaciones son:
@@ -229,10 +229,10 @@ Los valores negativos de correlación indican que si aumentan esas variables dis
 
 Recordar que este método produce variables (los componentes principales) que, a diferencia de las variables originales, no estan correlacionadas entre sí; por ejemplo, el **diagrama de dispersión** de PC1-PC2 no muestra ninguna tendencia:
 
-$caption id="attachment_1674" align="alignnone" width="410"$![Fig. 5: de diagrama de dispersión de dos componentes principales cualesquiera no mostrará ninguna relación](/taller-matematicas/assets/images/multivariant5.png) Fig. 4: de diagrama de dispersión de dos componentes principales cualesquiera no mostrará ninguna relación
+![Fig. 5: de diagrama de dispersión de dos componentes principales cualesquiera no mostrará ninguna relación](/taller-matematicas/assets/images/multivariant5.png) Fig. 4: de diagrama de dispersión de dos componentes principales cualesquiera no mostrará ninguna relación
 Hemos podido realizar este diagrama de dispersión gracias a haber seleccionado la opción  , que añade a la hoja de datos original las nuevas variables como columnas adicionales.
 
-$caption id="attachment_1677" align="alignnone" width="576"$![Fig. 5: R añade 3 nuevas columnas a la hoja de datos, son los componentes principales elegidos por el usuario](/taller-matematicas/assets/images/multivariant6.png) Fig. 5: R añade 3 nuevas columnas a la hoja de datos, son los componentes principales elegidos por el usuario
+![Fig. 5: R añade 3 nuevas columnas a la hoja de datos, son los componentes principales elegidos por el usuario](/taller-matematicas/assets/images/multivariant6.png) Fig. 5: R añade 3 nuevas columnas a la hoja de datos, son los componentes principales elegidos por el usuario
 Como conclusión de este estudio con componentes principales podemos decir:
 
 *la nueva técnica de enseñanza sí que parece tener cierta influencia, pues su variable asociada está incluida en el componente PC1 de "buenas prácticas y buenas calificaciones", aunque su efecto parece ser menor (29% de correlación) en comparación a las otras buenas prácticas: atención en clase, etc. Por otro lado la asignatura donde se ha probado el método, que es el componente PC2, no tiene ninguna relación (no hay correlación) con PC1, esto es bueno, nos dice que en cualquier asignatura las "buenas prácticas" tienen los mismos efectos. Lo mismo podemos decir del entorno familiar, representado por PC3.*

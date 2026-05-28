@@ -53,7 +53,7 @@ math: true
 
  	- Teoremas de la probabilidad total y de Bayes
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Introducción
 
 Históricamente la Estadística, en sus inicios, no usaba la teoría de las probabilidades, de hecho, ambas ramas de la Matemática en sus inicios fueron independientes; esto es así debido a que la Estadística era de naturaleza descriptiva, como se ha visto en el tema [Estadística descriptiva, análisis de datos](http://tallermatematic.eu/wp/?p=1341). Con el tiempo, empezó a usarse para predecir sucesos a partir de datos anteriores, y también para llegar a conclusiones globales usando datos parciales, es lo que se denomina [inferencia estadística](https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial). Pero estas predicciones y conclusiones no deben nunca interpretarse como precisas, como puede ser en Ciencias Exactas, sino que siempre están limitadas por conceptos como "margen de confianza", "valor estimado", "hipótesis" y también "probabilidad". En este post vemos una introducción breve y simple a la teoría de la probabilidad aplicada a la Estadística.
@@ -66,12 +66,12 @@ Pero en Estadística estas inferencias no son nunca predicciones exactas sino ap
 
 ### Precisión
 
-$caption id="attachment_536" align="alignnone" width="300"$[![Torres Petronas](/taller-matematicas/assets/images/Petronas.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/Petronas.png) Torres Petronas
+![Torres Petronas](/taller-matematicas/assets/images/Petronas.png) Torres Petronas
 Si leyéramos que la altura de la [torres Petronas](http://ca.wikipedia.org/wiki/Torres_Petronas) en Kuala Lumpur es de 452,340 metros, podríamos pensar, con razón, que no tiene mucho sentido detallar los decímetros, centímetros y milímetros de la altura, con lo metros sería suficiente, debido a que unos milímetros más o menos no tienen importancia en este caso concreto.
 
 La valoración del número de decimales correcto es una dificultad para muchos estudiantes; es típico usar una calculadora y dar como resultado demasiados decimales. ¿Cuál es el número correcto de decimales? Depende del problema que estemos resolviendo.
 
-$caption id="attachment_537" align="alignnone" width="300"$[![calculadora](/taller-matematicas/assets/images/calculadora-300x181.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/calculadora.png) El número de decimales de un cálculo frecuentemente es infinito. El número de decimales significativo depende del problema concreto que estamos resolviendo: la media de calificaciones, las medidas de un estante, la longitud de una pieza de relojería, etc.
+![calculadora](/taller-matematicas/assets/images/calculadora-300x181.png) El número de decimales de un cálculo frecuentemente es infinito. El número de decimales significativo depende del problema concreto que estamos resolviendo: la media de calificaciones, las medidas de un estante, la longitud de una pieza de relojería, etc.
 En Estadística los resultados nunca son precisos, al contrario se intenta averiguar cuanta probabilidad de certeza tiene una afirmación, una hipótesis o un resultado.
 
 ### Cálculo de probabilidades
@@ -218,7 +218,7 @@ Damos algunas definiciones básicas, y luego vemos sus propiedades y aplicacione
 
 **Definición 4**: **Sucesos.** Un suceso S es un subconjunto cualquiera del espacio muestral Ω de un experimento aleatorio. Ejemplo: para el experimento "lanzar un dado y anotar la puntuación" un suceso puede ser el subconjunto S = {2, 4, 6}. En particular un **suceso elemental** es un subconjunto formado por un único punto muestral, como S = {2}.
 
-# [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+# ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 # Álgebra de sucesos
 
@@ -292,7 +292,7 @@ También tenemos una correspondencia entre las operaciones lógicas y las operac
 
  	- **Sucesos excluyentes**: son aquellos que no tienen elementos en común, es decir, que su intersección es nula.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Regularidad estadística. Primera definición de probabilidad
 
 Supongamos que realizamos N repeticiones de un experimento aleatorio y que formamos la tabla de frecuencias relativas. Entonces, el [principio de regularidad Estadística](https://en.wikipedia.org/wiki/Statistical_regularity) afirma que, conforme N se hace más grande, las frecuencias relativas de todos los resultados tienden a ser constantes.
@@ -359,7 +359,7 @@ $P(S)=\underset{N\rightarrow\infty}{lim}f(S)$
 donde f(S) representa la frecuencia relativa del suceso S cuando hacemos N repeticiones del experimento aleatorio.
 **Ejemplo 9**: la probabilidad de S: "ha salido cara" en el experimento de lanzar la moneda es 0.5, pues ese el valor obtenido al simular por ordenador el lanzamiento un número elevado de repeticiones.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Segunda definición de probabilidad: regla de Laplace, combinatoria
 
 Esta primera definición de probabilidad como límite de frecuencias relativas es útil para interpretar resultados de cálculos, pero no lo es para obtener probabilidades, pues obliga a realizar un límite de una frecuencia relativa, para la cual en general no tenemos ninguna expresión analítica. La siguiente definición, debida a Laplace, soluciona este inconveniente:
@@ -380,7 +380,7 @@ $P(premio)=1-P(no\;premio)=1-\frac{C_{N-m,k}}{C_{N,k}}=1-\frac{\left(N-k\right)!
 }{N!\left(N-m-k\right)!}$
 donde $C_{a,b}$ representan la combinaciones de a elementos tomados de b en b, y el símbolo ! representa la operación factorial. No trataremos esta teoría aquí, aunque en este blog hay una[ introducción a la teoría](http://tallermatematic.eu/wp/?p=1449) y se pueden encontrar algunos [problemas resueltos de combinatoria](http://tallermatematic.eu/wp/?p=1311).
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Tercera definición de probabilidad: axiomas y propiedades
 
 La definición más moderna de probabilidad se debe a [Kolmogorov](https://es.wikipedia.org/wiki/Andr%C3%A9i_Kolmog%C3%B3rov):
@@ -419,14 +419,14 @@ Ahora aplicamos la tercera propiedad de Kolmogorov: P(S o T) = P(S∪T) = P(S) 
 
 También se puede visualizar gráficamente: en una cuadrícula de 6 x 6 marcamos las casillas con una suma superior a 6 con un 1, y las que cumplen que los dos valores son al menos 4 las resaltamos en amarillo:
 
-[![Valores posibles de las puntuaciones del lanzamiento de dos dados](/taller-matematicas/assets/images/exper_dos_daus.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exper_dos_daus.png) Valores posibles de las puntuaciones del lanzamiento de dos dados; hay 21 combinaciones con suma > 6, y 9 combinaciones con los dos valores mayores o iguales a 4
+![Valores posibles de las puntuaciones del lanzamiento de dos dados](/taller-matematicas/assets/images/exper_dos_daus.png) Valores posibles de las puntuaciones del lanzamiento de dos dados; hay 21 combinaciones con suma > 6, y 9 combinaciones con los dos valores mayores o iguales a 4
 Probabilidades según Laplace: P(S) = 21/36, P(T) = 9/36. P(S ∩ T) = 9/36
 
 Probabilidad P(S o T) = P(S∪T) = 21/36 + 9/36 - 9/36 = 21/36.
 
 Si repetimos N = 100 veces el lanzamiento de los dos dados, usando la definición 4 de probabilidad, esperaremos que en 100·21/36 = 58 ocasiones suceda que se cumpla que "la suma de puntuaciones de ambos dados mayor que 6 o bien la puntuación de ambos dados sea al menos de 4".
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Probabilidad condicionada. Sucesos independientes
 
 Cuando tenemos un conocimiento parcial del resultado de un experimento aleatorio podemos utilizarlo para mejorar nuestras predicciones. Por ejemplo: sabemos que en un dado ha salido al menos un 4. ¿Cuál es ahora la probabilidad de que sea un número par? Si no utilizamos la información "ha salido al menos un 4" será, por la regla de Laplace:
@@ -503,7 +503,7 @@ La suma es b·m·b + b·m·(1-b) + (1-b)·m·b = bm(b + 1 - b + 1 - b) = bm(2 - 
 
 Como b < m (menos probabilidad de ganar el jugador bueno que el medio), resulta que bm(2 - b) > bm(2 - m), o sea que en el orden de juego B, M, B el jugador novicio tiene más probabilidades de vencer en dos partidos consecutivos que en el orden M, B, M, !incluso siendo  que deberá jugar dos partidos contra el mejor jugador en vez de sólo uno! Un resultado contra intuitivo, pero rigurosamente cierto.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **Ejemplo 12:  **Consideremos el mismo problema del club de tenis pero esta vez incorporando aspectos subjetivos; si el jugador novicio gana en un partido al jugador de mejor nivel B, consideraremos que su motivación aumenta y también mejorará su nivel de juego; por otro lado si pierde contra el jugador de nivel medio M entonces bajará ligeramente. **
 **
@@ -540,7 +540,7 @@ La suma de estas probabilidades es b·m'·b' + b·m'·(1-b') + (1-b)·m·b = bm'
 
 Vemos que sigue siendo la mejor opción la que incluye más partidos contra el mejor jugador.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **Ejemplo 13**: En una encuesta, al 29% le gusta la música clásica. Este 29% se desglosa en un 17% que no les gusta la música moderna y un 12% que también les gusta la música moderna. Por otro lado en un 68% sólo les gusta la música moderna y a un 3% no les gusta la música. Planteamos el experimento aleatorio: preguntar a una persona al azar sobre sus gustos musicales. Sean los sucesos siguientes:
 
@@ -552,7 +552,7 @@ La pregunta que nos hacemos es: ¿Son M y X independientes? Dicho de otro modo, 
 
 Representamos los datos en un diagrama:
 
-[![condicionada](/taller-matematicas/assets/images/condicionada-300x143.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/condicionada.png)
+![condicionada](/taller-matematicas/assets/images/condicionada-300x143.png)
 
 Hacemos los cálculos teniendo en cuenta el diagrama:
 
@@ -566,7 +566,7 @@ Hacemos los cálculos teniendo en cuenta el diagrama:
 
 Resulta que P(X∩ M) = P(X) · P(M), por tanto X, M son independientes
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 # Teoremas de la probabilidad total y de Bayes
 
@@ -598,7 +598,7 @@ $P(superiores\;\vert\;lee)=\frac{0.2\cdot0.4}{0.25}=0.32$
 
 La probabilidad de que una persona con estudios superiores sea lector es superior a la media de la población, 25%, como era de esperar.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 # Bibliografia
 
 ***Métodos Estadísticos***: Lo utilicé cuando estudiaba en la UNED, y tengo un buen recuerdo, porque no era muy extenso pero contenía todo el temario bastante bien explicado. Otra parte que me gustó fue que cada capítulo tiene una lista de problemas (ejercicios de autocomprobación) con las soluciones, perfecto para estudiar a distancia. En definitiva, no es una biblia de la Estadística Aplicada ni mucho menos, pero para introducirte en los temas básicos (Estadística descriptiva, probabilidades, variables aleatorias, funciones de distribución, intervalos de confianza, contrastes de hipótesis y ANOVA) cumple bien.

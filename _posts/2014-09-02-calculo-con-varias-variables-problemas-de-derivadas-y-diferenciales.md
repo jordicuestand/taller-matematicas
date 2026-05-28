@@ -58,7 +58,7 @@ $D\left(f\circ F\right)\left(1,0\right)=\begin{bmatrix}3\cdot0+\cos\left(1\right
 
 el mismo resultado que con el primer método.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
  **2.** Estudiar la continuidad y derivabilidad en el origen de la función de dos variables dada por:
 
 $f(x,y)=\left\{\begin{array}{l}\frac{x^3\sin\left(x+y\right)}{x^2+y^2},\;(x,y)\neq(0,0)\\0,\;\;(x,y)=(0,0)\end{array}\right.$
@@ -105,7 +105,7 @@ $\lim_{h\rightarrow0}\frac{u_x^3\sin\left(h\left(u_x+u_y\right)\right)}{u_x^2+u_
 
 Así pues la función es derivable en el origen, y su derivada direccional en el origen, para cualquier dirección, es cero.  La gràfica en 3D obtenida con [WolframAlpha](http://www.wolframalpha.com/) es:
 
-[![3DPlot_Exer2_derivadas_n_var](/taller-matematicas/assets/images/3DPlot_Exer2_derivadas_n_var.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/09/3DPlot_Exer2_derivadas_n_var.png)
+![3DPlot_Exer2_derivadas_n_var](/taller-matematicas/assets/images/3DPlot_Exer2_derivadas_n_var.png)
 
 Ya que estamos, estudiemos también la diferenciabilidad de esta función; una condición suficiente es:
 
@@ -131,5 +131,5 @@ $\begin{array}{l}\lim_{r\rightarrow0}\cos^2\left(\theta\right)\cdot\left$3\cos\l
 
 que no depende del ángulo $\theta$, luego el límite existe y vale cero, y la función derivada parcial respecto a x es continua. Por el criterio de diferenciabilidad, la función es diferenciable.
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 {% endraw %}

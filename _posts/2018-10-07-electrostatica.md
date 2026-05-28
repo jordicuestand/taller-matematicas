@@ -17,7 +17,7 @@ Si frotamos dos varillas de vidrio y las acercamos nortaremos que se repelen mú
 
 Creando péndulos con pequeñas masas electrificadas (fig. 1) se puede deducir la fuerza con que se atraen o repelen, midiendo la desviación de la verticalidad y sabiendo las masas.
 
-$caption id="attachment_150784" align="alignright" width="206"$![](/taller-matematicas/assets/images/electrostatica1.png) Fig. 1: Dos péndulos con material electrificados del mismo signo se repelen entre sí
+![](/taller-matematicas/assets/images/electrostatica1.png) Fig. 1: Dos péndulos con material electrificados del mismo signo se repelen entre sí
 Supongamos que hemos realizado las mediciones de la fuerza $F_A$ que un cuerpo A ejerce sobre otro C de distinto signo, y también la fuerza$F_B$ de otro cuerpo B sobre C, también de distinto signo (por tanto A y B deben de ser del mismo signo). Podemos conjeturar que si las fuerzas anteriores no son iguales en magnitud, debe de ser por que los materiales A y B no tienen la misma "cantidad de electrificación", cantidad que llamaremos *carga eléctrica*, y simbolizaremos por Q. Entonces, la fuerza deberá ser proporcional a la carga, y al dividir las fuerzas entre sí se cumplirá la proporción
 
 $\frac{F_A}{F_B}=\frac{Q_A}{Q_B}$ [1]
@@ -61,7 +61,7 @@ Pero si mantenemos A cerca del metal y conectamos el metal con la tierra usando 
 
 Coulomb (siglo XVIII) usó una [balanza de torsión](https://es.wikipedia.org/wiki/Balanza_de_torsi%C3%B3n) para averiguar el efecto de la separación entre cuerpos cargados sobre la fuerza que se ejercen (figura 5).
 
-$caption id="attachment_150789" align="alignright" width="163"$![](/taller-matematicas/assets/images/electrostatica5.png) Fig.5: Esquema de la balanza de torsión de Coulomb
+![](/taller-matematicas/assets/images/electrostatica5.png) Fig.5: Esquema de la balanza de torsión de Coulomb
 Dispuso dos bolitas de saúco electrizadas A, B, la primera fijada a la tapa del cilindro por una varilla aislante rígida y la segunda en el extremo de otra varilla, balanceada por un peso, ámbos colgando de un hilo muy fino de plata. La repulsión entre A y B hace que éste se aleje, retorciendo el hilo. Midiendo la torsión del hilo puede deducirse la fuerza de respulsión. Colocando A en diversas posiciones, pudo estudiar el efecto que tenia la separación *r* entre A y B. Su conclusión se conoce como *ley o fórmula de Coulomb de la electrostática:*
 
 $F=k\frac{QQ'}{r^2}$ [3]

@@ -47,7 +47,7 @@ $f(\sqrt2)=\sqrt{2-1}\;=1=\sqrt2\cdot\sqrt2+c\Leftrightarrow c=-1.$
 
 La recta tangente es pues: $y=\sqrt2x-1.$ En la imagen vemos la gráfica de $f(x)$, con dominio $\left|x\right|\geq1$, y en rojo la recta tangente por el punto $(\sqrt{2},1).$
 
-$caption id="attachment_257" align="alignnone" width="633"$[![y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo](/taller-matematicas/assets/images/Exer3_Derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Exer3_Derivades.png) y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo
+![y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo](/taller-matematicas/assets/images/Exer3_Derivades.png) y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo
 
 ---
 
@@ -66,7 +66,7 @@ Observemos que de hecho tenemos dos funciones, debido al signo $\pm$, debido a q
 
  
 
-[![Una curva cerrada; a cada valor x le corresponden dos valores y](/taller-matematicas/assets/images/elipse.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/elipse.png) Una curva cerrada; a cada valor x le corresponden dos valores y
+![Una curva cerrada; a cada valor x le corresponden dos valores y](/taller-matematicas/assets/images/elipse.png) Una curva cerrada; a cada valor x le corresponden dos valores y
 Sustituimos la expresión de $y(x)$ en la función $d^2(x,y)$:
 
 $\begin{array}{l}\begin{array}{l}y\left(x\right)=1\pm2\sqrt{-x^2+1}\Rightarrow\\d^2\left(x,y\right)=d^2\left(x\right)=x^2+\left(1\pm2\sqrt{-x^2+1}\right)^2=x^2+1+4\left(-x^2+1\right)\pm4\sqrt{-x^2+1}=\end{array}\\-3x^2+5\pm4\sqrt{-x^2+1}.\end{array}$
@@ -82,7 +82,7 @@ $\begin{array}{l}d^2\left(\frac{\sqrt5}3\right)=-3\left(\frac{\sqrt5}3\right)^2+
 
 Vemos que en $x=0$ tenemos la distancia máxima $d^2(0)=9\Rightarrow d=3$ y en $x=\frac{\sqrt5}3\right)$ la distancia mínima $d^2\left(\frac{\sqrt5}3\right)=\frac{10}3+\frac8{\sqrt5}\Rightarrow d\approx2.6.$ En la imagen siguiente vemos la gráfica de la elipse.
 
-$caption id="attachment_254" align="alignnone" width="226"$[![Elipse 4x²+y²-2y-3=0](/taller-matematicas/assets/images/elipse1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/elipse1.png) Elipse 4x²+y²-2y-3=0 (gráfica realizada con WolframAlpha)
+![Elipse 4x²+y²-2y-3=0](/taller-matematicas/assets/images/elipse1.png) Elipse 4x²+y²-2y-3=0 (gráfica realizada con WolframAlpha)
 
 ---
 
@@ -164,11 +164,11 @@ $f'(x)=\left\{\begin{array}{l}1,\;x&lt;0\\\text{no existe en }x=0\\\frac{-1}{x^2
 
 En la siguiente ilustración vemos la gráfica de la función $f(x)$. En el punto $x=1$ la función es continua, pero presenta un "pico" que hace que la tangente a la curva en ese punto esté indefinida, luego no hay derivada.
 
-[![Exer7_Derivades](/taller-matematicas/assets/images/Exer7_Derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Exer7_Derivades.png)
+![Exer7_Derivades](/taller-matematicas/assets/images/Exer7_Derivades.png)
 
 La gráfica de la función derivada muestra discontinuidades en los puntos donde no está definida:
 
-[![Exer7b_Derivades](/taller-matematicas/assets/images/Exer7b_Derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Exer7b_Derivades.png)
+![Exer7b_Derivades](/taller-matematicas/assets/images/Exer7b_Derivades.png)
 
 ---
 {% endraw %}

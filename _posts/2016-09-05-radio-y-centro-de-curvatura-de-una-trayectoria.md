@@ -18,20 +18,20 @@ math: true
 
 Cuando un punto móvil P se mueve en el espacio describe una trayectoria que en el caso más general es una curva; en el caso de que esta curva sea "suave", esto es, sin cambios de trayectoria bruscos, será diferenciable, esto es, podrá aproximarse localmente por una circunferencia (en el caso de un movimiento plano) o una esfera (caso de movimiento en el espacio). En la figura 1 se representa una trayectoria plana con dos puntos no diferenciables (en rojo); se denomina a esta curva diferenciable a trozos, pues podemos distinguir en ella tres secciones en las cuales la curva sí es suave.
 
-$caption id="attachment_150106" align="alignnone" width="458"$![Fig. 1: Trayectoria curva en general](/taller-matematicas/assets/images/Corba_diferenciable.png) Fig. 1: Trayectoria curva, en dos dimensiones, en general
+![Fig. 1: Trayectoria curva en general](/taller-matematicas/assets/images/Corba_diferenciable.png) Fig. 1: Trayectoria curva, en dos dimensiones, en general
 Así, en las cercanías del punto móvil P, podemos aproximar la trayectoria por una circunferencia (o esfera) de centro C y radio R, siempre que la curva sea suave en P (figura 2). Llamamos a C al **centro de curvatura de la trayectoria** en P, y a R el **radio de curvatura de la trayectoria** en P.
 
-$caption id="attachment_150107" align="alignnone" width="436"$![Fig. 2: aproximación local en el punto P por una circunferencia](/taller-matematicas/assets/images/Corba_diferenciable2.png) Fig. 2: aproximación local en el punto P por una circunferencia
+![Fig. 2: aproximación local en el punto P por una circunferencia](/taller-matematicas/assets/images/Corba_diferenciable2.png) Fig. 2: aproximación local en el punto P por una circunferencia
 En general, el centro y el radio van variando conforme P se mueve, esto es, C y R son propiedades locales de la trayectoria (figura 3). En el caso particular de movimiento circular evidentemente serán constantes. Otro caso particular es el del movimiento rectilíneo, en el que consideramos que R es infinito y que el centro C está en el infinito.
 
-$caption id="attachment_150108" align="alignnone" width="445"$![Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria](/taller-matematicas/assets/images/Corba_diferenciable3.png) Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria
+![Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria](/taller-matematicas/assets/images/Corba_diferenciable3.png) Fig. 3: El centro C y radio de curvatura R van variando a medida que el punto describe la trayectoria
 ### Aceleración y curvatura
 
 Siempre que hay un cambio de dirección en una trayectoria de un móvil, ha de existir una aceleración; es por ello que es de esperar que exista alguna relación entre las propiedades puramente geométricas radio y centro de curvatura de la trayectoria en un punto P y el vector aceleración de P.  Sabiendo esa relación, podríamos deducir la geometría de la trayectoria a partir del vector aceleración, o bien calcular la aceleración a partir del conocimiento de la trayectoria.
 
 Consideremos un movimiento Δs del punto P en la trayectoria s (figura 4) suficientemente pequeña para que se pueda considerar que en esa sección la trayectoria sea aproximadamente circular con radio R y centro C.
 
-$caption id="attachment_150109" align="alignnone" width="329"$![Fig. 4: el punto P se mueve hasta otra posición muy próxima P](/taller-matematicas/assets/images/Corba_diferenciable4.png) Fig. 4: el punto P se mueve hasta otra posición muy próxima P' a lo largo de la trayectoria s
+![Fig. 4: el punto P se mueve hasta otra posición muy próxima P](/taller-matematicas/assets/images/Corba_diferenciable4.png) Fig. 4: el punto P se mueve hasta otra posición muy próxima P' a lo largo de la trayectoria s
 Consideremos también una referencia fija Ref, con centro en O. El vector velocidad en el punto P se puede expresar como el límite de la velocidad media en el sector Δs:
 
 $\overrightarrow v=\lim_{\triangle t\rightarrow0}\frac{\overrightarrow{OP}'-\overrightarrow{OP}}{\triangle t}=\frac{\operatorname d\overrightarrow{OP}}{\operatorname dt}=\frac{\overrightarrow t\cdot\operatorname ds}{\operatorname dt}=\overrightarrow t\cdot v,$
@@ -44,7 +44,7 @@ $\overrightarrow a=\frac{\operatorname d\overrightarrow v}{\operatorname dt}=\fr
 
 para obtener la derivada del vector unitario tangente, primero pensamos que a medida que el punto P cambia de dirección, el versor t irá girando, moviéndose en un círculo (esfera en el caso de movimiento en el espacio) de radio 1 (pues es un vector unitario).
 
-$caption id="attachment_150111" align="alignnone" width="218"$![](/taller-matematicas/assets/images/versor_tangent-1.png) Fig. 5: el versor velocidad, tangente a la trayectoria, describe un círculo unitario
+![](/taller-matematicas/assets/images/versor_tangent-1.png) Fig. 5: el versor velocidad, tangente a la trayectoria, describe un círculo unitario
 
 Si el versor gira un ángulo θ en radianes, siendo el radio la unidad, la longitud de arco valdrá también θ; definiendo el vector unitario n como muestra la figura 5, y llamando t, t' a los versores tangentes, tendremos,
 
@@ -55,7 +55,7 @@ la aproximación será buena si el ángulo θ es pequeño, pues el arco y la cue
 $\operatorname d\overrightarrow t=\operatorname d\theta\cdot\overrightarrow n$,
 además, en el límite dθ el vector normal n será perpendicular al versor velocidad t; como éste es a su vez tangente a la trayectoria s, tendremos que el vector n será perpendicular a la trayectoria: es un vector normal unitario a la trayectoria, llamado versor normal. 
 
-$caption id="attachment_150112" align="alignnone" width="300"$![Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria](/taller-matematicas/assets/images/versor-normal-300x177.png) Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria
+![Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria](/taller-matematicas/assets/images/versor-normal-300x177.png) Fig. 6: el versor normal n és perpendicular al versor velocidad, apunta siempre al centro de curvatura de la trayectoria
 
 Ahora podemos expresar la derivada temporal del versor velocidad tangencial en función del versor normal:
 

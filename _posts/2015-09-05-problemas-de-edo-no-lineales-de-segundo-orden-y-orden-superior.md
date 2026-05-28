@@ -17,7 +17,7 @@ $\begin{array}{l}y'=Ae^x+Axe^x=A(x+1)e^x;\;y''=Ae^x+A(x+1)e^x=A(x+2)e^x;\\y'''=A
 
 Igualando al término independiente $F(x)$ obtenemos $3Ae^x=-e^x\Leftrightarrow A=-\frac13$, y la solución general es $y=y_h+y_p=C_1+C_2e^{-2x}+C_3e^x-\frac13xe^x.$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
  **2.** Resolver $y''-2y'=(x^2-2x+1)e^{-x}$.
 
@@ -37,7 +37,7 @@ $\begin{array}{l}\left(\frac13+\frac49D+\frac{13}{27}D^2\right)\left(x^2-2x+1\ri
 
 La solución particular buscada es $y_p=e^{-x}\left(\frac{x^2}3+\frac{2x}9+\frac{11}{27}\right)$ y la solución general $y=C_1+C_2e^{2x}+e^{-x}\left(\frac{x^2}3+\frac{2x}9+\frac{11}{27}\right).$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**3.** Resolver $x^2y''+xy'+y=\ln(x)$.
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)**3.** Resolver $x^2y''+xy'+y=\ln(x)$.
 
 **Solución**:
 
@@ -51,7 +51,7 @@ $\begin{array}{l}e^{2t}\cdot e^{-2t}\left(\frac{\operatorname d^2y}{\operatornam
 
 La ecuación característica de la homogénea asociada es $r^2+1=0$ con raíces imaginarias $r=\pm i$, luego la solución general de la homogénea es $y_h=C_1e^{it}+C_2e^{-it}=C_1\sin\left(t\right)+C_2\cos\left(t\right).$ Para encontrar una solución particular como el segundo miembro $F(t)$ es un polinomio de grado 1, ensayamos otro polinomio de grado 1 con un coeficiente indeterminado:  $y_p=Ct+D\Rightarrow y'_p=C,\;y''_p=0$, sustituimos en la ecuación completa: $0+Ct+D=t\Rightarrow C=1,\;D=0$, la solución particular es $y_p=t$, y la solución general de la completa es $y=C_1\sin\left(x\right)+C_2\cos\left(x\right)+t$; deshacemos el cambio: $y=C_1\sin\left(t\right)+C_2\cos\left(t\right)+t=C_1\sin\left(\ln\left(x\right)\right)+C_2\cos\left(\ln\left(x\right)\right)+\ln\left(x\right).$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 **4.**  Determinar el parámetro r de forma que la ecuación $x^2y'-x^2y^2+xy+1=0$ admita la solución particular $y=x^r$, y resolver la ecuación.
 
@@ -76,7 +76,7 @@ Deshacemos el cambio de variable:
 
 $\begin{array}{l}y=y_p+\frac1{u(x)}\Leftrightarrow u(x)=\frac1{y-y_p}=\frac1{y-1/x}\Rightarrow\\\\\frac1{y-1/x}=x\left$C-\ln\left(x\right)\right$\Rightarrow\frac1{x\left(C-\ln\left(x\right)\right)}=y-\frac1x\Rightarrow\boxed{y=\frac1x\left(1+\frac1{C-\ln\left(x\right)}\right)}\end{array}$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**5. **Resolver la ecuación lineal de segundo orden con coeficientes variables siguiente: $\left(x+2\right)^2y''+4\left(x+2\right)y'+2y=-3\ln\left(x+2\right)$
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)**5. **Resolver la ecuación lineal de segundo orden con coeficientes variables siguiente: $\left(x+2\right)^2y''+4\left(x+2\right)y'+2y=-3\ln\left(x+2\right)$
 
 Vemos que el coeficiente variable $(x+2)$ está elevado a una potencia que coincide con el orden de la derivada de la función y, hecho que nos hace pensar en la [ecuación de Euler](http://tallermatematic.eu/wp/?p=987#euler); si hacemos el cambio de variable $x+2=t$, que implica $\frac{\operatorname dy}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname dt}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname d(x+2)}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}$, la ecuación queda en la forma de Euler: $t^2y''+4ty'+2y=-3\ln\left(t\right)$, dónde ahora y es función de t. Procedemos con el método general para ecuaciones de Euler:
 
@@ -102,7 +102,7 @@ que es una ecuación lineal de segundo orden con coeficientes contantes; queremo
 
 $y=y_h+y_p=\boxed{\frac{C_1}{\left(x+2\right)^2}+\frac{C_2}{\left(x+2\right)}-\frac32\ln\left(x+2\right)+\frac94}$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 **5.** Encontrar una solución particular de la ecuación $y''+4y'=\sin^2(x)$ usando el método de variación de constantes (también llamado variación de parámetros).
 

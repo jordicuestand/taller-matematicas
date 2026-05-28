@@ -18,7 +18,7 @@ math: true
 
 	- Aplicación a EDOs lineales de orden superior
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 # Transformadas integrales; transformada de Laplace
 
 La transformada integral es una aplicación entre funciones, que hace corresponder a cada $f(x)$ otra aplicación $F(z)$ obtenida calculando la siguiente integral:

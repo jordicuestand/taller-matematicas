@@ -20,7 +20,7 @@ math: true
 
 ## Introducción: el problema del cálculo del área y sus aplicaciones
 
-$caption id="attachment_675" align="alignnone" width="414"$[![Àrea de la región comprendida entre un intervalo de x y la gráfica f(x)](/taller-matematicas/assets/images/area.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area.png) Àrea de la región comprendida entre un intervalo de x y la gráfica f(x)
+![Àrea de la región comprendida entre un intervalo de x y la gráfica f(x)](/taller-matematicas/assets/images/area.png) Àrea de la región comprendida entre un intervalo de x y la gráfica f(x)
 Consideremos el siguiente problema: dada una función cualquiera $y=f(x)$ y un intervalo $[a,b]$, calcular el área de la región delimitada por ese intervalo, la gráfica de $f(x)$ y las rectas verticales $x=a, x=b$. En la ilustración, la función es $y=Ln(x)$, el intervalo es $[2,4]$ y la región se representa con fondo rayado.
 
 ***Definición 1**: llamamos integral definida de $f(x)$ en el intervalo $[a,b]$, o simplemente integral definida de $f(x)$ en $[a,b]$, al valor del área delimitada por$[a,b]$, la gráfica de $f(x)$ y las rectas verticales $x=a, x=b$, y la representaremos por $\int_a^bf(x)\operatorname{d}x.$*
@@ -53,7 +53,7 @@ $\left(1,3\right)=\left(1,1+\frac2n\right)\cup\left(1+\frac2n,1+2\frac2n\right)\
 
 Ahora formamos n rectángulos que tienen como base cada uno de los subintervalos anteriores y como altura $f(a+k·\triangle x)$ con $k=1,2,\dots,n$, por ejemplo, para $n=2$ rectángulos tendríamos:
 
-$caption id="attachment_677" align="alignnone" width="189"$[![Aproximación al área por rectángulos](/taller-matematicas/assets/images/area_sup-189x300.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area_sup.png) Aproximación al área por rectángulos, tomando el extremo superior de cada intervalo: suma superior de Riemann
+![Aproximación al área por rectángulos](/taller-matematicas/assets/images/area_sup-189x300.png) Aproximación al área por rectángulos, tomando el extremo superior de cada intervalo: suma superior de Riemann
 
 Para los 2 rectángulos de la figura, la base sería$\triangle x=2/n=2/2=1$ y la suma de las áreas seria 1·4 + 1·9 = 13. En general, para n rectángulos, el área será
 
@@ -85,7 +85,7 @@ En el ejemplo anterior, al calcular la altura del rectángulo $y=f(x)$ correspon
 
 $\begin{array}{l}s_n=f\left(a\right)\triangle x+f\left(a+\triangle x\right)\triangle x+\dots+f\left(a+\left(n-1\right)\triangle x\right)\triangle x\\=\triangle x{\textstyle\sum_{k=0}^{n-1}}f\left(a+k\triangle x\right)\end{array}$
 
-$caption id="attachment_681" align="alignnone" width="230"$[![Aproximación al área tomando los extremos inferiores del intervalo](/taller-matematicas/assets/images/area_inf-230x300.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area_inf.png) Aproximación al área tomando los extremos inferiores del intervalo: suma inferior de Riemann
+![Aproximación al área tomando los extremos inferiores del intervalo](/taller-matematicas/assets/images/area_inf-230x300.png) Aproximación al área tomando los extremos inferiores del intervalo: suma inferior de Riemann
 
 La pregunta que viene a la cabeza de forma natural es: ¿dará el mismo resultado que con la primera elección? En general, no. En este momento es cuando definimos realmente la integral de Riemann:
 ***Definición 2**: Sea una función $f(x)$ y un intervalo $(a,b)$ incluido en el dominio de la función. Si los límites de las umas de Riemann superior e inferior $\lim_{n\rightarrow\infty}S_n$ $y \lim_{n\rightarrow\infty}s_n$ existen y son iguales, decimos que la función es Riemann-integrable en $(a,b)$, y que $\lim_{n\rightarrow\infty}S_n=\lim_{n\rightarrow\infty}s_n=\int_a^bf\left(x\right)\operatorname{d}x.$*
@@ -104,7 +104,7 @@ Todas las funciones usuales del cálculo, como las exponenciales, trigonométric
 
 **Ejemplo 2**: Definimos la función escalonada siguiente
 
-$caption id="attachment_682" align="alignnone" width="358"$[![Función escalonada con infinitos puntos de discontinuidad](/taller-matematicas/assets/images/area2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area2.png) Función escalonada con infinitos puntos de discontinuidad
+![Función escalonada con infinitos puntos de discontinuidad](/taller-matematicas/assets/images/area2.png) Función escalonada con infinitos puntos de discontinuidad
 
 Sea el conjunto infinito de intervalos $\left(\frac12,\frac23\right),\left(\frac23,\frac34\right),\dots,\left(\frac n{n+1},\frac{n+1}{n+2}\right),\dots$, todos contenidos en $[0,1]$; para cada intervalo $\left(\frac n{n+1},\frac{n+1}{n+2}\right)$ definimos:
 
@@ -139,7 +139,7 @@ la suma infinita la hemos obtenido con hoja de cálculo, sumando los 100 primero
 
  	- El área de un punto es nula: Para cualquier función $f(x)$ y cualquier punto $a$ se cumple $\int_a^af\operatorname{d}x=0$, equivale al área de una región delimitada por el intervalo $(a,a)$ de longitud nula. Como consecuencia, la integral de $f(x)$ en el intervalo abierto $(a,b)$ es la misma que en el intervalo cerrado $[a,b]$.
 
-$caption id="attachment_691" align="alignnone" width="243"$[![Para calcular áreas hemos de tener en cuenta los cambios de signo de la función](/taller-matematicas/assets/images/area3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area3.png) Para calcular áreas hemos de tener en cuenta los cambios de signo de la función
+![Para calcular áreas hemos de tener en cuenta los cambios de signo de la función](/taller-matematicas/assets/images/area3.png) Para calcular áreas hemos de tener en cuenta los cambios de signo de la función
 ##  Relación entre derivación e integración
 
 La derivada de un función está relacionada con su variación local, así como con el problema de encontrar la recta tangente , mientras que la integral la hemos presentado como la solución al cálculo de áreas. en principio no parece haber ninguna relación, no obstante la hay:
@@ -148,7 +148,7 @@ La derivada de un función está relacionada con su variación local, así como 
 
 **Ejemplo 4**: la función $F(x)=\int_0^xf\left(x\right)\operatorname{d}x=\int_0^xx\operatorname{d}x$ nos da, para cada valor x, el área del triángulo rectángulo de base = altura = x, que sabemos es $A=\frac12x^2.$ Entonces $F(x)=\frac12x^2$, derivando, $F'(x)=x=f(x)$ como afirma el teorema.
 
-$caption id="attachment_694" align="alignnone" width="300"$[![Areas de los triángulos rectángulos de lado y altura iguales a x](/taller-matematicas/assets/images/area4-300x282.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area4.png) Áreas de los triángulos rectángulos de lado y altura iguales. Para x=1 tenemos el triángulo de lados 1 y área 1/2, para x=2 el área es 2·2/2 = 1, etc. En general el área correspondiente al valor x será x²/2=F(x).
+![Areas de los triángulos rectángulos de lado y altura iguales a x](/taller-matematicas/assets/images/area4-300x282.png) Áreas de los triángulos rectángulos de lado y altura iguales. Para x=1 tenemos el triángulo de lados 1 y área 1/2, para x=2 el área es 2·2/2 = 1, etc. En general el área correspondiente al valor x será x²/2=F(x).
 
 También lo podemos ver aplicando la definición de derivada: el incremento relativo de área al pasar del valor x al valor x+h es:
 
@@ -202,7 +202,7 @@ $f\left(x\right)=\left\{\begin{array}{l}x^2\;\text{si }0\leq x&lt;1\\2x\;\text{s
 
 es discontinua en el punto $x=1:$
 
-[![Exemple8_integral_Riemann_b](/taller-matematicas/assets/images/Exemple8_integral_Riemann_b-300x201.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/Exemple8_integral_Riemann_b.png)
+![Exemple8_integral_Riemann_b](/taller-matematicas/assets/images/Exemple8_integral_Riemann_b-300x201.png)
 
 Si calculamos su integral indefinida, tendremos que hacerlo por subintervalos: para $x_0&lt;1$ será $\int_0^{x_0}f\left(x\right)=\int_0^{x_0}x^2=\frac13x_0^2,$ mientras que para $1\leqx_0\leq2$ será $\int_0^{x_0}f\left(x\right)=\int_0^1x^2+\int_1^{x_0}2x=\frac13+\left$x^2\right$_1^{x_0}=\frac13+x_0^2-1,$ o sea que:
 
@@ -210,7 +210,7 @@ $I\left(x_0\right)=\int_0^{x_0}f\left(x\right)=\left\{\begin{array}{l}\frac13x_0
 
 Esta función es continua: se deja como ejercicio comprobar que $\lim_{x_0\rightarrow1^-}I\left(x_0\right)=\lim_{x_0\rightarrow1^+}I\left(x_0\right)=I(1)=\frac13,$ su gráfica es:
 
-[![Exemple8_integral_Riemann](/taller-matematicas/assets/images/Exemple8_integral_Riemann-300x197.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/Exemple8_integral_Riemann.png)
+![Exemple8_integral_Riemann](/taller-matematicas/assets/images/Exemple8_integral_Riemann-300x197.png)
 
 Pero a pesar de ser continua, $I(x)$ no es derivable en el punto $x=1$ (observar en la gráfica anterior el cambio brusco de pendiente en ese punto), se puede comprobar aplicando la definición de derivada en ese punto: $I'(1)=\lim_{x\rightarrow1}\frac{I\left(x\right)-I(1)}{x-1},$ al hacer los límites laterales $\lim_{x\rightarrow1^-}$ y $\lim_{x\rightarrow1^+}$ no coinciden (ejercicio para el lector), luego no existe la derivada en $x=1$.
 

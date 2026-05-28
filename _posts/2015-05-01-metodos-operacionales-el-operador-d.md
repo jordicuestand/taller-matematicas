@@ -25,7 +25,7 @@ Los métodos de resolución de EDO vistos en los post anteriores han sido pareci
 
  	- Ejercicios
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 # El operador diferencial D
 
@@ -128,7 +128,7 @@ $\begin{array}{l}y=e^{r_1x}Q_{m_1-1}\left(x\right)+e^{r_2x}Q_{m_2-1}\left(x\righ
 
 **Ejemplo 6**: Integrar $y'''-2y''-5y'+6y=0$. El operador es $P(D)=D^3-2D^2-5D+6$, lo descomponemos en producto de factores simples, $P(D)=(D-1)(D+2)(D-3)$, todos con multiplicidad 1, luego para cada factor el polinomio Q es de grado 0 (una constante), y la solución general es $y=C_1e^x+C_2e^{-2x}+C_3e^{3x}$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 # Integración de ecuaciones lineales de coeficientes constantes usando operadores diferenciales
 
 Para las ecuaciones lineales del tipo
@@ -157,7 +157,7 @@ $\begin{array}{l}\frac1{D^2-4D+3}(x^2-2x+1)=\left(\frac13+\frac49D\right)(x^2-2x
 
 y la solución particular buscada es $y=e^{-x}\left(\frac13x^2+\frac29x-\frac59\right).$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 Si el término de la derecha de la ecuación es una suma de términos de la forma $e^{rx}Q\left(x\right)$, aplicando el principio de superposición de soluciones de las ecuaciones lineales encontramos una solución particular para cada término, y las sumamos todas.
 
@@ -175,7 +175,7 @@ Superponiendo las dos soluciones encontradas, obtenemos la solución particular 
 
 $y=e^{-x}\left(\frac13x^2+\frac29x-\frac59\right)+\frac13xe^{2x}$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 # Generalización a otras ecuaciones
 
@@ -200,7 +200,7 @@ entonces:
 
 $\begin{array}{l}e^t\boldsymbol R\boldsymbol e\left\{\mathrm e^{it}\frac1{\mathrm D^2+2\mathrm{iD}}\mathrm t\right\}=e^t\boldsymbol R\boldsymbol e\left\{\mathrm e^{it}\frac1{2\mathrm i}\mathrm D^{-1}\mathrm t\right\}=\\e^t\boldsymbol R\boldsymbol e\left\{\left(\frac{-\sin\left(\mathrm t\right)}2+\frac{\mathrm i}2\cos\left(\mathrm t\right)\right)\mathrm D^{-1}\mathrm t\right\}=e^t\frac{-\sin\left(\mathrm t\right)}2\int t\operatorname dt=-\frac{t^2}4e^t\sin\left(t\right)\end{array}.$
 
-[![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 
 ## Ejercicios
 

@@ -58,14 +58,14 @@ Para pasar la aceleración a $m/s^2$ usamos el factor de conversión del problem
 
 $2.63\times10^3\frac{km}{h^2}\frac1{1.27\times10^5}\frac{h^2}{km}\frac m{s^2}=0.203\frac m{s^2}.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
  
 **3.** Un objeto se deja caer desde una altura $h$. Cuando lleva cayendo $t_0$ segundos, empezamos a cronometrarlo, y observamos que desciende 150 metros en 15 segundos. ¿Cuántos metros en total habrá descendido y en cuánto tiempo?
 
 | 
 
-$caption id="attachment_309" align="alignnone" width="150"$[![](/taller-matematicas/assets/images/caiguda_lliure.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/caiguda_lliure.png) Caída libre desde una altura h, dividida en dos secciones: 150m, h-150 
+![](/taller-matematicas/assets/images/caiguda_lliure.png) Caída libre desde una altura h, dividida en dos secciones: 150m, h-150 
 | 
 Llamando $h$ a la altura total recorrida, la altura caída previamente a empezar a cronometrar será $h-150$.
 
@@ -90,12 +90,12 @@ $h-150=0\cdot3.6+\frac129.8\cdot3.6^2=63.6m\Rightarrow h=213.6m.$
 
 El tiempo total de caída es $3.6+3=6.6s.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 **4.** Una barca ha de cruzar un río de 80 m de anchura. La barca es capaz de alcanzar una velocidad de 10 Km/h. La velocidad del agua del río es de 1.5 m/s. (a) ¿Cuanto tiempo tardará en cruzar suponiendo que la velocidad relativa de la barca con respecto al río es transversal a la corriente, y que distancia habrá recorrido? (b) ¿Cuanto tiempo tardará en cruzar suponiendo que la velocidad absoluta de la barca con respecto al río es transversal a la corriente?
 
 (a) En el esquema vemos los vectores velocidad que necesitamos: $v_r$ es la velocidad relativa de la barca con respecto al río, $v_a$ la velocidad de la corriente de agua, que arrastra a la barca, $v=v_r+v_s$ es la velocidad absoluta resultante de la barca.
 
-$caption id="attachment_313" align="alignnone" width="238"$[![](/taller-matematicas/assets/images/barca1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/barca1.png) Barca atravesando el río con velocidad relativa transversal
+![](/taller-matematicas/assets/images/barca1.png) Barca atravesando el río con velocidad relativa transversal
 
 Expresando los vectores en componentes: $v_a=(0,-1.5), v_r=(10/3.6,0), v=(10/3.6,-1.5).$
 Usamos ahora la ecuación del movimiento con velocidad constante, expresada por cada coordenada $(x,y)$ por separado: $x=x_0+v_xt,\;y=y_0+v_yt.$ Sustituyendo valores:
@@ -105,14 +105,14 @@ $\begin{array}{l}80=0+v_rt=\frac{10}{3.6}t\Rightarrow t=\frac{3.6\cdot80}{10}=28
 La distancia total recorrida es la hipotenusa del triángulo formado por la anchura de río y la distancia según el eje y: $\sqrt{80^2+43.2^2}=90.9m.$
 (b) En el esquema vemos que ahora la velocidad absoluta es transversal, luego la velocidad relativa ha de ser oblicua. Usamos las mismas ecuaciones que antes, descomponiendo en componentes $(x,y)$:
 
-$caption id="attachment_314" align="alignnone" width="214"$[![Barca atravesando el río con velocidad absoluta transversal](/taller-matematicas/assets/images/barca2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/barca2.png) Barca atravesando el río con velocidad absoluta transversal
+![Barca atravesando el río con velocidad absoluta transversal](/taller-matematicas/assets/images/barca2.png) Barca atravesando el río con velocidad absoluta transversal
 La componente $x$ de la velocidad relativa ha de ser igual a la velocidad transversal con la que cruza el río, mientras que la componente $y$ ha de contrarrestar la velocidad de la corriente de agua: $\overrightarrow{v_r}=\left(v,-v_a\right).$ Entonces:
 
 $\left\|\overrightarrow{v_r}\right\|=\sqrt{v^2+v_a^2}=\frac{10}{3.6},\;v_a=1.5\;\Rightarrow v=\sqrt{\left(\frac{10}{3.6}\right)^2-1.5^2}=2.3\;\frac ms.$
 
 Con esa velocidad transversal, el tiempo invertido será $t=80/2.3=34.2s.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 **5.** Una partícula se mueve en una trayectoria rectilínea con un desplazamiento dado por la ecuación $x=4t^3-3t^2-6$ (en metros y segundos). Partiendo del reposo, ¿cuanto tiempo tardará en alcanzar una velocidad de $6 m/s$? ¿Qué aceleración tendrá en ese tiempo?
 
 La velocidad viene dada por la derivada del desplazamiento respecto del tiempo: $\frac{dx}{dt}=12t^2-6t.$ Igualando al valor dado de la velocidad, obtenemos el tiempo:
@@ -121,13 +121,13 @@ $12t^2-6t=6\Rightarrow2t^2-t-1=0\Rightarrow t=\frac{1\pm\sqrt{1+8}}4=1s.$
 
 La aceleración viene dada por la derivada de la velocidad respecto del tiempo: $\frac d{dt}\left(12t^2-6t\right)=24t-6,$ luego para $t=1, a=24-6=18 m/s^2.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **6.** El humo de la chimenea de un barco que marcha rumbo NNE con una velocidad de 20 nudos forma un ángulo de 20⁰ con su dirección. Sabemos que hay viento del W. ¿Cuál es la velocidad del viento?  Datos: 1 nudo = 0.5 m/s, para las direcciones de los rumbos, ver [rumbos en Wikipedia](http://es.wikipedia.org/wiki/Rosa_de_los_vientos#El_rumbo).
 
 El rumbo NNE forma un ángulo de $\theta=\frac78\frac\pi2=\frac{7\pi}{16}$ radianes con el eje $x$ (o equivalentemente, con el rumbo E).  Entonces el humo del barco formará un ángulo con el eje $x$ de $\theta+20\frac\pi{180}=\frac{7\pi}{16}+\frac{2\pi}9=\frac{95\pi}{144}$ radianes (ver figura).
 
-$caption id="attachment_326" align="alignnone" width="600"$[![Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.](/taller-matematicas/assets/images/fum.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/fum.png) Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.
+![Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.](/taller-matematicas/assets/images/fum.png) Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.
 La velocidad del barco es de $v=10 m/s$, que será una componente de la velocidad del humo $v_h$, a la que debemos añadir la velocidad del viento $v_v$ para obtener la velocidad absoluta del humo $v_h$:
 
 $\begin{array}{l}\overrightarrow v=10\left(\cos\left(\frac{7\pi}6\right),\sin\left(\frac{7\pi}6\right)\right),\\\overrightarrow{v_v}=\left(-v_v,0\right),\\v_h=\overrightarrow v+\overrightarrow{v_v}=\left(-v_v+10\cos\left(\frac{7\pi}6\right),10\sin\left(\frac{7\pi}6\right)\right).\end{array}$
@@ -140,7 +140,7 @@ donde $\alpha$ es el ángulo del vector con el eje $x$. Por tanto:
 
 $\begin{array}{l}\tan^{-1}\left(\frac{10\sin\left({\displaystyle\frac{7\pi}{16}}\right)}{-v_v+10\cos\left({\displaystyle\frac{7\pi}{16}}\right)}\right)=\frac{95\pi}{144}\Rightarrow\\\frac{10\sin\left(\frac{7\pi}{16}\right)}{\tan\left(\frac{95\pi}{144}\right)}+10\cos\left(\frac{7\pi}{16}\right)=-v_v=-3.43\;m/s\Rightarrow\\\boxed{v_v=3.43\;\frac ms}.\end{array}$
 
- [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+ ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **7.** Al parar el motor de una lancha rápida ésta adquiere una aceleración negativa que es proporcional al cuadrado de su velocidad instantánea. A los 30s de haber parado el motor, su velocidad ha pasado de 20 m/s a 8 m/s. ¿Cuál es la aceleración en el momento de parar el motor? ¿Cuál es el espacio recorrido y cuál su velocidad a los 15s de parar el motor? ¿Cuál es la velocidad después de 400m de recorrido con el motor apagado?
 
@@ -192,7 +192,7 @@ Una vez recorridos 400m, tendremos $x(t)=400\ln\left(\frac1{20}t+1\right)=400\Ri
 
 $v(t)=\left(\frac1{400}20\left(e-1\right)+\frac1{20}\right)^{-1}=7.4\frac ms.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **8.** Una locomotora recorre una vía circular de 280 m de radio, partiendo de un punto inicial con velocidad nula, acelerando de forma uniforme, y recorre un arco de 120⁰, alcanzando una velocidad de 85 km/h. ¿Qué tiempo ha empleado en ello? ¿Cuáles son las aceleraciones tangencial, centrípeta y total?
 
@@ -210,5 +210,5 @@ $a_t={\overline a}_t=\frac{\triangle v}{\triangle t}=\frac{85/3.6}{49.7}=0.475\f
 
 La aceleración centrípeta, o normal, $a_n$, no es constante, sino que vale $a_n=\frac{v^2}r=\frac{\left(at\right)^2}r=\frac{0.475^2t^2}{280}=0.806\times10^{-3}t^2\frac m{s^2}.$ Al completar el arco, esta aceleración tangencial normal vale $a_n=0.806\times10^{-3}\cdot49.7^2=1.99\frac m{s^2}.$ La aceleración total es el módulo del vector que tiene por componentes $(a_t,a_n)$, y vale $\sqrt{1.99^2+0.48^2}=2.05\;\frac m{s^2}.$
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 {% endraw %}

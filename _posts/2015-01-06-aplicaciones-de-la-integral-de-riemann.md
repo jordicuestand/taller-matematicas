@@ -26,13 +26,13 @@ De entre las muchas aplicaciones de la integral (cálculo de áreas y volúmenes
 
  	- [Teorema del valor medio: forma integral](#medio)
 
-[![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Cálculo de áreas planas
 
 Si calculamos áreas habrá que tener en cuenta que debemos tomar los valores absolutos. Ejemplo: el área delimitada por $f(x)=sin(x)$ entre $(0,2\mathrm\pi)$ no puede calcularse como $\int_0^{2\mathrm\pi}\sin\left(x\right)\operatorname{d}x$ ya que esta integral vale cero, debido a que la función $sin(x)$ cambia de signo periódicamente.
 
-[![Para calcular áreas hemos de tener en cuenta los cambios de signo de la función](/taller-matematicas/assets/images/area3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area3.png)
+![Para calcular áreas hemos de tener en cuenta los cambios de signo de la función](/taller-matematicas/assets/images/area3.png)
 
 El valor real del área será $A=\int_0^{2\mathrm\pi}\left|\sin\left(x\right)\right|\operatorname{d}x,$ o bien $A=\int_0^\mathrm\pi\sin\left(x\right)\operatorname{d}x+\int_\mathrm\pi^{2\mathrm\pi}-\sin\left(x\right)\operatorname{d}x=2+2=4.$
 
@@ -43,7 +43,7 @@ $\int_a^b\left|\left(f-g\right)\right|\operatorname{d}x=\left\{\begin{array}{l}\
 En ocasiones, el valor absoluto en el intervalo de integración $(a,b)$ habrá de calcularse por subintervalos, como en el siguiente ejemplo.
 **Ejemplo 1**: calcular el área $A$ de la región comprendida entre las gráficas de las funciones $y=\sin(x), y=\cos(x+1)$ y el intervalo $x\in\left(1,4\right).$
 
-[![Cálculo del área comprendida entre las gráficas de dos funciones](/taller-matematicas/assets/images/area5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area5.png) Cálculo del área comprendida entre las gráficas de dos funciones
+![Cálculo del área comprendida entre las gráficas de dos funciones](/taller-matematicas/assets/images/area5.png) Cálculo del área comprendida entre las gráficas de dos funciones
 $\begin{array}{l}A=\int_1^4\left|\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\right|\operatorname{d}x=\begin{array}{l}\int_1^{x_0}\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\operatorname{d}x+\end{array}\int_{x_0}^4\left(\cos\left(x+1\right)-\sin\left(x\right)\right)\end{array},$
 
 donde $x_0$ es el punto de intersección de las dos gráficas, situado dentro del intervalo de integración $(1,4)$; en ese punto, se invierte la diferencia de funciones. Integrando: $\int\left(\sin\left(x\right)-\cos\left(x+1\right)\right)=-\cos\left(x\right)-\sin\left(x+1\right). $ Entonces:
@@ -56,13 +56,13 @@ $\begin{array}{l}\sin\left(x\right)=\cos\left(x\right)\cos(1)-\sin\left(x\right)
 
 El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, o sea: $x=0.285+k\mathrm\pi,\;\mathrm k=0,1,2,\dots.$ De todas estas soluciones, la única que cae dentro del intervalo de integración $(1,4)$ es $x=0.285+\mathrm\pi\approx3.427$, este es el valor $x_0$ buscado. Sustituimos: $A=-2\cos\left(3.427\right)-2\sin\left(4.427\right)-0.1630=\boxed{3.675}.$
 
-## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+## ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Cálculo de la longitud de curvas
 
 Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la [integral de Riemann](http://tallermatematic.eu/wp/?p=674), dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$
 
-$caption id="attachment_717" align="alignnone" width="427"$[![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/longitud_arc.png) Aproximación a la longitud de un arco de curva
+![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png) Aproximación a la longitud de un arco de curva
 
 $\triangle s=\sqrt{\left(\triangle x\right)^2+\;\left(\triangle y\right)^2}.$
 
@@ -79,10 +79,10 @@ En el último paso igualamos el límite de la suma a una integral de Riemann, p
 
 | 
 
-[![Catenaria. Licencia Creative Commons](/taller-matematicas/assets/images/catenaria.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.jpg) [Catenaria](http://www.flickr.com/photos/diegobe/226041902/sizes/o/). [Licencia Creative Commons.](https://creativecommons.org/licenses/by-sa/2.0/) 
+![Catenaria. Licencia Creative Commons](/taller-matematicas/assets/images/catenaria.jpg) [Catenaria](http://www.flickr.com/photos/diegobe/226041902/sizes/o/). [Licencia Creative Commons.](https://creativecommons.org/licenses/by-sa/2.0/) 
 | 
 
-[![Curva catenaria (en negro) y parábola (en rojo)](/taller-matematicas/assets/images/catenaria-300x113.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.png) Curva catenaria (en negro) y parábola (en rojo) 
+![Curva catenaria (en negro) y parábola (en rojo)](/taller-matematicas/assets/images/catenaria-300x113.png) Curva catenaria (en negro) y parábola (en rojo) 
 
 Hallar la longitud de cable tendida entre dos postes sabiendo que la altura mínima es de 6 metros, y que la distancia entre postes es de 15 metros.
 
@@ -92,7 +92,7 @@ La longitud del arco viene dada por
 
 $s=\int_{-15/2}^{15/2}\cosh\left(\frac x6\right)\operatorname{d}x=6\left$\sinh\left(\frac x6\right)\right$_{-15/2}^{15/2}=19.2$
 
-## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+## ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Integrales impropias
 
@@ -154,7 +154,7 @@ Definimos: $\int_a^\infty f=\lim_{b\rightarrow\infty}\int_a^bf,\;\int_{-\infty}^
 
 **Ejemplo 7**: $\int_1^\infty\frac1{\sqrt[3]{x^2}}=\int_1^\infty\frac1{x^{2/3}}$ es divergente, pues $2/3&lt;1$.
 
-## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+## ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 ## Integrales de Euler: funciones $\Gamma\;\text{ y }\;\beta$
 
@@ -229,7 +229,7 @@ $\beta\left(\frac12,\frac12\right)=2\int_0^{\pi/2}\left(\sin\left(x\right)\right
 
 Nos queda: $\beta\left(\frac12,\frac12\right)=\mathrm\pi=\left$\Gamma\left(\frac12\right)\right$^2\Leftrightarrow\Gamma\left(\frac12\right)=\sqrt{\mathrm\pi}$ y la integral pedida es: $\int_0^\infty e^{-x^2}\operatorname{d}x=\frac12\Gamma\left(\frac12\right)=\frac12\sqrt{\mathrm\pi}.$
 
-## [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)Teorema del valor medio: forma integral
+## ![separador2](/taller-matematicas/assets/images/separador2.png)Teorema del valor medio: forma integral
 
 En el post [Aplicaciones de las derivadas -> Teoremas de valores intermedios](http://tallermatematic.eu/wp/?p=547#intermedios) se vieron  algunos teoremas relativos a la relación entre derivadas y  valores de la función en un intervalo. Vemos ahora la relación entre integración y valores de la función en un intervalo.
 
@@ -245,7 +245,7 @@ El valor promedio integral es una generalización a funciones integrables del co
 
 Con una hoja de cálculo formamos la siguiente tabla de valores:
 
-[![taula_valors_sinus](/taller-matematicas/assets/images/taula_valors_sinus.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/taula_valors_sinus.png)
+![taula_valors_sinus](/taller-matematicas/assets/images/taula_valors_sinus.png)
 Los valores de x se han obtenido mediante
 $x_k=\frac k9\frac{\mathrm\pi}2,\;k=0,1,\cdots,9\Leftrightarrow x_k=\left\{0,\frac19\frac{\mathrm\pi}2,\cdots,\frac89\frac{\mathrm\pi}2,\frac99\frac{\mathrm\pi}2\right\}.$ La suma de la fila $sin(x)$ es 6.22, y el promedio de los valores es 6.22/10 = 0.62; comparando con el ejemplo anterior, hay una diferencia de una centésima. Aumentando el número $n$ de valores de la tabla, la diferencia disminuiría, y en el límite $n\rightarrow\infty$ no habría diferencia.
 
@@ -253,7 +253,7 @@ $x_k=\frac k9\frac{\mathrm\pi}2,\;k=0,1,\cdots,9\Leftrightarrow x_k=\left\{0,\fr
 
 **Ejemplo 13**: En un estudio el salario de los ingenieros industriales en función de su edad ha resultado ser, aproximadamente, $salario=-10000+12000\cdot edad^{3/7}$ en el intervalo de edades $[22,60].$ Calcular el salario medio y a que edad se percibe ese salario.
 
-[![exemple11_aplic_integral](/taller-matematicas/assets/images/exemple11_aplic_integral.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/exemple11_aplic_integral.png)
+![exemple11_aplic_integral](/taller-matematicas/assets/images/exemple11_aplic_integral.png)
 
 Calculamos el valor medio, llamando $x$ a la variable independiente tiempo, e $y$ a la variable dependiente salario:
 
@@ -265,7 +265,7 @@ $\begin{array}{l}f\left(x\right)=-10000+12000\cdot x^{3/7}=4.8\cdot10^4\Leftrigh
 
 a la edad de 40 años se està cobrando el salario medio segun este estudio.
 
-# [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)Bilbliografía
+# ![separador2](/taller-matematicas/assets/images/separador2.png)Bilbliografía
 
  
 

@@ -80,13 +80,13 @@ En la figura 2 vemos la variación de v según la temperatura obtenida aplicando
 
 Cuando oímos un tren que se acerca con el silbato actuando, nos parece que el sonido es más agudo que si el tren se aleja de nosotros. El mismo efecto se observó con la luz, su frecuencia parece más alta cuando el foco emisor se acerca a nosotros que cuando se aleja, si la luz es visible, en el primer caso vemos la luz "más azul" (corrimiento al azul) y en el segundo, "más roja" (corrimiento al rojo). Veamos la expresión exacta que nos da el corrimiento en frecuencia.
 
-$caption id="attachment_150659" align="alignnone" width="360"$![](/taller-matematicas/assets/images/Doppler.png) Fig. 3: foco de sonido y receptor en movimiento mutuo. Efecto Doppler.
+![](/taller-matematicas/assets/images/Doppler.png) Fig. 3: foco de sonido y receptor en movimiento mutuo. Efecto Doppler.
 
 En la figura 3 representamos la situación: un observador O se mueve hacia la derecha con velocidad v y un foco de luz se mueve en dirección contraria con velocidad u (todo con respecto a un sistema de referencia que suponemos fijo); los frentes de onda se suponen planos (realmente son esféricos). La velocidad del sonido relativa al foco es w, y la absoluta (respecto al suelo) será u + w, mientras que la velocidad relativa al observador O será u + w - v (estamos suponiendo que las velocidades son mucho menores que la de la luz, y por ellos despreciando los efectos relativistas).
 
 La frecuencia percibida del sonido es el número de ondas que llegan al receptor por segundo; en el caso de observador y foco en reposo, esa frecuencia será ν, y está relacionada con la velocidad w de la onda y su longitud λ por la relación w = λ·ν, de donde ν = w/ λ.  Cuando el foco de sonido se mueve, el número de ondas por segundo que  llegan a un receptor no será el mismo, y se percibirá una frecuencia ν' distinta. La onda de sonido en sí no cambia: su longitud de onda, su amplitud, su forma, no cambian, sólo que su velocidad relativa al observador sí lo hace (figura 4).
 
-$caption id="attachment_150660" align="alignnone" width="300"$![](/taller-matematicas/assets/images/ona_lambda-300x191.png) Fig. 4: onda sinusoidal, se desplaza a velocidad w relativa a una referencia fija
+![](/taller-matematicas/assets/images/ona_lambda-300x191.png) Fig. 4: onda sinusoidal, se desplaza a velocidad w relativa a una referencia fija
 
 Desde el punto de vista del foco, que se mueve en la misma dirección que los frentes de onda y con velocidad u, se emiten ν ondas por segundo, y se "ven" los frentes de onda alejándose del foco a velocidad (w - u), por ello el foco verá una longitud de onda de λ = (w - u) / ν.
 

@@ -25,7 +25,7 @@ $\lim_{n\rightarrow\infty}\frac{n^n}{n!}=\lim_{n\rightarrow\infty}\frac{n\cdot n
 
 en esta producto todos los términos iniciales son mayores o iguales a 1, y los últimos tienden a $\infty$, luego el producto también tiende a $\infty$ y la serie es divergente.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
  
 
@@ -40,7 +40,7 @@ $\lim_{n\rightarrow\infty}\sqrt[n]{\left|\sin^n\left(\frac{n\mathrm\pi}{\mathrm{
 
 La serie es convergente. La suma, obtenida con hoja de cálculo, es 3.541 con un error de $10^-4$.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
  
 
@@ -58,7 +58,7 @@ Para que este límite exista, ha de ser $p+2\leq3\Leftrightarrow p\leq1$ pero pa
 
 **NOTA**: vemos que puede existir una serie $\sum_{k=0}^\infty a_n$ basada en una sucesión $a_n$ cuyos términos tienden a cero y no obstante la serie es divergente (su suma es infinita). El hecho de que el criterio del cociente no decida, indica que es decrecimiento de los términos se va ralentizando, ya que en el límite $\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_n}=1$, los términos "sucesivos" (en el límite infinito  no hay de hecho sucesivos) son iguales. Es el caso de la serie armónica $\sum_{k=1}^\infty\frac1k$, cuyo término general tiende a cero, pero es divergente.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
 **4.** Estudiar la convergencia de la serie $\sum_{n=0}^\infty\left(\sqrt[3]{n^3-3}-\sqrt{n^2+4}\right)$
 
@@ -80,7 +80,7 @@ $\begin{array}{l}n\left(\sqrt[3]{1-\frac3{n^3}}-\sqrt{1+\frac4{n^2}}\right)=n\le
 
 Entonces la serie original equivale a $\sum_{n=0}^\infty\left(-\frac2n+O\left(n^{-1}\right)\right)$, que si la comparamos con la serie $\sum_{n=0}^\infty\frac1{n^p}$, que es convergente para $p&gt;1$, vemos que $\frac2n&gt;\frac1{n^p}$ para $p&gt;1$, y por tanto la serie original será divergente.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
 **5. **Estudiar la convergencia de la serie $\sum_{n=1}^\infty\left(1-\cos\left(\frac1n\right)\right).$
 
@@ -99,7 +99,7 @@ $1-\cos\left(\frac1n\right)=1-\left(1-\frac12\frac1{n^2}+\frac1{24}\frac1{n^4}+\
 
 que es una serie alternada. Aplicamos el criterio de comparación: $\frac12\frac1{n^2}-\frac1{24}\frac1{n^4}+\dots&lt;\frac1{n^p}$, vemos que se cumple, por ejemplo, para $p=2$, ya que $\frac12\frac1{n^2}-\frac1{24}\frac1{n^4}+O\left(\frac1{n^5}\right)&lt;\frac1{n^2}$, teniendo en cuenta que los términos sucesivos  $O\left(\frac1{n^5}\right)$ son menores que $-\frac1{24}\frac1{n^4}$. Por tanto por el criterio de comparación la serie es convergente.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**6.** Estudiar si la serie $\sum_{n=0}^\infty\frac{2n+1}{2^n}$ es convergente, y si lo es, obtener su suma.
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)**6.** Estudiar si la serie $\sum_{n=0}^\infty\frac{2n+1}{2^n}$ es convergente, y si lo es, obtener su suma.
 El término general es un cociente, e incluye un exponente en el denominador, parece buena idea probar con el criterio del cociente o el de la raíz.
 
 $\begin{array}{l}\frac{a_{n+1}}{a_n}=\frac{\left(2\left(n+1\right)+1\right)/2^{n+1}}{\left(2n+1\right)/2^n}=\frac{2n+3}{2\left(2n+1\right)};\\\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_n}=\lim_{n\rightarrow\infty}\frac{2n+3}{2\left(2n+1\right)}=\frac24&lt;1\end{array},$
@@ -132,7 +132,7 @@ Pasando al límite:
 
 $\sum_{k=0}^\infty\frac{2n+1}{2^n}=\lim_{n\rightarrow\infty}\left(6-\frac1{2^n}-\frac{2n+1}{2^{n+2}}\right)=\boxed6.$
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
 **7.** Ver si la serie $1-\frac12+\frac13-\frac1{2^2}+\frac1{3^2}\dots$ es convergente,  si es absolutamente convergente , y hallar su suma si es posible.
 Es una serie alternada, el criterio de Leibnitz para series alternadas nos dice que si la sucesión $(a_n)$ es monótona decreciente y converge a cero, entonces la serie alternada $\overset\infty{\underset{k=0}{\sum\left(-1\right)^n}}a_n$ es convergente. En nuestro caso, ¿cuál es el término general de la sucesión? Separando en dos casos:
@@ -149,7 +149,7 @@ $\begin{array}{l}\sum_{k=0}^n\frac1{3^k}=\frac{1-{\displaystyle\frac1{3^{n+1}}}}
 
 Observad que hemos restado el término $a_0=1/2^0$ en la segunda sucesión debido a que la fórmula de la suma empieza en el índice 0, y nosotros queremos sumar a partir del índice 1. En conclusión, la serie es absolutamente convergente, y su suma vale $1+\frac12+\frac13+\frac1{2^2}+\frac1{3^2}\dots=\frac32+1=\frac52.$ La suma de la serie alternada es $3/2-1=1/2$.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)**8.** Ver si la serie $\sum_{k=0}^\infty\left(-1\right)^k\frac{k^3}{k!}$ es convergente y si es absolutamente convergente.
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)**8.** Ver si la serie $\sum_{k=0}^\infty\left(-1\right)^k\frac{k^3}{k!}$ es convergente y si es absolutamente convergente.
 
 Aplicamos el criterio de Leibnitz, primero, ver si la sucesión de término general $\left(a_n\right)=\frac{n^3}{n!}$ es monótona decreciente, para ello, estudiamos la desigualdad $a_{n+1}\leq a_n$, que es:
 
@@ -170,7 +170,7 @@ por ser el grado del denominador mayor que el del numerador; la serie es absolut
 
 **NOTA**: la convergencia absoluta implica la convergencia de la serie alternada, luego hubiera sido mucho más rápido empezar por la segunda parte. En general, si nos piden estudiar ambas convergencias, empezaremos siempre por la absoluta; si es absolutamente convergente, hemos terminado, si no lo es, entonces habrá que estudiar la convergencia condicional. Aquí hemos procedido en el mismo orden que dicta el enunciado por razones didácticas: ver ambos métodos.
 
-[![separador2](/taller-matematicas/assets/images/separador2-150x50.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
+![separador2](/taller-matematicas/assets/images/separador2-150x50.png)
 
 # Bibliografía
 
