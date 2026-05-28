@@ -55,14 +55,14 @@ $\theta_A=200\cdot10-\frac1220\cdot10^2=1000;\;\theta_B=100\cdot20-\frac125\cdot
 
 ambos valores son las revoluciones completadas, y resultan ser iguales. En la imagen vemos la evolución con el tiempo de ambas velocidades angulares y ángulos girados.
 
-$caption id="attachment_150408" align="alignnone" width="471"$![Fig. 1: velocidades y ángulos en función del tiempo](/taller-matematicas/assets/images/vel_angular.png) Fig. 1: velocidades y ángulos en función del tiempo[/caption]
+$caption id="attachment_150408" align="alignnone" width="471"$![Fig. 1: velocidades y ángulos en función del tiempo](/taller-matematicas/assets/images/vel_angular.png) Fig. 1: velocidades y ángulos en función del tiempo
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 
 **2.** Un vehículo toma una curva peraltada de radio R=60m en la que el rozamiento es nulo a 60 km/h. Hallar el ángulo que ha de tener el peralte para que no se produzca derrape de las ruedas.
 
 Solución:
 
-$caption id="attachment_1642" align="alignnone" width="471"$![Geometría del problema](/taller-matematicas/assets/images/peralte.png) Geometría del problema[/caption]
+$caption id="attachment_1642" align="alignnone" width="471"$![Geometría del problema](/taller-matematicas/assets/images/peralte.png) Geometría del problema
 En la figura vemos una representación frontal del vehículo, de masa m, tomando la curva peraltada de radio R y ángulo de peralte ɑ. Definimos los ejes coordenados XY como muestra la figura, y aplicamos la 2ª ley de Newton, $\sum_{}F=ma$, a cada eje:
 
 Eje X: Como el vehículo está efectuando un giro de radio R, experimentará una fuerza normal $F_n=mv^2/R$ en la dirección de X. Además, en la figura vemos que el peso mg tiene también una componente según -X que valdrá $mg\sin\left(\alpha\right)$. Como no hay derrape, la aceleración según X ha de ser cero:

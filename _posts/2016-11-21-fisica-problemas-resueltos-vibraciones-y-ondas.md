@@ -94,14 +94,14 @@ que debemos reducir a fracciones de $2\pi$ haciendo la división entera y tomand
 
 Cuando x > 0 el muelle ejercerá sobre A una fuerza dirigida hacia abajo, el diagrama de fuerzas sobre las piezas A y B será:
 
-$caption id="attachment_150302" align="aligncenter" width="265"$![prob_vidal_421b](/taller-matematicas/assets/images/Prob_Vidal_421b.png) Situación cuando el muelle está distendido[/caption]
+![prob_vidal_421b](/taller-matematicas/assets/images/Prob_Vidal_421b.png) Situación cuando el muelle está distendido
 Fuerzas y aceleración sobre A: $-F_m-M_Ag=-M_A\omega^2x$, fuerzasy aceleración sobre B (observemos que B no se mueve): $F_m+N-M_Bg=0$. Operando:
 
 $\left.\begin{array}{r}F_m+N-M_Bg=0\\-F_m-M_Ag=-M_A\omega^2x\end{array}\right\}\Rightarrow\left.\begin{array}{r}N=M_Bg-F_m\\F_m=M_A\left(\omega^2x-g\right)\end{array}\right\}\Rightarrow N=M_Bg-M_A\left(\omega^2x-g\right)=\boxed{\left(M_A+M_B\right)g-M_A\omega^2x}$
 
 La fuerza normal N es la que ejercen entre sí el bloque B y el soporte S; es variable, dependiendo de la posición x, la cual en el movimiento armónico sabemos que viene dada por $x=A\sin\left(\omega t\right)$, siendo A la amplitud, por tanto: $N=\left(M_A+M_B\right)g-M_A\omega^2A\sin\left(\omega t\right)$.  Vemos que la fuerza sobre el soporte es igual al peso total de los dos bloques, $\left(M_A+M_B\right)g$, menos la fuerza producida por la aceleración del movimiento armónico sobre el bloque A, $M_A\omega^2A\sin\left(\omega t\right)$. De hecho esta expresión también será válida cuando x < 0, como podéis comprobar fácilmente:
 
-$caption id="attachment_150305" align="aligncenter" width="268"$![Situación cuando el muelle está comprimido, y x <0. Conduce a la misma expresión para N](/taller-matematicas/assets/images/Prob_Vidal_421d.png) Situación cuando el muelle está comprimido, y x <0; conduce a la misma expresión para N.[/caption]
+![Situación cuando el muelle está comprimido, y x <0. Conduce a la misma expresión para N](/taller-matematicas/assets/images/Prob_Vidal_421d.png) Situación cuando el muelle está comprimido, y x <0; conduce a la misma expresión para N.
 Sustituimos los valores del enunciado:
 
 $N=\left(20+40\right)9.8-20\cdot\left(2\mathrm\pi\cdot5\right)^2\cdot0.02\cdot\sin\left(2\mathrm\pi\cdot5t\right)=\boxed{588-395\sin\left(10\mathrm{πt}\right)}$

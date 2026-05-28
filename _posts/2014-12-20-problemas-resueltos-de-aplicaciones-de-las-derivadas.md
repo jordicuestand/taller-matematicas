@@ -48,7 +48,7 @@ De estos dos puntos, solo uno de ellos, $x=-1+\sqrt2$, pertenece al dominio $A$,
 
 Tenemos el máximo absoluto (también es un máximo relativo) en $x=-1+\sqrt2$ y el mínimo absoluto en el extremo inferior del intervalo, $x=-1.$
 
-$caption id="attachment_589" align="alignnone" width="300"$[![Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.](/taller-matematicas/assets/images/exercici2_aplic_derivadas-300x292.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici2_aplic_derivadas.png) Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.[/caption]
+$caption id="attachment_589" align="alignnone" width="300"$[![Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.](/taller-matematicas/assets/images/exercici2_aplic_derivadas-300x292.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici2_aplic_derivadas.png) Los mínimos y máximos locales pueden o no ser absolutos. Aquí, el máximo local es absoluto.
 
 [![separador2](/taller-matematicas/assets/images/separador2-300x37.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 
@@ -71,7 +71,7 @@ $\begin{array}{l}\lim_{x\rightarrow0}\frac{\displaystyle\frac{2\sin\left(x\right
 
 | 
 
-$caption id="attachment_598" align="alignnone" width="150"$[![Radio r, altura h y generatriz s de un cono](/taller-matematicas/assets/images/exercici4_aplic_derivadas-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici4_aplic_derivadas.png) Radio r, altura h y generatriz s de un cono[/caption] 
+$caption id="attachment_598" align="alignnone" width="150"$[![Radio r, altura h y generatriz s de un cono](/taller-matematicas/assets/images/exercici4_aplic_derivadas-150x150.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/exercici4_aplic_derivadas.png) Radio r, altura h y generatriz s de un cono 
 | El volumen de un cono de radio $r$ y altura $h$ es $V=\frac13\mathrm{πr}^2\mathrm h$. En el triángulo de la figura, siendo rectángulo, podemos aplicar Pitágoras: $s^2= h^2+r^2$, sustituyendo en la expresión del volumen: $V=\frac13\mathrm{πr}^2\mathrm h=\frac13\mathrm{πr}^2\sqrt{\mathrm s^2-\mathrm r^2}.$ 
 
 Ahora que tenemos la expresión del volumen como una función del radio (dado que la generatriz tiene el valor dado 2), para hallar su máximo derivamos:

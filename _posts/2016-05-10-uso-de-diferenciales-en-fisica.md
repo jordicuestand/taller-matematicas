@@ -26,7 +26,7 @@ Ejemplo 3: El número de electrones N que circulan por segundo por un conductor 
 
 Ejemplo 4: Sea un cable que está conduciendo corriente eléctrica
 
-$caption id="attachment_1652" align="aligncenter" width="300"$![Fig. 4: sección de un conductor recorrido por una corriente de electrones](/taller-matematicas/assets/images/element_corrent-300x146.png) Fig. 4: sección de un conductor recorrido por una corriente de electrones[/caption]
+![Fig. 4: sección de un conductor recorrido por una corriente de electrones](/taller-matematicas/assets/images/element_corrent-300x146.png) Fig. 4: sección de un conductor recorrido por una corriente de electrones
 El número de electrones que se estan moviendo por el cable es muy elevado, del orden de $10^{20}$ por $cm^3$; queremos considerar aquellos que se hallen en una cierta posición x, medida desde el extremo del cable. Si consideramos que los electrones estan distribuidos de forma más o menos uniforme y contínua por el cable, podemos definir la densidad de electrones N por $cm^3$, pero exactamente en la posición x no podemos calcular cuantos hay; el artificio que se usa consiste en considerar un elemento infinitesimal (muy corto pero no nulo) de longitud $\operatorname dL$, que empieza en la posición x y termina en la posición x+dL, que tendrá un volumen infinitesimal dV=S·dL (donde S es el área de la sección transversal del cable), y por tanto un número de electrones N·dV=NS·dL. Entonces aproximamos el número de electrones en la posición x por NS·dL.
 
 ### Relación con la derivación de funciones

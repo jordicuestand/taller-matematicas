@@ -63,7 +63,7 @@ $W=1\cdot8314\cdot291\cdot\ln\left(\frac{0.8104}{3.5455}\right)=-3496\;J$.
 
 **Solución**. En la imagen 1 vemos los estados del sistema y su evolución en un diagrama PV. La línea vertical AB es a volumen constante, y el sistema absorbe un calor Q, aumentando su presión; por el punto A se ha dibujado en discontinuo la curva isoterma correspondiente a la T = 25⁰C, observemos que el estado final C, al estar a la misma temperatura, está también sobre la isoterma, debe de ser así pues al ser todo el proceso reversible, el estado C es de equilibrio, y al estar A, C  a la misma temperatura, han de estar unidos por una isoterma. La curva BC es adiabática de temperatura variable.
 
-$caption id="attachment_150691" align="alignnone" width="285"$![](/taller-matematicas/assets/images/Exercici-3-Termo-1.png) Fig.1: las transformaciones del problema en el diagrama PV[/caption]
+$caption id="attachment_150691" align="alignnone" width="285"$![](/taller-matematicas/assets/images/Exercici-3-Termo-1.png) Fig.1: las transformaciones del problema en el diagrama PV
 
 Resumimos lo que sabemos y lo que desconocemos:
 
@@ -121,7 +121,7 @@ Hay que suministrar 315 KJ por segundo, o sea 315 KW en forma de energía térmi
 
 **Respuesta**. No es posible, y no lo es porque el trabajo realizado en una transformación de diversos estados depende de cada uno de los estados intermedios. En la figura 2 vemos en un diagrama PV dos posibles caminos ABC y AB'C entre los mismos estados A y C, recordando que el trabajo realizado coincide con el área bajo la curva, vemos claramente que las áreas delimitadas por los dos caminos son distintas, luego conocer el estado intermedio B es necesario para calcular el trabajo.
 
-$caption id="attachment_150698" align="alignnone" width="297"$![](/taller-matematicas/assets/images/treball-no-conservatiu-2.png) Fig. 2: el trabajo realizado en una transformación de estados depende de todos los estados, no sólo del inicial y el final[/caption]
+$caption id="attachment_150698" align="alignnone" width="297"$![](/taller-matematicas/assets/images/treball-no-conservatiu-2.png) Fig. 2: el trabajo realizado en una transformación de estados depende de todos los estados, no sólo del inicial y el final
 
 ---
 
@@ -141,7 +141,7 @@ $caption id="attachment_150698" align="alignnone" width="297"$![](/taller-matema
 
 **Respuesta**. En la figura 2 vemos el diagrama PV, indicando el carácter de cada transformación entre los cuatro estados ABCD. Siendo un gas ideal, tenemos la ecuación de estado PV = nRT. Veamos que no dice para cada transformación respecto a las variables P, T:
 
-$caption id="attachment_150699" align="alignnone" width="366"$![](/taller-matematicas/assets/images/Rectangle-PV.png) Fig.2: diagrama PV en forma de rectángulo[/caption]
+$caption id="attachment_150699" align="alignnone" width="366"$![](/taller-matematicas/assets/images/Rectangle-PV.png) Fig.2: diagrama PV en forma de rectángulo
 
 **A->B**: dilatación a presión constante, se produce trabajo, $V=\left(\frac{nR}P\right)T$, la temperatura depende linealmente del volumen, a más volumen, más temperatura; esto sólo es posible si hay una aportación de calor Q al gas, que se expandirá y calentará a presión constante. P = cte implica que será una linea horizontal en el plano PT.
 
@@ -153,7 +153,7 @@ $caption id="attachment_150699" align="alignnone" width="366"$![](/taller-matema
 
 Con todo ello nos resulta un ciclo con forma de paralelogramo:
 
-$caption id="attachment_150701" align="alignnone" width="259"$![](/taller-matematicas/assets/images/diagrama-PV-en-PT.png) Fig. 3: diagrama PT equivalente[/caption]
+$caption id="attachment_150701" align="alignnone" width="259"$![](/taller-matematicas/assets/images/diagrama-PV-en-PT.png) Fig. 3: diagrama PT equivalente
 
 ---
 {% endraw %}

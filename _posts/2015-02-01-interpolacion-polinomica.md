@@ -10,7 +10,7 @@ math: true
 
 A continuación tenemos una tabla con el censo de población de una província de España en el período de tiempo entre 1920 y 1970 del siglo XX:
 
-$caption id="attachment_823" align="alignnone" width="623"$[![Censo histórico, província de Álava, España. Fuente: http://www.ine.es/](/taller-matematicas/assets/images/Cens.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/Cens.png) Censo histórico, província de Álava, España. Fuente: http://www.ine.es/[/caption]
+$caption id="attachment_823" align="alignnone" width="623"$[![Censo histórico, província de Álava, España. Fuente: http://www.ine.es/](/taller-matematicas/assets/images/Cens.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/Cens.png) Censo histórico, província de Álava, España. Fuente: http://www.ine.es/
 Nos preguntamos: ¿podemos usar  estos datos para estimar la población en, digamos, 1965? ¿y para hacer una estimación de la población en el año 1910? Si tuviéramos una función *población=f(año)* que, para los años dados en la tabla, proporcionase exactamente los valores de la población de la tabla, entonces podríamos usar esa función para aproximar los valores desconocidos. En este post estudiamos cómo conseguir una función polinómica que realizará esa función. Para justificar que realmente se puede hacer, tenemos el siguiente teorema:
 
 ***Teorema de aproximación polinómica de Weierstrass**: Si $f:\left$a,b\right$\rightarrow\mathbb{R}$ es continua, entonces dado un $\varepsilon&gt;0$ cualquiera, existirá un polinomio $P(x)$ tal que $\left|f\left(x\right)-P\left(x\right)\right|&lt;\varepsilon$ para todo $x\in\left$a,b\right$.$*
@@ -216,11 +216,11 @@ Cuando el número de puntos a interpolar es grande, caso frecuente en las aplic
 
 $x_k=10\cos\left(\frac{\mathrm{πk}}n\right)=\left\{10\cos\left(0\right),10\cos\left(\frac\pi n\right),\dots10\cos\left(\mathrm\pi\right)\right\}$
 
-$caption id="attachment_834" align="alignnone" width="497"$[![Distancia entre los puntos sucesivos en la interpolación de chebysev](/taller-matematicas/assets/images/Points_Chebysev.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Points_Chebysev.png) Distancia entre 100 puntos sucesivos en la interpolación de Chebyshev[/caption]
+$caption id="attachment_834" align="alignnone" width="497"$[![Distancia entre los puntos sucesivos en la interpolación de chebysev](/taller-matematicas/assets/images/Points_Chebysev.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Points_Chebysev.png) Distancia entre 100 puntos sucesivos en la interpolación de Chebyshev
 
 **Interpolación polinómica por intervalos**
 Otra solución consiste en evitar el uso de polinomios de grado elevado, interpolando por trozos (subintervalos). Por ejemplo, si tenemos 100 puntos a interpolar, podemos tomarlos de tres en tres, y para cada subconjunto generamos un polinomio de grado 2 que pase por esos puntos. El problema que se presenta entonces está en los puntos de unión de cada subintervalo; si por ejemplo lo aplicamos al problema del censo obtenemos tres polinomios con los intervalos de tiempo 1920-30-40, 1940-50-60 y 1960-70 (éste último con sólo dos puntos es una recta); en los puntos de unión de cada polinomio pueden haber cambios bruscos de dirección que implican la no-derivabilidad en esos puntos:
 
-$caption id="attachment_837" align="alignnone" width="396"$[![Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección](/taller-matematicas/assets/images/interpolacio_trossos1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/interpolacio_trossos1.png) Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección[/caption]
+$caption id="attachment_837" align="alignnone" width="396"$[![Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección](/taller-matematicas/assets/images/interpolacio_trossos1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/interpolacio_trossos1.png) Interpolación a trozos; en los puntos de unión pueden haber cambios bruscos de dirección
 Siendo la derivabilidad una condición deseable, este procedimiento puede resultar no aconsejable. Para solucionarlo, se pueden emplear la denominada [interpolación por splines](http://es.wikipedia.org/wiki/Spline), un tipo de interpolación polinómica a trozos que asegura la derivabilidad, y es muy empleada en diseño industrial para aproximar matemáticamente formas diversas.
 {% endraw %}

@@ -26,7 +26,7 @@ Veamos ahora que pasa con el caso contrario: el fabricante no dice la verdad, y 
 
 En la figura 1 se muestra el aspecto de las probabilidades de aceptación de una muestra en función de la fracción defectuosa en la población; la línea vertical simboliza la tolerancia anunciada por el fabricante, si la fracción defectuosa es menor, la producción es mejor de lo que anuncia, y si es mayor, la producción resulta peor de lo anunciado. Por supuesto, si la fracción defectuosa es cero (producción perfecta) seguro que aceptaremos cualquier muestra, y no hay error posible. Pero entre el valor de cero y la tolerancia de 0,01 vemos que la probabilidad de no aceptar (rechazar) la muestra va aumentando, en esa región se produce el error de tipo I o α. Por otro lado, cuando la producción es más defectuosa de lo anunciado, sigue habiendo una probabilidad significativa de aceptar la muestra (región β).
 
-$caption id="attachment_1744" align="alignnone" width="515"$![](/taller-matematicas/assets/images/hipotesis-1.png) Fig. 1: Curva de aceptación de una muestra, dependiendo de la proporción real de defectos en la población[/caption]
+$caption id="attachment_1744" align="alignnone" width="515"$![](/taller-matematicas/assets/images/hipotesis-1.png) Fig. 1: Curva de aceptación de una muestra, dependiendo de la proporción real de defectos en la población
 Así, la curva divide el cuadrante XY en cuatro regiones: las de error I y II, y las otras dos regiones que corresponden a cuando acertamos en el control: aceptamos la muestra que proviene de una población correcta, o bien rechazamos la muestra que proviene de una población incorrecta.
 
 ### La matemática del contraste de hipótesis
@@ -232,7 +232,7 @@ es una variable aleatoria que sigue una distribución normal estándard.
 
 Calculamos el valor del estadístico: $z=frac{19.9-20}{0.3882/sqrt{20}}=-1.15$. Buscamos en las tablas de la normal estándar la probabilidad P(Z > z), que es, según hemos definido, el p-valor, y resulta ser p = 0.12507, la situación se representa en la figura
 
-$caption id="attachment_1750" align="aligncenter" width="615"$![Intervalos de aceptación de H0 y H1 según el p-valor](/taller-matematicas/assets/images/intervals-acceptacio.png) Intervalos de aceptación de H0 y H1 según el p-valor[/caption]
+![Intervalos de aceptación de H0 y H1 según el p-valor](/taller-matematicas/assets/images/intervals-acceptacio.png) Intervalos de aceptación de H0 y H1 según el p-valor
 Entonces, para una significación de 0.01 < p-valor, concluimos que no rechazamos H0, la conclusión no ha cambiado respecto al ejemplo anterior.  Si en vez de usar el p-valor usamos el método de buscar en las tablas el intervalo de aceptación de H0, tendremos que encontrar un z tal que P(Z > z) = 0.90 que resulta ser -1.282, el intervalo de aceptación de H0 es [-1.282, +∞), como z = -1.15 cae dentro del intervalo, aceptamos H0.
 
 ### Potencia de un contraste

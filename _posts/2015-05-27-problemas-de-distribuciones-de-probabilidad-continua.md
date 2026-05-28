@@ -33,7 +33,7 @@ $f\left(x,y\right)=\left\{\begin{array}{l}8xy,\;0&lt;x&lt;y&lt;1\\0\;\text{en ot
 
 El dominio de definición D de la función de densidad es el triángulo delimitado por los puntos (0,0), (1,0) y (1,1) en el plano XY:
 
-$caption id="attachment_1097" align="alignnone" width="555"$[![integra_area](/taller-matematicas/assets/images/integra_area.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/integra_area.png) Fig. 1: variación de Y en el dominio D: 0 < Y < X > 1[/caption]
+$caption id="attachment_1097" align="alignnone" width="555"$[![integra_area](/taller-matematicas/assets/images/integra_area.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/integra_area.png) Fig. 1: variación de Y en el dominio D: 0 < Y < X > 1
 
 Para encontrar la probabilidad en todo el dominio calculamos la integral doble
 
@@ -56,7 +56,7 @@ $f_x\left(x\right)=\int_0^x8xy\operatorname dy=8x\left$\frac{y^2}2\right$_0^x=4x
 
 Para la marginal de y integramos respecto de x; los límites de integración los visualizamos ahora con una línia horizontal situada dentro del dominio D, desde el valor mínimo x=y sobre la recta hasta el valor máximo x=1:
 
-$caption id="attachment_1106" align="alignnone" width="548"$[![area2](/taller-matematicas/assets/images/area2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/area2.png) Fig. 2: variación de X en el dominio D: 0 < y < x < 1[/caption]
+$caption id="attachment_1106" align="alignnone" width="548"$[![area2](/taller-matematicas/assets/images/area2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/area2.png) Fig. 2: variación de X en el dominio D: 0 < y < x < 1
 
 Por tanto la integral es:
 
