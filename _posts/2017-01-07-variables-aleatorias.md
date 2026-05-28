@@ -325,10 +325,9 @@ Para obtener la función de distribución de X basta con calcular la tabla de pr
 
 La gráfica de la función de probabilidad es:
 
-$caption id="attachment_1432" align="aligncenter" width="566"$[![Función de probabilidad, variable discreta](/taller-matematicas/assets/images/funcio_prob.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/funcio_prob.png) Función de probabilidad, variable discreta[/caption]
+
 La función de distribución suele representarse como una función escalonada:
 
-$caption id="attachment_1433" align="alignnone" width="565"$[![Función de distribución, variable discreta](/taller-matematicas/assets/images/escalonada.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/escalonada.png) Función de distribución, variable discreta[/caption]
 
 **Propiedades inmediatas de las funciones de distribución discretas F (x)**
 

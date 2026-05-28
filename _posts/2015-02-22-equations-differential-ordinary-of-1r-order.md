@@ -43,7 +43,7 @@ In example 2 we have seen that we can have solutions that are not included in th
 
 ### Enveloping curve of a bundle of curves and singular solution
 
-$caption id="attachment_868" align="alignnone" width="436"$[![Two one-beam lines (blue and red) and beam envelope curve (green)](/taller-matematicas/assets/images/Feix_corbes_env1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env1.png) Two one-beam lines (blue and red) and beam envelope curve (green)[/caption]
+
 Given a bundle of curves $F(x,y,C)=0$ the curve $f(x,y)$ is called the beam envelope curve such that it is tangent to all the curves of the beam.
 
 **Example 3**: The image shows two lines of the line bundle $y=(1-10/C)*x+(10-C)$, specifically the two lines corresponding to the values $C=3$ in red and $C=6$ in blue, and the enveloping curve of the beam, which is tangent to the first line at a point close to $x=1,  y=5$ and the second line about $x=3.5, y=1.5$.
@@ -52,7 +52,7 @@ Remember that we can associate to any bundle of curves $F(x,y,C)=0$ a differenti
 
 **Example 4**.Consider the parabolal bundle $4y=(x + C)^2$, all curves are tangent to the X axis at some point; the image depicts three of the beam curves, tangent to $y=$0 at points $x=-3, -2, -$1.
 
-$caption id="attachment_866" align="alignnone" width="502"$[![Parabola beam 4y=(x + C)²](/taller-matematicas/assets/images/Feix_corbes_env.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/Feix_corbes_env.png) Parabola beam 4y=(x + C)²[/caption]
+
 What is the differential equation of the curve beam? We derive with respect to *x *the equation of the beam: $4y&#39;=2(x + C)$, and eliminate the constant *C* using this equality and the equation of the beam:
 
 $left.begin{array}{r}4y&#39;=2(x+C)Rightarrow C=2y&#39;-x\4y=(x;+; C)^2end{array}right}Rightarrow4y=(2y&#39;{)^2=4y&#39;^2}Rightarrow y=y&#39;^2.$

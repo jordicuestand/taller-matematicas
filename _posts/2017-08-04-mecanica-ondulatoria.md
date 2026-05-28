@@ -120,7 +120,6 @@ $-\frac{\hslash^2}{2m}\frac{\operatorname d^2u\left(x\right)}{\operatorname dx^2
 
 El confinamiento en una región puede modelarse mediante un potencial V(x) tal que sea cero dentro de la región y sea infinito fuera de la región, ya que la energía total es la suma del potencial más la energía cinética, $E = V + E_c$, cuando V = 0 sólo hay energía cinética, y fuera de la región permitida se violaría la conservación de la energía total.
 
-$caption id="attachment_150523" align="alignnone" width="519"$![](/taller-matematicas/assets/images/barrera_potencial.png) Barrera de potencial unidimensional: la partícula sólo puede moverse dentro de la región (-a, +a)[/caption]
 
 Siendo V = 0 dentro del recinto, podemos aplicar la ecuación [8], que es una ecuación diferencial lineal de segundo orden, con solución general (real):
 
@@ -151,7 +150,6 @@ $\psi\left(x\right)=\left\{\begin{array}{l}A\sin\left(\frac{n\mathrm\pi}{2a}\rig
 
 En la gráfica siguiente se representa la densidad de probabilidad u(x)² para los niveles n = 1, n = 2; en este segundo nivel la partícula nunca se encuentra en el centro de la región x = 0.
 
-$caption id="attachment_150524" align="alignnone" width="647"$![](/taller-matematicas/assets/images/nivells-energia-basics.png) Densidad de probabilidad para los primeros niveles energéticos permitidos, caso de partícula confinada en una región (-a, a). La escala de la abcisa viene dada en fraciones de a.[/caption]
 
 Estas formas de la función de densidad de probabilidad recuerdan a las de las [ondas estacionarias de la cuerda vibrante](https://es.wikipedia.org/wiki/Cuerda_vibrante), que también presentant modos de vibración parecidos a los niveles energéticos cuánticos.
 {% endraw %}

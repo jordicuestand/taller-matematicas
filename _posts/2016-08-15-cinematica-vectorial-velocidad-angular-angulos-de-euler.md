@@ -27,7 +27,7 @@ $\overrightarrow v=v_1\overrightarrow{e_1}+v_2\overrightarrow{e_2}+v_3\overright
 
 Para hacer lo mismo con las rotaciones, necesitamos una base de rotaciones; podemos pensar que una posibilidad seria escoger rotaciones alrededor de cada eje cartesiano:
 
-$caption id="attachment_150075" align="alignnone" width="300"$![Fig. 1: rotaciones alrededor de los ejes cartesianos](/taller-matematicas/assets/images/rotacions-300x239.png) Fig. 1: rotaciones alrededor de los ejes cartesianos[/caption]
+
 Las matrices de cada una de estas rotaciones son, llamando respectivamente $R_x, R_y, R_z$ a las efectuadas sobre los ejes X, Y, Z:
 
 $R_x=\begin{bmatrix}1&amp;0&amp;\\0&amp;\cos\left(\alpha\right)&amp;-\sin\left(\alpha\right)\\0&amp;\sin\left(\alpha\right)&amp;\cos\left(\alpha\right)\end{bmatrix},\;R_y=\begin{bmatrix}cos\left(\alpha\right)&amp;0&amp;sin\left(\alpha\right)\\0&amp;1&amp;0\\-sin\left(\alpha\right)&amp;0&amp;cos\left(\alpha\right)\end{bmatrix},\;R_z=\begin{bmatrix}cos\left(\alpha\right)&amp;-sin\left(\alpha\right)&amp;0\\sin\left(\alpha\right)&amp;1&amp;0\\0&amp;cos\left(\alpha\right)&amp;1\end{bmatrix}$
@@ -40,7 +40,7 @@ Siendo toda el Álgebra vectorial que conocemos una [Álgebra conmutativa](https
 
 Es fácil ver que las rotaciones no conmutan sin necesidad de álgebra; la figura 2 muestra como afectan a una ficha de dominó dos rotaciones, en dos columnas.  En la primera fila vemos la ficha en la posición inicial; en la columna de la izquierda,  segunda fila,  se rota la ficha  un ángulo recto en torno a un eje perpendicular a la pantalla en el sentido inverso  de las agujas del reloj, en la segunda fila se vuelve a rotar la ficha en torno al eje Y vertical, en el sentido del reloj, la posición final muestra el lateral de la ficha.
 
-$caption id="attachment_150078" align="alignnone" width="428"$![Fig. 2: combinación de dos rotaciones en el espacio, tomadas en distinto orden](/taller-matematicas/assets/images/rotacions2.png) Fig. 2: combinación de dos rotaciones en el espacio, tomadas en distinto orden[/caption]
+
 En la columna de la izquierda, realizamos las dos mismas rotaciones, pero esta vez cambiando el orden. Comparando las posiciones finales, vemos que son distintas.
 
 ### Ángulos de Euler
@@ -49,15 +49,12 @@ Una forma de descomponer cualquier rotación en el espacio según tres rotacione
 
  	- 1a rotación: respecto a un eje fijo cualquiera, aquí tomamos el eje rotulado como X, puede ser cualquier otro. Respecto a este eje X, efectuar una rotación de la base XYZ con un ángulo $\alpha$, resulta la base X'Y'Z':
 
-$caption id="attachment_150080" align="aligncenter" width="275"$![Fig. 3: Rotaciones según ángulos de Euler, 1ª rotación](/taller-matematicas/assets/images/Euler1.png) Fig. 3: Rotaciones según ángulos de Euler, 1ª rotación[/caption]
 
  	- 2a rotación: respecto a uno de los nuevos ejes desplazados en la 1a rotación, en nuestro ejemplo, el Y' o el Z'; por ejemplo, escogemos el eje Y' para efectuar una rotación de la base con un ángulo $\beta$, resulta la nueva base X''Y''Z'':
 
-$caption id="attachment_150081" align="aligncenter" width="300"$![Fig. 4: segunda rotación de Euler](/taller-matematicas/assets/images/Euler2-300x254.png) Fig. 4: segunda rotación de Euler[/caption]
 
  	- 3a rotación: sobre el eje que ha estado afectado sólo por la 2a rotación, en nuestro caso, el eje X'; sobre él, giramos la base un ángulo $\gamma$ para obtener la base X'''Y'''Z''':
 
-$caption id="attachment_150085" align="alignnone" width="512"$![](/taller-matematicas/assets/images/Euler3-2.png) Fig. 5: tercera rotación de Euler, posición final, se indican los vectores rotación en rojo[/caption]
 
 Otra forma de resumirlo es: los ejes de la base girada cumplen
 
@@ -80,15 +77,15 @@ Este seria el caso más general de composición de tres rotaciones de Euler; a m
 
 En general es complicado manejar velocidades y aceleraciones angulares en referencias móviles; no obstante, hay casos especiales que pueden simplificar el problema. Uno a considerar se presenta en la figura 5:
 
-$caption id="attachment_150090" align="alignnone" width="293"$![Fig. 6: composición simple de rotaciones](/taller-matematicas/assets/images/suma_rotacions.png) Fig. 6: composición simple de rotaciones[/caption]
+
 Supongamos que tenemos una referencia móvil Ref2 de la cual tenemos su vector velocidad angular $\Omega$ respecto la referencia fija Ref1 (en la figura es el vector en rojo, representado verticalmente, pero puede tener cualquier dirección), y hay un objeto que está girando con velocidad angular *w* respecto Ref2 en torno a un eje fijo en Ref2; entonces, la velocidad angular del objeto respecto la referencia fija Ref1 es simplemente $\left.\overrightarrow\Omega\right|+\overrightarrow w$ [1] : podemos sumar las velocidades angulares sin recurrir a ángulos de Euler.
 
 **Ejemplo 1**: En este ejemplo, basado en los apuntes de la asignatura de Mecánica de los estudios de Ingenieria Industrial debidos al profesor Joaquim Agulló (ETSEIB - cpda, 1980), estudiamos la cinemática de un punto en una base móvil usando los ángulos de Euler. En la figura 6 vemos un volante que gira en torno al eje aa', el cual está sujeto a una plataforma mediante una articulación de tal forma que el eje aa' puede oscilar en torno al eje bb'. La propia plataforma puede oscilar respecto a un tercer eje cc'. Se pide: a) expresar la velocidad angular del volante en una base móvil adecuada usando ángulos de Euler, b) dar los componentes de la velocidad de un punto P de la periferia del volante en la base móvil del punto anterior.
 
-$caption id="attachment_150088" align="aligncenter" width="300"$![Fig. 6: volante que gira solidariamente a una plataforma giratoria](/taller-matematicas/assets/images/cinematica_volant-300x235.png) Fig. 7: volante que gira en torno al eje aa', el cual a su vez puede oscilar en torno al eje bb' solidariamente a una plataforma que a su vez, puede oscilar según el eje cc'[/caption]
+
 Primero hay que decidir, atendiendo a la geometría del problema, los ejes fijos y móviles que usaremos; en este caso, parece bastante evidente que los propios ejes aa', bb' y cc' son los más adecuados para describir el movimiento del volante respecto a una referencia fija. De hecho, tomando los ejes moviles aa',  bb' y el tercer eje simplemente el perpendicular al plano bb'-cc', sólo necesitaremos dos ángulos de Euler para describir la rotación de la base móvil pues el eje aa' será directamente el tercer eje. En este caso, podemos ya describir los ángulos de Euler $\alpha, \beta$ de la base XYZ móvil, y los ejes fijos XYZ:
 
-$caption id="attachment_150089" align="alignnone" width="470"$![Fig. 7: ejes y ángulos de Euler para el volante del problema](/taller-matematicas/assets/images/cinematica_volant2.png) Fig. 8: una elección posible de ejes y ángulos de Euler para el volante del problema[/caption]
+
 El origen O de las referencias fija y móvil es el mismo: el centro de la plataforma. Encontremos ahora los componentes de las velocidades de las rotaciones de Euler (vectores en rojo en la figura 7) respecto los ejes girados X''Y''Z'', proyectándolos según los ángulos $\alpha, \beta$, esto equivale a decir, encontrar la velocidad angular de la referencia móvil X''Y''Z'', expresada en su propia base, que es, llamando Ref2 a la referencia de ejes X''Y''Z'', y origen O:
 
 ${\left\{{\left.{\overrightarrow\Omega}_{Ref2}\right|}_{Ref1}\right\}}_{Ref2}=\begin{bmatrix}\alpha'\cos\left(\beta\right)\\\beta'\\-\alpha'\sin\left(\beta\right)\end{bmatrix}$, [2]
@@ -115,7 +112,6 @@ Las componentes de OP en la base Ref2 serán, considerando el centro O' del disc
 
 $\overrightarrow{OP}=\overrightarrow{OO'}+\overrightarrow{O'P}=\begin{bmatrix}0\\0\\L\end{bmatrix}+\begin{bmatrix}r\cos\left(\gamma\right)\\r\sin\left(\gamma\right)\\0\end{bmatrix}=\begin{bmatrix}rcos\left(\gamma\right)\\rsin\left(\gamma\right)\\L\end{bmatrix}.$ [6]
 
-$caption id="attachment_150095" align="aligncenter" width="429"$![Fig. 8: coordenadas de un punto del disco](/taller-matematicas/assets/images/velocitat-base-mòbil7.png) Fig. 9: coordenadas de un punto del disco[/caption]
 
 Aplicamos [5] usando [6] y [2]:
 

@@ -69,10 +69,10 @@ $\frac{2-3i}{1+2i}\cdot\frac{1-2i}{1-2i}=\frac{\left(2-3i\right)\cdot\left(1-2i\
 
 El binomio *a + bi* se puede representar en un plano coordenado, tomando como eje horizontal la recta real, y como eje vertical la recta imaginaria; en la figura 1 vemos el plano, con varios complejos representados por cruces. Por ejemplo el complejo 2 + 2i se representa por el punto (2, 2) en el plano.
 
-[caption id="" align="alignnone" width="300"]![Plano complejo: reales en eje horizontal, imaginarios en eje vertical](http://3.bp.blogspot.com/-PNlXSOKQBO8/UBk6P2PvhWI/AAAAAAAAAhc/-MnFGJN2QV4/s1600/Argand_diagram.gif) fig. 1: Plano complejo: reales en eje horizontal, imaginarios en eje vertical, y algunos puntos en el plano[/caption]
+
 La representación de los complejos en el plano proporciona una forma alternativa de expresarlos, denominada **forma polar del complejo**: en la figura 2 vemos que para cualquier complejo (a, b) podemos trazar un segmento de recta desde el origen de coordenadas hasta el punto (a, b); este segmento tendrá una longitud r, llamada **módulo del complejo**,  y formará con ele eje de los números reales un ángulo α, llamado **argumento del complejo**. Estos dos números, (r, α), bastan para localizar el punto (a, b), y son la representación en forma polar del complejo a + bi.
 
-$caption id="attachment_150182" align="aligncenter" width="305"$![Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal](/taller-matematicas/assets/images/imaginarios.png) Fig. 2: el número complejo 3 + 4i se representa en el plano complejo como el punto (3, 4), y puede localizarse como el punto que dista del origen una longitud r con un ángulo α respecto al eje horizontal[/caption]
+
 **Cálculo del módulo y del argumento de un complejo**
 
 Usando trigonometría en la figura 2 es evidente que:
@@ -83,7 +83,7 @@ En el ejemplo de la figura 2, $r=\sqrt{3^2+4^2}=5,\;\alpha=\tan^{-1}\left(\frac4
 
 Si el punto que representa el complejo z está en el primer cuadrante del plano, el argumento $\alpha$ viene dado directamente por [2], pero si está en otros cuadrantes, habrá que modificarlo según la siguiente tabla (en radianes):
 
-$caption id="attachment_150187" align="aligncenter" width="288"$![Los cuatro cuadrantes y las respectivas correcciones al argumento del complejo](/taller-matematicas/assets/images/quadrants.png) Fig. 3: Los cuatro cuadrantes y las respectivas correcciones (en radianes)  al argumento del complejo[/caption]
+
 En esos casos para usar la tabla de la figura 3 cogeremos los valores absolutos en el cálculo del argumento de la fórmula 2:
 
 $\alpha=\tan^{-1}\left(\frac{\left|b\right|}{\left|a\right|}\right)$
@@ -198,7 +198,6 @@ Así pues, en toda aplicación práctica en que tengamos oscilaciones complicada
 
  	- En Física Cuántica, la [ecuación de Schrödinger](https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Schr%C3%B6dinger) nos proporciona la evolución en el tiempo y el espacio de la onda de probabilidad de una partícula, usando número complejos (observar que incluye el número imaginario i):
 
-[caption id="" align="aligncenter" width="213"]![Ecuación de Schrödinger (fuente: Wikipedia)](https://wikimedia.org/api/rest_v1/media/math/render/svg/327546c3f8bd78d7d533c5c04f7602086862dfd4) Ecuación de Schrödinger (fuente: Wikipedia)[/caption]
 
  	- En la teoría de la Relatividad restringida, una de las formas de presentarla es a través del espacio-tiempo de Minkowski, en el cual el tiempo se toma como si fueran números imaginarios; también en Relatividad General, y en Cosmología, se usan tiempos que son números imaginarios, no por motivos "esotéricos", si no para simplificar las complicadas ecuaciones de la relatividad. Ver por ejemplo mi post [La naturaleza del espacio y del tiempo (II)](http://matfisfil.blogspot.com/2012/08/la-naturaleza-del-espacio-y-del-tiempo.html).
 {% endraw %}

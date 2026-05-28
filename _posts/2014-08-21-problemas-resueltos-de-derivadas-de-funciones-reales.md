@@ -47,7 +47,6 @@ $f(\sqrt2)=\sqrt{2-1}\;=1=\sqrt2\cdot\sqrt2+c\Leftrightarrow c=-1.$
 
 La recta tangente es pues: $y=\sqrt2x-1.$ En la imagen vemos la gráfica de $f(x)$, con dominio $\left|x\right|\geq1$, y en rojo la recta tangente por el punto $(\sqrt{2},1).$
 
-$caption id="attachment_257" align="alignnone" width="633"$[![y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo](/taller-matematicas/assets/images/Exer3_Derivades.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/Exer3_Derivades.png) y=(x²-1)^0.5 y su recta tangente en (2^0.5, 1), en rojo[/caption]
 
 ---
 
@@ -66,7 +65,7 @@ Observemos que de hecho tenemos dos funciones, debido al signo $\pm$, debido a q
 
  
 
-$caption id="attachment_243" align="aligncenter" width="297"$[![Una curva cerrada; a cada valor x le corresponden dos valores y](/taller-matematicas/assets/images/elipse.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/elipse.png) Una curva cerrada; a cada valor x le corresponden dos valores y[/caption]
+
 Sustituimos la expresión de $y(x)$ en la función $d^2(x,y)$:
 
 $\begin{array}{l}\begin{array}{l}y\left(x\right)=1\pm2\sqrt{-x^2+1}\Rightarrow\\d^2\left(x,y\right)=d^2\left(x\right)=x^2+\left(1\pm2\sqrt{-x^2+1}\right)^2=x^2+1+4\left(-x^2+1\right)\pm4\sqrt{-x^2+1}=\end{array}\\-3x^2+5\pm4\sqrt{-x^2+1}.\end{array}$
@@ -82,7 +81,6 @@ $\begin{array}{l}d^2\left(\frac{\sqrt5}3\right)=-3\left(\frac{\sqrt5}3\right)^2+
 
 Vemos que en $x=0$ tenemos la distancia máxima $d^2(0)=9\Rightarrow d=3$ y en $x=\frac{\sqrt5}3\right)$ la distancia mínima $d^2\left(\frac{\sqrt5}3\right)=\frac{10}3+\frac8{\sqrt5}\Rightarrow d\approx2.6.$ En la imagen siguiente vemos la gráfica de la elipse.
 
-$caption id="attachment_254" align="alignnone" width="226"$[![Elipse 4x²+y²-2y-3=0](/taller-matematicas/assets/images/elipse1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/elipse1.png) Elipse 4x²+y²-2y-3=0 (gráfica realizada con WolframAlpha)[/caption]
 
 ---
 

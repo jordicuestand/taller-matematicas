@@ -65,7 +65,7 @@ $2.63\times10^3\frac{km}{h^2}\frac1{1.27\times10^5}\frac{h^2}{km}\frac m{s^2}=0.
 
 | 
 
-$caption id="attachment_309" align="alignnone" width="150"$[![](/taller-matematicas/assets/images/caiguda_lliure.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/caiguda_lliure.png) Caída libre desde una altura h, dividida en dos secciones: 150m, h-150[/caption] 
+
 | 
 Llamando $h$ a la altura total recorrida, la altura caída previamente a empezar a cronometrar será $h-150$.
 
@@ -95,7 +95,6 @@ El tiempo total de caída es $3.6+3=6.6s.$
 
 (a) En el esquema vemos los vectores velocidad que necesitamos: $v_r$ es la velocidad relativa de la barca con respecto al río, $v_a$ la velocidad de la corriente de agua, que arrastra a la barca, $v=v_r+v_s$ es la velocidad absoluta resultante de la barca.
 
-$caption id="attachment_313" align="alignnone" width="238"$[![](/taller-matematicas/assets/images/barca1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/barca1.png) Barca atravesando el río con velocidad relativa transversal[/caption]
 
 Expresando los vectores en componentes: $v_a=(0,-1.5), v_r=(10/3.6,0), v=(10/3.6,-1.5).$
 Usamos ahora la ecuación del movimiento con velocidad constante, expresada por cada coordenada $(x,y)$ por separado: $x=x_0+v_xt,\;y=y_0+v_yt.$ Sustituyendo valores:
@@ -105,7 +104,7 @@ $\begin{array}{l}80=0+v_rt=\frac{10}{3.6}t\Rightarrow t=\frac{3.6\cdot80}{10}=28
 La distancia total recorrida es la hipotenusa del triángulo formado por la anchura de río y la distancia según el eje y: $\sqrt{80^2+43.2^2}=90.9m.$
 (b) En el esquema vemos que ahora la velocidad absoluta es transversal, luego la velocidad relativa ha de ser oblicua. Usamos las mismas ecuaciones que antes, descomponiendo en componentes $(x,y)$:
 
-$caption id="attachment_314" align="alignnone" width="214"$[![Barca atravesando el río con velocidad absoluta transversal](/taller-matematicas/assets/images/barca2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/barca2.png) Barca atravesando el río con velocidad absoluta transversal[/caption]
+
 La componente $x$ de la velocidad relativa ha de ser igual a la velocidad transversal con la que cruza el río, mientras que la componente $y$ ha de contrarrestar la velocidad de la corriente de agua: $\overrightarrow{v_r}=\left(v,-v_a\right).$ Entonces:
 
 $\left\|\overrightarrow{v_r}\right\|=\sqrt{v^2+v_a^2}=\frac{10}{3.6},\;v_a=1.5\;\Rightarrow v=\sqrt{\left(\frac{10}{3.6}\right)^2-1.5^2}=2.3\;\frac ms.$
@@ -127,7 +126,7 @@ La aceleración viene dada por la derivada de la velocidad respecto del tiempo
 
 El rumbo NNE forma un ángulo de $\theta=\frac78\frac\pi2=\frac{7\pi}{16}$ radianes con el eje $x$ (o equivalentemente, con el rumbo E).  Entonces el humo del barco formará un ángulo con el eje $x$ de $\theta+20\frac\pi{180}=\frac{7\pi}{16}+\frac{2\pi}9=\frac{95\pi}{144}$ radianes (ver figura).
 
-$caption id="attachment_326" align="alignnone" width="600"$[![Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.](/taller-matematicas/assets/images/fum.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/fum.png) Direcciones del viento, barco y humo. A la derecha, detalle de la deducción del ángulo de la trayectoria del humo.[/caption]
+
 La velocidad del barco es de $v=10 m/s$, que será una componente de la velocidad del humo $v_h$, a la que debemos añadir la velocidad del viento $v_v$ para obtener la velocidad absoluta del humo $v_h$:
 
 $\begin{array}{l}\overrightarrow v=10\left(\cos\left(\frac{7\pi}6\right),\sin\left(\frac{7\pi}6\right)\right),\\\overrightarrow{v_v}=\left(-v_v,0\right),\\v_h=\overrightarrow v+\overrightarrow{v_v}=\left(-v_v+10\cos\left(\frac{7\pi}6\right),10\sin\left(\frac{7\pi}6\right)\right).\end{array}$

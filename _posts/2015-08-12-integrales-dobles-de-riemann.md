@@ -15,12 +15,12 @@ math: true
 
 # Integral de Riemann en dos dimensiones (integral doble)
 
-$caption id="attachment_1271" align="aligncenter" width="640"$[*](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/parcelacio_integral_doble.png) Izquierda: parcelación rectangular del área -1 < x, y < 1; derecha: gráfica "parcelada" en 3D de la función z=1-x²-y²[/caption]
+
 De la misma forma que en la [integral de Riemann](http://tallermatematic.eu/wp/?p=674) en un intervalo (a,b) para la función $y=f(x)$ de una variable dividíamos la variable independiente x en intervalos de amplitud dx, calculábamos las áreas $dA=y(x)·dx$, sumábamos y pasábamos al límite para obtener la integral $\int_a^bf\left(x\right)\operatorname dx$, cuando tenemos una función real con dos variables independientes $z=f(x,y)$ dividiremos el plano (x,y) en parcelas de dos dimensiones de amplitud dx, dy, sumaremos los productos f(x,y)·dx·dy y pasaremos al límite para obtener la integral doble de f(x,y) en el recinto R: $\int_Rf\left(x,y\right)\operatorname dx\operatorname dy.$
 
 Más en detalle: sea *w* una de las parcelas del plano R; estas parcelas no tienen porque ser rectangulares, pueden tener cualquier forma, como en la siguiente figura:
 
-$caption id="attachment_1272" align="alignnone" width="300"$[![Parcelación no homogénea de una región R del plano](/taller-matematicas/assets/images/patata-300x200.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/patata.png) Parcelación no homogénea de una región R del plano[/caption]
+
 En cualquier caso, dada una parcela *w*, formaremos el producto $f(x,y)·A_w$ donde $A_w$ simboliza el área de la parcela *w*; ¿qué valor $f(x,y)$ tomaremos? Pues dentro de la región w hay infinitos puntos (x,y)... en la integral de Riemann lo que hacemos es considerar los valores máximo y mínimo de $f(x,y)$ en la parcela w, los denominamos $M_w,  m_w$ respectivamente. Entonces definimos las sumas superior e inferior de Riemann para $f(x,y)$ y para la parcelación efectuada en R, sumando los productos de las áreas de cada parcela por los valores máximo y mínimo, respectivamente, de  $f(x,y)$ en cada parcela:
 
 $S=\sum\nolimits_{i=1}^nM_{w_i}\cdot A_{w_i}\;,\;s=\sum\nolimits_{i=1}^nm_{w_i}\cdot A_{w_i}$
@@ -37,7 +37,7 @@ o sea que los límites de las sumas inferior y superior coinciden, y definen el 
 
 En lo que sigue sólo trataremos con regiones R de integración rectangulares; supongamos que dividimos el intervalo a < x < b del eje X en n subintervalos, y el intervalo c < y < d del eje Y en m subintervalos;
 
-$caption id="attachment_1277" align="alignnone" width="300"$[![Área R de integración rectangular](/taller-matematicas/assets/images/area_rect-300x205.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/area_rect.png) Área R de integración rectangular[/caption]
+
 tendremos por tanto nm rectángulos, y las sumas de Riemann tendrán la forma:
 
 $S=\sum\nolimits_{i=1}^n\sum\nolimits_{j=1}^mf\left(x_i,y_j\right)\triangle x_i\triangle y_j=\sum\nolimits_{j=1}^m\triangle y_j\sum\nolimits_{i=1}^nf\left(x_i,y_j\right)\triangle x_i$
@@ -64,7 +64,7 @@ Calculamos ahora la integral respecto de y: $\int_{-1}^1\left(\frac43-2y^2\right
 
 En general podemos integrar en un recinto R delimitado por una curva cerrada C dada de forma implícita por una cierta función f(x,y):
 
-$caption id="attachment_1278" align="alignnone" width="300"$[![Recinto R de integración no rectangular, delimitado por una curva cerrada](/taller-matematicas/assets/images/area_no_rect-300x181.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/area_no_rect.png) Recinto R de integración no rectangular, delimitado por una curva cerrada[/caption]
+
 La limitación que se impone para que la integral sea calculable según Riemann es que la curva C sea una [curva de Jordan](http://mathworld.wolfram.com/JordanCurve.html) que son curvas cerradas en las cuales el número de puntos de intersección de la curva con cualquier recta es finito. Para integrar la función f en el interior del recinto delimitado por la curva C, encerramos la curva en un recinto rectangular R y suponemos que la función toma valor cero fuera del interior de la curva. Aplicamos entonces la integral reiterada en el recinto R: para cada valor $y_0$ dado, la recta horizontal $y=y_0$ cortará a la curva en un número de puntos, delimitando unos segmentos $s_1, s_2, ...$; fuera de esos segmentos la integral valdrá cero, y sólo tendremos valores no nulos en los segmentos:
 
 $\int\int_Rf\left(x,y\right)\operatorname dx\operatorname dy=\int_c^d\operatorname
@@ -74,7 +74,6 @@ dy\sum\nolimits_{i=1}^n\int_{s_i}f\left(x,y\right)\operatorname dx$
 
 Cuando el recinto de integración es [convexo](https://es.wikipedia.org/wiki/Convexidad), las rectas que lo cortan lo hacen como máximo en dos puntos, o sea que tendremos para cada $y=y_0$ cada recta horizontal $y=y_0$  definirá un segmento:
 
-$caption id="attachment_1279" align="alignnone" width="300"$[![Recinto convexo de integración](/taller-matematicas/assets/images/area_convexa-300x185.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/area_convexa.png) Recinto convexo de integración[/caption]
 
 Si somos capaces de expresar los valores de los extremos del segmento en función de y, o sea $x_1(y), x_2(y)$, podemos substituirlos en las integrales reiteradas:
 
@@ -96,7 +95,7 @@ $\begin{array}{l}\iint_Df\left(x,y\right)\operatorname dx\operatorname dy=\int_0
 
 Al definir la integral doble de Riemann hemos tomado cada parcela *w *de la región R de integración y hemos formado el producto $f(x,y)·A_w$ donde $A_w$ simboliza el área de la parcela *w. *Interpretando f(x,y) como una altura z sobre el plano (x,y), el producto $f(x,y)·A_w$ es el volumen de un "cilindro" de altura z=f(x,y) y base w; en la siguiente figura se representa el cilindro formado por una región R circular y la altura z:
 
-$caption id="attachment_1282" align="aligncenter" width="171"$[![Volumen definido por una región R del plano XY y una altura z=f(x,y)](/taller-matematicas/assets/images/volum_R.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/volum_R.png) Volumen definido por una región R del plano XY y una altura z=f(x,y)[/caption]
+
 **Ejemplo 4**: Probar que el volumen de un cilindro con base circular y radio r y altura h es $\pi r^2h$ usando una integral doble.
 
 La región R del plano XY es el círculo interior a la circunferencia x²+y²=r²; para la función z=f(x,y) tomamos el valor constante z=h. El volumen del cilindro viene dado por la integral doble $\int\int_Rh\operatorname dx\operatorname dy=h\int\int_R\operatorname dx\operatorname dy.$ Para calcular la integral en el recinto R, usamos integrales reiteradas: tenemos que expresar x en función de y, o viceversa, por ejemplo: $x^2+y^2=r^2\Leftrightarrow x=\pm\sqrt{r^2-y^2}.$ La otra variable, y, cumple $-r\leq y\leq r$. Por tanto las integrales reiteradas son $\int_{-r}^r\operatorname dy\int_{x_2}^{x_1}\operatorname dx$ donde $x_1=\sqrt{r^2-y^2},\;x_2=-\sqrt{r^2-y^2}.$  Calculamos primero la de la variable x:
@@ -127,7 +126,7 @@ El volumen que nos piden viene dado por la integral doble $\int\int_R\left(x^2+y
 
 La región R definida por y=x², x²=y está contenida en el cuadrante x>0, y>0, pues sustituyendo x=y² en y=x² obtenemos y=(y²)²=y⁴, luego y⁴-y=0, de donde y(y³-1)=0 que tiene por soluciones y=0, y=1; para y=0 tenemos x=0, para y=1 es x=1. La región es convexa, y se representa en la siguiente figura (aunque no es necesaria la representación gráfica para resolver el problema, siempre ayuda a comprenderlo):
 
-$caption id="attachment_1285" align="aligncenter" width="300"$[![Región delimitada por las curvas y=x², x²=y](/taller-matematicas/assets/images/regio_R-300x288.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/regio_R.png) Región delimitada por las curvas y=x², x²=y[/caption]
+
 Para un valor $y_0$ dado, la recta $y=y_0$ corta a la región R en dos puntos, con coordenadas $x_1, x_2$ dadas por: 1) intersección con x²=y: $x_1^2=y_0\Leftrightarrow x_1=\sqrt{y_0}$, 2) intersección con y=x²: $x_2=y_0^2$.
 
 Por tanto podemos expresar, dentro de la región R, la variación de x en función de y: el segmento horizontal azul de la figura tiene coordenadas $(y_0^2,y_0),(\sqrt{y_0},y)$, en general, para cualquier y dado en el intervalo [0, 1], la variable x variará entre $y^2$ y $\sqrt{y}$. Podemos pues calcular la integral doble en R usando dos integrales reiteradas:
@@ -143,7 +142,7 @@ $\begin{array}{l}\left.\begin{array}{r}x=\rho cos\left(\theta\right)\\y=\rho sin
 Para calcular una integral doble en un recinto R del plano XY usando coordenadas polares, tenemos que convertir el elemento de área rectangular $\triangle x\triangle y$ por un elemento de área en las
 coordenadas $\rho,\theta$; en la siguiente ilustración vemos que esa área será, aproximadamente, igual al lado $\triangle \rho$ por la longitud del arco; hay dos arcos, si medimos el ángulo $\theta$ en radianes, sus longitudes son $\rho \cdot \triangle \theta$ y $(\rho + \triangle \rho )\cdot \triangle \theta:$
 
-$caption id="attachment_1296" align="alignnone" width="300"$[![Elemento de área en coordenadas polares](/taller-matematicas/assets/images/area_circular-300x266.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/area_circular.png) Elemento de área en coordenadas polares[/caption]
+
 Como para hacer la integral tomamos el límite $\triangle\rho\rightarrow0$, podemos considerar que los dos arcos son iguales, pensando que el radio $\rho$ es el valor medio para el elemento de área,  resulta que el área valdrá $\rho\triangle\theta\triangle\rho$. Entonces al pasar al límite de tenemos la equivalencia:
 
 $\int\int_Rf\left(x,y\right)\operatorname dx\operatorname dy=\int\int_Rf\left(\rho,\theta\right)\rho\operatorname d\theta\operatorname d\rho$
@@ -176,7 +175,7 @@ donde el recinto R se transforma en el recinto R' al hacer el cambio.
 
 En la figura vemos una representación: el plano oblicuo P forma la parte superior de la figura, mientras que la base es una elipse; las intersecciones del plano P con los planos XZ, YZ son las rectas z=1-x, z=y+1 respectivamente, la recta vertical en el plano YZ corresponde a la intersección de la elipse C con el plano x=0:
 
-$caption id="attachment_1304" align="aligncenter" width="625"$[![Recinto delimitado por una elipse en XY y un plano en el espacio](/taller-matematicas/assets/images/recinte-1024x773.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/08/recinte.png) Recinto delimitado por una elipse en XY y un plano en el espacio[/caption]
+
 La región R de integración será el área del plano XY dentro de la elipse, mientras que para la función a integrar tomaremos la altura z sobre el plano XY, dada por la ecuación del plano P: *x - y + z - 1 = 0 => z = -x + y + 1 = f(x, y).  *El volumen será pues:
 
 $V=\iint_R\left(y-x+1\right)\operatorname dx\operatorname dy$

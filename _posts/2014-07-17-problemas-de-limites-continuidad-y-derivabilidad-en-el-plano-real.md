@@ -167,7 +167,6 @@ $\lim_{2^+}\frac1{x-2}\left(\frac1{x+2}-\frac3{x^2-4}\right)=\frac1{0^+}\left(\f
 
 En este caso coinciden, la función $f(x)=\frac1{x^2-4}-\frac3{x^3-2x^2-4x+8}$ tiene una asíntota vertical en $x=2$:
 
-$caption id="attachment_109" align="alignnone" width="432"$[![problema4-tema4-apunts](/taller-matematicas/assets/images/problema4-tema4-apunts.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2014/07/problema4-tema4-apunts.jpg) Realizado con http://fooplot.com/[/caption]
 
 ---
 

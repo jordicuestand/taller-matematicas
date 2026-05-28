@@ -42,7 +42,7 @@ $frac{d^{2}x}{dt}=frac{F(t)}{m}$
 
 Another way to introduce differential equations is from the geometric point of view. Consider the graph of the function $y=Cx^2$ for all possible real values of *C*. The image represents the values *C=1, 2, 4, 8*.
 
-$caption id="attachment_847" align="alignnone" width="497"$[![Curve beam y=Cx²](/taller-matematicas/assets/images/feix_corbes.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes.png) Curve beam y=Cx²[/caption]
+
 A **bundle of plane curves** is the set of all curves that are graphs of a general function $y=F(x,C)$. When we give *C* all possible values, the generated curves fill an *R* region of the plane; in the case of the image above that region is the entire upper half-plane $xinleft(-infty,inftyright),;yinleft[0,inftyright).$ In general the *R* region will depend on the beam.
 
 We ask ourselves now: for each point $(x,y)$ of the plane there will be a single value *C* such that it defines us unequivocally the function $y=F(x,C)$ that passes through that point? We can put it in these terms: fixing $x=x_0$ the function *F* becomes dependent only on *C*: $y=F(x_0,C)=f(C)$; For each value of *and* will there be a unique value of *C*? This will be the case as long as the function *f* is strictly increasing or decreasing in *R*, and that will happen when its derivative is not overridden: $frac{operatorname df}{operatorname dC}neq0$. In this case it is as if we had another function $C=psi(x,y)$ of two variables that determines *C* for each point in the plane.
@@ -55,7 +55,6 @@ If we derive the equation from the beam we obtain $y&#39;=2Cx$, then, substituti
 
 The R region is the union of the +X+Y and -X-Y quadrants, some curves are shown in the figure.
 
-$caption id="attachment_848" align="alignnone" width="503"$[![Beam of curves y=C·Sin(x)](/taller-matematicas/assets/images/feix_corbes1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes1.png) Beam of curves y=C·Sin(x)[/caption]
 
 Setting $x=x_0$ any we get $y=Csinleft(x_0right)=fleft(Cright);f&#39;left(Cright)=sinleft(x_0right)$. This value will be zero whenever $x_0=kmathrmpi,;mathrm k=0,1,dots.$ In this set of points all the curves of the beam coincide, and in the rest of the points we have uniqueness: a single curve for each point, given by: $C=frac y{sinleft(xright)}=psi(x,y)$.
 
