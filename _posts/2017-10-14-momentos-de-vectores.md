@@ -19,7 +19,7 @@ math: true
 
 ### Introducción
 
-En el artículo [Vectores en Física ](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)se habló de algunas propiedades geométricas de los vectores (la invariancia respecto de transformaciones de coordenadas) que son importantes para representar magnitudes físicas como la fuerza o la velocidad angular. En este artículo vemos el concepto teórico de momento de un vector respecto a un punto o a una recta, que físicamente tiene importancia para calcular el efecto que un vector ejerce respecto a ese punto o recta; un ejemplo práctico es la antigua [ley de la palanca](https://es.wikipedia.org/wiki/Palanca) de Arquímedes, que nos muestra cómo varía el efecto de una fuerza con el punto de aplicación: la fuerza P, más alejada del punto de apoyo, ejerce una acción de giro igual a la fuerza mayor R que está más cerca; esa "acción de giro" se materializa usando el concepto de momento de cada fuerza respecto al punto de apoyo.
+En el artículo [Vectores en Física ]({{ '/2016/08/11/vectores/' | relative_url }})se habló de algunas propiedades geométricas de los vectores (la invariancia respecto de transformaciones de coordenadas) que son importantes para representar magnitudes físicas como la fuerza o la velocidad angular. En este artículo vemos el concepto teórico de momento de un vector respecto a un punto o a una recta, que físicamente tiene importancia para calcular el efecto que un vector ejerce respecto a ese punto o recta; un ejemplo práctico es la antigua [ley de la palanca](https://es.wikipedia.org/wiki/Palanca) de Arquímedes, que nos muestra cómo varía el efecto de una fuerza con el punto de aplicación: la fuerza P, más alejada del punto de apoyo, ejerce una acción de giro igual a la fuerza mayor R que está más cerca; esa "acción de giro" se materializa usando el concepto de momento de cada fuerza respecto al punto de apoyo.
 
 ![](/taller-matematicas/assets/images/moments0.png) Fig. 1: Ley de la palanca (By Dnu72 (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 4.0-3.0-2.5-2.0-1.0 (https://creativecommons.org/licenses/by-sa/4.0-3.0-2.5-2.0-1.0)], via Wikimedia Commons)Otro ejemplo lo vemos en la siguiente figura, en la que se representa la sección de un rodillo situado en un plano horizontal, al que hemos atado una cuerda r también horizontal en su parte superior.
 
@@ -38,7 +38,7 @@ donde la expresión (P-O) simboliza la diferencia de las coordenadas de los dos 
 
 ![](/taller-matematicas/assets/images/moments1.png) Fig. 3: momento m del vector v, aplicado en P, respecto del punto O
 
-Recordemos que (P-O) puede verse como el vector **OP** con orígen en O y extremo en P; además, recordando las propiedades del producto vectorial, el vector momento **m** será perpendicular al plano formado por los vectores **v** y **OP**, y será un pseudovector, o vector polar (ver  [Vectores en Física](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)), su módulo valdrá el doble del área del triángulo formado por los vectores **v** y **OP**, o analíticamente,
+Recordemos que (P-O) puede verse como el vector **OP** con orígen en O y extremo en P; además, recordando las propiedades del producto vectorial, el vector momento **m** será perpendicular al plano formado por los vectores **v** y **OP**, y será un pseudovector, o vector polar (ver  [Vectores en Física]({{ '/2016/08/11/vectores/' | relative_url }})), su módulo valdrá el doble del área del triángulo formado por los vectores **v** y **OP**, o analíticamente,
 
 $\left|\mathbf m\right|=\left|\left(\mathbf P\boldsymbol-\mathbf O\right)\boldsymbol\times\mathbf v\right|=\left|\left(\mathbf P\boldsymbol-\mathbf O\right)\right|\cdot\left|\boldsymbol v\right|\cdot\sin\left(\alpha\right)$
 
@@ -53,7 +53,7 @@ Luego la suma de momentos es $-\widehat k\left(RB_R-PB_P\right)$, un vector en l
 ![](/taller-matematicas/assets/images/separador2.png)
 ### Propiedades del vector momento
 
-Una primera propiedad es que el vector momento es un pseudovector (o vector axial) debido a que se obtiene del producto vectorial de dos vectores polares (ver por ejemplo V[ectores en Física](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)).
+Una primera propiedad es que el vector momento es un pseudovector (o vector axial) debido a que se obtiene del producto vectorial de dos vectores polares (ver por ejemplo V[ectores en Física]({{ '/2016/08/11/vectores/' | relative_url }})).
 
 Si el vector **v** lo desplazamos a lo largo de su recta soporte r hasta aplicarlo en otro punto P' (figura 2), geométricamente el nuevo triángulo formado por **OP**' - **v** tendrá la misma área que el **OP** - **v** , pues la base **v** es la misma y la altura h (obtenida trazando la perpendicular a la recta r pasando por O) de los dos triángulos es la misma. Además, el plano que contiene al vector **v** y a **OP** es el mismo que contiene a **v** y a **OP**' (es el plano definido por el punto O y la recta r), por tanto vemos que:
 Propiedad 1: El momento m de un vector v respecto a un punto O no depende del punto de aplicación del vector, siempre que esté sobre la recta r que contiene al vector.

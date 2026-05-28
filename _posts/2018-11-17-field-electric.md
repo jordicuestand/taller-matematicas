@@ -10,7 +10,7 @@ math: true
 
 ### Vector electric field
 
-El[ectrostatic](http://tallermatematic.ovh/wp/index.php/2018/10/07/electrostatica/)s study the force of two Q, Q' point electrical charges between them; if we look only at one of the charges, say the Q, we realize that if we place any Q' load in any position of space surrounding Q, a force will be exerted on Q', it is as if the space surrounding Q has a new property, that of exerting a force on any Q' load in any position that we place it.
+El[ectrostatic]({{ '/2018/10/07/electrostatica/' | relative_url }})s study the force of two Q, Q' point electrical charges between them; if we look only at one of the charges, say the Q, we realize that if we place any Q' load in any position of space surrounding Q, a force will be exerted on Q', it is as if the space surrounding Q has a new property, that of exerting a force on any Q' load in any position that we place it.
 
 Let's place a small known value q test load at any position in the space given by the position vector v; if we **s**ee that an F-force (a vector) is **e**xerted on the charge simply because it is situated at that point, we infer that space is affected by some other unknown Q load that creates that effect, and then the law of Coulomb will be fulfilled,
 
@@ -28,7 +28,7 @@ This vector is called th**e electric field vecto**r, and does not depend on the 
 ![](/taller-matematicas/assets/images/camp_electr2.png) Fig.2: two test loads q, q' determine the origin of the electric field, the Q load, and the vector field E
 The property that all the support lines of the electrostatic forces are cut at one point can be expressed by saying that** the electric field is a central fi**eld be*cause all forces start from a central point of space*.
 
-In Physics the concep[t field is us](https://es.wikipedia.org/wiki/Campo_(f%C3%ADsica))ed to describe how a measurable physical magnitude is "distributed" by space; so, we can talk about electric fields, magnetic fields, and even velocity fields in a fluid. If the magnitude is scalar, the field will be, if [vector, t](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)he field is vector, and if the magnitude is a te[nsor, ](http://tallermatematic.ovh/wp/index.php/2017/01/31/tensores-en-fisica/)the field will be tensory. Specific mathematics for describing fields has been studied in depth, giving rise to the branch of Mathematical Physics known [as Field Theory](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_campos).
+In Physics the concep[t field is us](https://es.wikipedia.org/wiki/Campo_(f%C3%ADsica))ed to describe how a measurable physical magnitude is "distributed" by space; so, we can talk about electric fields, magnetic fields, and even velocity fields in a fluid. If the magnitude is scalar, the field will be, if [vector, t]({{ '/2016/08/11/vectores/' | relative_url }})he field is vector, and if the magnitude is a te[nsor, ]({{ '/2017/01/31/tensores-en-fisica/' | relative_url }})the field will be tensory. Specific mathematics for describing fields has been studied in depth, giving rise to the branch of Mathematical Physics known [as Field Theory](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_campos).
 
 ### Electric field produced by several point loads
 

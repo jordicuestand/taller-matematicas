@@ -45,17 +45,17 @@ Los conceptos asociados a estas competencias son:
 
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 
- 	- [Espacios vectoriales](http://tallermatematic.ovh/wp/index.php/2016/11/02/espacios-vectoriales/)
+ 	- [Espacios vectoriales]({{ '/2016/11/02/espacios-vectoriales/' | relative_url }})
 
- 	- [Aplicaciones lineales y matrices](http://tallermatematic.ovh/wp/index.php/2016/11/27/aplicaciones-lineales/)
+ 	- [Aplicaciones lineales y matrices]({{ '/2016/11/27/aplicaciones-lineales/' | relative_url }})
 
- 	[Problemas resueltos de aplicaciones lineales y matrices](http://tallermatematic.ovh/wp/index.php/2016/12/31/problemas-resueltos-de-algebra-matrices-sistemas-de-ecuaciones/)
+ 	[Problemas resueltos de aplicaciones lineales y matrices]({{ '/2016/12/31/problemas-resueltos-de-algebra-matrices-sistemas-de-ecuaciones/' | relative_url }})
 
  	- Determinantes
 
  	- Sistemas de ecuaciones lineales
 
- 	- [Vectores y valores propios, diagonalización de matrices](http://tallermatematic.ovh/wp/index.php/2016/12/19/vectores-y-valores-propios-diagonalizacion-de-matrices/)
+ 	- [Vectores y valores propios, diagonalización de matrices]({{ '/2016/12/19/vectores-y-valores-propios-diagonalizacion-de-matrices/' | relative_url }})
 
  	- Geometría lineal
 {% endraw %}

@@ -32,7 +32,7 @@ math: true
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Aplicaciones lineales
 
-Las aplicaciones lineales, como todas las aplicaciones, son un tipo de correspondencia entre conjuntos, en este caso entre vectores de dos espacios vectoriales (para un recordatorio de las correspondencias entre conjuntos, ver el artículo [Funciones](http://tallermatematic.ovh/wp/index.php/2015/05/08/funciones/)), de hecho son funciones (o aplicaciones), pero con dos condiciones adicionales:
+Las aplicaciones lineales, como todas las aplicaciones, son un tipo de correspondencia entre conjuntos, en este caso entre vectores de dos espacios vectoriales (para un recordatorio de las correspondencias entre conjuntos, ver el artículo [Funciones]({{ '/2015/05/08/funciones/' | relative_url }})), de hecho son funciones (o aplicaciones), pero con dos condiciones adicionales:
 
 **Definición 1**: **aplicación lineal entre espacios vectoriales**. Una aplicación lineal es una función *f* que asigna vectores **u** de un espacio vectorial U a vectores *f*(**u**) = **v **de otro espacio vectorial V, cumpliendo las siguientes **condiciones de linealidad**:
 

@@ -17,7 +17,7 @@ math: true
 
 ### Velocidad angular y rotaciones en el espacio
 
-En el artículo [Vectores en Física ](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)explicamos que la velocidad angular es un tipo especial de vector: un vector axial, o pseudovector, y decíamos que estos vectores se diferencian de los vectores "normales" o polares en que se comportan de forma distinta bajo un transformaciones lineales del tipo "reflexión respecto un plano". En el caso de la velocidad angular además podemos decir que, pese a ser una velocidad, no se obtiene derivando un vector respecto al tiempo.
+En el artículo [Vectores en Física ]({{ '/2016/08/11/vectores/' | relative_url }})explicamos que la velocidad angular es un tipo especial de vector: un vector axial, o pseudovector, y decíamos que estos vectores se diferencian de los vectores "normales" o polares en que se comportan de forma distinta bajo un transformaciones lineales del tipo "reflexión respecto un plano". En el caso de la velocidad angular además podemos decir que, pese a ser una velocidad, no se obtiene derivando un vector respecto al tiempo.
 
 Esto ocurre por que no podemos definir una base para los "vectores rotación", tal como hacemos para los vectores posición, para después descomponer cualquier rotación dada en sus componentes,  derivarlos y obtener velocidades de rotación, y no podemos porque las rotaciones son transformaciones lineales, que además no conmutan entre sí. Esto quiere decir que el orden en que se aplican las rotaciones influye en el resultado.
 
@@ -103,7 +103,7 @@ que se interpreta: velocidad angular del volante V, relativa a la referencia mó
 
 $\begin{array}{l}{\left\{{\left.\overrightarrow\omega\right|}_{Ref1}\right\}}_{Ref2}={\left\{{\left.{\overrightarrow\Omega}_{Ref2}\right|}_{Ref1}\right\}}_{Ref2}+{\left\{{\left.\overrightarrow\omega\right|}_{Ref2}\right\}}_{Ref2}=\\\begin{bmatrix}\alpha'cos\left(\beta\right)\\\beta'\\-\alpha'sin\left(\beta\right)\end{bmatrix}+\begin{bmatrix}0\\0\\\gamma'\end{bmatrix}=\begin{bmatrix}\alpha'cos\left(\beta\right)\\\beta'\\-\alpha'sin\left(\beta\right)+\gamma'\end{bmatrix}\end{array}$ [3].
 
-Para encontrar la velocidad respecto de la referencia fija Ref1 de un punto P cualquiera de la periferia del disco derivaremos el vector OP, expresado en la base móvil Ref2; para ello usaremos la formula de derivación de vectores expresados en bases móviles respecto de una referencia fija (ver [Cinemática vectorial: sistemas de referencia, vectores posición, velocidad y aceleración](http://tallermatematic.ovh/wp/index.php/2016/08/12/cinematica-vectorial/), ecuación [4]):
+Para encontrar la velocidad respecto de la referencia fija Ref1 de un punto P cualquiera de la periferia del disco derivaremos el vector OP, expresado en la base móvil Ref2; para ello usaremos la formula de derivación de vectores expresados en bases móviles respecto de una referencia fija (ver [Cinemática vectorial: sistemas de referencia, vectores posición, velocidad y aceleración]({{ '/2016/08/12/cinematica-vectorial/' | relative_url }}), ecuación [4]):
 
 $\boxed{{\left\{{\left.\frac{\operatorname d\overset\rightharpoonup u}{\operatorname dt}\right|}_{Ref}\right\}}_{base}={\left\{\frac{\operatorname d\overset\rightharpoonup u}{\operatorname dt}\right\}}_{base}+{\left\{\overset\rightharpoonup\omega{\textstyle\times}{\textstyle\overset\rightharpoonup u}\right\}}_{base}}$ [4],
 

@@ -53,7 +53,7 @@ Pasando al límite de desplazamiento infinitesimal, la ratio entre variación de
 
 $\lim_{\triangle x\rightarrow0}\frac{\triangle C}{\triangle x}=\frac{\partial C}{\partial x},\;\lim_{\triangle y\rightarrow0}\frac{\triangle C}{\triangle y}=\frac{\partial C}{\partial y},\;\lim_{\triangle z\rightarrow0}\frac{\triangle C}{\triangle z}=\frac{\partial C}{\partial z}$
 
-Si agrupamos las tres derivadas parciales como si fueran un vector (cualquiera tres cantidades puestas en línea como si fueran un vector en general no lo serán, deben de transformarse adecuadamente bajo cambios de coordenadas, ver [Vectores en Física](http://tallermatematic.ovh/wp/2016/08/11/vectores/)) obtenemos el denominado **gradiente del campo escalar**:
+Si agrupamos las tres derivadas parciales como si fueran un vector (cualquiera tres cantidades puestas en línea como si fueran un vector en general no lo serán, deben de transformarse adecuadamente bajo cambios de coordenadas, ver [Vectores en Física]({{ '/2016/08/11/v/' | relative_url }}ectores/)) obtenemos el denominado **gradiente del campo escalar**:
 
 $Grad\;C=\left(\frac{\partial C}{\partial x},\frac{\partial C}{\partial y},\frac{\partial C}{\partial z}\right)$ [1]
 

@@ -19,7 +19,7 @@ math: true
 
 ### Vector campo eléctrico
 
-En [electrostática](http://tallermatematic.ovh/wp/index.php/2018/10/07/electrostatica/) se estudia la fuerza que se ejercen mutuamente dos cargas eléctricas puntuales Q, Q' entre ellas; si fijamos sólo en una de las cargas, digamos la Q, nos damos cuenta de que si colocamos cualquier carga Q' en cualquier posición del espacio que rodea a Q, se ejercerá una fuerza sobre Q', es como si el espacio que rodea a Q tuviera una nueva propiedad, la de ejercer una fuerza sobre cualquier carga Q' en cualquier posición que la situemos.
+En [electrostática]({{ '/2018/10/07/electrostatica/' | relative_url }}) se estudia la fuerza que se ejercen mutuamente dos cargas eléctricas puntuales Q, Q' entre ellas; si fijamos sólo en una de las cargas, digamos la Q, nos damos cuenta de que si colocamos cualquier carga Q' en cualquier posición del espacio que rodea a Q, se ejercerá una fuerza sobre Q', es como si el espacio que rodea a Q tuviera una nueva propiedad, la de ejercer una fuerza sobre cualquier carga Q' en cualquier posición que la situemos.
 
 Situemos una pequeña carga de prueba q de valor conocido en cualquier posición del espacio dada por el vector de posición **v**; si vemos que se ejerce una fuerza **F** (un vector) sobre la carga por el simple hecho de estar situada en ese punto, inferimos que el espacio está afectado por alguna otra carga Q desconocida que crea ese efecto, y entonces se cumplirá la ley de Coulomb,
 
@@ -37,7 +37,7 @@ Este vector se denomina **vector campo eléctrico**, y no depende de la carga de
 ![](/taller-matematicas/assets/images/camp_electr2.png) Fig.2: dos cargas de prueba q, q' determinan el origen del campo eléctrico, la carga Q, y el vector campo E
 La propiedad de que todas las rectas soportes de las fuerzas electrostáticas se corten en un punto se puede expresar diciendo que **el campo eléctrico es un campo central** pues *todas las fuerzas parten de un punto central del espacio*.
 
-En Física se utiliza el [concepto campo](https://es.wikipedia.org/wiki/Campo_(f%C3%ADsica)) para describir cómo se "reparte" una magnitud física medible por el espacio; así, podemos hablar de campos eléctricos, campos magnéticos, e incluso de campos de velocidades en un fluido. Si la magnitud es escalar, el campo lo será, si es [vectorial](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/), el campo es vectorial, y si la magnitud es un [tensor](http://tallermatematic.ovh/wp/index.php/2017/01/31/tensores-en-fisica/), el campo será tensorial. La matemática específica para describir campos se ha estudiado en profundidad, dando lugar a la rama de la Física Matemática conocida como [Teoría de Campos](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_campos).
+En Física se utiliza el [concepto campo](https://es.wikipedia.org/wiki/Campo_(f%C3%ADsica)) para describir cómo se "reparte" una magnitud física medible por el espacio; así, podemos hablar de campos eléctricos, campos magnéticos, e incluso de campos de velocidades en un fluido. Si la magnitud es escalar, el campo lo será, si es [vectorial]({{ '/2016/08/11/vectores/' | relative_url }}), el campo es vectorial, y si la magnitud es un [tensor]({{ '/2017/01/31/tensores-en-fisica/' | relative_url }}), el campo será tensorial. La matemática específica para describir campos se ha estudiado en profundidad, dando lugar a la rama de la Física Matemática conocida como [Teoría de Campos](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_campos).
 
 ### Campo eléctrico producido por varias cargas puntuales
 

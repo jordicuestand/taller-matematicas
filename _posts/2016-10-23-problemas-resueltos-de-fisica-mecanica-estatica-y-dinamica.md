@@ -80,7 +80,7 @@ Hay demasiadas incógnitas, necesitamos más relaciones; nos las proporcionan la
 
 ${\overset\rightharpoonup M}_q=\overrightarrow{qp}\times\overrightarrow F$ [2]
 
-donde ${\overset\rightharpoonup M}_q$ es el **pseudovector momento** respecto al punto q (para repasar el concepto de pseudovector tenéis mi artículo [Vectores en Física](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)).
+donde ${\overset\rightharpoonup M}_q$ es el **pseudovector momento** respecto al punto q (para repasar el concepto de pseudovector tenéis mi artículo [Vectores en Física]({{ '/2016/08/11/vectores/' | relative_url }})).
 
 Calculemos los momentos respecto al punto O:
 
