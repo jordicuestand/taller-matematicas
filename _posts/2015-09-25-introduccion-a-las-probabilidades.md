@@ -66,12 +66,12 @@ Pero en Estadística estas inferencias no son nunca predicciones exactas sino ap
 
 ### Precisión
 
-
+$caption id="attachment_536" align="alignnone" width="300"$[![Torres Petronas](/taller-matematicas/assets/images/Petronas.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/Petronas.png) Torres Petronas[/caption]
 Si leyéramos que la altura de la [torres Petronas](http://ca.wikipedia.org/wiki/Torres_Petronas) en Kuala Lumpur es de 452,340 metros, podríamos pensar, con razón, que no tiene mucho sentido detallar los decímetros, centímetros y milímetros de la altura, con lo metros sería suficiente, debido a que unos milímetros más o menos no tienen importancia en este caso concreto.
 
 La valoración del número de decimales correcto es una dificultad para muchos estudiantes; es típico usar una calculadora y dar como resultado demasiados decimales. ¿Cuál es el número correcto de decimales? Depende del problema que estemos resolviendo.
 
-
+$caption id="attachment_537" align="alignnone" width="300"$[![calculadora](/taller-matematicas/assets/images/calculadora-300x181.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/calculadora.png) El número de decimales de un cálculo frecuentemente es infinito. El número de decimales significativo depende del problema concreto que estamos resolviendo: la media de calificaciones, las medidas de un estante, la longitud de una pieza de relojería, etc.[/caption]
 En Estadística los resultados nunca son precisos, al contrario se intenta averiguar cuanta probabilidad de certeza tiene una afirmación, una hipótesis o un resultado.
 
 ### Cálculo de probabilidades
@@ -419,7 +419,7 @@ Ahora aplicamos la tercera propiedad de Kolmogorov: P(S o T) = P(S∪T) = P(S) 
 
 También se puede visualizar gráficamente: en una cuadrícula de 6 x 6 marcamos las casillas con una suma superior a 6 con un 1, y las que cumplen que los dos valores son al menos 4 las resaltamos en amarillo:
 
-
+$caption id="attachment_1392" align="aligncenter" width="256"$[![Valores posibles de las puntuaciones del lanzamiento de dos dados](/taller-matematicas/assets/images/exper_dos_daus.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/09/exper_dos_daus.png) Valores posibles de las puntuaciones del lanzamiento de dos dados; hay 21 combinaciones con suma > 6, y 9 combinaciones con los dos valores mayores o iguales a 4[/caption]
 Probabilidades según Laplace: P(S) = 21/36, P(T) = 9/36. P(S ∩ T) = 9/36
 
 Probabilidad P(S o T) = P(S∪T) = 21/36 + 9/36 - 9/36 = 21/36.

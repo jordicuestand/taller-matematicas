@@ -80,6 +80,7 @@ El promedio de los valores $1/ln(x)$ es $11.25/10=1.125$, tomamos este valor: $f
 
 Tenemos que encontrar el intervalo de integración, que no viene dado en este enunciado; para ello encontramos la intersección de dos àreas: la del interior de la elipse, $\left(\frac x3\right)^2+\left(\frac y2\right)^2&lt;1,$ y la dada $x&gt;2.$ La ecuación de la elipse que nos dan es la centrada en el origen de ejes $a,b$ tal como $\left(\frac xa\right)^2+\left(\frac yb\right)^2=1,$ esto significa que $a=3,b=2$ y que $-3&lt;x&lt;3.$ Imponiendo además que $x&gt;2$ nos queda el intervalo de integración $(2,3):$
 
+$caption id="attachment_763" align="alignnone" width="300"$[![Àrea de la región delimitada por la elipse y la región x>2](/taller-matematicas/assets/images/area_elipse-300x247.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area_elipse.png) Àrea de la región delimitada por la elipse y la región x>2[/caption]
 
 Hay de hecho dos sub-regiones en el intervalo $(2,3)$ que se corresponden con dos funciones:
 
@@ -109,6 +110,7 @@ $\begin{array}{l}\left$\frac92\left(\sin^{-1}\left(\frac x3\right)+\left(\frac x
 
 Proposición 1: Por el primer *teorema fundamental del cálculo* (ver por ejemplo [Funciones integrables](http://tallermatematic.eu/wp/?p=674) -> Teorema 3) tenemos que $F(x)=\int_0^tf(t)\operatorname{d}t\Leftrightarrow F'(x)=f(x),$ así pues, la derivada de $F(x)$ es $f(x)$. La primera proposición dice que si la derivada es creciente, la función también los será; bien, si la derivada es creciente significa que la tangente a $F(x)$ en cada punto tiene una pendiente creciente con $x$, pero para saber si $F(x)$ es creciente hemos de fijarnos en el signo de la derivada, que no sabemos. En principio pues no tiene porqué ser cierto. Como contraejemplo que contradice la proposición, podemos pensar en una derivada $f(x)$ creciente pero con valores  negativos: sea $f(x)=-1/(x+1),$ que para $x\in\left(0,\infty\right)$ es siempre negativa, y en el límite $x\rightarrow\infty$ vale cero (queda como ejercicio comprobar que es creciente para todo $x&gt;0$); como la derivada es siempre negativa, la función $F(x)$ debe de ser decreciente, en efecto,  $F(x)=\int_0^x-\frac1{t+1}\operatorname{d}t=-\left$\ln\left(t+1\right)\right$_0^x=-\ln\left(x+1\right),$ que es estrictamente decreciente:
 
+$caption id="attachment_782" align="alignnone" width="464"$[![Exer6_problemes_integrals](/taller-matematicas/assets/images/Exer6_problemes_integrals.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/Exer6_problemes_integrals.png) Función decreciente (azul) con derivada creciente (rojo)[/caption]
 
 Proposición 2: Si la derivada $f(x)$ es positiva, entonces la función primitiva $F(x)$ es creciente; esto es una consecuencia de las propiedades de la derivada: ver por ejemplo [Aplicaciones de las derivadas](http://tallermatematic.eu/wp/?p=547) -> Teorema 3 del incremento finito -> Aplicación práctica: crecimiento y decrecimiento). La proposición es verdadera.
 

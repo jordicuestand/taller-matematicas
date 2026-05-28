@@ -20,7 +20,7 @@ math: true
 **Definición 1**: La función $f:A\rightarrow\mathbb{R}$ tiene un máximo local en el punto $a\in A$ si existe un entorno $B(a,r)$ con $r&gt;0$ tal que $f(x)\leq f(a)$ para todo $x\in B(a,r)$. De forma similar, la función $f:A\rightarrow\mathbb{R}$ tiene un mínimo local en el punto $a\in A$ si existe un entorno $B(a,r)$ con $r&gt;0$ tal que $f(x)\geq f(a)$ para todo $x\in B(a,r)$
 **Ejemplo 1**: la función $y=0.2x^4-1.8x^3+4.2x^2+0.2x-6$ presenta un máximo local en el punto $x=2.5$ (aproximadamente) y dos mínimos locales en los puntos $x=0$ y $x=4.3$:
 
-
+$caption id="attachment_548" align="alignnone" width="300"$[![Máxximos y mínimos locales](/taller-matematicas/assets/images/maxims_i_minims_entorn-300x169.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/maxims_i_minims_entorn.png) Máximos y mínimos locales[/caption]
 En la figura se ha trazado un entorno $B(x,r)$ del punto $x=0$  con un radio $r=0.5$, y para ese entorno se muestra, en líneas verticales tenues, los valores $f(x)$ para $x\in B(0,0.5)$. Se aprecia que $f(0)$ es menor (su valor es -6) que cualquier otro valor $f(x)$ del entorno, por tanto es un mínimo local. Claro que, con el gráfico no basta, hay que demostrarlo analíticamente, pero no suele ser fácil. Por ello, esperamos a ver los siguientes apartados.
 
 El adjetivo "local" indica que el máximo o mínimo lo es sólo en un entorno, no en todo el dominio de la función. Por ejemplo, en la figura anterior tenemos un mínimo local entre $x=4$ y $x=5$, con un valor aproximado $y=-2$, pero el otro mínimo local en $x=0$ claramente tiene un valor inferior $y=-6$. De hecho este último mínimo es **global** (o **absoluto**) en el sentido de que no hay ningún otro valor $y(x)$ menor que -6 en todo el dominio de la función.
@@ -28,21 +28,21 @@ El adjetivo "local" indica que el máximo o mínimo lo es sólo en un entorno, n
 **Teorema 1**: Si $f(x)$ tiene un máximo o un mínimo local en el punto $x=a$, y la función es derivable en ese punto, entonces necesariamente la derivada en el punto es nula: $f'(a)=0$. La afirmación contraria no tiene porque ser cierta.
 Gráficamente es fácil ver que es así:
 
-
+$caption id="attachment_549" align="alignnone" width="300"$[![Rectas tangentes en los puntos máximos y mínimos](/taller-matematicas/assets/images/maxims_i_minims1-300x154.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/maxims_i_minims1.png) Rectas tangentes en los puntos máximos y mínimos[/caption]
 En cada uno de los máximos y mínimos, la recta tangente a la gráfica de la función és una recta horizontal (las tres líneas en rojo), o sea con pendiente nula; recordando que la pendiente de la recta tangente en un punto es precisamente la derivada de la función en ese punto, llegamos al teorema.
 
 **Ejemplo 2**: Para la función del ejemplo 1, derivando, obtenemos $y'=0.8x^3-5.4x^2+8.4x+0.2$, igualando a cero y resolviendo la ecuación resultante (en este caso hay que hacerlo por métodos numéricos o gráficamente) obtenemos 0, 2.5 y 4.3. Cada uno de estos valores es candidato a ser un máximo o un mínimo local, pero aún no podemos asegurarlo.
 
 **Ejemplo 3**: La función $y=x^3$ tiene derivada $y'=3x^2$ que se anula para $x=0$, pero esta función no tiene ni máximos ni mínimos locales. Simplemente sucede que la tangente a la gráfica en $x=0$ es horizontal:
 
-
+$caption id="attachment_550" align="aligncenter" width="300"$[![y= x³](/taller-matematicas/assets/images/x^3-300x127.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/x^3.png) Gráfica de la función y= x³, con tangente horizontal en x=0[/caption]
 ## Teoremas de valores intermedios
 
 Vemos algunos teoremas relativos a la relación entre derivadas y  valores de la función en un intervalo. No los demostramos aquí, sólo intentamos entenderlos y ver alguna aplicación práctica.
 
 **Teorema 2 (de Rolle)**: Si $f:\lbrack a,b\rbrack\rightarrow\mathbb{R}$ es derivable (y por tanto continua) y además $f(a)=f(b)$, entonces existe al menos un punto intermedio $c\in\lbrack a,b\rbrack$ tal que la derivada en ese punto se anula, $f'(c)=0$. 
 
-
+$caption id="attachment_554" align="alignnone" width="263"$[![Ejemplo del teorema de Rolle](/taller-matematicas/assets/images/T-Rolle1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/T-Rolle1.png) Ejemplo del teorema de Rolle[/caption]
 **Ejemplo 4**: la función $y=x^2-4x-2$ toma el mismo valor $y=1$ (recta horizontal amarilla) en los extremos del intervalo $\lbrack a,b\rbrack=\lbrack2-\sqrt2,2+\sqrt2\rbrack$. Como $y=f(x)$ es derivable, debe de haber al menos un punto intermedio entre $2-\sqrt2$ y $2+\sqrt2$ tal que la tangente a la gráfica sea horizontal; ese punto en este caso es único, y es $x=2$ (con recta tangente y=4, en rojo).
 
 Intuitivamente, si la gráfica debe de pasar por la misma altura y en los dos puntos $(a,b)$ y la función no es constante (una recta horizontal) entonces en algún punto intermedio deberá ser horizontal, de otro modo, si siempre es $f'(x)&gt;0$, entonces será siempre creciente  y $f(b)&gt;f(a)$, si $f'(x)&lt;0$, entonces será siempre decreciente  y $f(b)&lt;f(a)$, y si es creciente y decreciente al mismo tiempo, entonces por ser una función contínua en algún lugar ha de haber una transición en el cambio de signo de la derivada de menos a más o al revés, esto es, un lugar con derivada cero.
@@ -51,7 +51,7 @@ Intuitivamente, si la gráfica debe de pasar por la misma altura y en los dos pu
 
 **Ejemplo 5**: La función $-\left(\frac x4-2\right)^2+4$ es continua en todo $\mathbb{R}$; en particular si nos fijamos en el intervalo $\lbrack 2,8\rbrack$ y calculamos el cociente $\frac{f(b)-f(a)}{b-a}=\frac{4-1.75}{8-2}=0.375$, el teorema nos asegura que debe existir un punto intermedio $c$ tal que $f'(c)=0.375$. en efecto, derivando, $f'(x) = 1-\fracx8$, igualamos: $1-\frac x8=0.375\Leftrightarrow x=5$, el punto intermedio es $c=5$.
 
-
+$caption id="attachment_556" align="alignnone" width="300"$[![Teorema del incremento finito](/taller-matematicas/assets/images/incremento_finito_bo-300x227.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/incremento_finito_bo.png) Teorema del incremento finito[/caption]
 La interpretación geométrica es la siguiente: dado el triángulo de lados $(a,b)$ y $(f(a),f(b)$ con longitudes $b-a$ y $f(b)-f(a)$, el cociente $\frac{f(b)-f(a)}{b-a}$ nos da la tangente del ángulo $\theta$ del triángulo (ver la figura). El teorema afirma que existe el punto c tal que la tangente a la gráfica en ese punto tiene una pendiente que también es $\theta$, o lo que es lo mismo, la tangente en c es paralela a la hipotenusa del triángulo. También lo podemos ver así: dado el triángulo, existirá alguna recta tangente paralela a la hipotenusa del triángulo.
 
 **Aplicación práctica: crecimiento y decrecimiento**
@@ -61,6 +61,7 @@ Como aplicación práctica de este teorema, si una función tiene derivada posit
 **Ejemplo
  6**: La función del ejemplo 5, $-\left(\frac x4-2\right)^2+4$, tiene por derivada $f'(x) = 1-\fracx8$, que es mayor que cero en el intervalo $\left(-\infty,8\right)$, cero en el punto $x=8$ y menor que cero en el intervalo $\left(8,+\infty\right)$ es creciente en $\left(-\infty,8\right)$ y decreciente en $\left(-\infty,8\right)$. En el punto $x=8$ de derivada nula tiene claramente un máximo.
 
+$caption id="attachment_558" align="alignnone" width="300"$[![Crecimiento y decrecimiento](/taller-matematicas/assets/images/incremento_finito1-300x297.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/incremento_finito1.png) Crecimiento y decrecimiento[/caption]
 
 **Teorema 4 del valor medio (Cauchy)**
 
@@ -86,7 +87,7 @@ $\lim_{x\rightarrow0}\frac{\tan\left(x\right)}{1/x}=\frac\infty\infty=\lim_{x\ri
 
 ### Concavidad y convexidad
 
-
+$caption id="attachment_567" align="alignnone" width="300"$[![Función convexa: las rectas secantes quedan por encima de la gráfica](/taller-matematicas/assets/images/secant-300x231.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/secant.png) Función convexa: las rectas secantes quedan por encima de la gráfica[/caption]
 Dada una función continua y un intervalo $x\in(a,b)$ definimos la **recta secante** como la recta que pasa por los puntos $P=(a,f(a)), Q=(b,f(b))$. En la imagen anterior, $a=1, f(a)=1, b=4, f(b)=4$, la recta secante está en rojo, la función es $f(x)=(x-2)^2$. La ecuación de la recta secante es:
 
 $y=\frac{f(b)-f(a)}{b-a}\left(x-a\right)+f(a)$
@@ -99,11 +100,12 @@ $\frac{f(x)-f(a)}{x-a}&lt;\frac{f(b)-f(a)}{b-a}$
 Diremos que **$f(x)$ es cóncava en $(a,b)$** si para todo $x\in(a,b)$ se cumple que $f(x)&gt;r_s(a,b)$, o equivalentemente, usando la  expresión de la recta secante, si:
 $\frac{f(x)-f(a)}{x-a}&gt;\frac{f(b)-f(a)}{b-a}$
 
-
+$caption id="attachment_570" align="alignnone" width="262"$[![Función cóncava: la recta secante queda por debajo de la gráfica.](/taller-matematicas/assets/images/concava.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/concava.png) Función cóncava: la recta secante queda por debajo de la gráfica.[/caption]
 Equivalentemente, podemos definir la concavidad y la convexidad mediante la recta tangente:
 
 **Definición 2b**: Diremos que $f(x)$ es convexa en $(a,b)$ si para todo $x\in(a,b)$ se cumple que la recta tangente a $f(x)$ queda por debajo de la gráfica de la función, y diremos que $f(x)$ es cóncava en $(a,b)$ si la recta tangente a $f(x)$ queda por encima de la gráfica de la función.
 
+$caption id="attachment_667" align="alignnone" width="242"$[![recta_tangent_6](/taller-matematicas/assets/images/recta_tangent_6.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/recta_tangent_6.png) Función cóncava: la recta tangente queda por encima de la gráfica[/caption]
 
 La definición es intuitivamente clara, se puede visualizar fácilmente, pero es poco operativa en los problemas. Veamos una propiedad que nos permite calcular la convexidad o concavidad de una función.
 
@@ -115,6 +117,7 @@ La definición es intuitivamente clara, se puede visualizar fácilmente, pero es
 **Definición 3**: El punto $x_0$ es un punto de inflexión de $f(x)$ si existe un intervalo que contiene ese punto, $a&lt;x_0&lt;b$, tal que o bien f(x) es cóncava en $(a,x_0)$ y convexa en $(x_0, b)$, o bien  f(x) es convexa en $(a,x_0)$ y cóncava en $(x_0, b)$
 **Ejemplo 12**: $y=x^3$ tiene por derivada $y'=3x^2$ y por derivada segunda $y''=6x$, que es menor que cero para $x&lt;0$, luego es cóncava para esos valores, mientras que para $x&gt;0$ la derivada segunda es positiva, luego la función es convexa. En el punto $x_0=0$ cualquier intervalo $a&lt;0&lt;b$ cumplirá que la función es cóncava para $(a,0)$ y convexa para $(0,b$), luego $x_0=0$ es un punto de inflexión.
 
+$caption id="attachment_550" align="aligncenter" width="300"$[![y= x³](/taller-matematicas/assets/images/x^3-300x127.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/x^3.png) y= x³ es cóncava para x0[/caption]
 
 **Propiedades de las funciones convexas (o cóncavas)**
 
@@ -139,14 +142,14 @@ La definición es intuitivamente clara, se puede visualizar fácilmente, pero es
 
 En el post [Funciones derivables](http://tallermatematic.eu/wp/?p=461) ya vimos una introducción al estudio local de una función, decíamos que la derivada nos daba una estimación de la variación local de la función. Esto implica que la recta tangente en un punto a la gráfica de la función tendrá localmente la misma variación que la función: será una aproximación local. Por ejemplo la función $y=exp(x/3)*sin(x)$ tiene por derivada $y'=1/3 e^(x/3) (sin(x)+3 cos(x))$, en el punto $x_0=3$ la derivada vale aproximadamente -2.56, y la recta tangente en ese punto es $y=-2.56x+8.1$, gráficamente:
 
-
+$caption id="attachment_577" align="alignnone" width="247"$[![Aproximación local de una función por la tangente](/taller-matematicas/assets/images/aprox_local_1-247x300.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/aprox_local_1.png) Aproximación local de una función por la tangente[/caption]
 Vemos que en las inmediaciones de $x_0=3$ la tangente coincide (aproxima) a la función; al ser la expresión de la tangente más simple que la de la función, estamos simplificando el cálculo de valores; esto tiene diversas aplicaciones prácticas.
 
 **Aproximación local usando un polinomio de grado 2**
 
 Nos preguntamos ahora: ¿podemos mejorar la aproximación local de forma que el entorno de aplicación sea más amplio, y sea buena también para funciones más complicadas? Se puede: en vez de la tangente, que es una función lineal, usamos una función cuadrática, esto es, una parábola $y=ax^2+bx+c$:
 
-
+$caption id="attachment_581" align="alignnone" width="300"$[![Aproximación local de segundo orden](/taller-matematicas/assets/images/Taylor_ordre_2-300x266.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/12/Taylor_ordre_2.png) Aproximación local por función cuadrática[/caption]
 Vemos que el ajuste de la función (en negro) por la parábola (en rojo) cerca del punto $x=3$ ha mejorado respecto a la aproximación por la tangente. Los coeficientes de la función cuadrática vienen dados por la siguiente definición.
 
 **Definición 4: Polinomio de Taylor**

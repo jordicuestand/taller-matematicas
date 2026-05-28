@@ -19,17 +19,17 @@ En el ejemplo 1 hemos visto el modelo poblacional logístico, con ecuación $\f
 
 En general, a cada raíz c de F(y) le corresponde una solución constante y=c; a los puntos c se les llama **puntos críticos** de la ecuación autónoma. El interés de los puntos críticos es que, cuando variamos las condiciones iniciales, las correspondientes soluciones siempre tienen uno de los dos comportamientos siguientes: o convergen o divergen en cada punto crítico. En el primer caso el punto crítico es **estable**, en el segundo, es **inestable**. En el siguiente gráfico vemos tres soluciones del ejemplo 1: todas convergen para el punto crítico P=M, que es estable,  y divergen para P=0, que es inestable:
 
-
+$caption id="attachment_1234" align="alignnone" width="488"$[![poblacio2](/taller-matematicas/assets/images/poblacio2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/poblacio2.png) Tres soluciones de la ecuación de la población, con distintas poblaciones iniciales; todas convergen para P=M, y divergen para P=0[/caption]
 La estabilidad o inestabilidad de un punto crítico también se relaciona con los cambios en los coeficientes de la ecuación autónoma, además de con las condiciones iniciales; si estudiamos las soluciones de la ecuación de la población, pero con distintos valores del parámetro k, hallamos el mismo comportamiento. Esto es importante para las aplicaciones prácticas, pues a menudo desconocemos el valor real de ciertos parámetros; sabemos entonces que las soluciones convergerán en los puntos estables a la misma solución para cualquier valor inicial y parámetros dados.
 
 **Ejemplo 3**: Supongamos que en realidad ignoramos el valor de la constante k , sólo creemos que estará comprendido en el intervalo [0.1, 0.5]; para un mismo valor inicial de la población pero distintos valores de k, el comportamiento es el mismo cerca del punto crítico estable:
 
-
+$caption id="attachment_1236" align="aligncenter" width="484"$[![poblacio3](/taller-matematicas/assets/images/poblacio3.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/poblacio3.png) Soluciones de la ecuación de la población, misma población inicial, distintos coeficientes k[/caption]
  La forma habitual de estudiar el carácter de los puntos críticos es usar la recta fase de la ecuación autónoma: consiste en observar el signo de la función F(y) a los lados de cada punto crítico; como la derivada y' es igual a F(y), de hecho estamos observando el crecimiento y decrecimiento de la función y alrededor de los puntos críticos: cuando el punto c es estable esperamos que la función y tienda a ese punto c por ambos lados, luego si cuando y<c crece (tendiendo a c), por el otro y>c ha de decrecer (tendiendo también a c). Lo vemos con un ejemplo.
 
 **Ejemplo 4**: La recta fase de la ecuación autónoma de los ejemplos anteriores es:
 
-
+$caption id="attachment_1239" align="aligncenter" width="447"$[![Recta fase de la ecuación de la población, muestra la tendencia a los lados de los puntos críticos ](/taller-matematicas/assets/images/fase.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/fase.png) Recta fase de la ecuación de la población, muestra la tendencia a los lados de los puntos críticos[/caption]
 Vemos que la función F(P) se "aleja" del punto crítico P=0, que es un punto inestable, mientras que F(P) se "acerca" al punto P = M, que es estable. Hemos considerado los intervalos P < 0, 0 < P < M, P > M, y en cada uno de ellos hemos estudiado el signo de $F\left(P\right)=kP\left(1-\frac PM\right)$.
 
 # Sistemas de primer orden autónomos
@@ -47,6 +47,7 @@ $\left.\begin{array}{r}x'=y\\y'=-\omega^2x\end{array}\right\}$
 
 Este sistema tiene un único punto crítico en (x, y) = (0, 0). ¿Cuáles son las trayectorias en el espacio (x, y) de las soluciones del sistema (llamado **espacio fase**)? Derivando obtenemos: $x'\left(t\right)=y=-A\omega sin\left(\omega t\right)+B\omega\cos\left(\omega t\right)$, representando los puntos (x, y) variando los parámetros $A, B, \omega$ obtenemos trayectorias elípticas centradas en el origen, que es el punto crítico de la ecuación:
 
+$caption id="attachment_1244" align="aligncenter" width="443"$[![centre_estable](/taller-matematicas/assets/images/centre_estable.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/07/centre_estable.png) Trayectorias x(t), y(t) para tres diferentes combinaciones de los parámetros en un oscilador armónico simple; en abscisas tenemos el desplazamiento x, en ordenadas la velocidad y=x'[/caption]
 
 Un punto crítico como el del ejemplo 5, que está rodeado por trayectorias cerradas, se denomina** centro estable**.
 {% endraw %}

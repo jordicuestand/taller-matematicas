@@ -17,13 +17,14 @@ Si frotamos dos varillas de vidrio y las acercamos nortaremos que se repelen mú
 
 Creando péndulos con pequeñas masas electrificadas (fig. 1) se puede deducir la fuerza con que se atraen o repelen, midiendo la desviación de la verticalidad y sabiendo las masas.
 
-
+$caption id="attachment_150784" align="alignright" width="206"$![](/taller-matematicas/assets/images/electrostatica1.png) Fig. 1: Dos péndulos con material electrificados del mismo signo se repelen entre sí[/caption]
 Supongamos que hemos realizado las mediciones de la fuerza $F_A$ que un cuerpo A ejerce sobre otro C de distinto signo, y también la fuerza$F_B$ de otro cuerpo B sobre C, también de distinto signo (por tanto A y B deben de ser del mismo signo). Podemos conjeturar que si las fuerzas anteriores no son iguales en magnitud, debe de ser por que los materiales A y B no tienen la misma "cantidad de electrificación", cantidad que llamaremos *carga eléctrica*, y simbolizaremos por Q. Entonces, la fuerza deberá ser proporcional a la carga, y al dividir las fuerzas entre sí se cumplirá la proporción
 
 $\frac{F_A}{F_B}=\frac{Q_A}{Q_B}$ [1]
 
 Si ahora medimos la fuerza que ejercen A y B (unidos por ejemplo con cola) sobre C, encontraremos que es $F_{A+B}=F_A+F_B$ (figura 2).
 
+$caption id="attachment_150785" align="aligncenter" width="219"$![](/taller-matematicas/assets/images/electrostatica2.png) Fig. 2: Al añadir cuerpos cargados, la fuerza electrica aumenta en el mismo grado[/caption]
 
 Usando  la proporción [1] con la fuerza resultante obtenemos:
 $\frac{F_{A+B}}{F_B}=\frac{F_A+F_B}{F_B}=\frac{F_A}{F_B}+1=\frac{Q_A}{Q_B}+1=\frac{Q_A+Q_B}{Q_B}$ [2]
@@ -50,17 +51,17 @@ Al frotar el vidrio, la energía cinética que suministramos es suficientemente 
 
 ### Electrificación por inducción
 
-
+$caption id="attachment_150787" align="aligncenter" width="257"$![](/taller-matematicas/assets/images/electrostatica3.png) Fig.3: separación de cargas en el volumen de un conductor[/caption]
 Si acercamos un cuerpo A cargado, por ejemplo positivamente, a un conductor neutro, sus electrones libres seran atraídos cerca de A, formando una región cargada negativamente (figura 3). Habrá una región central de la que habrán salido electrones hacia la izquierda pero que también recibirán electrones de la derecha, quedando neutra, y habrá una región a la derecha que, como no hay más material a su derecha, habrá perdido electrones y quedará cargada positivamente. Si acercamos un tercer cuerpo C por ejemplo con carga positiva, veremos que es repelido por el metal. Al retirar el cuerpo A, los electrones del metal vuelven a dispersarse por todo su volumen, y el cuerpo C dejaría de ser repelido.
 
 Pero si mantenemos A cerca del metal y conectamos el metal con la tierra usando un cable conductor, los electrones libres de la tierra seran atraídos por la carga positiva del metal B y se incorporaran a éste. Si después retiramos tanto el cable como el cuerpo A, el metal quedará con una carga neta negativa distribuida por todo su volumen.
 
-
+$caption id="attachment_150788" align="aligncenter" width="323"$![](/taller-matematicas/assets/images/electrostatica4.png) Fig. 4: electrificación de un conductor por inducción[/caption]
 ## Ley de Coulomb
 
 Coulomb (siglo XVIII) usó una [balanza de torsión](https://es.wikipedia.org/wiki/Balanza_de_torsi%C3%B3n) para averiguar el efecto de la separación entre cuerpos cargados sobre la fuerza que se ejercen (figura 5).
 
-
+$caption id="attachment_150789" align="alignright" width="163"$![](/taller-matematicas/assets/images/electrostatica5.png) Fig.5: Esquema de la balanza de torsión de Coulomb[/caption]
 Dispuso dos bolitas de saúco electrizadas A, B, la primera fijada a la tapa del cilindro por una varilla aislante rígida y la segunda en el extremo de otra varilla, balanceada por un peso, ámbos colgando de un hilo muy fino de plata. La repulsión entre A y B hace que éste se aleje, retorciendo el hilo. Midiendo la torsión del hilo puede deducirse la fuerza de respulsión. Colocando A en diversas posiciones, pudo estudiar el efecto que tenia la separación *r* entre A y B. Su conclusión se conoce como *ley o fórmula de Coulomb de la electrostática:*
 
 $F=k\frac{QQ'}{r^2}$ [3]

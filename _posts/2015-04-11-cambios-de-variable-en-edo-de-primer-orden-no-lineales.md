@@ -50,6 +50,7 @@ $\begin{array}{l}\frac{\operatorname dy}{\operatorname dx}=\frac{1+\left(1-8x\ri
 
 la otra ecuación es idéntica salvo en un signo, y resulta $y=\frac14\left$x+\frac1{12}\left(1-8x\right)^{3/2}\right$+C.$ Cada solución tiene su propio haz de curvas; en la figura se representa una curva de cada solución, para $C=0$.
 
+$caption id="attachment_914" align="alignnone" width="465"$[![Dos soluciones de 2y](/taller-matematicas/assets/images/no_lineal_ordinaria.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/03/no_lineal_ordinaria.png) Dos soluciones de 2y'² - y' + x = 0[/caption]
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Ecuaciones en la que se puede despejar *y*
@@ -78,6 +79,7 @@ $\left\{\begin{array}{l}p=C\frac1x+\frac{\ln\left(x\right)}{2x}\\x^2p^2=y\end{ar
 
 Tal como vienen dadas estas ecuaciones, para determinar los puntos $(x,y)$ de las curvas solución, damos valores a la variable independiente x, a continuación hallamos $p(x)$ con la primera ecuación, y por último hallamos $y(x,p)$ con la segunda ecuación:
 
+$caption id="attachment_940" align="alignnone" width="739"$[*](http://tallermatematic.eu/wp/wp-content/uploads/2015/04/parametricas.png) Algunos puntos (x,y) obtenidos de las ecuaciones paramétricas[/caption]
 
 [![separador2](/taller-matematicas/assets/images/separador2.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/08/separador2.png)
 ## Ecuaciones en la que se puede despejar x*

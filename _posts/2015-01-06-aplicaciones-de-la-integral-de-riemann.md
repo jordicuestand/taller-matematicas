@@ -43,7 +43,7 @@ $\int_a^b\left|\left(f-g\right)\right|\operatorname{d}x=\left\{\begin{array}{l}\
 En ocasiones, el valor absoluto en el intervalo de integración $(a,b)$ habrá de calcularse por subintervalos, como en el siguiente ejemplo.
 **Ejemplo 1**: calcular el área $A$ de la región comprendida entre las gráficas de las funciones $y=\sin(x), y=\cos(x+1)$ y el intervalo $x\in\left(1,4\right).$
 
-
+$caption id="attachment_707" align="aligncenter" width="350"$[![Cálculo del área comprendida entre las gráficas de dos funciones](/taller-matematicas/assets/images/area5.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/area5.png) Cálculo del área comprendida entre las gráficas de dos funciones[/caption]
 $\begin{array}{l}A=\int_1^4\left|\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\right|\operatorname{d}x=\begin{array}{l}\int_1^{x_0}\left(\sin\left(x\right)-\cos\left(x+1\right)\right)\operatorname{d}x+\end{array}\int_{x_0}^4\left(\cos\left(x+1\right)-\sin\left(x\right)\right)\end{array},$
 
 donde $x_0$ es el punto de intersección de las dos gráficas, situado dentro del intervalo de integración $(1,4)$; en ese punto, se invierte la diferencia de funciones. Integrando: $\int\left(\sin\left(x\right)-\cos\left(x+1\right)\right)=-\cos\left(x\right)-\sin\left(x+1\right). $ Entonces:
@@ -62,6 +62,7 @@ El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, 
 
 Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la [integral de Riemann](http://tallermatematic.eu/wp/?p=674), dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$
 
+$caption id="attachment_717" align="alignnone" width="427"$[![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/longitud_arc.png) Aproximación a la longitud de un arco de curva[/caption]
 
 $\triangle s=\sqrt{\left(\triangle x\right)^2+\;\left(\triangle y\right)^2}.$
 
@@ -78,9 +79,10 @@ En el último paso igualamos el límite de la suma a una integral de Riemann, p
 
 | 
 
-
+$caption id="attachment_714" align="aligncenter" width="150"$[![Catenaria. Licencia Creative Commons](/taller-matematicas/assets/images/catenaria.jpg)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.jpg) [Catenaria](http://www.flickr.com/photos/diegobe/226041902/sizes/o/). [Licencia Creative Commons.](https://creativecommons.org/licenses/by-sa/2.0/)[/caption] 
 | 
 
+$caption id="attachment_715" align="aligncenter" width="300"$[![Curva catenaria (en negro) y parábola (en rojo)](/taller-matematicas/assets/images/catenaria-300x113.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/01/catenaria.png) Curva catenaria (en negro) y parábola (en rojo)[/caption] 
 
 Hallar la longitud de cable tendida entre dos postes sabiendo que la altura mínima es de 6 metros, y que la distancia entre postes es de 15 metros.
 

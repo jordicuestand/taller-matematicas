@@ -21,6 +21,9 @@ math: true
 
 En el artículo [Vectores en Física ](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)se habló de algunas propiedades geométricas de los vectores (la invariancia respecto de transformaciones de coordenadas) que son importantes para representar magnitudes físicas como la fuerza o la velocidad angular. En este artículo vemos el concepto teórico de momento de un vector respecto a un punto o a una recta, que físicamente tiene importancia para calcular el efecto que un vector ejerce respecto a ese punto o recta; un ejemplo práctico es la antigua [ley de la palanca](https://es.wikipedia.org/wiki/Palanca) de Arquímedes, que nos muestra cómo varía el efecto de una fuerza con el punto de aplicación: la fuerza P, más alejada del punto de apoyo, ejerce una acción de giro igual a la fuerza mayor R que está más cerca; esa "acción de giro" se materializa usando el concepto de momento de cada fuerza respecto al punto de apoyo.
 
+$caption id="attachment_150601" align="alignnone" width="739"$![](/taller-matematicas/assets/images/moments0.png) Fig. 1: Ley de la palanca (By Dnu72 (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 4.0-3.0-2.5-2.0-1.0 (https://creativecommons.org/licenses/by-sa/4.0-3.0-2.5-2.0-1.0)], via Wikimedia Commons)[/caption]Otro ejemplo lo vemos en la siguiente figura, en la que se representa la sección de un rodillo situado en un plano horizontal, al que hemos atado una cuerda r también horizontal en su parte superior.
+
+$caption id="attachment_150595" align="alignnone" width="458"$![](/taller-matematicas/assets/images/moments.png) Fig. 2: un cilindro sujeto a una fuerza tangente efectuada tirando de una cuerda, el efecto de giro no depende del punto exacto de aplicación de la fuerza[/caption]
 
 Si ahora aplicamos una fuerza a lo largo de la cuerda, digamos $F_1$ o $F_2$, el efecto será que el rodillo adquirirá una velocidad angular w, que no dependerá más de la magnitud de la fuerza: fuerzas de magnitud igual producirán la misma velocidad angular, independientemente del punto de aplicación de la fuerza (círculos en azul). Físicamente, diremos que la rotación del cilindro es causada por el momento de la fuerza aplicada, y ese momento depende de la magnitud y de la dirección de la fuerza, pero no de su posición a lo largo de la recta r.
 
@@ -33,6 +36,7 @@ $\boldsymbol m=\left(P-O\right)\times\boldsymbol v$ [1]
 
 donde la expresión (P-O) simboliza la diferencia de las coordenadas de los dos puntos, y el producto $\times$ representa el producto vectorial.
 
+$caption id="attachment_150586" align="alignnone" width="348"$![](/taller-matematicas/assets/images/moments1.png) Fig. 3: momento m del vector v, aplicado en P, respecto del punto O[/caption]
 
 Recordemos que (P-O) puede verse como el vector **OP** con orígen en O y extremo en P; además, recordando las propiedades del producto vectorial, el vector momento **m** será perpendicular al plano formado por los vectores **v** y **OP**, y será un pseudovector, o vector polar (ver  [Vectores en Física](http://tallermatematic.ovh/wp/index.php/2016/08/11/vectores/)), su módulo valdrá el doble del área del triángulo formado por los vectores **v** y **OP**, o analíticamente,
 
@@ -53,7 +57,7 @@ Una primera propiedad es que el vector momento es un pseudovector (o vector axia
 
 Si el vector **v** lo desplazamos a lo largo de su recta soporte r hasta aplicarlo en otro punto P' (figura 2), geométricamente el nuevo triángulo formado por **OP**' - **v** tendrá la misma área que el **OP** - **v** , pues la base **v** es la misma y la altura h (obtenida trazando la perpendicular a la recta r pasando por O) de los dos triángulos es la misma. Además, el plano que contiene al vector **v** y a **OP** es el mismo que contiene a **v** y a **OP**' (es el plano definido por el punto O y la recta r), por tanto vemos que:
 Propiedad 1: El momento m de un vector v respecto a un punto O no depende del punto de aplicación del vector, siempre que esté sobre la recta r que contiene al vector.
-
+$caption id="attachment_150587" align="alignnone" width="374"$![](/taller-matematicas/assets/images/moments2.png) Fig. 4: el momento m de un vector v respecto un punto fijo O no depende del punto de aplicación P, P', etc[/caption]
 
 Por tanto los vectores en lo que respecta a su momento respecto a un punto fijo O se comportan como vectores deslizantes. En cambio si variamos del punto O al O', entonces si obtenemos un cambio en el vector momento **m**: podemos verlo planteando P - O' = (P - O) + (O - O') y sustituyendo en la expresión del momento **m**':
 
@@ -67,9 +71,11 @@ Propiedad 3 (Varignon): El momento total respecto a un punto O cualquiera de un 
 
 Las operaciones con vectores las realizamos usando un sistema de coordenadas y los componentes de los vectores respecto a ese sistema; así, el vector **PQ** con origen en el punto P y extremo en el punto Q, al restar las coordenadas Q - P obtenemos un vector v con origen en el origen de coordenadas, no en el punto P. Si deslizamos el vector **PQ** a lo largo de su recta soporte, pasando a estar en los puntos P', Q', el nuevo vector **P'Q'** tendrá las mismas coordenadas Q'-P' coincidentes con **v**. Dos vectores de la misma magnitud y direcciones paralelas se dice que son *equipolentes*; así pues, cuando trabajemos con las coordenadas de vectores deslizantes, realmente estaremos trabajando con las coordenadas de vectores equipolentes con origen en el origen de coordenadas, pero los  momentos que calculemos los supondremos aplicados en los puntos dados.
 
+$caption id="attachment_150596" align="alignnone" width="249"$![](/taller-matematicas/assets/images/moments_equipolencia.png) Fig. 5: vector equipolente a un vector deslizante[/caption]
 
 **Ejemplo 1**: obtener el momento respecto al punto O(0,0) de los vectores v, w, ambos aplicados en el punto P(1,1), y con los extremos en Q(2,2) y R(2,3) respectivamente.
 
+$caption id="attachment_150590" align="alignnone" width="303"$![](/taller-matematicas/assets/images/moments3.png) Fig. 6: momento de dos vectores concurrentes respecto a un punto O[/caption]
 
 Las coordenadas son en dos dimensiones, pero el momento, calculado según la definición [1] es un vector perpendicular al plano que contiene los vectores **v**, **w** y el punto O; "ampliamos" pues nuestra referencia con una tercera coordenada que "saldrá" del plano de la pantalla hacia nuestro rostro (regla de la mano derecha):
 
@@ -92,6 +98,7 @@ $OP\times PQ=\begin{vmatrix}i&amp;j&amp;k\\1&amp;2&amp;0\\0&amp;1&amp;0\end{vmat
 
 En los apartados que siguen, se estudian las propiedades de los momentos y de los sistemas de momentos respecto a rectas (ejes); los resultados nos serviran para reducir conjuntos de vectores a un conjunto mínimo equivalente a efectos del momento resultante. También nos interesará encontrar los puntos respecto a los cuales el momento resultante de un sistema de vectores resulta ser mínimo, la cual cosa permitirá resolver problemas de equilibrio.
 
+$caption id="attachment_150591" align="alignnone" width="216"$![](/taller-matematicas/assets/images/moments4.png) Fig. 7: momentos de un vector v respecto a los puntos situados en un eje E[/caption]
 
 Imaginemos un eje E, esto es, una recta sobre la que hemos definido un vector unitario u para definir un sentido, y sobre el eje dos puntos distintos O, O'. Nos preguntamos por los momentos **m**, **m**' de un vector cualquiera v respecto a esos puntos. Recordemos la igualdad [2]:
 
@@ -157,6 +164,7 @@ El lugar geométrico de los puntos respecto a los cuales los momentos de un sist
 
 Encontremos ahora las condiciones que ha de cumplir un punto O' del eje central.  Sea O el origen de coordenadas, y O' el punto de intersección de la perpendicular al eje central que pasa por O (figura 8).
 
+$caption id="attachment_150603" align="alignnone" width="320"$![](/taller-matematicas/assets/images/moments5.png) Fig. 8: situación para la deducción de las ecuaciones del eje central[/caption]
 
 El  momento M' serà paralelo a la resultante R y al eje central; si aplicamos [3], multiplicando vectorialmente toda la expresión por la izquierda por la resultante R obtenemos:
 

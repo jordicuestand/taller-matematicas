@@ -51,7 +51,7 @@ $\frac{d^{2}x}{dt}=\frac{F(t)}{m}$
 
 Otra forma de introducir las ecuaciones diferenciales es desde el punto de vista geométrico. Consideremos la gráfica de la función $y=Cx^2$ para todos los posibles valores reales de *C*. En la imagen se representan los valores *C=1, 2, 4, 8*.
 
-
+$caption id="attachment_847" align="alignnone" width="497"$[![Haz de curvas y=Cx²](/taller-matematicas/assets/images/feix_corbes.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes.png) Haz de curvas y=Cx²[/caption]
 Se denomina **haz de curvas planas** al conjunto de todas las curvas que son gráficas de una función general $y=F(x,C)$. Cuando damos a *C* todos los valores posibles, las curvas generadas van llenando una región *R* del plano; en el caso de la imagen anterior esa región es todo el semiplano superior $x\in\left(-\infty,\infty\right),\;y\in\left[0,\infty\right).$ En general la región *R* dependerá del haz.
 
 Nos preguntamos ahora: ¿para cada punto $(x,y)$ del plano existirá un único valor *C* tal que nos define de forma unívoca la función $y=F(x,C)$ que pase por ese punto? Podemos plantearlo en estos términos: fijando $x=x_0$ la función *F* pasa a depender sólo de *C*: $y=F(x_0,C)=f(C)$; ¿para cada valor de *y* habrá un único valor de *C*? Será así siempre que la función *f* sea estrictamente creciente o decreciente en *R*, y eso sucederá cuando su derivada no se anule: $\frac{\operatorname df}{\operatorname dC}\neq0$. En este caso es como si tuviéramos otra función $C=\psi(x,y)$ de dos variables que determina *C* para cada punto del plano.
@@ -64,6 +64,7 @@ Si derivamos la ecuación del haz obtenemos $y'=2Cx$, entonces, sustituyendo el 
 
 La región R es la unión de los cuadrantes +X+Y  y -X-Y, en la figura se muestran algunas curvas.
 
+$caption id="attachment_848" align="alignnone" width="503"$[![Haz de curvas y=C·Sin(x)](/taller-matematicas/assets/images/feix_corbes1.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/02/feix_corbes1.png) Haz de curvas y=C·Sin(x)[/caption]
 
 Fijando $x=x_0$ cualquiera obtenemos $y=C\sin\left(x_0\right)=f\left(C\right);f'\left(C\right)=\sin\left(x_0\right)$. Este valor será cero siempre que $x_0=k\mathrm\pi,\;\mathrm k=0,1,\dots.$ En este conjunto de puntos todas las curvas del haz coinciden, y en el resto de puntos tenemos unicidad: una única curva para cada punto, dada por: $C=\frac y{\sin\left(x\right)}=\psi(x,y)$.
 

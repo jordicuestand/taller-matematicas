@@ -516,6 +516,7 @@ Comparando con el ejemplo 8, vemos que el algoritmo de Newton obtiene mejores re
 
  El método de Newton puede verse desde el punto de vista geométrico como la aproximación local de la función por su recta tangente en cada punto $x_n$. por ejemplo, en la imagen siguiente, para encontrar $y=f(x)=0$ (línia en negro) por Newton usando como aproximación inicial $x_0=3$ aproximamos la función por su tangente en ese punto (línea amarilla) y hallamos su punto de corte con el eje X, que es la siguiente aproximación $x_1=2$. En el método de la secante usamos un intervalo inicial $(p_0,p_1)$ (como en el método de bisección) y aproximamos la función por la recta secante en el intervalo: en la imagen el intervalo es $(0,3)$, el corte de la secante con el eje X es precisamente en $x=0$ donde $f(x)=0$: el  método encuentra la raíz en un solo paso, ya que hemos tenido la suerte de escoger como extremo del intervalo la solución de la ecuación.
 
+$caption id="attachment_481" align="alignnone" width="442"$[![Recta tangente y recta secante a la gráfica de la función y=f(x)](/taller-matematicas/assets/images/recta_tangent.png)](http://tallermatematic.eu/wp/wp-content/uploads/2014/10/recta_tangent.png) Recta tangente y recta secante a la gráfica de la función y=f(x)[/caption]
 
 Caso de que la secante tomada en el intervalo$(p_0,p_1)$ no nos dé el resultado, tomamos una nueva recta secante pasando por los puntos $(p_1,p).$
 **Algoritmo de la secante**

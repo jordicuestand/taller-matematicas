@@ -35,7 +35,7 @@ Ecuaciones trascendentes: inversas  de funciones trascendentes especiales
 
 En teoria de conjuntos, una relación o una correspondencia,, es una regla R o conjunto de reglas que nos definen cómo asignar a objetos de un conjunto O otros objetos de un conjunto D. La notación suele ser $O\xrightarrow RD$ o bien, considerando los elementos x, y de O, D respectivamente, por $x\in O\xrightarrow Ry\in D$ o más brevemente por $y=R(x)$.  Se suele recurrir a los [diagramas de Venn](http://es.wikipedia.org/wiki/Diagrama_de_Venn) para representar gráficamente una correspondencia entre conjuntos:
 
-
+$caption id="attachment_1049" align="alignnone" width="300"$[![Correspondéncia entre dos conjuntos](/taller-matematicas/assets/images/correspondencia-300x294.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/correspondencia.png) Figura 1: Correspondencia entre dos conjuntos[/caption]
 En una correspondencia R pueden haber tanto elementos de O como de D que no participen en R; denominamos dominio de R al subconjunto de elementos de O que están relacionados con elementos de D, y recorrido de R al subconjunto de elementos de D que están relacionados con elementos de O. También pueden haber elementos de O que estén relacionados con varios elementos de D, y elementos de D relacionados con varios elementos de O.
 
 **Ejemplo 1**: Definimos una relación R entre el conjunto de los números reales $\mathbb{R}$ y el de los enteros $\mathbb{Z}$ por las siguientes reglas:
@@ -127,7 +127,7 @@ $\begin{array}{l}\sqrt x\circ x^2=\sqrt{x^2}=x;\\x^2\circ\sqrt x=\left(\sqrt x\r
 Frecuentemente en los problemas necesitamos resolver ecuaciones que incluyen funciones, y para resolver la ecuación puede ser necesario utilizar la inversa de las funciones y la composición.
 **Ejemplo 12**: La tensión en un circuito RC en corriente continua viene dada por $V(t)=V_0e^{-t/RC}$; cuando se establece la corriente el condensador está descargado y la tensión es máxima: $t=t_0, V=V_0$. A medida que circula corriente el condensador adquiere carga eléctrica que produce un campo eléctrico de signo contrario al de la corriente que lo carga, oponiéndose a la corriente, y reduciendo la tensión V. Teóricamente este proceso de carga no termina nunca, pero en la práctica V se reduce muy rápidamente. Un problema típico consiste en responder preguntas como por ejemplo: ¿cuánto tiempo tardará la tensión en caer a la mitad de su valor inicial?
 
-
+$caption id="attachment_1067" align="alignnone" width="192"$[![Circuito RC](/taller-matematicas/assets/images/Screenshot-from-2015-05-07-144723.png)](http://tallermatematic.eu/wp/wp-content/uploads/2015/05/Screenshot-from-2015-05-07-144723.png) Circuito RC, fuente: Wikipedia[/caption]
 Planteamos la ecuación $\frac12V_0=V_0e^{-t/RC}\Leftrightarrow\frac12=e^{-t/RC}$. Para "despejar" t de esta igualdad usamos la función inversa y la composición de funciones del siguiente modo: la inversa de la función (trascendente) exponencial $e^x$ es la función (trascendente) logaritmo natural $\ln\left(x\right)$. Aplicando la proposición 1 obtenemos $\ln\left(x\right)\circ e^x=e^x\circ\ln\left(x\right)=x$. Entonces, tomando la igualdad $\frac12=e^{-t/RC}$ como una igualdad entre funciones $f(t)=\frac12=g(t)=e^{-t/RC}$, les aplicamos a ambas la composición con la función $\ln\left(t\right):$
 
 $\begin{array}{l}\ln\left(t\right)\circ f(t)=\ln\left(t\right)\circ\frac12=\ln\left(t\right)\circ g(t)=\ln\left(t\right)\circ e^{-t/RC}\Rightarrow\\\ln\left(\frac12\right)=-t/RC\end{array}$

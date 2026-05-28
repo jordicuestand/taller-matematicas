@@ -38,7 +38,7 @@ Por otro lado, hay variables estadísticas que miden flujos o variaciones de otr
 
 **Ejemplo 2:** Gráfico de ventas de unos grandes almacenes.
 
-
+$caption id="attachment_1703" align="alignnone" width="602"$![Fig.1: gráficos de ventas, izquierda, anuales, derecha, trimestrales](/taller-matematicas/assets/images/serie_temporal1.png) Fig.1: gráficos de ventas, izquierda, anuales, derecha, trimestrales[/caption]
 ##### Tendencia general
 
 A menudo los datos cuando se representan en intervalos largos de tiempo presentan una curva de evolución  suave, como en la figura 1 a la izquierda, que muestra las ventas totales de unos almacenes por años mostrando una tendencia general de crecimiento constante; en cambio los mismos datos tomados a intervalos de tiempo más cortos presentan fuertes oscilaciones, como vemos en la figura a la derecha, que muestra las ventas trimestrales en dos años consecutivos, no se ve una tendencia clara.
@@ -51,7 +51,7 @@ Al reducir el intervalo temporal, puede suceder que salgan a la luz influencias 
 
 Si representamos de nuevo el gráfico de ventas por meses, las oscilaciones aumentan, pero aún podemos observar la tendencia general ascendente, la estacionalidad (en el mes 6, junio, y en el 6+12 = 18, junio del año siguiente, las ventas presentan máximos) y la aparición de ciclos (cambios recurrentes a medio plazo), que son períodos en los que los datos presentan un aspecto parecido: en la figura 2 la estructura entre los meses 1 y 12 es algo semejante, pero incrementada, a la de los meses 13 a 24 del año siguiente.
 
-
+$caption id="attachment_1704" align="alignnone" width="687"$![Fig. 2: tendencia general, estacionalidad y ciclos](/taller-matematicas/assets/images/serie_temporal2.png) Fig. 2: tendencia general, estacionalidad y ciclos[/caption]
 ##### Variaciones erráticas o aleatorias
 
 Además de las causas anteriores de variabilidad, encontraremos en la práctica variaciones que no son debidas a ninguna de esas causas, y por ello las atribuiremos al azar.
@@ -137,22 +137,22 @@ Consideremos los datos de tasa de paro en España entre los años 1978 y 2013, q
 
 Observamos la gráfica de puntos de la serie:
 
-
+$caption id="attachment_1708" align="alignnone" width="685"$![Fig.3: gráfica de serie temporal](/taller-matematicas/assets/images/serie_temporal3.png) Fig.3: gráfica de serie temporal[/caption]
 La línea roja marca la media de todos los datos; vemos que los valores parecen oscilar en torno a la media, aunque la oscilación se hace mayor en los últimos años; cuando se observa esta oscilación en torno a la media, decimos que la serie presenta **estacionariedad **en media. Además, la serie parece presentar cierta pauta de variación, hay unos mínimos muy parecidos en los años 70 y en el 2005, y unos máximos en los años 80 y 90, así que podemos pensar que la serie presenta **cambios** **cíclicos** (no estacionalidad, pues no se aprecia repetición de pauta en años concretos, más bien son cambios a medio-largo plazo).
 
 Observamos ahora el gráfico de las desviaciones respecto a la media, obtenidas haciendo las diferencias $X_t-\overline{X_t}$ para cada dato de la serie:
 
-
+$caption id="attachment_1709" align="alignnone" width="675"$![Fig. 4: Gráfica de desviaciones respecto de la media total](/taller-matematicas/assets/images/serie_temporal4.png) Fig. 4: Gráfica de desviaciones respecto de la media total[/caption]
 De nuevo vemos que hay una oscilación de las desviaciones en torno del valor cero, oscilación que se amplifica en los últimos años (quizá debido a la crisis financiera del 2008 y siguientes): hay una estacionariedad en la desviación respecto de la media.
 
 Para concretar si las variaciones observadas son cíclicas y/o estacionarias, interesa quitar de la serie las oscilaciones aleatorias y eliminar, si la hay, la tendencia general (si hay por ejemplo una tendencia general al aumento de la tasa de desempleo, se hace más difícil ver las oscilaciones de cada período). A este proceso le denominamos **suavizar la serie. **
 
 El primer paso será determinar la tendencia de la serie, hay dos métodos para hacerlo, en el primero se usa **regresión** para ajustar una curva a la gráfica de la serie temporal:  en la hoja de cálculo hacemos clic-derecho sobre la gráfica de la serie y escogemos agregar línea de tendencia, que puede seguir diversos modelos matemáticos: lineal, logarítmico, polinómico, etc. Hay que ensayar algunos, observando para cada prueba el coeficiente de determinación, por ejemplo:
 
-
+$caption id="attachment_1710" align="alignnone" width="686"$![Fig 5: tendencia lineal y polinómica de grado 3 para la serie temporal](/taller-matematicas/assets/images/serie_temporal5.png) Fig 5: tendencia lineal y polinómica de grado 3 para la serie temporal[/caption]
 En la figura 5 se ha ensayado ajuste lineal, con un coeficiente R² muy bajo, del 0.009, y polinómica de grado 3, con un coeficiente R² bastante bueno, 0,69; se presenta también la ecuación del ajuste polinómico. No es necesario un ajuste muy bueno, sólo queremos captar la tendencia general, así que daríamos por aceptable el ajuste polinómico. Un economista podría sugerirnos que esa tendencia está siguiendo alguno de los [ciclos económicos](https://es.wikipedia.org/wiki/Ciclo_econ%C3%B3mico), vemos que hay un máximo de paro laboral en 1988 y otro en 2014, y hay mínimos en 1978 y en 2004, con un intervalo entre máximos y mínimos de unos 25 años; los máximos de paro podrían achacarse a la [reconversión industrial del los años 80](https://es.wikipedia.org/wiki/Reconversi%C3%B3n_industrial), y a a incorporación a la Comunidad Económica Europea (1986) que obligó a un proceso culminante de desmantelamiento industrial a partir de 1986, y a [la crisis financiera del 2008 y siguientes](https://es.wikipedia.org/wiki/Crisis_financiera_de_2008).
 
-
+$caption id="attachment_150313" align="alignnone" width="498"$![serie_temporal6](/taller-matematicas/assets/images/serie_temporal6.png) Fig. 6: la línia en rojo representa la serie de datos a la que se ha restado la curva de tendencia[/caption]
  En la figura 6 hemos restado de la serie de datos original la tendencia, el resultado es la serie representada por puntos rojos; las oscilaciones ahora están en torno al valor cero, y son de más corto plazo que las anteriores: cada cinco años, aproximadamente, que coinciden con otro ciclo económico: el [ciclo de Kitchin](https://es.wikipedia.org/wiki/Ciclo_de_Kitchin), debido a oscilaciones en la producción de las empresas y sus ajustes a la demanda real. Al restar la tendencia hemos supuesto que la serie se ajusta bien al modelo sumativo, que supone que la variabilidad total observada es la suma de las producidas por cada factor, o sea por la tendencia general, estacionalidad, etc.
 
 ### Correlación serial, determinación de la tendencia por el método de las medias móviles: ejemplo
@@ -282,7 +282,7 @@ Lógicamente, a medida que vamos aumentando el orden de la media móvil, tenemos
 
 En la figura 7 vemos estas series de medias moviles. Si nos fijamos en las medias de orden 3, la línia roja, y la comparamos la tendencia polinómica de grado 3 de la figura 5 veremos que coinciden mucho: las medias de orden 3 son una buena aproximación a la tendencia de esta serie.
 
-
+$caption id="attachment_150314" align="alignnone" width="498"$![Fig. 7: representación de las series de medias móviles](/taller-matematicas/assets/images/serie_temporal7.png) Fig. 7: representación de las series de medias móviles[/caption]
 A partir de aquí procederíamos como en la sección anterior: restando la tendencia (las medias móviles de orden 3) de los datos de la serie original para obtener la serie suavizada.
 
 ### Conclusión
