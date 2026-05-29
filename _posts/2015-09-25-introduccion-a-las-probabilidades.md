@@ -56,7 +56,7 @@ math: true
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Introducción
 
-Históricamente la Estadística, en sus inicios, no usaba la teoría de las probabilidades, de hecho, ambas ramas de la Matemática en sus inicios fueron independientes; esto es así debido a que la Estadística era de naturaleza descriptiva, como se ha visto en el tema [Estadística descriptiva, análisis de datos](http://tallermatematic.eu/wp/?p=1341). Con el tiempo, empezó a usarse para predecir sucesos a partir de datos anteriores, y también para llegar a conclusiones globales usando datos parciales, es lo que se denomina [inferencia estadística](https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial). Pero estas predicciones y conclusiones no deben nunca interpretarse como precisas, como puede ser en Ciencias Exactas, sino que siempre están limitadas por conceptos como "margen de confianza", "valor estimado", "hipótesis" y también "probabilidad". En este post vemos una introducción breve y simple a la teoría de la probabilidad aplicada a la Estadística.
+Históricamente la Estadística, en sus inicios, no usaba la teoría de las probabilidades, de hecho, ambas ramas de la Matemática en sus inicios fueron independientes; esto es así debido a que la Estadística era de naturaleza descriptiva, como se ha visto en el tema [Estadística descriptiva, análisis de datos]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/). Con el tiempo, empezó a usarse para predecir sucesos a partir de datos anteriores, y también para llegar a conclusiones globales usando datos parciales, es lo que se denomina [inferencia estadística](https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial). Pero estas predicciones y conclusiones no deben nunca interpretarse como precisas, como puede ser en Ciencias Exactas, sino que siempre están limitadas por conceptos como "margen de confianza", "valor estimado", "hipótesis" y también "probabilidad". En este post vemos una introducción breve y simple a la teoría de la probabilidad aplicada a la Estadística.
 
 # Probabilidad y predicción
 
@@ -208,7 +208,7 @@ Por otro lado, si sumamos las probabilidades de todos los casos posibles, el re
 # Espacio muestral de un experimento aleatorio
 
 Damos algunas definiciones básicas, y luego vemos sus propiedades y aplicaciones.
-****Definición 2**: Dado un [experimento aleatorio](https://es.wikipedia.org/wiki/Experimento_aleatorio) (ver el tema [Estadística descriptiva, análisis de datos](http://tallermatematic.eu/wp/?p=1341)), su **espacio muestral** Ω es el conjunto de todos los posibles resultados del experimento. Ejemplos:
+****Definición 2**: Dado un [experimento aleatorio](https://es.wikipedia.org/wiki/Experimento_aleatorio) (ver el tema [Estadística descriptiva, análisis de datos]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/)), su **espacio muestral** Ω es el conjunto de todos los posibles resultados del experimento. Ejemplos:
 
  	- Lanzamiento de un dado: Espacio muestral Ω = {1,2,3,4,5,6}, un conjunto de  6 elementos.
 
@@ -378,7 +378,7 @@ En casos simples es inmediato aplicar la regla de Laplace pero en general no ser
 
 $P(premio)=1-P(no\;premio)=1-\frac{C_{N-m,k}}{C_{N,k}}=1-\frac{\left(N-k\right)!\left(N-m\right)
 }{N!\left(N-m-k\right)!}$
-donde $C_{a,b}$ representan la combinaciones de a elementos tomados de b en b, y el símbolo ! representa la operación factorial. No trataremos esta teoría aquí, aunque en este blog hay una[ introducción a la teoría](http://tallermatematic.eu/wp/?p=1449) y se pueden encontrar algunos [problemas resueltos de combinatoria](http://tallermatematic.eu/wp/?p=1311).
+donde $C_{a,b}$ representan la combinaciones de a elementos tomados de b en b, y el símbolo ! representa la operación factorial. No trataremos esta teoría aquí, aunque en este blog hay una[ introducción a la teoría]({{ site.baseurl }}/2015/11/03/combinatoria/) y se pueden encontrar algunos [problemas resueltos de combinatoria]({{ site.baseurl }}/2015/09/01/problemas-de-combinatoria/).
 
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Tercera definición de probabilidad: axiomas y propiedades

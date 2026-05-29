@@ -8,9 +8,9 @@ math: true
 
 **Estadística teórica (modelos matemáticos)**
 
- 	- [Combinatoria](http://tallermatematic.eu/wp/?p=1449)
+ 	- [Combinatoria]({{ site.baseurl }}/2015/11/03/combinatoria/)
 
- 	- [Problemas de combinatoria](http://tallermatematic.eu/wp/?p=1311)
+ 	- [Problemas de combinatoria]({{ site.baseurl }}/2015/09/01/problemas-de-combinatoria/)
 
  	- [Problemas de probabilidades](http://tallermatematic.ovh/wp/index.php/2016/10/16/problemas-de-probabilidades/)
 
@@ -18,15 +18,15 @@ math: true
 
  	- [Variables aleatórias](http://tallermatematic.ovh/wp/index.php/2017/01/07/variables-aleatorias/)
 
- 	- [Problemas de estimación de parámetros](http://tallermatematic.eu/wp/?p=1464)
+ 	- [Problemas de estimación de parámetros]({{ site.baseurl }}/2015/11/18/problemas-de-estimacion-de-parametros/)
 
  
 
 **Estadística aplicada**
 
- 	- [Introducción a la Estadística y al análisis de datos; Estadística descriptiva](http://tallermatematic.eu/wp/?p=1341)
+ 	- [Introducción a la Estadística y al análisis de datos; Estadística descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/)
 
- 	- [Introducción a las probabilidades](http://tallermatematic.eu/wp/?p=1389)
+ 	- [Introducción a las probabilidades]({{ site.baseurl }}/2015/09/25/introduccion-a-las-probabilidades/)
 
  	- [Series temporales](http://tallermatematic.ovh/wp/index.php/2016/11/27/estadistica-estadistica-aplicada-series-temporales/)
 {% endraw %}

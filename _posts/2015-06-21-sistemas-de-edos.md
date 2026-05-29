@@ -72,7 +72,7 @@ En este método convertimos un sistema de dos ecuaciones en una única ecuación
 
 $\begin{array}{l}\left.\begin{array}{r}y'=3x+y+z\\z'=x-2y-z\\y''=3+y'+z'\end{array}\right\}\Leftrightarrow\left.\begin{array}{r}y'=3x+y+z\\z'=x-2y-z\\z'=y''-3-y'\end{array}\right\}\Leftrightarrow\left.\begin{array}{r}y'+z'=4x-y\\z'=y''-3-y'\end{array}\right\}\Leftrightarrow y'+\left(y''-3-y'\right)=4x-y\Leftrightarrow\\y''+y=4x+3\end{array}$
 
-Nos ha quedado una [EDO lineal de 2º orden](http://tallermatematic.eu/wp/?p=987) en la función y(x), cuya solución general es $y=C_1\cos(x)+C_2\sin(x)+4x+3$. Sustituyendo en la primera de las ecuaciones del sistema:
+Nos ha quedado una [EDO lineal de 2º orden]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/) en la función y(x), cuya solución general es $y=C_1\cos(x)+C_2\sin(x)+4x+3$. Sustituyendo en la primera de las ecuaciones del sistema:
 
 $\begin{array}{l}\begin{array}{l}\left.\begin{array}{r}y'=3x+y+z\\y=C_1\cos(x)+C_2\sin(x)+4x+3\end{array}\right\}\Leftrightarrow\\-C_1\sin(x)+C_2\cos(x)+4=3x+C_1\cos(x)+C_2\sin(x)+4x+3+z\Leftrightarrow\end{array}\\z=C_1\left(-\cos(x)-\sin(x)\right)+C_2\left(\cos(x)-\sin(x)\right)-7x+1=\\\left(C_2-C_1\right)\cos(x)-\left(C_1+C_2\right)\sin(x)-7x+1.\end{array}$
 
@@ -93,7 +93,7 @@ En la última ecuación usamos la primera para eliminar z:
 
 $\left.\begin{array}{r}-2z'=-y''-3y\\z''+y'-2z=e^{2x}\\y^{\left(4\right)}+3y''-4z'=4e^{2x}\end{array}\right\}\Leftrightarrow\left.\begin{array}{r}\\z''+y'-2z=e^{2x}\\y^{\left(4\right)}+5y''+2\left(-y''-3y\right)=4e^{2x}\end{array}\right\}$
 
-Vemos que la última ecuación, $y^{\left(4\right)}+5y''+2\left(-y''-3y\right)=4e^{2x}\Leftrightarrow y^{\left(4\right)}+3y''-6y=4e^{2x}$, sólo contiene la función y(x), y es lineal de coeficientes constantes de cuarto orden, que podremos resolver con los métodos de [EDOs lineales de orden superior](http://tallermatematic.eu/wp/?p=987). Una vez obtenida y(x), la sustituimos en la ecuación $z''+y'-2z=e^{2x}$ para obtener z(x).
+Vemos que la última ecuación, $y^{\left(4\right)}+5y''+2\left(-y''-3y\right)=4e^{2x}\Leftrightarrow y^{\left(4\right)}+3y''-6y=4e^{2x}$, sólo contiene la función y(x), y es lineal de coeficientes constantes de cuarto orden, que podremos resolver con los métodos de [EDOs lineales de orden superior]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/). Una vez obtenida y(x), la sustituimos en la ecuación $z''+y'-2z=e^{2x}$ para obtener z(x).
 
 ### Reducción de una EDO de orden superior a un sistema de EDOs de primer orden
 
@@ -116,7 +116,7 @@ $\left.\begin{array}{r}y''-2z'+3y=0\\z''+y'-2z=e^{2x}\end{array}\right\}\Leftrig
 
 # EDOs lineales de coeficientes constantes
 
-Cuando aplicamos los métodos generales anteriores a sistemas lineales, se observa que las operaciones de eliminación de ecuaciones y variables produce nuevas ecuaciones lineales. Utilizando el [operador derivación D](http://tallermatematic.eu/wp/?p=1030) se puede simplificar el proceso.
+Cuando aplicamos los métodos generales anteriores a sistemas lineales, se observa que las operaciones de eliminación de ecuaciones y variables produce nuevas ecuaciones lineales. Utilizando el [operador derivación D]({{ site.baseurl }}/2015/05/01/metodos-operacionales-el-operador-d/) se puede simplificar el proceso.
 
 **Ejemplo 6**: el sistema del ejemplo 3 era lineal; lo escribimos de nuevo usando el operador D:
 
@@ -160,7 +160,7 @@ que es equivalente a las ecuaciones:
 
 $\begin{array}{l}\left(D^4+3D^2-6\right)y=4e^{2x}\Leftrightarrow y=\frac1{D^4+3D^2-6}4e^{2x}\\\;\left(D^4+3D^2-6\right)z=7e^{2x}\Leftrightarrow z=\frac1{D^4+3D^2-6}7e^{2x}\end{array}$
 
-que se resuelven con los [métodos del operador D para EDOs lineales](http://tallermatematic.eu/wp/?p=1030).
+que se resuelven con los [métodos del operador D para EDOs lineales]({{ site.baseurl }}/2015/05/01/metodos-operacionales-el-operador-d/).
 
 ### Conjunto de soluciones de un sistema de EDOs lineales
 
@@ -221,7 +221,7 @@ $\begin{vmatrix}P_1\left(D\right)&amp;P_2\left(D\right)\\P_3\left(D\right)&amp;P
 si el sistema es homogéneo, entonces:
 
 $\begin{vmatrix}P_1\left(D\right)&amp;P_2\left(D\right)\\P_3\left(D\right)&amp;P_4\left(D\right)\end{vmatrix}y=\begin{vmatrix}0&amp;P_2\left(D\right)\\0&amp;P_4\left(D\right)\end{vmatrix}=0$
-y resulta una ecuación lineal también homogénea para y: $\left(P_1\left(D\right)P_4\left(D\right)-P_2\left(D\right)P_3\left(D\right)\right)y=0.$ Es sabido (ver por ejemplo [EDOs lineales de orden superior](http://tallermatematic.eu/wp/?p=987)) que las soluciones de las ecuación lineales  homogéneas de coeficientes constantes son siempre del tipo $Ce^{rx}$, por tanto se puede probar directamente con funciones de este tipo, sustituyendo en el sistema. Además, las ecuaciones que resultan para las otras incógnitas son las mismas, para z(x) será:
+y resulta una ecuación lineal también homogénea para y: $\left(P_1\left(D\right)P_4\left(D\right)-P_2\left(D\right)P_3\left(D\right)\right)y=0.$ Es sabido (ver por ejemplo [EDOs lineales de orden superior]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/)) que las soluciones de las ecuación lineales  homogéneas de coeficientes constantes son siempre del tipo $Ce^{rx}$, por tanto se puede probar directamente con funciones de este tipo, sustituyendo en el sistema. Además, las ecuaciones que resultan para las otras incógnitas son las mismas, para z(x) será:
 
 $\begin{vmatrix}P_1\left(D\right)&amp;P_2\left(D\right)\\P_3\left(D\right)&amp;P_4\left(D\right)\end{vmatrix}z=\begin{vmatrix}P_1\left(D\right)&amp;0\\P_3\left(D\right)&amp;0\end{vmatrix}=0\Leftrightarrow\left(P_1\left(D\right)P_4\left(D\right)-P_2\left(D\right)P_3\left(D\right)\right)z=0$
 
@@ -349,7 +349,7 @@ $\begin{array}{l}Y=C_1V_1e^{2x}+C_2V_2e^{2x}+C_3\left(V_2x+W\right)e^{2x}=\\C_1\
 
 ###  Soluciones particulares
 
-Para encontrar una solución particular de un sistema lineal de primer orden se pueden generalizar los métodos usados en[ EDOs lineales de primer orden](http://tallermatematic.eu/wp/?p=897): los métodos de coeficientes indeterminados y variación de constantes. Aquí sólo emplearemos el primero.
+Para encontrar una solución particular de un sistema lineal de primer orden se pueden generalizar los métodos usados en[ EDOs lineales de primer orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/): los métodos de coeficientes indeterminados y variación de constantes. Aquí sólo emplearemos el primero.
 
 **Método de coeficientes indeterminados  para sistemas de EDOs lineales de 1r orden con coef. constantes**
 
@@ -391,7 +391,7 @@ $\begin{pmatrix}y_p\\z_p\end{pmatrix}=\begin{pmatrix}Ae^x+Bx^2+Cx+D\\Ee^x+Fx^2+G
 
 ### Método de la transformada de Laplace
 
-Cuando tengamos que resolver un sistema de EDO lineales de cualquier orden con coeficientes constantes y condiciones iniciales, el método de la transformada de Laplace lo transforma en un sistema de ecuaciones lineales, no hay necesidad de resolver primero el sistema homogéneo y después encontrar una solución particular, y por tanto puede ser ventajoso usarlo en esas condiciones. La técnica es la misma que la explicada para EDO en el post [Transformada de Laplace](http://tallermatematic.eu/wp/?p=1075).
+Cuando tengamos que resolver un sistema de EDO lineales de cualquier orden con coeficientes constantes y condiciones iniciales, el método de la transformada de Laplace lo transforma en un sistema de ecuaciones lineales, no hay necesidad de resolver primero el sistema homogéneo y después encontrar una solución particular, y por tanto puede ser ventajoso usarlo en esas condiciones. La técnica es la misma que la explicada para EDO en el post [Transformada de Laplace]({{ site.baseurl }}/2015/06/12/transformada-de-laplace/).
 
 **Ejemplo 13**:
 

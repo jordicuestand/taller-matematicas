@@ -62,7 +62,7 @@ Para que este límite exista, ha de ser $p+2\leq3\Leftrightarrow p\leq1$ pero pa
 
 **4.** Estudiar la convergencia de la serie $\sum_{n=0}^\infty\left(\sqrt[3]{n^3-3}-\sqrt{n^2+4}\right)$
 
-La dificultad de este problema está en que restamos dos raíces de distinto grado: el límite es indeterminado del tipo $\infty-\infty$ y no podemos racionalizar. Una forma de simplificar este tipo de expresiones es usando [series de Taylor](http://tallermatematic.eu/wp/?p=547#taylor), en este caso, usando los desarrollos de Taylor en el punto $x=1$ para $\sqrt x$ y para $\sqrt[3]x$ que son:
+La dificultad de este problema está en que restamos dos raíces de distinto grado: el límite es indeterminado del tipo $\infty-\infty$ y no podemos racionalizar. Una forma de simplificar este tipo de expresiones es usando [series de Taylor]({{ site.baseurl }}/2014/12/13/aplicaciones-de-las-derivadas/#taylor), en este caso, usando los desarrollos de Taylor en el punto $x=1$ para $\sqrt x$ y para $\sqrt[3]x$ que son:
 
 $\begin{array}{l}\sqrt[3]x=1+\frac{x-1}3-\frac19\left(x-1\right)^2+\dots;\\\sqrt x=1+\frac{x-1}2-\frac18\left(x-1\right)^2+\dots\end{array}$
 

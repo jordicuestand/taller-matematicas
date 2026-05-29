@@ -61,7 +61,7 @@ En este caso de la ecuación $F(x,y,y') = 0$ podemos despejar y, resultando $y=
 
 $\begin{array}{l}2xp^2+2x^2p\cdot p'=y'=p\Rightarrow2px\left(p+xp'\right)=p\Rightarrow2x\left(p+xp'\right)=1\Rightarrow\\p+xp'=\frac1{2x}\Rightarrow p'+\frac1xp=\frac1{2x^2}\end{array}$
 
-que es una [ecuación diferencial lineal](http://tallermatematic.eu/wp/?p=897); la lineal homogénea es $p'+\frac1xp=0$, de variables separables:
+que es una [ecuación diferencial lineal]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/); la lineal homogénea es $p'+\frac1xp=0$, de variables separables:
 
 $\begin{array}{l}p'+\frac1xp=0\Rightarrow\frac{\operatorname dp}{\operatorname dx}=-\frac1xp\Rightarrow\int\frac{\operatorname dp}p=-\int\frac{\operatorname dx}x\Rightarrow\\\ln\left(p\right)=-\ln\left(x\right)+C\Rightarrow p_h=\frac Cx\end{array}.$
 
@@ -119,7 +119,7 @@ $\begin{array}{l}\left.\begin{array}{r}y=\frac C{\sqrt{1-p^2}}\\x=py\end{array}\
 
 pero en general, esto no será posible, y tendremos que dejar la solución en paramétricas, como veremos en el siguiente ejemplo.
 
-**Ejemplo 4**: La ecuación $4y=x^2+(y')^2$ es del tipo "se puede despejar y"; probemos el cambio $y'=p$ que la transforma en $4y=x^2+p^2$. Derivando respecto de x: $4p=2x+2pp'$, que es del tipo $p'=F(x,p)$ con F homogénea de grado 0 (ver [Funciones homogéneas. Aplicación a las ecuaciones diferenciales](http://tallermatematic.eu/wp/?p=855#homogeneas)):
+**Ejemplo 4**: La ecuación $4y=x^2+(y')^2$ es del tipo "se puede despejar y"; probemos el cambio $y'=p$ que la transforma en $4y=x^2+p^2$. Derivando respecto de x: $4p=2x+2pp'$, que es del tipo $p'=F(x,p)$ con F homogénea de grado 0 (ver [Funciones homogéneas. Aplicación a las ecuaciones diferenciales]({{ site.baseurl }}/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/#homogeneas)):
 
 $\begin{array}{l}4p=2x+2pp'\Rightarrow p'=\frac{2p-x}p=F(x,p);\\F(\lambda x,\lambda p)=\frac{2\lambda p-\lambda x}{\lambda p}=\frac{2p-x}p=F(x,p)\end{array},$
 
@@ -159,7 +159,7 @@ Son de la forma $y'+X(x)y=F(x)\cdot y^n$ y pueden reducirse a lineales con el 
 
 $y=v^{1/2}\Rightarrow y'=\frac1{2v^{1/2}}\frac{\operatorname dv}{\operatorname dx}\Rightarrow\frac1{2v^{1/2}}v'-\frac{3v^{1/2}}{2x}=\frac{2x}{v^{1/2}}$
 
-Multipliquemos todo por $2v^{1/2}$ para obtener $v'-\frac3xv=4x$ que és lineal. Resolvemos esta ecuación usando la fórmula general (ver el post [Ecuaciones diferenciales lineales de 1r orden](http://tallermatematic.eu/wp/?p=897)):
+Multipliquemos todo por $2v^{1/2}$ para obtener $v'-\frac3xv=4x$ que és lineal. Resolvemos esta ecuación usando la fórmula general (ver el post [Ecuaciones diferenciales lineales de 1r orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)):
 
 $y=e^{-\int X\left(x\right)\operatorname dx}\cdot\left$C+\int F(x)\cdot e^{\int X\left(x\right)\operatorname dx}\operatorname dx\right$$
 

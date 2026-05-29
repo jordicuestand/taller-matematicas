@@ -8,23 +8,23 @@ math: true
 
 **Ecuaciones diferenciales ordinarias**
 
-	- [Introducción a las ecuaciones diferenciales ordinarias (EDO)](http://tallermatematic.eu/wp/?p=844)
+	- [Introducción a las ecuaciones diferenciales ordinarias (EDO)]({{ site.baseurl }}/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/)
 
-	- [EDOs de primer orden](http://tallermatematic.eu/wp/?p=855)
+	- [EDOs de primer orden]({{ site.baseurl }}/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/)
 
-	- [EDOs lineales de primer orden](http://tallermatematic.eu/wp/?p=897)
+	- [EDOs lineales de primer orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)
 
-	- [EDOs no lineales de primer orden: cambios de variable](http://tallermatematic.eu/wp/?p=913)
+	- [EDOs no lineales de primer orden: cambios de variable]({{ site.baseurl }}/2015/04/11/cambios-de-variable-en-edo-de-primer-orden-no-lineales/)
 
-	- [EDOs lineales de orden superior](http://tallermatematic.eu/wp/?p=987)
+	- [EDOs lineales de orden superior]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/)
 
-	- [Método operacional. el operador D](http://tallermatematic.eu/wp/?p=1030)
+	- [Método operacional. el operador D]({{ site.baseurl }}/2015/05/01/metodos-operacionales-el-operador-d/)
 
-	- [Transformada de Laplace](http://tallermatematic.eu/wp/?p=1075)
+	- [Transformada de Laplace]({{ site.baseurl }}/2015/06/12/transformada-de-laplace/)
 
-	- [Sistemas de EDOs](http://tallermatematic.eu/wp/?p=1147)
+	- [Sistemas de EDOs]({{ site.baseurl }}/2015/06/21/sistemas-de-edos/)
 
-	- [Estabilidad de soluciones: introducción](http://tallermatematic.eu/wp/?p=1227)
+	- [Estabilidad de soluciones: introducción]({{ site.baseurl }}/2015/07/09/estabilidad-de-soluciones/)
 
-	- [Problemas de EDO no lineales, de segundo orden y orden superior](http://tallermatematic.eu/wp/?p=1124)
+	- [Problemas de EDO no lineales, de segundo orden y orden superior]({{ site.baseurl }}/2015/09/05/problemas-de-edo-no-lineales-de-segundo-orden-y-orden-superior/)
 {% endraw %}

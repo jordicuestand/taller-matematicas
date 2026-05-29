@@ -142,7 +142,7 @@ Consideramos la función $f(x)=x^3+x^2+3$ definida en el intervalo $(-2,0)$. La
 
 La definición que hemos dado de continuidad decíamos que era local: es una propiedad de la función en un punto $x=a$, y podemos extenderla a un conjunto $I$ siempre que se cumpla definición en todos los puntos de $I$. Para utilizar el concepto de continuidad en otros ámbitos más generales que el de las funciones reales de variable real se hace necesario dar otra definición que sea directamente global, esto es, que se aplique a un conjunto, y no a sus puntos. Esta definición es la de continuidad uniforme.
 
-En la primera definición hemos usado el concepto de límite:  decíamos que debe existir el límite $L=\lim_{x\rightarrow a}f\left(x\right)\neq\pm\infty$ y además cumplirse que $L=f(a)$.  Si existe el límite, entonces por la definición de límite de una función en un punto (ver por ejemplo: [Límites de funciones de variable real, teoria](http://tallermatematic.eu/wp/?p=47)) se cumplirá la condición:
+En la primera definición hemos usado el concepto de límite:  decíamos que debe existir el límite $L=\lim_{x\rightarrow a}f\left(x\right)\neq\pm\infty$ y además cumplirse que $L=f(a)$.  Si existe el límite, entonces por la definición de límite de una función en un punto (ver por ejemplo: [Límites de funciones de variable real, teoria]({{ site.baseurl }}/2014/07/13/limites-de-funciones-reales-de-variable-real/)) se cumplirá la condición:
 
 para cada entorno del punto $L$ con radio $R$, $B(L, R)$, existe otro entorno del punto $a$  con radio $r$, $B(a, r)$, tal que los valores $f(x)$ de la función pertenecen al entorno $B(L, R)$ para todo $x\in B^\ast(a,r)\bigcap A$.
 

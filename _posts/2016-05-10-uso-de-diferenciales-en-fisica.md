@@ -31,7 +31,7 @@ El número de electrones que se estan moviendo por el cable es muy elevado, del 
 
 ### Relación con la derivación de funciones
 
-Nos podemos encontrar también con que a veces se relacione el cociente de diferenciales con la derivación. Para la descripción matemática de la derivada podemos consultar mi post [Cálculo ->Funciones derivables → Introducción al estudio local de una función](http://tallermatematic.ovh/wp/?p=461), del que reproduzco aquí un párrafo:
+Nos podemos encontrar también con que a veces se relacione el cociente de diferenciales con la derivación. Para la descripción matemática de la derivada podemos consultar mi post [Cálculo ->Funciones derivables → Introducción al estudio local de una función]({{ site.baseurl }}/2014/11/09/funciones-derivables/), del que reproduzco aquí un párrafo:
 
 ![derivada-incrementos](/taller-matematicas/assets/images/derivada-incrementos.png)
 

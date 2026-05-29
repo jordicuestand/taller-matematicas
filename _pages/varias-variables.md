@@ -12,9 +12,9 @@ math: true
 
  	- [Teoría: derivadas parciales](http://mathseng.blogspot.com.es/2012/02/derivadas-parciales.html)
 
- 	- [Problemas de límites y continuidad en el plano real](http://tallermatematic.eu/wp/?p=81)
+ 	- [Problemas de límites y continuidad en el plano real]({{ site.baseurl }}/2014/07/17/problemas-de-limites-continuidad-y-derivabilidad-en-el-plano-real/)
 
- 	- [Problemas de derivadas y diferenciales con varias variables](http://tallermatematic.eu/wp/?p=358)
+ 	- [Problemas de derivadas y diferenciales con varias variables]({{ site.baseurl }}/2014/09/02/calculo-con-varias-variables-problemas-de-derivadas-y-diferenciales/)
 
- 	- [Integrales dobles de Riemann; aplicación al cálculo de volúmenes](http://tallermatematic.eu/wp/?p=1268)
+ 	- [Integrales dobles de Riemann; aplicación al cálculo de volúmenes]({{ site.baseurl }}/2015/08/12/integrales-dobles-de-riemann/)
 {% endraw %}

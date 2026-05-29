@@ -115,7 +115,7 @@ El término $-e^{-\frac RLt}$ vale 1 para t = 0 y se atenúa ràpidamente, pasan
 ![Intensidad I(t) en un circuito RL](/taller-matematicas/assets/images/circuit-RL.png) Intensidad I(t) en un circuito RL
 ###  Unicidad de la solución
 
-El teorema siguiente nos asegura que, en ciertas condiciones, la solución de una ecuación diferencial lineal de primer orden es única, o equivalentemente, que no existen [soluciones singulares](http://tallermatematic.eu/wp/?p=855#singulares), toda posible solución está incluida en la solución general.
+El teorema siguiente nos asegura que, en ciertas condiciones, la solución de una ecuación diferencial lineal de primer orden es única, o equivalentemente, que no existen [soluciones singulares]({{ site.baseurl }}/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/#singulares), toda posible solución está incluida en la solución general.
 
 ***Teorema 1**: Unicidad de la solución de la ecuación diferencial lineal de primer orden.*
 

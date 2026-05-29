@@ -6,7 +6,7 @@ math: true
 ---
 {% raw %}
 
-La combinatoria es la teoría matemática que trata de las técnicas para contar el número de elementos de un subconjunto, o el número de subconjuntos de un conjunto, o el número de listas de elementos del conjunto determinados por un criterio. Algunos problemas de [probabilidades](http://tallermatematic.eu/wp/?p=1389) utilizan estas técnicas, de las que  aquí vemos un repaso breve.
+La combinatoria es la teoría matemática que trata de las técnicas para contar el número de elementos de un subconjunto, o el número de subconjuntos de un conjunto, o el número de listas de elementos del conjunto determinados por un criterio. Algunos problemas de [probabilidades]({{ site.baseurl }}/2015/09/25/introduccion-a-las-probabilidades/) utilizan estas técnicas, de las que  aquí vemos un repaso breve.
 
 **Ejemplo 1**: ¿de cuántas formas se puede escoger un comité de tres personas de entre cinco candidatos? Aquí el conjunto son los cinco candidatos, y queremos saber el número de subconjuntos distintos de tres elementos, el criterio es simplemente que cada subconjunto tenga tres personas, sin importar nada más.
 

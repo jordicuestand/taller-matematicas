@@ -174,7 +174,7 @@ $\begin{array}{l}\int_a^bf\operatorname{d}x=F(b)-F(a)\Leftrightarrow F'(b)=\lim_
 
 ya que en la integral de Riemann que hemos explicado, $\lim_{a\rightarrow b}\int_a^bf\operatorname{d}x$ es el área de un rectángulo infinitesimal de base $b-a$ y altura $f(b)$, que es $(b-a)·f(b)$.
 
-Además, en los casos prácticos de cálculo de integrales, lo que se hace es obtener la primitiva F de la función para después, aplicando la regla de Barrow, obtener la integral, ya que el cálculo directo usando las sumas de Riemann puede ser complicado y largo. Las técnicas de obtención de la función primitiva F se ven en el artículo [Cálculo de integrales](http://tallermatematic.eu/wp/?p=138). Ejemplos de aplicación de las integrales se verán en el artículo Problemas resueltos de aplicaciones de las integrales.
+Además, en los casos prácticos de cálculo de integrales, lo que se hace es obtener la primitiva F de la función para después, aplicando la regla de Barrow, obtener la integral, ya que el cálculo directo usando las sumas de Riemann puede ser complicado y largo. Las técnicas de obtención de la función primitiva F se ven en el artículo [Cálculo de integrales]({{ site.baseurl }}/2014/08/10/calculo-de-integrales-funciones-reales-de-variable-real/). Ejemplos de aplicación de las integrales se verán en el artículo Problemas resueltos de aplicaciones de las integrales.
 
 **Ejemplo 6**: siguiendo con el ejemplo anterior, una función primitiva de $f(x)=x$ es $F(x)=x^2/2$. Por tanto, $\int_0^2x\operatorname{d}x=F(2)-F(0)=\frac{2^2}2-\frac{0^2}2=2.$
 

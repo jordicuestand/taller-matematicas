@@ -16,7 +16,7 @@ En la antigüedad se intentó investigar estas propiedades exclusivamente usando
 
 # Teorema de los números primos
 
-Hay muchos teoremas sobre los números primos, pero sólo uno ha merecido el nombre de "El teorema de los números primos": el que establece cuantos hay en un cierto intervalo de los números enteros. Para ver el razonamiento, partimos de las [series de números reales](http://tallermatematic.eu/wp/?p=1250), concretamente de la[ serie geométrica](https://ca.wikipedia.org/wiki/S%C3%A8rie_geom%C3%A8trica):
+Hay muchos teoremas sobre los números primos, pero sólo uno ha merecido el nombre de "El teorema de los números primos": el que establece cuantos hay en un cierto intervalo de los números enteros. Para ver el razonamiento, partimos de las [series de números reales]({{ site.baseurl }}/2015/07/25/series-de-numeros-reales/), concretamente de la[ serie geométrica](https://ca.wikipedia.org/wiki/S%C3%A8rie_geom%C3%A8trica):
 $\sum\nolimits_{k=0}^\infty\frac1{x^k}=1+\frac1x+\frac1{x^2}+\cdots$
 
 de razón $r=1/x$, que converge al valor $\frac1{1-r}=\frac1{1-x^{-1}}$ siempre que $r &lt; 1$, o sea que $x &gt; 1$.

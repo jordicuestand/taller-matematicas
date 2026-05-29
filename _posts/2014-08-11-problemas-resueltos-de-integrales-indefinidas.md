@@ -98,7 +98,7 @@ $I=\frac18e^{2x}\left(\sin\left(2x\right)+\cos\left(2x\right)\right)+\frac14e^{2
 
 **3.** Calcular $\int\frac{\left(\ln\left(x\right)\right)^3}x\operatorname{d}x.$
 
-Observemos que $\int\frac{\left(\ln\left(x\right)\right)^3}x\operatorname{d}x=\int\left(\ln\left(x\right)\right)^3\cdot\frac{\operatorname{d}x}x=\int\left(\ln\left(x\right)\right)^3\cdot\operatorname{d}\left(\ln\left(x\right)\right)$, que se corresponde con la [integral inmediata](http://tallermatematic.eu/wp/?p=138#tabla_inmediatas) del tipo (3). Por tanto:
+Observemos que $\int\frac{\left(\ln\left(x\right)\right)^3}x\operatorname{d}x=\int\left(\ln\left(x\right)\right)^3\cdot\frac{\operatorname{d}x}x=\int\left(\ln\left(x\right)\right)^3\cdot\operatorname{d}\left(\ln\left(x\right)\right)$, que se corresponde con la [integral inmediata]({{ site.baseurl }}/2014/08/10/calculo-de-integrales-funciones-reales-de-variable-real/#tabla_inmediatas) del tipo (3). Por tanto:
 
 $\int\left(\ln\left(x\right)\right)^3\cdot\operatorname{d}\left(\ln\left(x\right)\right)=\frac14\left(\ln\left(x\right)\right)^4+C.$
 
@@ -108,11 +108,11 @@ $\int\left(\ln\left(x\right)\right)^3\cdot\operatorname{d}\left(\ln\left(x\right
 
 **4.** Calcular $\int\frac{x^2+x+2}{\left(x^2+2\right)}\operatorname{d}x.$
 
-Es una [integral del tipo racional](http://tallermatematic.eu/wp/?p=138#racionales), pero antes de proceder según el método habitual, observemos que
+Es una [integral del tipo racional]({{ site.baseurl }}/2014/08/10/calculo-de-integrales-funciones-reales-de-variable-real/#racionales), pero antes de proceder según el método habitual, observemos que
 
 $\frac{x^2+x+2}{\left(x^2+2\right)^2}=\frac{x^2+2}{\left(x^2+2\right)^2}+\frac x{\left(x^2+2\right)^2}=\frac1{\left(x^2+2\right)^{}}+\frac x{\left(x^2+2\right)^2}.$
 
-Ambas [integrales son inmediatas](http://tallermatematic.eu/wp/?p=138#tabla_inmediatas):
+Ambas [integrales son inmediatas]({{ site.baseurl }}/2014/08/10/calculo-de-integrales-funciones-reales-de-variable-real/#tabla_inmediatas):
 
 $\int\frac1{\left(x^2+2\right)^{}}\operatorname{d}x=\frac1{\sqrt2}\tan^{-1}\left(\frac x{\sqrt2}\right),\;\int\frac x{\left(x^2+2\right)^2}\operatorname{d}x=\frac{-1}2\int\left(x^2+2\right)^{-2}\left(-2x\right)\operatorname{d}x=\frac{-1}2\left(x^2+2\right)^{-1}.$
 
@@ -377,7 +377,7 @@ Como se apunta en el problema 8, las integrales con combinaciones de $sin(x), c
 
 $\begin{array}{l}t=\cos\left(x\right)\Rightarrow\operatorname{d}t=-\sin\left(x\right)\operatorname{d}x\Rightarrow\\\int\frac{\sin\left(x\right)\operatorname{d}x}{5+2\cos^2\left(x\right)}=\int\frac{-\operatorname{d}t}{5+2t^2}\end{array},$
 
-que es una integral del tipo racional tal que el denominador tiene raíces complejas, es del tipo $\int\frac{\operatorname{d}u}{u^2+a^2}=\frac1a\tan^{-1}\left(\frac ua\right)$ (ver el post [Integración de funciones -> funciones racionales](http://tallermatematic.eu/wp/?p=138#racionales)), la "arreglamos":
+que es una integral del tipo racional tal que el denominador tiene raíces complejas, es del tipo $\int\frac{\operatorname{d}u}{u^2+a^2}=\frac1a\tan^{-1}\left(\frac ua\right)$ (ver el post [Integración de funciones -> funciones racionales]({{ site.baseurl }}/2014/08/10/calculo-de-integrales-funciones-reales-de-variable-real/#racionales)), la "arreglamos":
 
 $\begin{array}{l}\int\frac{-\operatorname{d}t}{5+2t^2}=-\int\frac{\operatorname{d}t}{2\left(t^2+{\displaystyle\frac52}\right)}=-\frac12\int\frac{\operatorname{d}t}{t^2+\left(\sqrt{\displaystyle\frac52}\right)^2}=\\-\frac12\frac1{\sqrt{\frac52}}\tan^{-1}\left(\frac t{\sqrt{\frac52}}\right)=\frac{-1}{\sqrt{10}}\tan^{-1}\left(\frac{\sqrt2t}{\sqrt5}\right).\end{array}$
 
