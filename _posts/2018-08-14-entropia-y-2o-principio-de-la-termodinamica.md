@@ -14,7 +14,7 @@ Se observa que el calor Q fluye de forma natural desde las fuentes térmicas de 
 Lo que se explica a continuación sigue el siguiente esquema: 1) exploramos la relación calor transferido/temperatura, Q/T,  en un ciclo reversible, 2) visitaremos brevemente el análisis matemático recordando las nociones de *campos vectoriales conservativos*, *circulación de un vector* en el campo y *potencial* del campo, 3) usaremos esos conceptos matemáticos y la relación Q/T de un ciclo para definir la función de estado *entropía S*, y a continuación 4) veremos las propiedades más importantes de S y sus aplicaciones prácticas en los cambios de estado termodinámicos.
 ### Relación entre calor transferido y temperatura en un ciclo de Carnot
 
-En [Trabajo, calor y primer principio de la Termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }}) se estudian los *ciclos de Carnot*, que son sucesiones continuas de cambios de estado *reversibles* (en cada instante el sistema está siempre en equilibrio termodinámico) y  *cíclicos* (estado final igual al estado inicial) formados por dos transformaciones isotermas (temperatura T = cte) y dos adiabáticas (calor transferido Q = 0). En la figura 1 vemos en un diagrama Presión-Volumen las isotermas (transformaciones desde 1 a 2 y de 3 a 4) y las adiabáticas 2->3 y 4->1.
+En [Trabajo, calor y primer principio de la Termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/) se estudian los *ciclos de Carnot*, que son sucesiones continuas de cambios de estado *reversibles* (en cada instante el sistema está siempre en equilibrio termodinámico) y  *cíclicos* (estado final igual al estado inicial) formados por dos transformaciones isotermas (temperatura T = cte) y dos adiabáticas (calor transferido Q = 0). En la figura 1 vemos en un diagrama Presión-Volumen las isotermas (transformaciones desde 1 a 2 y de 3 a 4) y las adiabáticas 2->3 y 4->1.
 
 ![](/taller-matematicas/assets/images/Carnot-1.png) Fig.1: ciclo de Carnot representado en el diagrama Presión-Volumen
 
@@ -26,7 +26,7 @@ si las multiplicamos todas entre sí y eliminamos términos repetidos, nos queda
 
 ${V_2}V_4=V_3V_1$ [1]
 
-Supongamos ahora que el sistema usado en el ciclo es un gas ideal, entonces la ecuación de estado es PV = nRT, y además el trabajo generado en las isotermas será (para detalles ver [Trabajo, calor y primer principio de la Termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }})) $W_{12}=nRT\ln\left(\frac{V_2}{V_1}\right),\;W_{34}=nRT'\ln\left(\frac{V_4}{V_3}\right)$. Dividiendo la primera por la segunda y aplicando [1]:
+Supongamos ahora que el sistema usado en el ciclo es un gas ideal, entonces la ecuación de estado es PV = nRT, y además el trabajo generado en las isotermas será (para detalles ver [Trabajo, calor y primer principio de la Termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/)) $W_{12}=nRT\ln\left(\frac{V_2}{V_1}\right),\;W_{34}=nRT'\ln\left(\frac{V_4}{V_3}\right)$. Dividiendo la primera por la segunda y aplicando [1]:
 
 $\frac{W_{12}}{\;W_{34}}=\frac{T\ln\left({\displaystyle\frac{V_2}{V_1}}\right)}{T'\ln\left(\frac{V_4}{V_3}\right)}=\frac{T\ln\left({\displaystyle\frac{V_2}{V_1}}\right)}{-T'\ln\left(\frac{V_3}{V_4}\right)}=-\frac T{T'}$.
 

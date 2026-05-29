@@ -20,7 +20,7 @@ math: true
 
 **1** - Determinar el trabajo de expansión realizado por un mol de una sustancia al pasar del estado sólido al estado líquido bajo la presión de 1 atm, sabiendo que su volumen específico en el estado líquido supera al del estado sólido en 0,16 cm³/gr. Otros datos: masa de un mol de la sustancia: 60gr/mol.
 
-**Solución**: el trabajo de expansión viene dado por (ver [Trabajo, calor y 1r principio de la termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }}). ecuación [1]):
+**Solución**: el trabajo de expansión viene dado por (ver [Trabajo, calor y 1r principio de la termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/). ecuación [1]):
 $W=\int_{V_1}^{V_2}P\operatorname dV$[1]
 
 La fusión del sólido ocurre a presión constante, luego
@@ -36,7 +36,7 @@ W = 1. 013·10⁵ N/m² · 9.6 · 10⁻⁶m³ = 0.972 Nm = 0.972 J (en Joules).
 
 **2** - Se comprime de forma reversible e isotérmica un mol de un gas ideal a T = 18⁰C desde la presión inicial de 0.8 atm hasta la presión final de 3.5 atm. ¿Qué trabajo se ha realizado sobre el gas?
 
-**Solución**: El trabajo de expansión viene dado por (ver [Trabajo, calor y 1r principio de la termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }}). ecuación [1]):
+**Solución**: El trabajo de expansión viene dado por (ver [Trabajo, calor y 1r principio de la termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/). ecuación [1]):
 $W=\int_{V_1}^{V_2}P\operatorname dV$[1]
 
 En nuestro caso es una compresión, luego el trabajo será negativo (producido *sobre* el gas, y no producido *por* el gas). Siendo una gas ideal, se cumple la ecuación de estado PV = nRT, y como T es constante, se cumple PV = cte, o sea que $P_1V_1=P_2V_2$. Además, P=nRT/V, sustituyendo en [1]:
@@ -81,7 +81,7 @@ Para el estado A es immediato calcular VA, usando PV = nRT -> VA = nRTA / PA = 
 
 Lo mismo sucede con el estado C: VC = nRTC / PC = (100·R·295) / (1.1·1.013·10⁵) = 2950R/11143 m³. Los estados A y C quedan totalmente determinados, y del B nos falta la presión y el volumen.
 
-**Transformación B->C**. Es una adiabática, aplicaremos lo visto en [Trabajo, calor, 1r principio de la Termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }}) apartado Transformaciones adiabáticas; aplicación a los gases perfectos: $\mathrm{PV}^\mathrm\gamma=\mathrm{cte}$ siendo $\gamma=c_p/c_v$ y además se cumple la [relación de Mayer](https://es.wikipedia.org/wiki/Relaci%C3%B3n_de_Mayer), $c_p-c_v=R$. Con  los datos del enunciado, encontramos el valor de la constante gamma:
+**Transformación B->C**. Es una adiabática, aplicaremos lo visto en [Trabajo, calor, 1r principio de la Termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/) apartado Transformaciones adiabáticas; aplicación a los gases perfectos: $\mathrm{PV}^\mathrm\gamma=\mathrm{cte}$ siendo $\gamma=c_p/c_v$ y además se cumple la [relación de Mayer](https://es.wikipedia.org/wiki/Relaci%C3%B3n_de_Mayer), $c_p-c_v=R$. Con  los datos del enunciado, encontramos el valor de la constante gamma:
 
 $\mathrm\gamma=\frac{{\mathrm c}_\mathrm p}{{\mathrm c}_\mathrm v}=\frac{\mathrm R+{\mathrm c}_\mathrm v}{{\mathrm c}_\mathrm v}=\frac{\mathrm R+{\displaystyle\frac{5\mathrm R}2}}{\displaystyle\frac{5\mathrm R}2}=\frac75=1.4$
 
@@ -104,7 +104,7 @@ o en kilocalorias, aproximadamente 23 Kcal.
 
 **4**. Una máquina térmica que sigue un ciclo de Carnot trabaja entre las temperaturas de 150⁰C y 50⁰C. ¿Cuál es la cantidad de calor que absorbe si la máquina tiene una potencia de 75 KW?
 
-**Solución**: En la teoría [Trabajo, calor, 1r principio de la Termodinámica]({{ '/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/' | relative_url }}) apartado Máquina térmica de Carnot para gases perfectos se muestra que "*el ciclo de Carnot opera entre dos fuentes térmicas a temperaturas distintas T, T', absorbiendo calor Q de la fuente más caliente y cediendo calor Q' a la fuente más fría, y realizando un trabajo neto W = Q - Q'.*"; una potencia de 75 KW equivale a desarrollar un trabajo de 75 KJ por segundo, luego Q - Q' = 75000 J. Además, sabemos que el rendimiento de los ciclos de Carnot cumplen:
+**Solución**: En la teoría [Trabajo, calor, 1r principio de la Termodinámica](http://tallermatematic.ovh/wp/index.php/2018/07/31/trabajo-calor-1r-principio-de-la-termodinamica/) apartado Máquina térmica de Carnot para gases perfectos se muestra que "*el ciclo de Carnot opera entre dos fuentes térmicas a temperaturas distintas T, T', absorbiendo calor Q de la fuente más caliente y cediendo calor Q' a la fuente más fría, y realizando un trabajo neto W = Q - Q'.*"; una potencia de 75 KW equivale a desarrollar un trabajo de 75 KJ por segundo, luego Q - Q' = 75000 J. Además, sabemos que el rendimiento de los ciclos de Carnot cumplen:
 $r=\frac WQ=\frac{T-T'}T$
 
 En nuestro caso,

@@ -13,7 +13,7 @@ Como cualquier ciencia moderna, tanto la Investigación Operativa como la Optimi
 
 Temas
 
-[Optimización continua: introducción y conceptos básicos]({{ '/2016/12/06/o/' | relative_url }}ptimizacion-continua-introduccion-y-conceptos-basicos/)
+[Optimización continua: introducción y conceptos básicos](http://tallermatematic.ovh/wp/2016/12/06/optimizacion-continua-introduccion-y-conceptos-basicos/)
 
 **Programación Lineal** **y Programación Entera**
 

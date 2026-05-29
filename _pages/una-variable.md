@@ -70,7 +70,7 @@ math: true
 
 **Exámenes resueltos**
 
- 	- [Examen resuelto de Cálculo ]({{ '/2016/10/16/examen-1-resuelto-de-calculo/' | relative_url }})
+ 	- [Examen resuelto de Cálculo ](http://tallermatematic.ovh/wp/index.php/2016/10/16/examen-1-resuelto-de-calculo/)
 
- 	- [Otro examen resuelto de cálculo]({{ '/2016/10/16/examen-2-de-calculo/' | relative_url }})
+ 	- [Otro examen resuelto de cálculo](http://tallermatematic.ovh/wp/index.php/2016/10/16/examen-2-de-calculo/)
 {% endraw %}

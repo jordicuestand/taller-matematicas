@@ -68,7 +68,7 @@ Las curvas de nivel son elipses, todos con los mismos ejes cuyas direcciones vie
 
 ## Máximos y mínimos de funciones convexas; aplicación a formas cuadráticas
 
-El concepto de [función convexa]({{ '/2014/12/13/aplicaciones-de-las-derivadas/' | relative_url }}#concavidad) que se estudia en Cálculo es importante en Optimización debido a la siguiente
+El concepto de [función convexa](http://tallermatematic.ovh/wp/index.php/2014/12/13/aplicaciones-de-las-derivadas/#concavidad) que se estudia en Cálculo es importante en Optimización debido a la siguiente
 **Propiedad 1**:  Si una función real es convexa en un intervalo, y en ese intervalo tiene un mínimo local en $x_0$, entonces ese mínimo es absoluto.
 
 La siguiente propiedad relaciona funciones convexas con formas cuadráticas:

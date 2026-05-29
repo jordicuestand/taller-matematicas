@@ -12,7 +12,7 @@ math: true
 ---
 {% raw %}
 
-La teoría (con ejemplos) correspondiente la encontrareis aquí: [Series de números reales]({{ '/2015/07/25/series-de-numeros-reales/' | relative_url }}).
+La teoría (con ejemplos) correspondiente la encontrareis aquí: [Series de números reales](http://tallermatematic.ovh/wp/index.php/2015/07/25/series-de-numeros-reales/).
 
 **1.** Estudiar la convergéncia de la serie $\sum_{n=1}^\infty\frac{n^n}{n!}$
 Al tener el término general $\frac{n^n}{n!}$ exponentes y factoriales, parece una buena idea probar con el criterio del cociente (también conocido por criterio d'Alembert), ya que suele simplificarse. Probemos:

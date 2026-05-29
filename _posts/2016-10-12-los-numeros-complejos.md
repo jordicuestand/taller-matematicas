@@ -194,7 +194,7 @@ Así pues, en toda aplicación práctica en que tengamos oscilaciones complicada
 
  	- La [impedancia](https://es.wikipedia.org/wiki/Impedancia), que es una medida de la oposición que presenta un circuito a una corriente eléctrica, de forma parecida a la resistencia eléctrica (la generaliza); cuando la corriente es alterna y variable con el tiempo, la impedancia se representa como una cantidad compleja.
 
- 	- En la [resolución de ecuaciones diferenciales lineales]({{ '/2015/04/26/edos-lineales-de-orden-superior/' | relative_url }}#EDO_lineales), muy frecuente en ciencia y técnica, aparecen raíces complejas, que indican precisamente la existencia de soluciones oscilantes.
+ 	- En la [resolución de ecuaciones diferenciales lineales](http://tallermatematic.ovh/wp/index.php/2015/04/26/edos-lineales-de-orden-superior/#EDO_lineales), muy frecuente en ciencia y técnica, aparecen raíces complejas, que indican precisamente la existencia de soluciones oscilantes.
 
  	- En Física Cuántica, la [ecuación de Schrödinger](https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Schr%C3%B6dinger) nos proporciona la evolución en el tiempo y el espacio de la onda de probabilidad de una partícula, usando número complejos (observar que incluye el número imaginario i):
 

@@ -16,5 +16,5 @@ math: true
 
 **Números complejos**
 
- 	- [Los números complejos]({{ '/2016/10/12/los-numeros-complejos/' | relative_url }})
+ 	- [Los números complejos](http://tallermatematic.ovh/wp/index.php/2016/10/12/los-numeros-complejos/)
 {% endraw %}
