@@ -1,11 +1,10 @@
 ﻿---
 layout: page
-title: "Ecuaciones diferenciales"
+title: "Ecuaciones diferenciales ordinarias"
 date: 2015-07-08 19:03:03 +0000
 math: true
 permalink: /ecuaciones-diferenciales/
 ---
-{% raw %}
 
 **Ecuaciones diferenciales ordinarias**
 
@@ -28,4 +27,4 @@ permalink: /ecuaciones-diferenciales/
 	- [Estabilidad de soluciones: introducción](/taller-matematicas/2015/07/09/estabilidad-de-soluciones/)
 
 	- [Problemas de EDO no lineales, de segundo orden y orden superior](/taller-matematicas/2015/09/05/problemas-de-edo-no-lineales-de-segundo-orden-y-orden-superior/)
-{% endraw %}
+
