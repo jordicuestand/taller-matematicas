@@ -3,6 +3,7 @@ layout: page
 title: "Ecuaciones diferenciales"
 date: 2015-07-08 19:03:03 +0000
 math: true
+permalink: /ecuaciones-diferenciales/
 ---
 {% raw %}
 
