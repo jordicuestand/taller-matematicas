@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Resolución aproximada de ecuaciones"
 date: 2015-01-26 20:45:14 +0000
@@ -257,7 +257,7 @@ Dada una función $f(x)$ uno de los problemas básicos del cálculo numérico es
 
 ### Separación de las raíces de una función
 
-Cuando $f(x)$ tenga más de una raíz, será necesario para aplicar los algoritmos el establecer intervalos $[a,b]$ tales que en cada uno de ellos sólo haya una única raíz; a este proceso se le llama separación de las raíces de la función. Para ello será de gran ayuda tener al menos una idea de la forma de la gráfica de la función. También puede ser de gran ayuda el Teorema de Bolzano (ver [Funciones continuas]({{ site.baseurl }}/2014/09/07/calculo-en-r-funciones-continuas/), teorema 4) que reproducimos aquí:
+Cuando $f(x)$ tenga más de una raíz, será necesario para aplicar los algoritmos el establecer intervalos $[a,b]$ tales que en cada uno de ellos sólo haya una única raíz; a este proceso se le llama separación de las raíces de la función. Para ello será de gran ayuda tener al menos una idea de la forma de la gráfica de la función. También puede ser de gran ayuda el Teorema de Bolzano (ver [Funciones continuas](/taller-matematicas/2014/09/07/calculo-en-r-funciones-continuas/), teorema 4) que reproducimos aquí:
 
 **Teorema 1 (de Bolzano)**: Si $f:I\rightarrow\mathbb{R}$ es una función continua definida en un intervalo cualquiera $I=(a,b)$, y $f(a)$ tiene signo distinto a $f(b)$, entonces existe al menos un punto $c$ intermedio entre $a$ y $b$ tal que $f(c)=0$.
 

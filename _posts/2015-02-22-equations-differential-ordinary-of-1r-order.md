@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "1st-order ordinary differential equations"
 date: 2015-02-22 17:46:06 +0000
@@ -39,7 +39,7 @@ int g^{-1}(y)dy=intfrac{1}{sqrt{y-1}}dy=2sqrt{y-1}.$ Solutions are $2sqrt{y-1}=x
 
 ## Unique solutions
 
-In example 2 we have seen that we can have solutions that are not included in the general solution, called singular solutions. When will this happen and how can we find those other solutions? Let's remember what we have seen in the post [Ordinary differential equations: introduction]({{ site.baseurl }}/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/), section "Bundle of curves and differential equations of the first order": the general solution of the ordinary differential equation $y&#39;=F(x,y)$ represents a bundle of curves $y=f(C,x)$ such that each curve of that beam satisfies the equation, that is, for each point $(x, y)$ the slope of any of the curves $y=f(C,x)$ at that point fulfills $y&#39;=F(x,y)$.
+In example 2 we have seen that we can have solutions that are not included in the general solution, called singular solutions. When will this happen and how can we find those other solutions? Let's remember what we have seen in the post [Ordinary differential equations: introduction](/taller-matematicas/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/), section "Bundle of curves and differential equations of the first order": the general solution of the ordinary differential equation $y&#39;=F(x,y)$ represents a bundle of curves $y=f(C,x)$ such that each curve of that beam satisfies the equation, that is, for each point $(x, y)$ the slope of any of the curves $y=f(C,x)$ at that point fulfills $y&#39;=F(x,y)$.
 
 ### Enveloping curve of a bundle of curves and singular solution
 

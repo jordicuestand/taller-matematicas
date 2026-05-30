@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: "Física"
 date: 2014-08-31 17:13:12 +0000
@@ -23,7 +23,7 @@ math: true
 
  	- [Mecánica de Newton](http://tallermatematic.ovh/wp/2020/05/31/dinamica-de-newton/)
 
- 	- [Sistemas de referencia, vectores posición, velocidad y aceleración]({{ site.baseurl }}/2016/08/12/cinematica-vectorial/)
+ 	- [Sistemas de referencia, vectores posición, velocidad y aceleración](/taller-matematicas/2016/08/12/cinematica-vectorial/)
 
  	- [Velocidad angular, ángulos de Euler](http://tallermatematic.ovh/wp/index.php/2016/08/15/cinematica-vectorial-velocidad-angular-angulos-de-euler/)
 
@@ -47,9 +47,9 @@ math: true
 
 **Problemas resueltos**
 
- 	- [Vectores]({{ site.baseurl }}/2014/08/24/problemas-resueltos-de-mecanica-vectores/)
+ 	- [Vectores](/taller-matematicas/2014/08/24/problemas-resueltos-de-mecanica-vectores/)
 
- 	- [Cinemática: posición, velocidad, aceleración]({{ site.baseurl }}/2014/08/25/problemas-resueltos-de-mecanica-cinematica/)
+ 	- [Cinemática: posición, velocidad, aceleración](/taller-matematicas/2014/08/25/problemas-resueltos-de-mecanica-cinematica/)
 
  	- [Estática y dinámica básica](http://tallermatematic.ovh/wp/index.php/2016/10/23/problemas-resueltos-de-fisica-mecanica-estatica-y-dinamica/)
 

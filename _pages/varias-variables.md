@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: "Varias variables"
 date: 2014-08-31 17:34:10 +0000
@@ -12,9 +12,9 @@ math: true
 
  	- [Teoría: derivadas parciales](http://mathseng.blogspot.com.es/2012/02/derivadas-parciales.html)
 
- 	- [Problemas de límites y continuidad en el plano real]({{ site.baseurl }}/2014/07/17/problemas-de-limites-continuidad-y-derivabilidad-en-el-plano-real/)
+ 	- [Problemas de límites y continuidad en el plano real](/taller-matematicas/2014/07/17/problemas-de-limites-continuidad-y-derivabilidad-en-el-plano-real/)
 
- 	- [Problemas de derivadas y diferenciales con varias variables]({{ site.baseurl }}/2014/09/02/calculo-con-varias-variables-problemas-de-derivadas-y-diferenciales/)
+ 	- [Problemas de derivadas y diferenciales con varias variables](/taller-matematicas/2014/09/02/calculo-con-varias-variables-problemas-de-derivadas-y-diferenciales/)
 
- 	- [Integrales dobles de Riemann; aplicación al cálculo de volúmenes]({{ site.baseurl }}/2015/08/12/integrales-dobles-de-riemann/)
+ 	- [Integrales dobles de Riemann; aplicación al cálculo de volúmenes](/taller-matematicas/2015/08/12/integrales-dobles-de-riemann/)
 {% endraw %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Problemas resueltos de aplicaciones de las derivadas"
 date: 2014-12-20 17:16:35 +0000
@@ -20,7 +20,7 @@ La función es derivable en todo $\mathbb{R}$. Los valores en los extremos coinc
 ![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 **2.** Estudiar la existencia de valores máximos y mínimos de la función $\frac{x+1}{x^2+1}$ definida en el intervalo $[-1,0.5]$.
 
-el intervalo $A=[-1,0.5]$ es cerrado y acotado, por tanto es un conjunto compacto (Teorema de Heine-Borel, ver [Cálculo en R -> Tolopologia de R](http://mathseng.blogspot.com.es/2014/02/topologia-de-r.html) ), además la función es contínua en $A$: las fracciones racionales $P(x)/Q(x)$ (cociente de polinomios) son continuas excepto en los puntos donde $Q(x)=0$, en nuestro caso es $x^2+1=0$ que no se cumple para ningun $x$ real. Entonces tenemos una función continua en un conjunto compacto, por el Teorema de Weierstrass (ver [Cálculo en R -> Funciones continuas]({{ site.baseurl }}/2014/09/07/calculo-en-r-funciones-continuas/), teorema 2) ha de tener un máximo y un mínimo absolutos en $A$. Además, la función es derivable (las fracciones racionales lo son). Entonces los máximos y mínimos absolutos o bien son  puntos donde la derivada vale 0, o bien estan en los extremos del intervalo de definición $A$. Calculamos la derivada:
+el intervalo $A=[-1,0.5]$ es cerrado y acotado, por tanto es un conjunto compacto (Teorema de Heine-Borel, ver [Cálculo en R -> Tolopologia de R](http://mathseng.blogspot.com.es/2014/02/topologia-de-r.html) ), además la función es contínua en $A$: las fracciones racionales $P(x)/Q(x)$ (cociente de polinomios) son continuas excepto en los puntos donde $Q(x)=0$, en nuestro caso es $x^2+1=0$ que no se cumple para ningun $x$ real. Entonces tenemos una función continua en un conjunto compacto, por el Teorema de Weierstrass (ver [Cálculo en R -> Funciones continuas](/taller-matematicas/2014/09/07/calculo-en-r-funciones-continuas/), teorema 2) ha de tener un máximo y un mínimo absolutos en $A$. Además, la función es derivable (las fracciones racionales lo son). Entonces los máximos y mínimos absolutos o bien son  puntos donde la derivada vale 0, o bien estan en los extremos del intervalo de definición $A$. Calculamos la derivada:
 
 $\begin{array}{l}D\left(\frac{x+1}{x^2+1}\right)=\frac{D\left(x+1\right)\cdot\left(x^2+1\right)-\left(x+1\right)\cdot D\left(x^2+1\right)}{\left(x^2+1\right)^2}=\\\frac{\left(1\right)\cdot\left(x^2+1\right)-\left(x+1\right)\cdot2x}{\left(x^2+1\right)^2}=\frac{x^2+1-2x^2-2x}{\left(x^2+1\right)^2}=\frac{-x^2-2x+1}{\left(x^2+1\right)^2}\end{array}$
 

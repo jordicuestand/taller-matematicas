@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Transformada de Laplace"
 date: 2015-06-12 15:11:47 +0000
@@ -74,7 +74,7 @@ Con lo visto hasta aquí podemos formar una primera tabla de transformadas:
 
 # Transformada inversa
 
-Para las aplicaciones es importante poder "deshacer" la transformación de Laplace, esto es, si tenemos una F tal que $F(z)=L(f(x))$ ser capaces de encontrar la función $f(x)$ realizando la transformada inversa: $f(x)=L^{-1}(F(z))$. ¿Puede hacerse? Recordemos que la inversa de una función solo existe si esta función no es exhaustiva (ver por ejemplo el post [Funciones]({{ site.baseurl }}/2015/05/08/funciones/)). el siguiente teorema nos dice que esto es así para la transformada de Laplace:
+Para las aplicaciones es importante poder "deshacer" la transformación de Laplace, esto es, si tenemos una F tal que $F(z)=L(f(x))$ ser capaces de encontrar la función $f(x)$ realizando la transformada inversa: $f(x)=L^{-1}(F(z))$. ¿Puede hacerse? Recordemos que la inversa de una función solo existe si esta función no es exhaustiva (ver por ejemplo el post [Funciones](/taller-matematicas/2015/05/08/funciones/)). el siguiente teorema nos dice que esto es así para la transformada de Laplace:
 
 ***Teorema 2**: Si dos funciones f, g con transformadas F, G verifican que F(z) = G(z), entonces f(x)=g(x) siempre que f, g sean continuas. Dicho de otro modo: la transformada de Laplace es una aplicación inyectiva, y por tanto admite inversa.*
 
@@ -112,7 +112,7 @@ Supongamos que tenemos que resolver una EDO lineal de primer orden $ay'+by=f(x)$
 Por tanto:
 
 $\begin{array}{l}a\left(zL(y)-y(0)\right)+bL\left(y\right)=L\left(f\left(x\right)\right);\\\left(az+b\right)L\left(y\right)=L\left(f\left(x\right)\right);\\L\left(y\right)=\frac{L\left(f\left(x\right)\right)}{az+b};\\y=L^{-1}\left(\frac{L\left(f\left(x\right)\right)}{az+b}\right)\\\end{array}.$
-**Ejemplo 5: **En un circuito eléctrico que contiene una resistencia R y una [inductancia](http://es.wikipedia.org/wiki/Inductancia) L (abreviadamente, [circuito RL](http://es.wikipedia.org/wiki/Circuito_RL)) la intensidad de corriente (que es una función del tiempo t) generada al aplicar una tensión V constante viene dada por la ecuación  $RI=V-LI'$. Esta es una ecuación diferencial lineal de primer orden que está resuelta en el post [Ecuaciones diferenciales lineales de primer orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/), ejemplo 5. Supongamos ahora que tenemos la condición inicial $I(0)=I_0$. Transformamos la ecuación:
+**Ejemplo 5: **En un circuito eléctrico que contiene una resistencia R y una [inductancia](http://es.wikipedia.org/wiki/Inductancia) L (abreviadamente, [circuito RL](http://es.wikipedia.org/wiki/Circuito_RL)) la intensidad de corriente (que es una función del tiempo t) generada al aplicar una tensión V constante viene dada por la ecuación  $RI=V-LI'$. Esta es una ecuación diferencial lineal de primer orden que está resuelta en el post [Ecuaciones diferenciales lineales de primer orden](/taller-matematicas/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/), ejemplo 5. Supongamos ahora que tenemos la condición inicial $I(0)=I_0$. Transformamos la ecuación:
 
 $RI=V-LI'\Leftrightarrow\mathcal{L}\left(RI\right)=\mathcal{L}\left(V\right)-\mathcal{L}\left(LI'\ri
 ght)\Leftrightarrow R\mathcal{L}\left(I\right)=\mathcal{L}\left(V\right)-L\mathcal{L}\left(I'\right)$
@@ -129,7 +129,7 @@ La transformada inversa de la primera fracción simple es $\mathcal{L}^{-1}\left
 
 $I\left(t\right)=\frac VR+\left(I\left(0\right)-\frac VR\right)e^{-\frac RLt}$
 
-Para el caso $I(0)=0$ obtenemos $I\left(t\right)=\frac VR+\left(-\frac VR\right)e^{-\frac RLt}=\frac VR\left(1-e^{-\frac RLt}\right)$ que coincide con la solución dada en [Ecuaciones diferenciales lineales de primer orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/), ejemplo 5.
+Para el caso $I(0)=0$ obtenemos $I\left(t\right)=\frac VR+\left(-\frac VR\right)e^{-\frac RLt}=\frac VR\left(1-e^{-\frac RLt}\right)$ que coincide con la solución dada en [Ecuaciones diferenciales lineales de primer orden](/taller-matematicas/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/), ejemplo 5.
 
 # Aplicación a EDOs lineales de orden superior
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Aplicaciones de las derivadas"
 date: 2014-12-13 18:34:12 +0000
@@ -8,11 +8,11 @@ math: true
 
 - Màximos y mínimos locales
 
-	- [Teoremas de valores intermedios]({{ site.baseurl }}/2014/12/13/aplicaciones-de-las-derivadas/#intermedios)
+	- [Teoremas de valores intermedios](/taller-matematicas/2014/12/13/aplicaciones-de-las-derivadas/#intermedios)
 
-	- [Concavidad y convexidad]({{ site.baseurl }}/2014/12/13/aplicaciones-de-las-derivadas/#concavidad)
+	- [Concavidad y convexidad](/taller-matematicas/2014/12/13/aplicaciones-de-las-derivadas/#concavidad)
 
-	- [Fórmula de Taylor]({{ site.baseurl }}/2014/12/13/aplicaciones-de-las-derivadas/#taylor)
+	- [Fórmula de Taylor](/taller-matematicas/2014/12/13/aplicaciones-de-las-derivadas/#taylor)
 
 ![separador2](/taller-matematicas/assets/images/separador2-300x37.png)
 ## Máximos y mínimos locales
@@ -140,7 +140,7 @@ La definición es intuitivamente clara, se puede visualizar fácilmente, pero es
 
 **Aproximación local usando la tangente**
 
-En el post [Funciones derivables]({{ site.baseurl }}/2014/11/09/funciones-derivables/) ya vimos una introducción al estudio local de una función, decíamos que la derivada nos daba una estimación de la variación local de la función. Esto implica que la recta tangente en un punto a la gráfica de la función tendrá localmente la misma variación que la función: será una aproximación local. Por ejemplo la función $y=exp(x/3)*sin(x)$ tiene por derivada $y'=1/3 e^(x/3) (sin(x)+3 cos(x))$, en el punto $x_0=3$ la derivada vale aproximadamente -2.56, y la recta tangente en ese punto es $y=-2.56x+8.1$, gráficamente:
+En el post [Funciones derivables](/taller-matematicas/2014/11/09/funciones-derivables/) ya vimos una introducción al estudio local de una función, decíamos que la derivada nos daba una estimación de la variación local de la función. Esto implica que la recta tangente en un punto a la gráfica de la función tendrá localmente la misma variación que la función: será una aproximación local. Por ejemplo la función $y=exp(x/3)*sin(x)$ tiene por derivada $y'=1/3 e^(x/3) (sin(x)+3 cos(x))$, en el punto $x_0=3$ la derivada vale aproximadamente -2.56, y la recta tangente en ese punto es $y=-2.56x+8.1$, gráficamente:
 
 ![Aproximación local de una función por la tangente](/taller-matematicas/assets/images/aprox_local_1-247x300.png) Aproximación local de una función por la tangente
 Vemos que en las inmediaciones de $x_0=3$ la tangente coincide (aproxima) a la función; al ser la expresión de la tangente más simple que la de la función, estamos simplificando el cálculo de valores; esto tiene diversas aplicaciones prácticas.
@@ -207,7 +207,7 @@ Supongamos ahora que $f'(a)\neq0,\;f''(a)=f'''(a)=\dots=f^{\left(n-1\right)}(a)=
 
 $\begin{array}{l}f\left(x\right)=f(a)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^2+\dots+\frac{f^n\left(a\right)}{n!}\left(x-a\right)^n+\varepsilon_n\left(x\right)\\=f(a)+f'\left(a\right)\left(x-a\right)+\frac{f^n\left(a\right)}{n!}\left(x-a\right)^n+\varepsilon_n\left(x\right)\\=r_t\left(a\right)+\frac{f^n\left(a\right)}{n!}\left(x-a\right)^n+\varepsilon_n\left(x\right)\end{array}$
 
-donde $r_t(a)$ es la recta tangente a $f(x)$ en el punto $x=a$ (ver [Funciones derivables]({{ site.baseurl }}/2014/11/09/funciones-derivables/), apartado Recta tangente en un punto a la gráfica de $y=f(x)$). Entonces $f(x)-r_t(a)=\frac{f^{\left(n\right)}\left(a\right)}{n!}(x-a)^n$ en un entorno de$x=a$. Recordando la definición 2b de concavidad y convexidad, llegamos a la siguiente regla:
+donde $r_t(a)$ es la recta tangente a $f(x)$ en el punto $x=a$ (ver [Funciones derivables](/taller-matematicas/2014/11/09/funciones-derivables/), apartado Recta tangente en un punto a la gráfica de $y=f(x)$). Entonces $f(x)-r_t(a)=\frac{f^{\left(n\right)}\left(a\right)}{n!}(x-a)^n$ en un entorno de$x=a$. Recordando la definición 2b de concavidad y convexidad, llegamos a la siguiente regla:
 
 **Regla 2: determinar concavidad y convexidad**
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Integrales dobles de Riemann"
 date: 2015-08-12 13:00:59 +0000
@@ -16,7 +16,7 @@ math: true
 # Integral de Riemann en dos dimensiones (integral doble)
 
 ![parcelacio_integral_doble]({{ '/assets/images/parcelacio_integral_doble.png' | relative_url }}) Izquierda: parcelación rectangular del área -1 < x, y < 1; derecha: gráfica "parcelada" en 3D de la función z=1-x²-y²
-De la misma forma que en la [integral de Riemann]({{ site.baseurl }}/2015/01/04/funciones-integrables-integral-de-riemann/) en un intervalo (a,b) para la función $y=f(x)$ de una variable dividíamos la variable independiente x en intervalos de amplitud dx, calculábamos las áreas $dA=y(x)·dx$, sumábamos y pasábamos al límite para obtener la integral $\int_a^bf\left(x\right)\operatorname dx$, cuando tenemos una función real con dos variables independientes $z=f(x,y)$ dividiremos el plano (x,y) en parcelas de dos dimensiones de amplitud dx, dy, sumaremos los productos f(x,y)·dx·dy y pasaremos al límite para obtener la integral doble de f(x,y) en el recinto R: $\int_Rf\left(x,y\right)\operatorname dx\operatorname dy.$
+De la misma forma que en la [integral de Riemann](/taller-matematicas/2015/01/04/funciones-integrables-integral-de-riemann/) en un intervalo (a,b) para la función $y=f(x)$ de una variable dividíamos la variable independiente x en intervalos de amplitud dx, calculábamos las áreas $dA=y(x)·dx$, sumábamos y pasábamos al límite para obtener la integral $\int_a^bf\left(x\right)\operatorname dx$, cuando tenemos una función real con dos variables independientes $z=f(x,y)$ dividiremos el plano (x,y) en parcelas de dos dimensiones de amplitud dx, dy, sumaremos los productos f(x,y)·dx·dy y pasaremos al límite para obtener la integral doble de f(x,y) en el recinto R: $\int_Rf\left(x,y\right)\operatorname dx\operatorname dy.$
 
 Más en detalle: sea *w* una de las parcelas del plano R; estas parcelas no tienen porque ser rectangulares, pueden tener cualquier forma, como en la siguiente figura:
 

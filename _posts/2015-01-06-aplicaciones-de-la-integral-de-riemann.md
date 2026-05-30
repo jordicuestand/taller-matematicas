@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Aplicaciones de la integral de Riemann"
 date: 2015-01-06 20:15:43 +0000
@@ -60,7 +60,7 @@ El conjunto completo de soluciones de la ecuación se encuentra sumando $k\pi$, 
 
 ## Cálculo de la longitud de curvas
 
-Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la [integral de Riemann]({{ site.baseurl }}/2015/01/04/funciones-integrables-integral-de-riemann/), dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$
+Dada una función derivable $y=f(x)$ y con derivada continua, queremos calcular la longitud del trazado $s$ de su gráfica entre dos puntos $(a,b)$. Procediendo como hicimos con las áreas en la [integral de Riemann](/taller-matematicas/2015/01/04/funciones-integrables-integral-de-riemann/), dividimos el intervalo en n subintervalos; para cada uno de ellos, aproximamos el segmento de arco $\triangle s$ por la hipotenusa del triángulo de lados $\triangle x,\;\triangle y:$
 
 ![Aproximación a la longitud de un arco de curva](/taller-matematicas/assets/images/longitud_arc.png) Aproximación a la longitud de un arco de curva
 
@@ -96,7 +96,7 @@ $s=\int_{-15/2}^{15/2}\cosh\left(\frac x6\right)\operatorname{d}x=6\left$\sinh\l
 
 ## Integrales impropias
 
-En las aplicaciones prácticas a menudo encontramos integrales definidas en intervalos que no son del tipo $(a,b)$, o bien que toman valores infinitos en algún punto (no estan acotadas en el intervalo de integración). Por ejemplo, la [transformada de Laplace]({{ site.baseurl }}/2015/06/12/transformada-de-laplace/) muy usada en [teoría de circuitos](https://es.wikipedia.org/wiki/Transformada_de_Laplace_en_circuitos) se basa en una integral impropia. La definición dada de [integral de Riemann]({{ site.baseurl }}/2015/01/04/funciones-integrables-integral-de-riemann/) no puede usarse con este tipo de funciones e intervalos, pero puede generalizarse para cubrir dos casos:
+En las aplicaciones prácticas a menudo encontramos integrales definidas en intervalos que no son del tipo $(a,b)$, o bien que toman valores infinitos en algún punto (no estan acotadas en el intervalo de integración). Por ejemplo, la [transformada de Laplace](/taller-matematicas/2015/06/12/transformada-de-laplace/) muy usada en [teoría de circuitos](https://es.wikipedia.org/wiki/Transformada_de_Laplace_en_circuitos) se basa en una integral impropia. La definición dada de [integral de Riemann](/taller-matematicas/2015/01/04/funciones-integrables-integral-de-riemann/) no puede usarse con este tipo de funciones e intervalos, pero puede generalizarse para cubrir dos casos:
 
 ***Definición 1**: Si el dominio de integración $(a,b)$ contiene puntos donde $f(c)=\pm\infty,\;c\in\left(a,b\right),$ denominamos a $\int_a^bf\operatorname{d}x$ **integral impropia de segunda especie**.*
 
@@ -141,7 +141,7 @@ pues $(a-b)^2=(b-a)^2\Leftrightarrow\sqrt[3]{(a-b)^2}=\sqrt[3]{(b-a)^2};$ la úl
 
 $\begin{array}{l}x=1\Leftrightarrow t=\sqrt[3]{1-2}=\sqrt[3]{-1}=-1;\;\\x=2\Leftrightarrow t=\sqrt[3]{2-2}=0.\end{array}$
 
-La integral queda $3\int_{-1}^0\frac1{t^3+2}\operatorname{d}t\approx1.77,$ omitimos el cálculo de esta última integral (en los ejemplos de [Problemas resueltos de integrales indefinidas]({{ site.baseurl }}/2014/08/11/problemas-resueltos-de-integrales-indefinidas/) se resuelven integrales parecidas). Observad que, con el cambio de variable, la integral ha dejado de ser impropia.
+La integral queda $3\int_{-1}^0\frac1{t^3+2}\operatorname{d}t\approx1.77,$ omitimos el cálculo de esta última integral (en los ejemplos de [Problemas resueltos de integrales indefinidas](/taller-matematicas/2014/08/11/problemas-resueltos-de-integrales-indefinidas/) se resuelven integrales parecidas). Observad que, con el cambio de variable, la integral ha dejado de ser impropia.
 
 **Cálculo de integrales impropias de primera especie**
 
@@ -231,7 +231,7 @@ Nos queda: $\beta\left(\frac12,\frac12\right)=\mathrm\pi=\left$\Gamma\left(\frac
 
 ## ![separador2](/taller-matematicas/assets/images/separador2.png)Teorema del valor medio: forma integral
 
-En el post [Aplicaciones de las derivadas -> Teoremas de valores intermedios]({{ site.baseurl }}/2014/12/13/aplicaciones-de-las-derivadas/#intermedios) se vieron  algunos teoremas relativos a la relación entre derivadas y  valores de la función en un intervalo. Vemos ahora la relación entre integración y valores de la función en un intervalo.
+En el post [Aplicaciones de las derivadas -> Teoremas de valores intermedios](/taller-matematicas/2014/12/13/aplicaciones-de-las-derivadas/#intermedios) se vieron  algunos teoremas relativos a la relación entre derivadas y  valores de la función en un intervalo. Vemos ahora la relación entre integración y valores de la función en un intervalo.
 
 ***Definición 6**: Si $f(x)$ es integrable en $[a,b]$, el **valor medio promedio de la función** en ese intervalo es $\frac1{b-a}\int_a^bf\left(x\right).$*
 

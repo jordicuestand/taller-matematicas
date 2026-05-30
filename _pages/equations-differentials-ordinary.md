@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: "Differential equations"
 date: 2015-07-08 19:03:03 +0000
@@ -8,23 +8,23 @@ math: true
 
 **Ordinary differential equations**
 
-	- [Introduction to Ordinary Differential Equations (EDO)]({{ site.baseurl }}/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/)
+	- [Introduction to Ordinary Differential Equations (EDO)](/taller-matematicas/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/)
 
-	- [Top-notch EDOs]({{ site.baseurl }}/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/)
+	- [Top-notch EDOs](/taller-matematicas/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/)
 
-	- [First-order linear EDOs]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)
+	- [First-order linear EDOs](/taller-matematicas/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)
 
-	- [First-order nonlinear EDOs: variable changes]({{ site.baseurl }}/2015/04/11/cambios-de-variable-en-edo-de-primer-orden-no-lineales/)
+	- [First-order nonlinear EDOs: variable changes](/taller-matematicas/2015/04/11/cambios-de-variable-en-edo-de-primer-orden-no-lineales/)
 
-	- [Higher-order linear EDOs]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/)
+	- [Higher-order linear EDOs](/taller-matematicas/2015/04/26/edos-lineales-de-orden-superior/)
 
-	- [Operational method. operator D]({{ site.baseurl }}/2015/05/01/metodos-operacionales-el-operador-d/)
+	- [Operational method. operator D](/taller-matematicas/2015/05/01/metodos-operacionales-el-operador-d/)
 
-	- [Laplace transform]({{ site.baseurl }}/2015/06/12/transformada-de-laplace/)
+	- [Laplace transform](/taller-matematicas/2015/06/12/transformada-de-laplace/)
 
-	- [EDO Systems]({{ site.baseurl }}/2015/06/21/sistemas-de-edos/)
+	- [EDO Systems](/taller-matematicas/2015/06/21/sistemas-de-edos/)
 
-	- [Solution Stability: Introduction]({{ site.baseurl }}/2015/07/09/estabilidad-de-soluciones/)
+	- [Solution Stability: Introduction](/taller-matematicas/2015/07/09/estabilidad-de-soluciones/)
 
-	- [Nonlinear, second-order, and higher-order EDO problems]({{ site.baseurl }}/2015/09/05/problemas-de-edo-no-lineales-de-segundo-orden-y-orden-superior/)
+	- [Nonlinear, second-order, and higher-order EDO problems](/taller-matematicas/2015/09/05/problemas-de-edo-no-lineales-de-segundo-orden-y-orden-superior/)
 {% endraw %}

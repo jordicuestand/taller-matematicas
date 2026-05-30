@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Cálculo en R -> Funciones continuas - > Problemas resueltos"
 date: 2014-09-13 09:26:50 +0000
@@ -35,7 +35,7 @@ Es fácil ver ahora que son uniformemente continuas:
 
 $f\left(x\right)=Cx\Rightarrow\left|y_1-y_2\right|\leq R\Leftrightarrow\left|Cx_1-Cx_2\right|\leq R\Leftrightarrow\left|C\right|\cdot\left|x_1-x_2\right|\leq R\Leftrightarrow\left|x_1-x_2\right|\leq\frac R{\left|C\right|}.$
 
-Tomando $r=\frac R{\left|C\right|}$ se cumple la condición de continuidad uniforme: dado un $R$ cualquiera, si se cumple $\left|y_1-y_2\right|\leq R$ entonces existe un $r$ tal que $\left|x_1-x_2\right|\leq r$ (ver, si es necesario, la [teoría de continuidad]({{ site.baseurl }}/2014/09/07/calculo-en-r-funciones-continuas/)).
+Tomando $r=\frac R{\left|C\right|}$ se cumple la condición de continuidad uniforme: dado un $R$ cualquiera, si se cumple $\left|y_1-y_2\right|\leq R$ entonces existe un $r$ tal que $\left|x_1-x_2\right|\leq r$ (ver, si es necesario, la [teoría de continuidad](/taller-matematicas/2014/09/07/calculo-en-r-funciones-continuas/)).
 
 ---
 

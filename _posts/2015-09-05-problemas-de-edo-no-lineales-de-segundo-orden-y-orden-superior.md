@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Problemas de EDO no lineales, de segundo orden y orden superior"
 date: 2015-09-05 09:42:47 +0000
@@ -11,7 +11,7 @@ math: true
 **Solución**:
 Es una ecuación lineal de tercer orden de coeficiente constantes del tipo $y'''+Ay''+By'=F(x)$. Planteamos primero la ecuación homogénea asociada, $y'''+y''-2y'=0$, con ecuación característica $r^3+r^2-2r=0$, una raíz es $r=0$, las otras raíces lo son de $r^2+r-2=0$, que nos da los valores $r=-2, 1$. La solución general de la homogénea es:  $y_h=C_1+C_2e^{-2x}+C_3e^x$. Para tener la solución general *y* de la ecuación completa basta con obtener una solución particular $y_p$ y sumar ambas: $y=y_h+y_p$.
 
-De los diversos métodos que tenemos para encontrar una solución particular, en este caso vemos que el término $F(x)$ es una función exponencial; generalmente, cuando F(x) sea una exponencial, un polinomio, una función trigonométrica o una combinación lineal de los anteriores el método más simple es el de [coeficientes indeterminados]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/#indeterminados): ensayar $y_p=Ae^x$; pero en este caso, $Ae^x$ es una solución de la homogénea asociada, y por tanto se anula al sustituir en la ecuación completa. ensayamos $y_p=x^aF(x)$  siendo $a$ el menor valor entero posible tal que $y_p$ no es solución de la homogénea asociada; tal valor dependerá de la ecuación característica asociada a la homogénea: si tiene raíces simples bastará con tomar a = 1 si tiene raíces dobles tomamos a = 2. En nuestro caso hacemos pues $y_p=Axe^x$; derivando y sustituyendo en la ecuación completa:
+De los diversos métodos que tenemos para encontrar una solución particular, en este caso vemos que el término $F(x)$ es una función exponencial; generalmente, cuando F(x) sea una exponencial, un polinomio, una función trigonométrica o una combinación lineal de los anteriores el método más simple es el de [coeficientes indeterminados](/taller-matematicas/2015/04/26/edos-lineales-de-orden-superior/#indeterminados): ensayar $y_p=Ae^x$; pero en este caso, $Ae^x$ es una solución de la homogénea asociada, y por tanto se anula al sustituir en la ecuación completa. ensayamos $y_p=x^aF(x)$  siendo $a$ el menor valor entero posible tal que $y_p$ no es solución de la homogénea asociada; tal valor dependerá de la ecuación característica asociada a la homogénea: si tiene raíces simples bastará con tomar a = 1 si tiene raíces dobles tomamos a = 2. En nuestro caso hacemos pues $y_p=Axe^x$; derivando y sustituyendo en la ecuación completa:
 
 $\begin{array}{l}y'=Ae^x+Axe^x=A(x+1)e^x;\;y''=Ae^x+A(x+1)e^x=A(x+2)e^x;\\y'''=Ae^x+A(x+2)e^x=A(x+3)e^x;\\y'''+y''-2y'=A(x+3)e^x+A(x+2)e^x-2A(x+1)e^x=3Ae^x;\\\end{array}$
 
@@ -23,7 +23,7 @@ Igualando al término independiente $F(x)$ obtenemos $3Ae^x=-e^x\Leftrightarrow 
 
 **Solución**:
 
-Es una ecuación lineal de segundo orden de coeficiente constantes del tipo $y''+Ay'=F(x)$. Planteamos primero la ecuación homogénea asociada, $y''-2y'=0$, con ecuación característica $r^2-2r=0$, que tiene las raíces $r=0, 2$, por lo que las solución general de la homogénea es $y_h=C_1+C_2e^{2x}$. Para encontrar una solución particular de la completa, estudiamos la forma del término $F(x)$, que en este caso es un producto de una exponencial por un polinomio, por tanto no aplicaremos el método de coeficientes indeterminados (no tenemos una suma de exponencial y polinomio sino un producto), sino el [método del operador D]({{ site.baseurl }}/2015/05/01/metodos-operacionales-el-operador-d/), que funciona bien con productos de exponenciales por funciones. Convertimos pues la ecuación a la notación de operadores D, resulta: $(D^2-2D)y=(x^2-2x+1)e^{-x}$, equivalentemente,  $D(D-2)y=(x^2-2x+1)e^{-x}$. Por tanto:
+Es una ecuación lineal de segundo orden de coeficiente constantes del tipo $y''+Ay'=F(x)$. Planteamos primero la ecuación homogénea asociada, $y''-2y'=0$, con ecuación característica $r^2-2r=0$, que tiene las raíces $r=0, 2$, por lo que las solución general de la homogénea es $y_h=C_1+C_2e^{2x}$. Para encontrar una solución particular de la completa, estudiamos la forma del término $F(x)$, que en este caso es un producto de una exponencial por un polinomio, por tanto no aplicaremos el método de coeficientes indeterminados (no tenemos una suma de exponencial y polinomio sino un producto), sino el [método del operador D](/taller-matematicas/2015/05/01/metodos-operacionales-el-operador-d/), que funciona bien con productos de exponenciales por funciones. Convertimos pues la ecuación a la notación de operadores D, resulta: $(D^2-2D)y=(x^2-2x+1)e^{-x}$, equivalentemente,  $D(D-2)y=(x^2-2x+1)e^{-x}$. Por tanto:
 
 $\begin{array}{l}(D^2-2D)y=(x^2-2x+1)e^{-x}\Leftrightarrow y=\frac1{D^2-2D}(x^2-2x+1)e^{-x}=\\e^{-x}\frac1{\left(D-1\right)^2-2\left(D-1\right)}(x^2-2x+1)=e^{-x}\frac1{D^2-4D+3}(x^2-2x+1)\end{array}$.
 
@@ -59,7 +59,7 @@ Sustituimos $y=x^r$ en la ecuación y operamos:
 
 $\begin{array}{l}x^2rx^{r-1}-x^2x^{2r}+xx^r+1=0\Rightarrow rx^{r+1}-x^{2r+2}+x^{r+1}+1=0\Rightarrow\\x^{r+1}\left(r-x^{r+1}+1\right)=-x^0\Leftrightarrow r=-1\end{array}$
 
-Por tanto tenemos la solución particular $y_p=x^{-1}$. La ecuación $x^2y'-x^2y^2+xy+1=0$ equivale a $y'=y^2-\frac1xy-\frac1{x^2}=P(x)y^2+Q(x)y+R(x)$ que es del tipo [Ricatti]({{ site.baseurl }}/2015/04/11/cambios-de-variable-en-edo-de-primer-orden-no-lineales/#bernoulli): se resuelven con el cambio de variable $y=y_p+1/u(x)$ que las convierte
+Por tanto tenemos la solución particular $y_p=x^{-1}$. La ecuación $x^2y'-x^2y^2+xy+1=0$ equivale a $y'=y^2-\frac1xy-\frac1{x^2}=P(x)y^2+Q(x)y+R(x)$ que es del tipo [Ricatti](/taller-matematicas/2015/04/11/cambios-de-variable-en-edo-de-primer-orden-no-lineales/#bernoulli): se resuelven con el cambio de variable $y=y_p+1/u(x)$ que las convierte
  en lineales:
 
 $y=y_p+\frac1u=\frac1x+\frac1u;\;y'=\frac{-1}{x^2}+\frac{-1}{u^2}u';y^2=y_p^2+\frac1{u^2}+\frac{2y_p}u;$
@@ -68,7 +68,7 @@ Sustituimos en la ecuación y simplificamos:
 
 $\begin{array}{l}\cancel{\frac{-1}{x^2}}+\frac{-1}{u^2}u'=\cancel{\frac1{x^2}}+\frac1{u^2}+\frac2{ux}-\frac1x\left(\cancel{\frac1x}+\frac1u\right)\cancel{-\frac1{x^2}}\Leftrightarrow\\u'=-1-\frac{2u}x+\frac ux\Leftrightarrow\boxed{u'+\frac ux=-1}\\\end{array}$
 
-Efectivamente obtenemos una ecuación lineal que resolvemos usando la fórmula general (ver [EDOs lineales de primer orden]({{ site.baseurl }}/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)):
+Efectivamente obtenemos una ecuación lineal que resolvemos usando la fórmula general (ver [EDOs lineales de primer orden](/taller-matematicas/2015/03/28/ecuaciones-diferenciales-lineales-de-1r-orden/)):
 
 $\begin{array}{l}U=exp\int\frac1x=x;\\V=\int\left(-1\cdot exp\int-\frac1x\right)=-\int exp(-\ln\left(x\right))=-\int\frac1x=-\ln\left(x\right);\\u\left(x\right)=U\left$C+V\right$=x\left$C-\ln\left(x\right)\right$\\\end{array}$
 
@@ -78,7 +78,7 @@ $\begin{array}{l}y=y_p+\frac1{u(x)}\Leftrightarrow u(x)=\frac1{y-y_p}=\frac1{y-1
 
 ![separador2](/taller-matematicas/assets/images/separador2-300x37.png)**5. **Resolver la ecuación lineal de segundo orden con coeficientes variables siguiente: $\left(x+2\right)^2y''+4\left(x+2\right)y'+2y=-3\ln\left(x+2\right)$
 
-Vemos que el coeficiente variable $(x+2)$ está elevado a una potencia que coincide con el orden de la derivada de la función y, hecho que nos hace pensar en la [ecuación de Euler]({{ site.baseurl }}/2015/04/26/edos-lineales-de-orden-superior/#euler); si hacemos el cambio de variable $x+2=t$, que implica $\frac{\operatorname dy}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname dt}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname d(x+2)}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}$, la ecuación queda en la forma de Euler: $t^2y''+4ty'+2y=-3\ln\left(t\right)$, dónde ahora y es función de t. Procedemos con el método general para ecuaciones de Euler:
+Vemos que el coeficiente variable $(x+2)$ está elevado a una potencia que coincide con el orden de la derivada de la función y, hecho que nos hace pensar en la [ecuación de Euler](/taller-matematicas/2015/04/26/edos-lineales-de-orden-superior/#euler); si hacemos el cambio de variable $x+2=t$, que implica $\frac{\operatorname dy}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname dt}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}\frac{\operatorname d(x+2)}{\operatorname dx}=\frac{\operatorname dy}{\operatorname dt}$, la ecuación queda en la forma de Euler: $t^2y''+4ty'+2y=-3\ln\left(t\right)$, dónde ahora y es función de t. Procedemos con el método general para ecuaciones de Euler:
 
 Paso 1) resolver la homogénea asociada ensayando la solución $y=t^r$ que resulta:
 

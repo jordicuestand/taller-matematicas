@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Límites de funciones reales de variable real"
 date: 2014-07-13 16:33:05 +0000
@@ -216,5 +216,5 @@ $\left\{\begin{array}{l}\lim_{x\rightarrow1^-}\frac{x+1}{x^2-1}=\frac2{0^-}=-\in
 
 ---
 
-[Ir a problemas resueltos de límites de funciones ]({{ site.baseurl }}/2014/08/15/problemas-resueltos-de-limites-de-funciones-reales/)
+[Ir a problemas resueltos de límites de funciones ](/taller-matematicas/2014/08/15/problemas-resueltos-de-limites-de-funciones-reales/)
 {% endraw %}

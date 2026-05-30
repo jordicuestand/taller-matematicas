@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Variables aleatorias"
 date: 2017-01-07 10:48:12 +0000
@@ -32,7 +32,7 @@ math: true
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Concepto de variable aleatoria
 
-Es la generalización de las variables estadísticas que se han visto en el tema [Estadística descriptiva, análisis de datos]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/) ; la definición era:
+Es la generalización de las variables estadísticas que se han visto en el tema [Estadística descriptiva, análisis de datos](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/) ; la definición era:
 ****Variable estadística**: una característica numérica de la población que nos interesa estudiar
 Pues bien, una **variable aleatoria** (v.a.) es:
 
@@ -55,7 +55,7 @@ Usaremos letras mayúsculas para las variables aleatorias, tales como X, Y, T, .
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Variable aleatoria discreta: funciones de probabilidad y distribución
 
-Cada valor que toma la variable aleatoria es: o bien un punto muestral (ver: [introducción a las probabilidades]({{ site.baseurl }}/2015/09/25/introduccion-a-las-probabilidades/)) o bien una función de un punto muestral. Como cada punto muestral tiene asociada una probabilidad, también la tendrá la variable aleatoria. Cuando la v.a. es discreta (todos sus valores son enteros), llamamos **función de probabilidad** a la asignación de probabilidades para cada valor posible:
+Cada valor que toma la variable aleatoria es: o bien un punto muestral (ver: [introducción a las probabilidades](/taller-matematicas/2015/09/25/introduccion-a-las-probabilidades/)) o bien una función de un punto muestral. Como cada punto muestral tiene asociada una probabilidad, también la tendrá la variable aleatoria. Cuando la v.a. es discreta (todos sus valores son enteros), llamamos **función de probabilidad** a la asignación de probabilidades para cada valor posible:
 
 | 
 **Valores de la v.a. X**
@@ -95,14 +95,14 @@ pn = P(X = xn)
 
 En general tendremos $P (X = x_i) = p_i$. Por las propiedades de la probabilidad es inmediato que $P (X = x_i) &gt; 0$ para todos los puntos $x_i$. La suma de valores de la función de probabilidad valdrá 1: $\sum_iP(X=x_i)=1.$
 
-La función de probabilidad podemos verla como la generalización de la frecuencia relativa (ver [Estadística descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/), análisis de datos). Definimos la **función de distribución** para v.a. discreta, F(x), como la probabilidad de que la v.a. X tome valores más pequeños o iguales al valor $x_k$:
+La función de probabilidad podemos verla como la generalización de la frecuencia relativa (ver [Estadística descriptiva](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/), análisis de datos). Definimos la **función de distribución** para v.a. discreta, F(x), como la probabilidad de que la v.a. X tome valores más pequeños o iguales al valor $x_k$:
 
 $F (x_k) = P (X &lt;= x_k)$
 
 La relación con la función de probabilidad es inmediata:
 $F\left(x_k\right)=\sum_{1\leq i\leq k}P\left(X\leq x_i\right)=P\left(X\leq x_k\right)$
 
-La función de probabilidad viene a ser la generalización de la frecuencia relativa acumulada (ver [Estadística descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/), análisis de datos).
+La función de probabilidad viene a ser la generalización de la frecuencia relativa acumulada (ver [Estadística descriptiva](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/), análisis de datos).
 
 **Ejemplo 2**: Lanzamos un dado dos veces y definimos la variable aleatoria X restando a los puntos obtenidos en el primer lanzamiento los obtenidos en el segundo lanzamiento. Los valores posibles que puede tomar X son {0, 1, 2, 3, 4, 5, -1, -2, -3, -4, -5}. Para calcular la probabilidad de obtener cada uno de esos valores enumeramos los casos posibles para cada uno de ellos; la probabilidad, por la regla de Laplace, será P(caso) = casos posibles / casos totales, teniendo en cuenta que el número de casos totales es 6·6 = 36 combinaciones de puntuaciones, y que los sucesos son excluyentes (si sucede un caso no puede suceder ningún otro). Por ejemplo, para X = 4 tenemos dos casos: (6, 2) y (5, 1), cada uno de ellos tiene probabilidad 1/36, la probabilidad de que suceda uno o el otro, siendo excluyentes, es la suma 1/36 + 1/36. Procediendo de esta forma obtenemos la función de probabilidad de la v.a. X:
 
@@ -341,9 +341,9 @@ La función de distribución suele representarse como una función escalonada:
 ![separador2](/taller-matematicas/assets/images/separador2.png)
 # Variable aleatoria continua: funciones de densidad y distribución
 
-Cuando la variable es continua sabemos que se trabaja con intervalos de la variable (ver [Estadística Descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/) => Agrupación de datos en intervalos). La asignación de probabilidades se hará por tanto para cada intervalo que definamos. 
+Cuando la variable es continua sabemos que se trabaja con intervalos de la variable (ver [Estadística Descriptiva](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/) => Agrupación de datos en intervalos). La asignación de probabilidades se hará por tanto para cada intervalo que definamos. 
 
-En el tema [Estadística Descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/) la anchura de cada intervalo la definíamos arbitrariamente según el número de intervalos y el recorrido de la variable. Ahora hay que generalizar para intervalos de cualquier anchura: supongamos que el recorrido de la variable aleatoria es [max, min]; entonces definimos una **función**** de densidad de probabilidad f(x) de la v.a. continua X** como cualquiera que verifica las tres condiciones siguientes:
+En el tema [Estadística Descriptiva](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/) la anchura de cada intervalo la definíamos arbitrariamente según el número de intervalos y el recorrido de la variable. Ahora hay que generalizar para intervalos de cualquier anchura: supongamos que el recorrido de la variable aleatoria es [max, min]; entonces definimos una **función**** de densidad de probabilidad f(x) de la v.a. continua X** como cualquiera que verifica las tres condiciones siguientes:
 
  	- No negatividad: f(x) >= 0
 
@@ -359,7 +359,7 @@ Se deducen las siguientes propiedades:
 
  	- En cambio f (x) no tiene porque ser cero en ningún punto
 
- 	- La gráfica de la función de densidad es la generalización del histograma de frecuencias relativas ([Estadística Descriptiva]({{ site.baseurl }}/2015/09/19/estadistica-descriptiva-analisis-de-datos/)).
+ 	- La gráfica de la función de densidad es la generalización del histograma de frecuencias relativas ([Estadística Descriptiva](/taller-matematicas/2015/09/19/estadistica-descriptiva-analisis-de-datos/)).
 
 Definimos la **función**** de distribución para v.a. continuas,** F (x), como la probabilidad de que X tome valores más pequeños que a x: F (x) = P (X < x_k).  La relación con la función de densidad es inmediata: si el valor mínimo de la v.a. X es min, entonces tendremos que:
 

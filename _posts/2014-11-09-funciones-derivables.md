@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Funciones derivables"
 date: 2014-11-09 20:44:40 +0000
@@ -190,7 +190,7 @@ Observamos que, en el punto $x=1$ el error es cero, ya que en ese punto la funci
 
 Hasta ahora para calcular derivadas solo tenemos la definición, que utiliza límites, y la regla de derivación de polinomios. Necesitamos herramientas más generales para trabajar con funciones cualesquiera. En este apartado y en el siguiente nos dedicamos a ello.
 
-**Teorema 1 (regla de la cadena):** Si tenemos dos funciones $f, g$ tales que $f$ es derivable en el punto $x=a$, esto es, existe el límite  $L=\lim_{x\rightarrow a}\frac{f\left(x\right)-f\left(a\right)}{x-a}$, y además $g$ es derivable en el punto $y=f(a)$, entonces la  Funciones continuas" href="{{ site.baseurl }}/2014/09/07/calculo-en-r-funciones-continuas//#FuncionCompuesta" target="_blank" rel="noopener">función compuesta $\left(g\circ f\right)\left(x\right)$ es también derivable en $x=a$, y su derivada vale:
+**Teorema 1 (regla de la cadena):** Si tenemos dos funciones $f, g$ tales que $f$ es derivable en el punto $x=a$, esto es, existe el límite  $L=\lim_{x\rightarrow a}\frac{f\left(x\right)-f\left(a\right)}{x-a}$, y además $g$ es derivable en el punto $y=f(a)$, entonces la  Funciones continuas" href="/taller-matematicas/2014/09/07/calculo-en-r-funciones-continuas//#FuncionCompuesta" target="_blank" rel="noopener">función compuesta $\left(g\circ f\right)\left(x\right)$ es también derivable en $x=a$, y su derivada vale:
 
 $\left(g\circ f\right)'\left(a\right)=g'\left(f\left(a\right)\right)\cdot f'\left(a\right)=\left(g'\circ f\right)\left(a\right)\cdot f'\left(a\right)$
 
@@ -210,7 +210,7 @@ La derivada del cociente $\frac1{x^2}$ puede obtenerse aplicando la propiedad $
 
 **Teorema 2 (derivada de la función inversa)**:
 
-Si la función $f:A\rightarrow\mathbb{R}$ es inyectiva, $A$ es un intervalo, y la derivada de $f$ para cualquier punto $a$ de $A$ es diferente de cero, entonces la  Funciones continuas" href="{{ site.baseurl }}/2014/09/07/calculo-en-r-funciones-continuas//#funcion_inversa" target="_blank" rel="noopener">función inversa es derivable en el punto $f(a)$, y su derivada es:
+Si la función $f:A\rightarrow\mathbb{R}$ es inyectiva, $A$ es un intervalo, y la derivada de $f$ para cualquier punto $a$ de $A$ es diferente de cero, entonces la  Funciones continuas" href="/taller-matematicas/2014/09/07/calculo-en-r-funciones-continuas//#funcion_inversa" target="_blank" rel="noopener">función inversa es derivable en el punto $f(a)$, y su derivada es:
 
 $\left(f^{-1}\right)'\left(x\right)=\frac1{f'\left(x\right)\circ f^{-1}\left(x\right)}$
 

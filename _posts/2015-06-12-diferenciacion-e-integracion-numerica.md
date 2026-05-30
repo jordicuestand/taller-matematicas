@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Diferenciación e integración numérica"
 date: 2015-06-12 17:25:20 +0000
@@ -44,7 +44,7 @@ Nos interesa conocer (a) el valor de la función derivada $V'(t)$ para el tiemp
 
 	- derivar el polinomio y evaluar la derivada en x
 
-Los detalles del cálculo del polinomio interpolador pueden verse en el post [Interpolación polinómica]({{ site.baseurl }}/2015/02/01/interpolacion-polinomica/).
+Los detalles del cálculo del polinomio interpolador pueden verse en el post [Interpolación polinómica](/taller-matematicas/2015/02/01/interpolacion-polinomica/).
 
 **Ejemplo 2**: evaluar un valor aproximado para la función derivada $V'(t)$ en el tiempo t=15:00 de la función del ejemplo 1. Formamos la tabla de interpolación:
 
@@ -150,7 +150,7 @@ $P(x)=1-0.477\left(x-0\right)-0.304\left(x-0\right)\left(x-\frac{2\mathrm\pi}6\r
 derivando y sustituyendo el valor pedido: $P'(x)=-0.608x-0.159;\;P'(\frac{\mathrm\pi}4)=-0.608\frac{\mathrm\pi}4-0.159=-0.637;$, por tanto el valor aproximado es $f'(\frac{\mathrm\pi}4)\approx-0.637;$. Los valores del enunciado realmente corresponden a la función $y=cos(x)$, con derivada $y'=-sin(x)$, y el valor exacto es $-sin(\frac{\mathrm\pi}4)=-0.707$, la precisión obtenida no es muy alta debido a que sólo hemos usado tres puntos de interpolación.
 ## Integración aproximada por interpolación
 
-Dada una función [integrable Riemann]({{ site.baseurl }}/2015/01/04/funciones-integrables-integral-de-riemann/) $f(x)$ de la cual no podemos obtener su función primitiva $F\left(x\right)=\int f\left(x\right)$, pero sí sabemos sus valores en un conjunto de puntos interior al intervalo $(a,b)$, entonces podemos calcular la integral definida $F\left(x\right)=\int_a^bf\left(x\right)$ con el siguiente método aproximado: consideramos una partición del intervalo $(a,b)$ según $n+1$ puntos equidistantes $x_0=a, x_1, ..., x_{n-1}, x_n=b$;  podemos aproximar la función $f(x)$ en cada subintervalo $(x_{i-1},x_i)$ por su polinomio interpolador de grado 1, o sea una recta. El área comprendida entre la gráfica de la función y el eje X podrá aproximarse sumando las áreas de los trapecios formados por los puntos $x_{i-1},x_i, f(x_{i-1}),f(x_i)$, como muestra la figura:
+Dada una función [integrable Riemann](/taller-matematicas/2015/01/04/funciones-integrables-integral-de-riemann/) $f(x)$ de la cual no podemos obtener su función primitiva $F\left(x\right)=\int f\left(x\right)$, pero sí sabemos sus valores en un conjunto de puntos interior al intervalo $(a,b)$, entonces podemos calcular la integral definida $F\left(x\right)=\int_a^bf\left(x\right)$ con el siguiente método aproximado: consideramos una partición del intervalo $(a,b)$ según $n+1$ puntos equidistantes $x_0=a, x_1, ..., x_{n-1}, x_n=b$;  podemos aproximar la función $f(x)$ en cada subintervalo $(x_{i-1},x_i)$ por su polinomio interpolador de grado 1, o sea una recta. El área comprendida entre la gráfica de la función y el eje X podrá aproximarse sumando las áreas de los trapecios formados por los puntos $x_{i-1},x_i, f(x_{i-1}),f(x_i)$, como muestra la figura:
 
 ![integración por interpolación de grado 1: trapecios](/taller-matematicas/assets/images/formula_Trapeci.png) integración por interpolación
  de grado 1: trapecios. Se muestra la gráfica de f(x) y los segmentos rectos que aproximan a la función en cada intervalo, así como uno de los trapecios: entre los puntos segundo y tercero.

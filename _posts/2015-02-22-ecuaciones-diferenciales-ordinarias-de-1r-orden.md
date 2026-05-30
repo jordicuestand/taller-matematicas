@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Ecuaciones diferenciales ordinarias de 1r orden"
 date: 2015-02-22 17:46:06 +0000
@@ -47,7 +47,7 @@ Hagamos $H(x,y) = 2x \sqrt{y-1} = f(x) \text{·}g(y),$ e integremos cada funció
 
 ## Soluciones singulares
 
-En el ejemplo 2 hemos visto que podemos tener soluciones que no están incluidas en la solución general, llamadas soluciones singulares. ¿Cuándo sucederá esto y cómo podemos encontrar esas otras soluciones? Recordemos lo visto en el post [Ecuaciones diferenciales ordinarias: introducción]({{ site.baseurl }}/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/), apartado "Haz de curvas y ecuaciones diferenciales de primer orden": la solución general de la ecuación diferencial ordinaria $y'=F(x,y)$ representa un haz de curvas $y=f(C,x)$ tal que cada curva de ese haz cumple la ecuación, o sea que para cada punto $(x,y)$ la pendiente de cualquiera de las curvas $y=f(C,x)$ en ese punto cumple $y'=F(x,y)$.
+En el ejemplo 2 hemos visto que podemos tener soluciones que no están incluidas en la solución general, llamadas soluciones singulares. ¿Cuándo sucederá esto y cómo podemos encontrar esas otras soluciones? Recordemos lo visto en el post [Ecuaciones diferenciales ordinarias: introducción](/taller-matematicas/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/), apartado "Haz de curvas y ecuaciones diferenciales de primer orden": la solución general de la ecuación diferencial ordinaria $y'=F(x,y)$ representa un haz de curvas $y=f(C,x)$ tal que cada curva de ese haz cumple la ecuación, o sea que para cada punto $(x,y)$ la pendiente de cualquiera de las curvas $y=f(C,x)$ en ese punto cumple $y'=F(x,y)$.
 
 ### Curva envolvente de un haz de curvas y solución singular
 
