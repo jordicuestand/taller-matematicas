@@ -72,7 +72,7 @@ Si comparamos $\left(x_n\right)$ con la sucesión $\left(y_n\right)$ de términ
 
 $0\leq\frac{n\cdot\left(n-1\right)\cdot\left(n-2\right)\cdot\dots\cdot2\cdot1}{n\cdot n\cdot n\dots n\cdot n}\leq\frac{n\cdot n\dots n\cdot1}{n\cdot n\dots n\cdot n}=\frac1n\Rightarrow0\leq\left(x_n\right)\leq\left(y_n\right)$
 
-Pero \((y_n)\to 0\), con lo que tenemos que $0\leq\underset{}{\lim\left(x_n\right)\leq0\Rightarrow\lim\left(x_n\right)=0.}$
+Pero $(y_n)\rightarrow0$, con lo que tenemos que $0\leq\underset{}{\lim\left(x_n\right)\leq0\Rightarrow\lim\left(x_n\right)=0.}$
 
 ---
 
@@ -80,7 +80,7 @@ Pero \((y_n)\to 0\), con lo que tenemos que $0\leq\underset{}{\lim\left(x_n\rig
 
 El teŕmino general es del tipo fracción racional polinómica, aplicando el criterio de convergéncia adecuado concluimos inmediatamente que $\lim_{}\left(a_n\right)=\frac12$.
 
-Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\lbrace-1,\frac-14,0,\frac18,\dots \right\rbrace$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
+Para demostrar que es convergente con límite $\frac12$ hemos de ver que $x=\frac12$ es un punto de acumulación del conjunto $\left\{-1,\frac{-1}4,0,\frac18,\dots\right\}$, que equivale a decir que siempre podemos encontrar elementos de la sucesión $x_n$ a medida que nos acercamos a distancias progresivamente menores r del punto x = 1/2:
 
 ![recta](/taller-matematicas/assets/images/recta.png) xn está situado a una distancia menor que r del  punto  x=1/2
 
@@ -104,8 +104,8 @@ Entonces tendremos, simultaneamente,
 
 \[
 \begin{cases}
-x-r \leq \dfrac{1}{n} \leq x+r, & n \text{ par},\\[6pt]
-x-r \leq 1 \leq x+r, & n \text{ impar}.
+x-r \leq \dfrac{1}{n} \leq x+r, & \text{si } n \text{ es par},\\[6pt]
+x-r \leq 1 \leq x+r, & \text{si } n \text{ es impar}.
 \end{cases}
 \]
 
@@ -119,11 +119,11 @@ De la segunda desigualdad, sumando $-x-1$ obtenemos $-1-r&lt;-x&lt;r-1\Leftright
 
 **5**. Mediante las propiedades de las sucesiones de Cauchy, probar que la sucesión definida por $a_n=1$ si n es impar, $\frac1n$ en otro caso, no es convergente.
 
-En las sucesiones de Cauchy, la distancia entre los términos posteriores a uno dado puede hacerse tan pequeña como se quiera, esto es, para cualquier valor $r&gt;0$, existirá un $m\in\mathbb{N}$ tal que para cualquiera valores $n, p&gt;m$ se cumplirá $\left|x_n-x_p\right|&lt;r$. ¿Es esto cierto para la sucesión del enunciado?
+En las sucesiones de Cauchy, la distancia entre los términos posteriores a uno dado puede hacerse tan pequeña como se quiera, esto es, para cualquier valor $r>0$, existirá un $m\in\mathbb{N}$ tal que para cualesquiera valores $n,p>m$ se cumplirá $\left|x_n-x_p\right|<r$. ¿Es esto cierto para la sucesión del enunciado?
 
-Supongamos que $n&gt;m$ es par y que $p&gt;m$ es impar; podemos suponerlo por que la propiedad anterior que define la sucesión de Cauchy ha de cumplirse para cualesquiera términos posteriores a uno dado. 
-Entonces \(\left|x_n-x_p\right|=\left|\frac{1}{n}-1\right|=1-\frac{1}{n}\), pero este valor aumenta con \(n\), acercándose a \(1\) cuando \(n\) es muy grande; por tanto, no podemos hacerlo menor que un \(r\) dado para valores grandes de \(n\).. En conclusión, la sucesión no es de Cauchy, y tampoco puede ser convergente.
+Supongamos que $n>m$ es par y que $p>m$ es impar; podemos suponerlo porque la propiedad anterior que define la sucesión de Cauchy ha de cumplirse para cualesquiera términos posteriores a uno dado.
 
+Entonces $\left|x_n-x_p\right|=\left|\frac{1}{n}-1\right|=1-\frac{1}{n}$, pero este valor aumenta con $n$, acercándose a $1$ cuando $n$ es muy grande; por tanto, no podemos hacerlo menor que un $r$ dado para valores grandes de $n$. En conclusión, la sucesión no es de Cauchy, y tampoco puede ser convergente.
 ---
 
  
@@ -131,13 +131,12 @@ Entonces \(\left|x_n-x_p\right|=\left|\frac{1}{n}-1\right|=1-\frac{1}{n}\), pero
 **6.** Clasificar (¿acotada? ¿creciente? ¿decreciente? ¿monótona? ¿convergente?) la sucesión de término general:
 
 \[
-(a_n)=
+a_n=
 \begin{cases}
-\dfrac{n+1}{n} \xrightarrow[n\to\infty]{} 1,\\[6pt]
-1-\dfrac{1}{2n} \xrightarrow[n\to\infty]{} 1-0=1.
+\dfrac{n+1}{n} \xrightarrow[n\to\infty]{} 1, & n \text{ par},\\
+1-\dfrac{1}{2n} \xrightarrow[n\to\infty]{} 1-0=1, & n \text{ impar}.
 \end{cases}
 \]
-
 Escribamos los primeros términos de la sucesión:
 
 $\left(a_n\right)=\left\lbrace\frac12,\frac32,\frac56,\frac54,\frac9{10},\frac76,\frac{13}{14},\frac98,\dots \right\rbrace$
