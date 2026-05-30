@@ -7,8 +7,7 @@ permalink: /ecuaciones-diferenciales/
 ---
 
 **Ecuaciones diferenciales ordinarias**
-
-	- [Introducción a las ecuaciones diferenciales ordinarias (EDO)](/taller-matematicas/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/)
+- [Introducción a las ecuaciones diferenciales ordinarias (EDO)](/taller-matematicas/2015/02/12/ecuaciones-diferenciales-ordinarias-introduccion/)
 
 	- [EDOs de primer orden](/taller-matematicas/2015/02/22/ecuaciones-diferenciales-ordinarias-de-1r-orden/)
 
