@@ -7,8 +7,25 @@ layout: default
     <p class="meta">
       {{ page.date | date: "%d/%m/%Y" }}
       {% if page.categories %}
-        · {% for cat in page.categories %}<a href="/categoria/{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
-      {% endif %}
+         {% for cat in page.categories %}
+          {% assign cat_down = cat | downcase %}
+
+          {% if cat_down contains "matem" %}
+            <a href="{{ '/matematicas/' | relative_url }}">{{ cat }}</a>
+
+          {% elsif cat_down contains "física" or cat_down contains "fisica" or cat_down contains "fí" %}
+            <a href="{{ '/fisica/' | relative_url }}">{{ cat }}</a>
+
+          {% elsif cat_down contains "ecuaciones diferenciales" %}
+            <a href="{{ '/ecuaciones-diferenciales/' | relative_url }}">{{ cat }}</a>
+
+          {% else %}
+            {{ cat }}
+          {% endif %}
+
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %} 
+    {% endif %}
     </p>
   </header>
   <div class="post-content">
