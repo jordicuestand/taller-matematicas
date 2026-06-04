@@ -133,7 +133,7 @@ $PV=101325\cdot1=\frac236\cdot10^{23}\cdot\overline{E_C}\Rightarrow\overline{E_C
 
 En [10] y anteriores estamos relacionando exclusivamente la energía interna del gas con las velocidades moleculares, o sea con la energía cinética; como las direcciones X, Y, Z son equivalentes, podemos descomponer la participación de las velocidades en la energía cinética en tres componentes del mismo valor; usando [10]:
 
-$\left.\begin{array}{r}\overline{E_c}={\overline{E_c}}_X+{\overline{E_c}}_Y+{\overline{E_c}}_Z\{\overline{E_c}}_X={\overline{E_c}}_Y={\overline{E_c}}_Z\end{array}\right\rbrace\Rightarrow{\overline{E_c}}_X=\frac13\overline{E_c}=\frac12kT$
+$\left.\begin{array}{r}\overline{E_c}={\overline{E_c}}_X+{\overline{E_c}}_Y+{\overline{E_c}}_Z\\{\overline{E_c}}_X={\overline{E_c}}_Y={\overline{E_c}}_Z\end{array}\right\rbrace\Rightarrow{\overline{E_c}}_X=\frac13\overline{E_c}=\frac12kT$
 
 Llamando *grado de libertad* a cada dirección independiente de la velocidad (y de la energía), diremos que el gas monoatómico tiene tres grados de libertad (ejes X, Y, Z) y que cada grado de libertad contribuye con el valor $\frac12kT$ a la energía interna del gas.
 
