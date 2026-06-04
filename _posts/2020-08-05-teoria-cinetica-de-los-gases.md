@@ -23,13 +23,13 @@ Su hipótesis base es la siguiente: un gas está formado por un gran número de 
 ### Presión de un gas confinado
 
 <figure>
-  <img src="/taller-matematicas/assets/img/teoria_cinetica1.png" alt="Fig. 1: moléculas de un gas en movimiento aleatorio">
+  <img src="/taller-matematicas/assets/images/teoria_cinetica1.png" alt="Fig. 1: moléculas de un gas en movimiento aleatorio">
   <figcaption>Fig. 1: moléculas de un gas en movimiento aleatorio.</figcaption>
 </figure>
 Consideremos un gas confinado en un recipiente de forma cualquiera y  de volumen *V*; habrán moléculas moviéndose en cualquier dirección. Fijamos una de las direcciones, a la que llamamos X, y pensamos en moléculas que, en un instante dado, se mueven en esa dirección;  las velocidades de esas moléculas en la dirección X pueden ser de módulos distintos *v* , y cambian continuamente. Nos acercamos a una de las paredes del recipiente, que supondremos plana y de superficie S (si no es plana, siempre podemos considerar una pequeña parte de la pared, y despreciar la curvatura), y consideramos una pequeña distancia d de la pared, dada por *d = v·dt*, la distancia recorrida por una molécula en un diferencial de tiempo, suficientemente pequeña para suponer que en ese espacio la molécula no chocará con otras.
 
 <figure>
-  <img src="/taller-matematicas/assets/img/teoria_cinetica1.png" alt="Fig.2: moléculas moviéndose en la dirección X dentro de un pequeño volumen d·S">
+  <img src="/taller-matematicas/assets/images/teoria_cinetica1.png" alt="Fig.2: moléculas moviéndose en la dirección X dentro de un pequeño volumen d·S">
   <figcaption>Fig.2: moléculas moviéndose en la dirección X dentro de un pequeño volumen d·S</figcaption>
 </figure>
 
